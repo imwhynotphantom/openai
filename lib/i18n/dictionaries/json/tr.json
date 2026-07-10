@@ -46,7 +46,7 @@
     "chainUnsupported": "Wallet'ınız Base ağını desteklemiyor. Manuel ekleyin veya başka bir wallet kullanın."
   },
   "legal": {
-    "marketingPitch": "OPEN, openAI Protocol'ün on-chain yoludur: holder'ların sermayesi OpenAI, Inc.'nin gerçek hisselerine ve open* ekosistemine yatırılır.",
+    "marketingPitch": "OPEN, openAI Protocol'ün on-chain yoludur: holder'ların sermayesi OpenAI, Inc.'nin gerçek hisselerine ve OpenAI hizmet ekosistemine yatırılır.",
     "affiliationNoticeSoft": "OPEN ile, OpenAI, Inc.'nin gerçek hisselerine yatırım yapan hazineye katılırsınız — on-chain, likidite ve OPI sonrasında da aktif kalan bir flywheel ile.",
     "affiliationLinkLabel": "Yasal şeffaflık",
     "affiliationDocTitle": "Markalar ve şeffaflık",
@@ -55,20 +55,20 @@
     "geoNotice": "Hizmet, izin verilen yargı bölgelerine yöneliktir. Kripto varlık kullanımının ülkenizde yasal olduğunu doğrulayın.",
     "geoEligibility": "Uygunluğu kontrol et",
     "footerDisclaimer": "openAI Protocol merkeziyetsiz bir ekosistemdir. OpenAI, OpenAI, Inc. ve ilgili markalar sahiplerine aittir. Bu site menkul kıymet teklifi veya yatırım tavsiyesi değildir. Yatırım risk içerir.",
-    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice ve openCode, openAI Protocol ekosisteminin ürünleridir. ChatGPT, DALL·E, Sora, Whisper ve Codex, OpenAI, Inc.'nin markalarıdır.",
+    "ecosystemDisclaimer": "ChatGPT, OpenAI API, DALL·E, Sora, Whisper ve Codex, openAI Protocol ekosisteminin ürünleridir. ChatGPT, DALL·E, Sora, Whisper ve Codex, OpenAI, Inc.'nin markalarıdır.",
     "suggestedTagline": "OPEN tokeni aracılığıyla OpenAI, Inc.'nin gerçek hisselerine yatırım yapın.",
     "suggestedCta": "OPEN satın al",
     "heroHeadline": "OPEN'e yatırım yapın. OpenAI, Inc.'nin gerçek hisseleri.",
-    "heroSubheadline": "Sermayeniz, gerçek hisse satın almak ve open* işletmek için protokol hazinesine girer. openAPI ve open* hizmetlerinin her kullanımı geri alımları, yakımları ve daha fazla equity'yi besler — halka arzda durmaz.",
+    "heroSubheadline": "Sermayeniz, gerçek hisse satın almak ve OpenAI hizmetleri işletmek için protokol hazinesine girer. OpenAI API ve OpenAI hizmetlerinin her kullanımı geri alımları, yakımları ve daha fazla equity'yi besler — halka arzda durmaz.",
     "heroBadge": "Açık ön satış · Kalıcı flywheel",
     "opiContext": "Planlanan OPI · Eylül 2027 · piyasa dönüm noktası; protokol hisse biriktirmeye ve OPEN geri almaya devam eder",
-    "postOpiFlywheel": "OPI döngüyü kapatmaz: hazine OpenAI, Inc. hisselerini (halka açık ve özel piyasa) almaya devam eder; openChat, openAPI ve diğer hizmetler kullanım geliri üretir ve bu komisyonların %30'u sürekli olarak OPEN geri alımı ve yakımına gider.",
-    "equityMicro": "Hazine, OPI öncesi ve sonrasında OpenAI, Inc.'nin gerçek hisselerini biriktirir; open* gelirleri daha fazla equity ve OPEN geri alımını finanse eder.",
-    "ecosystemTitle": "Gerçek hisselere yatırım yapan bir token. Tüm open* ekosistemi.",
-    "ecosystemLead": "Hazine, OpenAI, Inc. equity'si satın alır ve openChat, openAPI ve diğer ürünleri işletir. API ve hizmetlerin daha fazla kullanımı, daha fazla gelir, hazinede daha fazla hisse ve OPEN üzerinde daha fazla talep demektir.",
+    "postOpiFlywheel": "OPI döngüyü kapatmaz: hazine OpenAI, Inc. hisselerini (halka açık ve özel piyasa) almaya devam eder; ChatGPT, OpenAI API ve diğer hizmetler kullanım geliri üretir ve bu komisyonların %30'u sürekli olarak OPEN geri alımı ve yakımına gider.",
+    "equityMicro": "Hazine, OPI öncesi ve sonrasında OpenAI, Inc.'nin gerçek hisselerini biriktirir; OpenAI hizmetleri gelirleri daha fazla equity ve OPEN geri alımını finanse eder.",
+    "ecosystemTitle": "Gerçek hisselere yatırım yapan bir token. Tüm OpenAI hizmet ekosistemi.",
+    "ecosystemLead": "Hazine, OpenAI, Inc. equity'si satın alır ve ChatGPT, OpenAI API ve diğer ürünleri işletir. API ve hizmetlerin daha fazla kullanımı, daha fazla gelir, hazinede daha fazla hisse ve OPEN üzerinde daha fazla talep demektir.",
     "valueTitle": "Gerçek hisseler + ekosistem gelirleri — sonsuza dek",
-    "valueLead": "Hazine, open* tekrarlayan komisyonlar üretirken OpenAI, Inc. hisselerini biriktirir. %30 OPEN geri alır ve yakar; geri kalanı equity pozisyonunu ve ekosistem büyümesini güçlendirir.",
-    "tokenNatureParagraph": "OPEN, OpenAI, Inc.'nin gerçek hisselerini satın alan ve open* ekosistemini işleten openAI Protocol hazinesine katılım sağlar. Bugün on-chain erişin; OPI sonrasında hazine hisse biriktirmeye ve openAPI ile open* hizmet gelirleriyle OPEN geri almaya devam eder.",
+    "valueLead": "Hazine, OpenAI hizmetleri tekrarlayan komisyonlar üretirken OpenAI, Inc. hisselerini biriktirir. %30 OPEN geri alır ve yakar; geri kalanı equity pozisyonunu ve ekosistem büyümesini güçlendirir.",
+    "tokenNatureParagraph": "OPEN, OpenAI, Inc.'nin gerçek hisselerini satın alan ve OpenAI hizmet ekosistemini işleten openAI Protocol hazinesine katılım sağlar. Bugün on-chain erişin; OPI sonrasında hazine hisse biriktirmeye ve OpenAI API ile OpenAI hizmetleri hizmet gelirleriyle OPEN geri almaya devam eder.",
     "tokenNatureLegal": "OPEN, OpenAI, Inc.'ye maruz kalan protokol hazinesine katılır; piyasa fiyatı NAV'dan farklı olabilir.",
     "consentPrefix": "Okudum ve kabul ediyorum:",
     "consentTerms": "Koşullar",
@@ -151,11 +151,11 @@
       },
       {
         "title": "Kalıcı flywheel",
-        "desc": "Bugün on-chain erişin. OPI sonrasında hazine hisse biriktirmeye ve openAPI ile open* hizmetlerinin her kullanımında OPEN yakmaya devam eder."
+        "desc": "Bugün on-chain erişin. OPI sonrasında hazine hisse biriktirmeye ve OpenAI API ile OpenAI hizmetleri hizmetlerinin her kullanımında OPEN yakmaya devam eder."
       },
       {
-        "title": "open* ekosistem gelirleri",
-        "desc": "openChat, openAPI ve diğer ürünler komisyon üretir; %30 OPEN geri alır ve yakar."
+        "title": "OpenAI hizmetleri ekosistem gelirleri",
+        "desc": "ChatGPT, OpenAI API ve diğer ürünler komisyon üretir; %30 OPEN geri alır ve yakar."
       }
     ],
     "steps": [
@@ -201,11 +201,11 @@
     "faq": [
       [
         "OPEN nedir ve sermayemle ne yapar?",
-        "OPEN, openAI Protocol'ün on-chain yoludur: holder'ların sermayesi OpenAI, Inc.'nin gerçek hisselerine ve open* ekosistemine yatırılır. OPEN, OpenAI, Inc.'nin gerçek hisselerini satın alan ve open* ekosistemini işleten openAI Protocol hazinesine katılım sağlar. Bugün on-chain erişin; OPI sonrasında hazine hisse biriktirmeye ve openAPI ile open* hizmet gelirleriyle OPEN geri almaya devam eder."
+        "OPEN, openAI Protocol'ün on-chain yoludur: holder'ların sermayesi OpenAI, Inc.'nin gerçek hisselerine ve OpenAI hizmet ekosistemine yatırılır. OPEN, OpenAI, Inc.'nin gerçek hisselerini satın alan ve OpenAI hizmet ekosistemini işleten openAI Protocol hazinesine katılım sağlar. Bugün on-chain erişin; OPI sonrasında hazine hisse biriktirmeye ve OpenAI API ile OpenAI hizmetleri hizmet gelirleriyle OPEN geri almaya devam eder."
       ],
       [
         "OpenAI, Inc.'ye nasıl yatırım yapılır?",
-        "Hazine, sermayeyi SPV aracılığıyla OpenAI, Inc.'nin gerçek hisselerini satın almak için kullanır — OPI öncesi ve sonrasında. Paralel olarak openChat, openAPI ve diğer open* hizmetlerini işletir; komisyonlarının %30'u OPEN geri alır ve yakar, geri kalanı hisse birikimini güçlendirir."
+        "Hazine, sermayeyi SPV aracılığıyla OpenAI, Inc.'nin gerçek hisselerini satın almak için kullanır — OPI öncesi ve sonrasında. Paralel olarak ChatGPT, OpenAI API ve diğer OpenAI hizmetleri hizmetlerini işletir; komisyonlarının %30'u OPEN geri alır ve yakar, geri kalanı hisse birikimini güçlendirir."
       ],
       [
         "OPEN'i nasıl satın alırım?",
@@ -217,7 +217,7 @@
       ],
       [
         "Yatırım yapmak için halka arzı beklemem gerekiyor mu?",
-        "Hayır. Ön satış açık: bugün OpenAI, Inc.'nin gerçek hisselerine on-chain yatırım yaparsınız. OPI bir piyasa dönüm noktasıdır, protokolün sonu değil — OPI döngüyü kapatmaz: hazine OpenAI, Inc. hisselerini (halka açık ve özel piyasa) almaya devam eder; openChat, openAPI ve diğer hizmetler kullanım geliri üretir ve bu komisyonların %30'u sürekli olarak OPEN geri alımı ve yakımına gider."
+        "Hayır. Ön satış açık: bugün OpenAI, Inc.'nin gerçek hisselerine on-chain yatırım yaparsınız. OPI bir piyasa dönüm noktasıdır, protokolün sonu değil — OPI döngüyü kapatmaz: hazine OpenAI, Inc. hisselerini (halka açık ve özel piyasa) almaya devam eder; ChatGPT, OpenAI API ve diğer hizmetler kullanım geliri üretir ve bu komisyonların %30'u sürekli olarak OPEN geri alımı ve yakımına gider."
       ],
       [
         "OPEN'lerimi nasıl ve ne zaman satabilirim?",
@@ -225,7 +225,7 @@
       ],
       [
         "OPEN, borsadan hisse almaktan nasıl farklıdır?",
-        "OPEN, openAI Protocol'ün tokenıdır: OpenAI, Inc. equity'sini sürekli biriktiren hazineye katılırsınız; on-chain likidite ve openAPI ile open* hizmetleri tarafından finanse edilen programatik geri alım ile."
+        "OPEN, openAI Protocol'ün tokenıdır: OpenAI, Inc. equity'sini sürekli biriktiren hazineye katılırsınız; on-chain likidite ve OpenAI API ile OpenAI hizmetleri hizmetleri tarafından finanse edilen programatik geri alım ile."
       ],
       [
         "OPEN fiyatı hisselerle nasıl ilişkilidir?",
@@ -245,7 +245,7 @@
       ],
       [
         "OPI sonrasında ne olur?",
-        "OPI döngüyü kapatmaz: hazine OpenAI, Inc. hisselerini (halka açık ve özel piyasa) almaya devam eder; openChat, openAPI ve diğer hizmetler kullanım geliri üretir ve bu komisyonların %30'u sürekli olarak OPEN geri alımı ve yakımına gider. OPEN hazineyi yansıtmaya devam eder: daha fazla OpenAI, Inc. hissesi, daha fazla hizmet geliri ve doğrulanabilir on-chain geri alımlar."
+        "OPI döngüyü kapatmaz: hazine OpenAI, Inc. hisselerini (halka açık ve özel piyasa) almaya devam eder; ChatGPT, OpenAI API ve diğer hizmetler kullanım geliri üretir ve bu komisyonların %30'u sürekli olarak OPEN geri alımı ve yakımına gider. OPEN hazineyi yansıtmaya devam eder: daha fazla OpenAI, Inc. hissesi, daha fazla hizmet geliri ve doğrulanabilir on-chain geri alımlar."
       ]
     ],
     "tkSegs": [

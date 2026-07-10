@@ -46,7 +46,7 @@
     "chainUnsupported": "Your wallet does not support the Base network. Add it manually or use another wallet."
   },
   "legal": {
-    "marketingPitch": "OPEN is the on-chain path of the openAI Protocol: holders' capital is invested in real OpenAI, Inc. shares and in the open* ecosystem.",
+    "marketingPitch": "OPEN is the on-chain path of the openAI Protocol: holders' capital is invested in real OpenAI, Inc. shares and in the OpenAI services ecosystem.",
     "affiliationNoticeSoft": "With OPEN you participate in the treasury that invests in real OpenAI, Inc. shares — on-chain, with liquidity and a flywheel that stays active after the IPO.",
     "affiliationLinkLabel": "Legal transparency",
     "affiliationDocTitle": "Trademarks and transparency",
@@ -55,20 +55,20 @@
     "geoNotice": "Service aimed at permitted jurisdictions. Check that the use of crypto assets is allowed in your country.",
     "geoEligibility": "Check eligibility",
     "footerDisclaimer": "openAI Protocol is a decentralized ecosystem. OpenAI, OpenAI, Inc. and related trademarks belong to their respective owners. This website does not constitute an offer of securities or investment advice. Investing involves risks.",
-    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice and openCode are products of the openAI Protocol ecosystem. ChatGPT, DALL·E, Sora, Whisper and Codex are trademarks of OpenAI, Inc.",
+    "ecosystemDisclaimer": "ChatGPT, DALL·E, Sora, Whisper, Codex and the OpenAI API are trademarks and services of OpenAI, Inc. openAI Protocol is an independent ecosystem.",
     "suggestedTagline": "Invest in real OpenAI, Inc. shares through the OPEN token.",
     "suggestedCta": "Buy OPEN",
     "heroHeadline": "Invest in OPEN. Real OpenAI, Inc. shares.",
-    "heroSubheadline": "Your capital enters the protocol treasury to buy real shares and operate open*. Every use of openAPI and open* services fuels buybacks, burns and more equity — without stopping at the IPO.",
+    "heroSubheadline": "Your capital enters the protocol treasury to buy real shares and operate OpenAI services. Every use of the API and other OpenAI services fuels buybacks, burns and more equity — without stopping at the IPO.",
     "heroBadge": "Open presale · Permanent flywheel",
     "opiContext": "IPO expected · September 2027 · market milestone; the protocol keeps accumulating shares and buying back OPEN",
-    "postOpiFlywheel": "The IPO does not close the cycle: the treasury keeps buying OpenAI, Inc. shares (public and private market), openChat, openAPI and the rest of the services generate usage revenue, and 30% of those fees are continuously allocated to buy back and burn OPEN.",
-    "equityMicro": "The treasury accumulates real OpenAI, Inc. shares before and after the IPO; open* revenue finances more equity and OPEN buybacks.",
-    "ecosystemTitle": "A token that invests in real shares. The entire open* ecosystem.",
-    "ecosystemLead": "The treasury acquires equity in OpenAI, Inc. and operates openChat, openAPI and the rest of the products. More API and service usage, more revenue, more shares in treasury and more demand for OPEN.",
+    "postOpiFlywheel": "The IPO does not close the cycle: the treasury keeps buying OpenAI, Inc. shares (public and private market), ChatGPT, the OpenAI API and the rest of the services generate usage revenue, and 30% of those fees are continuously allocated to buy back and burn OPEN.",
+    "equityMicro": "The treasury accumulates real OpenAI, Inc. shares before and after the IPO; OpenAI services revenue finances more equity and OPEN buybacks.",
+    "ecosystemTitle": "A token that invests in real shares. The entire OpenAI services ecosystem.",
+    "ecosystemLead": "The treasury acquires equity in OpenAI, Inc. and operates ChatGPT, the OpenAI API and the rest of the services. More API and service usage, more revenue, more shares in treasury and more demand for OPEN.",
     "valueTitle": "Real shares + ecosystem revenue — forever",
-    "valueLead": "The treasury accumulates OpenAI, Inc. shares while open* generates recurring fees. 30% buys back and burns OPEN; the rest strengthens the equity position and ecosystem growth.",
-    "tokenNatureParagraph": "OPEN gives you participation in the openAI Protocol treasury, which buys and holds real OpenAI, Inc. shares and operates the open* ecosystem. Access on-chain today; after the IPO, the treasury keeps accumulating shares and buying back OPEN with revenue from openAPI and open* services.",
+    "valueLead": "The treasury accumulates OpenAI, Inc. shares while OpenAI services generate recurring fees. 30% buys back and burns OPEN; the rest strengthens the equity position and ecosystem growth.",
+    "tokenNatureParagraph": "OPEN gives you participation in the openAI Protocol treasury, which buys and holds real OpenAI, Inc. shares and operates the OpenAI services ecosystem. Access on-chain today; after the IPO, the treasury keeps accumulating shares and buying back OPEN with revenue from the OpenAI API and OpenAI services.",
     "tokenNatureLegal": "OPEN participates in the protocol treasury with exposure to OpenAI, Inc.; market price may vary from NAV.",
     "consentPrefix": "I have read and accept the",
     "consentTerms": "Terms",
@@ -137,12 +137,12 @@
   },
   "content": {
     "ecosystem": [
-      "Conversational assistant of the openAI Protocol ecosystem. Subscriptions and usage generate revenue that feeds the treasury and OPEN buybacks.",
-      "Models served via the protocol API. Every million tokens processed is billed; part of the fee buys back OPEN.",
-      "Image generation by diffusion. Credit-based consumption feeds the token buyback flow.",
-      "Video generation from text. Compute-intensive workloads, billed per rendered second.",
-      "Voice and real-time transcription. Usage measured per minute of processed audio.",
-      "Programming copilot of the protocol. Per-seat plan plus compute consumption per generated suggestion."
+      "ChatGPT conversational assistant. Subscriptions and usage generate revenue that feeds the treasury and OPEN buybacks.",
+      "Models served via the OpenAI API. Every million tokens processed is billed; part of the fee buys back OPEN.",
+      "DALL·E generates images by diffusion. Credit-based consumption feeds the token buyback flow.",
+      "Sora generates video from text. Compute-intensive workloads, billed per rendered second.",
+      "Whisper provides voice and real-time transcription. Usage measured per minute of processed audio.",
+      "Codex programming copilot. Per-seat plan plus compute consumption per generated suggestion."
     ],
     "tokenWhy": [
       {
@@ -151,11 +151,11 @@
       },
       {
         "title": "Permanent flywheel",
-        "desc": "Access on-chain today. After the IPO, the treasury keeps accumulating shares and burning OPEN with every use of openAPI and open* services."
+        "desc": "Access on-chain today. After the IPO, the treasury keeps accumulating shares and burning OPEN with every use of the OpenAI API and OpenAI services."
       },
       {
-        "title": "open* ecosystem revenue",
-        "desc": "openChat, openAPI and the rest of the products generate fees; 30% buys back and burns OPEN."
+        "title": "OpenAI services ecosystem revenue",
+        "desc": "ChatGPT, the OpenAI API and the rest of the services generate fees; 30% buys back and burns OPEN."
       }
     ],
     "steps": [
@@ -201,11 +201,11 @@
     "faq": [
       [
         "What is OPEN and what does it do with my capital?",
-        "OPEN is the on-chain path of the openAI Protocol: holders' capital is invested in real OpenAI, Inc. shares and in the open* ecosystem. OPEN gives you participation in the openAI Protocol treasury, which buys and holds real OpenAI, Inc. shares and operates the open* ecosystem. Access on-chain today; after the IPO, the treasury keeps accumulating shares and buying back OPEN with revenue from openAPI and open* services."
+        "OPEN is the on-chain path of the openAI Protocol: holders' capital is invested in real OpenAI, Inc. shares and in the OpenAI services ecosystem. OPEN gives you participation in the openAI Protocol treasury, which buys and holds real OpenAI, Inc. shares and operates the OpenAI services ecosystem. Access on-chain today; after the IPO, the treasury keeps accumulating shares and buying back OPEN with revenue from the OpenAI API and OpenAI services."
       ],
       [
         "How is investment in OpenAI, Inc. made?",
-        "The treasury allocates capital to buy real OpenAI, Inc. shares via SPV — before and after the IPO. In parallel it operates openChat, openAPI and the rest of open* services; 30% of their fees buy back and burn OPEN, and the rest strengthens share accumulation."
+        "The treasury allocates capital to buy real OpenAI, Inc. shares via SPV — before and after the IPO. In parallel it operates ChatGPT, the OpenAI API and the rest of OpenAI services services; 30% of their fees buy back and burn OPEN, and the rest strengthens share accumulation."
       ],
       [
         "How do I buy OPEN?",
@@ -217,7 +217,7 @@
       ],
       [
         "Do I have to wait for the IPO to invest?",
-        "No. The presale is open: you invest today on-chain in real OpenAI, Inc. shares. The IPO is a market milestone, not the end of the protocol — The IPO does not close the cycle: the treasury keeps buying OpenAI, Inc. shares (public and private market), openChat, openAPI and the rest of the services generate usage revenue, and 30% of those fees are continuously allocated to buy back and burn OPEN."
+        "No. The presale is open: you invest today on-chain in real OpenAI, Inc. shares. The IPO is a market milestone, not the end of the protocol — The IPO does not close the cycle: the treasury keeps buying OpenAI, Inc. shares (public and private market), ChatGPT, the OpenAI API and the rest of the services generate usage revenue, and 30% of those fees are continuously allocated to buy back and burn OPEN."
       ],
       [
         "How and when can I sell my OPEN?",
@@ -225,7 +225,7 @@
       ],
       [
         "How is OPEN different from buying the stock on the market?",
-        "OPEN is the token of the openAI Protocol: you participate in the treasury that continuously accumulates equity in OpenAI, Inc., with on-chain liquidity and programmatic buyback funded by openAPI and open* services."
+        "OPEN is the token of the openAI Protocol: you participate in the treasury that continuously accumulates equity in OpenAI, Inc., with on-chain liquidity and programmatic buyback funded by the OpenAI API and OpenAI services."
       ],
       [
         "How is the OPEN price related to the shares?",
@@ -245,7 +245,7 @@
       ],
       [
         "What happens after the IPO?",
-        "The IPO does not close the cycle: the treasury keeps buying OpenAI, Inc. shares (public and private market), openChat, openAPI and the rest of the services generate usage revenue, and 30% of those fees are continuously allocated to buy back and burn OPEN. OPEN continues to reflect the treasury: more OpenAI, Inc. shares, more service revenue and verifiable on-chain buybacks."
+        "The IPO does not close the cycle: the treasury keeps buying OpenAI, Inc. shares (public and private market), ChatGPT, the OpenAI API and the rest of the services generate usage revenue, and 30% of those fees are continuously allocated to buy back and burn OPEN. OPEN continues to reflect the treasury: more OpenAI, Inc. shares, more service revenue and verifiable on-chain buybacks."
       ]
     ],
     "tkSegs": [

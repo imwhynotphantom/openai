@@ -46,7 +46,7 @@
     "chainUnsupported": "Ihre Wallet unterstützt das Base-Netzwerk nicht. Fügen Sie es manuell hinzu oder verwenden Sie eine andere Wallet."
   },
   "legal": {
-    "marketingPitch": "OPEN ist der On-Chain-Weg des openAI Protocol: Das Kapital der Inhaber wird in echte OpenAI, Inc.-Aktien und in das open*-Ökosystem investiert.",
+    "marketingPitch": "OPEN ist der On-Chain-Weg des openAI Protocol: Das Kapital der Inhaber wird in echte OpenAI, Inc.-Aktien und in das OpenAI-Dienste-Ökosystem investiert.",
     "affiliationNoticeSoft": "Mit OPEN nehmen Sie an der Treasury teil, die in echte OpenAI, Inc.-Aktien investiert — On-Chain, mit Liquidität und einem Flywheel, das nach dem Börsengang aktiv bleibt.",
     "affiliationLinkLabel": "Rechtliche Transparenz",
     "affiliationDocTitle": "Marken und Transparenz",
@@ -55,20 +55,20 @@
     "geoNotice": "Dienst richtet sich an zulässige Rechtsordnungen. Prüfen Sie, ob die Nutzung von Krypto-Assets in Ihrem Land erlaubt ist.",
     "geoEligibility": "Berechtigung prüfen",
     "footerDisclaimer": "openAI Protocol ist ein dezentrales Ökosystem. OpenAI, OpenAI, Inc. und verwandte Marken gehören ihren jeweiligen Inhabern. Diese Website stellt kein Wertpapierangebot oder Anlageberatung dar. Investieren birgt Risiken.",
-    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice und openCode sind Produkte des openAI Protocol-Ökosystems. ChatGPT, DALL·E, Sora, Whisper und Codex sind Marken von OpenAI, Inc.",
+    "ecosystemDisclaimer": "ChatGPT, DALL·E, Sora, Whisper, Codex und die OpenAI-API sind Marken und Dienste von OpenAI, Inc. openAI Protocol ist ein unabhängiges Ökosystem.",
     "suggestedTagline": "Investieren Sie in echte OpenAI, Inc.-Aktien über den OPEN-Token.",
     "suggestedCta": "OPEN kaufen",
     "heroHeadline": "In OPEN investieren. Echte OpenAI, Inc.-Aktien.",
-    "heroSubheadline": "Ihr Kapital fließt in die Treasury des Protokolls, um echte Aktien zu kaufen und open* zu betreiben. Jede Nutzung von openAPI und open*-Diensten speist Rückkäufe, Burns und mehr Equity — ohne beim Börsengang zu stoppen.",
+    "heroSubheadline": "Ihr Kapital fließt in die Treasury des Protokolls, um echte Aktien zu kaufen und OpenAI-Dienste zu betreiben. Jede Nutzung von die OpenAI-API und OpenAI-Diensten speist Rückkäufe, Burns und mehr Equity — ohne beim Börsengang zu stoppen.",
     "heroBadge": "Offener Vorverkauf · Permanenter Flywheel",
     "opiContext": "Börsengang geplant · September 2027 · Marktmeilenstein; das Protokoll akkumuliert weiter Aktien und kauft OPEN zurück",
-    "postOpiFlywheel": "Der Börsengang schließt den Zyklus nicht: Die Treasury kauft weiter OpenAI, Inc.-Aktien (öffentlicher und privater Markt), openChat, openAPI und die übrigen Dienste erzeugen Nutzungseinnahmen, und 30 % dieser Gebühren werden fortlaufend zum Rückkauf und Burn von OPEN verwendet.",
-    "equityMicro": "Die Treasury akkumuliert echte OpenAI, Inc.-Aktien vor und nach dem Börsengang; open*-Einnahmen finanzieren mehr Equity und OPEN-Rückkäufe.",
-    "ecosystemTitle": "Ein Token, der in echte Aktien investiert. Das gesamte open*-Ökosystem.",
-    "ecosystemLead": "Die Treasury erwirbt Equity von OpenAI, Inc. und betreibt openChat, openAPI und die übrigen Produkte. Mehr API- und Dienstnutzung, mehr Einnahmen, mehr Aktien in der Treasury und mehr Nachfrage nach OPEN.",
+    "postOpiFlywheel": "Der Börsengang schließt den Zyklus nicht: Die Treasury kauft weiter OpenAI, Inc.-Aktien (öffentlicher und privater Markt), ChatGPT, die OpenAI-API und die übrigen Dienste erzeugen Nutzungseinnahmen, und 30 % dieser Gebühren werden fortlaufend zum Rückkauf und Burn von OPEN verwendet.",
+    "equityMicro": "Die Treasury akkumuliert echte OpenAI, Inc.-Aktien vor und nach dem Börsengang; OpenAI-Dienste-Einnahmen finanzieren mehr Equity und OPEN-Rückkäufe.",
+    "ecosystemTitle": "Ein Token, der in echte Aktien investiert. Das gesamte OpenAI-Dienste-Ökosystem.",
+    "ecosystemLead": "Die Treasury erwirbt Equity von OpenAI, Inc. und betreibt ChatGPT, die OpenAI-API und die übrigen Produkte. Mehr API- und Dienstnutzung, mehr Einnahmen, mehr Aktien in der Treasury und mehr Nachfrage nach OPEN.",
     "valueTitle": "Echte Aktien + Ökosystem-Einnahmen — für immer",
-    "valueLead": "Die Treasury akkumuliert OpenAI, Inc.-Aktien, während open* wiederkehrende Gebühren erzeugt. 30 % kaufen OPEN zurück und verbrennen es; der Rest stärkt die Aktienposition und das Ökosystemwachstum.",
-    "tokenNatureParagraph": "OPEN gibt Ihnen eine Beteiligung an der Treasury des openAI Protocol, die echte OpenAI, Inc.-Aktien kauft und verwahrt und das open*-Ökosystem betreibt. Heute On-Chain zugreifen; nach dem Börsengang akkumuliert die Treasury weiter Aktien und kauft OPEN mit Einnahmen aus openAPI und open*-Diensten zurück.",
+    "valueLead": "Die Treasury akkumuliert OpenAI, Inc.-Aktien, während OpenAI-Dienste wiederkehrende Gebühren erzeugt. 30 % kaufen OPEN zurück und verbrennen es; der Rest stärkt die Aktienposition und das Ökosystemwachstum.",
+    "tokenNatureParagraph": "OPEN gibt Ihnen eine Beteiligung an der Treasury des openAI Protocol, die echte OpenAI, Inc.-Aktien kauft und verwahrt und das OpenAI-Dienste-Ökosystem betreibt. Heute On-Chain zugreifen; nach dem Börsengang akkumuliert die Treasury weiter Aktien und kauft OPEN mit Einnahmen aus die OpenAI-API und OpenAI-Diensten zurück.",
     "tokenNatureLegal": "OPEN nimmt an der Treasury des Protokolls mit Exposure zu OpenAI, Inc. teil; der Marktpreis kann vom NAV abweichen.",
     "consentPrefix": "Ich habe die",
     "consentTerms": "Nutzungsbedingungen",
@@ -151,11 +151,11 @@
       },
       {
         "title": "Permanenter Flywheel",
-        "desc": "Heute On-Chain zugreifen. Nach dem Börsengang akkumuliert die Treasury weiter Aktien und verbrennt OPEN bei jeder Nutzung von openAPI und open*-Diensten."
+        "desc": "Heute On-Chain zugreifen. Nach dem Börsengang akkumuliert die Treasury weiter Aktien und verbrennt OPEN bei jeder Nutzung von die OpenAI-API und OpenAI-Diensten."
       },
       {
-        "title": "open*-Ökosystem-Einnahmen",
-        "desc": "openChat, openAPI und die übrigen Produkte erzeugen Gebühren; 30 % kaufen OPEN zurück und verbrennen es."
+        "title": "OpenAI-Dienste-Ökosystem-Einnahmen",
+        "desc": "ChatGPT, die OpenAI-API und die übrigen Produkte erzeugen Gebühren; 30 % kaufen OPEN zurück und verbrennen es."
       }
     ],
     "steps": [
@@ -201,11 +201,11 @@
     "faq": [
       [
         "Was ist OPEN und was macht es mit meinem Kapital?",
-        "OPEN ist der On-Chain-Weg des openAI Protocol: Das Kapital der Inhaber wird in echte OpenAI, Inc.-Aktien und in das open*-Ökosystem investiert. OPEN gibt Ihnen eine Beteiligung an der Treasury des openAI Protocol, die echte OpenAI, Inc.-Aktien kauft und verwahrt und das open*-Ökosystem betreibt. Heute On-Chain zugreifen; nach dem Börsengang akkumuliert die Treasury weiter Aktien und kauft OPEN mit Einnahmen aus openAPI und open*-Diensten zurück."
+        "OPEN ist der On-Chain-Weg des openAI Protocol: Das Kapital der Inhaber wird in echte OpenAI, Inc.-Aktien und in das OpenAI-Dienste-Ökosystem investiert. OPEN gibt Ihnen eine Beteiligung an der Treasury des openAI Protocol, die echte OpenAI, Inc.-Aktien kauft und verwahrt und das OpenAI-Dienste-Ökosystem betreibt. Heute On-Chain zugreifen; nach dem Börsengang akkumuliert die Treasury weiter Aktien und kauft OPEN mit Einnahmen aus die OpenAI-API und OpenAI-Diensten zurück."
       ],
       [
         "Wie wird in OpenAI, Inc. investiert?",
-        "Die Treasury verwendet Kapital zum Kauf echter OpenAI, Inc.-Aktien über SPV — vor und nach dem Börsengang. Parallel betreibt sie openChat, openAPI und die übrigen open*-Dienste; 30 % ihrer Gebühren kaufen OPEN zurück und verbrennen es, der Rest stärkt die Aktienakkumulation."
+        "Die Treasury verwendet Kapital zum Kauf echter OpenAI, Inc.-Aktien über SPV — vor und nach dem Börsengang. Parallel betreibt sie ChatGPT, die OpenAI-API und die übrigen OpenAI-Dienste-Dienste; 30 % ihrer Gebühren kaufen OPEN zurück und verbrennen es, der Rest stärkt die Aktienakkumulation."
       ],
       [
         "Wie kaufe ich OPEN?",
@@ -217,7 +217,7 @@
       ],
       [
         "Muss ich auf den Börsengang warten, um zu investieren?",
-        "Nein. Der Vorverkauf ist offen: Sie investieren heute On-Chain in echte OpenAI, Inc.-Aktien. Der Börsengang ist ein Marktmeilenstein, nicht das Ende des Protokolls — Der Börsengang schließt den Zyklus nicht: Die Treasury kauft weiter OpenAI, Inc.-Aktien (öffentlicher und privater Markt), openChat, openAPI und die übrigen Dienste erzeugen Nutzungseinnahmen, und 30 % dieser Gebühren werden fortlaufend zum Rückkauf und Burn von OPEN verwendet."
+        "Nein. Der Vorverkauf ist offen: Sie investieren heute On-Chain in echte OpenAI, Inc.-Aktien. Der Börsengang ist ein Marktmeilenstein, nicht das Ende des Protokolls — Der Börsengang schließt den Zyklus nicht: Die Treasury kauft weiter OpenAI, Inc.-Aktien (öffentlicher und privater Markt), ChatGPT, die OpenAI-API und die übrigen Dienste erzeugen Nutzungseinnahmen, und 30 % dieser Gebühren werden fortlaufend zum Rückkauf und Burn von OPEN verwendet."
       ],
       [
         "Wie und wann kann ich meine OPEN verkaufen?",
@@ -225,7 +225,7 @@
       ],
       [
         "Worin unterscheidet sich OPEN vom Kauf der Aktie an der Börse?",
-        "OPEN ist der Token des openAI Protocol: Sie nehmen an der Treasury teil, die fortlaufend Equity von OpenAI, Inc. akkumuliert, mit On-Chain-Liquidität und programmatischem Rückkauf, finanziert durch openAPI und open*-Dienste."
+        "OPEN ist der Token des openAI Protocol: Sie nehmen an der Treasury teil, die fortlaufend Equity von OpenAI, Inc. akkumuliert, mit On-Chain-Liquidität und programmatischem Rückkauf, finanziert durch die OpenAI-API und OpenAI-Dienste."
       ],
       [
         "Wie hängt der OPEN-Preis mit den Aktien zusammen?",
@@ -245,7 +245,7 @@
       ],
       [
         "Was passiert nach dem Börsengang?",
-        "Der Börsengang schließt den Zyklus nicht: Die Treasury kauft weiter OpenAI, Inc.-Aktien (öffentlicher und privater Markt), openChat, openAPI und die übrigen Dienste erzeugen Nutzungseinnahmen, und 30 % dieser Gebühren werden fortlaufend zum Rückkauf und Burn von OPEN verwendet. OPEN spiegelt weiter die Treasury wider: mehr OpenAI, Inc.-Aktien, mehr Diensteinnahmen und nachweisbare On-Chain-Rückkäufe."
+        "Der Börsengang schließt den Zyklus nicht: Die Treasury kauft weiter OpenAI, Inc.-Aktien (öffentlicher und privater Markt), ChatGPT, die OpenAI-API und die übrigen Dienste erzeugen Nutzungseinnahmen, und 30 % dieser Gebühren werden fortlaufend zum Rückkauf und Burn von OPEN verwendet. OPEN spiegelt weiter die Treasury wider: mehr OpenAI, Inc.-Aktien, mehr Diensteinnahmen und nachweisbare On-Chain-Rückkäufe."
       ]
     ],
     "tkSegs": [

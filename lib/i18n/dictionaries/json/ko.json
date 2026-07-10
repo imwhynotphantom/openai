@@ -46,7 +46,7 @@
     "chainUnsupported": "지갑이 Base 네트워크를 지원하지 않습니다. 수동으로 추가하거나 다른 지갑을 사용해 주세요."
   },
   "legal": {
-    "marketingPitch": "OPEN은 openAI Protocol의 온체인 경로입니다: 홀더 자본은 OpenAI, Inc. 실제 주식과 open* 생태계에 투자됩니다.",
+    "marketingPitch": "OPEN은 openAI Protocol의 온체인 경로입니다: 홀더 자본은 OpenAI, Inc. 실제 주식과 OpenAI 서비스 생태계에 투자됩니다.",
     "affiliationNoticeSoft": "OPEN으로 OpenAI, Inc. 실제 주식에 투자하는 재무에 참여 — 온체인, 유동성, OPI 이후에도 flywheel 지속.",
     "affiliationLinkLabel": "법적 투명성",
     "affiliationDocTitle": "상표 및 투명성",
@@ -55,20 +55,20 @@
     "geoNotice": "허용된 관할 구역 대상 서비스입니다. 거주 국가에서 암호자산 사용이 허용되는지 확인하세요.",
     "geoEligibility": "자격 확인",
     "footerDisclaimer": "openAI Protocol은 탈중앙화 생태계입니다. OpenAI, OpenAI, Inc. 및 관련 상표는 각 소유자에게 속합니다. 본 웹사이트는 증권 공모나 투자 자문을 구성하지 않습니다. 투자에는 위험이 따릅니다.",
-    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice, openCode는 openAI Protocol 생태계 제품입니다. ChatGPT, DALL·E, Sora, Whisper, Codex는 OpenAI, Inc. 상표입니다.",
+    "ecosystemDisclaimer": "ChatGPT, OpenAI API, DALL·E, Sora, Whisper, Codex는 openAI Protocol 생태계 제품입니다. ChatGPT, DALL·E, Sora, Whisper, Codex는 OpenAI, Inc. 상표입니다.",
     "suggestedTagline": "OPEN 토큰으로 OpenAI, Inc. 실제 주식에 투자하세요.",
     "suggestedCta": "OPEN 구매",
     "heroHeadline": "OPEN에 투자하세요. OpenAI, Inc. 실제 주식.",
-    "heroSubheadline": "자본은 프로토콜 재무에 들어가 실제 주식 구매와 open* 운영에 사용됩니다. openAPI 및 open* 서비스 사용마다 환매, 소각, 더 많은 equity — 상장 후에도 멈추지 않습니다.",
+    "heroSubheadline": "자본은 프로토콜 재무에 들어가 실제 주식 구매와 OpenAI 서비스 운영에 사용됩니다. OpenAI API 및 OpenAI 서비스 사용마다 환매, 소각, 더 많은 equity — 상장 후에도 멈추지 않습니다.",
     "heroBadge": "공개 프리세일 · 영구 Flywheel",
     "opiContext": "OPI 예정 · 2027년 9월 · 시장 이정표; 프로토콜은 주식을 축적하고 OPEN을 환매합니다",
-    "postOpiFlywheel": "OPI로 사이클이 끝나지 않습니다: 재무는 OpenAI, Inc. 주식(공개 및 비공개 시장)을 계속 구매하고, openChat, openAPI 등 서비스가 사용 수익을 창출하며, 수수료의 30%가 OPEN 환매 및 소각에 지속적으로 사용됩니다.",
-    "equityMicro": "재무는 OPI 전후 OpenAI, Inc. 실제 주식을 축적; open* 수익이 더 많은 equity와 OPEN 환매에 자금을 제공.",
-    "ecosystemTitle": "실제 주식에 투자하는 토큰. open* 생태계 전체.",
-    "ecosystemLead": "재무는 OpenAI, Inc. equity를 취득하고 openChat, openAPI 등을 운영합니다. API 및 서비스 사용이 많을수록 수익, 재무 주식, OPEN 수요가 증가합니다.",
+    "postOpiFlywheel": "OPI로 사이클이 끝나지 않습니다: 재무는 OpenAI, Inc. 주식(공개 및 비공개 시장)을 계속 구매하고, ChatGPT, OpenAI API 등 서비스가 사용 수익을 창출하며, 수수료의 30%가 OPEN 환매 및 소각에 지속적으로 사용됩니다.",
+    "equityMicro": "재무는 OPI 전후 OpenAI, Inc. 실제 주식을 축적; OpenAI 서비스 수익이 더 많은 equity와 OPEN 환매에 자금을 제공.",
+    "ecosystemTitle": "실제 주식에 투자하는 토큰. OpenAI 서비스 생태계 전체.",
+    "ecosystemLead": "재무는 OpenAI, Inc. equity를 취득하고 ChatGPT, OpenAI API 등을 운영합니다. API 및 서비스 사용이 많을수록 수익, 재무 주식, OPEN 수요가 증가합니다.",
     "valueTitle": "실제 주식 + 생태계 수익 — 영구적으로",
-    "valueLead": "재무는 OpenAI, Inc. 주식을 축적하고 open*는 지속적인 수수료를 생성합니다. 30%는 OPEN 환매 및 소각에; 나머지는 주식 포지션과 생태계 성장을 강화.",
-    "tokenNatureParagraph": "OPEN은 openAI Protocol 재무 참여를 제공하며, OpenAI, Inc. 실제 주식을 구매·보관하고 open* 생태계를 운영합니다. 오늘 온체인 접근; OPI 후에도 재무는 주식을 축적하고 openAPI 및 open* 서비스 수익으로 OPEN을 환매합니다.",
+    "valueLead": "재무는 OpenAI, Inc. 주식을 축적하고 OpenAI 서비스는 지속적인 수수료를 생성합니다. 30%는 OPEN 환매 및 소각에; 나머지는 주식 포지션과 생태계 성장을 강화.",
+    "tokenNatureParagraph": "OPEN은 openAI Protocol 재무 참여를 제공하며, OpenAI, Inc. 실제 주식을 구매·보관하고 OpenAI 서비스 생태계를 운영합니다. 오늘 온체인 접근; OPI 후에도 재무는 주식을 축적하고 OpenAI API 및 OpenAI 서비스 수익으로 OPEN을 환매합니다.",
     "tokenNatureLegal": "OPEN은 OpenAI, Inc. 노출이 있는 프로토콜 재무에 참여; 시장 가격은 NAV와 다를 수 있습니다.",
     "consentPrefix": "다음에 동의합니다:",
     "consentTerms": "이용약관",
@@ -151,11 +151,11 @@
       },
       {
         "title": "영구 Flywheel",
-        "desc": "오늘 온체인 접근. OPI 후에도 재무는 주식을 축적하고, openAPI 및 open* 서비스 사용마다 OPEN을 소각."
+        "desc": "오늘 온체인 접근. OPI 후에도 재무는 주식을 축적하고, OpenAI API 및 OpenAI 서비스 사용마다 OPEN을 소각."
       },
       {
-        "title": "open* 생태계 수익",
-        "desc": "openChat, openAPI 등이 수수료를 창출; 30%가 OPEN 환매 및 소각에 사용."
+        "title": "OpenAI 서비스 생태계 수익",
+        "desc": "ChatGPT, OpenAI API 등이 수수료를 창출; 30%가 OPEN 환매 및 소각에 사용."
       }
     ],
     "steps": [
@@ -201,11 +201,11 @@
     "faq": [
       [
         "OPEN이란 무엇이며 내 자본은 어떻게 사용되나요?",
-        "OPEN은 openAI Protocol의 온체인 경로입니다: 홀더 자본은 OpenAI, Inc. 실제 주식과 open* 생태계에 투자됩니다. OPEN은 openAI Protocol 재무 참여를 제공하며, OpenAI, Inc. 실제 주식을 구매·보관하고 open* 생태계를 운영합니다. 오늘 온체인 접근; OPI 후에도 재무는 주식을 축적하고 openAPI 및 open* 서비스 수익으로 OPEN을 환매합니다."
+        "OPEN은 openAI Protocol의 온체인 경로입니다: 홀더 자본은 OpenAI, Inc. 실제 주식과 OpenAI 서비스 생태계에 투자됩니다. OPEN은 openAI Protocol 재무 참여를 제공하며, OpenAI, Inc. 실제 주식을 구매·보관하고 OpenAI 서비스 생태계를 운영합니다. 오늘 온체인 접근; OPI 후에도 재무는 주식을 축적하고 OpenAI API 및 OpenAI 서비스 수익으로 OPEN을 환매합니다."
       ],
       [
         "OpenAI, Inc.에 어떻게 투자하나요?",
-        "재무는 SPV를 통해 OpenAI, Inc. 실제 주식 구매에 자본을 사용합니다 — OPI 전후 모두. 동시에 openChat, openAPI 등 open* 서비스를 운영; 수수료 30%가 OPEN 환매 및 소각에, 나머지가 주식 축적을 강화."
+        "재무는 SPV를 통해 OpenAI, Inc. 실제 주식 구매에 자본을 사용합니다 — OPI 전후 모두. 동시에 ChatGPT, OpenAI API 등 OpenAI 서비스 서비스를 운영; 수수료 30%가 OPEN 환매 및 소각에, 나머지가 주식 축적을 강화."
       ],
       [
         "OPEN은 어떻게 구매하나요?",
@@ -217,7 +217,7 @@
       ],
       [
         "상장까지 기다려야 하나요?",
-        "아니요. 프리세일이 열려 있습니다: 오늘 온체인으로 OpenAI, Inc. 실제 주식에 투자할 수 있습니다. OPI는 시장 이정표이지 프로토콜의 끝이 아닙니다 — OPI로 사이클이 끝나지 않습니다: 재무는 OpenAI, Inc. 주식(공개 및 비공개 시장)을 계속 구매하고, openChat, openAPI 등이 사용 수익을 창출하며, 수수료 30%가 OPEN 환매 및 소각에 지속적으로 사용됩니다."
+        "아니요. 프리세일이 열려 있습니다: 오늘 온체인으로 OpenAI, Inc. 실제 주식에 투자할 수 있습니다. OPI는 시장 이정표이지 프로토콜의 끝이 아닙니다 — OPI로 사이클이 끝나지 않습니다: 재무는 OpenAI, Inc. 주식(공개 및 비공개 시장)을 계속 구매하고, ChatGPT, OpenAI API 등이 사용 수익을 창출하며, 수수료 30%가 OPEN 환매 및 소각에 지속적으로 사용됩니다."
       ],
       [
         "OPEN은 어떻게, 언제 판매하나요?",
@@ -225,7 +225,7 @@
       ],
       [
         "OPEN과 상장 주식 구매의 차이는?",
-        "OPEN은 openAI Protocol 토큰: OpenAI, Inc. equity를 지속적으로 축적하는 재무에 참여하며, 온체인 유동성과 openAPI·open* 서비스가 자금 제공하는 프로그래밍 환매."
+        "OPEN은 openAI Protocol 토큰: OpenAI, Inc. equity를 지속적으로 축적하는 재무에 참여하며, 온체인 유동성과 OpenAI API·OpenAI 서비스 서비스가 자금 제공하는 프로그래밍 환매."
       ],
       [
         "OPEN 가격과 주식의 관계는?",
@@ -245,7 +245,7 @@
       ],
       [
         "OPI 이후에는?",
-        "OPI로 사이클이 끝나지 않습니다: 재무는 OpenAI, Inc. 주식(공개 및 비공개 시장)을 계속 구매하고, openChat, openAPI 등이 사용 수익을 창출하며, 수수료 30%가 OPEN 환매 및 소각에 지속적으로 사용됩니다. OPEN은 재무를 계속 반영: 더 많은 OpenAI, Inc. 주식, 더 많은 서비스 수익, 온체인 검증 가능한 환매."
+        "OPI로 사이클이 끝나지 않습니다: 재무는 OpenAI, Inc. 주식(공개 및 비공개 시장)을 계속 구매하고, ChatGPT, OpenAI API 등이 사용 수익을 창출하며, 수수료 30%가 OPEN 환매 및 소각에 지속적으로 사용됩니다. OPEN은 재무를 계속 반영: 더 많은 OpenAI, Inc. 주식, 더 많은 서비스 수익, 온체인 검증 가능한 환매."
       ]
     ],
     "tkSegs": [

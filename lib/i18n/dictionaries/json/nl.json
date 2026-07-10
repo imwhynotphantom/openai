@@ -46,7 +46,7 @@
     "chainUnsupported": "Je wallet ondersteunt het Base-netwerk niet. Voeg het handmatig toe of gebruik een andere wallet."
   },
   "legal": {
-    "marketingPitch": "OPEN is de on-chain route van het openAI Protocol: het kapitaal van holders wordt geïnvesteerd in echte aandelen van OpenAI, Inc. en in het open*-ecosysteem.",
+    "marketingPitch": "OPEN is de on-chain route van het openAI Protocol: het kapitaal van holders wordt geïnvesteerd in echte aandelen van OpenAI, Inc. en in het OpenAI-diensten-ecosysteem.",
     "affiliationNoticeSoft": "Met OPEN neem je deel aan de schatkist die investeert in echte aandelen van OpenAI, Inc. — on-chain, met liquiditeit en een flywheel die actief blijft na de OPI.",
     "affiliationLinkLabel": "Juridische transparantie",
     "affiliationDocTitle": "Merken en transparantie",
@@ -55,20 +55,20 @@
     "geoNotice": "Dienst gericht op toegestane jurisdicties. Controleer of het gebruik van crypto-activa in jouw land is toegestaan.",
     "geoEligibility": "Geschiktheid controleren",
     "footerDisclaimer": "openAI Protocol is een gedecentraliseerd ecosysteem. OpenAI, OpenAI, Inc. en gerelateerde merken behoren toe aan hun respectieve houders. Deze website vormt geen aanbod van effecten noch beleggingsadvies. Beleggen brengt risico's met zich mee.",
-    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice en openCode zijn producten van het openAI Protocol-ecosysteem. ChatGPT, DALL·E, Sora, Whisper en Codex zijn merken van OpenAI, Inc.",
+    "ecosystemDisclaimer": "ChatGPT, de OpenAI API, DALL·E, Sora, Whisper en Codex zijn producten van het openAI Protocol-ecosysteem. ChatGPT, DALL·E, Sora, Whisper en Codex zijn merken van OpenAI, Inc.",
     "suggestedTagline": "Investeer in echte aandelen van OpenAI, Inc. via de token OPEN.",
     "suggestedCta": "OPEN kopen",
     "heroHeadline": "Investeer in OPEN. Echte aandelen van OpenAI, Inc.",
-    "heroSubheadline": "Je kapitaal gaat naar de schatkist van het protocol om echte aandelen te kopen en open* te exploiteren. Elk gebruik van openAPI en de open*-diensten voedt terugkopen, burns en meer equity — zonder te stoppen bij de beursgang.",
+    "heroSubheadline": "Je kapitaal gaat naar de schatkist van het protocol om echte aandelen te kopen en OpenAI-diensten te exploiteren. Elk gebruik van de OpenAI API en de OpenAI-diensten-diensten voedt terugkopen, burns en meer equity — zonder te stoppen bij de beursgang.",
     "heroBadge": "Openbare presale · Permanente flywheel",
     "opiContext": "OPI gepland · september 2027 · marktmijlpaal; het protocol blijft aandelen accumuleren en OPEN terugkopen",
-    "postOpiFlywheel": "De OPI sluit de cyclus niet: de schatkist blijft aandelen van OpenAI, Inc. kopen (publieke en private markt), openChat, openAPI en de overige diensten genereren gebruiksinkomsten, en 30% van die commissies wordt continu bestemd om OPEN terug te kopen en te verbranden.",
-    "equityMicro": "De schatkist accumuleert echte aandelen van OpenAI, Inc. vóór en na de OPI; de inkomsten van open* financieren meer equity en terugkoop van OPEN.",
-    "ecosystemTitle": "Een token dat investeert in echte aandelen. Het hele open*-ecosysteem.",
-    "ecosystemLead": "De schatkist verworft equity van OpenAI, Inc. en exploiteert openChat, openAPI en de overige producten. Meer API- en dienstgebruik, meer inkomsten, meer aandelen in de schatkist en meer vraag naar OPEN.",
+    "postOpiFlywheel": "De OPI sluit de cyclus niet: de schatkist blijft aandelen van OpenAI, Inc. kopen (publieke en private markt), ChatGPT, de OpenAI API en de overige diensten genereren gebruiksinkomsten, en 30% van die commissies wordt continu bestemd om OPEN terug te kopen en te verbranden.",
+    "equityMicro": "De schatkist accumuleert echte aandelen van OpenAI, Inc. vóór en na de OPI; de inkomsten van OpenAI-diensten financieren meer equity en terugkoop van OPEN.",
+    "ecosystemTitle": "Een token dat investeert in echte aandelen. Het hele OpenAI-diensten-ecosysteem.",
+    "ecosystemLead": "De schatkist verworft equity van OpenAI, Inc. en exploiteert ChatGPT, de OpenAI API en de overige producten. Meer API- en dienstgebruik, meer inkomsten, meer aandelen in de schatkist en meer vraag naar OPEN.",
     "valueTitle": "Echte aandelen + ecosysteeminkomsten — voor altijd",
-    "valueLead": "De schatkist accumuleert aandelen van OpenAI, Inc. terwijl open* terugkerende commissies genereert. 30% koopt OPEN terug en verbrandt het; de rest versterkt de aandelenpositie en de groei van het ecosysteem.",
-    "tokenNatureParagraph": "OPEN geeft je deelname aan de schatkist van het openAI Protocol, die echte aandelen van OpenAI, Inc. koopt en bewaart en het open*-ecosysteem exploiteert. Toegang on-chain vandaag; na de OPI blijft de schatkist aandelen accumuleren en OPEN terugkopen met de inkomsten van openAPI en de open*-diensten.",
+    "valueLead": "De schatkist accumuleert aandelen van OpenAI, Inc. terwijl OpenAI-diensten terugkerende commissies genereert. 30% koopt OPEN terug en verbrandt het; de rest versterkt de aandelenpositie en de groei van het ecosysteem.",
+    "tokenNatureParagraph": "OPEN geeft je deelname aan de schatkist van het openAI Protocol, die echte aandelen van OpenAI, Inc. koopt en bewaart en het OpenAI-diensten-ecosysteem exploiteert. Toegang on-chain vandaag; na de OPI blijft de schatkist aandelen accumuleren en OPEN terugkopen met de inkomsten van de OpenAI API en de OpenAI-diensten-diensten.",
     "tokenNatureLegal": "OPEN neemt deel aan de schatkist van het protocol met blootstelling aan OpenAI, Inc.; de marktprijs kan afwijken van de NAV.",
     "consentPrefix": "Ik heb gelezen en accepteer de",
     "consentTerms": "Voorwaarden",
@@ -151,11 +151,11 @@
       },
       {
         "title": "Permanente flywheel",
-        "desc": "Toegang on-chain vandaag. Na de OPI blijft de schatkist aandelen accumuleren en OPEN verbranden bij elk gebruik van openAPI en de open*-diensten."
+        "desc": "Toegang on-chain vandaag. Na de OPI blijft de schatkist aandelen accumuleren en OPEN verbranden bij elk gebruik van de OpenAI API en de OpenAI-diensten-diensten."
       },
       {
-        "title": "Inkomsten van het open*-ecosysteem",
-        "desc": "openChat, openAPI en de overige producten genereren commissies; 30% koopt OPEN terug en verbrandt het."
+        "title": "Inkomsten van het OpenAI-diensten-ecosysteem",
+        "desc": "ChatGPT, de OpenAI API en de overige producten genereren commissies; 30% koopt OPEN terug en verbrandt het."
       }
     ],
     "steps": [
@@ -201,11 +201,11 @@
     "faq": [
       [
         "Wat is OPEN en wat doet het met mijn kapitaal?",
-        "OPEN is de on-chain route van het openAI Protocol: het kapitaal van holders wordt geïnvesteerd in echte aandelen van OpenAI, Inc. en in het open*-ecosysteem. OPEN geeft je deelname aan de schatkist van het openAI Protocol, die echte aandelen van OpenAI, Inc. koopt en bewaart en het open*-ecosysteem exploiteert. Toegang on-chain vandaag; na de OPI blijft de schatkist aandelen accumuleren en OPEN terugkopen met de inkomsten van openAPI en de open*-diensten."
+        "OPEN is de on-chain route van het openAI Protocol: het kapitaal van holders wordt geïnvesteerd in echte aandelen van OpenAI, Inc. en in het OpenAI-diensten-ecosysteem. OPEN geeft je deelname aan de schatkist van het openAI Protocol, die echte aandelen van OpenAI, Inc. koopt en bewaart en het OpenAI-diensten-ecosysteem exploiteert. Toegang on-chain vandaag; na de OPI blijft de schatkist aandelen accumuleren en OPEN terugkopen met de inkomsten van de OpenAI API en de OpenAI-diensten-diensten."
       ],
       [
         "Hoe wordt er geïnvesteerd in OpenAI, Inc.?",
-        "De schatkist bestemt het kapitaal voor de aankoop van echte aandelen van OpenAI, Inc. via SPV — vóór en na de OPI. Parallel exploiteert het openChat, openAPI en de overige open*-diensten; 30% van hun commissies koopt OPEN terug en verbrandt het, en de rest versterkt de accumulatie van aandelen."
+        "De schatkist bestemt het kapitaal voor de aankoop van echte aandelen van OpenAI, Inc. via SPV — vóór en na de OPI. Parallel exploiteert het ChatGPT, de OpenAI API en de overige OpenAI-diensten-diensten; 30% van hun commissies koopt OPEN terug en verbrandt het, en de rest versterkt de accumulatie van aandelen."
       ],
       [
         "Hoe koop ik OPEN?",
@@ -217,7 +217,7 @@
       ],
       [
         "Moet ik wachten op de beursgang om te investeren?",
-        "Nee. De presale is open: je investeert vandaag on-chain in echte aandelen van OpenAI, Inc. De OPI is een marktmijlpaal, niet het einde van het protocol — De OPI sluit de cyclus niet: de schatkist blijft aandelen van OpenAI, Inc. kopen (publieke en private markt), openChat, openAPI en de overige diensten genereren gebruiksinkomsten, en 30% van die commissies wordt continu bestemd om OPEN terug te kopen en te verbranden."
+        "Nee. De presale is open: je investeert vandaag on-chain in echte aandelen van OpenAI, Inc. De OPI is een marktmijlpaal, niet het einde van het protocol — De OPI sluit de cyclus niet: de schatkist blijft aandelen van OpenAI, Inc. kopen (publieke en private markt), ChatGPT, de OpenAI API en de overige diensten genereren gebruiksinkomsten, en 30% van die commissies wordt continu bestemd om OPEN terug te kopen en te verbranden."
       ],
       [
         "Hoe en wanneer kan ik mijn OPEN verkopen?",
@@ -225,7 +225,7 @@
       ],
       [
         "Hoe verschilt OPEN van het kopen van het aandeel op de beurs?",
-        "OPEN is de token van het openAI Protocol: je neemt deel aan de schatkist die continu equity van OpenAI, Inc. accumuleert, met on-chain liquiditeit en programmatische terugkoop gefinancierd door openAPI en de open*-diensten."
+        "OPEN is de token van het openAI Protocol: je neemt deel aan de schatkist die continu equity van OpenAI, Inc. accumuleert, met on-chain liquiditeit en programmatische terugkoop gefinancierd door de OpenAI API en de OpenAI-diensten-diensten."
       ],
       [
         "Hoe verhoudt de prijs van OPEN zich tot de aandelen?",
@@ -245,7 +245,7 @@
       ],
       [
         "Wat gebeurt er na de OPI?",
-        "De OPI sluit de cyclus niet: de schatkist blijft aandelen van OpenAI, Inc. kopen (publieke en private markt), openChat, openAPI en de overige diensten genereren gebruiksinkomsten, en 30% van die commissies wordt continu bestemd om OPEN terug te kopen en te verbranden. OPEN blijft de schatkist weerspiegelen: meer aandelen van OpenAI, Inc., meer dienstinkomsten en verifieerbare terugkopen on-chain."
+        "De OPI sluit de cyclus niet: de schatkist blijft aandelen van OpenAI, Inc. kopen (publieke en private markt), ChatGPT, de OpenAI API en de overige diensten genereren gebruiksinkomsten, en 30% van die commissies wordt continu bestemd om OPEN terug te kopen en te verbranden. OPEN blijft de schatkist weerspiegelen: meer aandelen van OpenAI, Inc., meer dienstinkomsten en verifieerbare terugkopen on-chain."
       ]
     ],
     "tkSegs": [

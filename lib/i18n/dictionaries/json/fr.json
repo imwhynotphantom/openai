@@ -46,7 +46,7 @@
     "chainUnsupported": "Votre wallet ne prend pas en charge le réseau Base. Ajoutez-le manuellement ou utilisez un autre wallet."
   },
   "legal": {
-    "marketingPitch": "OPEN est la voie on-chain du openAI Protocol : le capital des détenteurs est investi dans de vraies actions d'OpenAI, Inc. et dans l'écosystème open*.",
+    "marketingPitch": "OPEN est la voie on-chain du openAI Protocol : le capital des détenteurs est investi dans de vraies actions d'OpenAI, Inc. et dans l'écosystème de services OpenAI.",
     "affiliationNoticeSoft": "Avec OPEN, vous participez à la trésorerie qui investit dans de vraies actions d'OpenAI, Inc. — on-chain, avec liquidité et un flywheel qui reste actif après l'OPI.",
     "affiliationLinkLabel": "Transparence juridique",
     "affiliationDocTitle": "Marques et transparence",
@@ -55,20 +55,20 @@
     "geoNotice": "Service destiné aux juridictions autorisées. Vérifiez que l'utilisation des crypto-actifs est autorisée dans votre pays.",
     "geoEligibility": "Vérifier l'éligibilité",
     "footerDisclaimer": "openAI Protocol est un écosystème décentralisé. OpenAI, OpenAI, Inc. et les marques associées appartiennent à leurs titulaires respectifs. Ce site ne constitue pas une offre de valeurs mobilières ni un conseil en investissement. Investir comporte des risques.",
-    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice et openCode sont des produits de l'écosystème openAI Protocol. ChatGPT, DALL·E, Sora, Whisper et Codex sont des marques d'OpenAI, Inc.",
+    "ecosystemDisclaimer": "ChatGPT, DALL·E, Sora, Whisper, Codex et l'API OpenAI sont des marques et services d'OpenAI, Inc. openAI Protocol est un écosystème indépendant.",
     "suggestedTagline": "Investissez dans de vraies actions d'OpenAI, Inc. via le token OPEN.",
     "suggestedCta": "Acheter OPEN",
     "heroHeadline": "Investissez dans OPEN. De vraies actions d'OpenAI, Inc.",
-    "heroSubheadline": "Votre capital entre dans la trésorerie du protocole pour acheter de vraies actions et exploiter open*. Chaque utilisation d'openAPI et des services open* alimente les rachats, les burns et plus d'equity — sans s'arrêter à l'OPI.",
+    "heroSubheadline": "Votre capital entre dans la trésorerie du protocole pour acheter de vraies actions et exploiter services OpenAI. Chaque utilisation d'l'API OpenAI et des services services OpenAI alimente les rachats, les burns et plus d'equity — sans s'arrêter à l'OPI.",
     "heroBadge": "Prévente ouverte · Flywheel permanent",
     "opiContext": "OPI prévue · septembre 2027 · jalon de marché ; le protocole continue d'accumuler des actions et de racheter OPEN",
-    "postOpiFlywheel": "L'OPI ne clôt pas le cycle : la trésorerie continue d'acheter des actions d'OpenAI, Inc. (marché public et privé), openChat, openAPI et le reste des services génèrent des revenus d'utilisation, et 30 % de ces frais sont continuellement alloués au rachat et au burn de OPEN.",
-    "equityMicro": "La trésorerie accumule de vraies actions d'OpenAI, Inc. avant et après l'OPI ; les revenus d'open* financent plus d'equity et le rachat de OPEN.",
-    "ecosystemTitle": "Un token qui investit dans de vraies actions. Tout l'écosystème open*.",
-    "ecosystemLead": "La trésorerie acquiert de l'equity d'OpenAI, Inc. et exploite openChat, openAPI et le reste des produits. Plus d'utilisation de l'API et des services, plus de revenus, plus d'actions en trésorerie et plus de demande sur OPEN.",
+    "postOpiFlywheel": "L'OPI ne clôt pas le cycle : la trésorerie continue d'acheter des actions d'OpenAI, Inc. (marché public et privé), ChatGPT, l'API OpenAI et le reste des services génèrent des revenus d'utilisation, et 30 % de ces frais sont continuellement alloués au rachat et au burn de OPEN.",
+    "equityMicro": "La trésorerie accumule de vraies actions d'OpenAI, Inc. avant et après l'OPI ; les revenus d'services OpenAI financent plus d'equity et le rachat de OPEN.",
+    "ecosystemTitle": "Un token qui investit dans de vraies actions. Tout l'écosystème de services OpenAI.",
+    "ecosystemLead": "La trésorerie acquiert de l'equity d'OpenAI, Inc. et exploite ChatGPT, l'API OpenAI et le reste des produits. Plus d'utilisation de l'API et des services, plus de revenus, plus d'actions en trésorerie et plus de demande sur OPEN.",
     "valueTitle": "Vraies actions + revenus de l'écosystème — pour toujours",
-    "valueLead": "La trésorerie accumule des actions d'OpenAI, Inc. tandis qu'open* génère des frais récurrents. 30 % rachètent et brûlent OPEN ; le reste renforce la position en actions et la croissance de l'écosystème.",
-    "tokenNatureParagraph": "OPEN vous donne une participation dans la trésorerie du openAI Protocol, qui achète et détient de vraies actions d'OpenAI, Inc. et exploite l'écosystème open*. Accédez on-chain aujourd'hui ; après l'OPI, la trésorerie continue d'accumuler des actions et de racheter OPEN avec les revenus d'openAPI et des services open*.",
+    "valueLead": "La trésorerie accumule des actions d'OpenAI, Inc. tandis qu'services OpenAI génère des frais récurrents. 30 % rachètent et brûlent OPEN ; le reste renforce la position en actions et la croissance de l'écosystème.",
+    "tokenNatureParagraph": "OPEN vous donne une participation dans la trésorerie du openAI Protocol, qui achète et détient de vraies actions d'OpenAI, Inc. et exploite l'écosystème de services OpenAI. Accédez on-chain aujourd'hui ; après l'OPI, la trésorerie continue d'accumuler des actions et de racheter OPEN avec les revenus d'l'API OpenAI et des services services OpenAI.",
     "tokenNatureLegal": "OPEN participe à la trésorerie du protocole avec une exposition à OpenAI, Inc. ; le prix de marché peut varier par rapport au NAV.",
     "consentPrefix": "J'ai lu et j'accepte les",
     "consentTerms": "Conditions",
@@ -151,11 +151,11 @@
       },
       {
         "title": "Flywheel permanent",
-        "desc": "Accédez on-chain aujourd'hui. Après l'OPI, la trésorerie continue d'accumuler des actions et de brûler OPEN à chaque utilisation d'openAPI et des services open*."
+        "desc": "Accédez on-chain aujourd'hui. Après l'OPI, la trésorerie continue d'accumuler des actions et de brûler OPEN à chaque utilisation d'l'API OpenAI et des services services OpenAI."
       },
       {
-        "title": "Revenus de l'écosystème open*",
-        "desc": "openChat, openAPI et le reste des produits génèrent des frais ; 30 % rachètent et brûlent OPEN."
+        "title": "Revenus de l'écosystème de services OpenAI",
+        "desc": "ChatGPT, l'API OpenAI et le reste des produits génèrent des frais ; 30 % rachètent et brûlent OPEN."
       }
     ],
     "steps": [
@@ -201,11 +201,11 @@
     "faq": [
       [
         "Qu'est-ce qu'OPEN et que fait-il avec mon capital ?",
-        "OPEN est la voie on-chain du openAI Protocol : le capital des détenteurs est investi dans de vraies actions d'OpenAI, Inc. et dans l'écosystème open*. OPEN vous donne une participation dans la trésorerie du openAI Protocol, qui achète et détient de vraies actions d'OpenAI, Inc. et exploite l'écosystème open*. Accédez on-chain aujourd'hui ; après l'OPI, la trésorerie continue d'accumuler des actions et de racheter OPEN avec les revenus d'openAPI et des services open*."
+        "OPEN est la voie on-chain du openAI Protocol : le capital des détenteurs est investi dans de vraies actions d'OpenAI, Inc. et dans l'écosystème de services OpenAI. OPEN vous donne une participation dans la trésorerie du openAI Protocol, qui achète et détient de vraies actions d'OpenAI, Inc. et exploite l'écosystème de services OpenAI. Accédez on-chain aujourd'hui ; après l'OPI, la trésorerie continue d'accumuler des actions et de racheter OPEN avec les revenus d'l'API OpenAI et des services services OpenAI."
       ],
       [
         "Comment investit-on dans OpenAI, Inc. ?",
-        "La trésorerie alloue le capital à l'achat de vraies actions d'OpenAI, Inc. via SPV — avant et après l'OPI. En parallèle, elle exploite openChat, openAPI et le reste des services open* ; 30 % de leurs frais rachètent et brûlent OPEN, et le reste renforce l'accumulation d'actions."
+        "La trésorerie alloue le capital à l'achat de vraies actions d'OpenAI, Inc. via SPV — avant et après l'OPI. En parallèle, elle exploite ChatGPT, l'API OpenAI et le reste des services services OpenAI ; 30 % de leurs frais rachètent et brûlent OPEN, et le reste renforce l'accumulation d'actions."
       ],
       [
         "Comment acheter OPEN ?",
@@ -217,7 +217,7 @@
       ],
       [
         "Dois-je attendre l'introduction en bourse pour investir ?",
-        "Non. La prévente est ouverte : vous investissez aujourd'hui on-chain dans de vraies actions d'OpenAI, Inc. L'OPI est un jalon de marché, pas la fin du protocole — L'OPI ne clôt pas le cycle : la trésorerie continue d'acheter des actions d'OpenAI, Inc. (marché public et privé), openChat, openAPI et le reste des services génèrent des revenus d'utilisation, et 30 % de ces frais sont continuellement alloués au rachat et au burn de OPEN."
+        "Non. La prévente est ouverte : vous investissez aujourd'hui on-chain dans de vraies actions d'OpenAI, Inc. L'OPI est un jalon de marché, pas la fin du protocole — L'OPI ne clôt pas le cycle : la trésorerie continue d'acheter des actions d'OpenAI, Inc. (marché public et privé), ChatGPT, l'API OpenAI et le reste des services génèrent des revenus d'utilisation, et 30 % de ces frais sont continuellement alloués au rachat et au burn de OPEN."
       ],
       [
         "Comment et quand puis-je vendre mes OPEN ?",
@@ -225,7 +225,7 @@
       ],
       [
         "En quoi OPEN diffère-t-il de l'achat de l'action en bourse ?",
-        "OPEN est le token du openAI Protocol : vous participez à la trésorerie qui accumule continuellement de l'equity d'OpenAI, Inc., avec liquidité on-chain et rachat programmatique financé par openAPI et les services open*."
+        "OPEN est le token du openAI Protocol : vous participez à la trésorerie qui accumule continuellement de l'equity d'OpenAI, Inc., avec liquidité on-chain et rachat programmatique financé par l'API OpenAI et les services OpenAI."
       ],
       [
         "Comment le prix d'OPEN est-il lié aux actions ?",
@@ -245,7 +245,7 @@
       ],
       [
         "Que se passe-t-il après l'OPI ?",
-        "L'OPI ne clôt pas le cycle : la trésorerie continue d'acheter des actions d'OpenAI, Inc. (marché public et privé), openChat, openAPI et le reste des services génèrent des revenus d'utilisation, et 30 % de ces frais sont continuellement alloués au rachat et au burn de OPEN. OPEN continue de refléter la trésorerie : plus d'actions d'OpenAI, Inc., plus de revenus de services et des rachats vérifiables on-chain."
+        "L'OPI ne clôt pas le cycle : la trésorerie continue d'acheter des actions d'OpenAI, Inc. (marché public et privé), ChatGPT, l'API OpenAI et le reste des services génèrent des revenus d'utilisation, et 30 % de ces frais sont continuellement alloués au rachat et au burn de OPEN. OPEN continue de refléter la trésorerie : plus d'actions d'OpenAI, Inc., plus de revenus de services et des rachats vérifiables on-chain."
       ]
     ],
     "tkSegs": [

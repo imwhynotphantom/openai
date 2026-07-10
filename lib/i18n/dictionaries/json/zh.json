@@ -46,7 +46,7 @@
     "chainUnsupported": "您的钱包不支持 Base 网络。请手动添加或使用其他钱包。"
   },
   "legal": {
-    "marketingPitch": "OPEN 是 openAI Protocol 的链上通道：持有者资金投资于 OpenAI, Inc. 真实股权及 open* 生态系统。",
+    "marketingPitch": "OPEN 是 openAI Protocol 的链上通道：持有者资金投资于 OpenAI, Inc. 真实股权及 OpenAI 服务生态系统。",
     "affiliationNoticeSoft": "通过 OPEN，您参与投资 OpenAI, Inc. 真实股权的国库——链上、有流动性，且 OPI 后 flywheel 持续运转。",
     "affiliationLinkLabel": "法律透明度",
     "affiliationDocTitle": "商标与透明度",
@@ -55,20 +55,20 @@
     "geoNotice": "服务面向允许的司法管辖区。请确认您所在国家/地区允许使用加密资产。",
     "geoEligibility": "查看资格",
     "footerDisclaimer": "openAI Protocol 是一个去中心化生态系统。OpenAI、OpenAI, Inc. 及相关商标归其各自所有者所有。本网站不构成证券要约或投资建议。投资有风险。",
-    "ecosystemDisclaimer": "openChat、openAPI、openImage、openMotion、openVoice 和 openCode 是 openAI Protocol 生态系统的产品。ChatGPT、DALL·E、Sora、Whisper 和 Codex 是 OpenAI, Inc. 的商标。",
+    "ecosystemDisclaimer": "ChatGPT、DALL·E、Sora、Whisper、Codex 和 OpenAI API 是 OpenAI, Inc. 的商标和服务。openAI Protocol 是独立的生态系统。",
     "suggestedTagline": "通过 OPEN 代币投资 OpenAI, Inc. 真实股权。",
     "suggestedCta": "购买 OPEN",
     "heroHeadline": "投资 OPEN。OpenAI, Inc. 真实股权。",
-    "heroSubheadline": "您的资金进入协议国库，用于购买真实股权并运营 open*。每次 openAPI 及 open* 服务的使用都会推动回购、销毁和更多股权——上市也不会停止。",
+    "heroSubheadline": "您的资金进入协议国库，用于购买真实股权并运营 OpenAI 服务。每次 OpenAI API 及 OpenAI 服务 服务的使用都会推动回购、销毁和更多股权——上市也不会停止。",
     "heroBadge": "公开预售 · 永久 Flywheel",
     "opiContext": "预计 OPI · 2027 年 9 月 · 市场里程碑；协议持续积累股权并回购 OPEN",
-    "postOpiFlywheel": "OPI 不会结束循环：国库继续购买 OpenAI, Inc. 股权（公开和私人市场），openChat、openAPI 及其他服务产生使用收入，其中 30% 持续用于回购并销毁 OPEN。",
-    "equityMicro": "国库在 OPI 前后积累 OpenAI, Inc. 真实股权；open* 收入为更多股权和 OPEN 回购提供资金。",
-    "ecosystemTitle": "投资真实股权的代币。整个 open* 生态系统。",
-    "ecosystemLead": "国库收购 OpenAI, Inc. 股权并运营 openChat、openAPI 及其他产品。API 和服务使用越多，收入越多，国库股权越多，对 OPEN 的需求越大。",
+    "postOpiFlywheel": "OPI 不会结束循环：国库继续购买 OpenAI, Inc. 股权（公开和私人市场），ChatGPT、OpenAI API 及其他服务产生使用收入，其中 30% 持续用于回购并销毁 OPEN。",
+    "equityMicro": "国库在 OPI 前后积累 OpenAI, Inc. 真实股权；OpenAI 服务 收入为更多股权和 OPEN 回购提供资金。",
+    "ecosystemTitle": "投资真实股权的代币。整个 OpenAI 服务生态系统。",
+    "ecosystemLead": "国库收购 OpenAI, Inc. 股权并运营 ChatGPT、OpenAI API 及其他产品。API 和服务使用越多，收入越多，国库股权越多，对 OPEN 的需求越大。",
     "valueTitle": "真实股权 + 生态系统收入 — 永久持续",
-    "valueLead": "国库积累 OpenAI, Inc. 股权，同时 open* 产生持续手续费。30% 用于回购并销毁 OPEN；其余用于加强股权持仓和生态系统增长。",
-    "tokenNatureParagraph": "OPEN 让您参与 openAI Protocol 国库，该国库购买并托管 OpenAI, Inc. 真实股权，并运营 open* 生态系统。今日链上访问；OPI 后，国库继续积累股权，并用 openAPI 及 open* 服务收入回购 OPEN。",
+    "valueLead": "国库积累 OpenAI, Inc. 股权，同时 OpenAI 服务 产生持续手续费。30% 用于回购并销毁 OPEN；其余用于加强股权持仓和生态系统增长。",
+    "tokenNatureParagraph": "OPEN 让您参与 openAI Protocol 国库，该国库购买并托管 OpenAI, Inc. 真实股权，并运营 OpenAI 服务生态系统。今日链上访问；OPI 后，国库继续积累股权，并用 OpenAI API 及 OpenAI 服务 服务收入回购 OPEN。",
     "tokenNatureLegal": "OPEN 参与协议国库，暴露于 OpenAI, Inc.；市场价格可能与 NAV 不同。",
     "consentPrefix": "我已阅读并同意",
     "consentTerms": "条款",
@@ -151,11 +151,11 @@
       },
       {
         "title": "永久 Flywheel",
-        "desc": "今日链上访问。OPI 后，国库继续积累股权，每次 openAPI 及 open* 服务使用都会销毁 OPEN。"
+        "desc": "今日链上访问。OPI 后，国库继续积累股权，每次 OpenAI API 及 OpenAI 服务 服务使用都会销毁 OPEN。"
       },
       {
-        "title": "open* 生态系统收入",
-        "desc": "openChat、openAPI 及其他产品产生手续费；30% 用于回购并销毁 OPEN。"
+        "title": "OpenAI 服务生态系统收入",
+        "desc": "ChatGPT、OpenAI API 及其他产品产生手续费；30% 用于回购并销毁 OPEN。"
       }
     ],
     "steps": [
@@ -201,11 +201,11 @@
     "faq": [
       [
         "什么是 OPEN？我的资金用来做什么？",
-        "OPEN 是 openAI Protocol 的链上通道：持有者资金投资于 OpenAI, Inc. 真实股权及 open* 生态系统。OPEN 让您参与 openAI Protocol 国库，该国库购买并托管 OpenAI, Inc. 真实股权，并运营 open* 生态系统。今日链上访问；OPI 后，国库继续积累股权，并用 openAPI 及 open* 服务收入回购 OPEN。"
+        "OPEN 是 openAI Protocol 的链上通道：持有者资金投资于 OpenAI, Inc. 真实股权及 OpenAI 服务生态系统。OPEN 让您参与 openAI Protocol 国库，该国库购买并托管 OpenAI, Inc. 真实股权，并运营 OpenAI 服务生态系统。今日链上访问；OPI 后，国库继续积累股权，并用 OpenAI API 及 OpenAI 服务 服务收入回购 OPEN。"
       ],
       [
         "如何投资 OpenAI, Inc.？",
-        "国库通过 SPV 将资金用于购买 OpenAI, Inc. 真实股权——OPI 前后均如此。同时运营 openChat、openAPI 及其他 open* 服务；30% 手续费用于回购并销毁 OPEN，其余用于加强股权积累。"
+        "国库通过 SPV 将资金用于购买 OpenAI, Inc. 真实股权——OPI 前后均如此。同时运营 ChatGPT、OpenAI API 及其他 OpenAI 服务 服务；30% 手续费用于回购并销毁 OPEN，其余用于加强股权积累。"
       ],
       [
         "如何购买 OPEN？",
@@ -217,7 +217,7 @@
       ],
       [
         "需要等到上市才能投资吗？",
-        "不需要。预售已开放：您今日即可链上投资 OpenAI, Inc. 真实股权。OPI 是市场里程碑，不是协议终点——OPI 不会结束循环：国库继续购买 OpenAI, Inc. 股权（公开和私人市场），openChat、openAPI 及其他服务产生使用收入，其中 30% 持续用于回购并销毁 OPEN。"
+        "不需要。预售已开放：您今日即可链上投资 OpenAI, Inc. 真实股权。OPI 是市场里程碑，不是协议终点——OPI 不会结束循环：国库继续购买 OpenAI, Inc. 股权（公开和私人市场），ChatGPT、OpenAI API 及其他服务产生使用收入，其中 30% 持续用于回购并销毁 OPEN。"
       ],
       [
         "如何及何时出售 OPEN？",
@@ -225,7 +225,7 @@
       ],
       [
         "OPEN 与购买上市股票有何不同？",
-        "OPEN 是 openAI Protocol 的代币：您参与持续积累 OpenAI, Inc. 股权的国库，具有链上流动性和由 openAPI 及 open* 服务资助的程序化回购。"
+        "OPEN 是 openAI Protocol 的代币：您参与持续积累 OpenAI, Inc. 股权的国库，具有链上流动性和由 OpenAI API 及 OpenAI 服务 服务资助的程序化回购。"
       ],
       [
         "OPEN 价格与股权如何关联？",
@@ -245,7 +245,7 @@
       ],
       [
         "OPI 之后会怎样？",
-        "OPI 不会结束循环：国库继续购买 OpenAI, Inc. 股权（公开和私人市场），openChat、openAPI 及其他服务产生使用收入，其中 30% 持续用于回购并销毁 OPEN。OPEN 继续反映国库：更多 OpenAI, Inc. 股权、更多服务收入和链上可验证的回购。"
+        "OPI 不会结束循环：国库继续购买 OpenAI, Inc. 股权（公开和私人市场），ChatGPT、OpenAI API 及其他服务产生使用收入，其中 30% 持续用于回购并销毁 OPEN。OPEN 继续反映国库：更多 OpenAI, Inc. 股权、更多服务收入和链上可验证的回购。"
       ]
     ],
     "tkSegs": [

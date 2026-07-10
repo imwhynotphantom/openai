@@ -46,7 +46,7 @@
     "chainUnsupported": "ウォレットが Base ネットワークに対応していません。手動で追加するか、別のウォレットをご利用ください。"
   },
   "legal": {
-    "marketingPitch": "OPEN は openAI Protocol のオンチェーン経路：ホルダーの資本は OpenAI, Inc. の実株式と open* エコシステムに投資されます。",
+    "marketingPitch": "OPEN は openAI Protocol のオンチェーン経路：ホルダーの資本は OpenAI, Inc. の実株式と OpenAI サービスエコシステムに投資されます。",
     "affiliationNoticeSoft": "OPEN で、OpenAI, Inc. の実株式に投資するトレジャリーに参加 — オンチェーン、流動性あり、OPI 後も flywheel は継続。",
     "affiliationLinkLabel": "法的透明性",
     "affiliationDocTitle": "商標と透明性",
@@ -55,20 +55,20 @@
     "geoNotice": "許可された管轄区域向けのサービスです。お住まいの国で暗号資産の利用が許可されているかご確認ください。",
     "geoEligibility": "適格性を確認",
     "footerDisclaimer": "openAI Protocol は分散型エコシステムです。OpenAI、OpenAI, Inc. および関連商標は各権利者に帰属します。本サイトは有価証券の募集や投資助言を構成しません。投資にはリスクが伴います。",
-    "ecosystemDisclaimer": "openChat、openAPI、openImage、openMotion、openVoice、openCode は openAI Protocol エコシステムの製品です。ChatGPT、DALL·E、Sora、Whisper、Codex は OpenAI, Inc. の商標です。",
+    "ecosystemDisclaimer": "ChatGPT、DALL·E、Sora、Whisper、Codex、OpenAI API は OpenAI, Inc. の商標およびサービスです。openAI Protocol は独立したエコシステムです。",
     "suggestedTagline": "OPEN トークンで OpenAI, Inc. の実株式に投資。",
     "suggestedCta": "OPEN を購入",
     "heroHeadline": "OPEN に投資。OpenAI, Inc. の実株式。",
-    "heroSubheadline": "資本はプロトコルのトレジャリーに入り、実株式の購入と open* の運営に使われます。openAPI と open* サービスの利用ごとに、買い戻し、バーン、さらなる equity — 上場後も止まりません。",
+    "heroSubheadline": "資本はプロトコルのトレジャリーに入り、実株式の購入と OpenAI サービス の運営に使われます。OpenAI API と OpenAI サービスの利用ごとに、買い戻し、バーン、さらなる equity — 上場後も止まりません。",
     "heroBadge": "公開プレセール · 永続 Flywheel",
     "opiContext": "OPI 予定 · 2027年9月 · 市場マイルストーン；プロトコルは株式を蓄積し OPEN を買い戻し続けます",
-    "postOpiFlywheel": "OPI でサイクルは終わりません：トレジャリーは OpenAI, Inc. の株式（公開・非公開市場）を買い続け、openChat、openAPI などのサービスが利用収益を生み、その手数料の 30% が OPEN の買い戻しとバーンに継続的に充てられます。",
-    "equityMicro": "トレジャリーは OPI 前後で OpenAI, Inc. の実株式を蓄積；open* の収益がさらなる equity と OPEN 買い戻しに資金を提供。",
-    "ecosystemTitle": "実株式に投資するトークン。open* エコシステム全体。",
-    "ecosystemLead": "トレジャリーは OpenAI, Inc. の equity を取得し、openChat、openAPI などを運営。API とサービスの利用が増えるほど、収益、トレジャリーの株式、OPEN への需要が増加。",
+    "postOpiFlywheel": "OPI でサイクルは終わりません：トレジャリーは OpenAI, Inc. の株式（公開・非公開市場）を買い続け、ChatGPT、OpenAI API などのサービスが利用収益を生み、その手数料の 30% が OPEN の買い戻しとバーンに継続的に充てられます。",
+    "equityMicro": "トレジャリーは OPI 前後で OpenAI, Inc. の実株式を蓄積；OpenAI サービス の収益がさらなる equity と OPEN 買い戻しに資金を提供。",
+    "ecosystemTitle": "実株式に投資するトークン。OpenAI サービスエコシステム全体。",
+    "ecosystemLead": "トレジャリーは OpenAI, Inc. の equity を取得し、ChatGPT、OpenAI API などを運営。API とサービスの利用が増えるほど、収益、トレジャリーの株式、OPEN への需要が増加。",
     "valueTitle": "実株式 + エコシステム収益 — 永続的に",
-    "valueLead": "トレジャリーは OpenAI, Inc. の株式を蓄積し、open* は継続的な手数料を生み出します。30% が OPEN の買い戻しとバーンに；残りは株式ポジションとエコシステム成長を強化。",
-    "tokenNatureParagraph": "OPEN は openAI Protocol のトレジャリーへの参加を提供し、OpenAI, Inc. の実株式を購入・保管し、open* エコシステムを運営します。今日オンチェーンでアクセス；OPI 後もトレジャリーは株式を蓄積し、openAPI と open* サービスの収益で OPEN を買い戻します。",
+    "valueLead": "トレジャリーは OpenAI, Inc. の株式を蓄積し、OpenAI サービス は継続的な手数料を生み出します。30% が OPEN の買い戻しとバーンに；残りは株式ポジションとエコシステム成長を強化。",
+    "tokenNatureParagraph": "OPEN は openAI Protocol のトレジャリーへの参加を提供し、OpenAI, Inc. の実株式を購入・保管し、OpenAI サービスエコシステムを運営します。今日オンチェーンでアクセス；OPI 後もトレジャリーは株式を蓄積し、OpenAI API と OpenAI サービスの収益で OPEN を買い戻します。",
     "tokenNatureLegal": "OPEN は OpenAI, Inc. へのエクスポージャーを持つプロトコルトレジャリーに参加；市場価格は NAV と異なる場合があります。",
     "consentPrefix": "以下に同意しました：",
     "consentTerms": "利用規約",
@@ -151,11 +151,11 @@
       },
       {
         "title": "永続 Flywheel",
-        "desc": "今日オンチェーンでアクセス。OPI 後もトレジャリーは株式を蓄積し、openAPI と open* サービスの利用ごとに OPEN をバーン。"
+        "desc": "今日オンチェーンでアクセス。OPI 後もトレジャリーは株式を蓄積し、OpenAI API と OpenAI サービスの利用ごとに OPEN をバーン。"
       },
       {
-        "title": "open* エコシステム収益",
-        "desc": "openChat、openAPI などが手数料を生み出し；30% が OPEN の買い戻しとバーンに。"
+        "title": "OpenAI サービスエコシステム収益",
+        "desc": "ChatGPT、OpenAI API などが手数料を生み出し；30% が OPEN の買い戻しとバーンに。"
       }
     ],
     "steps": [
@@ -201,11 +201,11 @@
     "faq": [
       [
         "OPEN とは何ですか？私の資本は何に使われますか？",
-        "OPEN は openAI Protocol のオンチェーン経路：ホルダーの資本は OpenAI, Inc. の実株式と open* エコシステムに投資されます。OPEN は openAI Protocol のトレジャリーへの参加を提供し、OpenAI, Inc. の実株式を購入・保管し、open* エコシステムを運営します。今日オンチェーンでアクセス；OPI 後もトレジャリーは株式を蓄積し、openAPI と open* サービスの収益で OPEN を買い戻します。"
+        "OPEN は openAI Protocol のオンチェーン経路：ホルダーの資本は OpenAI, Inc. の実株式と OpenAI サービスエコシステムに投資されます。OPEN は openAI Protocol のトレジャリーへの参加を提供し、OpenAI, Inc. の実株式を購入・保管し、OpenAI サービスエコシステムを運営します。今日オンチェーンでアクセス；OPI 後もトレジャリーは株式を蓄積し、OpenAI API と OpenAI サービスの収益で OPEN を買い戻します。"
       ],
       [
         "OpenAI, Inc. への投資方法は？",
-        "トレジャリーは SPV 経由で OpenAI, Inc. の実株式購入に資本を充てます — OPI 前後を通じて。並行して openChat、openAPI などの open* サービスを運営；手数料の 30% が OPEN の買い戻しとバーンに、残りが株式蓄積を強化。"
+        "トレジャリーは SPV 経由で OpenAI, Inc. の実株式購入に資本を充てます — OPI 前後を通じて。並行して ChatGPT、OpenAI API などの OpenAI サービス サービスを運営；手数料の 30% が OPEN の買い戻しとバーンに、残りが株式蓄積を強化。"
       ],
       [
         "OPEN の購入方法は？",
@@ -217,7 +217,7 @@
       ],
       [
         "上場まで待つ必要がありますか？",
-        "いいえ。プレセールは公開中：今日オンチェーンで OpenAI, Inc. の実株式に投資できます。OPI は市場マイルストーンであり、プロトコルの終わりではありません — OPI でサイクルは終わりません：トレジャリーは OpenAI, Inc. の株式（公開・非公開市場）を買い続け、openChat、openAPI などが利用収益を生み、手数料の 30% が OPEN の買い戻しとバーンに継続的に充てられます。"
+        "いいえ。プレセールは公開中：今日オンチェーンで OpenAI, Inc. の実株式に投資できます。OPI は市場マイルストーンであり、プロトコルの終わりではありません — OPI でサイクルは終わりません：トレジャリーは OpenAI, Inc. の株式（公開・非公開市場）を買い続け、ChatGPT、OpenAI API などが利用収益を生み、手数料の 30% が OPEN の買い戻しとバーンに継続的に充てられます。"
       ],
       [
         "OPEN の売却方法とタイミングは？",
@@ -225,7 +225,7 @@
       ],
       [
         "OPEN と上場株の購入の違いは？",
-        "OPEN は openAI Protocol のトークン：OpenAI, Inc. の equity を継続的に蓄積するトレジャリーに参加し、オンチェーン流動性と openAPI・open* サービスが資金提供するプログラム的買い戻しがあります。"
+        "OPEN は openAI Protocol のトークン：OpenAI, Inc. の equity を継続的に蓄積するトレジャリーに参加し、オンチェーン流動性と OpenAI API・OpenAI サービス サービスが資金提供するプログラム的買い戻しがあります。"
       ],
       [
         "OPEN 価格と株式の関係は？",
@@ -245,7 +245,7 @@
       ],
       [
         "OPI 後はどうなりますか？",
-        "OPI でサイクルは終わりません：トレジャリーは OpenAI, Inc. の株式（公開・非公開市場）を買い続け、openChat、openAPI などが利用収益を生み、手数料の 30% が OPEN の買い戻しとバーンに継続的に充てられます。OPEN はトレジャリーを反映し続けます：より多くの OpenAI, Inc. 株式、より多くのサービス収益、オンチェーンで検証可能な買い戻し。"
+        "OPI でサイクルは終わりません：トレジャリーは OpenAI, Inc. の株式（公開・非公開市場）を買い続け、ChatGPT、OpenAI API などが利用収益を生み、手数料の 30% が OPEN の買い戻しとバーンに継続的に充てられます。OPEN はトレジャリーを反映し続けます：より多くの OpenAI, Inc. 株式、より多くのサービス収益、オンチェーンで検証可能な買い戻し。"
       ]
     ],
     "tkSegs": [

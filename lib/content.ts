@@ -3,14 +3,14 @@
  * Los textos asociados viven en lib/i18n/dictionaries/{locale}.ts (content.*).
  */
 
-/** Nombres de los 6 productos del ecosistema (marca, no se traducen). */
+/** Nombres de los 6 servicios de OpenAI (marca, no se traducen). */
 export const ecosystemNames = [
-  "openChat",
-  "openAPI",
-  "openImage",
-  "openMotion",
-  "openVoice",
-  "openCode",
+  "ChatGPT",
+  "API",
+  "DALL·E",
+  "Sora",
+  "Whisper",
+  "Codex",
 ] as const;
 
 /** Iconos de los 3 motivos de inversión (mismo orden que dict.content.tokenWhy). */

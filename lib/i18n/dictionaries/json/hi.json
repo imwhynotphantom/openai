@@ -46,7 +46,7 @@
     "chainUnsupported": "आपका wallet Base नेटवर्क सपोर्ट नहीं करता। मैन्युअली जोड़ें या दूसरा wallet उपयोग करें।"
   },
   "legal": {
-    "marketingPitch": "OPEN, openAI Protocol का on-chain मार्ग है: holders की पूँजी OpenAI, Inc. के वास्तविक शेयरों और open* इकोसिस्टम में निवेश होती है।",
+    "marketingPitch": "OPEN, openAI Protocol का on-chain मार्ग है: holders की पूँजी OpenAI, Inc. के वास्तविक शेयरों और OpenAI सेवा इकोसिस्टम में निवेश होती है।",
     "affiliationNoticeSoft": "OPEN के साथ आप उस treasury में भाग लेते हैं जो OpenAI, Inc. के वास्तविक शेयरों में निवेश करती है — on-chain, तरलता और OPI के बाद भी सक्रिय flywheel के साथ।",
     "affiliationLinkLabel": "कानूनी पारदर्शिता",
     "affiliationDocTitle": "ब्रांड और पारदर्शिता",
@@ -55,20 +55,20 @@
     "geoNotice": "सेवा अनुमत अधिकार क्षेत्रों के लिए है। सुनिश्चित करें कि आपके देश में क्रिप्टो संपत्तियों का उपयोग अनुमत है।",
     "geoEligibility": "पात्रता जाँचें",
     "footerDisclaimer": "openAI Protocol एक विकेंद्रीकृत इकोसिस्टम है। OpenAI, OpenAI, Inc. और संबंधित ब्रांड उनके मालिकों के हैं। यह वेबसाइट प्रतिभूति ऑफ़र या निवेश सलाह नहीं है। निवेश में जोखिम है।",
-    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice और openCode, openAI Protocol इकोसिस्टम के उत्पाद हैं। ChatGPT, DALL·E, Sora, Whisper और Codex, OpenAI, Inc. के ब्रांड हैं।",
+    "ecosystemDisclaimer": "ChatGPT, DALL·E, Sora, Whisper, Codex और OpenAI API, OpenAI, Inc. के ब्रांड और सेवाएँ हैं। openAI Protocol एक स्वतंत्र इकोसिस्टम है।",
     "suggestedTagline": "OPEN टोकन के माध्यम से OpenAI, Inc. के वास्तविक शेयरों में निवेश करें।",
     "suggestedCta": "OPEN खरीदें",
     "heroHeadline": "OPEN में निवेश करें। OpenAI, Inc. के वास्तविक शेयर।",
-    "heroSubheadline": "आपकी पूँजी वास्तविक शेयर खरीदने और open* संचालित करने के लिए protocol treasury में जाती है। openAPI और open* सेवाओं का हर उपयोग buyback, burn और अधिक equity को बढ़ावा देता है — IPO पर नहीं रुकता।",
+    "heroSubheadline": "आपकी पूँजी वास्तविक शेयर खरीदने और OpenAI सेवाएँ संचालित करने के लिए protocol treasury में जाती है। OpenAI API और OpenAI सेवाएँ सेवाओं का हर उपयोग buyback, burn और अधिक equity को बढ़ावा देता है — IPO पर नहीं रुकता।",
     "heroBadge": "खुली प्रीसेल · स्थायी flywheel",
     "opiContext": "नियोजित OPI · सितंबर 2027 · बाज़ार मील का पत्थर; protocol शेयर जमा करना और OPEN buyback जारी रखता है",
-    "postOpiFlywheel": "OPI चक्र समाप्त नहीं करता: treasury OpenAI, Inc. के शेयर (सार्वजनिक और निजी बाज़ार) खरीदना जारी रखती है; openChat, openAPI और अन्य सेवाएँ उपयोग राजस्व उत्पन्न करती हैं, और उन कमीशन का 30% लगातार OPEN buyback और burn के लिए जाता है।",
-    "equityMicro": "Treasury OPI से पहले और बाद में OpenAI, Inc. के वास्तविक शेयर जमा करती है; open* राजस्व अधिक equity और OPEN buyback वित्तपोषित करता है।",
-    "ecosystemTitle": "वास्तविक शेयरों में निवेश करने वाला टोकन। पूरा open* इकोसिस्टम।",
-    "ecosystemLead": "Treasury OpenAI, Inc. equity खरीदती है और openChat, openAPI और अन्य उत्पाद संचालित करती है। API और सेवाओं का अधिक उपयोग, अधिक राजस्व, treasury में अधिक शेयर और OPEN पर अधिक माँग।",
+    "postOpiFlywheel": "OPI चक्र समाप्त नहीं करता: treasury OpenAI, Inc. के शेयर (सार्वजनिक और निजी बाज़ार) खरीदना जारी रखती है; ChatGPT, OpenAI API और अन्य सेवाएँ उपयोग राजस्व उत्पन्न करती हैं, और उन कमीशन का 30% लगातार OPEN buyback और burn के लिए जाता है।",
+    "equityMicro": "Treasury OPI से पहले और बाद में OpenAI, Inc. के वास्तविक शेयर जमा करती है; OpenAI सेवाएँ राजस्व अधिक equity और OPEN buyback वित्तपोषित करता है।",
+    "ecosystemTitle": "वास्तविक शेयरों में निवेश करने वाला टोकन। पूरा OpenAI सेवा इकोसिस्टम।",
+    "ecosystemLead": "Treasury OpenAI, Inc. equity खरीदती है और ChatGPT, OpenAI API और अन्य उत्पाद संचालित करती है। API और सेवाओं का अधिक उपयोग, अधिक राजस्व, treasury में अधिक शेयर और OPEN पर अधिक माँग।",
     "valueTitle": "वास्तविक शेयर + इकोसिस्टम राजस्व — हमेशा के लिए",
-    "valueLead": "Treasury OpenAI, Inc. के शेयर जमा करती है जबकि open* आवर्ती कमीशन उत्पन्न करता है। 30% OPEN buyback और burn करता है; बाकी equity स्थिति और इकोसिस्टम वृद्धि को मजबूत करता है।",
-    "tokenNatureParagraph": "OPEN आपको openAI Protocol treasury में भाग देता है, जो OpenAI, Inc. के वास्तविक शेयर खरीदती और रखती है और open* इकोसिस्टम संचालित करती है। आज on-chain एक्सेस करें; OPI के बाद treasury शेयर जमा करना और openAPI व open* सेवा राजस्व से OPEN buyback जारी रखती है।",
+    "valueLead": "Treasury OpenAI, Inc. के शेयर जमा करती है जबकि OpenAI सेवाएँ आवर्ती कमीशन उत्पन्न करता है। 30% OPEN buyback और burn करता है; बाकी equity स्थिति और इकोसिस्टम वृद्धि को मजबूत करता है।",
+    "tokenNatureParagraph": "OPEN आपको openAI Protocol treasury में भाग देता है, जो OpenAI, Inc. के वास्तविक शेयर खरीदती और रखती है और OpenAI सेवा इकोसिस्टम संचालित करती है। आज on-chain एक्सेस करें; OPI के बाद treasury शेयर जमा करना और OpenAI API व OpenAI सेवाएँ सेवा राजस्व से OPEN buyback जारी रखती है।",
     "tokenNatureLegal": "OPEN OpenAI, Inc. एक्सपोज़र वाली protocol treasury में भाग लेता है; बाज़ार मूल्य NAV से भिन्न हो सकता है।",
     "consentPrefix": "मैंने पढ़ा है और स्वीकार करता/करती हूँ",
     "consentTerms": "नियम",
@@ -151,11 +151,11 @@
       },
       {
         "title": "स्थायी flywheel",
-        "desc": "आज on-chain एक्सेस करें। OPI के बाद treasury शेयर जमा करना और openAPI व open* सेवाओं के हर उपयोग पर OPEN burn जारी रखती है।"
+        "desc": "आज on-chain एक्सेस करें। OPI के बाद treasury शेयर जमा करना और OpenAI API व OpenAI सेवाएँ सेवाओं के हर उपयोग पर OPEN burn जारी रखती है।"
       },
       {
-        "title": "open* इकोसिस्टम राजस्व",
-        "desc": "openChat, openAPI और अन्य उत्पाद कमीशन उत्पन्न करते हैं; 30% OPEN buyback और burn करता है।"
+        "title": "OpenAI सेवा इकोसिस्टम राजस्व",
+        "desc": "ChatGPT, OpenAI API और अन्य उत्पाद कमीशन उत्पन्न करते हैं; 30% OPEN buyback और burn करता है।"
       }
     ],
     "steps": [
@@ -201,11 +201,11 @@
     "faq": [
       [
         "OPEN क्या है और मेरी पूँजी से क्या करता है?",
-        "OPEN, openAI Protocol का on-chain मार्ग है: holders की पूँजी OpenAI, Inc. के वास्तविक शेयरों और open* इकोसिस्टम में निवेश होती है। OPEN आपको openAI Protocol treasury में भाग देता है, जो OpenAI, Inc. के वास्तविक शेयर खरीदती और रखती है और open* इकोसिस्टम संचालित करती है। आज on-chain एक्सेस करें; OPI के बाद treasury शेयर जमा करना और openAPI व open* सेवा राजस्व से OPEN buyback जारी रखती है।"
+        "OPEN, openAI Protocol का on-chain मार्ग है: holders की पूँजी OpenAI, Inc. के वास्तविक शेयरों और OpenAI सेवा इकोसिस्टम में निवेश होती है। OPEN आपको openAI Protocol treasury में भाग देता है, जो OpenAI, Inc. के वास्तविक शेयर खरीदती और रखती है और OpenAI सेवा इकोसिस्टम संचालित करती है। आज on-chain एक्सेस करें; OPI के बाद treasury शेयर जमा करना और OpenAI API व OpenAI सेवाएँ सेवा राजस्व से OPEN buyback जारी रखती है।"
       ],
       [
         "OpenAI, Inc. में निवेश कैसे होता है?",
-        "Treasury SPV के माध्यम से OpenAI, Inc. के वास्तविक शेयर खरीदने के लिए पूँजी उपयोग करती है — OPI से पहले और बाद। साथ ही openChat, openAPI और अन्य open* सेवाएँ संचालित करती है; उनके कमीशन का 30% OPEN buyback और burn करता है, बाकी शेयर संचय को मजबूत करता है।"
+        "Treasury SPV के माध्यम से OpenAI, Inc. के वास्तविक शेयर खरीदने के लिए पूँजी उपयोग करती है — OPI से पहले और बाद। साथ ही ChatGPT, OpenAI API और अन्य OpenAI सेवाएँ सेवाएँ संचालित करती है; उनके कमीशन का 30% OPEN buyback और burn करता है, बाकी शेयर संचय को मजबूत करता है।"
       ],
       [
         "OPEN कैसे खरीदूँ?",
@@ -217,7 +217,7 @@
       ],
       [
         "क्या निवेश के लिए IPO का इंतज़ार करना होगा?",
-        "नहीं। प्रीसेल खुली है: आज OpenAI, Inc. के वास्तविक शेयरों में on-chain निवेश करें। OPI बाज़ार मील का पत्थर है, protocol का अंत नहीं — OPI चक्र समाप्त नहीं करता: treasury OpenAI, Inc. के शेयर (सार्वजनिक और निजी बाज़ार) खरीदना जारी रखती है; openChat, openAPI और अन्य सेवाएँ उपयोग राजस्व उत्पन्न करती हैं, और उन कमीशन का 30% लगातार OPEN buyback और burn के लिए जाता है।"
+        "नहीं। प्रीसेल खुली है: आज OpenAI, Inc. के वास्तविक शेयरों में on-chain निवेश करें। OPI बाज़ार मील का पत्थर है, protocol का अंत नहीं — OPI चक्र समाप्त नहीं करता: treasury OpenAI, Inc. के शेयर (सार्वजनिक और निजी बाज़ार) खरीदना जारी रखती है; ChatGPT, OpenAI API और अन्य सेवाएँ उपयोग राजस्व उत्पन्न करती हैं, और उन कमीशन का 30% लगातार OPEN buyback और burn के लिए जाता है।"
       ],
       [
         "OPEN कैसे और कब बेच सकता/सकती हूँ?",
@@ -225,7 +225,7 @@
       ],
       [
         "OPEN, बाज़ार से शेयर खरीदने से कैसे अलग है?",
-        "OPEN, openAI Protocol का टोकन है: आप उस treasury में भाग लेते हैं जो OpenAI, Inc. equity लगातार जमा करती है, on-chain तरलता और openAPI व open* सेवाओं से वित्तपोषित प्रोग्रामेटिक buyback के साथ।"
+        "OPEN, openAI Protocol का टोकन है: आप उस treasury में भाग लेते हैं जो OpenAI, Inc. equity लगातार जमा करती है, on-chain तरलता और OpenAI API व OpenAI सेवाएँ सेवाओं से वित्तपोषित प्रोग्रामेटिक buyback के साथ।"
       ],
       [
         "OPEN मूल्य शेयरों से कैसे जुड़ा है?",
@@ -245,7 +245,7 @@
       ],
       [
         "OPI के बाद क्या होता है?",
-        "OPI चक्र समाप्त नहीं करता: treasury OpenAI, Inc. के शेयर (सार्वजनिक और निजी बाज़ार) खरीदना जारी रखती है; openChat, openAPI और अन्य सेवाएँ उपयोग राजस्व उत्पन्न करती हैं, और उन कमीशन का 30% लगातार OPEN buyback और burn के लिए जाता है। OPEN treasury को दर्शाता रहता है: अधिक OpenAI, Inc. शेयर, अधिक सेवा राजस्व और सत्यापित on-chain buyback।"
+        "OPI चक्र समाप्त नहीं करता: treasury OpenAI, Inc. के शेयर (सार्वजनिक और निजी बाज़ार) खरीदना जारी रखती है; ChatGPT, OpenAI API और अन्य सेवाएँ उपयोग राजस्व उत्पन्न करती हैं, और उन कमीशन का 30% लगातार OPEN buyback और burn के लिए जाता है। OPEN treasury को दर्शाता रहता है: अधिक OpenAI, Inc. शेयर, अधिक सेवा राजस्व और सत्यापित on-chain buyback।"
       ]
     ],
     "tkSegs": [

@@ -46,7 +46,7 @@
     "chainUnsupported": "Twoja wallet nie obsługuje sieci Base. Dodaj ją ręcznie lub użyj innej wallet."
   },
   "legal": {
-    "marketingPitch": "OPEN to ścieżka on-chain openAI Protocol: kapitał holderów jest inwestowany w prawdziwe akcje OpenAI, Inc. i w ekosystem open*.",
+    "marketingPitch": "OPEN to ścieżka on-chain openAI Protocol: kapitał holderów jest inwestowany w prawdziwe akcje OpenAI, Inc. i w ekosystem usług OpenAI.",
     "affiliationNoticeSoft": "Z OPEN uczestniczysz w skarbcu, który inwestuje w prawdziwe akcje OpenAI, Inc. — on-chain, z płynnością i flywheel, który pozostaje aktywny po OPI.",
     "affiliationLinkLabel": "Przejrzystość prawna",
     "affiliationDocTitle": "Znaki towarowe i przejrzystość",
@@ -55,20 +55,20 @@
     "geoNotice": "Usługa skierowana do dozwolonych jurysdykcji. Sprawdź, czy używanie kryptoaktywów jest dozwolone w Twoim kraju.",
     "geoEligibility": "Sprawdź kwalifikowalność",
     "footerDisclaimer": "openAI Protocol to zdecentralizowany ekosystem. OpenAI, OpenAI, Inc. i powiązane znaki towarowe należą do ich właścicieli. Ta strona nie stanowi oferty papierów wartościowych ani doradztwa inwestycyjnego. Inwestowanie wiąże się z ryzykiem.",
-    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice i openCode to produkty ekosystemu openAI Protocol. ChatGPT, DALL·E, Sora, Whisper i Codex to znaki towarowe OpenAI, Inc.",
+    "ecosystemDisclaimer": "ChatGPT, DALL·E, Sora, Whisper, Codex i API OpenAI to znaki towarowe i usługi OpenAI, Inc. openAI Protocol to niezależny ekosystem.",
     "suggestedTagline": "Inwestuj w prawdziwe akcje OpenAI, Inc. poprzez token OPEN.",
     "suggestedCta": "Kup OPEN",
     "heroHeadline": "Inwestuj w OPEN. Prawdziwe akcje OpenAI, Inc.",
-    "heroSubheadline": "Twój kapitał trafia do skarbca protokołu, aby kupować prawdziwe akcje i obsługiwać open*. Każde użycie openAPI i usług open* napędza odkupy, spalania i więcej equity — bez zatrzymania się na IPO.",
+    "heroSubheadline": "Twój kapitał trafia do skarbca protokołu, aby kupować prawdziwe akcje i obsługiwać usługi OpenAI. Każde użycie API OpenAI i usług usługi OpenAI napędza odkupy, spalania i więcej equity — bez zatrzymania się na IPO.",
     "heroBadge": "Otwarta przedsprzedaż · Stały flywheel",
     "opiContext": "Planowane OPI · wrzesień 2027 · kamień milowy rynkowy; protokół nadal gromadzi akcje i odkupuje OPEN",
-    "postOpiFlywheel": "OPI nie zamyka cyklu: skarbiec nadal kupuje akcje OpenAI, Inc. (rynek publiczny i prywatny), openChat, openAPI i pozostałe usługi generują przychody z użycia, a 30% tych prowizji jest stale przeznaczane na odkup i spalanie OPEN.",
-    "equityMicro": "Skarbiec gromadzi prawdziwe akcje OpenAI, Inc. przed i po OPI; przychody z open* finansują więcej equity i odkup OPEN.",
-    "ecosystemTitle": "Token inwestujący w prawdziwe akcje. Cały ekosystem open*.",
-    "ecosystemLead": "Skarbiec nabywa equity OpenAI, Inc. i obsługuje openChat, openAPI i pozostałe produkty. Więcej użycia API i usług, więcej przychodów, więcej akcji w skarbcu i większy popyt na OPEN.",
+    "postOpiFlywheel": "OPI nie zamyka cyklu: skarbiec nadal kupuje akcje OpenAI, Inc. (rynek publiczny i prywatny), ChatGPT, API OpenAI i pozostałe usługi generują przychody z użycia, a 30% tych prowizji jest stale przeznaczane na odkup i spalanie OPEN.",
+    "equityMicro": "Skarbiec gromadzi prawdziwe akcje OpenAI, Inc. przed i po OPI; przychody z usługi OpenAI finansują więcej equity i odkup OPEN.",
+    "ecosystemTitle": "Token inwestujący w prawdziwe akcje. Cały ekosystem usług OpenAI.",
+    "ecosystemLead": "Skarbiec nabywa equity OpenAI, Inc. i obsługuje ChatGPT, API OpenAI i pozostałe produkty. Więcej użycia API i usług, więcej przychodów, więcej akcji w skarbcu i większy popyt na OPEN.",
     "valueTitle": "Prawdziwe akcje + przychody ekosystemu — na zawsze",
-    "valueLead": "Skarbiec gromadzi akcje OpenAI, Inc., podczas gdy open* generuje cykliczne prowizje. 30% odkupuje i spala OPEN; reszta wzmacnia pozycję akcyjną i rozwój ekosystemu.",
-    "tokenNatureParagraph": "OPEN daje Ci udział w skarbcu openAI Protocol, który kupuje i przechowuje prawdziwe akcje OpenAI, Inc. i obsługuje ekosystem open*. Dostęp on-chain już dziś; po OPI skarbiec nadal gromadzi akcje i odkupuje OPEN z przychodów openAPI i usług open*.",
+    "valueLead": "Skarbiec gromadzi akcje OpenAI, Inc., podczas gdy usługi OpenAI generuje cykliczne prowizje. 30% odkupuje i spala OPEN; reszta wzmacnia pozycję akcyjną i rozwój ekosystemu.",
+    "tokenNatureParagraph": "OPEN daje Ci udział w skarbcu openAI Protocol, który kupuje i przechowuje prawdziwe akcje OpenAI, Inc. i obsługuje ekosystem usług OpenAI. Dostęp on-chain już dziś; po OPI skarbiec nadal gromadzi akcje i odkupuje OPEN z przychodów API OpenAI i usług usługi OpenAI.",
     "tokenNatureLegal": "OPEN uczestniczy w skarbcu protokołu z ekspozycją na OpenAI, Inc.; cena rynkowa może odbiegać od NAV.",
     "consentPrefix": "Przeczytałem i akceptuję",
     "consentTerms": "Warunki",
@@ -151,11 +151,11 @@
       },
       {
         "title": "Stały flywheel",
-        "desc": "Dostęp on-chain już dziś. Po OPI skarbiec nadal gromadzi akcje i spala OPEN przy każdym użyciu openAPI i usług open*."
+        "desc": "Dostęp on-chain już dziś. Po OPI skarbiec nadal gromadzi akcje i spala OPEN przy każdym użyciu API OpenAI i usług usługi OpenAI."
       },
       {
-        "title": "Przychody ekosystemu open*",
-        "desc": "openChat, openAPI i pozostałe produkty generują prowizje; 30% odkupuje i spala OPEN."
+        "title": "Przychody ekosystemu usługi OpenAI",
+        "desc": "ChatGPT, API OpenAI i pozostałe produkty generują prowizje; 30% odkupuje i spala OPEN."
       }
     ],
     "steps": [
@@ -201,11 +201,11 @@
     "faq": [
       [
         "Czym jest OPEN i co robi z moim kapitałem?",
-        "OPEN to ścieżka on-chain openAI Protocol: kapitał holderów jest inwestowany w prawdziwe akcje OpenAI, Inc. i w ekosystem open*. OPEN daje Ci udział w skarbcu openAI Protocol, który kupuje i przechowuje prawdziwe akcje OpenAI, Inc. i obsługuje ekosystem open*. Dostęp on-chain już dziś; po OPI skarbiec nadal gromadzi akcje i odkupuje OPEN z przychodów openAPI i usług open*."
+        "OPEN to ścieżka on-chain openAI Protocol: kapitał holderów jest inwestowany w prawdziwe akcje OpenAI, Inc. i w ekosystem usług OpenAI. OPEN daje Ci udział w skarbcu openAI Protocol, który kupuje i przechowuje prawdziwe akcje OpenAI, Inc. i obsługuje ekosystem usług OpenAI. Dostęp on-chain już dziś; po OPI skarbiec nadal gromadzi akcje i odkupuje OPEN z przychodów API OpenAI i usług usługi OpenAI."
       ],
       [
         "Jak inwestuje się w OpenAI, Inc.?",
-        "Skarbiec przeznacza kapitał na zakup prawdziwych akcji OpenAI, Inc. przez SPV — przed i po OPI. Równolegle obsługuje openChat, openAPI i pozostałe usługi open*; 30% ich prowizji odkupuje i spala OPEN, a reszta wzmacnia gromadzenie akcji."
+        "Skarbiec przeznacza kapitał na zakup prawdziwych akcji OpenAI, Inc. przez SPV — przed i po OPI. Równolegle obsługuje ChatGPT, API OpenAI i pozostałe usługi usługi OpenAI; 30% ich prowizji odkupuje i spala OPEN, a reszta wzmacnia gromadzenie akcji."
       ],
       [
         "Jak kupić OPEN?",
@@ -217,7 +217,7 @@
       ],
       [
         "Czy muszę czekać na IPO, aby inwestować?",
-        "Nie. Przedsprzedaż jest otwarta: inwestujesz dziś on-chain w prawdziwe akcje OpenAI, Inc. OPI to kamień milowy rynkowy, a nie koniec protokołu — OPI nie zamyka cyklu: skarbiec nadal kupuje akcje OpenAI, Inc. (rynek publiczny i prywatny), openChat, openAPI i pozostałe usługi generują przychody z użycia, a 30% tych prowizji jest stale przeznaczane na odkup i spalanie OPEN."
+        "Nie. Przedsprzedaż jest otwarta: inwestujesz dziś on-chain w prawdziwe akcje OpenAI, Inc. OPI to kamień milowy rynkowy, a nie koniec protokołu — OPI nie zamyka cyklu: skarbiec nadal kupuje akcje OpenAI, Inc. (rynek publiczny i prywatny), ChatGPT, API OpenAI i pozostałe usługi generują przychody z użycia, a 30% tych prowizji jest stale przeznaczane na odkup i spalanie OPEN."
       ],
       [
         "Jak i kiedy mogę sprzedać moje OPEN?",
@@ -225,7 +225,7 @@
       ],
       [
         "Czym OPEN różni się od kupna akcji na giełdzie?",
-        "OPEN to token openAI Protocol: uczestniczysz w skarbcu, który stale gromadzi equity OpenAI, Inc., z płynnością on-chain i programatycznym odkupem finansowanym przez openAPI i usługi open*."
+        "OPEN to token openAI Protocol: uczestniczysz w skarbcu, który stale gromadzi equity OpenAI, Inc., z płynnością on-chain i programatycznym odkupem finansowanym przez API OpenAI i usługi OpenAI."
       ],
       [
         "Jak cena OPEN odnosi się do akcji?",
@@ -245,7 +245,7 @@
       ],
       [
         "Co dzieje się po OPI?",
-        "OPI nie zamyka cyklu: skarbiec nadal kupuje akcje OpenAI, Inc. (rynek publiczny i prywatny), openChat, openAPI i pozostałe usługi generują przychody z użycia, a 30% tych prowizji jest stale przeznaczane na odkup i spalanie OPEN. OPEN nadal odzwierciedla skarbiec: więcej akcji OpenAI, Inc., więcej przychodów z usług i weryfikowalne odkupy on-chain."
+        "OPI nie zamyka cyklu: skarbiec nadal kupuje akcje OpenAI, Inc. (rynek publiczny i prywatny), ChatGPT, API OpenAI i pozostałe usługi generują przychody z użycia, a 30% tych prowizji jest stale przeznaczane na odkup i spalanie OPEN. OPEN nadal odzwierciedla skarbiec: więcej akcji OpenAI, Inc., więcej przychodów z usług i weryfikowalne odkupy on-chain."
       ]
     ],
     "tkSegs": [

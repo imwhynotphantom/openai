@@ -40,35 +40,35 @@ const phaseEquity =
   "La tesorería transfiere capital al vehículo off-chain (SPV / trust regulado) encargado de comprar y custodiar acciones de OpenAI, Inc. en mercados secundarios privados. El SPV publica attestations periódicas del holding (NAV equity, fecha de valoración, custodio). El oráculo de NAV ingesta esas attestations como input de precio de referencia.";
 
 const phaseOperating =
-  "Una parte de la tesorería financia la operación del ecosistema open* (openChat, openAPI, openImage, openMotion, openVoice, openCode): infraestructura, APIs, cómputo y distribución. Los ingresos por suscripción, consumo por token/crédito y comisiones de transacción se consolidan en el Operating Revenue Pool (contrato o cuenta segregada auditada).";
+  "Una parte de la tesorería financia la operación del ecosistema de servicios de OpenAI (ChatGPT, la API de OpenAI, DALL·E, Sora, Whisper, Codex): infraestructura, APIs, cómputo y distribución. Los ingresos por suscripción, consumo por token/crédito y comisiones de transacción se consolidan en el Operating Revenue Pool (contrato o cuenta segregada auditada).";
 
 const phaseValueAccrual =
   "El valor económico del protocolo combina dos motores: (A) revalorización de la posición en acciones de OpenAI, Inc. (mark-to-market del SPV), y (B) superávit operativo neto de los productos. El NAV compuesto = equity NAV + reservas operativas − pasivos. El precio de mercado de OPEN tiende al NAV compuesto, modulado por liquidez on-chain.";
 
 const phaseBuyback =
-  "El 30% de las comisiones netas del Operating Revenue Pool se enruta automáticamente al contrato BuybackBurn — antes y después de la OPI. El contrato ejecuta órdenes de compra de OPEN contra pools de liquidez y envía los tokens a una dirección de quema irreversible. El resto se reinvierte: acumulación de equity en OpenAI, Inc., liquidez o crecimiento del ecosistema open*, según gobernanza.";
+  "El 30% de las comisiones netas del Operating Revenue Pool se enruta automáticamente al contrato BuybackBurn — antes y después de la OPI. El contrato ejecuta órdenes de compra de OPEN contra pools de liquidez y envía los tokens a una dirección de quema irreversible. El resto se reinvierte: acumulación de equity en OpenAI, Inc., liquidez o crecimiento del ecosistema de servicios de OpenAI, según gobernanza.";
 
 const components = [
   ["Treasury Multisig", "Custodia on-chain de stablecoins/ETH; autoriza transferencias al SPV y a ops."],
   ["Equity SPV (off-chain)", "Compra, custodia y valora acciones de OpenAI, Inc.; emite attestations de holding."],
-  ["Operating Revenue Pool", "Consolida ingresos de productos open*; split automático recompra / reinversión."],
+  ["Operating Revenue Pool", "Consolida ingresos de productos los servicios de OpenAI; split automático recompra / reinversión."],
   ["BuybackBurn (on-chain)", "Recompra programática de OPEN y quema verificable."],
   ["NAV Oracle", "Agrega NAV equity (SPV) + reservas operativas; publica precio de referencia."],
-  ["OPEN (ERC-20)", "Participación económica en la tesorería del protocolo, vinculada a equity e ingresos open*."],
+  ["OPEN (ERC-20)", "Participación económica en la tesorería del protocolo, vinculada a equity e ingresos los servicios de OpenAI."],
 ] as const;
 
 const allocationEquity =
   "Mayoría del capital neto de nuevas suscripciones destinado a acumulación de equity en OpenAI, Inc.";
-const allocationOps = "Reserva operativa para APIs, cómputo y distribución del ecosistema open*.";
+const allocationOps = "Reserva operativa para APIs, cómputo y distribución del ecosistema de servicios de OpenAI.";
 const allocationLiquidity = "Colateral en pools on-chain para liquidez secundaria de OPEN.";
 const allocationBuyback =
-  "30% de comisiones netas → BuybackBurn de forma continua (pre y post OPI); resto según propuesta de gobernanza (refuerzo de equity y crecimiento open*).";
+  "30% de comisiones netas → BuybackBurn de forma continua (pre y post OPI); resto según propuesta de gobernanza (refuerzo de equity y crecimiento los servicios de OpenAI).";
 
 const postOpiFlywheel =
-  "La OPI no cierra el ciclo: la tesorería sigue comprando acciones de OpenAI, Inc. (mercado público y privado), openChat, openAPI y el resto de servicios generan ingresos por uso, y el 30% de esas comisiones se destina de forma continua a recomprar y quemar OPEN.";
+  "La OPI no cierra el ciclo: la tesorería sigue comprando acciones de OpenAI, Inc. (mercado público y privado), ChatGPT, la API de OpenAI y el resto de servicios generan ingresos por uso, y el 30% de esas comisiones se destina de forma continua a recomprar y quemar OPEN.";
 
 const tokenNatureParagraph =
-  "OPEN te da participación en la tesorería del openAI Protocol, que compra y custodia acciones reales de OpenAI, Inc. y opera el ecosistema open*. Accede on-chain hoy; tras la OPI, la tesorería sigue acumulando acciones y recomprando OPEN con los ingresos de openAPI y los servicios open*.";
+  "OPEN te da participación en la tesorería del openAI Protocol, que compra y custodia acciones reales de OpenAI, Inc. y opera el ecosistema de servicios de OpenAI. Accede on-chain hoy; tras la OPI, la tesorería sigue acumulando acciones y recomprando OPEN con los ingresos de la API de OpenAI y los servicios de OpenAI.";
 
 const shortDisclaimer =
   "openAI Protocol opera de forma independiente de OpenAI, Inc. OPEN canaliza inversión vía tesorería del protocolo; no es una acción emitida por OpenAI, Inc.";
@@ -80,7 +80,7 @@ const footerDisclaimer =
   "openAI Protocol es un ecosistema descentralizado. OpenAI, OpenAI, Inc. y marcas relacionadas pertenecen a sus titulares. Esta web no constituye oferta de valores ni asesoramiento de inversión. Invertir conlleva riesgos.";
 
 const ecosystemDisclaimer =
-  "openChat, openAPI, openImage, openMotion, openVoice y openCode son productos del ecosistema openAI Protocol. ChatGPT, DALL·E, Sora, Whisper y Codex son marcas de OpenAI, Inc.";
+  "ChatGPT, DALL·E, Sora, Whisper, Codex y la API de OpenAI son marcas y servicios de OpenAI, Inc. openAI Protocol es un ecosistema independiente.";
 
 const geoNotice =
   "Servicio orientado a jurisdicciones permitidas. Comprueba que el uso de criptoactivos esté permitido en tu país.";
@@ -92,7 +92,7 @@ const opiContext =
   "OPI prevista · septiembre de 2027 · hito de mercado; el protocolo sigue acumulando acciones y recomprando OPEN";
 
 const equityMicro =
-  "La tesorería acumula acciones reales de OpenAI, Inc. antes y después de la OPI; los ingresos de open* financian más equity y recompra de OPEN.";
+  "La tesorería acumula acciones reales de OpenAI, Inc. antes y después de la OPI; los ingresos de los servicios de OpenAI financian más equity y recompra de OPEN.";
 
 const affiliationNotice =
   "openAI Protocol canaliza inversión hacia OpenAI, Inc. de forma independiente. OpenAI, Inc. es una entidad independiente y no opera ni respalda el openAI Protocol.";
@@ -103,7 +103,7 @@ export const docsEs: Record<string, Doc> = {
     title: "OPEN Whitepaper",
     meta: "Versión 1.2 · Actualizado en 2026",
     subtitle:
-      "Especificación del token OPEN: tesorería respaldada por acciones de OpenAI, Inc., capa operativa open* y mecanismo de recompra.",
+      "Especificación del token OPEN: tesorería respaldada por acciones de OpenAI, Inc., capa operativa los servicios de OpenAI y mecanismo de recompra.",
     hasStats: true,
     stats: [
       { value: "21.000M", label: "Suministro total" },
@@ -113,7 +113,7 @@ export const docsEs: Record<string, Doc> = {
     ],
     sections: [
       { h: "Resumen ejecutivo", p: [summary, "El diseño persigue tres objetivos: acumular y seguir acumulando equity real de OpenAI, Inc. (antes, durante y después de su OPI), monetizar de forma permanente el ecosistema de productos del openAI Protocol, y mantener liquidez on-chain del token OPEN sin custodia centralizada sobre los tokens del inversor.", postOpiFlywheel, legalBoundaryMarketing + " Este documento tiene carácter informativo y no constituye asesoramiento financiero."] },
-      { h: "1. Contexto y motivación", p: ["Las empresas privadas de alto crecimiento concentran gran parte de su revalorización en las fases previas a su salida a bolsa, un periodo al que el inversor minorista rara vez tiene acceso. Cuando la compañía finalmente cotiza, buena parte de la apreciación ya se ha producido y queda reservada a inversores institucionales y rondas privadas.", "OPEN propone un flywheel on-chain: el capital de los suscriptores financia la compra de acciones reales de OpenAI, Inc. y la operación de productos open* que generan ingresos recurrentes. Esos flujos se consolidan en un NAV compuesto que orienta el valor de mercado del token."] },
+      { h: "1. Contexto y motivación", p: ["Las empresas privadas de alto crecimiento concentran gran parte de su revalorización en las fases previas a su salida a bolsa, un periodo al que el inversor minorista rara vez tiene acceso. Cuando la compañía finalmente cotiza, buena parte de la apreciación ya se ha producido y queda reservada a inversores institucionales y rondas privadas.", "OPEN propone un flywheel on-chain: el capital de los suscriptores financia la compra de acciones reales de OpenAI, Inc. y la operación de productos los servicios de OpenAI que generan ingresos recurrentes. Esos flujos se consolidan en un NAV compuesto que orienta el valor de mercado del token."] },
       { h: "2. El token OPEN", p: ["OPEN (OPENPROTOCOL) es un token fungible conforme al estándar ERC-20, desplegado en la red Base. El suministro total es fijo e inmutable en 21.000.000.000 de unidades; el contrato no tiene función mint, por lo que la oferta solo puede mantenerse o decrecer.", tokenNatureParagraph, legalBoundaryMarketing] },
       {
         h: "3. Mecanismo de tesorería — capital → acciones reales",
@@ -125,14 +125,14 @@ export const docsEs: Record<string, Doc> = {
         ],
       },
       {
-        h: "4. Capa operativa — productos open* → ingresos",
+        h: "4. Capa operativa — productos los servicios de OpenAI → ingresos",
         p: [
           phaseOperating,
-          "Los productos del ecosistema (openChat, openAPI, openImage, openMotion, openVoice, openCode) facturan por suscripción, consumo por token, crédito o asiento. Cada operación emite un evento FeeCollected verificable que alimenta el Operating Revenue Pool.",
+          "Los servicios del ecosistema (ChatGPT, la API de OpenAI, DALL·E, Sora, Whisper, Codex) facturan por suscripción, consumo por token, crédito o asiento. Cada operación emite un evento FeeCollected verificable que alimenta el Operating Revenue Pool.",
           phaseValueAccrual,
         ],
       },
-      { h: "5. Vínculo con la valoración de OpenAI, Inc.", p: ["El NAV equity del SPV se marca a mercado con valoraciones de rondas privadas antes de la OPI y con cotización oficial tras la salida a bolsa. El oráculo agrega NAV equity + reservas operativas para publicar el NAV compuesto de referencia.", "Tras la OPI, la tesorería no liquida su posición: sigue acumulando acciones en mercado público y privado mientras openAPI y los servicios open* generan ingresos que alimentan recompras de OPEN y nuevas compras de equity.", "El anclaje no es una paridad rígida: el mercado on-chain determina el precio en cada momento, pero el NAV compuesto proporciona la señal fundamental que guía el arbitraje y mantiene la correlación entre el token y los activos subyacentes."] },
+      { h: "5. Vínculo con la valoración de OpenAI, Inc.", p: ["El NAV equity del SPV se marca a mercado con valoraciones de rondas privadas antes de la OPI y con cotización oficial tras la salida a bolsa. El oráculo agrega NAV equity + reservas operativas para publicar el NAV compuesto de referencia.", "Tras la OPI, la tesorería no liquida su posición: sigue acumulando acciones en mercado público y privado mientras la API de OpenAI y los servicios de OpenAI generan ingresos que alimentan recompras de OPEN y nuevas compras de equity.", "El anclaje no es una paridad rígida: el mercado on-chain determina el precio en cada momento, pero el NAV compuesto proporciona la señal fundamental que guía el arbitraje y mantiene la correlación entre el token y los activos subyacentes."] },
       { h: "6. Acumulación de valor (value accrual)", p: [phaseBuyback, `Política de split: ${allocationBuyback}`, "Este mecanismo convierte el uso del ecosistema y la revalorización del equity en presión estructural sobre OPEN, con independencia de la actividad especulativa del mercado."] },
       { h: "7. Distribución del suministro", p: ["El suministro de 21.000.000.000 OPEN se distribuye así: 9,95% a la preventa pública (2.089.500.000 OPEN, se reciben en el TGE mediante claim), 40% a liquidez on-chain (8.400.000.000 OPEN, destinada al pool de liquidez en el TGE con LP bloqueado), 20% a tesorería y ecosistema (4.200.000.000 OPEN, recompras y quema y desarrollo del ecosistema), 15% a marketing (3.150.000.000 OPEN, disponible desde el TGE), 5% al equipo (1.050.000.000 OPEN) y 10,05% a rondas futuras (2.110.500.000 OPEN, bloqueado).", "La asignación del equipo queda bloqueada 3 años: cliff de 1 año y liberación lineal durante los 2 años siguientes, verificable on-chain."] },
       { h: "8. Liquidez y mercado", p: ["El 40% del suministro destinado a liquidez se despliega en el pool on-chain en el TGE, con el LP bloqueado, garantizando que cualquier inversor pueda comprar o vender OPEN en todo momento. Los compradores de preventa reciben sus OPEN en el TGE mediante claim y no están sujetos a bloqueo posterior.", "La profundidad de los pools y los parámetros de las comisiones se calibran para minimizar el slippage en operaciones de tamaño habitual y para sostener un mercado ordenado durante los eventos de recompra."] },
@@ -147,7 +147,7 @@ export const docsEs: Record<string, Doc> = {
       { h: "10. Oráculo de precio", p: ["El oráculo agrega NAV equity (attestations SPV), reservas operativas y precio de mercado de OPEN. Emplea ventanas temporales y medianas para resistir manipulaciones puntuales y picos de baja liquidez.", "En caso de discrepancia anómala entre fuentes, el oráculo entra en un modo conservador que pausa los parámetros sensibles hasta que los datos se normalizan."] },
       { h: "11. Gobernanza", p: ["Determinados parámetros del protocolo —como el porcentaje de comisiones destinado a recompra, la política de asignación equity/ops o la configuración de liquidez— pueden ajustarse mediante gobernanza on-chain, dentro de rangos máximos y mínimos codificados en los contratos.", "El objetivo a medio plazo es transferir progresivamente estas decisiones a los holders de OPEN, avanzando hacia una administración descentralizada del protocolo."] },
       { h: "12. Seguridad", p: ["Los contratos han sido revisados por auditores independientes, sin hallazgos críticos ni de severidad alta pendientes. Existe además un programa de recompensas por la divulgación responsable de vulnerabilidades.", "El protocolo es self-custody respecto a los tokens OPEN del inversor: openAI Protocol no controla las claves de tu wallet. La custodia del equity off-chain recae en el SPV designado; su holding se audita periódicamente."] },
-      { h: "13. Hoja de ruta", p: ["2026 — Preventa pública, despliegue de liquidez on-chain, primera adquisición de equity vía SPV y activación del mecanismo de recompra.", "2027 — OPI de OpenAI, Inc.: integración de cotización oficial en NAV Oracle, escalado de openAPI y servicios open*, y continuación de la acumulación de acciones en tesorería.", "2028 y posteriores — Flywheel en marcha: más ingresos por uso de API y servicios, más recompras y quemas de OPEN, más equity en OpenAI, Inc., y transición progresiva de gobernanza a holders."] },
+      { h: "13. Hoja de ruta", p: ["2026 — Preventa pública, despliegue de liquidez on-chain, primera adquisición de equity vía SPV y activación del mecanismo de recompra.", "2027 — OPI de OpenAI, Inc.: integración de cotización oficial en NAV Oracle, escalado de la API de OpenAI y servicios los servicios de OpenAI, y continuación de la acumulación de acciones en tesorería.", "2028 y posteriores — Flywheel en marcha: más ingresos por uso de API y servicios, más recompras y quemas de OPEN, más equity en OpenAI, Inc., y transición progresiva de gobernanza a holders."] },
       { h: "14. Marcas de terceros", p: [ecosystemDisclaimer, "Las referencias a productos de OpenAI, Inc. (ChatGPT, DALL·E, Sora, Whisper, Codex) en este documento son comparativas o descriptivas del activo subyacente, no implican licencia ni afiliación."] },
       { h: "15. Aviso legal", p: [`Este documento tiene carácter informativo. ${summary} ${legalBoundary}`, shortDisclaimer, "Nada de lo aquí expuesto constituye una oferta de inversión ni asesoramiento financiero."] },
     ],
@@ -465,7 +465,7 @@ export const docsEs: Record<string, Doc> = {
         h: "Marketing permitido",
         p: [
           "· Exposición económica respaldada por acciones reales de OpenAI, Inc. en tesorería del protocolo",
-          "· Ingresos operativos del ecosistema open* como segundo motor de valor",
+          "· Ingresos operativos del ecosistema de servicios de OpenAI como segundo motor de valor",
           "· Referencia factual a la empresa como activo subyacente del SPV",
           "· Mencionar OPI / salida a bolsa prevista como contexto de mercado (si es verificable)",
           "· Usar «OpenAI, Inc.» con forma legal completa al hablar de la empresa real",
@@ -522,7 +522,7 @@ export const docsEs: Record<string, Doc> = {
       {
         h: "Quiénes somos",
         p: [
-          "openAI Protocol canaliza capital hacia acciones reales de OpenAI, Inc. vía tesorería y SPV, y opera el ecosistema open* con el token OPEN.",
+          "openAI Protocol canaliza capital hacia acciones reales de OpenAI, Inc. vía tesorería y SPV, y opera el ecosistema de servicios de OpenAI con el token OPEN.",
           affiliationNotice,
         ],
       },
@@ -538,7 +538,7 @@ export const docsEs: Record<string, Doc> = {
         h: "Nomenclatura del ecosistema",
         p: [
           ecosystemDisclaimer,
-          "Los nombres openChat, openAPI, openImage, openMotion, openVoice y openCode designan productos del protocolo, no servicios oficiales de OpenAI, Inc.",
+          "Las referencias a ChatGPT, DALL·E, Sora, Whisper, Codex y la API de OpenAI aluden a marcas y servicios de OpenAI, Inc. openAI Protocol no está afiliado ni respaldado por OpenAI, Inc.",
         ],
       },
       {
