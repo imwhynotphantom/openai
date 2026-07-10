@@ -372,6 +372,7 @@
     "compraQuoteExpired": "Preis wird aktualisiert…",
     "compraQuoteFallback": "Wir konnten die Umrechnung gerade nicht kalkulieren. Zahlen Sie mit USDC oder versuchen Sie es in ein paar Minuten erneut.",
     "compraCapExceeded": "Der Betrag überschreitet das verbleibende Vorverkaufskontingent. Reduzieren Sie die Menge.",
+    "compraPaused": "Der Vorverkauf ist vorübergehend pausiert. Käufe werden in Kürze wieder möglich sein.",
     "compraConvertCta": "In Kaufgelder umwandeln",
     "compraConvertDone": "Umwandlung abgeschlossen. Sie können OPEN jetzt mit Ihrem USDC kaufen.",
     "compraStepBatch0x": "Umwandlung und Kauf signieren (eine Signatur)",

@@ -372,6 +372,7 @@
     "compraQuoteExpired": "Actualizando el precio…",
     "compraQuoteFallback": "No pudimos cotizar la conversión ahora mismo. Paga con USDC o inténtalo de nuevo en unos minutos.",
     "compraCapExceeded": "El importe supera el cupo restante de la preventa. Reduce la cantidad.",
+    "compraPaused": "La preventa está pausada temporalmente. Las compras se reactivarán en breve.",
     "compraConvertCta": "Convertir a fondos de compra",
     "compraConvertDone": "Conversión completada. Ahora puedes comprar OPEN con tus USDC.",
     "compraStepBatch0x": "Firmar conversión y compra (una sola firma)",

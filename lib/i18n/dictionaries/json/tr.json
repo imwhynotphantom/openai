@@ -372,6 +372,7 @@
     "compraQuoteExpired": "Fiyat güncelleniyor…",
     "compraQuoteFallback": "Dönüşümü şu anda kotasyonlayamadık. USDC ile ödeyin veya birkaç dakika sonra tekrar deneyin.",
     "compraCapExceeded": "Tutar kalan ön satış kotasını aşıyor. Miktarı azaltın.",
+    "compraPaused": "Ön satış geçici olarak duraklatıldı. Alımlar kısa süre içinde devam edecek.",
     "compraConvertCta": "Satın alma fonlarına dönüştür",
     "compraConvertDone": "Dönüşüm tamamlandı. Artık USDC ile OPEN satın alabilirsiniz.",
     "compraStepBatch0x": "Dönüşüm ve satın almayı imzala (tek imza)",

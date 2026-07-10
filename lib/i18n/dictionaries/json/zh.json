@@ -372,6 +372,7 @@
     "compraQuoteExpired": "正在更新价格…",
     "compraQuoteFallback": "目前无法报价转换。请使用 USDC 支付或几分钟后重试。",
     "compraCapExceeded": "金额超过剩余预售额度。请减少数量。",
+    "compraPaused": "预售暂时暂停。购买将很快恢复。",
     "compraConvertCta": "转换为购买资金",
     "compraConvertDone": "转换完成。现在可用 USDC 购买 OPEN。",
     "compraStepBatch0x": "签署转换和购买（单次签名）",

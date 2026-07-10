@@ -372,6 +372,7 @@
     "compraQuoteExpired": "가격 갱신 중…",
     "compraQuoteFallback": "현재 변환 견적을 제공할 수 없습니다. USDC로 결제하거나 몇 분 후 다시 시도하세요.",
     "compraCapExceeded": "금액이 남은 프리세일 한도를 초과합니다. 수량을 줄이세요.",
+    "compraPaused": "프리세일이 일시 중지되었습니다. 곧 구매가 재개됩니다.",
     "compraConvertCta": "구매 자금으로 변환",
     "compraConvertDone": "변환 완료. USDC로 OPEN을 구매할 수 있습니다.",
     "compraStepBatch0x": "변환 및 구매 서명 (단일 서명)",

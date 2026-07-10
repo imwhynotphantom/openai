@@ -372,6 +372,7 @@
     "compraQuoteExpired": "جارٍ تحديث السعر…",
     "compraQuoteFallback": "تعذّر تسعير التحويل الآن. ادفع بـ USDC أو حاول بعد دقائق.",
     "compraCapExceeded": "المبلغ يتجاوز حصة ما قبل البيع المتبقية. قلّل الكمية.",
+    "compraPaused": "البيع المسبق متوقف مؤقتًا. ستُستأنف عمليات الشراء قريبًا.",
     "compraConvertCta": "تحويل إلى أموال شراء",
     "compraConvertDone": "اكتمل التحويل. يمكنك الآن شراء OPEN بـ USDC.",
     "compraStepBatch0x": "توقيع التحويل والشراء (توقيع واحد)",

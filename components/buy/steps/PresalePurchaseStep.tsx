@@ -148,6 +148,16 @@ export function PresalePurchaseStep({ onBack, initialMode }: Props) {
       ) : (
       <BaseChainGuard inline>
       <div>
+      {purchase.isPresalePaused && !isDone ? (
+        <div
+          style={css(
+            "padding:10px 12px;border-radius:10px;background:#FDF2F2;border:1px solid #EFC4C4;font:500 12.5px/1.45 var(--font-hanken);color:#A33A3A;margin:0 0 16px"
+          )}
+        >
+          {buy.compraPaused}
+        </div>
+      ) : null}
+
       {!isDone ? (
         <div
           style={css(

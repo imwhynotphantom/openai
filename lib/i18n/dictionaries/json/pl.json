@@ -372,6 +372,7 @@
     "compraQuoteExpired": "Aktualizacja ceny…",
     "compraQuoteFallback": "Nie udało się teraz wycenić konwersji. Zapłać USDC lub spróbuj ponownie za kilka minut.",
     "compraCapExceeded": "Kwota przekracza pozostały limit przedsprzedaży. Zmniejsz ilość.",
+    "compraPaused": "Przedsprzedaż jest tymczasowo wstrzymana. Zakupy zostaną wkrótce wznowione.",
     "compraConvertCta": "Konwertuj na środki zakupu",
     "compraConvertDone": "Konwersja zakończona. Teraz możesz kupić OPEN za USDC.",
     "compraStepBatch0x": "Podpisz konwersję i zakup (jeden podpis)",

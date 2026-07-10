@@ -372,6 +372,7 @@
     "compraQuoteExpired": "Updating price…",
     "compraQuoteFallback": "We could not quote the conversion right now. Pay with USDC or try again in a few minutes.",
     "compraCapExceeded": "The amount exceeds the remaining presale quota. Reduce the amount.",
+    "compraPaused": "The presale is temporarily paused. Purchases will resume shortly.",
     "compraConvertCta": "Convert to purchase funds",
     "compraConvertDone": "Conversion completed. You can now buy OPEN with your USDC.",
     "compraStepBatch0x": "Sign conversion and purchase (single signature)",

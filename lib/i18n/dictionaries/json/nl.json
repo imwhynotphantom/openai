@@ -372,6 +372,7 @@
     "compraQuoteExpired": "Prijs bijwerken…",
     "compraQuoteFallback": "We konden de conversie nu niet quoteren. Betaal met USDC of probeer het over enkele minuten opnieuw.",
     "compraCapExceeded": "Het bedrag overschrijdt het resterende presale-quotum. Verlaag het aantal.",
+    "compraPaused": "De presale is tijdelijk gepauzeerd. Aankopen worden binnenkort hervat.",
     "compraConvertCta": "Converteren naar aankoopfondsen",
     "compraConvertDone": "Conversie voltooid. Je kunt nu OPEN kopen met je USDC.",
     "compraStepBatch0x": "Conversie en aankoop ondertekenen (één handtekening)",

@@ -22,6 +22,8 @@ export const PRESALE_ABI = parseAbi([
   "function referralVolumeUSDC(address account) view returns (uint256)",
   "function isEligibleReferrer(address account) view returns (bool)",
   "function MIN_REFERRER_USDC() view returns (uint256)",
+  "function paused() view returns (bool)",
+  "function finalized() view returns (bool)",
 ]);
 
 export type PurchasePhase = "purchase" | "convert" | "purchase_after_convert";

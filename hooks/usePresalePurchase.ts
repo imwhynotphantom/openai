@@ -19,7 +19,7 @@ import type { Dictionary } from "@/lib/i18n/load";
 import { useAtomicBatchSupport } from "@/hooks/useAtomicBatchSupport";
 import { useDebouncedValue } from "@/hooks/useDebouncedValue";
 import { useSwapQuote } from "@/hooks/useSwapQuote";
-import { usePresaleRemainingCap } from "@/hooks/usePresaleReads";
+import { usePresaleRemainingCap, usePresalePaused } from "@/hooks/usePresaleReads";
 import { isWalletConnectConnector } from "@/lib/wagmi/connectors";
 import {
   build0xConvertCalls,
@@ -72,6 +72,7 @@ function mapContractError(error: unknown, d: Dictionary["buy"]): string {
   if (msg === "PRESALE_CONTRACT_MISSING") return d.compraContractMissing;
   if (msg === "QUOTE_EXPIRED") return d.compraQuoteExpired;
   if (msg === "CAP_EXCEEDED") return d.compraCapExceeded;
+  if (msg === "PRESALE_PAUSED") return d.compraPaused;
   if (msg === "QUOTE_FAILED") return d.compraQuoteFallback;
   if (msg === "WRONG_NETWORK") return d.compraWrongNetwork;
   if (msg === "INSUFFICIENT_USDC") return d.compraInsufficientUsdc;
@@ -147,6 +148,8 @@ export function usePresalePurchase() {
   });
 
   const { data: remainingCap } = usePresaleRemainingCap();
+  const { data: presalePaused } = usePresalePaused();
+  const isPresalePaused = presalePaused === true;
   const allowanceTarget = quote?.allowanceTarget;
 
   // ── Balances ──
@@ -473,6 +476,7 @@ export function usePresalePurchase() {
 
       try {
         validateNetwork();
+        if (isPresalePaused) throw new Error("PRESALE_PAUSED");
 
         const usesQuote = paymentTokenId !== "USDC" && effectiveFlowPhase !== "purchase_after_convert";
         let q: SwapQuoteResponse | undefined;
@@ -579,6 +583,7 @@ export function usePresalePurchase() {
       effectiveFlowPhase,
       executeBatch,
       executeSequential,
+      isPresalePaused,
       needsSellApprove,
       needsUsdcApprove,
       paymentToken,
@@ -669,12 +674,14 @@ export function usePresalePurchase() {
     reset,
     primaryCta,
     sellBalance,
+    isPresalePaused,
     canPurchase: Boolean(
       address &&
         sellAmount &&
         onBase &&
         !capsLoading &&
         !isRunning &&
+        !isPresalePaused &&
         (paymentTokenId === "USDC"
           ? minBuyAmount
           : effectiveFlowPhase === "purchase_after_convert"

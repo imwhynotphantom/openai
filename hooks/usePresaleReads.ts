@@ -15,6 +15,18 @@ export function usePresaleRemainingCap() {
   });
 }
 
+/** La preventa puede pausarse/reanudarse on-chain (setPaused). Sondeo cada 30 s. */
+export function usePresalePaused() {
+  const presale = getPresaleContract();
+  return useReadContract({
+    address: presale,
+    abi: PRESALE_ABI,
+    functionName: "paused",
+    chainId: base.id,
+    query: { enabled: Boolean(presale), refetchInterval: 30_000 },
+  });
+}
+
 export function usePresaleOpenQuote(usdcAmount?: bigint) {
   const presale = getPresaleContract();
   return useReadContract({

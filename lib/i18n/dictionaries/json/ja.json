@@ -372,6 +372,7 @@
     "compraQuoteExpired": "価格更新中…",
     "compraQuoteFallback": "現在変換の見積もりができません。USDC で支払うか、数分後に再試行してください。",
     "compraCapExceeded": "金額がプレセール残枠を超えています。数量を減らしてください。",
+    "compraPaused": "プレセールは一時停止中です。購入はまもなく再開されます。",
     "compraConvertCta": "購入資金に変換",
     "compraConvertDone": "変換完了。USDC で OPEN を購入できます。",
     "compraStepBatch0x": "変換と購入に署名（1 回の署名）",
