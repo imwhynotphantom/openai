@@ -18,6 +18,7 @@ import { usePaymentTokenBalances } from "@/hooks/usePaymentTokenBalances";
 import { useOpenPrice } from "@/hooks/useOpenPrice";
 import { PAYMENT_TOKEN_LIST, type PaymentTokenId } from "@/lib/onramp/payment-tokens";
 import { CopyAddressButton, InfoBanner, StepCard, StepTitle } from "../ui/CopyAddressButton";
+import { AddOpenToWallet } from "@/components/AddOpenToWallet";
 import { BaseChainGuard } from "../ui/BaseChainGuard";
 import { CrossChainFundingStep } from "./CrossChainFundingStep";
 
@@ -378,6 +379,9 @@ export function PresalePurchaseStep({ onBack, initialMode }: Props) {
             >
               {buy.compraDoneBuyMore}
             </Hov>
+          </div>
+          <div style={css("margin-top:12px")}>
+            <AddOpenToWallet variant="ghost" />
           </div>
         </div>
       ) : null}

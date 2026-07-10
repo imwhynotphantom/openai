@@ -302,7 +302,10 @@
     "referralLockedBody": "Para obter seu link você precisa ter contribuído pelo menos {min} na pré-venda. Você está em {current}.",
     "referralProgressLabel": "{current} de {min}",
     "referralLockedCta": "Adquirir OPEN",
-    "referralUnavailable": "O programa de indicações é ativado com a pré-venda on-chain."
+    "referralUnavailable": "O programa de indicações é ativado com a pré-venda on-chain.",
+    "addTokenCta": "Adicionar OPEN à wallet",
+    "addTokenPending": "Confirme na sua wallet…",
+    "addTokenAdded": "OPEN adicionado à sua wallet."
   },
   "swapPage": {
     "title": "Trocar",

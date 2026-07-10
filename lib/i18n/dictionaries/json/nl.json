@@ -302,7 +302,10 @@
     "referralLockedBody": "Om je link te krijgen moet je minimaal {min} hebben bijgedragen aan de presale. Je zit op {current}.",
     "referralProgressLabel": "{current} van {min}",
     "referralLockedCta": "OPEN kopen",
-    "referralUnavailable": "Het referral-programma wordt geactiveerd met de on-chain presale."
+    "referralUnavailable": "Het referral-programma wordt geactiveerd met de on-chain presale.",
+    "addTokenCta": "OPEN aan wallet toevoegen",
+    "addTokenPending": "Bevestig in je wallet…",
+    "addTokenAdded": "OPEN toegevoegd aan je wallet."
   },
   "swapPage": {
     "title": "Wisselen",

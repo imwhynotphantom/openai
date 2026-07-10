@@ -302,7 +302,10 @@
     "referralLockedBody": "Aby otrzymać link, musisz wpłacić co najmniej {min} w przedsprzedaży. Masz {current}.",
     "referralProgressLabel": "{current} z {min}",
     "referralLockedCta": "Kup OPEN",
-    "referralUnavailable": "Program poleceń aktywuje się wraz z przedsprzedażą on-chain."
+    "referralUnavailable": "Program poleceń aktywuje się wraz z przedsprzedażą on-chain.",
+    "addTokenCta": "Dodaj OPEN do portfela",
+    "addTokenPending": "Potwierdź w portfelu…",
+    "addTokenAdded": "OPEN dodany do portfela."
   },
   "swapPage": {
     "title": "Wymień",

@@ -302,7 +302,10 @@
     "referralLockedBody": "要获得链接，你需要在预售中至少投入 {min}。你目前为 {current}。",
     "referralProgressLabel": "{current} / {min}",
     "referralLockedCta": "购买 OPEN",
-    "referralUnavailable": "推荐计划将随链上预售一同启用。"
+    "referralUnavailable": "推荐计划将随链上预售一同启用。",
+    "addTokenCta": "将 OPEN 添加到钱包",
+    "addTokenPending": "请在钱包中确认…",
+    "addTokenAdded": "OPEN 已添加到您的钱包。"
   },
   "swapPage": {
     "title": "交换",

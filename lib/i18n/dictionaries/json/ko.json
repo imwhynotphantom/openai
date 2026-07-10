@@ -302,7 +302,10 @@
     "referralLockedBody": "링크를 받으려면 프리세일에 최소 {min}를 기여해야 합니다. 현재 {current}입니다.",
     "referralProgressLabel": "{min} 중 {current}",
     "referralLockedCta": "OPEN 구매",
-    "referralUnavailable": "추천 프로그램은 온체인 프리세일과 함께 활성화됩니다."
+    "referralUnavailable": "추천 프로그램은 온체인 프리세일과 함께 활성화됩니다.",
+    "addTokenCta": "OPEN을 지갑에 추가",
+    "addTokenPending": "지갑에서 확인하세요…",
+    "addTokenAdded": "OPEN이 지갑에 추가되었습니다."
   },
   "swapPage": {
     "title": "스왑",

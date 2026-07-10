@@ -302,7 +302,10 @@
     "referralLockedBody": "Bağlantını almak için ön satışa en az {min} katkıda bulunmuş olman gerekiyor. Şu an {current} seviyesindesin.",
     "referralProgressLabel": "{current} / {min}",
     "referralLockedCta": "OPEN satın al",
-    "referralUnavailable": "Referans programı on-chain ön satışla birlikte etkinleşir."
+    "referralUnavailable": "Referans programı on-chain ön satışla birlikte etkinleşir.",
+    "addTokenCta": "OPEN’i cüzdana ekle",
+    "addTokenPending": "Cüzdanında onayla…",
+    "addTokenAdded": "OPEN cüzdanına eklendi."
   },
   "swapPage": {
     "title": "Takas",

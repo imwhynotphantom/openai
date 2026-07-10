@@ -302,7 +302,10 @@
     "referralLockedBody": "Para obtener tu link necesitas haber aportado al menos {min} en la preventa. Llevas {current}.",
     "referralProgressLabel": "{current} de {min}",
     "referralLockedCta": "Adquirir OPEN",
-    "referralUnavailable": "El programa de referidos se activa con la preventa on-chain."
+    "referralUnavailable": "El programa de referidos se activa con la preventa on-chain.",
+    "addTokenCta": "Añadir OPEN a la wallet",
+    "addTokenPending": "Confirma en tu wallet…",
+    "addTokenAdded": "OPEN añadido a tu wallet."
   },
   "swapPage": {
     "title": "Intercambiar",

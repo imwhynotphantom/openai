@@ -302,7 +302,10 @@
     "referralLockedBody": "للحصول على رابطك يجب أن تكون قد ساهمت بما لا يقل عن {min} في البيع المسبق. أنت عند {current}.",
     "referralProgressLabel": "{current} من {min}",
     "referralLockedCta": "شراء OPEN",
-    "referralUnavailable": "يُفعَّل برنامج الإحالة مع البيع المسبق on-chain."
+    "referralUnavailable": "يُفعَّل برنامج الإحالة مع البيع المسبق on-chain.",
+    "addTokenCta": "أضف OPEN إلى المحفظة",
+    "addTokenPending": "أكّد في محفظتك…",
+    "addTokenAdded": "تمت إضافة OPEN إلى محفظتك."
   },
   "swapPage": {
     "title": "تبديل",

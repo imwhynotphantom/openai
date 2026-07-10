@@ -302,7 +302,10 @@
     "referralLockedBody": "Pour obtenir votre lien, vous devez avoir contribué au moins {min} à la prévente. Vous en êtes à {current}.",
     "referralProgressLabel": "{current} sur {min}",
     "referralLockedCta": "Acquérir OPEN",
-    "referralUnavailable": "Le programme de parrainage s'active avec la prévente on-chain."
+    "referralUnavailable": "Le programme de parrainage s'active avec la prévente on-chain.",
+    "addTokenCta": "Ajouter OPEN au wallet",
+    "addTokenPending": "Confirmez dans votre wallet…",
+    "addTokenAdded": "OPEN ajouté à votre wallet."
   },
   "swapPage": {
     "title": "Échanger",

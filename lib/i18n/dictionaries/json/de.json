@@ -302,7 +302,10 @@
     "referralLockedBody": "Um Ihren Link zu erhalten, müssen Sie mindestens {min} zum Vorverkauf beigetragen haben. Sie sind bei {current}.",
     "referralProgressLabel": "{current} von {min}",
     "referralLockedCta": "OPEN kaufen",
-    "referralUnavailable": "Das Empfehlungsprogramm wird mit dem On-Chain-Vorverkauf aktiviert."
+    "referralUnavailable": "Das Empfehlungsprogramm wird mit dem On-Chain-Vorverkauf aktiviert.",
+    "addTokenCta": "OPEN zur Wallet hinzufügen",
+    "addTokenPending": "In deiner Wallet bestätigen…",
+    "addTokenAdded": "OPEN wurde deiner Wallet hinzugefügt."
   },
   "swapPage": {
     "title": "Tauschen",

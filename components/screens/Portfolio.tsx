@@ -11,6 +11,7 @@ import { useWalletDisconnect } from "@/hooks/useWalletDisconnect";
 import { useLivePrices } from "@/hooks/useLivePrices";
 import { useOpenPrice } from "@/hooks/useOpenPrice";
 import { useReferralStats, REFERRAL_MIN_USD } from "@/hooks/useReferralStats";
+import { AddOpenToWallet } from "@/components/AddOpenToWallet";
 import { useI18n } from "@/lib/i18n/LocaleProvider";
 import { tf } from "@/lib/i18n/config";
 
@@ -170,6 +171,7 @@ export default function Portfolio() {
           >
             {t.portfolio.deposit}
           </button>
+          <AddOpenToWallet />
         </div>
       </div>
       <div data-2col style={css("display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:start")}>

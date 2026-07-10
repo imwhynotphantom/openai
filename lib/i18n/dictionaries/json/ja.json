@@ -302,7 +302,10 @@
     "referralLockedBody": "リンクを取得するには、プレセールに最低 {min} の拠出が必要です。現在 {current} です。",
     "referralProgressLabel": "{min} 中 {current}",
     "referralLockedCta": "OPEN を購入",
-    "referralUnavailable": "紹介プログラムはオンチェーンのプレセール開始とともに有効になります。"
+    "referralUnavailable": "紹介プログラムはオンチェーンのプレセール開始とともに有効になります。",
+    "addTokenCta": "OPENをウォレットに追加",
+    "addTokenPending": "ウォレットで確認してください…",
+    "addTokenAdded": "OPENがウォレットに追加されました。"
   },
   "swapPage": {
     "title": "スワップ",

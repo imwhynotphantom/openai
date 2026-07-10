@@ -302,7 +302,10 @@
     "referralLockedBody": "To get your link you need to have contributed at least {min} to the presale. You are at {current}.",
     "referralProgressLabel": "{current} of {min}",
     "referralLockedCta": "Buy OPEN",
-    "referralUnavailable": "The referral program activates with the on-chain presale."
+    "referralUnavailable": "The referral program activates with the on-chain presale.",
+    "addTokenCta": "Add OPEN to wallet",
+    "addTokenPending": "Confirm in your wallet…",
+    "addTokenAdded": "OPEN added to your wallet."
   },
   "swapPage": {
     "title": "Swap",

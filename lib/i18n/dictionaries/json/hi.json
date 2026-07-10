@@ -302,7 +302,10 @@
     "referralLockedBody": "लिंक पाने के लिए आपको प्रीसेल में कम से कम {min} का योगदान करना होगा। आप {current} पर हैं।",
     "referralProgressLabel": "{min} में से {current}",
     "referralLockedCta": "OPEN खरीदें",
-    "referralUnavailable": "रेफ़रल प्रोग्राम on-chain प्रीसेल के साथ सक्रिय होता है।"
+    "referralUnavailable": "रेफ़रल प्रोग्राम on-chain प्रीसेल के साथ सक्रिय होता है।",
+    "addTokenCta": "OPEN को वॉलेट में जोड़ें",
+    "addTokenPending": "अपने वॉलेट में पुष्टि करें…",
+    "addTokenAdded": "OPEN आपके वॉलेट में जोड़ा गया।"
   },
   "swapPage": {
     "title": "Swap",

@@ -302,7 +302,10 @@
     "referralLockedBody": "Чтобы получить ссылку, нужно внести в предпродажу минимум {min}. Сейчас у вас {current}.",
     "referralProgressLabel": "{current} из {min}",
     "referralLockedCta": "Купить OPEN",
-    "referralUnavailable": "Реферальная программа активируется вместе с on-chain предпродажей."
+    "referralUnavailable": "Реферальная программа активируется вместе с on-chain предпродажей.",
+    "addTokenCta": "Добавить OPEN в кошелёк",
+    "addTokenPending": "Подтвердите в кошельке…",
+    "addTokenAdded": "OPEN добавлен в кошелёк."
   },
   "swapPage": {
     "title": "Обмен",
