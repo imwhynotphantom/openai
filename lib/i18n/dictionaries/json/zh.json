@@ -244,6 +244,10 @@
         "与任何投资一样，OPEN 价值可能上涨或下跌。只投资您能承受损失的金额。通过 OPEN，您参与投资 OpenAI, Inc. 真实股权的国库——链上、有流动性，且 OPI 后 flywheel 持续运转。"
       ],
       [
+        "推荐计划如何运作？",
+        "分享你的专属链接，通过它完成的每笔购买你都能获得 3% 的 OPEN。要获得链接，你需要在预售中至少投入 1,000 美元（以 USDC 计）；链接可在你的钱包页面找到。奖励在预售合约中链上记账，并在 TGE 领取时与你的代币一同发放。奖励不会减少被推荐买家所获得的数量。"
+      ],
+      [
         "OPI 之后会怎样？",
         "OPI 不会结束循环：国库继续购买 OpenAI, Inc. 股权（公开和私人市场），ChatGPT、OpenAI API 及其他服务产生使用收入，其中 30% 持续用于回购并销毁 OPEN。OPEN 继续反映国库：更多 OpenAI, Inc. 股权、更多服务收入和链上可验证的回购。"
       ]
@@ -285,7 +289,20 @@
     "movementsTitle": "交易记录",
     "movementsBody": "您的完整交易历史在 Base 网络浏览器上。",
     "viewBasescan": "在 Basescan 查看",
-    "movementsNote": "OPEN 购买显示为与预售合约的交互。"
+    "movementsNote": "OPEN 购买显示为与预售合约的交互。",
+    "referralTitle": "推荐",
+    "referralSubtitle": "分享你的链接，通过它完成的每笔购买你都能赚取 3% 的 OPEN。",
+    "referralYourLink": "你的推荐链接",
+    "referralCopy": "复制链接",
+    "referralCopied": "链接已复制",
+    "referralStatReferrals": "推荐购买数",
+    "referralStatEarned": "已赚取的 OPEN",
+    "referralEarnNote": "奖励记入合约，并在 TGE 时与你的领取一同发放。",
+    "referralLockedTitle": "解锁你的推荐链接",
+    "referralLockedBody": "要获得链接，你需要在预售中至少投入 {min}。你目前为 {current}。",
+    "referralProgressLabel": "{current} / {min}",
+    "referralLockedCta": "购买 OPEN",
+    "referralUnavailable": "推荐计划将随链上预售一同启用。"
   },
   "swapPage": {
     "title": "交换",

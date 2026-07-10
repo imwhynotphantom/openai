@@ -244,6 +244,10 @@
         "Zoals bij elke investering kan de waarde van OPEN stijgen of dalen. Investeer alleen wat je kunt missen. Met OPEN neem je deel aan de schatkist die investeert in echte aandelen van OpenAI, Inc. — on-chain, met liquiditeit en een flywheel die actief blijft na de OPI."
       ],
       [
+        "Hoe werkt het referral-programma?",
+        "Deel je persoonlijke link en ontvang 3% in OPEN van elke aankoop die via jouw link wordt gedaan. Om je link te krijgen moet je minimaal 1.000 USD (in USDC) hebben bijgedragen aan de presale; je vindt hem in je Wallet. De bonus wordt on-chain bijgeschreven in het presale-contract en je ontvangt hem samen met je tokens bij de TGE-claim. De bonus vermindert niet wat de doorverwezen koper ontvangt."
+      ],
+      [
         "Wat gebeurt er na de OPI?",
         "De OPI sluit de cyclus niet: de schatkist blijft aandelen van OpenAI, Inc. kopen (publieke en private markt), ChatGPT, de OpenAI API en de overige diensten genereren gebruiksinkomsten, en 30% van die commissies wordt continu bestemd om OPEN terug te kopen en te verbranden. OPEN blijft de schatkist weerspiegelen: meer aandelen van OpenAI, Inc., meer dienstinkomsten en verifieerbare terugkopen on-chain."
       ]
@@ -285,7 +289,20 @@
     "movementsTitle": "Bewegingen",
     "movementsBody": "Je volledige transactiegeschiedenis staat in de explorer van het Base-netwerk.",
     "viewBasescan": "Bekijken op Basescan",
-    "movementsNote": "OPEN-aankopen verschijnen als interacties met het presale-contract."
+    "movementsNote": "OPEN-aankopen verschijnen als interacties met het presale-contract.",
+    "referralTitle": "Referrals",
+    "referralSubtitle": "Deel je link en verdien 3% in OPEN van elke aankoop die via jouw link wordt gedaan.",
+    "referralYourLink": "Jouw referral-link",
+    "referralCopy": "Link kopiëren",
+    "referralCopied": "Link gekopieerd",
+    "referralStatReferrals": "Doorverwezen aankopen",
+    "referralStatEarned": "Verdiende OPEN",
+    "referralEarnNote": "De bonus wordt in het contract bijgeschreven en ontvangen samen met je claim bij de TGE.",
+    "referralLockedTitle": "Ontgrendel je referral-link",
+    "referralLockedBody": "Om je link te krijgen moet je minimaal {min} hebben bijgedragen aan de presale. Je zit op {current}.",
+    "referralProgressLabel": "{current} van {min}",
+    "referralLockedCta": "OPEN kopen",
+    "referralUnavailable": "Het referral-programma wordt geactiveerd met de on-chain presale."
   },
   "swapPage": {
     "title": "Wisselen",

@@ -244,6 +244,10 @@
         "Comme tout investissement, la valeur d'OPEN peut monter ou descendre. N'investissez que ce que vous pouvez vous permettre. Avec OPEN, vous participez à la trésorerie qui investit dans de vraies actions d'OpenAI, Inc. — on-chain, avec liquidité et un flywheel qui reste actif après l'OPI."
       ],
       [
+        "Comment fonctionne le programme de parrainage ?",
+        "Partagez votre lien personnel et recevez 3 % en OPEN sur chaque achat effectué via celui-ci. Pour obtenir votre lien, vous devez avoir contribué au moins 1 000 USD (en USDC) à la prévente ; vous le trouverez dans votre Portefeuille. Le bonus est crédité on-chain dans le contrat de prévente et vous le recevez avec vos tokens lors du claim au TGE. Le bonus ne réduit pas ce que reçoit l'acheteur parrainé."
+      ],
+      [
         "Que se passe-t-il après l'OPI ?",
         "L'OPI ne clôt pas le cycle : la trésorerie continue d'acheter des actions d'OpenAI, Inc. (marché public et privé), ChatGPT, l'API OpenAI et le reste des services génèrent des revenus d'utilisation, et 30 % de ces frais sont continuellement alloués au rachat et au burn de OPEN. OPEN continue de refléter la trésorerie : plus d'actions d'OpenAI, Inc., plus de revenus de services et des rachats vérifiables on-chain."
       ]
@@ -285,7 +289,20 @@
     "movementsTitle": "Mouvements",
     "movementsBody": "Votre historique complet de transactions se trouve sur l'explorateur du réseau Base.",
     "viewBasescan": "Voir sur Basescan",
-    "movementsNote": "Les achats d'OPEN apparaissent comme des interactions avec le contrat de prévente."
+    "movementsNote": "Les achats d'OPEN apparaissent comme des interactions avec le contrat de prévente.",
+    "referralTitle": "Parrainage",
+    "referralSubtitle": "Partagez votre lien et gagnez 3 % en OPEN sur chaque achat effectué via celui-ci.",
+    "referralYourLink": "Votre lien de parrainage",
+    "referralCopy": "Copier le lien",
+    "referralCopied": "Lien copié",
+    "referralStatReferrals": "Achats parrainés",
+    "referralStatEarned": "OPEN gagnés",
+    "referralEarnNote": "Le bonus est crédité dans le contrat et reçu avec votre claim au TGE.",
+    "referralLockedTitle": "Débloquez votre lien de parrainage",
+    "referralLockedBody": "Pour obtenir votre lien, vous devez avoir contribué au moins {min} à la prévente. Vous en êtes à {current}.",
+    "referralProgressLabel": "{current} sur {min}",
+    "referralLockedCta": "Acquérir OPEN",
+    "referralUnavailable": "Le programme de parrainage s'active avec la prévente on-chain."
   },
   "swapPage": {
     "title": "Échanger",

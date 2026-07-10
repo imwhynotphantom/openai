@@ -244,6 +244,10 @@
         "Como qualquer investimento, o valor de OPEN pode subir ou descer. Invista apenas o que pode permitir-se. Com OPEN participa no tesouro que investe em ações reais da OpenAI, Inc. — on-chain, com liquidez e um flywheel que permanece ativo após a OPI."
       ],
       [
+        "Como funciona o programa de indicações?",
+        "Compartilhe seu link pessoal e receba 3% em OPEN de cada compra feita através dele. Para obter seu link você precisa ter contribuído pelo menos 1.000 USD (em USDC) na pré-venda; você o encontrará na sua Carteira. O bônus é creditado on-chain no contrato de pré-venda e você o recebe junto com seus tokens no claim do TGE. O bônus não reduz o que o comprador indicado recebe."
+      ],
+      [
         "O que acontece depois da OPI?",
         "A OPI não fecha o ciclo: o tesouro continua a comprar ações da OpenAI, Inc. (mercado público e privado), ChatGPT, a API da OpenAI e os restantes serviços geram receitas por utilização, e 30% dessas comissões é destinado de forma contínua a recomprar e queimar OPEN. OPEN continua a refletir o tesouro: mais ações da OpenAI, Inc., mais receitas de serviços e recompras verificáveis on-chain."
       ]
@@ -285,7 +289,20 @@
     "movementsTitle": "Movimentos",
     "movementsBody": "O seu histórico completo de transações está no explorador da rede Base.",
     "viewBasescan": "Ver no Basescan",
-    "movementsNote": "As compras de OPEN aparecem como interações com o contrato de pré-venda."
+    "movementsNote": "As compras de OPEN aparecem como interações com o contrato de pré-venda.",
+    "referralTitle": "Indicações",
+    "referralSubtitle": "Compartilhe seu link e ganhe 3% em OPEN de cada compra feita através dele.",
+    "referralYourLink": "Seu link de indicação",
+    "referralCopy": "Copiar link",
+    "referralCopied": "Link copiado",
+    "referralStatReferrals": "Compras indicadas",
+    "referralStatEarned": "OPEN ganhos",
+    "referralEarnNote": "O bônus é creditado no contrato e recebido junto com seu claim no TGE.",
+    "referralLockedTitle": "Desbloqueie seu link de indicação",
+    "referralLockedBody": "Para obter seu link você precisa ter contribuído pelo menos {min} na pré-venda. Você está em {current}.",
+    "referralProgressLabel": "{current} de {min}",
+    "referralLockedCta": "Adquirir OPEN",
+    "referralUnavailable": "O programa de indicações é ativado com a pré-venda on-chain."
   },
   "swapPage": {
     "title": "Trocar",

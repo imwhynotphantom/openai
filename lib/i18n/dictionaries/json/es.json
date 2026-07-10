@@ -244,6 +244,10 @@
         "Como cualquier inversión, el valor de OPEN puede subir o bajar. Invierte solo lo que puedas permitirte. Con OPEN participas en la tesorería que invierte en acciones reales de OpenAI, Inc. — on-chain, con liquidez y un flywheel que sigue activo después de la OPI."
       ],
       [
+        "¿Cómo funciona el programa de referidos?",
+        "Comparte tu link personal y recibe el 3% en OPEN de cada compra realizada a través de él. Para obtener tu link necesitas haber aportado al menos 1.000 USD (en USDC) a la preventa; lo encontrarás en tu Cartera. El bonus se acredita on-chain en el contrato de preventa y lo recibes junto a tus tokens en el claim del TGE. El bonus no reduce lo que recibe el comprador referido."
+      ],
+      [
         "¿Qué pasa después de la OPI?",
         "La OPI no cierra el ciclo: la tesorería sigue comprando acciones de OpenAI, Inc. (mercado público y privado), ChatGPT, la API de OpenAI y el resto de servicios generan ingresos por uso, y el 30% de esas comisiones se destina de forma continua a recomprar y quemar OPEN. OPEN sigue reflejando la tesorería: más acciones de OpenAI, Inc., más ingresos de servicios y recompras verificables on-chain."
       ]
@@ -285,7 +289,20 @@
     "movementsTitle": "Movimientos",
     "movementsBody": "Tu historial completo de transacciones está en el explorador de la red Base.",
     "viewBasescan": "Ver en Basescan",
-    "movementsNote": "Las compras de OPEN aparecen como interacciones con el contrato de preventa."
+    "movementsNote": "Las compras de OPEN aparecen como interacciones con el contrato de preventa.",
+    "referralTitle": "Referidos",
+    "referralSubtitle": "Comparte tu link y gana el 3% en OPEN de cada compra que llegue a través de él.",
+    "referralYourLink": "Tu link de referido",
+    "referralCopy": "Copiar link",
+    "referralCopied": "Link copiado",
+    "referralStatReferrals": "Compras referidas",
+    "referralStatEarned": "OPEN ganados",
+    "referralEarnNote": "El bonus se acredita en el contrato y se recibe junto a tu claim en el TGE.",
+    "referralLockedTitle": "Desbloquea tu link de referido",
+    "referralLockedBody": "Para obtener tu link necesitas haber aportado al menos {min} en la preventa. Llevas {current}.",
+    "referralProgressLabel": "{current} de {min}",
+    "referralLockedCta": "Adquirir OPEN",
+    "referralUnavailable": "El programa de referidos se activa con la preventa on-chain."
   },
   "swapPage": {
     "title": "Intercambiar",

@@ -244,6 +244,10 @@
         "Jak każda inwestycja, wartość OPEN może rosnąć lub spadać. Inwestuj tylko to, na co Cię stać. Z OPEN uczestniczysz w skarbcu inwestującym w prawdziwe akcje OpenAI, Inc. — on-chain, z płynnością i flywheel, który pozostaje aktywny po OPI."
       ],
       [
+        "Jak działa program poleceń?",
+        "Udostępnij swój osobisty link i otrzymuj 3% w OPEN z każdego zakupu dokonanego za jego pośrednictwem. Aby otrzymać link, musisz wpłacić co najmniej 1000 USD (w USDC) w przedsprzedaży; znajdziesz go w swoim Portfelu. Bonus jest zapisywany on-chain w kontrakcie przedsprzedaży i otrzymujesz go razem ze swoimi tokenami przy claimie TGE. Bonus nie zmniejsza tego, co otrzymuje polecony kupujący."
+      ],
+      [
         "Co dzieje się po OPI?",
         "OPI nie zamyka cyklu: skarbiec nadal kupuje akcje OpenAI, Inc. (rynek publiczny i prywatny), ChatGPT, API OpenAI i pozostałe usługi generują przychody z użycia, a 30% tych prowizji jest stale przeznaczane na odkup i spalanie OPEN. OPEN nadal odzwierciedla skarbiec: więcej akcji OpenAI, Inc., więcej przychodów z usług i weryfikowalne odkupy on-chain."
       ]
@@ -285,7 +289,20 @@
     "movementsTitle": "Ruchy",
     "movementsBody": "Pełna historia transakcji jest w eksploratorze sieci Base.",
     "viewBasescan": "Zobacz w Basescan",
-    "movementsNote": "Zakupy OPEN pojawiają się jako interakcje z kontraktem przedsprzedaży."
+    "movementsNote": "Zakupy OPEN pojawiają się jako interakcje z kontraktem przedsprzedaży.",
+    "referralTitle": "Polecenia",
+    "referralSubtitle": "Udostępnij swój link i zarabiaj 3% w OPEN z każdego zakupu dokonanego za jego pośrednictwem.",
+    "referralYourLink": "Twój link polecający",
+    "referralCopy": "Kopiuj link",
+    "referralCopied": "Link skopiowany",
+    "referralStatReferrals": "Polecone zakupy",
+    "referralStatEarned": "Zarobione OPEN",
+    "referralEarnNote": "Bonus jest zapisywany w kontrakcie i otrzymywany razem z twoim claimem przy TGE.",
+    "referralLockedTitle": "Odblokuj swój link polecający",
+    "referralLockedBody": "Aby otrzymać link, musisz wpłacić co najmniej {min} w przedsprzedaży. Masz {current}.",
+    "referralProgressLabel": "{current} z {min}",
+    "referralLockedCta": "Kup OPEN",
+    "referralUnavailable": "Program poleceń aktywuje się wraz z przedsprzedażą on-chain."
   },
   "swapPage": {
     "title": "Wymień",

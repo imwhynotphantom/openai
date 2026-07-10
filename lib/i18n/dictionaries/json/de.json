@@ -244,6 +244,10 @@
         "Wie bei jeder Investition kann der Wert von OPEN steigen oder fallen. Investieren Sie nur, was Sie sich leisten können. Mit OPEN nehmen Sie an der Treasury teil, die in echte OpenAI, Inc.-Aktien investiert — On-Chain, mit Liquidität und einem Flywheel, das nach dem Börsengang aktiv bleibt."
       ],
       [
+        "Wie funktioniert das Empfehlungsprogramm?",
+        "Teilen Sie Ihren persönlichen Link und erhalten Sie 3 % in OPEN bei jedem Kauf über diesen Link. Um Ihren Link zu erhalten, müssen Sie mindestens 1.000 USD (in USDC) zum Vorverkauf beigetragen haben; Sie finden ihn in Ihrer Wallet. Der Bonus wird on-chain im Vorverkaufsvertrag gutgeschrieben und Sie erhalten ihn zusammen mit Ihren Token beim TGE-Claim. Der Bonus verringert nicht, was der geworbene Käufer erhält."
+      ],
+      [
         "Was passiert nach dem Börsengang?",
         "Der Börsengang schließt den Zyklus nicht: Die Treasury kauft weiter OpenAI, Inc.-Aktien (öffentlicher und privater Markt), ChatGPT, die OpenAI-API und die übrigen Dienste erzeugen Nutzungseinnahmen, und 30 % dieser Gebühren werden fortlaufend zum Rückkauf und Burn von OPEN verwendet. OPEN spiegelt weiter die Treasury wider: mehr OpenAI, Inc.-Aktien, mehr Diensteinnahmen und nachweisbare On-Chain-Rückkäufe."
       ]
@@ -285,7 +289,20 @@
     "movementsTitle": "Bewegungen",
     "movementsBody": "Ihre vollständige Transaktionshistorie befindet sich im Explorer des Base-Netzwerks.",
     "viewBasescan": "Auf Basescan anzeigen",
-    "movementsNote": "OPEN-Käufe erscheinen als Interaktionen mit dem Vorverkaufsvertrag."
+    "movementsNote": "OPEN-Käufe erscheinen als Interaktionen mit dem Vorverkaufsvertrag.",
+    "referralTitle": "Empfehlungen",
+    "referralSubtitle": "Teilen Sie Ihren Link und verdienen Sie 3 % in OPEN bei jedem Kauf über diesen Link.",
+    "referralYourLink": "Ihr Empfehlungslink",
+    "referralCopy": "Link kopieren",
+    "referralCopied": "Link kopiert",
+    "referralStatReferrals": "Vermittelte Käufe",
+    "referralStatEarned": "Verdiente OPEN",
+    "referralEarnNote": "Der Bonus wird im Vertrag gutgeschrieben und zusammen mit Ihrem Claim beim TGE ausgezahlt.",
+    "referralLockedTitle": "Schalten Sie Ihren Empfehlungslink frei",
+    "referralLockedBody": "Um Ihren Link zu erhalten, müssen Sie mindestens {min} zum Vorverkauf beigetragen haben. Sie sind bei {current}.",
+    "referralProgressLabel": "{current} von {min}",
+    "referralLockedCta": "OPEN kaufen",
+    "referralUnavailable": "Das Empfehlungsprogramm wird mit dem On-Chain-Vorverkauf aktiviert."
   },
   "swapPage": {
     "title": "Tauschen",

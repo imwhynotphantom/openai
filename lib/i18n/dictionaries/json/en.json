@@ -244,6 +244,10 @@
         "Like any investment, the value of OPEN can go up or down. Only invest what you can afford. With OPEN you participate in the treasury that invests in real OpenAI, Inc. shares — on-chain, with liquidity and a flywheel that stays active after the IPO."
       ],
       [
+        "How does the referral program work?",
+        "Share your personal link and receive 3% in OPEN from every purchase made through it. To get your link you need to have contributed at least 1,000 USD (in USDC) to the presale; you will find it in your Wallet. The bonus is credited on-chain in the presale contract and you receive it together with your tokens at the TGE claim. The bonus does not reduce what the referred buyer receives."
+      ],
+      [
         "What happens after the IPO?",
         "The IPO does not close the cycle: the treasury keeps buying OpenAI, Inc. shares (public and private market), ChatGPT, the OpenAI API and the rest of the services generate usage revenue, and 30% of those fees are continuously allocated to buy back and burn OPEN. OPEN continues to reflect the treasury: more OpenAI, Inc. shares, more service revenue and verifiable on-chain buybacks."
       ]
@@ -285,7 +289,20 @@
     "movementsTitle": "Activity",
     "movementsBody": "Your full transaction history is on the Base network explorer.",
     "viewBasescan": "View on Basescan",
-    "movementsNote": "OPEN purchases appear as interactions with the presale contract."
+    "movementsNote": "OPEN purchases appear as interactions with the presale contract.",
+    "referralTitle": "Referrals",
+    "referralSubtitle": "Share your link and earn 3% in OPEN from every purchase made through it.",
+    "referralYourLink": "Your referral link",
+    "referralCopy": "Copy link",
+    "referralCopied": "Link copied",
+    "referralStatReferrals": "Referred purchases",
+    "referralStatEarned": "OPEN earned",
+    "referralEarnNote": "The bonus is credited in the contract and received together with your claim at TGE.",
+    "referralLockedTitle": "Unlock your referral link",
+    "referralLockedBody": "To get your link you need to have contributed at least {min} to the presale. You are at {current}.",
+    "referralProgressLabel": "{current} of {min}",
+    "referralLockedCta": "Buy OPEN",
+    "referralUnavailable": "The referral program activates with the on-chain presale."
   },
   "swapPage": {
     "title": "Swap",

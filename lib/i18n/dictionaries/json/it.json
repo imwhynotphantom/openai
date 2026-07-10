@@ -244,6 +244,10 @@
         "Come qualsiasi investimento, il valore di OPEN può salire o scendere. Investi solo ciò che puoi permetterti. Con OPEN partecipi al tesoro che investe in azioni reali di OpenAI, Inc. — on-chain, con liquidità e un flywheel che resta attivo dopo l'OPI."
       ],
       [
+        "Come funziona il programma referral?",
+        "Condividi il tuo link personale e ricevi il 3% in OPEN da ogni acquisto effettuato tramite esso. Per ottenere il tuo link devi aver contribuito almeno 1.000 USD (in USDC) alla prevendita; lo troverai nel tuo Portafoglio. Il bonus viene accreditato on-chain nel contratto di prevendita e lo ricevi insieme ai tuoi token al claim del TGE. Il bonus non riduce quanto riceve l'acquirente referenziato."
+      ],
+      [
         "Cosa succede dopo l'OPI?",
         "L'OPI non chiude il ciclo: il tesoro continua ad acquistare azioni di OpenAI, Inc. (mercato pubblico e privato), ChatGPT, l'API di OpenAI e gli altri servizi generano ricavi per utilizzo, e il 30% di quelle commissioni è destinato in modo continuo a riacquistare e bruciare OPEN. OPEN continua a riflettere il tesoro: più azioni di OpenAI, Inc., più ricavi dai servizi e riacquisti verificabili on-chain."
       ]
@@ -285,7 +289,20 @@
     "movementsTitle": "Movimenti",
     "movementsBody": "La tua cronologia completa delle transazioni è nell'esploratore della rete Base.",
     "viewBasescan": "Vedi su Basescan",
-    "movementsNote": "Gli acquisti di OPEN compaiono come interazioni con il contratto di prevendita."
+    "movementsNote": "Gli acquisti di OPEN compaiono come interazioni con il contratto di prevendita.",
+    "referralTitle": "Referral",
+    "referralSubtitle": "Condividi il tuo link e guadagna il 3% in OPEN da ogni acquisto effettuato tramite esso.",
+    "referralYourLink": "Il tuo link referral",
+    "referralCopy": "Copia link",
+    "referralCopied": "Link copiato",
+    "referralStatReferrals": "Acquisti referenziati",
+    "referralStatEarned": "OPEN guadagnati",
+    "referralEarnNote": "Il bonus viene accreditato nel contratto e ricevuto insieme al tuo claim al TGE.",
+    "referralLockedTitle": "Sblocca il tuo link referral",
+    "referralLockedBody": "Per ottenere il tuo link devi aver contribuito almeno {min} alla prevendita. Sei a {current}.",
+    "referralProgressLabel": "{current} di {min}",
+    "referralLockedCta": "Acquista OPEN",
+    "referralUnavailable": "Il programma referral si attiva con la prevendita on-chain."
   },
   "swapPage": {
     "title": "Scambia",

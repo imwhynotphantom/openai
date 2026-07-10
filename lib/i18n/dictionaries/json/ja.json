@@ -244,6 +244,10 @@
         "あらゆる投資と同様、OPEN の価値は上下します。失ってもよい範囲のみ投資してください。OPEN で、OpenAI, Inc. の実株式に投資するトレジャリーに参加 — オンチェーン、流動性あり、OPI 後も flywheel は継続。"
       ],
       [
+        "紹介プログラムはどのように機能しますか？",
+        "専用リンクを共有すると、そのリンク経由の購入ごとに 3% の OPEN を受け取れます。リンクを取得するには、プレセールに最低 1,000 米ドル（USDC）を拠出する必要があります。リンクはウォレットページにあります。ボーナスはプレセールコントラクトにオンチェーンで記録され、TGE のクレーム時にトークンと一緒に受け取れます。ボーナスは紹介された購入者の受取額を減らしません。"
+      ],
+      [
         "OPI 後はどうなりますか？",
         "OPI でサイクルは終わりません：トレジャリーは OpenAI, Inc. の株式（公開・非公開市場）を買い続け、ChatGPT、OpenAI API などが利用収益を生み、手数料の 30% が OPEN の買い戻しとバーンに継続的に充てられます。OPEN はトレジャリーを反映し続けます：より多くの OpenAI, Inc. 株式、より多くのサービス収益、オンチェーンで検証可能な買い戻し。"
       ]
@@ -285,7 +289,20 @@
     "movementsTitle": "取引履歴",
     "movementsBody": "完全な取引履歴は Base ネットワークエクスプローラーで確認できます。",
     "viewBasescan": "Basescan で見る",
-    "movementsNote": "OPEN 購入はプレセールコントラクトとのやり取りとして表示されます。"
+    "movementsNote": "OPEN 購入はプレセールコントラクトとのやり取りとして表示されます。",
+    "referralTitle": "紹介プログラム",
+    "referralSubtitle": "リンクを共有すると、そのリンク経由の購入ごとに 3% の OPEN を獲得できます。",
+    "referralYourLink": "あなたの紹介リンク",
+    "referralCopy": "リンクをコピー",
+    "referralCopied": "リンクをコピーしました",
+    "referralStatReferrals": "紹介された購入",
+    "referralStatEarned": "獲得した OPEN",
+    "referralEarnNote": "ボーナスはコントラクトに記録され、TGE のクレームと一緒に受け取れます。",
+    "referralLockedTitle": "紹介リンクをアンロック",
+    "referralLockedBody": "リンクを取得するには、プレセールに最低 {min} の拠出が必要です。現在 {current} です。",
+    "referralProgressLabel": "{min} 中 {current}",
+    "referralLockedCta": "OPEN を購入",
+    "referralUnavailable": "紹介プログラムはオンチェーンのプレセール開始とともに有効になります。"
   },
   "swapPage": {
     "title": "スワップ",

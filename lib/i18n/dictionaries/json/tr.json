@@ -244,6 +244,10 @@
         "Her yatırımda olduğu gibi OPEN değeri yükselebilir veya düşebilir. Yalnızca kaybetmeyi göze alabileceğiniz kadar yatırım yapın. OPEN ile, OpenAI, Inc.'nin gerçek hisselerine yatırım yapan hazineye katılırsınız — on-chain, likidite ve OPI sonrasında da aktif kalan bir flywheel ile."
       ],
       [
+        "Referans programı nasıl çalışır?",
+        "Kişisel bağlantını paylaş ve üzerinden yapılan her satın alımdan %3 OPEN al. Bağlantını almak için ön satışa en az 1.000 USD (USDC olarak) katkıda bulunmuş olman gerekiyor; bağlantıyı Cüzdanında bulabilirsin. Bonus, ön satış sözleşmesine on-chain olarak kaydedilir ve TGE claim'inde tokenlerinle birlikte alırsın. Bonus, referans verilen alıcının aldığını azaltmaz."
+      ],
+      [
         "OPI sonrasında ne olur?",
         "OPI döngüyü kapatmaz: hazine OpenAI, Inc. hisselerini (halka açık ve özel piyasa) almaya devam eder; ChatGPT, OpenAI API ve diğer hizmetler kullanım geliri üretir ve bu komisyonların %30'u sürekli olarak OPEN geri alımı ve yakımına gider. OPEN hazineyi yansıtmaya devam eder: daha fazla OpenAI, Inc. hissesi, daha fazla hizmet geliri ve doğrulanabilir on-chain geri alımlar."
       ]
@@ -285,7 +289,20 @@
     "movementsTitle": "Hareketler",
     "movementsBody": "Tam işlem geçmişiniz Base ağ gezginindedir.",
     "viewBasescan": "Basescan'de gör",
-    "movementsNote": "OPEN satın alımları ön satış sözleşmesi etkileşimleri olarak görünür."
+    "movementsNote": "OPEN satın alımları ön satış sözleşmesi etkileşimleri olarak görünür.",
+    "referralTitle": "Referanslar",
+    "referralSubtitle": "Bağlantını paylaş ve üzerinden yapılan her satın alımdan %3 OPEN kazan.",
+    "referralYourLink": "Referans bağlantın",
+    "referralCopy": "Bağlantıyı kopyala",
+    "referralCopied": "Bağlantı kopyalandı",
+    "referralStatReferrals": "Referanslı satın alımlar",
+    "referralStatEarned": "Kazanılan OPEN",
+    "referralEarnNote": "Bonus sözleşmeye kaydedilir ve TGE'deki claim'inle birlikte alınır.",
+    "referralLockedTitle": "Referans bağlantının kilidini aç",
+    "referralLockedBody": "Bağlantını almak için ön satışa en az {min} katkıda bulunmuş olman gerekiyor. Şu an {current} seviyesindesin.",
+    "referralProgressLabel": "{current} / {min}",
+    "referralLockedCta": "OPEN satın al",
+    "referralUnavailable": "Referans programı on-chain ön satışla birlikte etkinleşir."
   },
   "swapPage": {
     "title": "Takas",
