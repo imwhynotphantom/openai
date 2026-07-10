@@ -23,6 +23,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: dict.meta.title,
     description: dict.meta.description,
+    icons: {
+      icon: "/favicon.png",
+      shortcut: "/favicon.png",
+      apple: "/favicon.png",
+    },
   };
 }
 

@@ -34,15 +34,16 @@ export function Hov({ as = "div", style, hover, focus, children, ...rest }: HovP
   );
 }
 
-/** Marca visual: solo el icono (el wordmark «Protocol» va aparte en Header/Footer). */
+/** Marca visual: icono cuadrado (el wordmark «Protocol» va aparte en Header/Footer). */
 export function Logo({ height = 28 }: { height?: number }) {
   return (
     <img
-      src="/openai-icon.png"
+      src="/logo.png"
       alt=""
       aria-hidden
+      width={height}
       height={height}
-      style={{ height, width: "auto", display: "block" }}
+      style={{ width: height, height, display: "block", objectFit: "contain" }}
     />
   );
 }

@@ -18,7 +18,7 @@ export const WALLET_CONNECT_METADATA = {
   name: brandLegal.productBrand,
   description: "Get OPEN on the Base network with your wallet.",
   url: wcOrigin,
-  icons: [`${wcOrigin}/favicon.ico`],
+  icons: [`${wcOrigin}/favicon.png`],
 } as const;
 
 /** USDC en Base (solo uso interno; no mostrar al usuario). */
