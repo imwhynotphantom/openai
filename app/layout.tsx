@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Hanken_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { AppProvider } from "@/lib/store";
 import { Web3Provider } from "@/components/providers/Web3Provider";
 import { WalletSync } from "@/components/providers/WalletSync";
+import { ReferralCapture } from "@/components/providers/ReferralCapture";
 import Header from "@/components/Header";
 import Marquee from "@/components/Marquee";
 import Footer from "@/components/Footer";
@@ -42,6 +44,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <AppProvider>
             <Web3Provider>
               <WalletSync />
+              <Suspense fallback={null}>
+                <ReferralCapture />
+              </Suspense>
               <div data-pad style={{ minHeight: "100vh", background: "#fff" }}>
                 <Header />
                 <Marquee />

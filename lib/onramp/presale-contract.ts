@@ -13,9 +13,15 @@ export const ERC20_ABI = parseAbi([
 ]);
 
 export const PRESALE_ABI = parseAbi([
-  "function buy(uint256 usdcAmount) external",
+  "function buy(uint256 usdcAmount, address referrer) external",
   "function quote(uint256 usdcAmount) view returns (uint256 openAmount)",
   "function remainingCapUSDC() view returns (uint256)",
+  "function contributedUSDC(address account) view returns (uint256)",
+  "function referralEarnedOpen(address account) view returns (uint256)",
+  "function referralCount(address account) view returns (uint256)",
+  "function referralVolumeUSDC(address account) view returns (uint256)",
+  "function isEligibleReferrer(address account) view returns (bool)",
+  "function MIN_REFERRER_USDC() view returns (uint256)",
 ]);
 
 export type PurchasePhase = "purchase" | "convert" | "purchase_after_convert";
@@ -36,6 +42,7 @@ export function getPresaleContract(): Address | undefined {
 export function buildUsdcPurchaseCalls(params: {
   minBuyAmount: bigint;
   needsApprove: boolean;
+  referrer: Address;
 }): PurchaseCall[] {
   const presale = getPresaleContract();
   if (!presale) throw new Error("PRESALE_CONTRACT_MISSING");
@@ -59,7 +66,7 @@ export function buildUsdcPurchaseCalls(params: {
     data: encodeFunctionData({
       abi: PRESALE_ABI,
       functionName: "buy",
-      args: [params.minBuyAmount],
+      args: [params.minBuyAmount, params.referrer],
     }),
     label: "buy",
   });
@@ -98,7 +105,7 @@ export function build0xConvertCalls(params: {
   return calls;
 }
 
-/** Batch Smart Wallet: approve venta → swap 0x → approve USDC → buy(minBuyAmount). */
+/** Batch Smart Wallet: approve venta → swap 0x → approve USDC → buy(minBuyAmount, referrer). */
 export function build0xFullBatchCalls(params: {
   sellToken: PaymentToken;
   sellAmount: bigint;
@@ -107,6 +114,7 @@ export function build0xFullBatchCalls(params: {
   quote: SwapQuoteResponse;
   minBuyAmount: bigint;
   needsUsdcApprove: boolean;
+  referrer: Address;
 }): PurchaseCall[] {
   const presale = getPresaleContract();
   if (!presale) throw new Error("PRESALE_CONTRACT_MISSING");
@@ -136,7 +144,7 @@ export function build0xFullBatchCalls(params: {
     data: encodeFunctionData({
       abi: PRESALE_ABI,
       functionName: "buy",
-      args: [params.minBuyAmount],
+      args: [params.minBuyAmount, params.referrer],
     }),
     label: "buy",
   });

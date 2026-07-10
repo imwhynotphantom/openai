@@ -33,6 +33,7 @@ import {
   type PurchasePhase,
 } from "@/lib/onramp/presale-contract";
 import { getPaymentToken, type PaymentTokenId } from "@/lib/onramp/payment-tokens";
+import { getReferrerForBuy } from "@/lib/referral";
 import type { SwapQuoteResponse } from "@/lib/onramp/swap-quote-types";
 
 export type PurchaseExecutionPhase = "idle" | "awaiting_wallet" | "confirming" | "done" | "error";
@@ -309,7 +310,7 @@ export function usePresalePurchase() {
             address: presale,
             abi: PRESALE_ABI,
             functionName: "buy",
-            args: [ctx.minBuy],
+            args: [ctx.minBuy, getReferrerForBuy(address)],
             chainId: base.id,
           });
         default:
@@ -524,9 +525,14 @@ export function usePresalePurchase() {
             quote: q,
             minBuyAmount: localMinBuy,
             needsUsdcApprove: freshUsdcApprove,
+            referrer: getReferrerForBuy(address),
           });
         } else {
-          calls = buildUsdcPurchaseCalls({ minBuyAmount: localMinBuy, needsApprove: freshUsdcApprove });
+          calls = buildUsdcPurchaseCalls({
+            minBuyAmount: localMinBuy,
+            needsApprove: freshUsdcApprove,
+            referrer: getReferrerForBuy(address),
+          });
         }
 
         const ctx: ExecContext = {
