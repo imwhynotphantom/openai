@@ -158,7 +158,7 @@ export default function Header() {
       <div data-header-inner style={css("max-width:1200px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px")}>
         <Link href="/" prefetch title={brandLegal.productBrand} data-header-brand style={css("text-decoration:none;display:flex;align-items:center;gap:10px;flex-shrink:0;min-width:0")}>
           <Logo />
-          <span data-header-wordmark style={css("font:700 19px var(--font-hanken);letter-spacing:-0.04em;color:#0D0D0D")}>Protocol</span>
+          <span data-header-wordmark style={css("font:700 19px var(--font-hanken);letter-spacing:-0.04em;color:#0D0D0D")}>OpenAIProtocol</span>
         </Link>
 
         <NavLinks />
