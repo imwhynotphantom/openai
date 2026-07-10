@@ -98,27 +98,29 @@ function WalletActions() {
   // Mientras wagmi restaura la sesión, hueco neutro (evita el parpadeo
   // de "Conectar wallet" en cada recarga con sesión activa).
   if (isReconnecting) {
-    return <div style={css("width:120px;height:38px;border-radius:999px;background:#F4F4F5")} />;
+    return <div data-wallet-skeleton style={css("width:120px;height:38px;border-radius:999px;background:#F4F4F5")} />;
   }
 
   // Estado real de wagmi como única fuente de verdad.
   if (isConnected && address) {
     return (
-      <div style={css("display:flex;align-items:center;gap:8px")}>
+      <div data-header-wallet style={css("display:flex;align-items:center;gap:8px")}>
         <Link
           href="/cartera"
           prefetch
-          style={css("text-decoration:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid #ECECEC;background:#fff;border-radius:999px")}
+          data-header-wallet-link
+          style={css("text-decoration:none;cursor:pointer;display:flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid #ECECEC;background:#fff;border-radius:999px;max-width:100%")}
         >
-          <span style={css("width:7px;height:7px;border-radius:50%;background:" + ACCENT)} />
-          <span style={css("font:500 13px var(--font-mono);color:#0D0D0D")}>{formatAddress(address)}</span>
+          <span style={css("width:7px;height:7px;border-radius:50%;background:" + ACCENT + ";flex-shrink:0")} />
+          <span data-header-wallet-address style={css("font:500 13px var(--font-mono);color:#0D0D0D;overflow:hidden;text-overflow:ellipsis;white-space:nowrap")}>{formatAddress(address)}</span>
         </Link>
         <Hov
           as="button"
           type="button"
+          data-wallet-disconnect
           title={t.portfolio.disconnect}
           onClick={disconnectWallet}
-          style="appearance:none;cursor:pointer;display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #ECECEC;background:#fff;border-radius:50%;color:#8A8A94"
+          style="appearance:none;cursor:pointer;display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #ECECEC;background:#fff;border-radius:50%;color:#8A8A94;flex-shrink:0"
           hover="border-color:#D14343;color:#D14343"
         >
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -140,11 +142,19 @@ function WalletActions() {
     <Hov
       as="button"
       type="button"
+      data-wallet-connect-btn
+      aria-label={t.nav.connectWallet}
       onClick={app.openWallet}
-      style="appearance:none;cursor:pointer;background:#0D0D0D;color:#fff;border:none;border-radius:999px;padding:10px 18px;font:600 14px var(--font-hanken);letter-spacing:-0.01em"
+      style="appearance:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#0D0D0D;color:#fff;border:none;border-radius:999px;padding:10px 18px;font:600 14px var(--font-hanken);letter-spacing:-0.01em;flex-shrink:0"
       hover="background:#000"
     >
-      {t.nav.connectWallet}
+      <span data-wallet-connect-label>{t.nav.connectWallet}</span>
+      <span data-wallet-connect-icon aria-hidden style={css("display:none;align-items:center;justify-content:center")}>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M4 8.5A2.5 2.5 0 0 1 6.5 6H18v14H6.5A2.5 2.5 0 0 1 4 17.5v-9Z" />
+          <path d="M18 10h2.5A1.5 1.5 0 0 1 22 11.5v3A1.5 1.5 0 0 1 20.5 16H18" />
+        </svg>
+      </span>
     </Hov>
   );
 }
@@ -153,14 +163,14 @@ export default function Header() {
   return (
     <header data-header style={css("position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.82);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid #ECECEC")}>
       <div data-header-inner style={css("max-width:1200px;margin:0 auto;padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px")}>
-        <Link href="/" prefetch title={brandLegal.productBrand} style={css("text-decoration:none;display:flex;align-items:center;gap:10px")}>
+        <Link href="/" prefetch title={brandLegal.productBrand} data-header-brand style={css("text-decoration:none;display:flex;align-items:center;gap:10px;flex-shrink:0;min-width:0")}>
           <Logo />
           <span data-header-wordmark style={css("font:700 19px var(--font-hanken);letter-spacing:-0.04em;color:#0D0D0D")}>Protocol</span>
         </Link>
 
         <NavLinks />
 
-        <div style={css("display:flex;align-items:center;gap:10px")}>
+        <div data-header-actions style={css("display:flex;align-items:center;gap:10px;flex-shrink:0;min-width:0")}>
           <PriceChip />
           <LanguagePicker />
           <WalletActions />

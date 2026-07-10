@@ -34,7 +34,7 @@ export function LanguagePicker() {
   };
 
   return (
-    <div ref={rootRef} style={{ position: "relative" }}>
+    <div ref={rootRef} data-lang-picker style={{ position: "relative" }}>
       <button
         type="button"
         aria-haspopup="listbox"
@@ -50,7 +50,7 @@ export function LanguagePicker() {
           <path d="M3 12h18" />
           <path d="M12 3a15 15 0 0 1 4 9 15 15 0 0 1-4 9 15 15 0 0 1-4-9 15 15 0 0 1 4-9Z" />
         </svg>
-        <span style={css("font:600 12px var(--font-mono);letter-spacing:0.04em;text-transform:uppercase")}>{locale}</span>
+        <span data-lang-code style={css("font:600 12px var(--font-mono);letter-spacing:0.04em;text-transform:uppercase")}>{locale}</span>
       </button>
 
       {open ? (
