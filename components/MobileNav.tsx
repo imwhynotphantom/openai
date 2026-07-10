@@ -7,12 +7,12 @@ import type { ReactElement } from "react";
 import { css } from "@/lib/css";
 import { fmtUSD, ACCENT } from "@/lib/format";
 import { useOpenPrice } from "@/hooks/useOpenPrice";
-import { brandLegal } from "@/lib/brand-legal";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 
-const NAV: { href: string; label: string; icon: (active: boolean) => ReactElement }[] = [
+const NAV: { href: string; labelKey: "home" | "market" | "buy" | "swap" | "wallet"; icon: (active: boolean) => ReactElement }[] = [
   {
     href: "/",
-    label: "Inicio",
+    labelKey: "home",
     icon: (active) => (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
         <path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5Z" stroke={active ? ACCENT : "#6B6B76"} strokeWidth="1.8" strokeLinejoin="round" />
@@ -21,7 +21,7 @@ const NAV: { href: string; label: string; icon: (active: boolean) => ReactElemen
   },
   {
     href: "/mercado",
-    label: "Mercado",
+    labelKey: "market",
     icon: (active) => (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
         <path d="M4 19V5M4 19h16M8 19V11M12 19V7M16 19v-4" stroke={active ? ACCENT : "#6B6B76"} strokeWidth="1.8" strokeLinecap="round" />
@@ -30,7 +30,7 @@ const NAV: { href: string; label: string; icon: (active: boolean) => ReactElemen
   },
   {
     href: "/comprar",
-    label: "Adquirir",
+    labelKey: "buy",
     icon: (active) => (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
         <circle cx="12" cy="12" r="9" stroke={active ? ACCENT : "#6B6B76"} strokeWidth="1.8" />
@@ -40,7 +40,7 @@ const NAV: { href: string; label: string; icon: (active: boolean) => ReactElemen
   },
   {
     href: "/swap",
-    label: "Swap",
+    labelKey: "swap",
     icon: (active) => (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
         <path d="M7 7h11l-2-2M17 17H6l2 2" stroke={active ? ACCENT : "#6B6B76"} strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
@@ -50,7 +50,7 @@ const NAV: { href: string; label: string; icon: (active: boolean) => ReactElemen
   },
   {
     href: "/cartera",
-    label: "Cartera",
+    labelKey: "wallet",
     icon: (active) => (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
         <path d="M4 8.5A2.5 2.5 0 0 1 6.5 6H18v14H6.5A2.5 2.5 0 0 1 4 17.5v-9Z" stroke={active ? ACCENT : "#6B6B76"} strokeWidth="1.8" strokeLinejoin="round" />
@@ -70,6 +70,7 @@ function MobileCtaPrice() {
 /** Barra inferior fija: CTA + navegación en un solo bloque (sin huecos). */
 export const MobileDock = memo(function MobileDock() {
   const pathname = usePathname();
+  const { t } = useI18n();
   const showCta = pathname !== "/comprar" && pathname !== "/swap";
 
   return (
@@ -88,16 +89,17 @@ export const MobileDock = memo(function MobileDock() {
               "width:100%;text-decoration:none;cursor:pointer;background:#0D0D0D;color:#fff;border-radius:14px;padding:13px 16px;font:600 16px var(--font-hanken);box-shadow:0 8px 20px -8px rgba(13,13,13,0.35);display:flex;align-items:center;justify-content:center;gap:8px"
             )}
           >
-            {brandLegal.suggestedCta} <MobileCtaPrice />
+            {t.legal.suggestedCta} <MobileCtaPrice />
           </Link>
         </div>
       )}
       <nav
         data-mobnav
-        aria-label="Navegación principal"
+        aria-label={t.nav.mainNavAria}
         style={css("display:grid;grid-template-columns:repeat(5,1fr);padding:4px 6px 6px")}
       >
-        {NAV.map(({ href, label, icon }) => {
+        {NAV.map(({ href, labelKey, icon }) => {
+          const label = t.nav[labelKey];
           const active = pathname === href;
           return (
             <Link

@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import { useConnect, type Connector } from "wagmi";
 import { css } from "@/lib/css";
 import { Hov } from "@/components/ui";
-import { BUY_FLOW_COPY } from "@/lib/onramp/constants";
+import { useBuyCopy } from "@/hooks/useBuyCopy";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 import { hasWalletConnect } from "@/lib/wagmi/config";
 import {
   clearStaleWalletConnectPairings,
@@ -89,6 +90,8 @@ function connectorIcon(connector: Connector) {
  *   simplemente se ofrecen las alternativas que sí funcionan.
  */
 export function WalletOptions({ onSuccess }: Props) {
+  const buy = useBuyCopy();
+  const { t } = useI18n();
   const { connect, connectors, isPending, variables, error, reset } = useConnect();
   // Los providers inyectados y el user-agent solo existen en cliente.
   const [mounted, setMounted] = useState(false);
@@ -124,8 +127,8 @@ export function WalletOptions({ onSuccess }: Props) {
     key: connector.uid,
     connector,
     label: connector.name,
-    sub: BUY_FLOW_COPY.walletOptionExtensionSub,
-    pendingLabel: BUY_FLOW_COPY.walletConnecting,
+    sub: buy.walletOptionExtensionSub,
+    pendingLabel: buy.walletConnecting,
     icon: connectorIcon(connector),
   }));
 
@@ -133,9 +136,9 @@ export function WalletOptions({ onSuccess }: Props) {
     ? {
         key: "mobile-wallet",
         connector: wc,
-        label: mobile ? BUY_FLOW_COPY.walletOptionMobileApp : BUY_FLOW_COPY.walletOptionQr,
-        sub: mobile ? BUY_FLOW_COPY.walletOptionMobileAppSub : BUY_FLOW_COPY.walletOptionQrSub,
-        pendingLabel: mobile ? BUY_FLOW_COPY.walletOpeningApp : BUY_FLOW_COPY.walletOpeningQr,
+        label: mobile ? buy.walletOptionMobileApp : buy.walletOptionQr,
+        sub: mobile ? buy.walletOptionMobileAppSub : buy.walletOptionQrSub,
+        pendingLabel: mobile ? buy.walletOpeningApp : buy.walletOpeningQr,
         icon: phoneIcon(),
       }
     : null;
@@ -144,9 +147,9 @@ export function WalletOptions({ onSuccess }: Props) {
     ? {
         key: "create-wallet",
         connector: coinbase,
-        label: BUY_FLOW_COPY.walletOptionCreate,
-        sub: BUY_FLOW_COPY.walletOptionCreateSub,
-        pendingLabel: BUY_FLOW_COPY.walletConnecting,
+        label: buy.walletOptionCreate,
+        sub: buy.walletOptionCreateSub,
+        pendingLabel: buy.walletConnecting,
         icon: letterIcon("+", "#2775CA"),
       }
     : null;
@@ -186,7 +189,7 @@ export function WalletOptions({ onSuccess }: Props) {
                     background: "color-mix(in srgb, var(--accent,#0E8C6A) 12%, #fff)",
                   }}
                 >
-                  Recomendado
+                  {t.common.recommended}
                 </span>
               ) : null}
             </span>
@@ -200,21 +203,21 @@ export function WalletOptions({ onSuccess }: Props) {
 
       {!mobile && injectedOptions.length === 0 && options.length > 0 ? (
         <p style={css("font:400 12px/1.5 var(--font-hanken);color:#8A8A94;margin:4px 2px 0")}>
-          {BUY_FLOW_COPY.noExtensionHint}
+          {buy.noExtensionHint}
         </p>
       ) : null}
 
       {options.length === 0 ? (
         <p style={css("font:400 13px/1.5 var(--font-hanken);color:#8A8A94;margin:0")}>
           {hasWalletConnect
-            ? "No hay ninguna forma de conexión disponible en este navegador."
-            : BUY_FLOW_COPY.walletConnectEnvHint}
+            ? t.common.noConnectionAvailable
+            : buy.walletConnectEnvHint}
         </p>
       ) : null}
 
       {error ? (
         <p style={css("font:400 13px var(--font-hanken);color:#D14343;margin:8px 0 0")}>
-          {mapConnectError(error)}
+          {mapConnectError(error, t.connectErrors)}
         </p>
       ) : null}
     </div>

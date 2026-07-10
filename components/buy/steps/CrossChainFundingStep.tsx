@@ -5,7 +5,8 @@ import { formatUnits, parseUnits } from "viem";
 import { QRCodeSVG } from "qrcode.react";
 import { css } from "@/lib/css";
 import { Hov } from "@/components/ui";
-import { BUY_FLOW_COPY } from "@/lib/onramp/constants";
+import { useBuyCopy } from "@/hooks/useBuyCopy";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 import { useDebouncedValue } from "@/hooks/useDebouncedValue";
 import { useBridgeQuote } from "@/hooks/useBridgeQuote";
 import { useBridgeExecution } from "@/hooks/useBridgeExecution";
@@ -25,6 +26,8 @@ type Props = {
 };
 
 export function CrossChainFundingStep({ recipient, onDelivered }: Props) {
+  const buy = useBuyCopy();
+  const { t } = useI18n();
   const [originId, setOriginId] = useState(BRIDGE_ORIGINS[0]!.id);
   const origin = BRIDGE_ORIGINS.find((o) => o.id === originId)!;
 
@@ -104,24 +107,24 @@ export function CrossChainFundingStep({ recipient, onDelivered }: Props) {
 
   const statusMessage =
     phase === "switching_chain"
-      ? BUY_FLOW_COPY.bridgeSwitching
+      ? buy.bridgeSwitching
       : phase === "awaiting_wallet"
-        ? BUY_FLOW_COPY.bridgeAwaitingWallet
+        ? buy.bridgeAwaitingWallet
         : phase === "confirming_origin"
-          ? BUY_FLOW_COPY.bridgeConfirmingOrigin
+          ? buy.bridgeConfirmingOrigin
           : phase === "awaiting_deposit"
-            ? BUY_FLOW_COPY.bridgeAwaitingDeposit
+            ? buy.bridgeAwaitingDeposit
             : phase === "bridging"
-              ? BUY_FLOW_COPY.bridgeInProgress
+              ? buy.bridgeInProgress
               : undefined;
 
   return (
     <div>
       <p style={css("font:400 14px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 16px")}>
-        {BUY_FLOW_COPY.bridgeSubtitle}
+        {buy.bridgeSubtitle}
       </p>
 
-      <p style={sectionLabel}>{BUY_FLOW_COPY.bridgeOriginLabel}</p>
+      <p style={sectionLabel}>{buy.bridgeOriginLabel}</p>
       <div style={css("display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px")}>
         {BRIDGE_ORIGINS.map((o) => (
           <Chip key={o.id} active={o.id === origin.id} label={o.label} onClick={() => selectOrigin(o)} />
@@ -130,7 +133,7 @@ export function CrossChainFundingStep({ recipient, onDelivered }: Props) {
 
       {origin.tokens.length > 1 ? (
         <>
-          <p style={sectionLabel}>{BUY_FLOW_COPY.bridgeTokenLabel}</p>
+          <p style={sectionLabel}>{buy.bridgeTokenLabel}</p>
           <div style={css("display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px")}>
             {origin.tokens.map((t) => (
               <Chip
@@ -147,7 +150,7 @@ export function CrossChainFundingStep({ recipient, onDelivered }: Props) {
       ) : null}
 
       <label style={css("display:block;font:600 13px var(--font-hanken);color:#5C5C66;margin-bottom:8px")}>
-        {BUY_FLOW_COPY.bridgeAmountLabel} ({token.symbol})
+        {buy.bridgeAmountLabel} ({token.symbol})
       </label>
       <input
         type="text"
@@ -162,18 +165,18 @@ export function CrossChainFundingStep({ recipient, onDelivered }: Props) {
 
       {origin.chainId === RELAY_BITCOIN_CHAIN_ID ? (
         <p style={css("font:400 12px var(--font-hanken);color:#8A8A94;margin:0 0 12px")}>
-          {BUY_FLOW_COPY.bridgeBtcMinHint}
+          {buy.bridgeBtcMinHint}
         </p>
       ) : null}
 
       {quote && !isRunning && phase !== "delivered" ? (
         <div style={css("display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px")}>
           <Stat
-            label={BUY_FLOW_COPY.bridgeEstimatedUsdc}
+            label={buy.bridgeEstimatedUsdc}
             value={`${Number(formatUnits(BigInt(quote.amountOut), 6)).toLocaleString("es-ES", { maximumFractionDigits: 2 })} USDC`}
           />
           <Stat
-            label={BUY_FLOW_COPY.bridgeTimeLabel}
+            label={buy.bridgeTimeLabel}
             value={quote.timeEstimate ? `~${quote.timeEstimate} s` : "—"}
           />
         </div>
@@ -181,14 +184,14 @@ export function CrossChainFundingStep({ recipient, onDelivered }: Props) {
 
       {quote?.totalImpactUsd && !isRunning && phase !== "delivered" ? (
         <p style={css("font:400 12px var(--font-hanken);color:#8A8A94;margin:0 0 12px")}>
-          {BUY_FLOW_COPY.bridgeFeesLabel}:{" "}
+          {buy.bridgeFeesLabel}:{" "}
           {Number(quote.totalImpactUsd).toLocaleString("es-ES", { maximumFractionDigits: 2 })} USD
         </p>
       ) : null}
 
       {!isDeposit && quote && !isRunning && phase !== "delivered" ? (
         <p style={css("font:400 12px var(--font-hanken);color:#8A8A94;margin:0 0 12px")}>
-          {isExpired ? BUY_FLOW_COPY.bridgeQuoteExpired : BUY_FLOW_COPY.bridgeExpiresIn(expiresInSec)}
+          {isExpired ? buy.bridgeQuoteExpired : buy.bridgeExpiresIn(expiresInSec)}
         </p>
       ) : null}
 
@@ -203,10 +206,10 @@ export function CrossChainFundingStep({ recipient, onDelivered }: Props) {
               "padding:10px 12px;border-radius:10px;background:#FFF7ED;border:1px solid #FBD9A5;font:600 13px/1.45 var(--font-hanken);color:#9A5B00;margin:0 0 12px;text-align:left"
             )}
           >
-            {BUY_FLOW_COPY.bridgeExactAmountWarning}
+            {buy.bridgeExactAmountWarning}
           </div>
           <p style={css("font:400 13px/1.5 var(--font-hanken);color:#5C5C66;margin:0 0 12px")}>
-            {BUY_FLOW_COPY.bridgeDepositInstructions(
+            {buy.bridgeDepositInstructions(
               amountInput.trim().replace(",", "."),
               token.symbol
             )}
@@ -217,7 +220,7 @@ export function CrossChainFundingStep({ recipient, onDelivered }: Props) {
             </div>
           ) : null}
           <p style={css("font:600 11px var(--font-hanken);color:#8A8A94;margin:0 0 6px;text-transform:uppercase;letter-spacing:0.04em")}>
-            {BUY_FLOW_COPY.bridgeDepositAddressLabel}
+            {buy.bridgeDepositAddressLabel}
           </p>
           <p style={css("font:500 13px var(--font-mono);color:#0D0D0D;margin:0 0 12px;word-break:break-all")}>
             {depositQuote.depositAddress}
@@ -239,7 +242,7 @@ export function CrossChainFundingStep({ recipient, onDelivered }: Props) {
 
       {phase === "delivered" ? (
         <div style={css("margin-bottom:16px")}>
-          <InfoBanner message={BUY_FLOW_COPY.bridgeDelivered} />
+          <InfoBanner message={buy.bridgeDelivered} />
           {bridge.state.destinationTxHash?.startsWith("0x") ? (
             <a
               href={`https://basescan.org/tx/${bridge.state.destinationTxHash}`}
@@ -247,7 +250,7 @@ export function CrossChainFundingStep({ recipient, onDelivered }: Props) {
               rel="noreferrer"
               style={css("display:inline-block;margin-top:10px;font:600 13px var(--font-hanken);color:#0D0D0D;text-decoration:underline")}
             >
-              {BUY_FLOW_COPY.bridgeViewDestTx}
+              {buy.bridgeViewDestTx}
             </a>
           ) : null}
         </div>
@@ -255,31 +258,31 @@ export function CrossChainFundingStep({ recipient, onDelivered }: Props) {
 
       {phase === "refunded" ? (
         <div style={css("margin-bottom:16px")}>
-          <InfoBanner message={BUY_FLOW_COPY.bridgeRefunded} />
+          <InfoBanner message={buy.bridgeRefunded} />
         </div>
       ) : null}
 
       {bridge.state.error ? <p style={errorStyle}>{bridge.state.error}</p> : null}
 
       {phase === "delivered" ? (
-        <PrimaryButton onClick={() => onDelivered?.()} label={BUY_FLOW_COPY.bridgeGoBuyCta} />
+        <PrimaryButton onClick={() => onDelivered?.()} label={buy.bridgeGoBuyCta} />
       ) : phase === "error" || phase === "refunded" ? (
-        <PrimaryButton onClick={handleReset} label={BUY_FLOW_COPY.bridgeRetryCta} />
+        <PrimaryButton onClick={handleReset} label={buy.bridgeRetryCta} />
       ) : isDeposit ? (
         phase === "awaiting_deposit" || phase === "bridging" ? (
-          <SecondaryButton onClick={handleReset} label={BUY_FLOW_COPY.bridgeNewCta} />
+          <SecondaryButton onClick={handleReset} label={buy.bridgeNewCta} />
         ) : (
           <PrimaryButton
             onClick={handleGenerateDeposit}
             disabled={!amount || !recipient || quoteLoading}
-            label={quoteLoading ? "Calculando…" : BUY_FLOW_COPY.bridgeGetDepositCta}
+            label={quoteLoading ? t.common.calculating : buy.bridgeGetDepositCta}
           />
         )
       ) : (
         <PrimaryButton
           onClick={handleEvmSend}
           disabled={!quote || isExpired || isRunning || quoteLoading}
-          label={quoteLoading ? "Calculando…" : BUY_FLOW_COPY.bridgeSendCta(origin.label)}
+          label={quoteLoading ? t.common.calculating : buy.bridgeSendCta(origin.label)}
         />
       )}
 

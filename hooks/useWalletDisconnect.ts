@@ -3,6 +3,7 @@
 import { useCallback } from "react";
 import { useDisconnect } from "wagmi";
 import { useApp } from "@/lib/store";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 
 /**
  * Desconexión completa: cierra la sesión del conector de wagmi
@@ -11,9 +12,10 @@ import { useApp } from "@/lib/store";
 export function useWalletDisconnect() {
   const { disconnect } = useDisconnect();
   const { disconnect: clearAppState } = useApp();
+  const { t } = useI18n();
 
   return useCallback(() => {
     disconnect();
-    clearAppState();
-  }, [disconnect, clearAppState]);
+    clearAppState(t.common.walletDisconnected);
+  }, [disconnect, clearAppState, t.common.walletDisconnected]);
 }

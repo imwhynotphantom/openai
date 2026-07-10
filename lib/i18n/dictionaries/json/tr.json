@@ -1,0 +1,431 @@
+{
+  "numberLocale": "tr-TR",
+  "meta": {
+    "title": "openAI Protocol — OPEN ile OpenAI, Inc.'nin gerçek hisselerine yatırım yapın",
+    "description": "OPEN tokeni aracılığıyla OpenAI, Inc.'nin gerçek hisselerine yatırım yapın. Base ağında açık ön satış: USDC, ETH veya cbBTC ile ödeyin; saklama yok, on-chain likidite."
+  },
+  "nav": {
+    "home": "Ana sayfa",
+    "market": "Piyasa",
+    "buy": "Satın al",
+    "swap": "Swap",
+    "soon": "Yakında",
+    "wallet": "Cüzdan",
+    "mainNavAria": "Ana navigasyon",
+    "connectWallet": "Wallet bağla",
+    "language": "Dil"
+  },
+  "common": {
+    "retry": "Yeniden dene",
+    "cancel": "İptal",
+    "close": "Kapat",
+    "copied": "Kopyalandı",
+    "copyAddress": "Adresi kopyala",
+    "recommended": "Önerilen",
+    "calculating": "Hesaplanıyor…",
+    "live": "CANLI",
+    "liveLower": "canlı",
+    "changingNetwork": "Ağ değiştiriliyor…",
+    "walletConnected": "Wallet bağlandı",
+    "walletDisconnected": "Wallet bağlantısı kesildi",
+    "addressCopied": "Adres kopyalandı",
+    "noConnectionAvailable": "Bu tarayıcıda kullanılabilir bir bağlantı yöntemi yok."
+  },
+  "errorPage": {
+    "title": "Bir şeyler ters gitti",
+    "body": "Bu ekranda beklenmeyen bir hata oluştu. Fonlarınız etkilenmez: wallet onayınız olmadan hiçbir işlem imzalanmaz.",
+    "retry": "Yeniden dene",
+    "goHome": "Ana sayfaya git"
+  },
+  "connectErrors": {
+    "generic": "Wallet bağlanamadı. Lütfen tekrar deneyin.",
+    "rejected": "Bağlantıyı iptal ettiniz. Hazır olduğunuzda tekrar deneyin.",
+    "alreadyConnected": "Zaten bağlı bir wallet var.",
+    "pendingRequest": "Wallet'ınızda açık bir istek var. Açın ve inceleyin.",
+    "noProvider": "Bu tarayıcıda wallet uzantısı algılanmadı.",
+    "chainUnsupported": "Wallet'ınız Base ağını desteklemiyor. Manuel ekleyin veya başka bir wallet kullanın."
+  },
+  "legal": {
+    "marketingPitch": "OPEN, openAI Protocol'ün on-chain yoludur: holder'ların sermayesi OpenAI, Inc.'nin gerçek hisselerine ve open* ekosistemine yatırılır.",
+    "affiliationNoticeSoft": "OPEN ile, OpenAI, Inc.'nin gerçek hisselerine yatırım yapan hazineye katılırsınız — on-chain, likidite ve OPI sonrasında da aktif kalan bir flywheel ile.",
+    "affiliationLinkLabel": "Yasal şeffaflık",
+    "affiliationDocTitle": "Markalar ve şeffaflık",
+    "risksDocTitle": "Risk bilgileri",
+    "microDisclaimer": "OPEN, sermayeyi OpenAI, Inc.'nin gerçek hisselerine yönlendirir.",
+    "geoNotice": "Hizmet, izin verilen yargı bölgelerine yöneliktir. Kripto varlık kullanımının ülkenizde yasal olduğunu doğrulayın.",
+    "geoEligibility": "Uygunluğu kontrol et",
+    "footerDisclaimer": "openAI Protocol merkeziyetsiz bir ekosistemdir. OpenAI, OpenAI, Inc. ve ilgili markalar sahiplerine aittir. Bu site menkul kıymet teklifi veya yatırım tavsiyesi değildir. Yatırım risk içerir.",
+    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice ve openCode, openAI Protocol ekosisteminin ürünleridir. ChatGPT, DALL·E, Sora, Whisper ve Codex, OpenAI, Inc.'nin markalarıdır.",
+    "suggestedTagline": "OPEN tokeni aracılığıyla OpenAI, Inc.'nin gerçek hisselerine yatırım yapın.",
+    "suggestedCta": "OPEN satın al",
+    "heroHeadline": "OPEN'e yatırım yapın. OpenAI, Inc.'nin gerçek hisseleri.",
+    "heroSubheadline": "Sermayeniz, gerçek hisse satın almak ve open* işletmek için protokol hazinesine girer. openAPI ve open* hizmetlerinin her kullanımı geri alımları, yakımları ve daha fazla equity'yi besler — halka arzda durmaz.",
+    "heroBadge": "Açık ön satış · Kalıcı flywheel",
+    "opiContext": "Planlanan OPI · Eylül 2027 · piyasa dönüm noktası; protokol hisse biriktirmeye ve OPEN geri almaya devam eder",
+    "postOpiFlywheel": "OPI döngüyü kapatmaz: hazine OpenAI, Inc. hisselerini (halka açık ve özel piyasa) almaya devam eder; openChat, openAPI ve diğer hizmetler kullanım geliri üretir ve bu komisyonların %30'u sürekli olarak OPEN geri alımı ve yakımına gider.",
+    "equityMicro": "Hazine, OPI öncesi ve sonrasında OpenAI, Inc.'nin gerçek hisselerini biriktirir; open* gelirleri daha fazla equity ve OPEN geri alımını finanse eder.",
+    "ecosystemTitle": "Gerçek hisselere yatırım yapan bir token. Tüm open* ekosistemi.",
+    "ecosystemLead": "Hazine, OpenAI, Inc. equity'si satın alır ve openChat, openAPI ve diğer ürünleri işletir. API ve hizmetlerin daha fazla kullanımı, daha fazla gelir, hazinede daha fazla hisse ve OPEN üzerinde daha fazla talep demektir.",
+    "valueTitle": "Gerçek hisseler + ekosistem gelirleri — sonsuza dek",
+    "valueLead": "Hazine, open* tekrarlayan komisyonlar üretirken OpenAI, Inc. hisselerini biriktirir. %30 OPEN geri alır ve yakar; geri kalanı equity pozisyonunu ve ekosistem büyümesini güçlendirir.",
+    "tokenNatureParagraph": "OPEN, OpenAI, Inc.'nin gerçek hisselerini satın alan ve open* ekosistemini işleten openAI Protocol hazinesine katılım sağlar. Bugün on-chain erişin; OPI sonrasında hazine hisse biriktirmeye ve openAPI ile open* hizmet gelirleriyle OPEN geri almaya devam eder.",
+    "tokenNatureLegal": "OPEN, OpenAI, Inc.'ye maruz kalan protokol hazinesine katılır; piyasa fiyatı NAV'dan farklı olabilir.",
+    "consentPrefix": "Okudum ve kabul ediyorum:",
+    "consentTerms": "Koşullar",
+    "consentPrivacyJoin": ",",
+    "consentPrivacy": "Gizlilik Politikası",
+    "consentRisksJoin": "ve",
+    "translationNotice": "Otomatik çeviri bir yardım olarak sunulmaktadır. Uyuşmazlık durumunda İspanyolca sürüm geçerlidir."
+  },
+  "footer": {
+    "colToken": "Token",
+    "colResources": "Kaynaklar",
+    "colLegal": "Yasal",
+    "whitepaper": "Whitepaper",
+    "tokenomics": "Tokenomics",
+    "documentation": "Dokümantasyon",
+    "audit": "Denetim",
+    "support": "Destek",
+    "terms": "Koşullar",
+    "privacy": "Gizlilik",
+    "compliance": "Uyumluluk"
+  },
+  "home": {
+    "heroStatPresalePrice": "Ön satış fiyatı",
+    "heroStatCap": "Ön satış tavanı",
+    "heroStatSupply": "Toplam OPEN arzı",
+    "heroStatLiquidity": "Likiditeye (kilitli LP)",
+    "swapFromWallet": "Wallet'tan takas et",
+    "trustNoCustody": "● Saklama yok",
+    "trustLiquidity": "● On-chain likidite",
+    "trustAudited": "● Denetlenmiş sözleşme",
+    "buyShort": "Satın al",
+    "viewChart": "Grafiği gör",
+    "nextMilestone": "Sonraki dönüm noktası: OpenAI, Inc. OPI",
+    "activityTitle": "Ağ etkinliği",
+    "activitySubtitle": "· OPEN alım ve satımları gerçek zamanlı",
+    "activityBought": "satın aldı",
+    "activitySwapped": "takas etti",
+    "timeAgoSec": "{n} sn önce",
+    "timeAgoMin": "{n} dk önce",
+    "tokenomicsEyebrow": "Tokenomics",
+    "tokenomicsTitle": "Değer kazanmak için tasarlanmış bir arz.",
+    "tokenomicsBody": "21.000.000.000 OPEN sabit arz, mint fonksiyonu yok. Ekip 3 yıl kilitli (1 yıl cliff + 2 yıl doğrusal serbest bırakma) ve hazine, ekosistem kullanımıyla geri alım ve yakımı finanse eder. Ön satış OPEN'leri TGE'de claim ile alınır.",
+    "tokenomicsTotal": "toplam OPEN",
+    "tokenomicsBurn": "ekosistem komisyonları OPEN geri alımı ve yakımına gider",
+    "faqEyebrow": "Sık sorulan sorular",
+    "faqTitle": "Yatırım yapmadan önce bilmeniz gereken her şey.",
+    "faqSubtitle": "Hâlâ sorunuz mu var? Yazın, yatırım yapmadan önce yanıtlayalım.",
+    "valueAccrualEyebrow": "Value accrual",
+    "valueChips": [
+      "Ekosistem benimsenmesi",
+      "Komisyon gelirleri",
+      "Programatik geri alım",
+      "Arz azaltma"
+    ],
+    "valueChipResult": "Net talep baskısı",
+    "valueMechanism": "On-chain mekanizma: komisyonların bir kısmı OPEN geri alımı ve yakımı için protokole yönlendirilir; dolaşımdaki arz doğrulanabilir şekilde azalır.",
+    "servicesTitle": "Tokena bağlı hizmetler",
+    "hubSync": "Senkronize et",
+    "desktopMobileEyebrow": "Masaüstü ve mobil",
+    "desktopMobileTitle": "Nerede olursanız olun yatırım yapın.",
+    "desktopMobileBody": "Wallet'ınızı bağlayın, satın alın veya takas edin ve portföyünüzü gerçek zamanlı takip edin. Her ekranda aynı akıcı deneyim.",
+    "phoneBalance": "OPEN bakiyesi",
+    "phoneToday": "bugün",
+    "phonePayWith": "USDC ile ödüyorsunuz",
+    "phoneReceive": "OPEN alıyorsunuz"
+  },
+  "content": {
+    "ecosystem": [
+      "openAI Protocol ekosisteminin konuşma asistanı. Abonelikler ve tüketim, hazineyi ve OPEN geri alımını besleyen gelir üretir.",
+      "Protokol API'si üzerinden sunulan modeller. İşlenen her milyon token faturalandırılır; komisyonun bir kısmı OPEN geri alır.",
+      "Difüzyon tabanlı görüntü üretimi. Kredi bazlı tüketim, token geri alım akışını besler.",
+      "Metinden video üretimi. Yoğun hesaplama yükleri, render edilen saniye başına faturalandırılır.",
+      "Gerçek zamanlı ses ve transkripsiyon. İşlenen ses dakikası başına ölçülür.",
+      "Protokolün programlama copilot'u. Koltuk başına plan artı üretilen öneri başına hesaplama tüketimi."
+    ],
+    "tokenWhy": [
+      {
+        "title": "Hazinede gerçek hisseler",
+        "desc": "OPEN sermayesi, özel piyasalarda OpenAI, Inc. hisseleri satın almak için kullanılır."
+      },
+      {
+        "title": "Kalıcı flywheel",
+        "desc": "Bugün on-chain erişin. OPI sonrasında hazine hisse biriktirmeye ve openAPI ile open* hizmetlerinin her kullanımında OPEN yakmaya devam eder."
+      },
+      {
+        "title": "open* ekosistem gelirleri",
+        "desc": "openChat, openAPI ve diğer ürünler komisyon üretir; %30 OPEN geri alır ve yakar."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Wallet'ınızı bağlayın",
+        "desc": "MetaMask, Coinbase, Trust veya mobil wallet'ınız tek dokunuşla."
+      },
+      {
+        "title": "OPEN satın alın",
+        "desc": "Base'de USDC, ETH veya cbBTC ile — veya başka bir ağdan. Sermayeniz protokol hazinesine girer."
+      },
+      {
+        "title": "Yatırımınızı takip edin",
+        "desc": "Değer, dağılım ve hareketler gerçek zamanlı."
+      }
+    ],
+    "hubMeta": [
+      [
+        "Abonelik",
+        "abonelik başına"
+      ],
+      [
+        "API",
+        "token başına"
+      ],
+      [
+        "Görüntü",
+        "kredi başına"
+      ],
+      [
+        "Video",
+        "saniye başına"
+      ],
+      [
+        "Ses",
+        "dakika başına"
+      ],
+      [
+        "Kod",
+        "koltuk başına"
+      ]
+    ],
+    "faq": [
+      [
+        "OPEN nedir ve sermayemle ne yapar?",
+        "OPEN, openAI Protocol'ün on-chain yoludur: holder'ların sermayesi OpenAI, Inc.'nin gerçek hisselerine ve open* ekosistemine yatırılır. OPEN, OpenAI, Inc.'nin gerçek hisselerini satın alan ve open* ekosistemini işleten openAI Protocol hazinesine katılım sağlar. Bugün on-chain erişin; OPI sonrasında hazine hisse biriktirmeye ve openAPI ile open* hizmet gelirleriyle OPEN geri almaya devam eder."
+      ],
+      [
+        "OpenAI, Inc.'ye nasıl yatırım yapılır?",
+        "Hazine, sermayeyi SPV aracılığıyla OpenAI, Inc.'nin gerçek hisselerini satın almak için kullanır — OPI öncesi ve sonrasında. Paralel olarak openChat, openAPI ve diğer open* hizmetlerini işletir; komisyonlarının %30'u OPEN geri alır ve yakar, geri kalanı hisse birikimini güçlendirir."
+      ],
+      [
+        "OPEN'i nasıl satın alırım?",
+        "Wallet'ınızı bağlayın ve Base ağında USDC, ETH, WETH veya cbBTC ile ödeyin. Ethereum, Arbitrum, Solana, Bitcoin… gibi diğer ağlardan da fon getirebilirsiniz; Base wallet'ınızda otomatik olarak USDC'ye dönüştürürüz. Ön satışta satın alınan tokenlar lansmanda (TGE) claim ile alınır."
+      ],
+      [
+        "Ön satış tokenlarımı ne zaman alırım?",
+        "Lansmanda (TGE), kendi wallet'ınızdan claim ile. Ön satış herkese açık, wallet başına limit yok; OPEN başına 0,0005 USDC fiyat ve sözleşmede sabitlenmiş 1.045.000 USDC maksimum tavan; fonlar Safe multisig'de saklanır."
+      ],
+      [
+        "Yatırım yapmak için halka arzı beklemem gerekiyor mu?",
+        "Hayır. Ön satış açık: bugün OpenAI, Inc.'nin gerçek hisselerine on-chain yatırım yaparsınız. OPI bir piyasa dönüm noktasıdır, protokolün sonu değil — OPI döngüyü kapatmaz: hazine OpenAI, Inc. hisselerini (halka açık ve özel piyasa) almaya devam eder; openChat, openAPI ve diğer hizmetler kullanım geliri üretir ve bu komisyonların %30'u sürekli olarak OPEN geri alımı ve yakımına gider."
+      ],
+      [
+        "OPEN'lerimi nasıl ve ne zaman satabilirim?",
+        "TGE'de OPEN'lerinizi claim ile alırsınız ve o andan itibaren token on-chain likiditeye sahiptir (arzın %40'ı havuzda, kilitli LP): wallet'ınızdan ETH, USDC veya diğer tokenlarla takas edebilirsiniz."
+      ],
+      [
+        "OPEN, borsadan hisse almaktan nasıl farklıdır?",
+        "OPEN, openAI Protocol'ün tokenıdır: OpenAI, Inc. equity'sini sürekli biriktiren hazineye katılırsınız; on-chain likidite ve openAPI ile open* hizmetleri tarafından finanse edilen programatik geri alım ile."
+      ],
+      [
+        "OPEN fiyatı hisselerle nasıl ilişkilidir?",
+        "OPEN, OpenAI, Inc.'ye maruz kalan protokol hazinesine katılır; piyasa fiyatı NAV'dan farklı olabilir."
+      ],
+      [
+        "Tokenlarımı kim saklar?",
+        "Siz. Protokol OPEN'lerinizi saklamaz: satın alma kendi wallet'ınızdan imzalanır ve anahtarları yalnızca siz kontrol edersiniz."
+      ],
+      [
+        "Hangi komisyonlar var?",
+        "Ön satış kendi komisyonu eklemez: Base ağ komisyonunu (birkaç sent) ve USDC dışında bir token veya başka ağdan ödeme yaparsanız, onaylamadan önce gösterilen piyasa dönüşüm maliyetini ödersiniz."
+      ],
+      [
+        "Bu bir risk mi?",
+        "Her yatırımda olduğu gibi OPEN değeri yükselebilir veya düşebilir. Yalnızca kaybetmeyi göze alabileceğiniz kadar yatırım yapın. OPEN ile, OpenAI, Inc.'nin gerçek hisselerine yatırım yapan hazineye katılırsınız — on-chain, likidite ve OPI sonrasında da aktif kalan bir flywheel ile."
+      ],
+      [
+        "OPI sonrasında ne olur?",
+        "OPI döngüyü kapatmaz: hazine OpenAI, Inc. hisselerini (halka açık ve özel piyasa) almaya devam eder; openChat, openAPI ve diğer hizmetler kullanım geliri üretir ve bu komisyonların %30'u sürekli olarak OPEN geri alımı ve yakımına gider. OPEN hazineyi yansıtmaya devam eder: daha fazla OpenAI, Inc. hissesi, daha fazla hizmet geliri ve doğrulanabilir on-chain geri alımlar."
+      ]
+    ],
+    "tkSegs": [
+      "Halka açık ön satış",
+      "On-chain likidite",
+      "Hazine / Ekosistem",
+      "Pazarlama",
+      "Ekip (3 yıl kilitli)",
+      "Gelecek turlar (kilitli)"
+    ]
+  },
+  "market": {
+    "statMarketCap": "Piyasa değeri",
+    "statPresalePrice": "Ön satış fiyatı",
+    "statSupply": "Toplam arz",
+    "statPresaleCap": "Ön satış tavanı",
+    "statAth": "Tüm zamanların en yükseği",
+    "statPresale": "Ön satış",
+    "statPresaleValue": "Halka açık ve açık",
+    "readyTitle": "Yatırıma hazır mısınız?",
+    "readyBody": "Piyasa fiyatından OPEN satın alın veya wallet'ınızdan takas edin.",
+    "swapCta": "Takas et"
+  },
+  "portfolio": {
+    "connectTitle": "Wallet'ınızı bağlayın",
+    "connectBody": "Base ağındaki gerçek bakiyelerinizi ve on-chain geçmişinizi görmek için bağlayın.",
+    "myWallet": "Cüzdanım",
+    "copyAddressTitle": "Adresi kopyala",
+    "disconnect": "Bağlantıyı kes",
+    "totalValue": "Base'deki toplam değer",
+    "deposit": "Yatır",
+    "depositTitle": "Base adresinize USDC alın",
+    "assetsTitle": "Base'deki varlıklarınız",
+    "loadingBalances": "Bakiyeler yükleniyor…",
+    "emptyLine1": "Base'de henüz bakiye yok.",
+    "emptyLine2": "Başlamak için OPEN satın alın veya fon yatırın.",
+    "movementsTitle": "Hareketler",
+    "movementsBody": "Tam işlem geçmişiniz Base ağ gezginindedir.",
+    "viewBasescan": "Basescan'de gör",
+    "movementsNote": "OPEN satın alımları ön satış sözleşmesi etkileşimleri olarak görünür."
+  },
+  "swapPage": {
+    "title": "Takas",
+    "subtitle": "OPEN takası, token on-chain likidite ile işlem gördüğünde kullanılabilir olacak.",
+    "afterTgeTitle": "TGE sonrasında kullanılabilir",
+    "afterTgeBody": "OPEN likidite ile listelendiğinde, burada wallet'ınızdan doğrudan ETH, USDC ve diğer tokenlarla takas edebilirsiniz. Bu arada ön satıştan OPEN satın alabilirsiniz.",
+    "buyPresaleCta": "Ön satıştan OPEN satın al",
+    "payHint": "Base'de USDC, ETH veya cbBTC ile ödeyebilir — veya diğer ağlardan fon getirebilirsiniz."
+  },
+  "docsUi": {
+    "backHome": "← Ana sayfaya dön",
+    "ctaTitle": "OPEN almaya hazır mısınız?",
+    "ctaBody": "Base'de USDC, ETH veya cbBTC ile satın alın veya başka bir ağdan fon getirin.",
+    "viewChart": "Grafiği gör"
+  },
+  "walletKind": {
+    "notConnected": "Bağlı değil",
+    "baseAccount": "Base Hesabı (Face ID)",
+    "extensionOrApp": "Wallet (uzantı veya uygulama)",
+    "mobileWallet": "Mobil wallet (WalletConnect)",
+    "hint": "Uyumlu bir wallet ile bağlanın (MetaMask, Trust Wallet vb.)."
+  },
+  "buy": {
+    "pageTitle": "OPEN satın al",
+    "pageSubtitle": "Base'de USDC, ETH veya cbBTC ile ödeyin — veya başka bir ağdan fon getirin.",
+    "sinWalletTitle": "Wallet'ınızı bağlayın",
+    "sinWalletSubtitle": "Güvenli bir hesap oluşturun veya kullandığınız wallet'ı bağlayın.",
+    "walletModalTitle": "Wallet bağla",
+    "walletModalSubtitle": "Mevcut wallet'ınızı kullanın veya saniyeler içinde yeni bir tane oluşturun.",
+    "connectWallet": "Wallet bağla",
+    "connectDesktopHint": "Satın alma her zaman kendi wallet'ınızdan imzalanır: başka kimse fonlarınızı hareket ettiremez.",
+    "walletOptionExtensionSub": "Tarayıcı uzantısı",
+    "walletOptionMobileApp": "Wallet uygulamamı aç",
+    "walletOptionMobileAppSub": "MetaMask, Trust, Rainbow ve diğerleri",
+    "walletOptionQr": "Mobil ile",
+    "walletOptionQrSub": "Telefon wallet'ınızla QR kodu tarayın",
+    "walletOptionCreate": "Yeni wallet oluştur",
+    "walletOptionCreateSub": "Face ID veya Touch ID ile — kurulum gerekmez",
+    "walletOpeningApp": "Wallet uygulamanız açılıyor…",
+    "walletOpeningQr": "QR kodu oluşturuluyor…",
+    "walletConnecting": "Bağlanıyor…",
+    "noExtensionHint": "Uzantı kullanmıyor musunuz? Mobil wallet ile bağlanın veya yeni bir tane oluşturun.",
+    "walletConnectEnvHint": "Yapılandırma: NEXT_PUBLIC_WC_PROJECT_ID eksik (cloud.reown.com'da ücretsiz).",
+    "switchChainTitle": "Wallet'ınızı Base ağına geçirin",
+    "switchChainSubtitle": "Bu işlem yalnızca Base'de çalışır (Chain ID 8453).",
+    "switchChainCta": "Base'e geç",
+    "switchChainRejected": "Ağ değişimini reddettiniz. Devam etmek için wallet'ınızda manuel olarak Base'e geçin.",
+    "confirmInWalletApp": "Wallet uygulamanızda onaylayın",
+    "confirmInWalletAppHint": "Wallet'ınızı açın, işlemi imzalayın ve buraya dönün. Durum otomatik güncellenir.",
+    "useAnotherWallet": "Başka wallet kullan",
+    "sinFondosTitle": "Base'de USDC gerekli",
+    "sinFondosSubtitle": "Ön satışa devam etmek için Base ağındaki wallet'ınıza USDC yatırın.",
+    "sinFondosPollingHint": "Base'de USDC aldığınızda bakiyeyi otomatik algılarız. Sayfayı yenilemenize gerek yok.",
+    "walletAddressLabel": "Base'deki adresiniz",
+    "checkingBalance": "Bakiye kontrol ediliyor…",
+    "rampManualNetworkWarning": "Önemli: USDC Base ağında olmalıdır. Başka bir ağa fon göndermek kayba yol açabilir.",
+    "listoTitle": "Fonlar hazır!",
+    "listoSubtitle": "OPEN'e yatırım yapmak için {balance} kullanılabilir.",
+    "continueCta": "Satın almaya devam et",
+    "compraTitle": "OPEN satın al",
+    "compraSubtitle": "Hangi para birimiyle ödeyeceğinizi seçin. USDC'ye dönüştürür ve wallet'ınızdan OPEN satın alırız.",
+    "compraTgeNotice": "Ön satışta satın alınan tokenlar lansmanda (TGE) claim ile alınır.",
+    "compraPayWith": "Ödeme yöntemi",
+    "compraBalance": "Bakiye",
+    "compraEstimatedOpen": "Tahmini OPEN",
+    "compraQuoteRefreshing": "Kotasyon her 30 sn'de güncellenir",
+    "compraQuoteExpired": "Fiyat güncelleniyor…",
+    "compraQuoteFallback": "Dönüşümü şu anda kotasyonlayamadık. USDC ile ödeyin veya birkaç dakika sonra tekrar deneyin.",
+    "compraCapExceeded": "Tutar kalan ön satış kotasını aşıyor. Miktarı azaltın.",
+    "compraConvertCta": "Satın alma fonlarına dönüştür",
+    "compraConvertDone": "Dönüşüm tamamlandı. Artık USDC ile OPEN satın alabilirsiniz.",
+    "compraStepBatch0x": "Dönüşüm ve satın almayı imzala (tek imza)",
+    "compraStepConvertApprove": "Adım 1/2 — Ödeme tokenını yetkilendir",
+    "compraStepConvertSwap": "Adım 2/2 — USDC'ye dönüştür",
+    "compraAmountLabel": "Ödenecek tutar",
+    "compraHintNoAmount": "Devam etmek için bir tutar girin.",
+    "compraHintLegal": "Satın almayı etkinleştirmek için koşullar kutusunu işaretleyin.",
+    "compraHintQuoteLoading": "Dönüşüm fiyatı hesaplanıyor…",
+    "compraStartCta": "Satın almayı başlat",
+    "compraRetryCta": "Bekleyen adımı yeniden dene",
+    "compraDoneTitle": "Satın alma gönderildi",
+    "compraDoneSubtitle": "İşleminiz başarıyla gönderildi. OPEN'lerinizi lansmanda (TGE) claim ile alacaksınız.",
+    "compraContractMissing": "Ön satış sözleşmesi yapılandırılmamış (NEXT_PUBLIC_PRESALE_CONTRACT).",
+    "compraStepUsdcApprove": "Adım 1/2 — USDC yetkilendir",
+    "compraStepUsdcBuy": "Adım 2/2 — OPEN satın al",
+    "compraStepSwapApprove": "Adım 1/3 — Dönüşümü yetkilendir",
+    "compraStepSwapConvert": "Adım 2/3 — ETH'ye dönüştür",
+    "compraStepSwapBuy": "Adım 3/3 — OPEN satın al",
+    "compraStepBatch": "Satın almayı imzala (tek imza)",
+    "compraWaitingConfirm": "On-chain onay bekleniyor…",
+    "compraUserRejected": "İşlemi reddettiniz. Bekleyen adımı yeniden deneyebilirsiniz.",
+    "compraBackCta": "Geri",
+    "compraViewTx": "İşlemi Basescan'de gör",
+    "compraInsufficientSell": "Bu tutar için yeterli {symbol} yok.",
+    "compraInsufficientUsdc": "Bu tutar için yeterli USDC yok.",
+    "compraWrongNetwork": "Devam etmek için wallet'ınızı Base ağına geçirin.",
+    "compraGasInsufficient": "Ağ komisyonunu ödemek için yeterli ETH yok.",
+    "compraBatchFailed": "İşlem ağda tamamlanmadı. Lütfen tekrar deneyin.",
+    "compraGenericError": "İşlem tamamlanamadı. Lütfen tekrar deneyin.",
+    "bridgeTabBase": "Base'de öde",
+    "bridgeTabOther": "Başka ağdan",
+    "bridgeTabReceive": "USDC al",
+    "receiveSubtitle": "Başka bir wallet veya borsadan Base ağındaki adresinize USDC gönderin. Bakiye otomatik algılanır.",
+    "receiveCurrentBalance": "Base'deki USDC bakiyeniz",
+    "compraModeChecking": "Wallet'ınız kontrol ediliyor…",
+    "compraModeOneSignature": "Her şeyi wallet'ınızda tek imza ile onaylayacaksınız.",
+    "compraModeSteps": "Wallet'ınızda {n} adımı tek tek onaylayacaksınız.",
+    "compraMaxCta": "MAKS",
+    "compraUsdEstimate": "≈ {v} USD",
+    "compraQuoteValidFor": "Fiyat {sec} sn garanti",
+    "compraDoneViewPortfolio": "Portföyde gör",
+    "compraDoneBuyMore": "Daha fazla OPEN satın al",
+    "walletConnectedAs": "Wallet bağlandı",
+    "walletChangeCta": "Değiştir",
+    "bridgeExactAmountWarning": "Belirtilen tutarı TEK bir işlemde TAM olarak gönderin. Farklı bir tutar işlemi geciktirebilir veya iadeye yol açabilir.",
+    "bridgeSubtitle": "Başka bir ağdan fon gönderin; Base wallet'ınızda USDC'ye dönüştürürüz. Ardından normal şekilde OPEN satın alırsınız.",
+    "bridgeOriginLabel": "Kaynak ağ",
+    "bridgeTokenLabel": "Gönderilecek token",
+    "bridgeAmountLabel": "Gönderilecek tutar",
+    "bridgeEstimatedUsdc": "Base'de alacağınız USDC",
+    "bridgeFeesLabel": "Tahmini toplam maliyet",
+    "bridgeTimeLabel": "Tahmini süre",
+    "bridgeQuoteExpired": "Köprü kotasyonunun süresi doldu. Göndermeden önce yeniden hesaplayın.",
+    "bridgeExpiresIn": "Kotasyon {sec} sn içinde sona erer",
+    "bridgeSendCta": "{network} ağından gönder",
+    "bridgeGetDepositCta": "Yatırma adresi oluştur",
+    "bridgeDepositAddressLabel": "Yatırma adresi",
+    "bridgeDepositInstructions": "Herhangi bir wallet veya borsadan tam olarak {amount} {symbol} bu adrese gönderin. Farklı bir tutar işlemi geciktirebilir veya iadeye yol açabilir.",
+    "bridgeBtcMinHint": "Bitcoin'de ağ komisyonları küçük tutarları uygulanamaz kılar.",
+    "bridgeSwitching": "Kaynak ağa geçiliyor…",
+    "bridgeAwaitingWallet": "Wallet'ınızda işlemi onaylayın…",
+    "bridgeConfirmingOrigin": "Kaynak ağında onaylanıyor…",
+    "bridgeAwaitingDeposit": "Yatırmanız bekleniyor… Bu sayfayı açık bırakabilirsiniz; otomatik güncellenir.",
+    "bridgeInProgress": "Köprü devam ediyor… USDC kısa süre içinde Base wallet'ınıza ulaşacak.",
+    "bridgeDelivered": "Base'de USDC alındı. Artık OPEN satın alabilirsiniz.",
+    "bridgeRefunded": "İşlem tamamlanmadı ve fonlar kaynak adrese iade edildi.",
+    "bridgeFailed": "Köprü tamamlanmadı. Fon gönderdiyseniz, kaynak adrese iade edilecektir.",
+    "bridgeRetryCta": "Tekrar dene",
+    "bridgeNewCta": "Başka bir gönderim başlat",
+    "bridgeGoBuyCta": "USDC'mle OPEN satın al",
+    "bridgeViewDestTx": "Teslimatı Basescan'de gör"
+  }
+}

@@ -1,9 +1,10 @@
 "use client";
 
 import { css } from "@/lib/css";
-import { brandLegal, getLegalZoneText } from "@/lib/brand-legal";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 
-type Zone = keyof typeof brandLegal.legalChecklist.zones;
+/** Zonas legales con micro-texto propio (antes brandLegal.legalChecklist.zones). */
+type Zone = "ecosystem" | "docCta";
 
 type Props = {
   children?: string;
@@ -11,7 +12,10 @@ type Props = {
 };
 
 export function LegalMicro({ children, zone }: Props) {
-  const text = children ?? (zone ? getLegalZoneText(zone) : brandLegal.microDisclaimer);
+  const { t } = useI18n();
+  const zoneText =
+    zone === "ecosystem" ? t.legal.equityMicro : zone === "docCta" ? t.legal.marketingPitch : undefined;
+  const text = children ?? zoneText ?? t.legal.microDisclaimer;
   return (
     <p style={css("font:400 12px/1.45 var(--font-mono);color:#A8A8AE;margin:10px 0 0")}>{text}</p>
   );

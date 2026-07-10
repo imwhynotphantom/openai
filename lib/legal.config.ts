@@ -46,7 +46,7 @@ export const legalConfig = {
   ],
 } as const;
 
-export { brandLegal, getAffiliationNotice } from "./brand-legal";
+export { brandLegal } from "./brand-legal";
 
 export const legalUrls = {
   terms: legalConfig.termsUrl,

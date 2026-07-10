@@ -1,0 +1,431 @@
+{
+  "numberLocale": "ru-RU",
+  "meta": {
+    "title": "openAI Protocol — инвестируйте в реальные акции OpenAI, Inc. через OPEN",
+    "description": "Инвестируйте в реальные акции OpenAI, Inc. через токен OPEN. Открытая предпродажа в сети Base: оплата USDC, ETH или cbBTC, без кастодиального хранения и с on-chain ликвидностью."
+  },
+  "nav": {
+    "home": "Главная",
+    "market": "Рынок",
+    "buy": "Купить",
+    "swap": "Swap",
+    "soon": "Скоро",
+    "wallet": "Кошелёк",
+    "mainNavAria": "Основная навигация",
+    "connectWallet": "Подключить wallet",
+    "language": "Язык"
+  },
+  "common": {
+    "retry": "Повторить",
+    "cancel": "Отмена",
+    "close": "Закрыть",
+    "copied": "Скопировано",
+    "copyAddress": "Копировать адрес",
+    "recommended": "Рекомендуется",
+    "calculating": "Вычисление…",
+    "live": "В ЭФИРЕ",
+    "liveLower": "в эфире",
+    "changingNetwork": "Смена сети…",
+    "walletConnected": "Wallet подключён",
+    "walletDisconnected": "Wallet отключён",
+    "addressCopied": "Адрес скопирован",
+    "noConnectionAvailable": "В этом браузере нет доступного способа подключения."
+  },
+  "errorPage": {
+    "title": "Что-то пошло не так",
+    "body": "На этом экране произошла непредвиденная ошибка. Ваши средства не затронуты: ни одна операция не подписывается без подтверждения в wallet.",
+    "retry": "Повторить",
+    "goHome": "На главную"
+  },
+  "connectErrors": {
+    "generic": "Не удалось подключить wallet. Попробуйте снова.",
+    "rejected": "Вы отменили подключение. Повторите, когда будете готовы.",
+    "alreadyConnected": "Wallet уже подключён.",
+    "pendingRequest": "В вашем wallet уже есть открытый запрос. Откройте его и проверьте.",
+    "noProvider": "Расширение wallet в этом браузере не обнаружено.",
+    "chainUnsupported": "Ваш wallet не поддерживает сеть Base. Добавьте её вручную или используйте другой wallet."
+  },
+  "legal": {
+    "marketingPitch": "OPEN — on-chain путь openAI Protocol: капитал держателей инвестируется в реальные акции OpenAI, Inc. и экосистему open*.",
+    "affiliationNoticeSoft": "С OPEN вы участвуете в казне, которая инвестирует в реальные акции OpenAI, Inc. — on-chain, с ликвидностью и flywheel, который остаётся активным после OPI.",
+    "affiliationLinkLabel": "Юридическая прозрачность",
+    "affiliationDocTitle": "Бренды и прозрачность",
+    "risksDocTitle": "Информация о рисках",
+    "microDisclaimer": "OPEN направляет капитал в реальные акции OpenAI, Inc.",
+    "geoNotice": "Сервис ориентирован на разрешённые юрисдикции. Убедитесь, что использование криптоактивов разрешено в вашей стране.",
+    "geoEligibility": "Проверить право участия",
+    "footerDisclaimer": "openAI Protocol — децентрализованная экосистема. OpenAI, OpenAI, Inc. и связанные бренды принадлежат их правообладателям. Этот сайт не является предложением ценных бумаг или инвестиционной консультацией. Инвестирование сопряжено с рисками.",
+    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice и openCode — продукты экосистемы openAI Protocol. ChatGPT, DALL·E, Sora, Whisper и Codex — бренды OpenAI, Inc.",
+    "suggestedTagline": "Инвестируйте в реальные акции OpenAI, Inc. через токен OPEN.",
+    "suggestedCta": "Купить OPEN",
+    "heroHeadline": "Инвестируйте в OPEN. Реальные акции OpenAI, Inc.",
+    "heroSubheadline": "Ваш капитал поступает в казну протокола для покупки реальных акций и работы open*. Каждое использование openAPI и сервисов open* питает обратные выкупы, сжигание и рост equity — без остановки на IPO.",
+    "heroBadge": "Открытая предпродажа · Постоянный flywheel",
+    "opiContext": "Запланированная OPI · сентябрь 2027 · рыночная веха; протокол продолжает накапливать акции и выкупать OPEN",
+    "postOpiFlywheel": "OPI не закрывает цикл: казна продолжает покупать акции OpenAI, Inc. (публичный и частный рынок), openChat, openAPI и остальные сервисы генерируют доход от использования, и 30% этих комиссий постоянно направляется на обратный выкуп и сжигание OPEN.",
+    "equityMicro": "Казна накапливает реальные акции OpenAI, Inc. до и после OPI; доходы open* финансируют дополнительный equity и обратный выкуп OPEN.",
+    "ecosystemTitle": "Токен, инвестирующий в реальные акции. Вся экосистема open*.",
+    "ecosystemLead": "Казна приобретает equity OpenAI, Inc. и управляет openChat, openAPI и остальными продуктами. Больше использования API и сервисов — больше дохода, больше акций в казне и больше спроса на OPEN.",
+    "valueTitle": "Реальные акции + доходы экосистемы — навсегда",
+    "valueLead": "Казна накапливает акции OpenAI, Inc., пока open* генерирует повторяющиеся комиссии. 30% выкупают и сжигают OPEN; остальное укрепляет позицию в акциях и рост экосистемы.",
+    "tokenNatureParagraph": "OPEN даёт участие в казне openAI Protocol, которая покупает и хранит реальные акции OpenAI, Inc. и управляет экосистемой open*. Доступ on-chain уже сегодня; после OPI казна продолжает накапливать акции и выкупать OPEN за счёт доходов openAPI и сервисов open*.",
+    "tokenNatureLegal": "OPEN участвует в казне протокола с экспозицией к OpenAI, Inc.; рыночная цена может отличаться от NAV.",
+    "consentPrefix": "Я прочитал(а) и принимаю",
+    "consentTerms": "Условия",
+    "consentPrivacyJoin": ",",
+    "consentPrivacy": "Политику конфиденциальности",
+    "consentRisksJoin": "и",
+    "translationNotice": "Автоматический перевод предоставлен в качестве справочного материала. В случае расхождений приоритет имеет испанская версия."
+  },
+  "footer": {
+    "colToken": "Токен",
+    "colResources": "Ресурсы",
+    "colLegal": "Правовая информация",
+    "whitepaper": "Whitepaper",
+    "tokenomics": "Tokenomics",
+    "documentation": "Документация",
+    "audit": "Аудит",
+    "support": "Поддержка",
+    "terms": "Условия",
+    "privacy": "Конфиденциальность",
+    "compliance": "Соответствие"
+  },
+  "home": {
+    "heroStatPresalePrice": "Цена предпродажи",
+    "heroStatCap": "Лимит предпродажи",
+    "heroStatSupply": "Общее предложение OPEN",
+    "heroStatLiquidity": "В ликвидность (заблокированный LP)",
+    "swapFromWallet": "Обмен из wallet",
+    "trustNoCustody": "● Без кастодиального хранения",
+    "trustLiquidity": "● On-chain ликвидность",
+    "trustAudited": "● Аудированный контракт",
+    "buyShort": "Купить",
+    "viewChart": "Смотреть график",
+    "nextMilestone": "Следующая веха: OPI OpenAI, Inc.",
+    "activityTitle": "Активность сети",
+    "activitySubtitle": "· покупки и продажи OPEN в реальном времени",
+    "activityBought": "купил(а)",
+    "activitySwapped": "обменял(а)",
+    "timeAgoSec": "{n} с назад",
+    "timeAgoMin": "{n} мин назад",
+    "tokenomicsEyebrow": "Tokenomics",
+    "tokenomicsTitle": "Предложение, созданное для роста стоимости.",
+    "tokenomicsBody": "Фиксированное предложение 21 000 000 000 OPEN, без функции mint. Команда заблокирована на 3 года (cliff 1 год + линейное высвобождение 2 года), а казна финансирует обратный выкуп и сжигание за счёт использования экосистемы. OPEN предпродажи получаются на TGE через claim.",
+    "tokenomicsTotal": "OPEN всего",
+    "tokenomicsBurn": "комиссий экосистемы направляется на обратный выкуп и сжигание OPEN",
+    "faqEyebrow": "Частые вопросы",
+    "faqTitle": "Всё, что нужно знать перед инвестированием.",
+    "faqSubtitle": "Остались вопросы? Напишите нам — ответим до того, как вы инвестируете.",
+    "valueAccrualEyebrow": "Value accrual",
+    "valueChips": [
+      "Принятие экосистемы",
+      "Доход от комиссий",
+      "Программный обратный выкуп",
+      "Сокращение предложения"
+    ],
+    "valueChipResult": "Чистое давление спроса",
+    "valueMechanism": "On-chain механизм: часть комиссий направляется в протокол для обратного выкупа и сжигания OPEN, верифицируемо сокращая циркулирующее предложение.",
+    "servicesTitle": "Сервисы, связанные с токеном",
+    "hubSync": "Синхронизировать",
+    "desktopMobileEyebrow": "Десктоп и мобильный",
+    "desktopMobileTitle": "Инвестируйте откуда угодно.",
+    "desktopMobileBody": "Подключите wallet, покупайте или обменивайте и следите за портфелем в реальном времени. Одинаково плавный опыт на любом экране.",
+    "phoneBalance": "Баланс OPEN",
+    "phoneToday": "сегодня",
+    "phonePayWith": "Вы платите USDC",
+    "phoneReceive": "Вы получаете OPEN"
+  },
+  "content": {
+    "ecosystem": [
+      "Разговорный ассистент экосистемы openAI Protocol. Подписки и потребление генерируют доход, который питает казну и обратный выкуп OPEN.",
+      "Модели, обслуживаемые через API протокола. Каждый миллион обработанных токенов тарифицируется; часть комиссии выкупает OPEN.",
+      "Генерация изображений диффузией. Потребление по кредитам питает поток обратного выкупа токена.",
+      "Генерация видео из текста. Интенсивные вычислительные нагрузки тарифицируются за секунду рендеринга.",
+      "Голос и транскрипция в реальном времени. Использование измеряется в минутах обработанного аудио.",
+      "Copilot программирования протокола. План за место плюс потребление вычислений за каждое сгенерированное предложение."
+    ],
+    "tokenWhy": [
+      {
+        "title": "Реальные акции в казне",
+        "desc": "Капитал OPEN направляется на покупку акций OpenAI, Inc. на частных рынках."
+      },
+      {
+        "title": "Постоянный flywheel",
+        "desc": "Доступ on-chain уже сегодня. После OPI казна продолжает накапливать акции и сжигать OPEN с каждым использованием openAPI и сервисов open*."
+      },
+      {
+        "title": "Доходы экосистемы open*",
+        "desc": "openChat, openAPI и остальные продукты генерируют комиссии; 30% выкупают и сжигают OPEN."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Подключите wallet",
+        "desc": "MetaMask, Coinbase, Trust или мобильный wallet одним касанием."
+      },
+      {
+        "title": "Купите OPEN",
+        "desc": "USDC, ETH или cbBTC в Base — или с другой сети. Ваш капитал поступает в казну протокола."
+      },
+      {
+        "title": "Следите за инвестицией",
+        "desc": "Стоимость, распределение и движения в реальном времени."
+      }
+    ],
+    "hubMeta": [
+      [
+        "Подписка",
+        "за подписку"
+      ],
+      [
+        "API",
+        "за токен"
+      ],
+      [
+        "Изображение",
+        "за кредит"
+      ],
+      [
+        "Видео",
+        "за секунду"
+      ],
+      [
+        "Голос",
+        "за минуту"
+      ],
+      [
+        "Код",
+        "за место"
+      ]
+    ],
+    "faq": [
+      [
+        "Что такое OPEN и что он делает с моим капиталом?",
+        "OPEN — on-chain путь openAI Protocol: капитал держателей инвестируется в реальные акции OpenAI, Inc. и экосистему open*. OPEN даёт участие в казне openAI Protocol, которая покупает и хранит реальные акции OpenAI, Inc. и управляет экосистемой open*. Доступ on-chain уже сегодня; после OPI казна продолжает накапливать акции и выкупать OPEN за счёт доходов openAPI и сервисов open*."
+      ],
+      [
+        "Как происходит инвестирование в OpenAI, Inc.?",
+        "Казна направляет капитал на покупку реальных акций OpenAI, Inc. через SPV — до и после OPI. Параллельно управляет openChat, openAPI и остальными сервисами open*; 30% их комиссий выкупают и сжигают OPEN, остальное укрепляет накопление акций."
+      ],
+      [
+        "Как купить OPEN?",
+        "Подключите wallet и оплатите USDC, ETH, WETH или cbBTC в сети Base. Также можно перевести средства с других сетей (Ethereum, Arbitrum, Solana, Bitcoin…) — мы автоматически конвертируем их в USDC в вашем wallet Base. Токены, купленные на предпродаже, получаются при запуске (TGE) через claim."
+      ],
+      [
+        "Когда я получу токены предпродажи?",
+        "При запуске (TGE) через claim из вашего wallet. Предпродажа публичная и открытая, без лимита на wallet, цена 0,0005 USDC за OPEN и максимальный лимит 1 045 000 USDC, зафиксированный в контракте; средства хранятся в Safe multisig."
+      ],
+      [
+        "Нужно ли ждать IPO, чтобы инвестировать?",
+        "Нет. Предпродажа открыта: вы инвестируете сегодня on-chain в реальные акции OpenAI, Inc. OPI — рыночная веха, а не конец протокола — OPI не закрывает цикл: казна продолжает покупать акции OpenAI, Inc. (публичный и частный рынок), openChat, openAPI и остальные сервисы генерируют доход от использования, и 30% этих комиссий постоянно направляется на обратный выкуп и сжигание OPEN."
+      ],
+      [
+        "Как и когда я могу продать OPEN?",
+        "На TGE вы получаете OPEN через claim, и с этого момента токен имеет on-chain ликвидность (40% предложения в пуле с заблокированным LP): вы сможете обменять его на ETH, USDC или другие токены из wallet."
+      ],
+      [
+        "Чем OPEN отличается от покупки акции на бирже?",
+        "OPEN — токен openAI Protocol: вы участвуете в казне, которая непрерывно накапливает equity OpenAI, Inc., с on-chain ликвидностью и программным обратным выкупом, финансируемым openAPI и сервисами open*."
+      ],
+      [
+        "Как цена OPEN связана с акциями?",
+        "OPEN участвует в казне протокола с экспозицией к OpenAI, Inc.; рыночная цена может отличаться от NAV."
+      ],
+      [
+        "Кто хранит мои токены?",
+        "Вы. Протокол не хранит ваши OPEN: покупка подписывается из вашего wallet, и только вы контролируете ключи."
+      ],
+      [
+        "Какие есть комиссии?",
+        "Предпродажа не добавляет собственных комиссий: вы платите сетевую комиссию Base (копейки) и, если платите токеном, отличным от USDC, или с другой сети, стоимость рыночной конвертации, которая показывается до подтверждения."
+      ],
+      [
+        "Это риск?",
+        "Как и любая инвестиция, стоимость OPEN может расти или падать. Инвестируйте только то, что можете позволить себе потерять. С OPEN вы участвуете в казне, которая инвестирует в реальные акции OpenAI, Inc. — on-chain, с ликвидностью и flywheel, который остаётся активным после OPI."
+      ],
+      [
+        "Что происходит после OPI?",
+        "OPI не закрывает цикл: казна продолжает покупать акции OpenAI, Inc. (публичный и частный рынок), openChat, openAPI и остальные сервисы генерируют доход от использования, и 30% этих комиссий постоянно направляется на обратный выкуп и сжигание OPEN. OPEN продолжает отражать казну: больше акций OpenAI, Inc., больше доходов от сервисов и верифицируемые on-chain обратные выкупы."
+      ]
+    ],
+    "tkSegs": [
+      "Публичная предпродажа",
+      "On-chain ликидность",
+      "Казна / Экосистема",
+      "Маркетинг",
+      "Команда (блокировка 3 года)",
+      "Будущие раунды (заблокировано)"
+    ]
+  },
+  "market": {
+    "statMarketCap": "Рыночная кап.",
+    "statPresalePrice": "Цена предпродажи",
+    "statSupply": "Общее предложение",
+    "statPresaleCap": "Лимит предпродажи",
+    "statAth": "Исторический максимум",
+    "statPresale": "Предпродажа",
+    "statPresaleValue": "Публичная и открытая",
+    "readyTitle": "Готовы инвестировать?",
+    "readyBody": "Купите OPEN по рыночной цене или обменяйте из wallet.",
+    "swapCta": "Обменять"
+  },
+  "portfolio": {
+    "connectTitle": "Подключите wallet",
+    "connectBody": "Подключите его, чтобы видеть реальные балансы в сети Base и on-chain историю.",
+    "myWallet": "Мой кошелёк",
+    "copyAddressTitle": "Копировать адрес",
+    "disconnect": "Отключить",
+    "totalValue": "Общая стоимость в Base",
+    "deposit": "Пополнить",
+    "depositTitle": "Получить USDC на ваш адрес Base",
+    "assetsTitle": "Ваши активы в Base",
+    "loadingBalances": "Загрузка балансов…",
+    "emptyLine1": "Пока нет баланса в Base.",
+    "emptyLine2": "Купите OPEN или пополните счёт, чтобы начать.",
+    "movementsTitle": "Операции",
+    "movementsBody": "Полная история транзакций — в обозревателе сети Base.",
+    "viewBasescan": "Смотреть в Basescan",
+    "movementsNote": "Покупки OPEN отображаются как взаимодействия с контрактом предпродажи."
+  },
+  "swapPage": {
+    "title": "Обмен",
+    "subtitle": "Swap OPEN будет доступен, когда токен будет торговаться с on-chain ликвидностью.",
+    "afterTgeTitle": "Доступно после TGE",
+    "afterTgeBody": "Когда OPEN будет листинг с ликвидностью, здесь вы сможете обменивать его на ETH, USDC и другие токены прямо из wallet. Пока можно купить OPEN на предпродаже.",
+    "buyPresaleCta": "Купить OPEN на предпродаже",
+    "payHint": "Можно платить USDC, ETH или cbBTC в Base — или перевести средства с других сетей."
+  },
+  "docsUi": {
+    "backHome": "← На главную",
+    "ctaTitle": "Готовы получить OPEN?",
+    "ctaBody": "Купите USDC, ETH или cbBTC в Base или переведите средства с другой сети.",
+    "viewChart": "Смотреть график"
+  },
+  "walletKind": {
+    "notConnected": "Не подключён",
+    "baseAccount": "Аккаунт Base (Face ID)",
+    "extensionOrApp": "Wallet (расширение или приложение)",
+    "mobileWallet": "Мобильный wallet (WalletConnect)",
+    "hint": "Подключитесь совместимым wallet (MetaMask, Trust Wallet и др.)."
+  },
+  "buy": {
+    "pageTitle": "Купить OPEN",
+    "pageSubtitle": "Оплатите USDC, ETH или cbBTC в Base — или переведите средства с другой сети.",
+    "sinWalletTitle": "Подключите wallet",
+    "sinWalletSubtitle": "Создайте безопасный аккаунт или подключите уже используемый wallet.",
+    "walletModalTitle": "Подключить wallet",
+    "walletModalSubtitle": "Используйте существующий wallet или создайте новый за секунды.",
+    "connectWallet": "Подключить wallet",
+    "connectDesktopHint": "Покупка всегда подписывается из вашего wallet: никто другой не может перемещать ваши средства.",
+    "walletOptionExtensionSub": "Расширение браузера",
+    "walletOptionMobileApp": "Открыть приложение wallet",
+    "walletOptionMobileAppSub": "MetaMask, Trust, Rainbow и другие",
+    "walletOptionQr": "С мобильного",
+    "walletOptionQrSub": "Отсканируйте QR-код wallet на телефоне",
+    "walletOptionCreate": "Создать новый wallet",
+    "walletOptionCreateSub": "С Face ID или Touch ID — без установки",
+    "walletOpeningApp": "Открываем приложение wallet…",
+    "walletOpeningQr": "Генерация QR-кода…",
+    "walletConnecting": "Подключение…",
+    "noExtensionHint": "Не используете расширение? Подключитесь мобильным wallet или создайте новый.",
+    "walletConnectEnvHint": "Конфиг: отсутствует NEXT_PUBLIC_WC_PROJECT_ID (бесплатно на cloud.reown.com).",
+    "switchChainTitle": "Переключите wallet на сеть Base",
+    "switchChainSubtitle": "Эта операция работает только в Base (Chain ID 8453).",
+    "switchChainCta": "Переключить на Base",
+    "switchChainRejected": "Вы отклонили смену сети. Переключитесь на Base в wallet вручную, чтобы продолжить.",
+    "confirmInWalletApp": "Подтвердите в приложении wallet",
+    "confirmInWalletAppHint": "Откройте wallet, подпишите транзакцию и вернитесь сюда. Статус обновится автоматически.",
+    "useAnotherWallet": "Использовать другой wallet",
+    "sinFondosTitle": "Нужен USDC в Base",
+    "sinFondosSubtitle": "Пополните wallet USDC в сети Base, чтобы продолжить предпродажу.",
+    "sinFondosPollingHint": "Когда вы получите USDC в Base, мы автоматически обнаружим баланс. Перезагружать страницу не нужно.",
+    "walletAddressLabel": "Ваш адрес в Base",
+    "checkingBalance": "Проверка баланса…",
+    "rampManualNetworkWarning": "Важно: USDC должен быть в сети Base. Отправка средств в другую сеть может привести к потерям.",
+    "listoTitle": "Средства готовы!",
+    "listoSubtitle": "У вас {balance} доступно для инвестирования в OPEN.",
+    "continueCta": "Перейти к покупке",
+    "compraTitle": "Купить OPEN",
+    "compraSubtitle": "Выберите валюту оплаты. Мы конвертируем в USDC и покупаем OPEN из вашего wallet.",
+    "compraTgeNotice": "Токены, купленные на предпродаже, получаются при запуске (TGE) через claim.",
+    "compraPayWith": "Оплатить",
+    "compraBalance": "Баланс",
+    "compraEstimatedOpen": "Оценка OPEN",
+    "compraQuoteRefreshing": "Котировка обновляется каждые 30 с",
+    "compraQuoteExpired": "Обновление цены…",
+    "compraQuoteFallback": "Сейчас не удалось получить котировку конвертации. Оплатите USDC или попробуйте через несколько минут.",
+    "compraCapExceeded": "Сумма превышает оставшуюся квоту предпродажи. Уменьшите количество.",
+    "compraConvertCta": "Конвертировать в средства для покупки",
+    "compraConvertDone": "Конвертация завершена. Теперь можно купить OPEN за USDC.",
+    "compraStepBatch0x": "Подписать конвертацию и покупку (одна подпись)",
+    "compraStepConvertApprove": "Шаг 1/2 — Авторизовать токен оплаты",
+    "compraStepConvertSwap": "Шаг 2/2 — Конвертировать в USDC",
+    "compraAmountLabel": "Сумма к оплате",
+    "compraHintNoAmount": "Введите сумму, чтобы продолжить.",
+    "compraHintLegal": "Отметьте галочку условий, чтобы активировать покупку.",
+    "compraHintQuoteLoading": "Расчёт цены конвертации…",
+    "compraStartCta": "Начать покупку",
+    "compraRetryCta": "Повторить ожидающий шаг",
+    "compraDoneTitle": "Покупка отправлена",
+    "compraDoneSubtitle": "Транзакция успешно отправлена. Вы получите OPEN при запуске (TGE) через claim.",
+    "compraContractMissing": "Контракт предпродажи не настроен (NEXT_PUBLIC_PRESALE_CONTRACT).",
+    "compraStepUsdcApprove": "Шаг 1/2 — Авторизовать USDC",
+    "compraStepUsdcBuy": "Шаг 2/2 — Купить OPEN",
+    "compraStepSwapApprove": "Шаг 1/3 — Авторизовать конвертацию",
+    "compraStepSwapConvert": "Шаг 2/3 — Конвертировать в ETH",
+    "compraStepSwapBuy": "Шаг 3/3 — Купить OPEN",
+    "compraStepBatch": "Подписать покупку (одна подпись)",
+    "compraWaitingConfirm": "Ожидание on-chain подтверждения…",
+    "compraUserRejected": "Вы отклонили транзакцию. Можно повторить ожидающий шаг.",
+    "compraBackCta": "Назад",
+    "compraViewTx": "Смотреть транзакцию в Basescan",
+    "compraInsufficientSell": "Недостаточно {symbol} для этой суммы.",
+    "compraInsufficientUsdc": "Недостаточно USDC для этой суммы.",
+    "compraWrongNetwork": "Переключите wallet на сеть Base, чтобы продолжить.",
+    "compraGasInsufficient": "Недостаточно ETH для оплаты сетевой комиссии.",
+    "compraBatchFailed": "Операция не завершилась в сети. Попробуйте снова.",
+    "compraGenericError": "Не удалось завершить операцию. Попробуйте снова.",
+    "bridgeTabBase": "Оплатить в Base",
+    "bridgeTabOther": "С другой сети",
+    "bridgeTabReceive": "Получить USDC",
+    "receiveSubtitle": "Отправьте USDC на ваш адрес в сети Base с другого wallet или биржи. Баланс определяется автоматически.",
+    "receiveCurrentBalance": "Ваш баланс USDC в Base",
+    "compraModeChecking": "Проверка wallet…",
+    "compraModeOneSignature": "Вы подтвердите всё одной подписью в wallet.",
+    "compraModeSteps": "Вы подтвердите {n} шагов в wallet по одному.",
+    "compraMaxCta": "МАКС",
+    "compraUsdEstimate": "≈ {v} USD",
+    "compraQuoteValidFor": "Цена гарантирована {sec} с",
+    "compraDoneViewPortfolio": "Смотреть в портфеле",
+    "compraDoneBuyMore": "Купить ещё OPEN",
+    "walletConnectedAs": "Wallet подключён",
+    "walletChangeCta": "Сменить",
+    "bridgeExactAmountWarning": "Отправьте ТОЧНО указанную сумму одной транзакцией. Другая сумма может задержать операцию или привести к возврату.",
+    "bridgeSubtitle": "Отправьте средства с другой сети — мы конвертируем их в USDC в вашем wallet Base. Затем покупаете OPEN как обычно.",
+    "bridgeOriginLabel": "Исходная сеть",
+    "bridgeTokenLabel": "Токен для отправки",
+    "bridgeAmountLabel": "Сумма к отправке",
+    "bridgeEstimatedUsdc": "USDC, который вы получите в Base",
+    "bridgeFeesLabel": "Оценка общей стоимости",
+    "bridgeTimeLabel": "Оценка времени",
+    "bridgeQuoteExpired": "Котировка моста истекла. Пересчитайте перед отправкой.",
+    "bridgeExpiresIn": "Котировка истекает через {sec} с",
+    "bridgeSendCta": "Отправить из {network}",
+    "bridgeGetDepositCta": "Сгенерировать адрес депозита",
+    "bridgeDepositAddressLabel": "Адрес депозита",
+    "bridgeDepositInstructions": "Отправьте ровно {amount} {symbol} на этот адрес с любого wallet или биржи. Другая сумма может задержать операцию или привести к возврату.",
+    "bridgeBtcMinHint": "С Bitcoin сетевые комиссии делают малые суммы нецелесообразными.",
+    "bridgeSwitching": "Переключение на исходную сеть…",
+    "bridgeAwaitingWallet": "Подтвердите транзакцию в wallet…",
+    "bridgeConfirmingOrigin": "Подтверждение в исходной сети…",
+    "bridgeAwaitingDeposit": "Ожидание депозита… Можно оставить страницу открытой — она обновится сама.",
+    "bridgeInProgress": "Мост в процессе… USDC скоро поступит в ваш wallet Base.",
+    "bridgeDelivered": "USDC получен в Base. Теперь можно купить OPEN.",
+    "bridgeRefunded": "Операция не завершилась, средства возвращены на исходный адрес.",
+    "bridgeFailed": "Мост не завершён. Если вы отправили средства, они будут возвращены на исходный адрес.",
+    "bridgeRetryCta": "Попробовать снова",
+    "bridgeNewCta": "Начать новую отправку",
+    "bridgeGoBuyCta": "Купить OPEN за мои USDC",
+    "bridgeViewDestTx": "Смотреть доставку в Basescan"
+  }
+}

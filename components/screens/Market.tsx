@@ -6,7 +6,7 @@ import { css } from "@/lib/css";
 import { fmtUSD, ACCENT } from "@/lib/format";
 import { buildSeries } from "@/lib/series";
 import { useOpenPrice } from "@/hooks/useOpenPrice";
-import { brandLegal } from "@/lib/brand-legal";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 import { Chart } from "../Chart";
 
 const series = buildSeries();
@@ -17,6 +17,7 @@ const TFS = ["1D", "1W", "1M", "1Y", "ALL"];
 export default function Market() {
   const { price, change } = useOpenPrice();
   const router = useRouter();
+  const { t } = useI18n();
   const [tf, setTf] = useState("1M");
   const pos = change >= 0;
   const changeStr = (pos ? "+" : "") + change.toFixed(2) + "%";
@@ -25,12 +26,12 @@ export default function Market() {
   const arr = series[tf];
   const cmax = Math.max(...arr);
   const stats = [
-    { label: "Cap. de mercado", value: fmtUSD(cap) },
-    { label: "Precio de preventa", value: "0,0005 USDC" },
-    { label: "Suministro total", value: "21.000M OPEN" },
-    { label: "Cap de la preventa", value: "1.045.000 USDC" },
-    { label: "Máximo histórico", value: fmtUSD(cmax) },
-    { label: "Preventa", value: "Pública y abierta" },
+    { label: t.market.statMarketCap, value: fmtUSD(cap) },
+    { label: t.market.statPresalePrice, value: "0,0005 USDC" },
+    { label: t.market.statSupply, value: "21.000M OPEN" },
+    { label: t.market.statPresaleCap, value: "1.045.000 USDC" },
+    { label: t.market.statAth, value: fmtUSD(cmax) },
+    { label: t.market.statPresale, value: t.market.statPresaleValue },
   ];
 
   return (
@@ -70,10 +71,10 @@ export default function Market() {
           ))}
         </div>
         <div style={css("background:#0D0D0D;color:#fff;border-radius:20px;padding:26px")}>
-          <div style={css("font:600 19px var(--font-hanken);letter-spacing:-0.02em;margin-bottom:6px")}>¿Listo para invertir?</div>
-          <p style={css("font:400 14px/1.5 var(--font-hanken);color:#B8B8BD;margin:0 0 20px")}>Compra OPEN al precio de mercado o intercámbialo desde tu wallet.</p>
-          <button onClick={() => router.push("/comprar")} style={css("width:100%;appearance:none;cursor:pointer;background:#fff;color:#0D0D0D;border:none;border-radius:12px;padding:13px;font:600 15px var(--font-hanken);margin-bottom:10px")}>{brandLegal.suggestedCta}</button>
-          <button onClick={() => router.push("/swap")} style={css("width:100%;appearance:none;cursor:pointer;background:transparent;color:#fff;border:1px solid #3A3A3A;border-radius:12px;padding:13px;font:600 15px var(--font-hanken)")}>Intercambiar</button>
+          <div style={css("font:600 19px var(--font-hanken);letter-spacing:-0.02em;margin-bottom:6px")}>{t.market.readyTitle}</div>
+          <p style={css("font:400 14px/1.5 var(--font-hanken);color:#B8B8BD;margin:0 0 20px")}>{t.market.readyBody}</p>
+          <button onClick={() => router.push("/comprar")} style={css("width:100%;appearance:none;cursor:pointer;background:#fff;color:#0D0D0D;border:none;border-radius:12px;padding:13px;font:600 15px var(--font-hanken);margin-bottom:10px")}>{t.legal.suggestedCta}</button>
+          <button onClick={() => router.push("/swap")} style={css("width:100%;appearance:none;cursor:pointer;background:transparent;color:#fff;border:1px solid #3A3A3A;border-radius:12px;padding:13px;font:600 15px var(--font-hanken)")}>{t.market.swapCta}</button>
         </div>
       </div>
     </main>

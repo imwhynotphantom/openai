@@ -4,13 +4,14 @@ import { useEffect } from "react";
 import { css } from "@/lib/css";
 import { ACCENT } from "@/lib/format";
 import { useApp } from "@/lib/store";
-import { BUY_FLOW_COPY } from "@/lib/onramp/constants";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 import { WalletOptions } from "./wallet/WalletOptions";
 
 const OVERLAY = "position:fixed;inset:0;z-index:1000;background:rgba(13,13,13,0.42);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:24px;animation:ov .18s ease";
 
 export function WalletModal() {
   const app = useApp();
+  const { t } = useI18n();
   const { walletOpen, closeWallet } = app;
 
   // Cerrar con Escape y bloquear el scroll de fondo mientras está abierto.
@@ -34,14 +35,14 @@ export function WalletModal() {
     <div onClick={app.closeWallet} style={css(OVERLAY)} role="dialog" aria-modal="true">
       <div onClick={(e) => e.stopPropagation()} style={css("width:400px;max-width:100%;background:#fff;border-radius:22px;padding:24px;animation:pop .22s cubic-bezier(.2,.7,.2,1)")}>
         <div style={css("display:flex;justify-content:space-between;align-items:center;margin-bottom:6px")}>
-          <h3 style={css("font:600 20px var(--font-hanken);letter-spacing:-0.02em;margin:0")}>{BUY_FLOW_COPY.walletModalTitle}</h3>
-          <button aria-label="Cerrar" onClick={app.closeWallet} style={css("appearance:none;border:none;background:#F4F4F5;width:30px;height:30px;border-radius:50%;cursor:pointer;color:#6B6B76;font-size:16px")}>×</button>
+          <h3 style={css("font:600 20px var(--font-hanken);letter-spacing:-0.02em;margin:0")}>{t.buy.walletModalTitle}</h3>
+          <button aria-label={t.common.close} onClick={app.closeWallet} style={css("appearance:none;border:none;background:#F4F4F5;width:30px;height:30px;border-radius:50%;cursor:pointer;color:#6B6B76;font-size:16px")}>×</button>
         </div>
-        <p style={css("font:400 14px var(--font-hanken);color:#6B6B76;margin:0 0 18px")}>{BUY_FLOW_COPY.walletModalSubtitle}</p>
+        <p style={css("font:400 14px var(--font-hanken);color:#6B6B76;margin:0 0 18px")}>{t.buy.walletModalSubtitle}</p>
         <WalletOptions
           onSuccess={() => {
             app.closeWallet();
-            app.toastMsg("Wallet conectada");
+            app.toastMsg(t.common.walletConnected);
           }}
         />
       </div>

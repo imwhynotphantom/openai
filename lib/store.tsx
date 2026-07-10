@@ -26,7 +26,7 @@ export interface AppApi extends AppState {
   /** Espeja el estado real de wagmi en el store (lo invoca WalletSync). */
   syncWallet: (connected: boolean, address: string | null) => void;
   /** Limpia el estado local; la desconexión on-chain la hace wagmi. */
-  disconnect: () => void;
+  disconnect: (toastMessage?: string) => void;
   toastMsg: (m: string) => void;
 }
 
@@ -75,12 +75,12 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     });
   }, []);
 
-  const disconnect = useCallback(() => {
+  const disconnect = useCallback((toastMessage?: string) => {
     try {
       localStorage.removeItem(LEGACY_STORAGE_KEY);
     } catch {}
     setS((p) => ({ ...p, connected: false, address: "" }));
-    toastMsg("Wallet desconectada");
+    if (toastMessage) toastMsg(toastMessage);
   }, [toastMsg]);
 
   const api: AppApi = useMemo(

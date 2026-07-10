@@ -2,7 +2,9 @@
 
 import { useSyncExternalStore } from "react";
 
-export type ActivityRow = { id: string; addr: string; action: string; amt: string; ts: number };
+/** La acción se guarda como clave y se traduce al renderizar (i18n). */
+export type ActivityAction = "bought" | "swapped";
+export type ActivityRow = { id: string; addr: string; action: ActivityAction; amt: string; ts: number };
 
 export type MarketState = {
   price: number;
@@ -25,11 +27,11 @@ let market: MarketState = {
   change: 3.24,
   now: INITIAL_NOW,
   activity: [
-    { id: "a1", addr: "0x7c…4f", action: "compró", amt: "1,250", ts: 8000 },
-    { id: "a2", addr: "0x3a…e1", action: "intercambió", amt: "740", ts: 23000 },
-    { id: "a3", addr: "0x9f…2a", action: "compró", amt: "3,100", ts: 41000 },
-    { id: "a4", addr: "0xb2…7d", action: "compró", amt: "512", ts: 76000 },
-    { id: "a5", addr: "0x18…c9", action: "intercambió", amt: "2,025", ts: 122000 },
+    { id: "a1", addr: "0x7c…4f", action: "bought", amt: "1,250", ts: 8000 },
+    { id: "a2", addr: "0x3a…e1", action: "swapped", amt: "740", ts: 23000 },
+    { id: "a3", addr: "0x9f…2a", action: "bought", amt: "3,100", ts: 41000 },
+    { id: "a4", addr: "0xb2…7d", action: "bought", amt: "512", ts: 76000 },
+    { id: "a5", addr: "0x18…c9", action: "swapped", amt: "2,025", ts: 122000 },
   ],
 };
 
@@ -61,7 +63,7 @@ function genActivity(): ActivityRow {
   const hex = "0123456789abcdef";
   const r = (n: number) => Array.from({ length: n }, () => hex[Math.floor(Math.random() * 16)]).join("");
   const addr = "0x" + r(2) + "…" + r(2);
-  const action = Math.random() < 0.68 ? "compró" : "intercambió";
+  const action: ActivityAction = Math.random() < 0.68 ? "bought" : "swapped";
   const amt = (Math.floor(Math.random() * 3900) + 180).toLocaleString("en-US");
   return { id: "a" + Date.now() + Math.floor(Math.random() * 99), addr, action, amt, ts: Date.now() };
 }

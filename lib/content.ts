@@ -1,37 +1,20 @@
-/** Static content for the openAI Protocol demo. */
+/**
+ * Datos estáticos NO traducibles (posiciones, números, colores, símbolos).
+ * Los textos asociados viven en lib/i18n/dictionaries/{locale}.ts (content.*).
+ */
 
-import { brandLegal } from "./brand-legal";
+/** Nombres de los 6 productos del ecosistema (marca, no se traducen). */
+export const ecosystemNames = [
+  "openChat",
+  "openAPI",
+  "openImage",
+  "openMotion",
+  "openVoice",
+  "openCode",
+] as const;
 
-const {
-  referencedCompany,
-  productBrand,
-  tokenTicker,
-  affiliationNoticeSoft,
-  ecosystemDisclaimer,
-  legalChecklist,
-  marketingPitch,
-} = brandLegal;
-
-export const ecosystem = [
-  { name: "openChat", desc: "Asistente conversacional del ecosistema openAI Protocol. Suscripciones y consumo generan ingresos que alimentan la tesorería y la recompra de OPEN." },
-  { name: "openAPI", desc: "Modelos servidos vía API del protocolo. Cada millón de tokens procesados se factura; parte de la comisión recompra OPEN." },
-  { name: "openImage", desc: "Generación de imágenes por difusión. El consumo por crédito alimenta el flujo de recompra del token." },
-  { name: "openMotion", desc: "Generación de vídeo a partir de texto. Cargas de cómputo intensivas, facturadas por segundo renderizado." },
-  { name: "openVoice", desc: "Voz y transcripción en tiempo real. Uso medido por minuto de audio procesado." },
-  { name: "openCode", desc: "Copiloto de programación del protocolo. Plan por asiento más consumo de cómputo por sugerencia generada." },
-];
-
-export const tokenWhy = [
-  { icon: "↗", title: "Acciones reales en tesorería", desc: `El capital de ${tokenTicker} se destina a comprar acciones de ${referencedCompany} en mercados privados.` },
-  { icon: "◴", title: "Flywheel permanente", desc: "Accede on-chain hoy. Tras la OPI, la tesorería sigue acumulando acciones y quemando OPEN con cada uso de openAPI y los servicios open*." },
-  { icon: "◆", title: "Ingresos del ecosistema open*", desc: "openChat, openAPI y el resto de productos generan comisiones; el 30% recompra y quema OPEN." },
-];
-
-export const steps = [
-  { n: "1", title: "Conecta tu wallet", desc: "MetaMask, Coinbase, Trust o la wallet de tu móvil en un toque." },
-  { n: "2", title: "Compra OPEN", desc: "Con USDC, ETH o cbBTC en Base — o desde otra red. Tu capital entra en la tesorería del protocolo." },
-  { n: "3", title: "Sigue tu inversión", desc: "Valor, asignación y movimientos en tiempo real." },
-];
+/** Iconos de los 3 motivos de inversión (mismo orden que dict.content.tokenWhy). */
+export const tokenWhyIcons = ["↗", "◴", "◆"] as const;
 
 // hub nodes (OPEN in the center syncing with the 6 services)
 export const hubPos = [
@@ -42,38 +25,15 @@ export const hubPos = [
   "position:absolute;left:15.8%;top:71.2%;transform:translate(-50%,-50%)",
   "position:absolute;left:15.8%;top:28.8%;transform:translate(-50%,-50%)",
 ];
-export const hubMeta: [string, string, string][] = [
-  ["openChat", "Suscripción", "por suscripción"],
-  ["openAPI", "API", "por token"],
-  ["openImage", "Imagen", "por crédito"],
-  ["openMotion", "Vídeo", "por segundo"],
-  ["openVoice", "Voz", "por minuto"],
-  ["openCode", "Código", "por asiento"],
-];
 
-export const faqDefs: [string, string][] = [
-  [`¿Qué es ${tokenTicker} y qué hace con mi capital?`, `${marketingPitch} ${legalChecklist.tokenNatureParagraph}`],
-  [`¿Cómo se invierte en ${referencedCompany}?`, `La tesorería destina el capital a comprar acciones reales de ${referencedCompany} vía SPV — antes y después de la OPI. Paralelamente opera openChat, openAPI y el resto de servicios open*; el 30% de sus comisiones recompra y quema OPEN, y el resto refuerza la acumulación de acciones.`],
-  [`¿Cómo compro ${tokenTicker}?`, "Conecta tu wallet y paga con USDC, ETH, WETH o cbBTC en la red Base. También puedes traer fondos desde otras redes (Ethereum, Arbitrum, Solana, Bitcoin…) y los convertimos en USDC en tu wallet de Base automáticamente. Los tokens comprados en preventa se reciben en el momento del lanzamiento (TGE) mediante claim."],
-  ["¿Cuándo recibo mis tokens de la preventa?", "En el momento del lanzamiento (TGE), mediante claim desde tu propia wallet. La preventa es pública y abierta, sin límite por wallet, con precio de 0,0005 USDC por OPEN y un cap máximo de 1.045.000 USDC fijado en el contrato; los fondos se custodian en una Safe multisig."],
-  ["¿Tengo que esperar a la salida a bolsa para invertir?", `No. La preventa está abierta: inviertes hoy on-chain en acciones reales de ${referencedCompany}. La OPI es un hito de mercado, no el final del protocolo — ${brandLegal.copy.postOpiFlywheel}`],
-  [`¿Cómo y cuándo puedo vender mis ${tokenTicker}?`, `En el TGE recibes tus ${tokenTicker} mediante claim y, desde ese momento, el token cuenta con liquidez on-chain (40% del suministro en el pool, con LP bloqueado): podrás intercambiarlo por ETH, USDC u otros tokens desde tu wallet.`],
-  [`¿En qué se diferencia ${tokenTicker} de comprar la acción en bolsa?`, `${tokenTicker} es el token del ${productBrand}: participas en la tesorería que acumula equity de ${referencedCompany} de forma continua, con liquidez on-chain y recompra programática financiada por openAPI y los servicios open*.`],
-  [`¿Cómo se relaciona el precio de ${tokenTicker} con las acciones?`, legalChecklist.tokenNatureLegal],
-  ["¿Quién custodia mis tokens?", `Tú. El protocolo no custodia tus ${tokenTicker}: la compra se firma desde tu propia wallet y solo tú controlas las claves.`],
-  ["¿Qué comisiones tiene?", "La preventa no añade comisiones propias: pagas la comisión de red de Base (céntimos) y, si pagas con un token distinto de USDC o desde otra red, el coste de conversión del mercado, que se muestra antes de confirmar."],
-  ["¿Es esto un riesgo?", `Como cualquier inversión, el valor de ${tokenTicker} puede subir o bajar. Invierte solo lo que puedas permitirte. ${affiliationNoticeSoft}`],
-  [`¿Qué pasa después de la OPI?`, brandLegal.copy.postOpiFlywheel + ` ${tokenTicker} sigue reflejando la tesorería: más acciones de ${referencedCompany}, más ingresos de servicios y recompras verificables on-chain.`],
-];
-
-/** Distribución del suministro (21.000.000.000 OPEN, suma 100%). */
-export const tkSegs: [string, number, string][] = [
-  ["Preventa pública", 9.95, "var(--accent,#0E8C6A)"],
-  ["Liquidez on-chain", 40, "#D8D8DC"],
-  ["Tesorería / Ecosistema", 20, "#8FD9C4"],
-  ["Marketing", 15, "#E0B36A"],
-  ["Equipo (bloqueado 3 años)", 5, "#5A5A60"],
-  ["Rondas futuras (bloqueado)", 10.05, "#6478F0"],
+/** Distribución del suministro: porcentaje + color (etiquetas en dict.content.tkSegs). */
+export const tkSegData: { pct: number; color: string }[] = [
+  { pct: 9.95, color: "var(--accent,#0E8C6A)" },
+  { pct: 40, color: "#D8D8DC" },
+  { pct: 20, color: "#8FD9C4" },
+  { pct: 15, color: "#E0B36A" },
+  { pct: 5, color: "#5A5A60" },
+  { pct: 10.05, color: "#6478F0" },
 ];
 
 export const assetMeta: Record<string, { name: string; color: string; sym: string }> = {
@@ -106,6 +66,3 @@ export type Doc = {
   stats?: { value: string; label: string }[];
   sections: DocSection[];
 };
-
-/** Shown under ecosystem grid on Home. */
-export { ecosystemDisclaimer };

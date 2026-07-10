@@ -3,7 +3,7 @@
 import { useAccount } from "wagmi";
 import { useSearchParams } from "next/navigation";
 import { css } from "@/lib/css";
-import { BUY_FLOW_COPY } from "@/lib/onramp/constants";
+import { useBuyCopy } from "@/hooks/useBuyCopy";
 import { formatAddress } from "@/lib/wagmi/format-address";
 import { useWalletDisconnect } from "@/hooks/useWalletDisconnect";
 import { SinWalletStep } from "./steps/SinWalletStep";
@@ -16,6 +16,7 @@ const MODE_PARAM: Record<string, FundingMode> = {
 };
 
 export default function BuyFlow() {
+  const buy = useBuyCopy();
   const { address, isConnected } = useAccount();
   const disconnectWallet = useWalletDisconnect();
   const searchParams = useSearchParams();
@@ -25,9 +26,9 @@ export default function BuyFlow() {
     <main style={css("max-width:1200px;margin:0 auto;padding:48px 24px 120px")}>
       <div style={css("text-align:center;margin-bottom:24px")}>
         <h2 style={css("font:700 34px/1.1 var(--font-hanken);letter-spacing:-0.04em;color:#0D0D0D;margin:0 0 10px")}>
-          {BUY_FLOW_COPY.pageTitle}
+          {buy.pageTitle}
         </h2>
-        <p style={css("font:400 15px/1.5 var(--font-hanken);color:#8A8A94;margin:0")}>{BUY_FLOW_COPY.pageSubtitle}</p>
+        <p style={css("font:400 15px/1.5 var(--font-hanken);color:#8A8A94;margin:0")}>{buy.pageSubtitle}</p>
       </div>
 
       {isConnected && address ? (
@@ -47,7 +48,7 @@ export default function BuyFlow() {
                   "appearance:none;cursor:pointer;border:none;background:#F4F4F5;border-radius:999px;padding:5px 10px;font:600 12px var(--font-hanken);color:#5C5C66"
                 )}
               >
-                {BUY_FLOW_COPY.walletChangeCta}
+                {buy.walletChangeCta}
               </button>
             </div>
           </div>

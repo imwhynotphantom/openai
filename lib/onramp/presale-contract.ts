@@ -1,7 +1,10 @@
 import { encodeFunctionData, parseAbi, type Address, type Hex } from "viem";
-import { BUY_FLOW_COPY, USDC_BASE } from "./constants";
+import { USDC_BASE } from "./constants";
+import type { Dictionary } from "@/lib/i18n/load";
 import type { PaymentToken } from "./payment-tokens";
 import type { SwapQuoteResponse } from "./swap-quote-types";
+
+type BuyDict = Dictionary["buy"];
 
 export const ERC20_ABI = parseAbi([
   "function allowance(address owner, address spender) view returns (uint256)",
@@ -141,36 +144,39 @@ export function build0xFullBatchCalls(params: {
   return calls;
 }
 
-export function getStepLabels(params: {
-  paymentToken: PaymentToken;
-  supportsBatch: boolean;
-  phase: PurchasePhase;
-  needsUsdcApprove: boolean;
-  needsSellApprove: boolean;
-}): string[] {
+export function getStepLabels(
+  params: {
+    paymentToken: PaymentToken;
+    supportsBatch: boolean;
+    phase: PurchasePhase;
+    needsUsdcApprove: boolean;
+    needsSellApprove: boolean;
+  },
+  d: BuyDict
+): string[] {
   if (params.supportsBatch) {
-    if (params.paymentToken.id !== "USDC") return [BUY_FLOW_COPY.compraStepBatch0x];
+    if (params.paymentToken.id !== "USDC") return [d.compraStepBatch0x];
     // USDC con batch: una firma si hay approve + buy; con una sola call no aporta nada.
-    if (params.needsUsdcApprove) return [BUY_FLOW_COPY.compraStepBatch];
+    if (params.needsUsdcApprove) return [d.compraStepBatch];
   }
 
   if (params.paymentToken.id === "USDC") {
     const steps: string[] = [];
-    if (params.needsUsdcApprove) steps.push(BUY_FLOW_COPY.compraStepUsdcApprove);
-    steps.push(BUY_FLOW_COPY.compraStepUsdcBuy);
+    if (params.needsUsdcApprove) steps.push(d.compraStepUsdcApprove);
+    steps.push(d.compraStepUsdcBuy);
     return steps;
   }
 
   if (params.phase === "convert") {
     const steps: string[] = [];
-    if (params.needsSellApprove) steps.push(BUY_FLOW_COPY.compraStepConvertApprove);
-    steps.push(BUY_FLOW_COPY.compraStepConvertSwap);
+    if (params.needsSellApprove) steps.push(d.compraStepConvertApprove);
+    steps.push(d.compraStepConvertSwap);
     return steps;
   }
 
   const steps: string[] = [];
-  if (params.needsUsdcApprove) steps.push(BUY_FLOW_COPY.compraStepUsdcApprove);
-  steps.push(BUY_FLOW_COPY.compraStepUsdcBuy);
+  if (params.needsUsdcApprove) steps.push(d.compraStepUsdcApprove);
+  steps.push(d.compraStepUsdcBuy);
   return steps;
 }
 

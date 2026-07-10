@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { css } from "@/lib/css";
 import { Hov } from "@/components/ui";
-import { BUY_FLOW_COPY } from "@/lib/onramp/constants";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 
 type Props = {
   value: string;
@@ -11,6 +11,7 @@ type Props = {
 };
 
 export function CopyAddressButton({ value, onCopy }: Props) {
+  const { t } = useI18n();
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
@@ -32,7 +33,7 @@ export function CopyAddressButton({ value, onCopy }: Props) {
       style="appearance:none;cursor:pointer;border:1px solid #E6E6E8;background:#fff;color:#5C5C66;border-radius:10px;padding:10px 14px;font:600 13px var(--font-hanken)"
       hover="border-color:#0D0D0D;color:#0D0D0D"
     >
-      {copied ? "Copiado" : "Copiar dirección"}
+      {copied ? t.common.copied : t.common.copyAddress}
     </Hov>
   );
 }

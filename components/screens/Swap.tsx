@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { css } from "@/lib/css";
 import { ACCENT } from "@/lib/format";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 import { Hov } from "../ui";
 
 /**
@@ -12,13 +13,14 @@ import { Hov } from "../ui";
  */
 export default function Swap() {
   const router = useRouter();
+  const { t } = useI18n();
 
   return (
     <main style={css("padding:48px 24px;display:flex;justify-content:center")}>
       <div style={css("width:460px;max-width:100%")}>
-        <h2 style={css("font:600 30px var(--font-hanken);letter-spacing:-0.03em;margin:0 0 6px")}>Intercambiar</h2>
+        <h2 style={css("font:600 30px var(--font-hanken);letter-spacing:-0.03em;margin:0 0 6px")}>{t.swapPage.title}</h2>
         <p style={css("font:400 15px var(--font-hanken);color:#6B6B76;margin:0 0 24px")}>
-          El swap de OPEN estará disponible cuando el token cotice con liquidez on-chain.
+          {t.swapPage.subtitle}
         </p>
 
         <div style={css("background:#fff;border:1px solid #ECECEC;border-radius:20px;padding:32px 26px;box-shadow:0 20px 50px -30px rgba(13,13,13,0.18);text-align:center")}>
@@ -32,10 +34,9 @@ export default function Swap() {
               <path d="M7 7h11l-2-2M17 17H6l2 2" />
             </svg>
           </span>
-          <h3 style={css("font:700 20px var(--font-hanken);letter-spacing:-0.02em;margin:0 0 8px")}>Disponible tras el TGE</h3>
+          <h3 style={css("font:700 20px var(--font-hanken);letter-spacing:-0.02em;margin:0 0 8px")}>{t.swapPage.afterTgeTitle}</h3>
           <p style={css("font:400 14px/1.6 var(--font-hanken);color:#6B6B76;margin:0 0 22px")}>
-            Cuando OPEN se liste con liquidez, aquí podrás intercambiarlo por ETH, USDC y otros tokens
-            directamente desde tu wallet. Mientras tanto puedes adquirir OPEN en la preventa.
+            {t.swapPage.afterTgeBody}
           </p>
           <Hov
             as="button"
@@ -44,10 +45,10 @@ export default function Swap() {
             style="appearance:none;cursor:pointer;width:100%;background:#0D0D0D;color:#fff;border:none;border-radius:12px;padding:15px;font:600 15px var(--font-hanken)"
             hover="background:#000"
           >
-            Adquirir OPEN en preventa
+            {t.swapPage.buyPresaleCta}
           </Hov>
           <p style={css("font:400 12px/1.5 var(--font-hanken);color:#A8A8AE;margin:16px 0 0")}>
-            Puedes pagar con USDC, ETH o cbBTC en Base — o traer fondos desde otras redes.
+            {t.swapPage.payHint}
           </p>
         </div>
       </div>

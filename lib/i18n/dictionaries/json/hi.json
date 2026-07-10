@@ -1,0 +1,431 @@
+{
+  "numberLocale": "hi-IN",
+  "meta": {
+    "title": "openAI Protocol — OPEN के ज़रिए OpenAI, Inc. के वास्तविक शेयरों में निवेश करें",
+    "description": "OPEN टोकन के माध्यम से OpenAI, Inc. के वास्तविक शेयरों में निवेश करें। Base नेटवर्क पर खुली प्रीसेल: USDC, ETH या cbBTC से भुगतान करें, बिना कस्टडी और on-chain तरलता के साथ।"
+  },
+  "nav": {
+    "home": "होम",
+    "market": "मार्केट",
+    "buy": "खरीदें",
+    "swap": "Swap",
+    "soon": "जल्द",
+    "wallet": "वॉलेट",
+    "mainNavAria": "मुख्य नेविगेशन",
+    "connectWallet": "Wallet कनेक्ट करें",
+    "language": "भाषा"
+  },
+  "common": {
+    "retry": "पुनः प्रयास",
+    "cancel": "रद्द करें",
+    "close": "बंद करें",
+    "copied": "कॉपी हो गया",
+    "copyAddress": "पता कॉपी करें",
+    "recommended": "अनुशंसित",
+    "calculating": "गणना हो रही है…",
+    "live": "लाइव",
+    "liveLower": "लाइव",
+    "changingNetwork": "नेटवर्क बदला जा रहा है…",
+    "walletConnected": "Wallet कनेक्ट हो गया",
+    "walletDisconnected": "Wallet डिस्कनेक्ट हो गया",
+    "addressCopied": "पता कॉपी हो गया",
+    "noConnectionAvailable": "इस ब्राउज़र में कोई कनेक्शन विधि उपलब्ध नहीं है।"
+  },
+  "errorPage": {
+    "title": "कुछ गलत हो गया",
+    "body": "इस स्क्रीन पर एक अप्रत्याशित त्रुटि हुई। आपके फंड प्रभावित नहीं हैं: wallet में आपकी पुष्टि के बिना कोई ऑपरेशन साइन नहीं होता।",
+    "retry": "पुनः प्रयास",
+    "goHome": "होम पर जाएँ"
+  },
+  "connectErrors": {
+    "generic": "Wallet कनेक्ट नहीं हो सका। फिर से प्रयास करें।",
+    "rejected": "आपने कनेक्शन रद्द कर दिया। जब तैयार हों, फिर से प्रयास करें।",
+    "alreadyConnected": "Wallet पहले से कनेक्ट है।",
+    "pendingRequest": "आपके wallet में एक खुला अनुरोध है। उसे खोलकर जाँचें।",
+    "noProvider": "इस ब्राउज़र में कोई wallet एक्सटेंशन नहीं मिला।",
+    "chainUnsupported": "आपका wallet Base नेटवर्क सपोर्ट नहीं करता। मैन्युअली जोड़ें या दूसरा wallet उपयोग करें।"
+  },
+  "legal": {
+    "marketingPitch": "OPEN, openAI Protocol का on-chain मार्ग है: holders की पूँजी OpenAI, Inc. के वास्तविक शेयरों और open* इकोसिस्टम में निवेश होती है।",
+    "affiliationNoticeSoft": "OPEN के साथ आप उस treasury में भाग लेते हैं जो OpenAI, Inc. के वास्तविक शेयरों में निवेश करती है — on-chain, तरलता और OPI के बाद भी सक्रिय flywheel के साथ।",
+    "affiliationLinkLabel": "कानूनी पारदर्शिता",
+    "affiliationDocTitle": "ब्रांड और पारदर्शिता",
+    "risksDocTitle": "जोखिम जानकारी",
+    "microDisclaimer": "OPEN पूँजी को OpenAI, Inc. के वास्तविक शेयरों की ओर निर्देशित करता है।",
+    "geoNotice": "सेवा अनुमत अधिकार क्षेत्रों के लिए है। सुनिश्चित करें कि आपके देश में क्रिप्टो संपत्तियों का उपयोग अनुमत है।",
+    "geoEligibility": "पात्रता जाँचें",
+    "footerDisclaimer": "openAI Protocol एक विकेंद्रीकृत इकोसिस्टम है। OpenAI, OpenAI, Inc. और संबंधित ब्रांड उनके मालिकों के हैं। यह वेबसाइट प्रतिभूति ऑफ़र या निवेश सलाह नहीं है। निवेश में जोखिम है।",
+    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice और openCode, openAI Protocol इकोसिस्टम के उत्पाद हैं। ChatGPT, DALL·E, Sora, Whisper और Codex, OpenAI, Inc. के ब्रांड हैं।",
+    "suggestedTagline": "OPEN टोकन के माध्यम से OpenAI, Inc. के वास्तविक शेयरों में निवेश करें।",
+    "suggestedCta": "OPEN खरीदें",
+    "heroHeadline": "OPEN में निवेश करें। OpenAI, Inc. के वास्तविक शेयर।",
+    "heroSubheadline": "आपकी पूँजी वास्तविक शेयर खरीदने और open* संचालित करने के लिए protocol treasury में जाती है। openAPI और open* सेवाओं का हर उपयोग buyback, burn और अधिक equity को बढ़ावा देता है — IPO पर नहीं रुकता।",
+    "heroBadge": "खुली प्रीसेल · स्थायी flywheel",
+    "opiContext": "नियोजित OPI · सितंबर 2027 · बाज़ार मील का पत्थर; protocol शेयर जमा करना और OPEN buyback जारी रखता है",
+    "postOpiFlywheel": "OPI चक्र समाप्त नहीं करता: treasury OpenAI, Inc. के शेयर (सार्वजनिक और निजी बाज़ार) खरीदना जारी रखती है; openChat, openAPI और अन्य सेवाएँ उपयोग राजस्व उत्पन्न करती हैं, और उन कमीशन का 30% लगातार OPEN buyback और burn के लिए जाता है।",
+    "equityMicro": "Treasury OPI से पहले और बाद में OpenAI, Inc. के वास्तविक शेयर जमा करती है; open* राजस्व अधिक equity और OPEN buyback वित्तपोषित करता है।",
+    "ecosystemTitle": "वास्तविक शेयरों में निवेश करने वाला टोकन। पूरा open* इकोसिस्टम।",
+    "ecosystemLead": "Treasury OpenAI, Inc. equity खरीदती है और openChat, openAPI और अन्य उत्पाद संचालित करती है। API और सेवाओं का अधिक उपयोग, अधिक राजस्व, treasury में अधिक शेयर और OPEN पर अधिक माँग।",
+    "valueTitle": "वास्तविक शेयर + इकोसिस्टम राजस्व — हमेशा के लिए",
+    "valueLead": "Treasury OpenAI, Inc. के शेयर जमा करती है जबकि open* आवर्ती कमीशन उत्पन्न करता है। 30% OPEN buyback और burn करता है; बाकी equity स्थिति और इकोसिस्टम वृद्धि को मजबूत करता है।",
+    "tokenNatureParagraph": "OPEN आपको openAI Protocol treasury में भाग देता है, जो OpenAI, Inc. के वास्तविक शेयर खरीदती और रखती है और open* इकोसिस्टम संचालित करती है। आज on-chain एक्सेस करें; OPI के बाद treasury शेयर जमा करना और openAPI व open* सेवा राजस्व से OPEN buyback जारी रखती है।",
+    "tokenNatureLegal": "OPEN OpenAI, Inc. एक्सपोज़र वाली protocol treasury में भाग लेता है; बाज़ार मूल्य NAV से भिन्न हो सकता है।",
+    "consentPrefix": "मैंने पढ़ा है और स्वीकार करता/करती हूँ",
+    "consentTerms": "नियम",
+    "consentPrivacyJoin": ",",
+    "consentPrivacy": "गोपनीयता नीति",
+    "consentRisksJoin": "और",
+    "translationNotice": "स्वचालित अनुवाद सुविधा के रूप में प्रदान किया गया है। किसी भी विसंगति की स्थिति में स्पेनिश संस्करण प्राथमिक होगा।"
+  },
+  "footer": {
+    "colToken": "टोकन",
+    "colResources": "संसाधन",
+    "colLegal": "कानूनी",
+    "whitepaper": "Whitepaper",
+    "tokenomics": "Tokenomics",
+    "documentation": "दस्तावेज़",
+    "audit": "ऑडिट",
+    "support": "सहायता",
+    "terms": "नियम",
+    "privacy": "गोपनीयता",
+    "compliance": "अनुपालन"
+  },
+  "home": {
+    "heroStatPresalePrice": "प्रीसेल मूल्य",
+    "heroStatCap": "प्रीसेल cap",
+    "heroStatSupply": "कुल OPEN आपूर्ति",
+    "heroStatLiquidity": "तरलता के लिए (लॉक किया LP)",
+    "swapFromWallet": "Wallet से swap",
+    "trustNoCustody": "● बिना कस्टडी",
+    "trustLiquidity": "● On-chain तरलता",
+    "trustAudited": "● ऑडिट किया अनुबंध",
+    "buyShort": "खरीदें",
+    "viewChart": "चार्ट देखें",
+    "nextMilestone": "अगला मील का पत्थर: OpenAI, Inc. OPI",
+    "activityTitle": "नेटवर्क गतिविधि",
+    "activitySubtitle": "· OPEN खरीद और बिक्री रियल-टाइम",
+    "activityBought": "ने खरीदा",
+    "activitySwapped": "ने swap किया",
+    "timeAgoSec": "{n} सेकंड पहले",
+    "timeAgoMin": "{n} मिनट पहले",
+    "tokenomicsEyebrow": "Tokenomics",
+    "tokenomicsTitle": "मूल्य बढ़ाने के लिए डिज़ाइन की गई आपूर्ति।",
+    "tokenomicsBody": "21,000,000,000 OPEN निश्चित आपूर्ति, mint फ़ंक्शन नहीं। टीम 3 वर्ष लॉक (1 वर्ष cliff + 2 वर्ष रैखिक release) और treasury इकोसिस्टम उपयोग से buyback और burn वित्तपोषित करती है। प्रीसेल OPEN TGE पर claim से मिलते हैं।",
+    "tokenomicsTotal": "कुल OPEN",
+    "tokenomicsBurn": "इकोसिस्टम कमीशन OPEN buyback और burn के लिए जाते हैं",
+    "faqEyebrow": "अक्सर पूछे जाने वाले प्रश्न",
+    "faqTitle": "निवेश से पहले जानने योग्य सब कुछ।",
+    "faqSubtitle": "कोई सवाल बाकी है? हमें लिखें, निवेश से पहले जवाब देंगे।",
+    "valueAccrualEyebrow": "Value accrual",
+    "valueChips": [
+      "इकोसिस्टम अपनाना",
+      "कमीशन राजस्व",
+      "प्रोग्रामेटिक buyback",
+      "आपूर्ति में कमी"
+    ],
+    "valueChipResult": "शुद्ध माँग दबाव",
+    "valueMechanism": "On-chain तंत्र: कमीशन का एक हिस्सा OPEN buyback और burn के लिए protocol को जाता है, परिसंचारी आपूर्ति सत्यापित रूप से घटती है।",
+    "servicesTitle": "टोकन से जुड़ी सेवाएँ",
+    "hubSync": "सिंक करें",
+    "desktopMobileEyebrow": "डेस्कटॉप और मोबाइल",
+    "desktopMobileTitle": "जहाँ भी हों, निवेश करें।",
+    "desktopMobileBody": "Wallet कनेक्ट करें, खरीदें या swap करें और पोर्टफोलियो रियल-टाइम ट्रैक करें। हर स्क्रीन पर समान सहज अनुभव।",
+    "phoneBalance": "OPEN बैलेंस",
+    "phoneToday": "आज",
+    "phonePayWith": "आप USDC से भुगतान करते हैं",
+    "phoneReceive": "आप OPEN प्राप्त करते हैं"
+  },
+  "content": {
+    "ecosystem": [
+      "openAI Protocol इकोसिस्टम का संवादी सहायक। सदस्यता और उपभोग treasury और OPEN buyback को बढ़ावा देने वाला राजस्व उत्पन्न करते हैं।",
+      "Protocol API के माध्यम से सेवित मॉडल। प्रत्येक मिलियन token प्रोसेस बिल होता है; कमीशन का हिस्सा OPEN buyback करता है।",
+      "Diffusion से छवि निर्माण। क्रेडिट-आधारित उपभोग टोकन buyback प्रवाह को बढ़ावा देता है।",
+      "टेक्स्ट से वीडियो निर्माण। गहन compute लोड, प्रति रेंडर सेकंड बिल।",
+      "रियल-टाइम आवाज़ और ट्रांसक्रिप्शन। प्रोसेस किए गए ऑडियो मिनट से मापा जाता है।",
+      "Protocol का प्रोग्रामिंग copilot। प्रति सीट प्लान और प्रति जेनरेटेड सुझाव compute उपभोग।"
+    ],
+    "tokenWhy": [
+      {
+        "title": "Treasury में वास्तविक शेयर",
+        "desc": "OPEN पूँजी निजी बाज़ारों में OpenAI, Inc. के शेयर खरीदने के लिए जाती है।"
+      },
+      {
+        "title": "स्थायी flywheel",
+        "desc": "आज on-chain एक्सेस करें। OPI के बाद treasury शेयर जमा करना और openAPI व open* सेवाओं के हर उपयोग पर OPEN burn जारी रखती है।"
+      },
+      {
+        "title": "open* इकोसिस्टम राजस्व",
+        "desc": "openChat, openAPI और अन्य उत्पाद कमीशन उत्पन्न करते हैं; 30% OPEN buyback और burn करता है।"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Wallet कनेक्ट करें",
+        "desc": "MetaMask, Coinbase, Trust या मोबाइल wallet एक टैप में।"
+      },
+      {
+        "title": "OPEN खरीदें",
+        "desc": "Base पर USDC, ETH या cbBTC से — या दूसरे नेटवर्क से। आपकी पूँजी protocol treasury में जाती है।"
+      },
+      {
+        "title": "निवेश ट्रैक करें",
+        "desc": "मूल्य, आवंटन और गतिविधि रियल-टाइम।"
+      }
+    ],
+    "hubMeta": [
+      [
+        "सदस्यता",
+        "प्रति सदस्यता"
+      ],
+      [
+        "API",
+        "प्रति token"
+      ],
+      [
+        "छवि",
+        "प्रति क्रेडिट"
+      ],
+      [
+        "वीडियो",
+        "प्रति सेकंड"
+      ],
+      [
+        "आवाज़",
+        "प्रति मिनट"
+      ],
+      [
+        "कोड",
+        "प्रति सीट"
+      ]
+    ],
+    "faq": [
+      [
+        "OPEN क्या है और मेरी पूँजी से क्या करता है?",
+        "OPEN, openAI Protocol का on-chain मार्ग है: holders की पूँजी OpenAI, Inc. के वास्तविक शेयरों और open* इकोसिस्टम में निवेश होती है। OPEN आपको openAI Protocol treasury में भाग देता है, जो OpenAI, Inc. के वास्तविक शेयर खरीदती और रखती है और open* इकोसिस्टम संचालित करती है। आज on-chain एक्सेस करें; OPI के बाद treasury शेयर जमा करना और openAPI व open* सेवा राजस्व से OPEN buyback जारी रखती है।"
+      ],
+      [
+        "OpenAI, Inc. में निवेश कैसे होता है?",
+        "Treasury SPV के माध्यम से OpenAI, Inc. के वास्तविक शेयर खरीदने के लिए पूँजी उपयोग करती है — OPI से पहले और बाद। साथ ही openChat, openAPI और अन्य open* सेवाएँ संचालित करती है; उनके कमीशन का 30% OPEN buyback और burn करता है, बाकी शेयर संचय को मजबूत करता है।"
+      ],
+      [
+        "OPEN कैसे खरीदूँ?",
+        "Wallet कनेक्ट करें और Base नेटवर्क पर USDC, ETH, WETH या cbBTC से भुगतान करें। आप दूसरे नेटवर्क (Ethereum, Arbitrum, Solana, Bitcoin…) से भी फंड ला सकते हैं; हम Base wallet में स्वचालित USDC में बदल देते हैं। प्रीसेल में खरीदे टोकन लॉन्च (TGE) पर claim से मिलते हैं।"
+      ],
+      [
+        "प्रीसेल टोकन कब मिलेंगे?",
+        "लॉन्च (TGE) पर, अपने wallet से claim करके। प्रीसेल सार्वजनिक और खुली है, wallet प्रति कोई सीमा नहीं; OPEN प्रति 0.0005 USDC मूल्य और अनुबंध में निश्चित 1,045,000 USDC अधिकतम cap; फंड Safe multisig में रखे जाते हैं।"
+      ],
+      [
+        "क्या निवेश के लिए IPO का इंतज़ार करना होगा?",
+        "नहीं। प्रीसेल खुली है: आज OpenAI, Inc. के वास्तविक शेयरों में on-chain निवेश करें। OPI बाज़ार मील का पत्थर है, protocol का अंत नहीं — OPI चक्र समाप्त नहीं करता: treasury OpenAI, Inc. के शेयर (सार्वजनिक और निजी बाज़ार) खरीदना जारी रखती है; openChat, openAPI और अन्य सेवाएँ उपयोग राजस्व उत्पन्न करती हैं, और उन कमीशन का 30% लगातार OPEN buyback और burn के लिए जाता है।"
+      ],
+      [
+        "OPEN कैसे और कब बेच सकता/सकती हूँ?",
+        "TGE पर claim से OPEN मिलते हैं, और उस समय से टोकन on-chain तरलता (आपूर्ति का 40% pool में, लॉक LP) के साथ होता है: wallet से ETH, USDC या अन्य टोकन में swap कर सकते हैं।"
+      ],
+      [
+        "OPEN, बाज़ार से शेयर खरीदने से कैसे अलग है?",
+        "OPEN, openAI Protocol का टोकन है: आप उस treasury में भाग लेते हैं जो OpenAI, Inc. equity लगातार जमा करती है, on-chain तरलता और openAPI व open* सेवाओं से वित्तपोषित प्रोग्रामेटिक buyback के साथ।"
+      ],
+      [
+        "OPEN मूल्य शेयरों से कैसे जुड़ा है?",
+        "OPEN OpenAI, Inc. एक्सपोज़र वाली protocol treasury में भाग लेता है; बाज़ार मूल्य NAV से भिन्न हो सकता है।"
+      ],
+      [
+        "मेरे टोकन कौन रखता है?",
+        "आप। Protocol आपके OPEN नहीं रखता: खरीद आपके wallet से साइन होती है और केवल आप keys नियंत्रित करते हैं।"
+      ],
+      [
+        "कौन-से शुल्क हैं?",
+        "प्रीसेल अपना शुल्क नहीं जोड़ती: Base नेटवर्क शुल्क (कुछ सेंट) और USDC के अलावा token या दूसरे नेटवर्क से भुगतान पर, पुष्टि से पहले दिखाया गया बाज़ार रूपांतरण लागत।"
+      ],
+      [
+        "क्या यह जोखिम है?",
+        "किसी भी निवेश की तरह OPEN का मूल्य बढ़ या घट सकता है। केवल वही निवेश करें जो खोने की क्षमता रखते हैं। OPEN के साथ OpenAI, Inc. के वास्तविक शेयरों में निवेश करने वाली treasury में भाग लेते हैं — on-chain, तरलता और OPI के बाद भी सक्रिय flywheel के साथ।"
+      ],
+      [
+        "OPI के बाद क्या होता है?",
+        "OPI चक्र समाप्त नहीं करता: treasury OpenAI, Inc. के शेयर (सार्वजनिक और निजी बाज़ार) खरीदना जारी रखती है; openChat, openAPI और अन्य सेवाएँ उपयोग राजस्व उत्पन्न करती हैं, और उन कमीशन का 30% लगातार OPEN buyback और burn के लिए जाता है। OPEN treasury को दर्शाता रहता है: अधिक OpenAI, Inc. शेयर, अधिक सेवा राजस्व और सत्यापित on-chain buyback।"
+      ]
+    ],
+    "tkSegs": [
+      "सार्वजनिक प्रीसेल",
+      "On-chain तरलता",
+      "Treasury / इकोसिस्टम",
+      "मार्केटिंग",
+      "टीम (3 वर्ष लॉक)",
+      "भविष्य के राउंड (लॉक)"
+    ]
+  },
+  "market": {
+    "statMarketCap": "मार्केट cap",
+    "statPresalePrice": "प्रीसेल मूल्य",
+    "statSupply": "कुल आपूर्ति",
+    "statPresaleCap": "प्रीसेल cap",
+    "statAth": "सर्वकालिक उच्च",
+    "statPresale": "प्रीसेल",
+    "statPresaleValue": "सार्वजनिक और खुली",
+    "readyTitle": "निवेश के लिए तैयार?",
+    "readyBody": "बाज़ार मूल्य पर OPEN खरीदें या wallet से swap करें।",
+    "swapCta": "Swap"
+  },
+  "portfolio": {
+    "connectTitle": "Wallet कनेक्ट करें",
+    "connectBody": "Base नेटवर्क पर वास्तविक बैलेंस और on-chain इतिहास देखने के लिए कनेक्ट करें।",
+    "myWallet": "मेरा वॉलेट",
+    "copyAddressTitle": "पता कॉपी करें",
+    "disconnect": "डिस्कनेक्ट",
+    "totalValue": "Base पर कुल मूल्य",
+    "deposit": "जमा करें",
+    "depositTitle": "अपने Base पते पर USDC प्राप्त करें",
+    "assetsTitle": "Base पर आपकी संपत्तियाँ",
+    "loadingBalances": "बैलेंस लोड हो रहे हैं…",
+    "emptyLine1": "Base पर अभी कोई बैलेंस नहीं।",
+    "emptyLine2": "शुरू करने के लिए OPEN खरीदें या फंड जमा करें।",
+    "movementsTitle": "गतिविधि",
+    "movementsBody": "आपका पूरा लेनदेन इतिहास Base नेटवर्क एक्सप्लोरर पर है।",
+    "viewBasescan": "Basescan पर देखें",
+    "movementsNote": "OPEN खरीद प्रीसेल अनुबंध इंटरैक्शन के रूप में दिखती हैं।"
+  },
+  "swapPage": {
+    "title": "Swap",
+    "subtitle": "OPEN swap तब उपलब्ध होगा जब टोकन on-chain तरलता के साथ ट्रेड होगा।",
+    "afterTgeTitle": "TGE के बाद उपलब्ध",
+    "afterTgeBody": "जब OPEN तरलता के साथ लिस्ट होगा, यहाँ wallet से सीधे ETH, USDC और अन्य टोकन में swap कर सकेंगे। इस बीच प्रीसेल से OPEN खरीद सकते हैं।",
+    "buyPresaleCta": "प्रीसेल से OPEN खरीदें",
+    "payHint": "Base पर USDC, ETH या cbBTC से भुगतान कर सकते हैं — या दूसरे नेटवर्क से फंड ला सकते हैं।"
+  },
+  "docsUi": {
+    "backHome": "← होम पर वापस",
+    "ctaTitle": "OPEN प्राप्त करने के लिए तैयार?",
+    "ctaBody": "Base पर USDC, ETH या cbBTC से खरीदें, या दूसरे नेटवर्क से फंड लाएँ।",
+    "viewChart": "चार्ट देखें"
+  },
+  "walletKind": {
+    "notConnected": "कनेक्ट नहीं",
+    "baseAccount": "Base खाता (Face ID)",
+    "extensionOrApp": "Wallet (एक्सटेंशन या ऐप)",
+    "mobileWallet": "मोबाइल wallet (WalletConnect)",
+    "hint": "संगत wallet से कनेक्ट करें (MetaMask, Trust Wallet आदि)।"
+  },
+  "buy": {
+    "pageTitle": "OPEN खरीदें",
+    "pageSubtitle": "Base पर USDC, ETH या cbBTC से भुगतान करें — या दूसरे नेटवर्क से फंड लाएँ।",
+    "sinWalletTitle": "Wallet कनेक्ट करें",
+    "sinWalletSubtitle": "सुरक्षित खाता बनाएँ या उपयोग में wallet कनेक्ट करें।",
+    "walletModalTitle": "Wallet कनेक्ट करें",
+    "walletModalSubtitle": "मौजूदा wallet उपयोग करें या सेकंडों में नया बनाएँ।",
+    "connectWallet": "Wallet कनेक्ट करें",
+    "connectDesktopHint": "खरीद हमेशा आपके wallet से साइन होती है: कोई और आपके फंड नहीं हिला सकता।",
+    "walletOptionExtensionSub": "ब्राउज़र एक्सटेंशन",
+    "walletOptionMobileApp": "Wallet ऐप खोलें",
+    "walletOptionMobileAppSub": "MetaMask, Trust, Rainbow और अन्य",
+    "walletOptionQr": "मोबाइल से",
+    "walletOptionQrSub": "फ़ोन wallet से QR कोड स्कैन करें",
+    "walletOptionCreate": "नया wallet बनाएँ",
+    "walletOptionCreateSub": "Face ID या Touch ID से — इंस्टॉल नहीं",
+    "walletOpeningApp": "Wallet ऐप खोला जा रहा है…",
+    "walletOpeningQr": "QR कोड बनाया जा रहा है…",
+    "walletConnecting": "कनेक्ट हो रहा है…",
+    "noExtensionHint": "एक्सटेंशन नहीं? मोबाइल wallet से कनेक्ट करें या नया बनाएँ।",
+    "walletConnectEnvHint": "कॉन्फ़िग: NEXT_PUBLIC_WC_PROJECT_ID गायब (cloud.reown.com पर मुफ़्त)।",
+    "switchChainTitle": "Wallet को Base नेटवर्क पर स्विच करें",
+    "switchChainSubtitle": "यह ऑपरेशन केवल Base (Chain ID 8453) पर काम करता है।",
+    "switchChainCta": "Base पर स्विच करें",
+    "switchChainRejected": "आपने नेटवर्क बदलाव अस्वीकार किया। जारी रखने के लिए wallet में मैन्युअली Base पर स्विच करें।",
+    "confirmInWalletApp": "Wallet ऐप में पुष्टि करें",
+    "confirmInWalletAppHint": "Wallet खोलें, लेनदेन साइन करें और यहाँ वापस आएँ। स्थिति स्वचालित अपडेट होगी।",
+    "useAnotherWallet": "दूसरा wallet उपयोग करें",
+    "sinFondosTitle": "Base पर USDC चाहिए",
+    "sinFondosSubtitle": "प्रीसेल जारी रखने के लिए Base नेटवर्क wallet में USDC जमा करें।",
+    "sinFondosPollingHint": "Base पर USDC मिलने पर बैलेंस स्वचालित पता चलेगा। पेज रीलोड की ज़रूरत नहीं।",
+    "walletAddressLabel": "Base पर आपका पता",
+    "checkingBalance": "बैलेंस जाँच हो रहा है…",
+    "rampManualNetworkWarning": "महत्वपूर्ण: USDC Base नेटवर्क पर होना चाहिए। दूसरे नेटवर्क पर फंड भेजने से नुकसान हो सकता है।",
+    "listoTitle": "फंड तैयार!",
+    "listoSubtitle": "OPEN में निवेश के लिए {balance} उपलब्ध है।",
+    "continueCta": "खरीद जारी रखें",
+    "compraTitle": "OPEN खरीदें",
+    "compraSubtitle": "भुगतान मुद्रा चुनें। USDC में बदलकर wallet से OPEN खरीदते हैं।",
+    "compraTgeNotice": "प्रीसेल में खरीदे टोकन लॉन्च (TGE) पर claim से मिलते हैं।",
+    "compraPayWith": "भुगतान",
+    "compraBalance": "बैलेंस",
+    "compraEstimatedOpen": "अनुमानित OPEN",
+    "compraQuoteRefreshing": "कोट हर 30 सेकंड अपडेट",
+    "compraQuoteExpired": "मूल्य अपडेट हो रहा है…",
+    "compraQuoteFallback": "अभी रूपांतरण कोट नहीं मिला। USDC से भुगतान करें या कुछ मिनट बाद प्रयास करें।",
+    "compraCapExceeded": "राशि शेष प्रीसेल कोटा से अधिक है। मात्रा कम करें।",
+    "compraConvertCta": "खरीद फंड में बदलें",
+    "compraConvertDone": "रूपांतरण पूर्ण। अब USDC से OPEN खरीद सकते हैं।",
+    "compraStepBatch0x": "रूपांतरण और खरीद साइन करें (एक हस्ताक्षर)",
+    "compraStepConvertApprove": "चरण 1/2 — भुगतान token अधिकृत करें",
+    "compraStepConvertSwap": "चरण 2/2 — USDC में बदलें",
+    "compraAmountLabel": "भुगतान राशि",
+    "compraHintNoAmount": "जारी रखने के लिए राशि दर्ज करें।",
+    "compraHintLegal": "खरीद सक्रिय करने के लिए नियम चेकबॉक्स चुनें।",
+    "compraHintQuoteLoading": "रूपांतरण मूल्य गणना…",
+    "compraStartCta": "खरीद शुरू करें",
+    "compraRetryCta": "लंबित चरण पुनः प्रयास",
+    "compraDoneTitle": "खरीद भेजी गई",
+    "compraDoneSubtitle": "लेनदेन सफलतापूर्वक भेजा गया। लॉन्च (TGE) पर claim से OPEN मिलेंगे।",
+    "compraContractMissing": "प्रीसेल अनुबंध कॉन्फ़िग नहीं (NEXT_PUBLIC_PRESALE_CONTRACT)।",
+    "compraStepUsdcApprove": "चरण 1/2 — USDC अधिकृत करें",
+    "compraStepUsdcBuy": "चरण 2/2 — OPEN खरीदें",
+    "compraStepSwapApprove": "चरण 1/3 — रूपांतरण अधिकृत करें",
+    "compraStepSwapConvert": "चरण 2/3 — ETH में बदलें",
+    "compraStepSwapBuy": "चरण 3/3 — OPEN खरीदें",
+    "compraStepBatch": "खरीद साइन करें (एक हस्ताक्षर)",
+    "compraWaitingConfirm": "On-chain पुष्टि की प्रतीक्षा…",
+    "compraUserRejected": "आपने लेनदेन अस्वीकार किया। लंबित चरण पुनः प्रयास कर सकते हैं।",
+    "compraBackCta": "वापस",
+    "compraViewTx": "Basescan पर लेनदेन देखें",
+    "compraInsufficientSell": "इस राशि के लिए पर्याप्त {symbol} नहीं।",
+    "compraInsufficientUsdc": "इस राशि के लिए पर्याप्त USDC नहीं।",
+    "compraWrongNetwork": "जारी रखने के लिए wallet को Base नेटवर्क पर स्विच करें।",
+    "compraGasInsufficient": "नेटवर्क शुल्क के लिए पर्याप्त ETH नहीं।",
+    "compraBatchFailed": "ऑपरेशन नेटवर्क पर पूर्ण नहीं हुआ। फिर से प्रयास करें।",
+    "compraGenericError": "ऑपरेशन पूर्ण नहीं हो सका। फिर से प्रयास करें।",
+    "bridgeTabBase": "Base पर भुगतान",
+    "bridgeTabOther": "दूसरे नेटवर्क से",
+    "bridgeTabReceive": "USDC प्राप्त करें",
+    "receiveSubtitle": "दूसरे wallet या एक्सचेंज से Base नेटवर्क पते पर USDC भेजें। बैलेंस स्वचालित पता चलेगा।",
+    "receiveCurrentBalance": "Base पर USDC बैलेंस",
+    "compraModeChecking": "Wallet जाँच हो रहा है…",
+    "compraModeOneSignature": "wallet में एक हस्ताक्षर से सब पुष्टि करेंगे।",
+    "compraModeSteps": "wallet में {n} चरण एक-एक कर पुष्टि करेंगे।",
+    "compraMaxCta": "अधिकतम",
+    "compraUsdEstimate": "≈ {v} USD",
+    "compraQuoteValidFor": "मूल्य {sec} सेकंड गारंटी",
+    "compraDoneViewPortfolio": "पोर्टफोलियो में देखें",
+    "compraDoneBuyMore": "और OPEN खरीदें",
+    "walletConnectedAs": "Wallet कनेक्ट",
+    "walletChangeCta": "बदलें",
+    "bridgeExactAmountWarning": "निर्दिष्ट राशि एक ही लेनदेन में बिल्कुल भेजें। अलग राशि से देरी या रिफंड हो सकता है।",
+    "bridgeSubtitle": "दूसरे नेटवर्क से फंड भेजें, Base wallet में USDC में बदल देंगे। फिर सामान्य रूप से OPEN खरीदें।",
+    "bridgeOriginLabel": "स्रोत नेटवर्क",
+    "bridgeTokenLabel": "भेजने वाला token",
+    "bridgeAmountLabel": "भेजने की राशि",
+    "bridgeEstimatedUsdc": "Base पर मिलने वाला USDC",
+    "bridgeFeesLabel": "अनुमानित कुल लागत",
+    "bridgeTimeLabel": "अनुमानित समय",
+    "bridgeQuoteExpired": "ब्रिज कोट समाप्त। भेजने से पहले फिर गणना करें।",
+    "bridgeExpiresIn": "कोट {sec} सेकंड में समाप्त",
+    "bridgeSendCta": "{network} से भेजें",
+    "bridgeGetDepositCta": "जमा पता बनाएँ",
+    "bridgeDepositAddressLabel": "जमा पता",
+    "bridgeDepositInstructions": "किसी भी wallet या एक्सचेंज से इस पते पर बिल्कुल {amount} {symbol} भेजें। अलग राशि से देरी या रिफंड हो सकता है।",
+    "bridgeBtcMinHint": "Bitcoin में नेटवर्क शुल्क छोटी राशियों को व्यावहारिक नहीं बनाते।",
+    "bridgeSwitching": "स्रोत नेटवर्क पर स्विच…",
+    "bridgeAwaitingWallet": "wallet में लेनदेन पुष्टि करें…",
+    "bridgeConfirmingOrigin": "स्रोत नेटवर्क पर पुष्टि…",
+    "bridgeAwaitingDeposit": "जमा की प्रतीक्षा… यह पेज खुला रख सकते हैं; स्वचालित अपडेट होगा।",
+    "bridgeInProgress": "ब्रिज चल रहा है… USDC जल्द Base wallet में पहुँचेगा।",
+    "bridgeDelivered": "Base पर USDC प्राप्त। अब OPEN खरीद सकते हैं।",
+    "bridgeRefunded": "ऑपरेशन पूर्ण नहीं हुआ, फंड स्रोत पते पर वापस।",
+    "bridgeFailed": "ब्रिज पूर्ण नहीं हुआ। फंड भेजे थे तो स्रोत पते पर वापस होंगे।",
+    "bridgeRetryCta": "फिर से प्रयास",
+    "bridgeNewCta": "नया भेजना शुरू",
+    "bridgeGoBuyCta": "मेरे USDC से OPEN खरीदें",
+    "bridgeViewDestTx": "Basescan पर डिलीवरी देखें"
+  }
+}

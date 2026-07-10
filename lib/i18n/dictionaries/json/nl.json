@@ -1,0 +1,431 @@
+{
+  "numberLocale": "nl-NL",
+  "meta": {
+    "title": "openAI Protocol — Investeer in echte aandelen van OpenAI, Inc. met OPEN",
+    "description": "Investeer in echte aandelen van OpenAI, Inc. via de token OPEN. Openbare presale op het Base-netwerk: betaal met USDC, ETH of cbBTC, zonder custodie en met on-chain liquiditeit."
+  },
+  "nav": {
+    "home": "Home",
+    "market": "Markt",
+    "buy": "Kopen",
+    "swap": "Swap",
+    "soon": "Binnenkort",
+    "wallet": "Portemonnee",
+    "mainNavAria": "Hoofdnavigatie",
+    "connectWallet": "Wallet verbinden",
+    "language": "Taal"
+  },
+  "common": {
+    "retry": "Opnieuw proberen",
+    "cancel": "Annuleren",
+    "close": "Sluiten",
+    "copied": "Gekopieerd",
+    "copyAddress": "Adres kopiëren",
+    "recommended": "Aanbevolen",
+    "calculating": "Berekenen…",
+    "live": "LIVE",
+    "liveLower": "live",
+    "changingNetwork": "Netwerk wisselen…",
+    "walletConnected": "Wallet verbonden",
+    "walletDisconnected": "Wallet verbroken",
+    "addressCopied": "Adres gekopieerd",
+    "noConnectionAvailable": "Er is geen verbindingsmethode beschikbaar in deze browser."
+  },
+  "errorPage": {
+    "title": "Er is iets misgegaan",
+    "body": "Er is een onverwachte fout opgetreden op dit scherm. Je fondsen zijn niet aangetast: geen enkele transactie wordt ondertekend zonder jouw bevestiging in de wallet.",
+    "retry": "Opnieuw proberen",
+    "goHome": "Naar home"
+  },
+  "connectErrors": {
+    "generic": "Kon de wallet niet verbinden. Probeer het opnieuw.",
+    "rejected": "Je hebt de verbinding geannuleerd. Probeer het opnieuw wanneer je wilt.",
+    "alreadyConnected": "Er is al een wallet verbonden.",
+    "pendingRequest": "Je wallet heeft al een open verzoek. Open het en controleer het.",
+    "noProvider": "We hebben geen wallet-extensie gedetecteerd in deze browser.",
+    "chainUnsupported": "Je wallet ondersteunt het Base-netwerk niet. Voeg het handmatig toe of gebruik een andere wallet."
+  },
+  "legal": {
+    "marketingPitch": "OPEN is de on-chain route van het openAI Protocol: het kapitaal van holders wordt geïnvesteerd in echte aandelen van OpenAI, Inc. en in het open*-ecosysteem.",
+    "affiliationNoticeSoft": "Met OPEN neem je deel aan de schatkist die investeert in echte aandelen van OpenAI, Inc. — on-chain, met liquiditeit en een flywheel die actief blijft na de OPI.",
+    "affiliationLinkLabel": "Juridische transparantie",
+    "affiliationDocTitle": "Merken en transparantie",
+    "risksDocTitle": "Risicoinformatie",
+    "microDisclaimer": "OPEN leidt kapitaal naar echte aandelen van OpenAI, Inc.",
+    "geoNotice": "Dienst gericht op toegestane jurisdicties. Controleer of het gebruik van crypto-activa in jouw land is toegestaan.",
+    "geoEligibility": "Geschiktheid controleren",
+    "footerDisclaimer": "openAI Protocol is een gedecentraliseerd ecosysteem. OpenAI, OpenAI, Inc. en gerelateerde merken behoren toe aan hun respectieve houders. Deze website vormt geen aanbod van effecten noch beleggingsadvies. Beleggen brengt risico's met zich mee.",
+    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice en openCode zijn producten van het openAI Protocol-ecosysteem. ChatGPT, DALL·E, Sora, Whisper en Codex zijn merken van OpenAI, Inc.",
+    "suggestedTagline": "Investeer in echte aandelen van OpenAI, Inc. via de token OPEN.",
+    "suggestedCta": "OPEN kopen",
+    "heroHeadline": "Investeer in OPEN. Echte aandelen van OpenAI, Inc.",
+    "heroSubheadline": "Je kapitaal gaat naar de schatkist van het protocol om echte aandelen te kopen en open* te exploiteren. Elk gebruik van openAPI en de open*-diensten voedt terugkopen, burns en meer equity — zonder te stoppen bij de beursgang.",
+    "heroBadge": "Openbare presale · Permanente flywheel",
+    "opiContext": "OPI gepland · september 2027 · marktmijlpaal; het protocol blijft aandelen accumuleren en OPEN terugkopen",
+    "postOpiFlywheel": "De OPI sluit de cyclus niet: de schatkist blijft aandelen van OpenAI, Inc. kopen (publieke en private markt), openChat, openAPI en de overige diensten genereren gebruiksinkomsten, en 30% van die commissies wordt continu bestemd om OPEN terug te kopen en te verbranden.",
+    "equityMicro": "De schatkist accumuleert echte aandelen van OpenAI, Inc. vóór en na de OPI; de inkomsten van open* financieren meer equity en terugkoop van OPEN.",
+    "ecosystemTitle": "Een token dat investeert in echte aandelen. Het hele open*-ecosysteem.",
+    "ecosystemLead": "De schatkist verworft equity van OpenAI, Inc. en exploiteert openChat, openAPI en de overige producten. Meer API- en dienstgebruik, meer inkomsten, meer aandelen in de schatkist en meer vraag naar OPEN.",
+    "valueTitle": "Echte aandelen + ecosysteeminkomsten — voor altijd",
+    "valueLead": "De schatkist accumuleert aandelen van OpenAI, Inc. terwijl open* terugkerende commissies genereert. 30% koopt OPEN terug en verbrandt het; de rest versterkt de aandelenpositie en de groei van het ecosysteem.",
+    "tokenNatureParagraph": "OPEN geeft je deelname aan de schatkist van het openAI Protocol, die echte aandelen van OpenAI, Inc. koopt en bewaart en het open*-ecosysteem exploiteert. Toegang on-chain vandaag; na de OPI blijft de schatkist aandelen accumuleren en OPEN terugkopen met de inkomsten van openAPI en de open*-diensten.",
+    "tokenNatureLegal": "OPEN neemt deel aan de schatkist van het protocol met blootstelling aan OpenAI, Inc.; de marktprijs kan afwijken van de NAV.",
+    "consentPrefix": "Ik heb gelezen en accepteer de",
+    "consentTerms": "Voorwaarden",
+    "consentPrivacyJoin": ", het",
+    "consentPrivacy": "Privacybeleid",
+    "consentRisksJoin": "en de",
+    "translationNotice": "Automatische vertaling aangeboden als service. Bij discrepanties prevaleert de Spaanse versie."
+  },
+  "footer": {
+    "colToken": "Token",
+    "colResources": "Bronnen",
+    "colLegal": "Juridisch",
+    "whitepaper": "Whitepaper",
+    "tokenomics": "Tokenomics",
+    "documentation": "Documentatie",
+    "audit": "Audit",
+    "support": "Ondersteuning",
+    "terms": "Voorwaarden",
+    "privacy": "Privacy",
+    "compliance": "Compliance"
+  },
+  "home": {
+    "heroStatPresalePrice": "Presaleprijs",
+    "heroStatCap": "Presale-cap",
+    "heroStatSupply": "Totale OPEN-voorraad",
+    "heroStatLiquidity": "Naar liquiditeit (LP vergrendeld)",
+    "swapFromWallet": "Wisselen vanuit wallet",
+    "trustNoCustody": "● Geen custodie",
+    "trustLiquidity": "● On-chain liquiditeit",
+    "trustAudited": "● Geaudit contract",
+    "buyShort": "Kopen",
+    "viewChart": "Grafiek bekijken",
+    "nextMilestone": "Volgende mijlpaal: OPI van OpenAI, Inc.",
+    "activityTitle": "Netwerkactiviteit",
+    "activitySubtitle": "· OPEN-aankopen en -verkopen in realtime",
+    "activityBought": "kocht",
+    "activitySwapped": "wisselde",
+    "timeAgoSec": "{n} s geleden",
+    "timeAgoMin": "{n} min geleden",
+    "tokenomicsEyebrow": "Tokenomics",
+    "tokenomicsTitle": "Een voorraad ontworpen om in waarde te stijgen.",
+    "tokenomicsBody": "Vaste voorraad van 21.000.000.000 OPEN, zonder mint-functie. Het team blijft 3 jaar vergrendeld (1 jaar cliff + 2 jaar lineaire vrijgave) en de schatkist financiert terugkopen en burns met het ecosysteemgebruik. OPEN uit de presale ontvang je bij de TGE via claim.",
+    "tokenomicsTotal": "Totaal OPEN",
+    "tokenomicsBurn": "van de ecosysteemcommissies wordt bestemd om OPEN terug te kopen en te verbranden",
+    "faqEyebrow": "Veelgestelde vragen",
+    "faqTitle": "Alles wat je moet weten voordat je investeert.",
+    "faqSubtitle": "Nog vragen? Schrijf ons en we antwoorden voordat je investeert.",
+    "valueAccrualEyebrow": "Value accrual",
+    "valueChips": [
+      "Ecosysteemadoptie",
+      "Commissie-inkomsten",
+      "Programmatische terugkoop",
+      "Voorraadvermindering"
+    ],
+    "valueChipResult": "Netto vraagdruk",
+    "valueMechanism": "On-chain mechanisme: een fractie van de commissies wordt naar het protocol geleid om OPEN terug te kopen en te verbranden, waardoor de circulerende voorraad verifieerbaar afneemt.",
+    "servicesTitle": "Diensten gekoppeld aan de token",
+    "hubSync": "Synchroniseren",
+    "desktopMobileEyebrow": "Desktop en mobiel",
+    "desktopMobileTitle": "Investeer vanaf waar je bent.",
+    "desktopMobileBody": "Verbind je wallet, koop of wissel en volg je portefeuille in realtime. Dezelfde soepele ervaring op elk scherm.",
+    "phoneBalance": "OPEN-saldo",
+    "phoneToday": "vandaag",
+    "phonePayWith": "Je betaalt met USDC",
+    "phoneReceive": "Je ontvangt OPEN"
+  },
+  "content": {
+    "ecosystem": [
+      "Conversatie-assistent van het openAI Protocol-ecosysteem. Abonnementen en verbruik genereren inkomsten die de schatkist en de terugkoop van OPEN voeden.",
+      "Modellen aangeboden via de API van het protocol. Elke miljoen verwerkte tokens wordt gefactureerd; een deel van de commissie koopt OPEN terug.",
+      "Beeldgeneratie via diffusie. Verbruik per credit voedt de terugkoopstroom van de token.",
+      "Videogeneratie vanuit tekst. Intensieve rekenlasten, gefactureerd per gerenderde seconde.",
+      "Spraak en transcriptie in realtime. Gebruik gemeten per minuut verwerkt audio.",
+      "Programmeercopiloot van het protocol. Plan per seat plus rekenverbruik per gegenereerde suggestie."
+    ],
+    "tokenWhy": [
+      {
+        "title": "Echte aandelen in de schatkist",
+        "desc": "Het kapitaal van OPEN wordt bestemd voor de aankoop van aandelen van OpenAI, Inc. op private markten."
+      },
+      {
+        "title": "Permanente flywheel",
+        "desc": "Toegang on-chain vandaag. Na de OPI blijft de schatkist aandelen accumuleren en OPEN verbranden bij elk gebruik van openAPI en de open*-diensten."
+      },
+      {
+        "title": "Inkomsten van het open*-ecosysteem",
+        "desc": "openChat, openAPI en de overige producten genereren commissies; 30% koopt OPEN terug en verbrandt het."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Verbind je wallet",
+        "desc": "MetaMask, Coinbase, Trust of de wallet op je telefoon met één tik."
+      },
+      {
+        "title": "Koop OPEN",
+        "desc": "Met USDC, ETH of cbBTC op Base — of vanaf een ander netwerk. Je kapitaal gaat naar de schatkist van het protocol."
+      },
+      {
+        "title": "Volg je investering",
+        "desc": "Waarde, allocatie en bewegingen in realtime."
+      }
+    ],
+    "hubMeta": [
+      [
+        "Abonnement",
+        "per abonnement"
+      ],
+      [
+        "API",
+        "per token"
+      ],
+      [
+        "Beeld",
+        "per credit"
+      ],
+      [
+        "Video",
+        "per seconde"
+      ],
+      [
+        "Spraak",
+        "per minuut"
+      ],
+      [
+        "Code",
+        "per seat"
+      ]
+    ],
+    "faq": [
+      [
+        "Wat is OPEN en wat doet het met mijn kapitaal?",
+        "OPEN is de on-chain route van het openAI Protocol: het kapitaal van holders wordt geïnvesteerd in echte aandelen van OpenAI, Inc. en in het open*-ecosysteem. OPEN geeft je deelname aan de schatkist van het openAI Protocol, die echte aandelen van OpenAI, Inc. koopt en bewaart en het open*-ecosysteem exploiteert. Toegang on-chain vandaag; na de OPI blijft de schatkist aandelen accumuleren en OPEN terugkopen met de inkomsten van openAPI en de open*-diensten."
+      ],
+      [
+        "Hoe wordt er geïnvesteerd in OpenAI, Inc.?",
+        "De schatkist bestemt het kapitaal voor de aankoop van echte aandelen van OpenAI, Inc. via SPV — vóór en na de OPI. Parallel exploiteert het openChat, openAPI en de overige open*-diensten; 30% van hun commissies koopt OPEN terug en verbrandt het, en de rest versterkt de accumulatie van aandelen."
+      ],
+      [
+        "Hoe koop ik OPEN?",
+        "Verbind je wallet en betaal met USDC, ETH, WETH of cbBTC op het Base-netwerk. Je kunt ook fondsen van andere netwerken (Ethereum, Arbitrum, Solana, Bitcoin…) meenemen en we converteren ze automatisch naar USDC in je Base-wallet. Tokens gekocht in de presale ontvang je bij de lancering (TGE) via claim."
+      ],
+      [
+        "Wanneer ontvang ik mijn presale-tokens?",
+        "Bij de lancering (TGE), via claim vanuit je eigen wallet. De presale is openbaar en open, zonder limiet per wallet, met een prijs van 0,0005 USDC per OPEN en een maximumcap van 1.045.000 USDC vastgelegd in het contract; de fondsen worden bewaard in een Safe multisig."
+      ],
+      [
+        "Moet ik wachten op de beursgang om te investeren?",
+        "Nee. De presale is open: je investeert vandaag on-chain in echte aandelen van OpenAI, Inc. De OPI is een marktmijlpaal, niet het einde van het protocol — De OPI sluit de cyclus niet: de schatkist blijft aandelen van OpenAI, Inc. kopen (publieke en private markt), openChat, openAPI en de overige diensten genereren gebruiksinkomsten, en 30% van die commissies wordt continu bestemd om OPEN terug te kopen en te verbranden."
+      ],
+      [
+        "Hoe en wanneer kan ik mijn OPEN verkopen?",
+        "Bij de TGE ontvang je je OPEN via claim en vanaf dat moment heeft de token on-chain liquiditeit (40% van de voorraad in de pool, met LP vergrendeld): je kunt het wisselen voor ETH, USDC of andere tokens vanuit je wallet."
+      ],
+      [
+        "Hoe verschilt OPEN van het kopen van het aandeel op de beurs?",
+        "OPEN is de token van het openAI Protocol: je neemt deel aan de schatkist die continu equity van OpenAI, Inc. accumuleert, met on-chain liquiditeit en programmatische terugkoop gefinancierd door openAPI en de open*-diensten."
+      ],
+      [
+        "Hoe verhoudt de prijs van OPEN zich tot de aandelen?",
+        "OPEN neemt deel aan de schatkist van het protocol met blootstelling aan OpenAI, Inc.; de marktprijs kan afwijken van de NAV."
+      ],
+      [
+        "Wie bewaart mijn tokens?",
+        "Jij. Het protocol bewaart je OPEN niet: de aankoop wordt ondertekend vanuit je eigen wallet en alleen jij beheert de sleutels."
+      ],
+      [
+        "Welke commissies zijn er?",
+        "De presale voegt geen eigen commissies toe: je betaalt de netwerkcommissie van Base (centen) en, als je met een andere token dan USDC betaalt of vanaf een ander netwerk, de marktconversiekosten, die vóór bevestiging worden getoond."
+      ],
+      [
+        "Is dit een risico?",
+        "Zoals bij elke investering kan de waarde van OPEN stijgen of dalen. Investeer alleen wat je kunt missen. Met OPEN neem je deel aan de schatkist die investeert in echte aandelen van OpenAI, Inc. — on-chain, met liquiditeit en een flywheel die actief blijft na de OPI."
+      ],
+      [
+        "Wat gebeurt er na de OPI?",
+        "De OPI sluit de cyclus niet: de schatkist blijft aandelen van OpenAI, Inc. kopen (publieke en private markt), openChat, openAPI en de overige diensten genereren gebruiksinkomsten, en 30% van die commissies wordt continu bestemd om OPEN terug te kopen en te verbranden. OPEN blijft de schatkist weerspiegelen: meer aandelen van OpenAI, Inc., meer dienstinkomsten en verifieerbare terugkopen on-chain."
+      ]
+    ],
+    "tkSegs": [
+      "Openbare presale",
+      "On-chain liquiditeit",
+      "Schatkist / Ecosysteem",
+      "Marketing",
+      "Team (3 jaar vergrendeld)",
+      "Toekomstige rondes (vergrendeld)"
+    ]
+  },
+  "market": {
+    "statMarketCap": "Marktkapitalisatie",
+    "statPresalePrice": "Presaleprijs",
+    "statSupply": "Totale voorraad",
+    "statPresaleCap": "Presale-cap",
+    "statAth": "All-time high",
+    "statPresale": "Presale",
+    "statPresaleValue": "Openbaar en open",
+    "readyTitle": "Klaar om te investeren?",
+    "readyBody": "Koop OPEN tegen de marktprijs of wissel het vanuit je wallet.",
+    "swapCta": "Wisselen"
+  },
+  "portfolio": {
+    "connectTitle": "Verbind je wallet",
+    "connectBody": "Verbind hem om je echte saldi op het Base-netwerk en je on-chain geschiedenis te zien.",
+    "myWallet": "Mijn portemonnee",
+    "copyAddressTitle": "Adres kopiëren",
+    "disconnect": "Verbreken",
+    "totalValue": "Totale waarde op Base",
+    "deposit": "Storten",
+    "depositTitle": "USDC ontvangen op je Base-adres",
+    "assetsTitle": "Je activa op Base",
+    "loadingBalances": "Saldi laden…",
+    "emptyLine1": "Nog geen saldo op Base.",
+    "emptyLine2": "Koop OPEN of stort fondsen om te beginnen.",
+    "movementsTitle": "Bewegingen",
+    "movementsBody": "Je volledige transactiegeschiedenis staat in de explorer van het Base-netwerk.",
+    "viewBasescan": "Bekijken op Basescan",
+    "movementsNote": "OPEN-aankopen verschijnen als interacties met het presale-contract."
+  },
+  "swapPage": {
+    "title": "Wisselen",
+    "subtitle": "De OPEN-swap is beschikbaar wanneer de token met on-chain liquiditeit verhandeld wordt.",
+    "afterTgeTitle": "Beschikbaar na de TGE",
+    "afterTgeBody": "Wanneer OPEN met liquiditeit genoteerd is, kun je het hier wisselen voor ETH, USDC en andere tokens rechtstreeks vanuit je wallet. Ondertussen kun je OPEN kopen in de presale.",
+    "buyPresaleCta": "OPEN kopen in presale",
+    "payHint": "Je kunt betalen met USDC, ETH of cbBTC op Base — of fondsen van andere netwerken meenemen."
+  },
+  "docsUi": {
+    "backHome": "← Terug naar home",
+    "ctaTitle": "Klaar om OPEN te verkrijgen?",
+    "ctaBody": "Koop met USDC, ETH of cbBTC op Base, of breng fondsen van een ander netwerk.",
+    "viewChart": "Grafiek bekijken"
+  },
+  "walletKind": {
+    "notConnected": "Niet verbonden",
+    "baseAccount": "Base-account (Face ID)",
+    "extensionOrApp": "Wallet (extensie of app)",
+    "mobileWallet": "Mobiele wallet (WalletConnect)",
+    "hint": "Verbind met een compatibele wallet (MetaMask, Trust Wallet, enz.)."
+  },
+  "buy": {
+    "pageTitle": "OPEN kopen",
+    "pageSubtitle": "Betaal met USDC, ETH of cbBTC op Base — of breng fondsen van een ander netwerk.",
+    "sinWalletTitle": "Verbind je wallet",
+    "sinWalletSubtitle": "Maak een veilig account aan of verbind de wallet die je al gebruikt.",
+    "walletModalTitle": "Wallet verbinden",
+    "walletModalSubtitle": "Gebruik de wallet die je al hebt of maak binnen enkele seconden een nieuwe.",
+    "connectWallet": "Wallet verbinden",
+    "connectDesktopHint": "De aankoop wordt altijd ondertekend vanuit je eigen wallet: niemand anders kan je fondsen verplaatsen.",
+    "walletOptionExtensionSub": "Browserextensie",
+    "walletOptionMobileApp": "Mijn wallet-app openen",
+    "walletOptionMobileAppSub": "MetaMask, Trust, Rainbow en anderen",
+    "walletOptionQr": "Met de telefoon",
+    "walletOptionQrSub": "Scan een QR-code met de wallet op je telefoon",
+    "walletOptionCreate": "Nieuwe wallet aanmaken",
+    "walletOptionCreateSub": "Met Face ID of Touch ID — niets installeren",
+    "walletOpeningApp": "Je wallet-app openen…",
+    "walletOpeningQr": "QR-code genereren…",
+    "walletConnecting": "Verbinden…",
+    "noExtensionHint": "Geen extensie? Verbind met de wallet op je telefoon of maak een nieuwe.",
+    "walletConnectEnvHint": "Config: NEXT_PUBLIC_WC_PROJECT_ID ontbreekt (gratis op cloud.reown.com).",
+    "switchChainTitle": "Schakel je wallet over naar het Base-netwerk",
+    "switchChainSubtitle": "Deze operatie werkt alleen op Base (Chain ID 8453).",
+    "switchChainCta": "Overschakelen naar Base",
+    "switchChainRejected": "Je hebt de netwerkwissel geweigerd. Schakel handmatig over naar Base in je wallet om door te gaan.",
+    "confirmInWalletApp": "Bevestig in je wallet-app",
+    "confirmInWalletAppHint": "Open je wallet, onderteken de transactie en kom hier terug. De status wordt automatisch bijgewerkt.",
+    "useAnotherWallet": "Andere wallet gebruiken",
+    "sinFondosTitle": "Je hebt USDC op Base nodig",
+    "sinFondosSubtitle": "Stort USDC in je wallet op het Base-netwerk om door te gaan met de presale.",
+    "sinFondosPollingHint": "Wanneer je USDC op Base ontvangt, detecteren we het saldo automatisch. Je hoeft de pagina niet te vernieuwen.",
+    "walletAddressLabel": "Je adres op Base",
+    "checkingBalance": "Saldo controleren…",
+    "rampManualNetworkWarning": "Belangrijk: USDC moet op het Base-netwerk staan. Fondsen naar een ander netwerk sturen kan verliezen veroorzaken.",
+    "listoTitle": "Fondsen klaar!",
+    "listoSubtitle": "Je hebt {balance} beschikbaar om te investeren in OPEN.",
+    "continueCta": "Doorgaan naar aankoop",
+    "compraTitle": "OPEN kopen",
+    "compraSubtitle": "Kies met welke munt je betaalt. We converteren naar USDC en kopen OPEN vanuit je wallet.",
+    "compraTgeNotice": "Tokens gekocht in de presale ontvang je bij de lancering (TGE) via claim.",
+    "compraPayWith": "Betalen met",
+    "compraBalance": "Saldo",
+    "compraEstimatedOpen": "Geschatte OPEN",
+    "compraQuoteRefreshing": "Koers wordt elke 30 s bijgewerkt",
+    "compraQuoteExpired": "Prijs bijwerken…",
+    "compraQuoteFallback": "We konden de conversie nu niet quoteren. Betaal met USDC of probeer het over enkele minuten opnieuw.",
+    "compraCapExceeded": "Het bedrag overschrijdt het resterende presale-quotum. Verlaag het aantal.",
+    "compraConvertCta": "Converteren naar aankoopfondsen",
+    "compraConvertDone": "Conversie voltooid. Je kunt nu OPEN kopen met je USDC.",
+    "compraStepBatch0x": "Conversie en aankoop ondertekenen (één handtekening)",
+    "compraStepConvertApprove": "Stap 1/2 — Betaaltoken autoriseren",
+    "compraStepConvertSwap": "Stap 2/2 — Converteren naar USDC",
+    "compraAmountLabel": "Te betalen bedrag",
+    "compraHintNoAmount": "Voer een bedrag in om door te gaan.",
+    "compraHintLegal": "Vink het vakje met voorwaarden aan om de aankoop te activeren.",
+    "compraHintQuoteLoading": "Conversieprijs berekenen…",
+    "compraStartCta": "Aankoop starten",
+    "compraRetryCta": "Openstaande stap opnieuw proberen",
+    "compraDoneTitle": "Aankoop verzonden",
+    "compraDoneSubtitle": "Je transactie is succesvol verzonden. Je ontvangt je OPEN bij de lancering (TGE) via claim.",
+    "compraContractMissing": "Presale-contract niet geconfigureerd (NEXT_PUBLIC_PRESALE_CONTRACT).",
+    "compraStepUsdcApprove": "Stap 1/2 — USDC autoriseren",
+    "compraStepUsdcBuy": "Stap 2/2 — OPEN kopen",
+    "compraStepSwapApprove": "Stap 1/3 — Conversie autoriseren",
+    "compraStepSwapConvert": "Stap 2/3 — Converteren naar ETH",
+    "compraStepSwapBuy": "Stap 3/3 — OPEN kopen",
+    "compraStepBatch": "Aankoop ondertekenen (één handtekening)",
+    "compraWaitingConfirm": "Wachten op on-chain bevestiging…",
+    "compraUserRejected": "Je hebt de transactie geweigerd. Je kunt de openstaande stap opnieuw proberen.",
+    "compraBackCta": "Terug",
+    "compraViewTx": "Transactie bekijken op Basescan",
+    "compraInsufficientSell": "Je hebt niet genoeg {symbol} voor dit bedrag.",
+    "compraInsufficientUsdc": "Je hebt niet genoeg USDC voor dit bedrag.",
+    "compraWrongNetwork": "Schakel je wallet over naar het Base-netwerk om door te gaan.",
+    "compraGasInsufficient": "Je hebt niet genoeg ETH om de netwerkcommissie te betalen.",
+    "compraBatchFailed": "De operatie is niet voltooid op het netwerk. Probeer het opnieuw.",
+    "compraGenericError": "Kon de operatie niet voltooien. Probeer het opnieuw.",
+    "bridgeTabBase": "Betalen op Base",
+    "bridgeTabOther": "Vanaf ander netwerk",
+    "bridgeTabReceive": "USDC ontvangen",
+    "receiveSubtitle": "Stuur USDC naar je adres op het Base-netwerk vanuit een andere wallet of exchange. Het saldo wordt automatisch gedetecteerd.",
+    "receiveCurrentBalance": "Je USDC-saldo op Base",
+    "compraModeChecking": "Je wallet controleren…",
+    "compraModeOneSignature": "Je bevestigt alles met één handtekening in je wallet.",
+    "compraModeSteps": "Je bevestigt {n} stappen in je wallet, één voor één.",
+    "compraMaxCta": "MAX",
+    "compraUsdEstimate": "≈ {v} USD",
+    "compraQuoteValidFor": "Prijs gegarandeerd {sec} s",
+    "compraDoneViewPortfolio": "Bekijken in portemonnee",
+    "compraDoneBuyMore": "Meer OPEN kopen",
+    "walletConnectedAs": "Wallet verbonden",
+    "walletChangeCta": "Wijzigen",
+    "bridgeExactAmountWarning": "Stuur EXACT het aangegeven bedrag in één transactie. Een ander bedrag kan de operatie vertragen of tot terugbetaling leiden.",
+    "bridgeSubtitle": "Stuur fondsen vanaf een ander netwerk en we converteren ze naar USDC in je Base-wallet. Daarna koop je OPEN normaal.",
+    "bridgeOriginLabel": "Bronnetwerk",
+    "bridgeTokenLabel": "Te verzenden token",
+    "bridgeAmountLabel": "Te verzenden bedrag",
+    "bridgeEstimatedUsdc": "USDC die je op Base ontvangt",
+    "bridgeFeesLabel": "Geschatte totale kosten",
+    "bridgeTimeLabel": "Geschatte tijd",
+    "bridgeQuoteExpired": "De bridge-offerte is verlopen. Bereken hem opnieuw voordat je verzendt.",
+    "bridgeExpiresIn": "Offerte verloopt over {sec} s",
+    "bridgeSendCta": "Verzenden vanaf {network}",
+    "bridgeGetDepositCta": "Stortingsadres genereren",
+    "bridgeDepositAddressLabel": "Stortingsadres",
+    "bridgeDepositInstructions": "Stuur exact {amount} {symbol} naar dit adres vanuit elke wallet of exchange. Een ander bedrag kan de operatie vertragen of een terugbetaling veroorzaken.",
+    "bridgeBtcMinHint": "Met Bitcoin maken netwerkcommissies kleine bedragen onhaalbaar.",
+    "bridgeSwitching": "Overschakelen naar bronnetwerk…",
+    "bridgeAwaitingWallet": "Bevestig de transactie in je wallet…",
+    "bridgeConfirmingOrigin": "Bevestigen op bronnetwerk…",
+    "bridgeAwaitingDeposit": "Wachten op je storting… Je kunt deze pagina open laten; hij werkt zichzelf bij.",
+    "bridgeInProgress": "Bridge bezig… USDC komt binnenkort aan in je wallet op Base.",
+    "bridgeDelivered": "USDC ontvangen op Base. Je kunt nu OPEN kopen.",
+    "bridgeRefunded": "De operatie is niet voltooid en de fondsen zijn terugbetaald naar het bronadres.",
+    "bridgeFailed": "De bridge is niet voltooid. Als je fondsen hebt verzonden, worden ze terugbetaald naar het bronadres.",
+    "bridgeRetryCta": "Opnieuw proberen",
+    "bridgeNewCta": "Nieuwe verzending starten",
+    "bridgeGoBuyCta": "OPEN kopen met mijn USDC",
+    "bridgeViewDestTx": "Levering bekijken op Basescan"
+  }
+}

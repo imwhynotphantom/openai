@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { css } from "@/lib/css";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 
 /**
  * Boundary global de errores de cliente. Sin él, cualquier excepción en una
@@ -14,6 +15,8 @@ export default function GlobalError({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const { t } = useI18n();
+
   useEffect(() => {
     console.error("[app] error no controlado:", error);
   }, [error]);
@@ -28,24 +31,23 @@ export default function GlobalError({
           </svg>
         </span>
         <h2 style={css("font:600 26px var(--font-hanken);letter-spacing:-0.03em;margin:0 0 8px;color:#0D0D0D")}>
-          Algo ha fallado
+          {t.errorPage.title}
         </h2>
         <p style={css("font:400 16px/1.5 var(--font-hanken);color:#6B6B76;margin:0 0 24px;max-width:420px")}>
-          Se ha producido un error inesperado en esta pantalla. Tus fondos no se ven afectados: ninguna
-          operación se firma sin tu confirmación en la wallet.
+          {t.errorPage.body}
         </p>
         <div style={css("display:flex;gap:10px")}>
           <button
             onClick={reset}
             style={css("appearance:none;cursor:pointer;background:#0D0D0D;color:#fff;border:none;border-radius:12px;padding:14px 28px;font:600 15px var(--font-hanken)")}
           >
-            Reintentar
+            {t.errorPage.retry}
           </button>
           <button
             onClick={() => (window.location.href = "/")}
             style={css("appearance:none;cursor:pointer;background:#fff;color:#0D0D0D;border:1px solid #DADADD;border-radius:12px;padding:14px 28px;font:600 15px var(--font-hanken)")}
           >
-            Ir al inicio
+            {t.errorPage.goHome}
           </button>
         </div>
       </div>

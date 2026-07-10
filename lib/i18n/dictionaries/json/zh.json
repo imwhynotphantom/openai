@@ -1,0 +1,431 @@
+{
+  "numberLocale": "zh-CN",
+  "meta": {
+    "title": "openAI Protocol — 通过 OPEN 投资 OpenAI, Inc. 真实股权",
+    "description": "通过 OPEN 代币投资 OpenAI, Inc. 真实股权。Base 网络公开预售：使用 USDC、ETH 或 cbBTC 支付，无托管，链上流动性。"
+  },
+  "nav": {
+    "home": "首页",
+    "market": "市场",
+    "buy": "购买",
+    "swap": "Swap",
+    "soon": "即将推出",
+    "wallet": "钱包",
+    "mainNavAria": "主导航",
+    "connectWallet": "连接钱包",
+    "language": "语言"
+  },
+  "common": {
+    "retry": "重试",
+    "cancel": "取消",
+    "close": "关闭",
+    "copied": "已复制",
+    "copyAddress": "复制地址",
+    "recommended": "推荐",
+    "calculating": "计算中…",
+    "live": "实时",
+    "liveLower": "实时",
+    "changingNetwork": "切换网络中…",
+    "walletConnected": "钱包已连接",
+    "walletDisconnected": "钱包已断开",
+    "addressCopied": "地址已复制",
+    "noConnectionAvailable": "此浏览器没有可用的连接方式。"
+  },
+  "errorPage": {
+    "title": "出了点问题",
+    "body": "此页面发生意外错误。您的资金不受影响：未经您在钱包中确认，不会签署任何操作。",
+    "retry": "重试",
+    "goHome": "返回首页"
+  },
+  "connectErrors": {
+    "generic": "无法连接钱包。请重试。",
+    "rejected": "您已取消连接。随时可再次尝试。",
+    "alreadyConnected": "已有钱包连接。",
+    "pendingRequest": "您的钱包已有待处理请求。请打开并查看。",
+    "noProvider": "未在此浏览器中检测到钱包扩展。",
+    "chainUnsupported": "您的钱包不支持 Base 网络。请手动添加或使用其他钱包。"
+  },
+  "legal": {
+    "marketingPitch": "OPEN 是 openAI Protocol 的链上通道：持有者资金投资于 OpenAI, Inc. 真实股权及 open* 生态系统。",
+    "affiliationNoticeSoft": "通过 OPEN，您参与投资 OpenAI, Inc. 真实股权的国库——链上、有流动性，且 OPI 后 flywheel 持续运转。",
+    "affiliationLinkLabel": "法律透明度",
+    "affiliationDocTitle": "商标与透明度",
+    "risksDocTitle": "风险信息",
+    "microDisclaimer": "OPEN 将资金导向 OpenAI, Inc. 真实股权。",
+    "geoNotice": "服务面向允许的司法管辖区。请确认您所在国家/地区允许使用加密资产。",
+    "geoEligibility": "查看资格",
+    "footerDisclaimer": "openAI Protocol 是一个去中心化生态系统。OpenAI、OpenAI, Inc. 及相关商标归其各自所有者所有。本网站不构成证券要约或投资建议。投资有风险。",
+    "ecosystemDisclaimer": "openChat、openAPI、openImage、openMotion、openVoice 和 openCode 是 openAI Protocol 生态系统的产品。ChatGPT、DALL·E、Sora、Whisper 和 Codex 是 OpenAI, Inc. 的商标。",
+    "suggestedTagline": "通过 OPEN 代币投资 OpenAI, Inc. 真实股权。",
+    "suggestedCta": "购买 OPEN",
+    "heroHeadline": "投资 OPEN。OpenAI, Inc. 真实股权。",
+    "heroSubheadline": "您的资金进入协议国库，用于购买真实股权并运营 open*。每次 openAPI 及 open* 服务的使用都会推动回购、销毁和更多股权——上市也不会停止。",
+    "heroBadge": "公开预售 · 永久 Flywheel",
+    "opiContext": "预计 OPI · 2027 年 9 月 · 市场里程碑；协议持续积累股权并回购 OPEN",
+    "postOpiFlywheel": "OPI 不会结束循环：国库继续购买 OpenAI, Inc. 股权（公开和私人市场），openChat、openAPI 及其他服务产生使用收入，其中 30% 持续用于回购并销毁 OPEN。",
+    "equityMicro": "国库在 OPI 前后积累 OpenAI, Inc. 真实股权；open* 收入为更多股权和 OPEN 回购提供资金。",
+    "ecosystemTitle": "投资真实股权的代币。整个 open* 生态系统。",
+    "ecosystemLead": "国库收购 OpenAI, Inc. 股权并运营 openChat、openAPI 及其他产品。API 和服务使用越多，收入越多，国库股权越多，对 OPEN 的需求越大。",
+    "valueTitle": "真实股权 + 生态系统收入 — 永久持续",
+    "valueLead": "国库积累 OpenAI, Inc. 股权，同时 open* 产生持续手续费。30% 用于回购并销毁 OPEN；其余用于加强股权持仓和生态系统增长。",
+    "tokenNatureParagraph": "OPEN 让您参与 openAI Protocol 国库，该国库购买并托管 OpenAI, Inc. 真实股权，并运营 open* 生态系统。今日链上访问；OPI 后，国库继续积累股权，并用 openAPI 及 open* 服务收入回购 OPEN。",
+    "tokenNatureLegal": "OPEN 参与协议国库，暴露于 OpenAI, Inc.；市场价格可能与 NAV 不同。",
+    "consentPrefix": "我已阅读并同意",
+    "consentTerms": "条款",
+    "consentPrivacyJoin": "、",
+    "consentPrivacy": "隐私政策",
+    "consentRisksJoin": "及",
+    "translationNotice": "自动翻译仅供参考。如有出入，以西班牙语版本为准。"
+  },
+  "footer": {
+    "colToken": "代币",
+    "colResources": "资源",
+    "colLegal": "法律",
+    "whitepaper": "Whitepaper",
+    "tokenomics": "Tokenomics",
+    "documentation": "文档",
+    "audit": "审计",
+    "support": "支持",
+    "terms": "条款",
+    "privacy": "隐私",
+    "compliance": "合规"
+  },
+  "home": {
+    "heroStatPresalePrice": "预售价格",
+    "heroStatCap": "预售上限",
+    "heroStatSupply": "OPEN 总供应量",
+    "heroStatLiquidity": "用于流动性（LP 锁定）",
+    "swapFromWallet": "从钱包交换",
+    "trustNoCustody": "● 无托管",
+    "trustLiquidity": "● 链上流动性",
+    "trustAudited": "● 合约已审计",
+    "buyShort": "购买",
+    "viewChart": "查看图表",
+    "nextMilestone": "下一里程碑：OpenAI, Inc. OPI",
+    "activityTitle": "网络活动",
+    "activitySubtitle": "· OPEN 实时买卖",
+    "activityBought": "购买了",
+    "activitySwapped": "交换了",
+    "timeAgoSec": "{n} 秒前",
+    "timeAgoMin": "{n} 分钟前",
+    "tokenomicsEyebrow": "Tokenomics",
+    "tokenomicsTitle": "为增值而设计的供应量。",
+    "tokenomicsBody": "固定供应量 21,000,000,000 OPEN，无 mint 功能。团队锁定 3 年（1 年 cliff + 2 年线性释放），国库用生态系统使用资金进行回购和销毁。预售 OPEN 在 TGE 时通过 claim 领取。",
+    "tokenomicsTotal": "OPEN 总量",
+    "tokenomicsBurn": "的生态系统手续费用于回购并销毁 OPEN",
+    "faqEyebrow": "常见问题",
+    "faqTitle": "投资前您需要了解的一切。",
+    "faqSubtitle": "还有疑问？联系我们，投资前为您解答。",
+    "valueAccrualEyebrow": "Value accrual",
+    "valueChips": [
+      "生态系统采用",
+      "手续费收入",
+      "程序化回购",
+      "供应减少"
+    ],
+    "valueChipResult": "净需求压力",
+    "valueMechanism": "链上机制：部分手续费路由至协议，用于回购并销毁 OPEN，可验证地减少流通供应。",
+    "servicesTitle": "与代币关联的服务",
+    "hubSync": "同步",
+    "desktopMobileEyebrow": "桌面与移动",
+    "desktopMobileTitle": "随时随地投资。",
+    "desktopMobileBody": "连接钱包、购买或交换，实时跟踪您的投资组合。任何屏幕上都有一致的流畅体验。",
+    "phoneBalance": "OPEN 余额",
+    "phoneToday": "今日",
+    "phonePayWith": "使用 USDC 支付",
+    "phoneReceive": "接收 OPEN"
+  },
+  "content": {
+    "ecosystem": [
+      "openAI Protocol 生态系统的对话助手。订阅和消费产生收入，为国库和 OPEN 回购提供资金。",
+      "通过协议 API 提供的模型。每处理百万 token 计费；部分手续费用于回购 OPEN。",
+      "扩散式图像生成。按积分消费推动代币回购流。",
+      "文本生成视频。高计算负载，按渲染秒数计费。",
+      "实时语音和转录。按处理音频分钟数计量。",
+      "协议的编程 Copilot。按席位计划加每次生成建议的计算消耗。"
+    ],
+    "tokenWhy": [
+      {
+        "title": "国库中的真实股权",
+        "desc": "OPEN 资金用于在私人市场购买 OpenAI, Inc. 股权。"
+      },
+      {
+        "title": "永久 Flywheel",
+        "desc": "今日链上访问。OPI 后，国库继续积累股权，每次 openAPI 及 open* 服务使用都会销毁 OPEN。"
+      },
+      {
+        "title": "open* 生态系统收入",
+        "desc": "openChat、openAPI 及其他产品产生手续费；30% 用于回购并销毁 OPEN。"
+      }
+    ],
+    "steps": [
+      {
+        "title": "连接钱包",
+        "desc": "MetaMask、Coinbase、Trust 或手机钱包，一键连接。"
+      },
+      {
+        "title": "购买 OPEN",
+        "desc": "在 Base 上使用 USDC、ETH 或 cbBTC——或从其他网络转入。您的资金进入协议国库。"
+      },
+      {
+        "title": "跟踪投资",
+        "desc": "实时查看价值、配置和变动。"
+      }
+    ],
+    "hubMeta": [
+      [
+        "订阅",
+        "按订阅"
+      ],
+      [
+        "API",
+        "按 token"
+      ],
+      [
+        "图像",
+        "按积分"
+      ],
+      [
+        "视频",
+        "按秒"
+      ],
+      [
+        "语音",
+        "按分钟"
+      ],
+      [
+        "代码",
+        "按席位"
+      ]
+    ],
+    "faq": [
+      [
+        "什么是 OPEN？我的资金用来做什么？",
+        "OPEN 是 openAI Protocol 的链上通道：持有者资金投资于 OpenAI, Inc. 真实股权及 open* 生态系统。OPEN 让您参与 openAI Protocol 国库，该国库购买并托管 OpenAI, Inc. 真实股权，并运营 open* 生态系统。今日链上访问；OPI 后，国库继续积累股权，并用 openAPI 及 open* 服务收入回购 OPEN。"
+      ],
+      [
+        "如何投资 OpenAI, Inc.？",
+        "国库通过 SPV 将资金用于购买 OpenAI, Inc. 真实股权——OPI 前后均如此。同时运营 openChat、openAPI 及其他 open* 服务；30% 手续费用于回购并销毁 OPEN，其余用于加强股权积累。"
+      ],
+      [
+        "如何购买 OPEN？",
+        "连接钱包，在 Base 网络使用 USDC、ETH、WETH 或 cbBTC 支付。也可从其他网络（Ethereum、Arbitrum、Solana、Bitcoin 等）转入资金，我们会自动在您的 Base 钱包中转换为 USDC。预售购买的代币在 TGE 时通过 claim 领取。"
+      ],
+      [
+        "何时收到预售代币？",
+        "在 TGE 时，通过您自己的钱包 claim 领取。预售公开开放，无钱包限额，价格为 0.0005 USDC/OPEN，合约设定上限 1,045,000 USDC；资金托管于 Safe 多签。"
+      ],
+      [
+        "需要等到上市才能投资吗？",
+        "不需要。预售已开放：您今日即可链上投资 OpenAI, Inc. 真实股权。OPI 是市场里程碑，不是协议终点——OPI 不会结束循环：国库继续购买 OpenAI, Inc. 股权（公开和私人市场），openChat、openAPI 及其他服务产生使用收入，其中 30% 持续用于回购并销毁 OPEN。"
+      ],
+      [
+        "如何及何时出售 OPEN？",
+        "TGE 时通过 claim 领取 OPEN，此后代币具有链上流动性（40% 供应量在池中，LP 锁定）：您可从钱包将其交换为 ETH、USDC 或其他代币。"
+      ],
+      [
+        "OPEN 与购买上市股票有何不同？",
+        "OPEN 是 openAI Protocol 的代币：您参与持续积累 OpenAI, Inc. 股权的国库，具有链上流动性和由 openAPI 及 open* 服务资助的程序化回购。"
+      ],
+      [
+        "OPEN 价格与股权如何关联？",
+        "OPEN 参与协议国库，暴露于 OpenAI, Inc.；市场价格可能与 NAV 不同。"
+      ],
+      [
+        "谁托管我的代币？",
+        "您自己。协议不托管您的 OPEN：购买从您自己的钱包签署，只有您控制密钥。"
+      ],
+      [
+        "有哪些费用？",
+        "预售不收取额外费用：您支付 Base 网络费（几分钱），若使用非 USDC 代币或从其他网络支付，则支付市场转换成本，确认前会显示。"
+      ],
+      [
+        "这有风险吗？",
+        "与任何投资一样，OPEN 价值可能上涨或下跌。只投资您能承受损失的金额。通过 OPEN，您参与投资 OpenAI, Inc. 真实股权的国库——链上、有流动性，且 OPI 后 flywheel 持续运转。"
+      ],
+      [
+        "OPI 之后会怎样？",
+        "OPI 不会结束循环：国库继续购买 OpenAI, Inc. 股权（公开和私人市场），openChat、openAPI 及其他服务产生使用收入，其中 30% 持续用于回购并销毁 OPEN。OPEN 继续反映国库：更多 OpenAI, Inc. 股权、更多服务收入和链上可验证的回购。"
+      ]
+    ],
+    "tkSegs": [
+      "公开预售",
+      "链上流动性",
+      "国库 / 生态系统",
+      "营销",
+      "团队（锁定 3 年）",
+      "未来轮次（锁定）"
+    ]
+  },
+  "market": {
+    "statMarketCap": "市值",
+    "statPresalePrice": "预售价格",
+    "statSupply": "总供应量",
+    "statPresaleCap": "预售上限",
+    "statAth": "历史最高",
+    "statPresale": "预售",
+    "statPresaleValue": "公开开放",
+    "readyTitle": "准备好投资了吗？",
+    "readyBody": "以市场价格购买 OPEN 或从钱包交换。",
+    "swapCta": "交换"
+  },
+  "portfolio": {
+    "connectTitle": "连接钱包",
+    "connectBody": "连接以查看 Base 网络上的真实余额和链上历史。",
+    "myWallet": "我的钱包",
+    "copyAddressTitle": "复制地址",
+    "disconnect": "断开连接",
+    "totalValue": "Base 总价值",
+    "deposit": "充值",
+    "depositTitle": "在 Base 地址接收 USDC",
+    "assetsTitle": "您在 Base 上的资产",
+    "loadingBalances": "加载余额中…",
+    "emptyLine1": "Base 上尚无余额。",
+    "emptyLine2": "购买 OPEN 或充值以开始。",
+    "movementsTitle": "交易记录",
+    "movementsBody": "您的完整交易历史在 Base 网络浏览器上。",
+    "viewBasescan": "在 Basescan 查看",
+    "movementsNote": "OPEN 购买显示为与预售合约的交互。"
+  },
+  "swapPage": {
+    "title": "交换",
+    "subtitle": "OPEN 交换将在代币具有链上流动性后可用。",
+    "afterTgeTitle": "TGE 后可用",
+    "afterTgeBody": "OPEN 上线流动性后，您可在此将其交换为 ETH、USDC 和其他代币。期间可在预售中购买 OPEN。",
+    "buyPresaleCta": "在预售中购买 OPEN",
+    "payHint": "可在 Base 上使用 USDC、ETH 或 cbBTC 支付——或从其他网络转入资金。"
+  },
+  "docsUi": {
+    "backHome": "← 返回首页",
+    "ctaTitle": "准备好获取 OPEN 了吗？",
+    "ctaBody": "在 Base 上使用 USDC、ETH 或 cbBTC 购买，或从其他网络转入资金。",
+    "viewChart": "查看图表"
+  },
+  "walletKind": {
+    "notConnected": "未连接",
+    "baseAccount": "Base 账户（Face ID）",
+    "extensionOrApp": "钱包（扩展或应用）",
+    "mobileWallet": "移动钱包（WalletConnect）",
+    "hint": "使用兼容钱包连接（MetaMask、Trust Wallet 等）。"
+  },
+  "buy": {
+    "pageTitle": "购买 OPEN",
+    "pageSubtitle": "在 Base 上使用 USDC、ETH 或 cbBTC 支付——或从其他网络转入资金。",
+    "sinWalletTitle": "连接钱包",
+    "sinWalletSubtitle": "创建安全账户或连接您已有的钱包。",
+    "walletModalTitle": "连接钱包",
+    "walletModalSubtitle": "使用已有钱包或数秒内创建新钱包。",
+    "connectWallet": "连接钱包",
+    "connectDesktopHint": "购买始终从您自己的钱包签署：其他人无法移动您的资金。",
+    "walletOptionExtensionSub": "浏览器扩展",
+    "walletOptionMobileApp": "打开我的钱包应用",
+    "walletOptionMobileAppSub": "MetaMask、Trust、Rainbow 等",
+    "walletOptionQr": "使用手机",
+    "walletOptionQrSub": "用手机钱包扫描二维码",
+    "walletOptionCreate": "创建新钱包",
+    "walletOptionCreateSub": "使用 Face ID 或 Touch ID — 无需安装",
+    "walletOpeningApp": "正在打开钱包应用…",
+    "walletOpeningQr": "正在生成二维码…",
+    "walletConnecting": "连接中…",
+    "noExtensionHint": "不使用扩展？用手机钱包连接或创建新钱包。",
+    "walletConnectEnvHint": "配置：缺少 NEXT_PUBLIC_WC_PROJECT_ID（在 cloud.reown.com 免费获取）。",
+    "switchChainTitle": "将钱包切换到 Base 网络",
+    "switchChainSubtitle": "此操作仅在 Base（Chain ID 8453）上可用。",
+    "switchChainCta": "切换到 Base",
+    "switchChainRejected": "您已拒绝切换网络。请在钱包中手动切换到 Base 以继续。",
+    "confirmInWalletApp": "在钱包应用中确认",
+    "confirmInWalletAppHint": "打开钱包、签署交易并返回此处。状态将自动更新。",
+    "useAnotherWallet": "使用其他钱包",
+    "sinFondosTitle": "您需要 Base 上的 USDC",
+    "sinFondosSubtitle": "在 Base 网络钱包中充值 USDC 以继续预售。",
+    "sinFondosPollingHint": "收到 Base 上的 USDC 后，我们将自动检测余额。无需刷新页面。",
+    "walletAddressLabel": "您在 Base 上的地址",
+    "checkingBalance": "检查余额中…",
+    "rampManualNetworkWarning": "重要：USDC 必须在 Base 网络上。发送到其他网络可能导致资金损失。",
+    "listoTitle": "资金就绪！",
+    "listoSubtitle": "您有 {balance} 可用于投资 OPEN。",
+    "continueCta": "继续购买",
+    "compraTitle": "购买 OPEN",
+    "compraSubtitle": "选择支付币种。我们转换为 USDC 并从您的钱包购买 OPEN。",
+    "compraTgeNotice": "预售购买的代币在 TGE 时通过 claim 领取。",
+    "compraPayWith": "支付方式",
+    "compraBalance": "余额",
+    "compraEstimatedOpen": "预计 OPEN",
+    "compraQuoteRefreshing": "报价每 30 秒更新",
+    "compraQuoteExpired": "正在更新价格…",
+    "compraQuoteFallback": "目前无法报价转换。请使用 USDC 支付或几分钟后重试。",
+    "compraCapExceeded": "金额超过剩余预售额度。请减少数量。",
+    "compraConvertCta": "转换为购买资金",
+    "compraConvertDone": "转换完成。现在可用 USDC 购买 OPEN。",
+    "compraStepBatch0x": "签署转换和购买（单次签名）",
+    "compraStepConvertApprove": "步骤 1/2 — 授权支付代币",
+    "compraStepConvertSwap": "步骤 2/2 — 转换为 USDC",
+    "compraAmountLabel": "支付金额",
+    "compraHintNoAmount": "输入金额以继续。",
+    "compraHintLegal": "勾选条款复选框以启用购买。",
+    "compraHintQuoteLoading": "计算转换价格中…",
+    "compraStartCta": "开始购买",
+    "compraRetryCta": "重试待处理步骤",
+    "compraDoneTitle": "购买已提交",
+    "compraDoneSubtitle": "您的交易已成功提交。您将在 TGE 时通过 claim 收到 OPEN。",
+    "compraContractMissing": "预售合约未配置（NEXT_PUBLIC_PRESALE_CONTRACT）。",
+    "compraStepUsdcApprove": "步骤 1/2 — 授权 USDC",
+    "compraStepUsdcBuy": "步骤 2/2 — 购买 OPEN",
+    "compraStepSwapApprove": "步骤 1/3 — 授权转换",
+    "compraStepSwapConvert": "步骤 2/3 — 转换为 ETH",
+    "compraStepSwapBuy": "步骤 3/3 — 购买 OPEN",
+    "compraStepBatch": "签署购买（单次签名）",
+    "compraWaitingConfirm": "等待链上确认…",
+    "compraUserRejected": "您已拒绝交易。可重试待处理步骤。",
+    "compraBackCta": "返回",
+    "compraViewTx": "在 Basescan 查看交易",
+    "compraInsufficientSell": "您的 {symbol} 不足以支付此金额。",
+    "compraInsufficientUsdc": "您的 USDC 不足以支付此金额。",
+    "compraWrongNetwork": "请将钱包切换到 Base 网络以继续。",
+    "compraGasInsufficient": "您的 ETH 不足以支付网络费。",
+    "compraBatchFailed": "操作未在链上完成。请重试。",
+    "compraGenericError": "无法完成操作。请重试。",
+    "bridgeTabBase": "在 Base 支付",
+    "bridgeTabOther": "从其他网络",
+    "bridgeTabReceive": "接收 USDC",
+    "receiveSubtitle": "从其他钱包或交易所向 Base 网络地址发送 USDC。余额将自动检测。",
+    "receiveCurrentBalance": "您在 Base 上的 USDC 余额",
+    "compraModeChecking": "检查钱包中…",
+    "compraModeOneSignature": "您将用一次签名确认全部操作。",
+    "compraModeSteps": "您将在钱包中逐步确认 {n} 个步骤。",
+    "compraMaxCta": "最大",
+    "compraUsdEstimate": "≈ {v} USD",
+    "compraQuoteValidFor": "价格保证 {sec} 秒",
+    "compraDoneViewPortfolio": "在钱包中查看",
+    "compraDoneBuyMore": "购买更多 OPEN",
+    "walletConnectedAs": "钱包已连接",
+    "walletChangeCta": "更换",
+    "bridgeExactAmountWarning": "请在单笔交易中发送所示的确切金额。不同金额可能延迟操作或导致退款。",
+    "bridgeSubtitle": "从其他网络发送资金，我们将其转换为 Base 钱包中的 USDC。然后正常购买 OPEN。",
+    "bridgeOriginLabel": "源网络",
+    "bridgeTokenLabel": "发送代币",
+    "bridgeAmountLabel": "发送金额",
+    "bridgeEstimatedUsdc": "您将在 Base 收到的 USDC",
+    "bridgeFeesLabel": "预计总成本",
+    "bridgeTimeLabel": "预计时间",
+    "bridgeQuoteExpired": "跨链报价已过期。发送前请重新计算。",
+    "bridgeExpiresIn": "报价 {sec} 秒后过期",
+    "bridgeSendCta": "从 {network} 发送",
+    "bridgeGetDepositCta": "生成充值地址",
+    "bridgeDepositAddressLabel": "充值地址",
+    "bridgeDepositInstructions": "从任何钱包或交易所向此地址发送确切 {amount} {symbol}。不同金额可能延迟操作或导致退款。",
+    "bridgeBtcMinHint": "使用 Bitcoin 时，网络费使小额转账不可行。",
+    "bridgeSwitching": "切换到源网络中…",
+    "bridgeAwaitingWallet": "在钱包中确认交易…",
+    "bridgeConfirmingOrigin": "在源网络确认中…",
+    "bridgeAwaitingDeposit": "等待您的充值… 可保持此页面打开；将自动更新。",
+    "bridgeInProgress": "跨链进行中… USDC 即将到达 Base 钱包。",
+    "bridgeDelivered": "Base 上已收到 USDC。现在可购买 OPEN。",
+    "bridgeRefunded": "操作未完成，资金已退还至源地址。",
+    "bridgeFailed": "跨链未完成。若已发送资金，将退还至源地址。",
+    "bridgeRetryCta": "重试",
+    "bridgeNewCta": "发起新转账",
+    "bridgeGoBuyCta": "用我的 USDC 购买 OPEN",
+    "bridgeViewDestTx": "在 Basescan 查看交付"
+  }
+}

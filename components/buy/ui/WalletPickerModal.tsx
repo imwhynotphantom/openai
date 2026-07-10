@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { css } from "@/lib/css";
 import { Hov } from "@/components/ui";
-import { BUY_FLOW_COPY } from "@/lib/onramp/constants";
+import { useBuyCopy } from "@/hooks/useBuyCopy";
 import { WalletOptions } from "@/components/wallet/WalletOptions";
 
 type Props = {
@@ -11,6 +11,7 @@ type Props = {
 };
 
 export function WalletPickerModal({ onClose }: Props) {
+  const buy = useBuyCopy();
   // Cerrar con Escape y bloquear el scroll de fondo mientras está abierto.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -41,10 +42,10 @@ export function WalletPickerModal({ onClose }: Props) {
         onClick={(e) => e.stopPropagation()}
       >
         <h3 style={css("font:700 20px/1.25 var(--font-hanken);color:#0D0D0D;margin:0 0 8px")}>
-          {BUY_FLOW_COPY.walletModalTitle}
+          {buy.walletModalTitle}
         </h3>
         <p style={css("font:400 14px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 20px")}>
-          {BUY_FLOW_COPY.walletModalSubtitle}
+          {buy.walletModalSubtitle}
         </p>
 
         <WalletOptions onSuccess={onClose} />

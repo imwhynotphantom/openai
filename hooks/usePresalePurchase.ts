@@ -12,7 +12,10 @@ import {
 import { sendTransaction, waitForCallsStatus, waitForTransactionReceipt } from "@wagmi/core";
 import { base } from "wagmi/chains";
 import { parseUnits, UserRejectedRequestError, type Address } from "viem";
-import { BUY_FLOW_COPY, USDC_BASE } from "@/lib/onramp/constants";
+import { USDC_BASE } from "@/lib/onramp/constants";
+import { tf } from "@/lib/i18n/config";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
+import type { Dictionary } from "@/lib/i18n/load";
 import { useAtomicBatchSupport } from "@/hooks/useAtomicBatchSupport";
 import { useDebouncedValue } from "@/hooks/useDebouncedValue";
 import { useSwapQuote } from "@/hooks/useSwapQuote";
@@ -61,32 +64,32 @@ function isUserRejection(error: unknown): boolean {
   return false;
 }
 
-function mapContractError(error: unknown): string {
-  if (!(error instanceof Error)) return BUY_FLOW_COPY.compraGenericError;
+function mapContractError(error: unknown, d: Dictionary["buy"]): string {
+  if (!(error instanceof Error)) return d.compraGenericError;
 
   const msg = error.message;
-  if (msg === "PRESALE_CONTRACT_MISSING") return BUY_FLOW_COPY.compraContractMissing;
-  if (msg === "QUOTE_EXPIRED") return BUY_FLOW_COPY.compraQuoteExpired;
-  if (msg === "CAP_EXCEEDED") return BUY_FLOW_COPY.compraCapExceeded;
-  if (msg === "QUOTE_FAILED") return BUY_FLOW_COPY.compraQuoteFallback;
-  if (msg === "WRONG_NETWORK") return BUY_FLOW_COPY.compraWrongNetwork;
-  if (msg === "INSUFFICIENT_USDC") return BUY_FLOW_COPY.compraInsufficientUsdc;
-  if (msg === "BATCH_FAILED") return BUY_FLOW_COPY.compraBatchFailed;
+  if (msg === "PRESALE_CONTRACT_MISSING") return d.compraContractMissing;
+  if (msg === "QUOTE_EXPIRED") return d.compraQuoteExpired;
+  if (msg === "CAP_EXCEEDED") return d.compraCapExceeded;
+  if (msg === "QUOTE_FAILED") return d.compraQuoteFallback;
+  if (msg === "WRONG_NETWORK") return d.compraWrongNetwork;
+  if (msg === "INSUFFICIENT_USDC") return d.compraInsufficientUsdc;
+  if (msg === "BATCH_FAILED") return d.compraBatchFailed;
   if (msg.startsWith("INSUFFICIENT_SELL:")) {
-    return BUY_FLOW_COPY.compraInsufficientSell(msg.split(":")[1] ?? "el token");
+    return tf(d.compraInsufficientSell, { symbol: msg.split(":")[1] ?? "token" });
   }
-  if (isUserRejection(error)) return BUY_FLOW_COPY.compraUserRejected;
+  if (isUserRejection(error)) return d.compraUserRejected;
 
   const t = msg.toLowerCase();
-  if (t.includes("insufficient funds")) return BUY_FLOW_COPY.compraGasInsufficient;
+  if (t.includes("insufficient funds")) return d.compraGasInsufficient;
   if (t.includes("exceeds balance") || t.includes("insufficient balance") || t.includes("transfer amount exceeds")) {
-    return BUY_FLOW_COPY.compraInsufficientUsdc;
+    return d.compraInsufficientUsdc;
   }
 
   if (process.env.NODE_ENV === "development") {
     console.error("[compra] error sin mapear:", error);
   }
-  return BUY_FLOW_COPY.compraGenericError;
+  return d.compraGenericError;
 }
 
 const INITIAL_EXEC_STATE: PurchaseExecutionState = {
@@ -98,6 +101,8 @@ const INITIAL_EXEC_STATE: PurchaseExecutionState = {
 };
 
 export function usePresalePurchase() {
+  const { t } = useI18n();
+  const tb = t.buy;
   const config = useConfig();
   // chainId de useAccount() refleja la red REAL de la wallet (useChainId devuelve la de la config).
   const { address, connector, chainId: walletChainId } = useAccount();
@@ -219,14 +224,17 @@ export function usePresalePurchase() {
 
   const stepLabels = useMemo(
     () =>
-      getStepLabels({
-        paymentToken,
-        supportsBatch,
-        phase: effectiveFlowPhase,
-        needsUsdcApprove,
-        needsSellApprove,
-      }),
-    [effectiveFlowPhase, needsSellApprove, needsUsdcApprove, paymentToken, supportsBatch]
+      getStepLabels(
+        {
+          paymentToken,
+          supportsBatch,
+          phase: effectiveFlowPhase,
+          needsUsdcApprove,
+          needsSellApprove,
+        },
+        tb
+      ),
+    [effectiveFlowPhase, needsSellApprove, needsUsdcApprove, paymentToken, supportsBatch, tb]
   );
 
   // ── Validaciones ──
@@ -403,13 +411,16 @@ export function usePresalePurchase() {
           quote: q,
         });
 
-        const labels = getStepLabels({
-          paymentToken,
-          supportsBatch: false,
-          phase: "convert",
-          needsUsdcApprove: false,
-          needsSellApprove: freshSellApprove,
-        });
+        const labels = getStepLabels(
+          {
+            paymentToken,
+            supportsBatch: false,
+            phase: "convert",
+            needsUsdcApprove: false,
+            needsSellApprove: freshSellApprove,
+          },
+          tb
+        );
 
         await executeSequential(calls, labels, {
           minBuy: BigInt(q.minBuyAmount),
@@ -424,7 +435,7 @@ export function usePresalePurchase() {
         if (error instanceof Error && (error.message === "QUOTE_FAILED" || error.message.includes("liquidez"))) {
           setQuoteFallback(true);
         }
-        setState((s) => ({ ...s, phase: "error", error: mapContractError(error), awaitingWalletApp: false }));
+        setState((s) => ({ ...s, phase: "error", error: mapContractError(error, tb), awaitingWalletApp: false }));
       }
     },
     [
@@ -436,6 +447,7 @@ export function usePresalePurchase() {
       quote,
       refetchSellAllowance,
       sellAmount,
+      tb,
       validateCap,
       validateNetwork,
       validateQuoteFresh,
@@ -448,7 +460,7 @@ export function usePresalePurchase() {
     async (freshQuote?: SwapQuoteResponse) => {
       if (!address || !sellAmount) return;
       if (!getPresaleContract()) {
-        setState((s) => ({ ...s, phase: "error", error: BUY_FLOW_COPY.compraContractMissing }));
+        setState((s) => ({ ...s, phase: "error", error: tb.compraContractMissing }));
         return;
       }
 
@@ -525,14 +537,17 @@ export function usePresalePurchase() {
 
         const useBatch = supportsBatch && calls.length > 1;
         const labels = useBatch
-          ? [paymentTokenId === "USDC" ? BUY_FLOW_COPY.compraStepBatch : BUY_FLOW_COPY.compraStepBatch0x]
-          : getStepLabels({
-              paymentToken,
-              supportsBatch: false,
-              phase: effectiveFlowPhase,
-              needsUsdcApprove: freshUsdcApprove,
-              needsSellApprove: freshSellApprove,
-            });
+          ? [paymentTokenId === "USDC" ? tb.compraStepBatch : tb.compraStepBatch0x]
+          : getStepLabels(
+              {
+                paymentToken,
+                supportsBatch: false,
+                phase: effectiveFlowPhase,
+                needsUsdcApprove: freshUsdcApprove,
+                needsSellApprove: freshSellApprove,
+              },
+              tb
+            );
 
         let finalHash: `0x${string}` | undefined;
         if (useBatch) {
@@ -545,12 +560,12 @@ export function usePresalePurchase() {
           phase: "done",
           stepIndex: labels.length - 1,
           stepLabels: labels,
-          currentLabel: BUY_FLOW_COPY.compraDoneTitle,
+          currentLabel: tb.compraDoneTitle,
           txHash: finalHash,
           awaitingWalletApp: false,
         });
       } catch (error) {
-        setState((s) => ({ ...s, phase: "error", error: mapContractError(error), awaitingWalletApp: false }));
+        setState((s) => ({ ...s, phase: "error", error: mapContractError(error, tb), awaitingWalletApp: false }));
       }
     },
     [
@@ -568,6 +583,7 @@ export function usePresalePurchase() {
       sellAmount,
       startConvert,
       supportsBatch,
+      tb,
       validateCap,
       validateNetwork,
       validateQuoteFresh,
@@ -615,8 +631,8 @@ export function usePresalePurchase() {
 
   const primaryCta =
     paymentTokenId !== "USDC" && !supportsBatch && effectiveFlowPhase === "convert"
-      ? BUY_FLOW_COPY.compraConvertCta
-      : BUY_FLOW_COPY.compraStartCta;
+      ? tb.compraConvertCta
+      : tb.compraStartCta;
 
   return {
     paymentToken,

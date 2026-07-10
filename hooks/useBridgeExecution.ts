@@ -5,7 +5,8 @@ import { useConfig } from "wagmi";
 import { sendTransaction, switchChain, waitForTransactionReceipt } from "@wagmi/core";
 import { base } from "wagmi/chains";
 import { UserRejectedRequestError } from "viem";
-import { BUY_FLOW_COPY } from "@/lib/onramp/constants";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
+import type { Dictionary } from "@/lib/i18n/load";
 import type { BridgeQuoteResponse, BridgeStatusResponse } from "@/lib/bridge/relay";
 
 export type BridgeExecPhase =
@@ -39,16 +40,16 @@ function isUserRejection(error: unknown): boolean {
   return false;
 }
 
-function mapBridgeError(error: unknown): string {
-  if (isUserRejection(error)) return BUY_FLOW_COPY.compraUserRejected;
+function mapBridgeError(error: unknown, d: Dictionary["buy"]): string {
+  if (isUserRejection(error)) return d.compraUserRejected;
   if (error instanceof Error) {
     const t = error.message.toLowerCase();
-    if (t.includes("insufficient funds")) return BUY_FLOW_COPY.compraGasInsufficient;
-    // Mensajes ya en español desde nuestras API routes.
+    if (t.includes("insufficient funds")) return d.compraGasInsufficient;
+    // Mensajes ya legibles desde nuestras API routes (en español).
     if (/[áéíóñ¡¿]| se | del | no /.test(error.message)) return error.message;
   }
   if (process.env.NODE_ENV === "development") console.error("[bridge] error sin mapear:", error);
-  return BUY_FLOW_COPY.bridgeFailed;
+  return d.bridgeFailed;
 }
 
 async function fetchBridgeStatus(requestId: string): Promise<BridgeStatusResponse> {
@@ -59,6 +60,8 @@ async function fetchBridgeStatus(requestId: string): Promise<BridgeStatusRespons
 }
 
 export function useBridgeExecution(params: { onDelivered?: () => void }) {
+  const { t } = useI18n();
+  const tb = t.buy;
   const config = useConfig();
   const [state, setState] = useState<BridgeExecState>({ phase: "idle" });
   const pollGenRef = useRef(0);
@@ -99,7 +102,7 @@ export function useBridgeExecution(params: { onDelivered?: () => void }) {
               setState({ phase: "refunded" });
               return;
             case "failure":
-              setState({ phase: "error", error: BUY_FLOW_COPY.bridgeFailed });
+              setState({ phase: "error", error: tb.bridgeFailed });
               return;
           }
         } catch {
@@ -108,14 +111,14 @@ export function useBridgeExecution(params: { onDelivered?: () => void }) {
         await new Promise((r) => setTimeout(r, POLL_INTERVAL_MS));
       }
     },
-    []
+    [tb]
   );
 
   /** Origen EVM: cambia de red, firma las txs del depósito y hace polling. */
   const executeEvmBridge = useCallback(
     async (quote: BridgeQuoteResponse, originChainId: number) => {
       try {
-        if (Date.now() >= quote.expiresAt) throw new Error(BUY_FLOW_COPY.bridgeQuoteExpired);
+        if (Date.now() >= quote.expiresAt) throw new Error(tb.bridgeQuoteExpired);
 
         setState({ phase: "switching_chain" });
         await switchChain(config, { chainId: originChainId as never });
@@ -138,10 +141,10 @@ export function useBridgeExecution(params: { onDelivered?: () => void }) {
         setState({ phase: "bridging" });
         await pollStatus(quote.requestId, "bridging");
       } catch (error) {
-        setState({ phase: "error", error: mapBridgeError(error) });
+        setState({ phase: "error", error: mapBridgeError(error, tb) });
       }
     },
-    [config, pollStatus]
+    [config, pollStatus, tb]
   );
 
   /** Solana/Bitcoin: muestra dirección de depósito y observa hasta la entrega. */

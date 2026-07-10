@@ -1,27 +1,31 @@
-/** Traduce errores de conexión de wagmi/viem a mensajes claros en español. */
-export function mapConnectError(error: unknown): string {
-  if (!(error instanceof Error)) return "No se pudo conectar la wallet. Inténtalo de nuevo.";
+import type { Dictionary } from "@/lib/i18n/load";
+
+type ConnectErrorDict = Dictionary["connectErrors"];
+
+/** Traduce errores de conexión de wagmi/viem a mensajes claros en el idioma activo. */
+export function mapConnectError(error: unknown, d: ConnectErrorDict): string {
+  if (!(error instanceof Error)) return d.generic;
 
   const t = error.message.toLowerCase();
 
   if (t.includes("user rejected") || t.includes("user denied") || t.includes("connection request reset")) {
-    return "Cancelaste la conexión. Vuelve a intentarlo cuando quieras.";
+    return d.rejected;
   }
   if (t.includes("already connected")) {
-    return "Ya hay una wallet conectada.";
+    return d.alreadyConnected;
   }
   if (t.includes("resource unavailable") || t.includes("already pending") || t.includes("-32002")) {
-    return "Tu wallet ya tiene una solicitud abierta. Ábrela y revísala.";
+    return d.pendingRequest;
   }
   if (t.includes("provider not found") || t.includes("no provider")) {
-    return "No detectamos ninguna extensión de wallet en este navegador.";
+    return d.noProvider;
   }
   if (t.includes("chain") && (t.includes("not configured") || t.includes("unsupported"))) {
-    return "Tu wallet no soporta la red Base. Añádela manualmente o usa otra wallet.";
+    return d.chainUnsupported;
   }
 
   if (process.env.NODE_ENV === "development") {
     console.error("[conexión] error sin mapear:", error);
   }
-  return "No se pudo conectar la wallet. Inténtalo de nuevo.";
+  return d.generic;
 }

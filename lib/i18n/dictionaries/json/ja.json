@@ -1,0 +1,431 @@
+{
+  "numberLocale": "ja-JP",
+  "meta": {
+    "title": "openAI Protocol — OPEN で OpenAI, Inc. の実株式に投資",
+    "description": "OPEN トークンで OpenAI, Inc. の実株式に投資。Base ネットワークで公開プレセール：USDC、ETH、cbBTC で支払い、非カストディ、オンチェーン流動性。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "market": "マーケット",
+    "buy": "購入",
+    "swap": "Swap",
+    "soon": "近日公開",
+    "wallet": "ウォレット",
+    "mainNavAria": "メインナビゲーション",
+    "connectWallet": "ウォレット接続",
+    "language": "言語"
+  },
+  "common": {
+    "retry": "再試行",
+    "cancel": "キャンセル",
+    "close": "閉じる",
+    "copied": "コピーしました",
+    "copyAddress": "アドレスをコピー",
+    "recommended": "おすすめ",
+    "calculating": "計算中…",
+    "live": "ライブ",
+    "liveLower": "ライブ",
+    "changingNetwork": "ネットワーク切替中…",
+    "walletConnected": "ウォレット接続済み",
+    "walletDisconnected": "ウォレット切断",
+    "addressCopied": "アドレスをコピーしました",
+    "noConnectionAvailable": "このブラウザでは利用可能な接続方法がありません。"
+  },
+  "errorPage": {
+    "title": "問題が発生しました",
+    "body": "この画面で予期しないエラーが発生しました。資金への影響はありません。ウォレットでの確認なしに操作は署名されません。",
+    "retry": "再試行",
+    "goHome": "ホームへ"
+  },
+  "connectErrors": {
+    "generic": "ウォレットを接続できませんでした。もう一度お試しください。",
+    "rejected": "接続をキャンセルしました。いつでも再試行できます。",
+    "alreadyConnected": "すでにウォレットが接続されています。",
+    "pendingRequest": "ウォレットに未処理のリクエストがあります。開いて確認してください。",
+    "noProvider": "このブラウザでウォレット拡張機能が検出されませんでした。",
+    "chainUnsupported": "ウォレットが Base ネットワークに対応していません。手動で追加するか、別のウォレットをご利用ください。"
+  },
+  "legal": {
+    "marketingPitch": "OPEN は openAI Protocol のオンチェーン経路：ホルダーの資本は OpenAI, Inc. の実株式と open* エコシステムに投資されます。",
+    "affiliationNoticeSoft": "OPEN で、OpenAI, Inc. の実株式に投資するトレジャリーに参加 — オンチェーン、流動性あり、OPI 後も flywheel は継続。",
+    "affiliationLinkLabel": "法的透明性",
+    "affiliationDocTitle": "商標と透明性",
+    "risksDocTitle": "リスク情報",
+    "microDisclaimer": "OPEN は資本を OpenAI, Inc. の実株式へ向けます。",
+    "geoNotice": "許可された管轄区域向けのサービスです。お住まいの国で暗号資産の利用が許可されているかご確認ください。",
+    "geoEligibility": "適格性を確認",
+    "footerDisclaimer": "openAI Protocol は分散型エコシステムです。OpenAI、OpenAI, Inc. および関連商標は各権利者に帰属します。本サイトは有価証券の募集や投資助言を構成しません。投資にはリスクが伴います。",
+    "ecosystemDisclaimer": "openChat、openAPI、openImage、openMotion、openVoice、openCode は openAI Protocol エコシステムの製品です。ChatGPT、DALL·E、Sora、Whisper、Codex は OpenAI, Inc. の商標です。",
+    "suggestedTagline": "OPEN トークンで OpenAI, Inc. の実株式に投資。",
+    "suggestedCta": "OPEN を購入",
+    "heroHeadline": "OPEN に投資。OpenAI, Inc. の実株式。",
+    "heroSubheadline": "資本はプロトコルのトレジャリーに入り、実株式の購入と open* の運営に使われます。openAPI と open* サービスの利用ごとに、買い戻し、バーン、さらなる equity — 上場後も止まりません。",
+    "heroBadge": "公開プレセール · 永続 Flywheel",
+    "opiContext": "OPI 予定 · 2027年9月 · 市場マイルストーン；プロトコルは株式を蓄積し OPEN を買い戻し続けます",
+    "postOpiFlywheel": "OPI でサイクルは終わりません：トレジャリーは OpenAI, Inc. の株式（公開・非公開市場）を買い続け、openChat、openAPI などのサービスが利用収益を生み、その手数料の 30% が OPEN の買い戻しとバーンに継続的に充てられます。",
+    "equityMicro": "トレジャリーは OPI 前後で OpenAI, Inc. の実株式を蓄積；open* の収益がさらなる equity と OPEN 買い戻しに資金を提供。",
+    "ecosystemTitle": "実株式に投資するトークン。open* エコシステム全体。",
+    "ecosystemLead": "トレジャリーは OpenAI, Inc. の equity を取得し、openChat、openAPI などを運営。API とサービスの利用が増えるほど、収益、トレジャリーの株式、OPEN への需要が増加。",
+    "valueTitle": "実株式 + エコシステム収益 — 永続的に",
+    "valueLead": "トレジャリーは OpenAI, Inc. の株式を蓄積し、open* は継続的な手数料を生み出します。30% が OPEN の買い戻しとバーンに；残りは株式ポジションとエコシステム成長を強化。",
+    "tokenNatureParagraph": "OPEN は openAI Protocol のトレジャリーへの参加を提供し、OpenAI, Inc. の実株式を購入・保管し、open* エコシステムを運営します。今日オンチェーンでアクセス；OPI 後もトレジャリーは株式を蓄積し、openAPI と open* サービスの収益で OPEN を買い戻します。",
+    "tokenNatureLegal": "OPEN は OpenAI, Inc. へのエクスポージャーを持つプロトコルトレジャリーに参加；市場価格は NAV と異なる場合があります。",
+    "consentPrefix": "以下に同意しました：",
+    "consentTerms": "利用規約",
+    "consentPrivacyJoin": "、",
+    "consentPrivacy": "プライバシーポリシー",
+    "consentRisksJoin": "、および",
+    "translationNotice": "自動翻訳は参考用です。内容に相違がある場合はスペイン語版が優先されます。"
+  },
+  "footer": {
+    "colToken": "トークン",
+    "colResources": "リソース",
+    "colLegal": "法務",
+    "whitepaper": "Whitepaper",
+    "tokenomics": "Tokenomics",
+    "documentation": "ドキュメント",
+    "audit": "監査",
+    "support": "サポート",
+    "terms": "利用規約",
+    "privacy": "プライバシー",
+    "compliance": "コンプライアンス"
+  },
+  "home": {
+    "heroStatPresalePrice": "プレセール価格",
+    "heroStatCap": "プレセール上限",
+    "heroStatSupply": "OPEN 総供給量",
+    "heroStatLiquidity": "流動性用（LP ロック）",
+    "swapFromWallet": "ウォレットからスワップ",
+    "trustNoCustody": "● 非カストディ",
+    "trustLiquidity": "● オンチェーン流動性",
+    "trustAudited": "● 監査済みコントラクト",
+    "buyShort": "購入",
+    "viewChart": "チャートを見る",
+    "nextMilestone": "次のマイルストーン：OpenAI, Inc. OPI",
+    "activityTitle": "ネットワークアクティビティ",
+    "activitySubtitle": "· OPEN のリアルタイム売買",
+    "activityBought": "が購入",
+    "activitySwapped": "がスワップ",
+    "timeAgoSec": "{n} 秒前",
+    "timeAgoMin": "{n} 分前",
+    "tokenomicsEyebrow": "Tokenomics",
+    "tokenomicsTitle": "価値向上のために設計された供給量。",
+    "tokenomicsBody": "固定供給量 21,000,000,000 OPEN、mint 機能なし。チームは 3 年ロック（1 年 cliff + 2 年線形ベスティング）、トレジャリーはエコシステム利用で買い戻しとバーンに資金提供。プレセール OPEN は TGE で claim により受け取り。",
+    "tokenomicsTotal": "OPEN 総量",
+    "tokenomicsBurn": "のエコシステム手数料が OPEN の買い戻しとバーンに充てられます",
+    "faqEyebrow": "よくある質問",
+    "faqTitle": "投資前に知っておくべきこと。",
+    "faqSubtitle": "ご不明点はお問い合わせください。投資前にお答えします。",
+    "valueAccrualEyebrow": "Value accrual",
+    "valueChips": [
+      "エコシステム採用",
+      "手数料収益",
+      "プログラム的買い戻し",
+      "供給量削減"
+    ],
+    "valueChipResult": "純需要圧力",
+    "valueMechanism": "オンチェーンメカニズム：手数料の一部がプロトコルにルーティングされ、OPEN の買い戻しとバーンにより流通供給量を検証可能に削減。",
+    "servicesTitle": "トークンに紐づくサービス",
+    "hubSync": "同期",
+    "desktopMobileEyebrow": "デスクトップとモバイル",
+    "desktopMobileTitle": "どこからでも投資。",
+    "desktopMobileBody": "ウォレット接続、購入またはスワップ、ポートフォリオをリアルタイムで追跡。あらゆる画面で同じスムーズな体験。",
+    "phoneBalance": "OPEN 残高",
+    "phoneToday": "今日",
+    "phonePayWith": "USDC で支払い",
+    "phoneReceive": "OPEN を受け取る"
+  },
+  "content": {
+    "ecosystem": [
+      "openAI Protocol エコシステムの会話型アシスタント。サブスクリプションと利用が収益を生み、トレジャリーと OPEN 買い戻しに資金を提供。",
+      "プロトコル API 経由で提供されるモデル。100 万トークン処理ごとに課金；手数料の一部が OPEN 買い戻しに。",
+      "拡散モデルによる画像生成。クレジット消費がトークン買い戻しフローを推進。",
+      "テキストから動画生成。高計算負荷、レンダリング秒数で課金。",
+      "リアルタイム音声と文字起こし。処理音声分数で計測。",
+      "プロトコルのプログラミング Copilot。シート単位のプランに加え、生成提案ごとの計算消費。"
+    ],
+    "tokenWhy": [
+      {
+        "title": "トレジャリーの実株式",
+        "desc": "OPEN の資本は非公開市場で OpenAI, Inc. の株式購入に充てられます。"
+      },
+      {
+        "title": "永続 Flywheel",
+        "desc": "今日オンチェーンでアクセス。OPI 後もトレジャリーは株式を蓄積し、openAPI と open* サービスの利用ごとに OPEN をバーン。"
+      },
+      {
+        "title": "open* エコシステム収益",
+        "desc": "openChat、openAPI などが手数料を生み出し；30% が OPEN の買い戻しとバーンに。"
+      }
+    ],
+    "steps": [
+      {
+        "title": "ウォレット接続",
+        "desc": "MetaMask、Coinbase、Trust またはモバイルウォレットをワンタップで。"
+      },
+      {
+        "title": "OPEN を購入",
+        "desc": "Base で USDC、ETH、cbBTC — または他ネットワークから。資本はプロトコルトレジャリーに入ります。"
+      },
+      {
+        "title": "投資を追跡",
+        "desc": "価値、配分、動きをリアルタイムで。"
+      }
+    ],
+    "hubMeta": [
+      [
+        "サブスクリプション",
+        "サブスクあたり"
+      ],
+      [
+        "API",
+        "トークンあたり"
+      ],
+      [
+        "画像",
+        "クレジットあたり"
+      ],
+      [
+        "動画",
+        "秒あたり"
+      ],
+      [
+        "音声",
+        "分あたり"
+      ],
+      [
+        "コード",
+        "シートあたり"
+      ]
+    ],
+    "faq": [
+      [
+        "OPEN とは何ですか？私の資本は何に使われますか？",
+        "OPEN は openAI Protocol のオンチェーン経路：ホルダーの資本は OpenAI, Inc. の実株式と open* エコシステムに投資されます。OPEN は openAI Protocol のトレジャリーへの参加を提供し、OpenAI, Inc. の実株式を購入・保管し、open* エコシステムを運営します。今日オンチェーンでアクセス；OPI 後もトレジャリーは株式を蓄積し、openAPI と open* サービスの収益で OPEN を買い戻します。"
+      ],
+      [
+        "OpenAI, Inc. への投資方法は？",
+        "トレジャリーは SPV 経由で OpenAI, Inc. の実株式購入に資本を充てます — OPI 前後を通じて。並行して openChat、openAPI などの open* サービスを運営；手数料の 30% が OPEN の買い戻しとバーンに、残りが株式蓄積を強化。"
+      ],
+      [
+        "OPEN の購入方法は？",
+        "ウォレットを接続し、Base ネットワークで USDC、ETH、WETH、cbBTC で支払い。他ネットワーク（Ethereum、Arbitrum、Solana、Bitcoin など）から資金を送ることも可能で、Base ウォレットで自動的に USDC に変換します。プレセール購入トークンは TGE で claim により受け取り。"
+      ],
+      [
+        "プレセールトークンはいつ受け取れますか？",
+        "TGE 時に、ご自身のウォレットから claim で受け取り。プレセールは公開・オープン、ウォレット上限なし、価格 0.0005 USDC/OPEN、契約上限 1,045,000 USDC；資金は Safe マルチシグで保管。"
+      ],
+      [
+        "上場まで待つ必要がありますか？",
+        "いいえ。プレセールは公開中：今日オンチェーンで OpenAI, Inc. の実株式に投資できます。OPI は市場マイルストーンであり、プロトコルの終わりではありません — OPI でサイクルは終わりません：トレジャリーは OpenAI, Inc. の株式（公開・非公開市場）を買い続け、openChat、openAPI などが利用収益を生み、手数料の 30% が OPEN の買い戻しとバーンに継続的に充てられます。"
+      ],
+      [
+        "OPEN の売却方法とタイミングは？",
+        "TGE で claim により OPEN を受け取り、その時点からオンチェーン流動性あり（供給量の 40% がプール、LP ロック）：ウォレットから ETH、USDC などにスワップ可能。"
+      ],
+      [
+        "OPEN と上場株の購入の違いは？",
+        "OPEN は openAI Protocol のトークン：OpenAI, Inc. の equity を継続的に蓄積するトレジャリーに参加し、オンチェーン流動性と openAPI・open* サービスが資金提供するプログラム的買い戻しがあります。"
+      ],
+      [
+        "OPEN 価格と株式の関係は？",
+        "OPEN は OpenAI, Inc. へのエクスポージャーを持つプロトコルトレジャリーに参加；市場価格は NAV と異なる場合があります。"
+      ],
+      [
+        "トークンの保管者は？",
+        "あなた自身。プロトコルは OPEN を保管しません：購入はご自身のウォレットから署名され、鍵はあなただけが管理。"
+      ],
+      [
+        "手数料は？",
+        "プレセールに独自手数料なし：Base ネットワーク手数料（数セント）を支払い、USDC 以外または他ネットワークから支払う場合は市場変換コスト（確認前に表示）。"
+      ],
+      [
+        "リスクはありますか？",
+        "あらゆる投資と同様、OPEN の価値は上下します。失ってもよい範囲のみ投資してください。OPEN で、OpenAI, Inc. の実株式に投資するトレジャリーに参加 — オンチェーン、流動性あり、OPI 後も flywheel は継続。"
+      ],
+      [
+        "OPI 後はどうなりますか？",
+        "OPI でサイクルは終わりません：トレジャリーは OpenAI, Inc. の株式（公開・非公開市場）を買い続け、openChat、openAPI などが利用収益を生み、手数料の 30% が OPEN の買い戻しとバーンに継続的に充てられます。OPEN はトレジャリーを反映し続けます：より多くの OpenAI, Inc. 株式、より多くのサービス収益、オンチェーンで検証可能な買い戻し。"
+      ]
+    ],
+    "tkSegs": [
+      "公開プレセール",
+      "オンチェーン流動性",
+      "トレジャリー / エコシステム",
+      "マーケティング",
+      "チーム（3 年ロック）",
+      "将来ラウンド（ロック）"
+    ]
+  },
+  "market": {
+    "statMarketCap": "時価総額",
+    "statPresalePrice": "プレセール価格",
+    "statSupply": "総供給量",
+    "statPresaleCap": "プレセール上限",
+    "statAth": "過去最高",
+    "statPresale": "プレセール",
+    "statPresaleValue": "公開・オープン",
+    "readyTitle": "投資の準備はできましたか？",
+    "readyBody": "市場価格で OPEN を購入するか、ウォレットからスワップ。",
+    "swapCta": "スワップ"
+  },
+  "portfolio": {
+    "connectTitle": "ウォレット接続",
+    "connectBody": "接続して Base ネットワークの実残高とオンチェーン履歴を表示。",
+    "myWallet": "マイウォレット",
+    "copyAddressTitle": "アドレスをコピー",
+    "disconnect": "切断",
+    "totalValue": "Base 合計価値",
+    "deposit": "入金",
+    "depositTitle": "Base アドレスで USDC を受け取る",
+    "assetsTitle": "Base の資産",
+    "loadingBalances": "残高読み込み中…",
+    "emptyLine1": "Base にまだ残高がありません。",
+    "emptyLine2": "OPEN を購入するか入金して開始。",
+    "movementsTitle": "取引履歴",
+    "movementsBody": "完全な取引履歴は Base ネットワークエクスプローラーで確認できます。",
+    "viewBasescan": "Basescan で見る",
+    "movementsNote": "OPEN 購入はプレセールコントラクトとのやり取りとして表示されます。"
+  },
+  "swapPage": {
+    "title": "スワップ",
+    "subtitle": "OPEN スワップはトークンがオンチェーン流動性で取引可能になった後に利用できます。",
+    "afterTgeTitle": "TGE 後に利用可能",
+    "afterTgeBody": "OPEN が流動性で上場したら、ここで ETH、USDC などに直接スワップできます。それまではプレセールで OPEN を購入できます。",
+    "buyPresaleCta": "プレセールで OPEN を購入",
+    "payHint": "Base で USDC、ETH、cbBTC で支払い — または他ネットワークから資金を送れます。"
+  },
+  "docsUi": {
+    "backHome": "← ホームに戻る",
+    "ctaTitle": "OPEN を取得する準備はできましたか？",
+    "ctaBody": "Base で USDC、ETH、cbBTC で購入、または他ネットワークから資金を送る。",
+    "viewChart": "チャートを見る"
+  },
+  "walletKind": {
+    "notConnected": "未接続",
+    "baseAccount": "Base アカウント（Face ID）",
+    "extensionOrApp": "ウォレット（拡張機能またはアプリ）",
+    "mobileWallet": "モバイルウォレット（WalletConnect）",
+    "hint": "対応ウォレットで接続（MetaMask、Trust Wallet など）。"
+  },
+  "buy": {
+    "pageTitle": "OPEN を購入",
+    "pageSubtitle": "Base で USDC、ETH、cbBTC で支払い — または他ネットワークから資金を送る。",
+    "sinWalletTitle": "ウォレット接続",
+    "sinWalletSubtitle": "安全なアカウントを作成するか、既存のウォレットを接続。",
+    "walletModalTitle": "ウォレット接続",
+    "walletModalSubtitle": "既存のウォレットを使用するか、数秒で新規作成。",
+    "connectWallet": "ウォレット接続",
+    "connectDesktopHint": "購入は常にご自身のウォレットから署名：他の誰も資金を動かせません。",
+    "walletOptionExtensionSub": "ブラウザ拡張機能",
+    "walletOptionMobileApp": "ウォレットアプリを開く",
+    "walletOptionMobileAppSub": "MetaMask、Trust、Rainbow など",
+    "walletOptionQr": "モバイルで",
+    "walletOptionQrSub": "スマホのウォレットで QR コードをスキャン",
+    "walletOptionCreate": "新しいウォレットを作成",
+    "walletOptionCreateSub": "Face ID または Touch ID — インストール不要",
+    "walletOpeningApp": "ウォレットアプリを開いています…",
+    "walletOpeningQr": "QR コード生成中…",
+    "walletConnecting": "接続中…",
+    "noExtensionHint": "拡張機能を使わない？モバイルウォレットで接続するか新規作成。",
+    "walletConnectEnvHint": "設定：NEXT_PUBLIC_WC_PROJECT_ID が未設定（cloud.reown.com で無料取得）。",
+    "switchChainTitle": "ウォレットを Base ネットワークに切替",
+    "switchChainSubtitle": "この操作は Base（Chain ID 8453）でのみ動作します。",
+    "switchChainCta": "Base に切替",
+    "switchChainRejected": "ネットワーク切替を拒否しました。続行するにはウォレットで手動で Base に切り替えてください。",
+    "confirmInWalletApp": "ウォレットアプリで確認",
+    "confirmInWalletAppHint": "ウォレットを開き、トランザクションに署名してここに戻ってください。状態は自動更新されます。",
+    "useAnotherWallet": "別のウォレットを使用",
+    "sinFondosTitle": "Base の USDC が必要です",
+    "sinFondosSubtitle": "Base ネットワークのウォレットに USDC を入金してプレセールを続行。",
+    "sinFondosPollingHint": "Base で USDC を受け取ると、残高を自動検出します。ページの再読み込みは不要。",
+    "walletAddressLabel": "Base でのアドレス",
+    "checkingBalance": "残高確認中…",
+    "rampManualNetworkWarning": "重要：USDC は Base ネットワーク上である必要があります。他ネットワークへの送金は損失の原因となる場合があります。",
+    "listoTitle": "資金準備完了！",
+    "listoSubtitle": "OPEN 投資に {balance} 利用可能。",
+    "continueCta": "購入に進む",
+    "compraTitle": "OPEN を購入",
+    "compraSubtitle": "支払い通貨を選択。USDC に変換し、ウォレットから OPEN を購入します。",
+    "compraTgeNotice": "プレセール購入トークンは TGE で claim により受け取り。",
+    "compraPayWith": "支払い方法",
+    "compraBalance": "残高",
+    "compraEstimatedOpen": "推定 OPEN",
+    "compraQuoteRefreshing": "見積もりは 30 秒ごとに更新",
+    "compraQuoteExpired": "価格更新中…",
+    "compraQuoteFallback": "現在変換の見積もりができません。USDC で支払うか、数分後に再試行してください。",
+    "compraCapExceeded": "金額がプレセール残枠を超えています。数量を減らしてください。",
+    "compraConvertCta": "購入資金に変換",
+    "compraConvertDone": "変換完了。USDC で OPEN を購入できます。",
+    "compraStepBatch0x": "変換と購入に署名（1 回の署名）",
+    "compraStepConvertApprove": "ステップ 1/2 — 支払いトークンを承認",
+    "compraStepConvertSwap": "ステップ 2/2 — USDC に変換",
+    "compraAmountLabel": "支払い金額",
+    "compraHintNoAmount": "金額を入力して続行。",
+    "compraHintLegal": "購入を有効にするには規約チェックボックスにチェック。",
+    "compraHintQuoteLoading": "変換価格を計算中…",
+    "compraStartCta": "購入開始",
+    "compraRetryCta": "保留中のステップを再試行",
+    "compraDoneTitle": "購入送信完了",
+    "compraDoneSubtitle": "トランザクションが正常に送信されました。TGE で claim により OPEN を受け取ります。",
+    "compraContractMissing": "プレセールコントラクト未設定（NEXT_PUBLIC_PRESALE_CONTRACT）。",
+    "compraStepUsdcApprove": "ステップ 1/2 — USDC を承認",
+    "compraStepUsdcBuy": "ステップ 2/2 — OPEN を購入",
+    "compraStepSwapApprove": "ステップ 1/3 — 変換を承認",
+    "compraStepSwapConvert": "ステップ 2/3 — ETH に変換",
+    "compraStepSwapBuy": "ステップ 3/3 — OPEN を購入",
+    "compraStepBatch": "購入に署名（1 回の署名）",
+    "compraWaitingConfirm": "オンチェーン確認待ち…",
+    "compraUserRejected": "トランザクションを拒否しました。保留中のステップを再試行できます。",
+    "compraBackCta": "戻る",
+    "compraViewTx": "Basescan でトランザクションを見る",
+    "compraInsufficientSell": "この金額に {symbol} が不足しています。",
+    "compraInsufficientUsdc": "この金額に USDC が不足しています。",
+    "compraWrongNetwork": "続行するにはウォレットを Base ネットワークに切り替えてください。",
+    "compraGasInsufficient": "ネットワーク手数料を支払う ETH が不足しています。",
+    "compraBatchFailed": "操作がネットワーク上で完了しませんでした。再試行してください。",
+    "compraGenericError": "操作を完了できませんでした。再試行してください。",
+    "bridgeTabBase": "Base で支払い",
+    "bridgeTabOther": "他ネットワークから",
+    "bridgeTabReceive": "USDC を受け取る",
+    "receiveSubtitle": "他のウォレットまたは取引所から Base ネットワークアドレスに USDC を送金。残高は自動検出。",
+    "receiveCurrentBalance": "Base の USDC 残高",
+    "compraModeChecking": "ウォレット確認中…",
+    "compraModeOneSignature": "1 回の署名ですべて確認します。",
+    "compraModeSteps": "ウォレットで {n} ステップを順に確認します。",
+    "compraMaxCta": "最大",
+    "compraUsdEstimate": "≈ {v} USD",
+    "compraQuoteValidFor": "価格保証 {sec} 秒",
+    "compraDoneViewPortfolio": "ウォレットで見る",
+    "compraDoneBuyMore": "さらに OPEN を購入",
+    "walletConnectedAs": "ウォレット接続済み",
+    "walletChangeCta": "変更",
+    "bridgeExactAmountWarning": "表示された金額を正確に1回のトランザクションで送金してください。異なる金額は操作の遅延や返金の原因となる場合があります。",
+    "bridgeSubtitle": "他ネットワークから資金を送り、Base ウォレットの USDC に変換します。その後通常通り OPEN を購入。",
+    "bridgeOriginLabel": "送信元ネットワーク",
+    "bridgeTokenLabel": "送信トークン",
+    "bridgeAmountLabel": "送信金額",
+    "bridgeEstimatedUsdc": "Base で受け取る USDC",
+    "bridgeFeesLabel": "推定総コスト",
+    "bridgeTimeLabel": "推定時間",
+    "bridgeQuoteExpired": "ブリッジ見積もりの有効期限切れ。送信前に再計算してください。",
+    "bridgeExpiresIn": "見積もりは {sec} 秒で期限切れ",
+    "bridgeSendCta": "{network} から送信",
+    "bridgeGetDepositCta": "入金アドレスを生成",
+    "bridgeDepositAddressLabel": "入金アドレス",
+    "bridgeDepositInstructions": "任意のウォレットまたは取引所からこのアドレスに正確に {amount} {symbol} を送金。異なる金額は操作の遅延や返金の原因となる場合があります。",
+    "bridgeBtcMinHint": "Bitcoin ではネットワーク手数料により少額送金は非現実的です。",
+    "bridgeSwitching": "送信元ネットワークに切替中…",
+    "bridgeAwaitingWallet": "ウォレットでトランザクションを確認…",
+    "bridgeConfirmingOrigin": "送信元ネットワークで確認中…",
+    "bridgeAwaitingDeposit": "入金待ち… このページを開いたままにできます；自動更新されます。",
+    "bridgeInProgress": "ブリッジ進行中… まもなく Base ウォレットに USDC が届きます。",
+    "bridgeDelivered": "Base で USDC を受け取りました。OPEN を購入できます。",
+    "bridgeRefunded": "操作が完了せず、資金は送信元アドレスに返金されました。",
+    "bridgeFailed": "ブリッジが完了しませんでした。資金を送った場合、送信元アドレスに返金されます。",
+    "bridgeRetryCta": "再試行",
+    "bridgeNewCta": "別の送金を開始",
+    "bridgeGoBuyCta": "USDC で OPEN を購入",
+    "bridgeViewDestTx": "Basescan で配信を見る"
+  }
+}

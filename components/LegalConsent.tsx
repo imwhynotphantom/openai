@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { css } from "@/lib/css";
 import { legalUrls } from "@/lib/legal.config";
-import { brandLegal } from "@/lib/brand-legal";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 
 type Props = {
   checked: boolean;
@@ -11,6 +11,7 @@ type Props = {
 };
 
 export function LegalConsent({ checked, onChange }: Props) {
+  const { t } = useI18n();
   return (
     <label
       style={css(
@@ -24,17 +25,17 @@ export function LegalConsent({ checked, onChange }: Props) {
         style={{ marginTop: 3, accentColor: "#0D0D0D", flex: "none" }}
       />
       <span>
-        He leído y acepto los{" "}
+        {t.legal.consentPrefix}{" "}
         <Link href={legalUrls.terms} prefetch style={css("color:#0D0D0D;font-weight:600")}>
-          Términos
+          {t.legal.consentTerms}
         </Link>
-        , la{" "}
+        {t.legal.consentPrivacyJoin}{" "}
         <Link href={legalUrls.privacy} prefetch style={css("color:#0D0D0D;font-weight:600")}>
-          Política de privacidad
+          {t.legal.consentPrivacy}
         </Link>{" "}
-        y la{" "}
+        {t.legal.consentRisksJoin}{" "}
         <Link href={legalUrls.risks} prefetch style={css("color:#0D0D0D;font-weight:600")}>
-          {brandLegal.risksDocTitle}
+          {t.legal.risksDocTitle}
         </Link>
         .
       </span>

@@ -1,0 +1,431 @@
+{
+  "numberLocale": "en-US",
+  "meta": {
+    "title": "openAI Protocol — Invest in real OpenAI, Inc. shares with OPEN",
+    "description": "Invest in real OpenAI, Inc. shares through the OPEN token. Open presale on the Base network: pay with USDC, ETH or cbBTC, non-custodial and with on-chain liquidity."
+  },
+  "nav": {
+    "home": "Home",
+    "market": "Market",
+    "buy": "Buy",
+    "swap": "Swap",
+    "soon": "Soon",
+    "wallet": "Wallet",
+    "mainNavAria": "Main navigation",
+    "connectWallet": "Connect wallet",
+    "language": "Language"
+  },
+  "common": {
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "close": "Close",
+    "copied": "Copied",
+    "copyAddress": "Copy address",
+    "recommended": "Recommended",
+    "calculating": "Calculating…",
+    "live": "LIVE",
+    "liveLower": "live",
+    "changingNetwork": "Switching network…",
+    "walletConnected": "Wallet connected",
+    "walletDisconnected": "Wallet disconnected",
+    "addressCopied": "Address copied",
+    "noConnectionAvailable": "No connection method is available in this browser."
+  },
+  "errorPage": {
+    "title": "Something went wrong",
+    "body": "An unexpected error occurred on this screen. Your funds are not affected: no transaction is signed without your confirmation in the wallet.",
+    "retry": "Retry",
+    "goHome": "Go to home"
+  },
+  "connectErrors": {
+    "generic": "Could not connect wallet. Please try again.",
+    "rejected": "You cancelled the connection. Try again whenever you like.",
+    "alreadyConnected": "A wallet is already connected.",
+    "pendingRequest": "Your wallet already has an open request. Open it and review it.",
+    "noProvider": "We did not detect any wallet extension in this browser.",
+    "chainUnsupported": "Your wallet does not support the Base network. Add it manually or use another wallet."
+  },
+  "legal": {
+    "marketingPitch": "OPEN is the on-chain path of the openAI Protocol: holders' capital is invested in real OpenAI, Inc. shares and in the open* ecosystem.",
+    "affiliationNoticeSoft": "With OPEN you participate in the treasury that invests in real OpenAI, Inc. shares — on-chain, with liquidity and a flywheel that stays active after the IPO.",
+    "affiliationLinkLabel": "Legal transparency",
+    "affiliationDocTitle": "Trademarks and transparency",
+    "risksDocTitle": "Risk information",
+    "microDisclaimer": "OPEN channels capital toward real OpenAI, Inc. shares.",
+    "geoNotice": "Service aimed at permitted jurisdictions. Check that the use of crypto assets is allowed in your country.",
+    "geoEligibility": "Check eligibility",
+    "footerDisclaimer": "openAI Protocol is a decentralized ecosystem. OpenAI, OpenAI, Inc. and related trademarks belong to their respective owners. This website does not constitute an offer of securities or investment advice. Investing involves risks.",
+    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice and openCode are products of the openAI Protocol ecosystem. ChatGPT, DALL·E, Sora, Whisper and Codex are trademarks of OpenAI, Inc.",
+    "suggestedTagline": "Invest in real OpenAI, Inc. shares through the OPEN token.",
+    "suggestedCta": "Buy OPEN",
+    "heroHeadline": "Invest in OPEN. Real OpenAI, Inc. shares.",
+    "heroSubheadline": "Your capital enters the protocol treasury to buy real shares and operate open*. Every use of openAPI and open* services fuels buybacks, burns and more equity — without stopping at the IPO.",
+    "heroBadge": "Open presale · Permanent flywheel",
+    "opiContext": "IPO expected · September 2027 · market milestone; the protocol keeps accumulating shares and buying back OPEN",
+    "postOpiFlywheel": "The IPO does not close the cycle: the treasury keeps buying OpenAI, Inc. shares (public and private market), openChat, openAPI and the rest of the services generate usage revenue, and 30% of those fees are continuously allocated to buy back and burn OPEN.",
+    "equityMicro": "The treasury accumulates real OpenAI, Inc. shares before and after the IPO; open* revenue finances more equity and OPEN buybacks.",
+    "ecosystemTitle": "A token that invests in real shares. The entire open* ecosystem.",
+    "ecosystemLead": "The treasury acquires equity in OpenAI, Inc. and operates openChat, openAPI and the rest of the products. More API and service usage, more revenue, more shares in treasury and more demand for OPEN.",
+    "valueTitle": "Real shares + ecosystem revenue — forever",
+    "valueLead": "The treasury accumulates OpenAI, Inc. shares while open* generates recurring fees. 30% buys back and burns OPEN; the rest strengthens the equity position and ecosystem growth.",
+    "tokenNatureParagraph": "OPEN gives you participation in the openAI Protocol treasury, which buys and holds real OpenAI, Inc. shares and operates the open* ecosystem. Access on-chain today; after the IPO, the treasury keeps accumulating shares and buying back OPEN with revenue from openAPI and open* services.",
+    "tokenNatureLegal": "OPEN participates in the protocol treasury with exposure to OpenAI, Inc.; market price may vary from NAV.",
+    "consentPrefix": "I have read and accept the",
+    "consentTerms": "Terms",
+    "consentPrivacyJoin": ", the",
+    "consentPrivacy": "Privacy Policy",
+    "consentRisksJoin": "and the",
+    "translationNotice": "Automatic translation provided as a courtesy. In case of discrepancy the Spanish version prevails."
+  },
+  "footer": {
+    "colToken": "Token",
+    "colResources": "Resources",
+    "colLegal": "Legal",
+    "whitepaper": "Whitepaper",
+    "tokenomics": "Tokenomics",
+    "documentation": "Documentation",
+    "audit": "Audit",
+    "support": "Support",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "compliance": "Compliance"
+  },
+  "home": {
+    "heroStatPresalePrice": "Presale price",
+    "heroStatCap": "Presale cap",
+    "heroStatSupply": "Total OPEN supply",
+    "heroStatLiquidity": "To liquidity (locked LP)",
+    "swapFromWallet": "Swap from wallet",
+    "trustNoCustody": "● Non-custodial",
+    "trustLiquidity": "● On-chain liquidity",
+    "trustAudited": "● Audited contract",
+    "buyShort": "Buy",
+    "viewChart": "View chart",
+    "nextMilestone": "Next milestone: OpenAI, Inc. IPO",
+    "activityTitle": "Network activity",
+    "activitySubtitle": "· OPEN buys and sells in real time",
+    "activityBought": "bought",
+    "activitySwapped": "swapped",
+    "timeAgoSec": "{n} s ago",
+    "timeAgoMin": "{n} min ago",
+    "tokenomicsEyebrow": "Tokenomics",
+    "tokenomicsTitle": "A supply designed to appreciate.",
+    "tokenomicsBody": "Fixed supply of 21,000,000,000 OPEN, no mint function. The team is locked for 3 years (1-year cliff + 2-year linear vesting) and the treasury finances buybacks and burns with ecosystem usage. Presale OPEN tokens are received at TGE via claim.",
+    "tokenomicsTotal": "Total OPEN",
+    "tokenomicsBurn": "of ecosystem fees are allocated to buy back and burn OPEN",
+    "faqEyebrow": "Frequently asked questions",
+    "faqTitle": "Everything you need to know before investing.",
+    "faqSubtitle": "Still have questions? Write to us and we'll answer before you invest.",
+    "valueAccrualEyebrow": "Value accrual",
+    "valueChips": [
+      "Ecosystem adoption",
+      "Fee revenue",
+      "Programmatic buyback",
+      "Supply reduction"
+    ],
+    "valueChipResult": "Net demand pressure",
+    "valueMechanism": "On-chain mechanism: a fraction of fees is routed to the protocol to buy back and burn OPEN, verifiably reducing circulating supply.",
+    "servicesTitle": "Services linked to the token",
+    "hubSync": "Sync",
+    "desktopMobileEyebrow": "Desktop and mobile",
+    "desktopMobileTitle": "Invest from wherever you are.",
+    "desktopMobileBody": "Connect your wallet, buy or swap and track your portfolio in real time. The same seamless experience on any screen.",
+    "phoneBalance": "OPEN balance",
+    "phoneToday": "today",
+    "phonePayWith": "You pay with USDC",
+    "phoneReceive": "You receive OPEN"
+  },
+  "content": {
+    "ecosystem": [
+      "Conversational assistant of the openAI Protocol ecosystem. Subscriptions and usage generate revenue that feeds the treasury and OPEN buybacks.",
+      "Models served via the protocol API. Every million tokens processed is billed; part of the fee buys back OPEN.",
+      "Image generation by diffusion. Credit-based consumption feeds the token buyback flow.",
+      "Video generation from text. Compute-intensive workloads, billed per rendered second.",
+      "Voice and real-time transcription. Usage measured per minute of processed audio.",
+      "Programming copilot of the protocol. Per-seat plan plus compute consumption per generated suggestion."
+    ],
+    "tokenWhy": [
+      {
+        "title": "Real shares in treasury",
+        "desc": "OPEN capital is allocated to buy OpenAI, Inc. shares in private markets."
+      },
+      {
+        "title": "Permanent flywheel",
+        "desc": "Access on-chain today. After the IPO, the treasury keeps accumulating shares and burning OPEN with every use of openAPI and open* services."
+      },
+      {
+        "title": "open* ecosystem revenue",
+        "desc": "openChat, openAPI and the rest of the products generate fees; 30% buys back and burns OPEN."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Connect your wallet",
+        "desc": "MetaMask, Coinbase, Trust or your mobile wallet in one tap."
+      },
+      {
+        "title": "Buy OPEN",
+        "desc": "With USDC, ETH or cbBTC on Base — or from another network. Your capital enters the protocol treasury."
+      },
+      {
+        "title": "Track your investment",
+        "desc": "Value, allocation and movements in real time."
+      }
+    ],
+    "hubMeta": [
+      [
+        "Subscription",
+        "per subscription"
+      ],
+      [
+        "API",
+        "per token"
+      ],
+      [
+        "Image",
+        "per credit"
+      ],
+      [
+        "Video",
+        "per second"
+      ],
+      [
+        "Voice",
+        "per minute"
+      ],
+      [
+        "Code",
+        "per seat"
+      ]
+    ],
+    "faq": [
+      [
+        "What is OPEN and what does it do with my capital?",
+        "OPEN is the on-chain path of the openAI Protocol: holders' capital is invested in real OpenAI, Inc. shares and in the open* ecosystem. OPEN gives you participation in the openAI Protocol treasury, which buys and holds real OpenAI, Inc. shares and operates the open* ecosystem. Access on-chain today; after the IPO, the treasury keeps accumulating shares and buying back OPEN with revenue from openAPI and open* services."
+      ],
+      [
+        "How is investment in OpenAI, Inc. made?",
+        "The treasury allocates capital to buy real OpenAI, Inc. shares via SPV — before and after the IPO. In parallel it operates openChat, openAPI and the rest of open* services; 30% of their fees buy back and burn OPEN, and the rest strengthens share accumulation."
+      ],
+      [
+        "How do I buy OPEN?",
+        "Connect your wallet and pay with USDC, ETH, WETH or cbBTC on the Base network. You can also bring funds from other networks (Ethereum, Arbitrum, Solana, Bitcoin…) and we convert them to USDC in your Base wallet automatically. Tokens purchased in the presale are received at launch (TGE) via claim."
+      ],
+      [
+        "When do I receive my presale tokens?",
+        "At launch (TGE), via claim from your own wallet. The presale is public and open, with no per-wallet limit, at a price of 0.0005 USDC per OPEN and a maximum cap of 1,045,000 USDC set in the contract; funds are held in a Safe multisig."
+      ],
+      [
+        "Do I have to wait for the IPO to invest?",
+        "No. The presale is open: you invest today on-chain in real OpenAI, Inc. shares. The IPO is a market milestone, not the end of the protocol — The IPO does not close the cycle: the treasury keeps buying OpenAI, Inc. shares (public and private market), openChat, openAPI and the rest of the services generate usage revenue, and 30% of those fees are continuously allocated to buy back and burn OPEN."
+      ],
+      [
+        "How and when can I sell my OPEN?",
+        "At TGE you receive your OPEN via claim and, from that moment, the token has on-chain liquidity (40% of supply in the pool, with locked LP): you can swap it for ETH, USDC or other tokens from your wallet."
+      ],
+      [
+        "How is OPEN different from buying the stock on the market?",
+        "OPEN is the token of the openAI Protocol: you participate in the treasury that continuously accumulates equity in OpenAI, Inc., with on-chain liquidity and programmatic buyback funded by openAPI and open* services."
+      ],
+      [
+        "How is the OPEN price related to the shares?",
+        "OPEN participates in the protocol treasury with exposure to OpenAI, Inc.; market price may vary from NAV."
+      ],
+      [
+        "Who custodies my tokens?",
+        "You do. The protocol does not custody your OPEN: the purchase is signed from your own wallet and only you control the keys."
+      ],
+      [
+        "What fees are there?",
+        "The presale does not add its own fees: you pay the Base network fee (cents) and, if you pay with a token other than USDC or from another network, the market conversion cost, which is shown before confirming."
+      ],
+      [
+        "Is this a risk?",
+        "Like any investment, the value of OPEN can go up or down. Only invest what you can afford. With OPEN you participate in the treasury that invests in real OpenAI, Inc. shares — on-chain, with liquidity and a flywheel that stays active after the IPO."
+      ],
+      [
+        "What happens after the IPO?",
+        "The IPO does not close the cycle: the treasury keeps buying OpenAI, Inc. shares (public and private market), openChat, openAPI and the rest of the services generate usage revenue, and 30% of those fees are continuously allocated to buy back and burn OPEN. OPEN continues to reflect the treasury: more OpenAI, Inc. shares, more service revenue and verifiable on-chain buybacks."
+      ]
+    ],
+    "tkSegs": [
+      "Public presale",
+      "On-chain liquidity",
+      "Treasury / Ecosystem",
+      "Marketing",
+      "Team (locked 3 years)",
+      "Future rounds (locked)"
+    ]
+  },
+  "market": {
+    "statMarketCap": "Market cap",
+    "statPresalePrice": "Presale price",
+    "statSupply": "Total supply",
+    "statPresaleCap": "Presale cap",
+    "statAth": "All-time high",
+    "statPresale": "Presale",
+    "statPresaleValue": "Public and open",
+    "readyTitle": "Ready to invest?",
+    "readyBody": "Buy OPEN at market price or swap it from your wallet.",
+    "swapCta": "Swap"
+  },
+  "portfolio": {
+    "connectTitle": "Connect your wallet",
+    "connectBody": "Connect it to see your real balances on the Base network and your on-chain history.",
+    "myWallet": "My wallet",
+    "copyAddressTitle": "Copy address",
+    "disconnect": "Disconnect",
+    "totalValue": "Total value on Base",
+    "deposit": "Deposit",
+    "depositTitle": "Receive USDC at your Base address",
+    "assetsTitle": "Your assets on Base",
+    "loadingBalances": "Loading balances…",
+    "emptyLine1": "No balance on Base yet.",
+    "emptyLine2": "Buy OPEN or deposit funds to get started.",
+    "movementsTitle": "Activity",
+    "movementsBody": "Your full transaction history is on the Base network explorer.",
+    "viewBasescan": "View on Basescan",
+    "movementsNote": "OPEN purchases appear as interactions with the presale contract."
+  },
+  "swapPage": {
+    "title": "Swap",
+    "subtitle": "OPEN swap will be available when the token trades with on-chain liquidity.",
+    "afterTgeTitle": "Available after TGE",
+    "afterTgeBody": "When OPEN is listed with liquidity, here you can swap it for ETH, USDC and other tokens directly from your wallet. In the meantime you can buy OPEN in the presale.",
+    "buyPresaleCta": "Buy OPEN in presale",
+    "payHint": "You can pay with USDC, ETH or cbBTC on Base — or bring funds from other networks."
+  },
+  "docsUi": {
+    "backHome": "← Back to home",
+    "ctaTitle": "Ready to get OPEN?",
+    "ctaBody": "Buy with USDC, ETH or cbBTC on Base, or bring funds from another network.",
+    "viewChart": "View chart"
+  },
+  "walletKind": {
+    "notConnected": "Not connected",
+    "baseAccount": "Base Account (Face ID)",
+    "extensionOrApp": "Wallet (extension or app)",
+    "mobileWallet": "Mobile wallet (WalletConnect)",
+    "hint": "Connect with a compatible wallet (MetaMask, Trust Wallet, etc.)."
+  },
+  "buy": {
+    "pageTitle": "Buy OPEN",
+    "pageSubtitle": "Pay with USDC, ETH or cbBTC on Base — or bring funds from another network.",
+    "sinWalletTitle": "Connect your wallet",
+    "sinWalletSubtitle": "Create a secure account or connect the wallet you already use.",
+    "walletModalTitle": "Connect wallet",
+    "walletModalSubtitle": "Use the wallet you already have or create a new one in seconds.",
+    "connectWallet": "Connect wallet",
+    "connectDesktopHint": "The purchase is always signed from your own wallet: no one else can move your funds.",
+    "walletOptionExtensionSub": "Browser extension",
+    "walletOptionMobileApp": "Open my wallet app",
+    "walletOptionMobileAppSub": "MetaMask, Trust, Rainbow and others",
+    "walletOptionQr": "With mobile",
+    "walletOptionQrSub": "Scan a QR code with your phone wallet",
+    "walletOptionCreate": "Create a new wallet",
+    "walletOptionCreateSub": "With Face ID or Touch ID — no installation required",
+    "walletOpeningApp": "Opening your wallet app…",
+    "walletOpeningQr": "Generating QR code…",
+    "walletConnecting": "Connecting…",
+    "noExtensionHint": "Don't use an extension? Connect with your mobile wallet or create a new one.",
+    "walletConnectEnvHint": "Config: NEXT_PUBLIC_WC_PROJECT_ID is missing (free at cloud.reown.com).",
+    "switchChainTitle": "Switch your wallet to the Base network",
+    "switchChainSubtitle": "This operation only works on Base (Chain ID 8453).",
+    "switchChainCta": "Switch to Base",
+    "switchChainRejected": "You rejected the network switch. Switch to Base manually in your wallet to continue.",
+    "confirmInWalletApp": "Confirm in your wallet app",
+    "confirmInWalletAppHint": "Open your wallet, sign the transaction and come back here. The status will update automatically.",
+    "useAnotherWallet": "Use another wallet",
+    "sinFondosTitle": "You need USDC on Base",
+    "sinFondosSubtitle": "Deposit USDC in your wallet on the Base network to continue with the presale.",
+    "sinFondosPollingHint": "When you receive USDC on Base, we will detect the balance automatically. No need to reload the page.",
+    "walletAddressLabel": "Your address on Base",
+    "checkingBalance": "Checking balance…",
+    "rampManualNetworkWarning": "Important: USDC must be on the Base network. Sending funds to another network may cause losses.",
+    "listoTitle": "Funds ready!",
+    "listoSubtitle": "You have {balance} available to invest in OPEN.",
+    "continueCta": "Continue to purchase",
+    "compraTitle": "Buy OPEN",
+    "compraSubtitle": "Choose which currency to pay with. We convert to USDC and buy OPEN from your wallet.",
+    "compraTgeNotice": "Tokens purchased in the presale are received at launch (TGE) via claim.",
+    "compraPayWith": "Pay with",
+    "compraBalance": "Balance",
+    "compraEstimatedOpen": "Estimated OPEN",
+    "compraQuoteRefreshing": "Quote refreshes every 30 s",
+    "compraQuoteExpired": "Updating price…",
+    "compraQuoteFallback": "We could not quote the conversion right now. Pay with USDC or try again in a few minutes.",
+    "compraCapExceeded": "The amount exceeds the remaining presale quota. Reduce the amount.",
+    "compraConvertCta": "Convert to purchase funds",
+    "compraConvertDone": "Conversion completed. You can now buy OPEN with your USDC.",
+    "compraStepBatch0x": "Sign conversion and purchase (single signature)",
+    "compraStepConvertApprove": "Step 1/2 — Authorize payment token",
+    "compraStepConvertSwap": "Step 2/2 — Convert to USDC",
+    "compraAmountLabel": "Amount to pay",
+    "compraHintNoAmount": "Enter an amount to continue.",
+    "compraHintLegal": "Check the terms box to enable the purchase.",
+    "compraHintQuoteLoading": "Calculating conversion price…",
+    "compraStartCta": "Start purchase",
+    "compraRetryCta": "Retry pending step",
+    "compraDoneTitle": "Purchase submitted",
+    "compraDoneSubtitle": "Your transaction has been submitted successfully. You will receive your OPEN at launch (TGE) via claim.",
+    "compraContractMissing": "Presale contract not configured (NEXT_PUBLIC_PRESALE_CONTRACT).",
+    "compraStepUsdcApprove": "Step 1/2 — Authorize USDC",
+    "compraStepUsdcBuy": "Step 2/2 — Buy OPEN",
+    "compraStepSwapApprove": "Step 1/3 — Authorize conversion",
+    "compraStepSwapConvert": "Step 2/3 — Convert to ETH",
+    "compraStepSwapBuy": "Step 3/3 — Buy OPEN",
+    "compraStepBatch": "Sign purchase (single signature)",
+    "compraWaitingConfirm": "Waiting for on-chain confirmation…",
+    "compraUserRejected": "You rejected the transaction. You can retry the pending step.",
+    "compraBackCta": "Back",
+    "compraViewTx": "View transaction on Basescan",
+    "compraInsufficientSell": "You do not have enough {symbol} for this amount.",
+    "compraInsufficientUsdc": "You do not have enough USDC for this amount.",
+    "compraWrongNetwork": "Switch your wallet to the Base network to continue.",
+    "compraGasInsufficient": "You do not have enough ETH to pay the network fee.",
+    "compraBatchFailed": "The operation did not complete on the network. Please try again.",
+    "compraGenericError": "Could not complete the operation. Please try again.",
+    "bridgeTabBase": "Pay on Base",
+    "bridgeTabOther": "From another network",
+    "bridgeTabReceive": "Receive USDC",
+    "receiveSubtitle": "Send USDC to your address on the Base network from another wallet or an exchange. The balance is detected automatically.",
+    "receiveCurrentBalance": "Your USDC balance on Base",
+    "compraModeChecking": "Checking your wallet…",
+    "compraModeOneSignature": "You will confirm everything with a single signature in your wallet.",
+    "compraModeSteps": "You will confirm {n} steps in your wallet, one by one.",
+    "compraMaxCta": "MAX",
+    "compraUsdEstimate": "≈ {v} USD",
+    "compraQuoteValidFor": "Price guaranteed {sec} s",
+    "compraDoneViewPortfolio": "View in wallet",
+    "compraDoneBuyMore": "Buy more OPEN",
+    "walletConnectedAs": "Wallet connected",
+    "walletChangeCta": "Change",
+    "bridgeExactAmountWarning": "Send EXACTLY the indicated amount in a single transaction. A different amount may delay the operation or result in a refund.",
+    "bridgeSubtitle": "Send funds from another network and we convert them to USDC in your Base wallet. Then you buy OPEN as usual.",
+    "bridgeOriginLabel": "Origin network",
+    "bridgeTokenLabel": "Token to send",
+    "bridgeAmountLabel": "Amount to send",
+    "bridgeEstimatedUsdc": "USDC you will receive on Base",
+    "bridgeFeesLabel": "Estimated total cost",
+    "bridgeTimeLabel": "Estimated time",
+    "bridgeQuoteExpired": "The bridge quote has expired. Recalculate it before sending.",
+    "bridgeExpiresIn": "Quote expires in {sec} s",
+    "bridgeSendCta": "Send from {network}",
+    "bridgeGetDepositCta": "Generate deposit address",
+    "bridgeDepositAddressLabel": "Deposit address",
+    "bridgeDepositInstructions": "Send exactly {amount} {symbol} to this address from any wallet or exchange. A different amount may delay the operation or result in a refund.",
+    "bridgeBtcMinHint": "With Bitcoin, network fees make small amounts unviable.",
+    "bridgeSwitching": "Switching to origin network…",
+    "bridgeAwaitingWallet": "Confirm the transaction in your wallet…",
+    "bridgeConfirmingOrigin": "Confirming on origin network…",
+    "bridgeAwaitingDeposit": "Waiting for your deposit… You can leave this page open; it will update automatically.",
+    "bridgeInProgress": "Bridge in progress… USDC will arrive in your Base wallet shortly.",
+    "bridgeDelivered": "USDC received on Base. You can now buy OPEN.",
+    "bridgeRefunded": "The operation did not complete and funds were refunded to the origin address.",
+    "bridgeFailed": "The bridge did not complete. If you sent funds, they will be refunded to the origin address.",
+    "bridgeRetryCta": "Try again",
+    "bridgeNewCta": "Start another transfer",
+    "bridgeGoBuyCta": "Buy OPEN with my USDC",
+    "bridgeViewDestTx": "View delivery on Basescan"
+  }
+}

@@ -2,14 +2,15 @@
 
 import Link from "next/link";
 import { css } from "@/lib/css";
-import { brandLegal } from "@/lib/brand-legal";
+import { useI18n } from "@/lib/i18n/LocaleProvider";
 
 export function GeoNotice() {
+  const { t } = useI18n();
   return (
     <p style={css("font:400 11px/1.45 var(--font-mono);color:#A8A8AE;margin:0")}>
-      {brandLegal.geoNotice}{" "}
+      {t.legal.geoNotice}{" "}
       <Link href="/docs/terms#elegibilidad" prefetch style={css("color:#6B6B76;text-decoration:underline")}>
-        Ver elegibilidad
+        {t.legal.geoEligibility}
       </Link>
     </p>
   );

@@ -12,20 +12,22 @@ import { useOpenPrice } from "@/hooks/useOpenPrice";
 import { formatAddress } from "@/lib/wagmi/format-address";
 import { Hov, Logo } from "./ui";
 import { brandLegal } from "@/lib/brand-legal";
-
-const NAV: { href: string; label: string; badge?: string }[] = [
-  { href: "/", label: "Inicio" },
-  { href: "/mercado", label: "Mercado" },
-  { href: "/comprar", label: "Adquirir" },
-  // El swap llega tras el TGE: el badge evita que parezca una función rota.
-  { href: "/swap", label: "Swap", badge: "Pronto" },
-  { href: "/cartera", label: "Cartera" },
-];
+import { useI18n } from "@/lib/i18n/LocaleProvider";
+import { LanguagePicker } from "./LanguagePicker";
 
 const NavLinks = memo(function NavLinks() {
   const pathname = usePathname();
+  const { t } = useI18n();
+  const NAV: { href: string; label: string; badge?: string }[] = [
+    { href: "/", label: t.nav.home },
+    { href: "/mercado", label: t.nav.market },
+    { href: "/comprar", label: t.nav.buy },
+    // El swap llega tras el TGE: el badge evita que parezca una función rota.
+    { href: "/swap", label: t.nav.swap, badge: t.nav.soon },
+    { href: "/cartera", label: t.nav.wallet },
+  ];
   return (
-    <nav data-nav style={css("display:flex;gap:2px")}>
+    <nav data-nav aria-label={t.nav.mainNavAria} style={css("display:flex;gap:2px")}>
       {NAV.map(({ href, label, badge }) => {
         const active = pathname === href;
         return (
@@ -62,6 +64,7 @@ const NavLinks = memo(function NavLinks() {
 
 function PriceChip() {
   const { price, change } = useOpenPrice();
+  const { t } = useI18n();
   const pos = change >= 0;
   const changeStr = (pos ? "+" : "") + change.toFixed(2) + "%";
   const changeColor = pos ? ACCENT : NEG;
@@ -71,7 +74,7 @@ function PriceChip() {
       as={Link}
       href="/mercado"
       prefetch
-      title="Ver mercado de OPEN"
+      title={t.nav.market + " OPEN"}
       data-pricechip
       style="text-decoration:none;display:flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid #ECECEC;border-radius:999px"
       hover="border-color:#0D0D0D"
@@ -87,6 +90,7 @@ function PriceChip() {
 function WalletActions() {
   const pathname = usePathname();
   const app = useApp();
+  const { t } = useI18n();
   const { address, isConnected, isReconnecting } = useAccount();
   const disconnectWallet = useWalletDisconnect();
   const onComprar = pathname === "/comprar";
@@ -112,7 +116,7 @@ function WalletActions() {
         <Hov
           as="button"
           type="button"
-          title="Desconectar wallet"
+          title={t.portfolio.disconnect}
           onClick={disconnectWallet}
           style="appearance:none;cursor:pointer;display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid #ECECEC;background:#fff;border-radius:50%;color:#8A8A94"
           hover="border-color:#D14343;color:#D14343"
@@ -140,7 +144,7 @@ function WalletActions() {
       style="appearance:none;cursor:pointer;background:#0D0D0D;color:#fff;border:none;border-radius:999px;padding:10px 18px;font:600 14px var(--font-hanken);letter-spacing:-0.01em"
       hover="background:#000"
     >
-      Conectar wallet
+      {t.nav.connectWallet}
     </Hov>
   );
 }
@@ -158,6 +162,7 @@ export default function Header() {
 
         <div style={css("display:flex;align-items:center;gap:10px")}>
           <PriceChip />
+          <LanguagePicker />
           <WalletActions />
         </div>
       </div>

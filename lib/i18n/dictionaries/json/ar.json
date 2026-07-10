@@ -1,0 +1,431 @@
+{
+  "numberLocale": "ar-SA",
+  "meta": {
+    "title": "openAI Protocol — استثمر في أسهم OpenAI, Inc. الحقيقية عبر OPEN",
+    "description": "استثمر في أسهم OpenAI, Inc. الحقيقية عبر رمز OPEN. ما قبل البيع مفتوحة على شبكة Base: ادفع بـ USDC أو ETH أو cbBTC، بدون حفظ ومع سيولة on-chain."
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "market": "السوق",
+    "buy": "شراء",
+    "swap": "Swap",
+    "soon": "قريبًا",
+    "wallet": "المحفظة",
+    "mainNavAria": "التنقل الرئيسي",
+    "connectWallet": "ربط wallet",
+    "language": "اللغة"
+  },
+  "common": {
+    "retry": "إعادة المحاولة",
+    "cancel": "إلغاء",
+    "close": "إغلاق",
+    "copied": "تم النسخ",
+    "copyAddress": "نسخ العنوان",
+    "recommended": "موصى به",
+    "calculating": "جارٍ الحساب…",
+    "live": "مباشر",
+    "liveLower": "مباشر",
+    "changingNetwork": "جارٍ تغيير الشبكة…",
+    "walletConnected": "تم ربط wallet",
+    "walletDisconnected": "تم قطع ربط wallet",
+    "addressCopied": "تم نسخ العنوان",
+    "noConnectionAvailable": "لا توجد طريقة اتصال متاحة في هذا المتصفح."
+  },
+  "errorPage": {
+    "title": "حدث خطأ ما",
+    "body": "حدث خطأ غير متوقع في هذه الشاشة. أموالك غير متأثرة: لا تُوقَّع أي عملية دون تأكيدك في wallet.",
+    "retry": "إعادة المحاولة",
+    "goHome": "العودة للرئيسية"
+  },
+  "connectErrors": {
+    "generic": "تعذّر ربط wallet. حاول مرة أخرى.",
+    "rejected": "ألغيت الاتصال. أعد المحاولة عندما تكون جاهزًا.",
+    "alreadyConnected": "يوجد wallet متصل بالفعل.",
+    "pendingRequest": "wallet لديك يحتوي على طلب مفتوح. افتحه وراجعه.",
+    "noProvider": "لم نكتشف أي امتداد wallet في هذا المتصفح.",
+    "chainUnsupported": "wallet لا يدعم شبكة Base. أضفها يدويًا أو استخدم wallet آخر."
+  },
+  "legal": {
+    "marketingPitch": "OPEN هو المسار on-chain لـ openAI Protocol: يُستثمر رأس مال الحاملين في أسهم OpenAI, Inc. الحقيقية وفي نظام open* البيئي.",
+    "affiliationNoticeSoft": "مع OPEN تشارك في الخزينة التي تستثمر في أسهم OpenAI, Inc. الحقيقية — on-chain، مع سيولة وflywheel يظل نشطًا بعد OPI.",
+    "affiliationLinkLabel": "الشفافية القانونية",
+    "affiliationDocTitle": "العلامات التجارية والشفافية",
+    "risksDocTitle": "معلومات المخاطر",
+    "microDisclaimer": "OPEN يوجّه رأس المال نحو أسهم OpenAI, Inc. الحقيقية.",
+    "geoNotice": "الخدمة موجهة للولايات القضائية المسموح بها. تحقق من أن استخدام الأصول المشفرة مسموح في بلدك.",
+    "geoEligibility": "التحقق من الأهلية",
+    "footerDisclaimer": "openAI Protocol نظام بيئي لامركزي. OpenAI وOpenAI, Inc. والعلامات ذات الصلة مملوكة لأصحابها. هذا الموقع لا يشكّل عرض أوراق مالية أو نصيحة استثمارية. الاستثمار ينطوي على مخاطر.",
+    "ecosystemDisclaimer": "openChat وopenAPI وopenImage وopenMotion وopenVoice وopenCode منتجات نظام openAI Protocol البيئي. ChatGPT وDALL·E وSora وWhisper وCodex علامات تجارية لـ OpenAI, Inc.",
+    "suggestedTagline": "استثمر في أسهم OpenAI, Inc. الحقيقية عبر رمز OPEN.",
+    "suggestedCta": "شراء OPEN",
+    "heroHeadline": "استثمر في OPEN. أسهم OpenAI, Inc. الحقيقية.",
+    "heroSubheadline": "يدخل رأس مالك في خزينة البروتوكول لشراء أسهم حقيقية وتشغيل open*. كل استخدام لـ openAPI وخدمات open* يغذي إعادة الشراء والحرق والمزيد من equity — دون توقف عند الاكتتاب.",
+    "heroBadge": "ما قبل بيع مفتوحة · Flywheel دائم",
+    "opiContext": "OPI مخطط لها · سبتمبر 2027 · محطة سوقية؛ يستمر البروتوكول في تجميع الأسهم وإعادة شراء OPEN",
+    "postOpiFlywheel": "OPI لا تغلق الدورة: تستمر الخزينة في شراء أسهم OpenAI, Inc. (السوق العام والخاص)، وopenChat وopenAPI وباقي الخدمات تولّد إيرادات الاستخدام، و30% من هذه العمولات تُخصَّص باستمرار لإعادة شراء OPEN وحرقه.",
+    "equityMicro": "تجمع الخزينة أسهم OpenAI, Inc. الحقيقية قبل وبعد OPI؛ إيرادات open* تمول المزيد من equity وإعادة شراء OPEN.",
+    "ecosystemTitle": "رمز يستثمر في أسهم حقيقية. نظام open* البيئي بالكامل.",
+    "ecosystemLead": "تشتري الخزينة equity من OpenAI, Inc. وتشغّل openChat وopenAPI وباقي المنتجات. المزيد من استخدام API والخدمات يعني المزيد من الإيرادات والمزيد من الأسهم في الخزينة والمزيد من الطلب على OPEN.",
+    "valueTitle": "أسهم حقيقية + إيرادات النظام البيئي — إلى الأبد",
+    "valueLead": "تجمع الخزينة أسهم OpenAI, Inc. بينما يولّد open* عمولات متكررة. 30% تعيد شراء OPEN وتحرقه؛ والباقي يعزز مركز equity ونمو النظام البيئي.",
+    "tokenNatureParagraph": "OPEN يمنحك مشاركة في خزينة openAI Protocol التي تشتري وتحفظ أسهم OpenAI, Inc. الحقيقية وتشغّل نظام open* البيئي. الوصول on-chain اليوم؛ بعد OPI تستمر الخزينة في تجميع الأسهم وإعادة شراء OPEN من إيرادات openAPI وخدمات open*.",
+    "tokenNatureLegal": "OPEN يشارك في خزينة البروتوكول مع تعرض لـ OpenAI, Inc.؛ قد يختلف سعر السوق عن NAV.",
+    "consentPrefix": "قرأتُ وأوافق على",
+    "consentTerms": "الشروط",
+    "consentPrivacyJoin": "،",
+    "consentPrivacy": "سياسة الخصوصية",
+    "consentRisksJoin": "و",
+    "translationNotice": "الترجمة الآلية مقدمة كخدمة مجاملة. في حال وجود أي تعارض، تسود النسخة الإسبانية."
+  },
+  "footer": {
+    "colToken": "الرمز",
+    "colResources": "الموارد",
+    "colLegal": "قانوني",
+    "whitepaper": "Whitepaper",
+    "tokenomics": "Tokenomics",
+    "documentation": "التوثيق",
+    "audit": "التدقيق",
+    "support": "الدعم",
+    "terms": "الشروط",
+    "privacy": "الخصوصية",
+    "compliance": "الامتثال"
+  },
+  "home": {
+    "heroStatPresalePrice": "سعر ما قبل البيع",
+    "heroStatCap": "سقف ما قبل البيع",
+    "heroStatSupply": "إجمالي عرض OPEN",
+    "heroStatLiquidity": "للسيولة (LP مقفل)",
+    "swapFromWallet": "تبديل من wallet",
+    "trustNoCustody": "● بدون حفظ",
+    "trustLiquidity": "● سيولة on-chain",
+    "trustAudited": "● عقد مدقّق",
+    "buyShort": "شراء",
+    "viewChart": "عرض الرسم البياني",
+    "nextMilestone": "المحطة التالية: OPI لـ OpenAI, Inc.",
+    "activityTitle": "نشاط الشبكة",
+    "activitySubtitle": "· شراء وبيع OPEN في الوقت الفعلي",
+    "activityBought": "اشترى",
+    "activitySwapped": "بدّل",
+    "timeAgoSec": "منذ {n} ث",
+    "timeAgoMin": "منذ {n} د",
+    "tokenomicsEyebrow": "Tokenomics",
+    "tokenomicsTitle": "عرض مصمم لزيادة القيمة.",
+    "tokenomicsBody": "عرض ثابت 21,000,000,000 OPEN، بدون وظيفة mint. الفريق مقفل 3 سنوات (cliff سنة + إطلاق خطي سنتان) والخزينة تمول إعادة الشراء والحرق من استخدام النظام البيئي. OPEN ما قبل البيع تُستلم في TGE عبر claim.",
+    "tokenomicsTotal": "OPEN إجمالي",
+    "tokenomicsBurn": "من عمولات النظام البيئي تُخصَّص لإعادة شراء OPEN وحرقه",
+    "faqEyebrow": "الأسئلة الشائعة",
+    "faqTitle": "كل ما تحتاج معرفته قبل الاستثمار.",
+    "faqSubtitle": "هل لديك سؤال؟ راسلنا وسنجيب قبل أن تستثمر.",
+    "valueAccrualEyebrow": "Value accrual",
+    "valueChips": [
+      "اعتماد النظام البيئي",
+      "إيرادات العمولات",
+      "إعادة شراء برمجية",
+      "تقليل العرض"
+    ],
+    "valueChipResult": "ضغط طلب صافٍ",
+    "valueMechanism": "آلية on-chain: جزء من العمولات يُوجَّه للبروتوكول لإعادة شراء OPEN وحرقه، مما يقلّل العرض المتداول بشكل قابل للتحقق.",
+    "servicesTitle": "خدمات مرتبطة بالرمز",
+    "hubSync": "مزامنة",
+    "desktopMobileEyebrow": "سطح المكتب والجوال",
+    "desktopMobileTitle": "استثمر من أي مكان.",
+    "desktopMobileBody": "اربط wallet، اشترِ أو بدّل وتابع محفظتك في الوقت الفعلي. نفس التجربة السلسة على أي شاشة.",
+    "phoneBalance": "رصيد OPEN",
+    "phoneToday": "اليوم",
+    "phonePayWith": "تدفع بـ USDC",
+    "phoneReceive": "تستلم OPEN"
+  },
+  "content": {
+    "ecosystem": [
+      "مساعد محادثة لنظام openAI Protocol البيئي. الاشتراكات والاستهلاك يولّدان إيرادات تغذي الخزينة وإعادة شراء OPEN.",
+      "نماذج تُقدَّم عبر API البروتوكول. كل مليون token معالَج يُفوتر؛ جزء من العمولة يعيد شراء OPEN.",
+      "توليد صور بالانتشار. الاستهلاك بالرصيد يغذي تدفق إعادة شراء الرمز.",
+      "توليد فيديو من نص. أحمال حسابية مكثفة، تُفوتر بالثانية المُعرَضة.",
+      "صوت ونسخ في الوقت الفعلي. الاستخدام يُقاس بدقائق الصوت المعالَج.",
+      "Copilot برمجة protocol. خطة لكل مقعد بالإضافة إلى استهلاك حسابي لكل اقتراح مُولَّد."
+    ],
+    "tokenWhy": [
+      {
+        "title": "أسهم حقيقية في الخزينة",
+        "desc": "يُوجَّه رأس مال OPEN لشراء أسهم OpenAI, Inc. في الأسواق الخاصة."
+      },
+      {
+        "title": "Flywheel دائم",
+        "desc": "الوصول on-chain اليوم. بعد OPI تستمر الخزينة في تجميع الأسهم وحرق OPEN مع كل استخدام لـ openAPI وخدمات open*."
+      },
+      {
+        "title": "إيرادات نظام open* البيئي",
+        "desc": "openChat وopenAPI وباقي المنتجات تولّد عمولات؛ 30% تعيد شراء OPEN وتحرقه."
+      }
+    ],
+    "steps": [
+      {
+        "title": "اربط wallet",
+        "desc": "MetaMask أو Coinbase أو Trust أو wallet جوالك بلمسة واحدة."
+      },
+      {
+        "title": "اشترِ OPEN",
+        "desc": "بـ USDC أو ETH أو cbBTC على Base — أو من شبكة أخرى. يدخل رأس مالك في خزينة البروتوكول."
+      },
+      {
+        "title": "تابع استثمارك",
+        "desc": "القيمة والتخصيص والحركات في الوقت الفعلي."
+      }
+    ],
+    "hubMeta": [
+      [
+        "اشتراك",
+        "لكل اشتراك"
+      ],
+      [
+        "API",
+        "لكل token"
+      ],
+      [
+        "صورة",
+        "لكل رصيد"
+      ],
+      [
+        "فيديو",
+        "لكل ثانية"
+      ],
+      [
+        "صوت",
+        "لكل دقيقة"
+      ],
+      [
+        "كود",
+        "لكل مقعد"
+      ]
+    ],
+    "faq": [
+      [
+        "ما هو OPEN وماذا يفعل برأس مالي؟",
+        "OPEN هو المسار on-chain لـ openAI Protocol: يُستثمر رأس مال الحاملين في أسهم OpenAI, Inc. الحقيقية وفي نظام open* البيئي. OPEN يمنحك مشاركة في خزينة openAI Protocol التي تشتري وتحفظ أسهم OpenAI, Inc. الحقيقية وتشغّل نظام open* البيئي. الوصول on-chain اليوم؛ بعد OPI تستمر الخزينة في تجميع الأسهم وإعادة شراء OPEN من إيرادات openAPI وخدمات open*."
+      ],
+      [
+        "كيف يتم الاستثمار في OpenAI, Inc.؟",
+        "توجّه الخزينة رأس المال لشراء أسهم OpenAI, Inc. الحقيقية عبر SPV — قبل وبعد OPI. بالتوازي تشغّل openChat وopenAPI وباقي خدمات open*؛ 30% من عمولاتها تعيد شراء OPEN وتحرقه، والباقي يعزز تجميع الأسهم."
+      ],
+      [
+        "كيف أشتري OPEN؟",
+        "اربط wallet وادفع بـ USDC أو ETH أو WETH أو cbBTC على شبكة Base. يمكنك أيضًا جلب أموال من شبكات أخرى (Ethereum وArbitrum وSolana وBitcoin…) ونحوّلها تلقائيًا إلى USDC في wallet Base. الرموز المشتراة في ما قبل البيع تُستلم عند الإطلاق (TGE) عبر claim."
+      ],
+      [
+        "متى أستلم رموز ما قبل البيع؟",
+        "عند الإطلاق (TGE)، عبر claim من wallet الخاص بك. ما قبل البيع عامة ومفتوحة، بدون حد لكل wallet، بسعر 0.0005 USDC لكل OPEN وسقف أقصى 1,045,000 USDC مثبّت في العقد؛ الأموال محفوظة في Safe multisig."
+      ],
+      [
+        "هل يجب أن أنتظر الاكتتاب للاستثمار؟",
+        "لا. ما قبل البيع مفتوحة: تستثمر اليوم on-chain في أسهم OpenAI, Inc. الحقيقية. OPI محطة سوقية وليست نهاية البروتوكول — OPI لا تغلق الدورة: تستمر الخزينة في شراء أسهم OpenAI, Inc. (السوق العام والخاص)، وopenChat وopenAPI وباقي الخدمات تولّد إيرادات الاستخدام، و30% من هذه العمولات تُخصَّص باستمرار لإعادة شراء OPEN وحرقه."
+      ],
+      [
+        "كيف ومتى يمكنني بيع OPEN؟",
+        "في TGE تستلم OPEN عبر claim، ومن ذلك الوقت يكون للرمز سيولة on-chain (40% من العرض في pool مع LP مقفل): يمكنك تبديله مقابل ETH أو USDC أو رموز أخرى من wallet."
+      ],
+      [
+        "كيف يختلف OPEN عن شراء السهم في البورصة؟",
+        "OPEN هو رمز openAI Protocol: تشارك في الخزينة التي تجمع equity من OpenAI, Inc. باستمرار، مع سيولة on-chain وإعادة شراء برمجية ممولة من openAPI وخدمات open*."
+      ],
+      [
+        "كيف يرتبط سعر OPEN بالأسهم؟",
+        "OPEN يشارك في خزينة البروتوكول مع تعرض لـ OpenAI, Inc.؛ قد يختلف سعر السوق عن NAV."
+      ],
+      [
+        "من يحفظ رموزي؟",
+        "أنت. البروتوكول لا يحفظ OPEN: الشراء يُوقَّع من wallet الخاص بك وأنت فقط تتحكم بالمفاتيح."
+      ],
+      [
+        "ما هي العمولات؟",
+        "ما قبل البيع لا تضيف عمولات خاصة: تدفع عمولة شبكة Base (بضع سنتات)، وإذا دفعت برمز غير USDC أو من شبكة أخرى، تكلفة تحويل السوق التي تُعرض قبل التأكيد."
+      ],
+      [
+        "هل هذا مخاطرة؟",
+        "كأي استثمار، قد يرتفع أو ينخفض قيمة OPEN. استثمر فقط ما يمكنك تحمل خسارته. مع OPEN تشارك في الخزينة التي تستثمر في أسهم OpenAI, Inc. الحقيقية — on-chain، مع سيولة وflywheel يظل نشطًا بعد OPI."
+      ],
+      [
+        "ماذا يحدث بعد OPI؟",
+        "OPI لا تغلق الدورة: تستمر الخزينة في شراء أسهم OpenAI, Inc. (السوق العام والخاص)، وopenChat وopenAPI وباقي الخدمات تولّد إيرادات الاستخدام، و30% من هذه العمولات تُخصَّص باستمرار لإعادة شراء OPEN وحرقه. OPEN يستمر في عكس الخزينة: المزيد من أسهم OpenAI, Inc.، المزيد من إيرادات الخدمات وإعادة شراء قابلة للتحقق on-chain."
+      ]
+    ],
+    "tkSegs": [
+      "ما قبل بيع عامة",
+      "سيولة on-chain",
+      "الخزينة / النظام البيئي",
+      "التسويق",
+      "الفريق (مقفل 3 سنوات)",
+      "جولات مستقبلية (مقفلة)"
+    ]
+  },
+  "market": {
+    "statMarketCap": "القيمة السوقية",
+    "statPresalePrice": "سعر ما قبل البيع",
+    "statSupply": "إجمالي العرض",
+    "statPresaleCap": "سقف ما قبل البيع",
+    "statAth": "أعلى مستوى تاريخي",
+    "statPresale": "ما قبل البيع",
+    "statPresaleValue": "عامة ومفتوحة",
+    "readyTitle": "هل أنت مستعد للاستثمار؟",
+    "readyBody": "اشترِ OPEN بسعر السوق أو بدّله من wallet.",
+    "swapCta": "تبديل"
+  },
+  "portfolio": {
+    "connectTitle": "اربط wallet",
+    "connectBody": "اربطه لرؤية أرصدتك الحقيقية على شبكة Base وسجل on-chain.",
+    "myWallet": "محفظتي",
+    "copyAddressTitle": "نسخ العنوان",
+    "disconnect": "قطع الاتصال",
+    "totalValue": "القيمة الإجمالية على Base",
+    "deposit": "إيداع",
+    "depositTitle": "استلام USDC على عنوان Base",
+    "assetsTitle": "أصولك على Base",
+    "loadingBalances": "جارٍ تحميل الأرصدة…",
+    "emptyLine1": "لا يوجد رصيد على Base بعد.",
+    "emptyLine2": "اشترِ OPEN أو أودع أموالًا للبدء.",
+    "movementsTitle": "الحركات",
+    "movementsBody": "سجل معاملاتك الكامل في مستكشف شبكة Base.",
+    "viewBasescan": "عرض في Basescan",
+    "movementsNote": "مشتريات OPEN تظهر كتفاعلات مع عقد ما قبل البيع."
+  },
+  "swapPage": {
+    "title": "تبديل",
+    "subtitle": "swap OPEN سيكون متاحًا عندما يتداول الرمز بسيولة on-chain.",
+    "afterTgeTitle": "متاح بعد TGE",
+    "afterTgeBody": "عند إدراج OPEN بسيولة، ستتمكن هنا من تبديله مقابل ETH وUSDC ورموز أخرى مباشرة من wallet. في هذه الأثناء يمكنك شراء OPEN في ما قبل البيع.",
+    "buyPresaleCta": "شراء OPEN في ما قبل البيع",
+    "payHint": "يمكنك الدفع بـ USDC أو ETH أو cbBTC على Base — أو جلب أموال من شبكات أخرى."
+  },
+  "docsUi": {
+    "backHome": "← العودة للرئيسية",
+    "ctaTitle": "هل أنت مستعد للحصول على OPEN؟",
+    "ctaBody": "اشترِ بـ USDC أو ETH أو cbBTC على Base، أو جلب أموال من شبكة أخرى.",
+    "viewChart": "عرض الرسم البياني"
+  },
+  "walletKind": {
+    "notConnected": "غير متصل",
+    "baseAccount": "حساب Base (Face ID)",
+    "extensionOrApp": "Wallet (امتداد أو تطبيق)",
+    "mobileWallet": "Wallet جوال (WalletConnect)",
+    "hint": "اربط wallet متوافق (MetaMask وTrust Wallet وغيرها)."
+  },
+  "buy": {
+    "pageTitle": "شراء OPEN",
+    "pageSubtitle": "ادفع بـ USDC أو ETH أو cbBTC على Base — أو جلب أموال من شبكة أخرى.",
+    "sinWalletTitle": "اربط wallet",
+    "sinWalletSubtitle": "أنشئ حسابًا آمنًا أو اربط wallet الذي تستخدمه.",
+    "walletModalTitle": "ربط wallet",
+    "walletModalSubtitle": "استخدم wallet الحالي أو أنشئ واحدًا جديدًا في ثوانٍ.",
+    "connectWallet": "ربط wallet",
+    "connectDesktopHint": "الشراء يُوقَّع دائمًا من wallet الخاص بك: لا أحد آخر يمكنه تحريك أموالك.",
+    "walletOptionExtensionSub": "امتداد المتصفح",
+    "walletOptionMobileApp": "فتح تطبيق wallet",
+    "walletOptionMobileAppSub": "MetaMask وTrust وRainbow وغيرها",
+    "walletOptionQr": "بالجوال",
+    "walletOptionQrSub": "امسح رمز QR بـ wallet هاتفك",
+    "walletOptionCreate": "إنشاء wallet جديد",
+    "walletOptionCreateSub": "بـ Face ID أو Touch ID — بدون تثبيت",
+    "walletOpeningApp": "جارٍ فتح تطبيق wallet…",
+    "walletOpeningQr": "جارٍ إنشاء رمز QR…",
+    "walletConnecting": "جارٍ الاتصال…",
+    "noExtensionHint": "لا تستخدم امتدادًا؟ اربط wallet الجوال أو أنشئ واحدًا جديدًا.",
+    "walletConnectEnvHint": "الإعداد: NEXT_PUBLIC_WC_PROJECT_ID مفقود (مجاني على cloud.reown.com).",
+    "switchChainTitle": "بدّل wallet إلى شبكة Base",
+    "switchChainSubtitle": "هذه العملية تعمل فقط على Base (Chain ID 8453).",
+    "switchChainCta": "التبديل إلى Base",
+    "switchChainRejected": "رفضت تغيير الشبكة. بدّل يدويًا إلى Base في wallet للمتابعة.",
+    "confirmInWalletApp": "أكّد في تطبيق wallet",
+    "confirmInWalletAppHint": "افتح wallet، وقّع المعاملة وعد هنا. ستُحدَّث الحالة تلقائيًا.",
+    "useAnotherWallet": "استخدام wallet آخر",
+    "sinFondosTitle": "تحتاج USDC على Base",
+    "sinFondosSubtitle": "أودع USDC في wallet على شبكة Base للمتابعة في ما قبل البيع.",
+    "sinFondosPollingHint": "عند استلام USDC على Base، سنكتشف الرصيد تلقائيًا. لا حاجة لإعادة تحميل الصفحة.",
+    "walletAddressLabel": "عنوانك على Base",
+    "checkingBalance": "جارٍ التحقق من الرصيد…",
+    "rampManualNetworkWarning": "مهم: USDC يجب أن يكون على شبكة Base. إرسال أموال إلى شبكة أخرى قد يسبب خسائر.",
+    "listoTitle": "الأموال جاهزة!",
+    "listoSubtitle": "لديك {balance} متاح للاستثمار في OPEN.",
+    "continueCta": "المتابعة للشراء",
+    "compraTitle": "شراء OPEN",
+    "compraSubtitle": "اختر العملة للدفع. نحوّل إلى USDC ونشتري OPEN من wallet.",
+    "compraTgeNotice": "الرموز المشتراة في ما قبل البيع تُستلم عند الإطلاق (TGE) عبر claim.",
+    "compraPayWith": "الدفع بـ",
+    "compraBalance": "الرصيد",
+    "compraEstimatedOpen": "OPEN المقدّر",
+    "compraQuoteRefreshing": "تُحدَّث الأسعار كل 30 ث",
+    "compraQuoteExpired": "جارٍ تحديث السعر…",
+    "compraQuoteFallback": "تعذّر تسعير التحويل الآن. ادفع بـ USDC أو حاول بعد دقائق.",
+    "compraCapExceeded": "المبلغ يتجاوز حصة ما قبل البيع المتبقية. قلّل الكمية.",
+    "compraConvertCta": "تحويل إلى أموال شراء",
+    "compraConvertDone": "اكتمل التحويل. يمكنك الآن شراء OPEN بـ USDC.",
+    "compraStepBatch0x": "توقيع التحويل والشراء (توقيع واحد)",
+    "compraStepConvertApprove": "الخطوة 1/2 — تفويض token الدفع",
+    "compraStepConvertSwap": "الخطوة 2/2 — تحويل إلى USDC",
+    "compraAmountLabel": "المبلغ للدفع",
+    "compraHintNoAmount": "أدخل مبلغًا للمتابعة.",
+    "compraHintLegal": "حدّد خانة الشروط لتفعيل الشراء.",
+    "compraHintQuoteLoading": "جارٍ حساب سعر التحويل…",
+    "compraStartCta": "بدء الشراء",
+    "compraRetryCta": "إعادة الخطوة المعلقة",
+    "compraDoneTitle": "تم إرسال الشراء",
+    "compraDoneSubtitle": "أُرسلت معاملتك بنجاح. ستستلم OPEN عند الإطلاق (TGE) عبر claim.",
+    "compraContractMissing": "عقد ما قبل البيع غير مُعد (NEXT_PUBLIC_PRESALE_CONTRACT).",
+    "compraStepUsdcApprove": "الخطوة 1/2 — تفويض USDC",
+    "compraStepUsdcBuy": "الخطوة 2/2 — شراء OPEN",
+    "compraStepSwapApprove": "الخطوة 1/3 — تفويض التحويل",
+    "compraStepSwapConvert": "الخطوة 2/3 — تحويل إلى ETH",
+    "compraStepSwapBuy": "الخطوة 3/3 — شراء OPEN",
+    "compraStepBatch": "توقيع الشراء (توقيع واحد)",
+    "compraWaitingConfirm": "في انتظار تأكيد on-chain…",
+    "compraUserRejected": "رفضت المعاملة. يمكنك إعادة الخطوة المعلقة.",
+    "compraBackCta": "رجوع",
+    "compraViewTx": "عرض المعاملة في Basescan",
+    "compraInsufficientSell": "لا يوجد {symbol} كافٍ لهذا المبلغ.",
+    "compraInsufficientUsdc": "لا يوجد USDC كافٍ لهذا المبلغ.",
+    "compraWrongNetwork": "بدّل wallet إلى شبكة Base للمتابعة.",
+    "compraGasInsufficient": "لا يوجد ETH كافٍ لدفع عمولة الشبكة.",
+    "compraBatchFailed": "لم تكتمل العملية على الشبكة. حاول مرة أخرى.",
+    "compraGenericError": "تعذّر إكمال العملية. حاول مرة أخرى.",
+    "bridgeTabBase": "الدفع على Base",
+    "bridgeTabOther": "من شبكة أخرى",
+    "bridgeTabReceive": "استلام USDC",
+    "receiveSubtitle": "أرسل USDC إلى عنوانك على شبكة Base من wallet أو بورصة أخرى. يُكتشف الرصيد تلقائيًا.",
+    "receiveCurrentBalance": "رصيد USDC على Base",
+    "compraModeChecking": "جارٍ التحقق من wallet…",
+    "compraModeOneSignature": "ستؤكّد كل شيء بتوقيع واحد في wallet.",
+    "compraModeSteps": "ستؤكّد {n} خطوات في wallet، واحدة تلو الأخرى.",
+    "compraMaxCta": "الحد الأقصى",
+    "compraUsdEstimate": "≈ {v} USD",
+    "compraQuoteValidFor": "السعر مضمون {sec} ث",
+    "compraDoneViewPortfolio": "عرض في المحفظة",
+    "compraDoneBuyMore": "شراء المزيد من OPEN",
+    "walletConnectedAs": "wallet متصل",
+    "walletChangeCta": "تغيير",
+    "bridgeExactAmountWarning": "أرسل المبلغ المحدد بالضبط في معاملة واحدة. مبلغ مختلف قد يؤخر العملية أو يؤدي لاسترداد.",
+    "bridgeSubtitle": "أرسل أموالًا من شبكة أخرى ونحوّلها إلى USDC في wallet Base. ثم تشتري OPEN كالمعتاد.",
+    "bridgeOriginLabel": "الشبكة المصدر",
+    "bridgeTokenLabel": "الرمز للإرسال",
+    "bridgeAmountLabel": "المبلغ للإرسال",
+    "bridgeEstimatedUsdc": "USDC الذي ستستلمه على Base",
+    "bridgeFeesLabel": "التكلفة الإجمالية المقدّرة",
+    "bridgeTimeLabel": "الوقت المقدّر",
+    "bridgeQuoteExpired": "انتهت صلاحية عرض الجسر. أعد الحساب قبل الإرسال.",
+    "bridgeExpiresIn": "ينتهي العرض خلال {sec} ث",
+    "bridgeSendCta": "إرسال من {network}",
+    "bridgeGetDepositCta": "إنشاء عنوان إيداع",
+    "bridgeDepositAddressLabel": "عنوان الإيداع",
+    "bridgeDepositInstructions": "أرسل بالضبط {amount} {symbol} إلى هذا العنوان من أي wallet أو بورصة. مبلغ مختلف قد يؤخر العملية أو يؤدي لاسترداد.",
+    "bridgeBtcMinHint": "مع Bitcoin، عمولات الشبكة تجعل المبالغ الصغيرة غير مجدية.",
+    "bridgeSwitching": "جارٍ التبديل إلى الشبكة المصدر…",
+    "bridgeAwaitingWallet": "أكّد المعاملة في wallet…",
+    "bridgeConfirmingOrigin": "جارٍ التأكيد على الشبكة المصدر…",
+    "bridgeAwaitingDeposit": "في انتظار إيداعك… يمكنك ترك هذه الصفحة مفتوحة؛ ستُحدَّث تلقائيًا.",
+    "bridgeInProgress": "الجسر قيد التنفيذ… سيصل USDC إلى wallet Base قريبًا.",
+    "bridgeDelivered": "تم استلام USDC على Base. يمكنك الآن شراء OPEN.",
+    "bridgeRefunded": "لم تكتمل العملية وتم استرداد الأموال إلى العنوان المصدر.",
+    "bridgeFailed": "لم يكتمل الجسر. إذا أرسلت أموالًا، ستُسترد إلى العنوان المصدر.",
+    "bridgeRetryCta": "إعادة المحاولة",
+    "bridgeNewCta": "بدء إرسال آخر",
+    "bridgeGoBuyCta": "شراء OPEN بـ USDC",
+    "bridgeViewDestTx": "عرض التسليم في Basescan"
+  }
+}

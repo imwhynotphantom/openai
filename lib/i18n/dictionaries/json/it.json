@@ -1,0 +1,431 @@
+{
+  "numberLocale": "it-IT",
+  "meta": {
+    "title": "openAI Protocol — Investi in azioni reali di OpenAI, Inc. con OPEN",
+    "description": "Investi in azioni reali di OpenAI, Inc. tramite il token OPEN. Prevendita aperta sulla rete Base: paga con USDC, ETH o cbBTC, senza custodia e con liquidità on-chain."
+  },
+  "nav": {
+    "home": "Home",
+    "market": "Mercato",
+    "buy": "Acquista",
+    "swap": "Swap",
+    "soon": "Presto",
+    "wallet": "Portafoglio",
+    "mainNavAria": "Navigazione principale",
+    "connectWallet": "Connetti wallet",
+    "language": "Lingua"
+  },
+  "common": {
+    "retry": "Riprova",
+    "cancel": "Annulla",
+    "close": "Chiudi",
+    "copied": "Copiato",
+    "copyAddress": "Copia indirizzo",
+    "recommended": "Consigliato",
+    "calculating": "Calcolo in corso…",
+    "live": "IN DIRETTA",
+    "liveLower": "in diretta",
+    "changingNetwork": "Cambio rete in corso…",
+    "walletConnected": "Wallet connessa",
+    "walletDisconnected": "Wallet disconnessa",
+    "addressCopied": "Indirizzo copiato",
+    "noConnectionAvailable": "Nessun metodo di connessione disponibile in questo browser."
+  },
+  "errorPage": {
+    "title": "Qualcosa è andato storto",
+    "body": "Si è verificato un errore imprevisto in questa schermata. I tuoi fondi non sono interessati: nessuna operazione viene firmata senza la tua conferma nella wallet.",
+    "retry": "Riprova",
+    "goHome": "Vai alla home"
+  },
+  "connectErrors": {
+    "generic": "Impossibile connettere la wallet. Riprova.",
+    "rejected": "Hai annullato la connessione. Riprova quando vuoi.",
+    "alreadyConnected": "C'è già una wallet connessa.",
+    "pendingRequest": "La tua wallet ha già una richiesta aperta. Aprila e controllala.",
+    "noProvider": "Non abbiamo rilevato alcuna estensione wallet in questo browser.",
+    "chainUnsupported": "La tua wallet non supporta la rete Base. Aggiungila manualmente o usa un'altra wallet."
+  },
+  "legal": {
+    "marketingPitch": "OPEN è la via on-chain del openAI Protocol: il capitale degli holder viene investito in azioni reali di OpenAI, Inc. e nell'ecosistema open*.",
+    "affiliationNoticeSoft": "Con OPEN partecipi al tesoro che investe in azioni reali di OpenAI, Inc. — on-chain, con liquidità e un flywheel che resta attivo dopo l'OPI.",
+    "affiliationLinkLabel": "Trasparenza legale",
+    "affiliationDocTitle": "Marchi e trasparenza",
+    "risksDocTitle": "Informazioni sui rischi",
+    "microDisclaimer": "OPEN canalizza capitale verso azioni reali di OpenAI, Inc.",
+    "geoNotice": "Servizio rivolto a giurisdizioni consentite. Verifica che l'uso di criptoasset sia consentito nel tuo paese.",
+    "geoEligibility": "Verifica idoneità",
+    "footerDisclaimer": "openAI Protocol è un ecosistema decentralizzato. OpenAI, OpenAI, Inc. e i marchi correlati appartengono ai rispettivi titolari. Questo sito non costituisce un'offerta di titoli né consulenza in materia di investimenti. Investire comporta rischi.",
+    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice e openCode sono prodotti dell'ecosistema openAI Protocol. ChatGPT, DALL·E, Sora, Whisper e Codex sono marchi di OpenAI, Inc.",
+    "suggestedTagline": "Investi in azioni reali di OpenAI, Inc. tramite il token OPEN.",
+    "suggestedCta": "Acquista OPEN",
+    "heroHeadline": "Investi in OPEN. Azioni reali di OpenAI, Inc.",
+    "heroSubheadline": "Il tuo capitale entra nel tesoro del protocollo per acquistare azioni reali e gestire open*. Ogni utilizzo di openAPI e dei servizi open* alimenta riacquisti, burn e più equity — senza fermarsi alla quotazione in borsa.",
+    "heroBadge": "Prevendita aperta · Flywheel permanente",
+    "opiContext": "OPI prevista · settembre 2027 · traguardo di mercato; il protocollo continua ad accumulare azioni e a riacquistare OPEN",
+    "postOpiFlywheel": "L'OPI non chiude il ciclo: il tesoro continua ad acquistare azioni di OpenAI, Inc. (mercato pubblico e privato), openChat, openAPI e gli altri servizi generano ricavi per utilizzo, e il 30% di quelle commissioni è destinato in modo continuo a riacquistare e bruciare OPEN.",
+    "equityMicro": "Il tesoro accumula azioni reali di OpenAI, Inc. prima e dopo l'OPI; i ricavi di open* finanziano più equity e riacquisto di OPEN.",
+    "ecosystemTitle": "Un token che investe in azioni reali. L'intero ecosistema open*.",
+    "ecosystemLead": "Il tesoro acquisisce equity di OpenAI, Inc. e gestisce openChat, openAPI e gli altri prodotti. Più utilizzo dell'API e dei servizi, più ricavi, più azioni in tesoro e più domanda su OPEN.",
+    "valueTitle": "Azioni reali + ricavi dell'ecosistema — per sempre",
+    "valueLead": "Il tesoro accumula azioni di OpenAI, Inc. mentre open* genera commissioni ricorrenti. Il 30% riacquista e brucia OPEN; il resto rafforza la posizione in azioni e la crescita dell'ecosistema.",
+    "tokenNatureParagraph": "OPEN ti dà partecipazione al tesoro del openAI Protocol, che acquista e custodisce azioni reali di OpenAI, Inc. e gestisce l'ecosistema open*. Accedi on-chain oggi; dopo l'OPI, il tesoro continua ad accumulare azioni e a riacquistare OPEN con i ricavi di openAPI e dei servizi open*.",
+    "tokenNatureLegal": "OPEN partecipa al tesoro del protocollo con esposizione a OpenAI, Inc.; il prezzo di mercato può variare rispetto al NAV.",
+    "consentPrefix": "Ho letto e accetto i",
+    "consentTerms": "Termini",
+    "consentPrivacyJoin": ", l'",
+    "consentPrivacy": "Informativa sulla privacy",
+    "consentRisksJoin": "e le",
+    "translationNotice": "Traduzione automatica offerta come cortesia. In caso di discrepanza prevale la versione in spagnolo."
+  },
+  "footer": {
+    "colToken": "Token",
+    "colResources": "Risorse",
+    "colLegal": "Legale",
+    "whitepaper": "Whitepaper",
+    "tokenomics": "Tokenomics",
+    "documentation": "Documentazione",
+    "audit": "Audit",
+    "support": "Supporto",
+    "terms": "Termini",
+    "privacy": "Privacy",
+    "compliance": "Conformità"
+  },
+  "home": {
+    "heroStatPresalePrice": "Prezzo di prevendita",
+    "heroStatCap": "Cap della prevendita",
+    "heroStatSupply": "Offerta totale OPEN",
+    "heroStatLiquidity": "A liquidità (LP bloccato)",
+    "swapFromWallet": "Scambia dalla wallet",
+    "trustNoCustody": "● Senza custodia",
+    "trustLiquidity": "● Liquidità on-chain",
+    "trustAudited": "● Contratto verificato",
+    "buyShort": "Acquista",
+    "viewChart": "Vedi grafico",
+    "nextMilestone": "Prossimo traguardo: OPI di OpenAI, Inc.",
+    "activityTitle": "Attività della rete",
+    "activitySubtitle": "· acquisti e vendite di OPEN in tempo reale",
+    "activityBought": "ha acquistato",
+    "activitySwapped": "ha scambiato",
+    "timeAgoSec": "{n} s fa",
+    "timeAgoMin": "{n} min fa",
+    "tokenomicsEyebrow": "Tokenomics",
+    "tokenomicsTitle": "Un'offerta pensata per rivalutarsi.",
+    "tokenomicsBody": "Offerta fissa di 21.000.000.000 OPEN, senza funzione mint. Il team resta bloccato per 3 anni (cliff di 1 anno + rilascio lineare di 2 anni) e il tesoro finanzia riacquisti e burn con l'utilizzo dell'ecosistema. Gli OPEN di prevendita si ricevono al TGE tramite claim.",
+    "tokenomicsTotal": "OPEN totali",
+    "tokenomicsBurn": "delle commissioni dell'ecosistema sono destinate a riacquistare e bruciare OPEN",
+    "faqEyebrow": "Domande frequenti",
+    "faqTitle": "Tutto ciò che devi sapere prima di investire.",
+    "faqSubtitle": "Hai ancora dubbi? Scrivici e ti risponderemo prima che investa.",
+    "valueAccrualEyebrow": "Value accrual",
+    "valueChips": [
+      "Adozione dell'ecosistema",
+      "Ricavi da commissioni",
+      "Riacquisto programmatico",
+      "Riduzione dell'offerta"
+    ],
+    "valueChipResult": "Pressione di domanda netta",
+    "valueMechanism": "Meccanismo on-chain: una frazione delle commissioni viene indirizzata al protocollo per riacquistare e bruciare OPEN, riducendo in modo verificabile l'offerta circolante.",
+    "servicesTitle": "Servizi collegati al token",
+    "hubSync": "Sincronizza",
+    "desktopMobileEyebrow": "Desktop e mobile",
+    "desktopMobileTitle": "Investi da dove sei.",
+    "desktopMobileBody": "Connetti la tua wallet, acquista o scambia e segui il tuo portafoglio in tempo reale. La stessa esperienza fluida su qualsiasi schermo.",
+    "phoneBalance": "Saldo OPEN",
+    "phoneToday": "oggi",
+    "phonePayWith": "Paghi con USDC",
+    "phoneReceive": "Ricevi OPEN"
+  },
+  "content": {
+    "ecosystem": [
+      "Assistente conversazionale dell'ecosistema openAI Protocol. Abbonamenti e consumo generano ricavi che alimentano il tesoro e il riacquisto di OPEN.",
+      "Modelli serviti tramite API del protocollo. Ogni milione di token elaborati viene fatturato; parte della commissione riacquista OPEN.",
+      "Generazione di immagini per diffusione. Il consumo per credito alimenta il flusso di riacquisto del token.",
+      "Generazione video da testo. Carichi computazionali intensivi, fatturati al secondo renderizzato.",
+      "Voce e trascrizione in tempo reale. Utilizzo misurato al minuto di audio elaborato.",
+      "Copilota di programmazione del protocollo. Piano per postazione più consumo computazionale per suggerimento generato."
+    ],
+    "tokenWhy": [
+      {
+        "title": "Azioni reali in tesoro",
+        "desc": "Il capitale di OPEN è destinato all'acquisto di azioni di OpenAI, Inc. sui mercati privati."
+      },
+      {
+        "title": "Flywheel permanente",
+        "desc": "Accedi on-chain oggi. Dopo l'OPI, il tesoro continua ad accumulare azioni e a bruciare OPEN con ogni utilizzo di openAPI e dei servizi open*."
+      },
+      {
+        "title": "Ricavi dell'ecosistema open*",
+        "desc": "openChat, openAPI e gli altri prodotti generano commissioni; il 30% riacquista e brucia OPEN."
+      }
+    ],
+    "steps": [
+      {
+        "title": "Connetti la tua wallet",
+        "desc": "MetaMask, Coinbase, Trust o la wallet del tuo smartphone con un tocco."
+      },
+      {
+        "title": "Acquista OPEN",
+        "desc": "Con USDC, ETH o cbBTC su Base — o da un'altra rete. Il tuo capitale entra nel tesoro del protocollo."
+      },
+      {
+        "title": "Segui il tuo investimento",
+        "desc": "Valore, allocazione e movimenti in tempo reale."
+      }
+    ],
+    "hubMeta": [
+      [
+        "Abbonamento",
+        "per abbonamento"
+      ],
+      [
+        "API",
+        "per token"
+      ],
+      [
+        "Immagine",
+        "per credito"
+      ],
+      [
+        "Video",
+        "per secondo"
+      ],
+      [
+        "Voce",
+        "per minuto"
+      ],
+      [
+        "Codice",
+        "per postazione"
+      ]
+    ],
+    "faq": [
+      [
+        "Cos'è OPEN e cosa fa con il mio capitale?",
+        "OPEN è la via on-chain del openAI Protocol: il capitale degli holder viene investito in azioni reali di OpenAI, Inc. e nell'ecosistema open*. OPEN ti dà partecipazione al tesoro del openAI Protocol, che acquista e custodisce azioni reali di OpenAI, Inc. e gestisce l'ecosistema open*. Accedi on-chain oggi; dopo l'OPI, il tesoro continua ad accumulare azioni e a riacquistare OPEN con i ricavi di openAPI e dei servizi open*."
+      ],
+      [
+        "Come si investe in OpenAI, Inc.?",
+        "Il tesoro destina il capitale all'acquisto di azioni reali di OpenAI, Inc. tramite SPV — prima e dopo l'OPI. Parallelamente gestisce openChat, openAPI e gli altri servizi open*; il 30% delle loro commissioni riacquista e brucia OPEN, e il resto rafforza l'accumulo di azioni."
+      ],
+      [
+        "Come acquisto OPEN?",
+        "Connetti la tua wallet e paga con USDC, ETH, WETH o cbBTC sulla rete Base. Puoi anche portare fondi da altre reti (Ethereum, Arbitrum, Solana, Bitcoin…) e li convertiamo in USDC nella tua wallet Base automaticamente. I token acquistati in prevendita si ricevono al momento del lancio (TGE) tramite claim."
+      ],
+      [
+        "Quando ricevo i miei token di prevendita?",
+        "Al momento del lancio (TGE), tramite claim dalla tua wallet. La prevendita è pubblica e aperta, senza limite per wallet, con prezzo di 0,0005 USDC per OPEN e un cap massimo di 1.045.000 USDC fissato nel contratto; i fondi sono custoditi in una Safe multisig."
+      ],
+      [
+        "Devo aspettare la quotazione in borsa per investire?",
+        "No. La prevendita è aperta: investi oggi on-chain in azioni reali di OpenAI, Inc. L'OPI è un traguardo di mercato, non la fine del protocollo — L'OPI non chiude il ciclo: il tesoro continua ad acquistare azioni di OpenAI, Inc. (mercato pubblico e privato), openChat, openAPI e gli altri servizi generano ricavi per utilizzo, e il 30% di quelle commissioni è destinato in modo continuo a riacquistare e bruciare OPEN."
+      ],
+      [
+        "Come e quando posso vendere i miei OPEN?",
+        "Al TGE ricevi i tuoi OPEN tramite claim e, da quel momento, il token ha liquidità on-chain (40% dell'offerta nel pool, con LP bloccato): potrai scambiarlo per ETH, USDC o altri token dalla tua wallet."
+      ],
+      [
+        "In cosa si differenzia OPEN dall'acquisto dell'azione in borsa?",
+        "OPEN è il token del openAI Protocol: partecipi al tesoro che accumula equity di OpenAI, Inc. in modo continuo, con liquidità on-chain e riacquisto programmatico finanziato da openAPI e dai servizi open*."
+      ],
+      [
+        "Come si relaziona il prezzo di OPEN alle azioni?",
+        "OPEN partecipa al tesoro del protocollo con esposizione a OpenAI, Inc.; il prezzo di mercato può variare rispetto al NAV."
+      ],
+      [
+        "Chi custodisce i miei token?",
+        "Tu. Il protocollo non custodisce i tuoi OPEN: l'acquisto viene firmato dalla tua wallet e solo tu controlli le chiavi."
+      ],
+      [
+        "Quali commissioni ci sono?",
+        "La prevendita non aggiunge commissioni proprie: paghi la commissione di rete di Base (pochi centesimi) e, se paghi con un token diverso da USDC o da un'altra rete, il costo di conversione di mercato, mostrato prima di confermare."
+      ],
+      [
+        "È un rischio?",
+        "Come qualsiasi investimento, il valore di OPEN può salire o scendere. Investi solo ciò che puoi permetterti. Con OPEN partecipi al tesoro che investe in azioni reali di OpenAI, Inc. — on-chain, con liquidità e un flywheel che resta attivo dopo l'OPI."
+      ],
+      [
+        "Cosa succede dopo l'OPI?",
+        "L'OPI non chiude il ciclo: il tesoro continua ad acquistare azioni di OpenAI, Inc. (mercato pubblico e privato), openChat, openAPI e gli altri servizi generano ricavi per utilizzo, e il 30% di quelle commissioni è destinato in modo continuo a riacquistare e bruciare OPEN. OPEN continua a riflettere il tesoro: più azioni di OpenAI, Inc., più ricavi dai servizi e riacquisti verificabili on-chain."
+      ]
+    ],
+    "tkSegs": [
+      "Prevendita pubblica",
+      "Liquidità on-chain",
+      "Tesoro / Ecosistema",
+      "Marketing",
+      "Team (bloccato 3 anni)",
+      "Round futuri (bloccati)"
+    ]
+  },
+  "market": {
+    "statMarketCap": "Cap. di mercato",
+    "statPresalePrice": "Prezzo di prevendita",
+    "statSupply": "Offerta totale",
+    "statPresaleCap": "Cap della prevendita",
+    "statAth": "Massimo storico",
+    "statPresale": "Prevendita",
+    "statPresaleValue": "Pubblica e aperta",
+    "readyTitle": "Pronto a investire?",
+    "readyBody": "Acquista OPEN al prezzo di mercato o scambialo dalla tua wallet.",
+    "swapCta": "Scambia"
+  },
+  "portfolio": {
+    "connectTitle": "Connetti la tua wallet",
+    "connectBody": "Connettila per vedere i tuoi saldi reali sulla rete Base e la tua cronologia on-chain.",
+    "myWallet": "Il mio portafoglio",
+    "copyAddressTitle": "Copia indirizzo",
+    "disconnect": "Disconnetti",
+    "totalValue": "Valore totale su Base",
+    "deposit": "Deposita",
+    "depositTitle": "Ricevi USDC al tuo indirizzo Base",
+    "assetsTitle": "I tuoi asset su Base",
+    "loadingBalances": "Caricamento saldi…",
+    "emptyLine1": "Nessun saldo su Base ancora.",
+    "emptyLine2": "Acquista OPEN o deposita fondi per iniziare.",
+    "movementsTitle": "Movimenti",
+    "movementsBody": "La tua cronologia completa delle transazioni è nell'esploratore della rete Base.",
+    "viewBasescan": "Vedi su Basescan",
+    "movementsNote": "Gli acquisti di OPEN compaiono come interazioni con il contratto di prevendita."
+  },
+  "swapPage": {
+    "title": "Scambia",
+    "subtitle": "Lo swap di OPEN sarà disponibile quando il token sarà quotato con liquidità on-chain.",
+    "afterTgeTitle": "Disponibile dopo il TGE",
+    "afterTgeBody": "Quando OPEN sarà quotato con liquidità, qui potrai scambiarlo per ETH, USDC e altri token direttamente dalla tua wallet. Nel frattempo puoi acquistare OPEN in prevendita.",
+    "buyPresaleCta": "Acquista OPEN in prevendita",
+    "payHint": "Puoi pagare con USDC, ETH o cbBTC su Base — o portare fondi da altre reti."
+  },
+  "docsUi": {
+    "backHome": "← Torna alla home",
+    "ctaTitle": "Pronto a ottenere OPEN?",
+    "ctaBody": "Acquista con USDC, ETH o cbBTC su Base, o porta fondi da un'altra rete.",
+    "viewChart": "Vedi grafico"
+  },
+  "walletKind": {
+    "notConnected": "Non connessa",
+    "baseAccount": "Account Base (Face ID)",
+    "extensionOrApp": "Wallet (estensione o app)",
+    "mobileWallet": "Wallet mobile (WalletConnect)",
+    "hint": "Connetti con una wallet compatibile (MetaMask, Trust Wallet, ecc.)."
+  },
+  "buy": {
+    "pageTitle": "Acquista OPEN",
+    "pageSubtitle": "Paga con USDC, ETH o cbBTC su Base — o porta fondi da un'altra rete.",
+    "sinWalletTitle": "Connetti la tua wallet",
+    "sinWalletSubtitle": "Crea un account sicuro o connetti la wallet che già usi.",
+    "walletModalTitle": "Connetti wallet",
+    "walletModalSubtitle": "Usa la wallet che hai già o creane una nuova in pochi secondi.",
+    "connectWallet": "Connetti wallet",
+    "connectDesktopHint": "L'acquisto viene sempre firmato dalla tua wallet: nessun altro può muovere i tuoi fondi.",
+    "walletOptionExtensionSub": "Estensione del browser",
+    "walletOptionMobileApp": "Apri la mia app wallet",
+    "walletOptionMobileAppSub": "MetaMask, Trust, Rainbow e altre",
+    "walletOptionQr": "Con il mobile",
+    "walletOptionQrSub": "Scansiona un codice QR con la wallet del tuo telefono",
+    "walletOptionCreate": "Crea una nuova wallet",
+    "walletOptionCreateSub": "Con Face ID o Touch ID — senza installare nulla",
+    "walletOpeningApp": "Apertura della tua app wallet…",
+    "walletOpeningQr": "Generazione codice QR…",
+    "walletConnecting": "Connessione in corso…",
+    "noExtensionHint": "Non usi un'estensione? Connetti con la wallet del tuo mobile o creane una nuova.",
+    "walletConnectEnvHint": "Config: manca NEXT_PUBLIC_WC_PROJECT_ID (gratuito su cloud.reown.com).",
+    "switchChainTitle": "Passa la tua wallet alla rete Base",
+    "switchChainSubtitle": "Questa operazione funziona solo su Base (Chain ID 8453).",
+    "switchChainCta": "Passa a Base",
+    "switchChainRejected": "Hai rifiutato il cambio di rete. Passa manualmente a Base nella tua wallet per continuare.",
+    "confirmInWalletApp": "Conferma nella tua app wallet",
+    "confirmInWalletAppHint": "Apri la tua wallet, firma la transazione e torna qui. Lo stato si aggiornerà automaticamente.",
+    "useAnotherWallet": "Usa un'altra wallet",
+    "sinFondosTitle": "Ti servono USDC su Base",
+    "sinFondosSubtitle": "Deposita USDC nella tua wallet sulla rete Base per continuare con la prevendita.",
+    "sinFondosPollingHint": "Quando ricevi USDC su Base, rileveremo il saldo automaticamente. Non serve ricaricare la pagina.",
+    "walletAddressLabel": "Il tuo indirizzo su Base",
+    "checkingBalance": "Verifica saldo…",
+    "rampManualNetworkWarning": "Importante: gli USDC devono essere sulla rete Base. Inviare fondi a un'altra rete può causare perdite.",
+    "listoTitle": "Fondi pronti!",
+    "listoSubtitle": "Hai {balance} disponibili per investire in OPEN.",
+    "continueCta": "Continua all'acquisto",
+    "compraTitle": "Acquista OPEN",
+    "compraSubtitle": "Scegli con quale valuta pagare. Convertiamo in USDC e acquistiamo OPEN dalla tua wallet.",
+    "compraTgeNotice": "I token acquistati in prevendita si ricevono al momento del lancio (TGE) tramite claim.",
+    "compraPayWith": "Paga con",
+    "compraBalance": "Saldo",
+    "compraEstimatedOpen": "OPEN stimati",
+    "compraQuoteRefreshing": "La quotazione si aggiorna ogni 30 s",
+    "compraQuoteExpired": "Aggiornamento prezzo…",
+    "compraQuoteFallback": "Non siamo riusciti a quotare la conversione in questo momento. Paga con USDC o riprova tra qualche minuto.",
+    "compraCapExceeded": "L'importo supera il contingente rimanente della prevendita. Riduci la quantità.",
+    "compraConvertCta": "Converti in fondi di acquisto",
+    "compraConvertDone": "Conversione completata. Ora puoi acquistare OPEN con i tuoi USDC.",
+    "compraStepBatch0x": "Firma conversione e acquisto (una sola firma)",
+    "compraStepConvertApprove": "Passo 1/2 — Autorizza token di pagamento",
+    "compraStepConvertSwap": "Passo 2/2 — Converti in USDC",
+    "compraAmountLabel": "Importo da pagare",
+    "compraHintNoAmount": "Inserisci un importo per continuare.",
+    "compraHintLegal": "Spunta la casella delle condizioni per attivare l'acquisto.",
+    "compraHintQuoteLoading": "Calcolo del prezzo di conversione…",
+    "compraStartCta": "Avvia acquisto",
+    "compraRetryCta": "Riprova passo in sospeso",
+    "compraDoneTitle": "Acquisto inviato",
+    "compraDoneSubtitle": "La tua transazione è stata inviata correttamente. Riceverai i tuoi OPEN al lancio (TGE) tramite claim.",
+    "compraContractMissing": "Contratto di prevendita non configurato (NEXT_PUBLIC_PRESALE_CONTRACT).",
+    "compraStepUsdcApprove": "Passo 1/2 — Autorizza USDC",
+    "compraStepUsdcBuy": "Passo 2/2 — Acquista OPEN",
+    "compraStepSwapApprove": "Passo 1/3 — Autorizza conversione",
+    "compraStepSwapConvert": "Passo 2/3 — Converti in ETH",
+    "compraStepSwapBuy": "Passo 3/3 — Acquista OPEN",
+    "compraStepBatch": "Firma acquisto (una sola firma)",
+    "compraWaitingConfirm": "In attesa di conferma on-chain…",
+    "compraUserRejected": "Hai rifiutato la transazione. Puoi riprovare il passo in sospeso.",
+    "compraBackCta": "Indietro",
+    "compraViewTx": "Vedi transazione su Basescan",
+    "compraInsufficientSell": "Non hai abbastanza {symbol} per questo importo.",
+    "compraInsufficientUsdc": "Non hai abbastanza USDC per questo importo.",
+    "compraWrongNetwork": "Passa la tua wallet alla rete Base per continuare.",
+    "compraGasInsufficient": "Non hai abbastanza ETH per pagare la commissione di rete.",
+    "compraBatchFailed": "L'operazione non è stata completata sulla rete. Riprova.",
+    "compraGenericError": "Impossibile completare l'operazione. Riprova.",
+    "bridgeTabBase": "Paga su Base",
+    "bridgeTabOther": "Da un'altra rete",
+    "bridgeTabReceive": "Ricevi USDC",
+    "receiveSubtitle": "Invia USDC al tuo indirizzo sulla rete Base da un'altra wallet o un exchange. Il saldo viene rilevato automaticamente.",
+    "receiveCurrentBalance": "Il tuo saldo USDC su Base",
+    "compraModeChecking": "Verifica della tua wallet…",
+    "compraModeOneSignature": "Confermerai tutto con una sola firma nella tua wallet.",
+    "compraModeSteps": "Confermerai {n} passi nella tua wallet, uno alla volta.",
+    "compraMaxCta": "MAX",
+    "compraUsdEstimate": "≈ {v} USD",
+    "compraQuoteValidFor": "Prezzo garantito {sec} s",
+    "compraDoneViewPortfolio": "Vedi nel portafoglio",
+    "compraDoneBuyMore": "Acquista più OPEN",
+    "walletConnectedAs": "Wallet connessa",
+    "walletChangeCta": "Cambia",
+    "bridgeExactAmountWarning": "Invia ESATTAMENTE l'importo indicato in una sola transazione. Un importo diverso può ritardare l'operazione o portare a un rimborso.",
+    "bridgeSubtitle": "Invia fondi da un'altra rete e li convertiamo in USDC nella tua wallet Base. Poi acquisti OPEN normalmente.",
+    "bridgeOriginLabel": "Rete di origine",
+    "bridgeTokenLabel": "Token da inviare",
+    "bridgeAmountLabel": "Importo da inviare",
+    "bridgeEstimatedUsdc": "USDC che riceverai su Base",
+    "bridgeFeesLabel": "Costo totale stimato",
+    "bridgeTimeLabel": "Tempo stimato",
+    "bridgeQuoteExpired": "La quotazione del bridge è scaduta. Ricalcolala prima di inviare.",
+    "bridgeExpiresIn": "La quotazione scade tra {sec} s",
+    "bridgeSendCta": "Invia da {network}",
+    "bridgeGetDepositCta": "Genera indirizzo di deposito",
+    "bridgeDepositAddressLabel": "Indirizzo di deposito",
+    "bridgeDepositInstructions": "Invia esattamente {amount} {symbol} a questo indirizzo da qualsiasi wallet o exchange. Un importo diverso può ritardare l'operazione o generare un rimborso.",
+    "bridgeBtcMinHint": "Con Bitcoin, le commissioni di rete rendono inviabili importi piccoli.",
+    "bridgeSwitching": "Passaggio alla rete di origine…",
+    "bridgeAwaitingWallet": "Conferma la transazione nella tua wallet…",
+    "bridgeConfirmingOrigin": "Conferma sulla rete di origine…",
+    "bridgeAwaitingDeposit": "In attesa del tuo deposito… Puoi lasciare questa pagina aperta; si aggiornerà da sola.",
+    "bridgeInProgress": "Bridge in corso… Gli USDC arriveranno presto nella tua wallet su Base.",
+    "bridgeDelivered": "USDC ricevuti su Base. Ora puoi acquistare OPEN.",
+    "bridgeRefunded": "L'operazione non è stata completata e i fondi sono stati rimborsati all'indirizzo di origine.",
+    "bridgeFailed": "Il bridge non è stato completato. Se hai inviato fondi, verranno rimborsati all'indirizzo di origine.",
+    "bridgeRetryCta": "Riprova",
+    "bridgeNewCta": "Avvia un altro invio",
+    "bridgeGoBuyCta": "Acquista OPEN con i miei USDC",
+    "bridgeViewDestTx": "Vedi consegna su Basescan"
+  }
+}

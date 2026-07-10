@@ -1,0 +1,431 @@
+{
+  "numberLocale": "ko-KR",
+  "meta": {
+    "title": "openAI Protocol — OPEN으로 OpenAI, Inc. 실제 주식에 투자",
+    "description": "OPEN 토큰으로 OpenAI, Inc. 실제 주식에 투자하세요. Base 네트워크 공개 프리세일: USDC, ETH 또는 cbBTC로 결제, 비수탁, 온체인 유동성."
+  },
+  "nav": {
+    "home": "홈",
+    "market": "마켓",
+    "buy": "구매",
+    "swap": "Swap",
+    "soon": "곧 출시",
+    "wallet": "지갑",
+    "mainNavAria": "주요 내비게이션",
+    "connectWallet": "지갑 연결",
+    "language": "언어"
+  },
+  "common": {
+    "retry": "재시도",
+    "cancel": "취소",
+    "close": "닫기",
+    "copied": "복사됨",
+    "copyAddress": "주소 복사",
+    "recommended": "추천",
+    "calculating": "계산 중…",
+    "live": "실시간",
+    "liveLower": "실시간",
+    "changingNetwork": "네트워크 전환 중…",
+    "walletConnected": "지갑 연결됨",
+    "walletDisconnected": "지갑 연결 해제",
+    "addressCopied": "주소 복사됨",
+    "noConnectionAvailable": "이 브라우저에서 사용 가능한 연결 방법이 없습니다."
+  },
+  "errorPage": {
+    "title": "문제가 발생했습니다",
+    "body": "이 화면에서 예기치 않은 오류가 발생했습니다. 자금에는 영향이 없습니다. 지갑에서 확인하지 않으면 어떤 작업도 서명되지 않습니다.",
+    "retry": "재시도",
+    "goHome": "홈으로"
+  },
+  "connectErrors": {
+    "generic": "지갑을 연결할 수 없습니다. 다시 시도해 주세요.",
+    "rejected": "연결을 취소했습니다. 언제든 다시 시도할 수 있습니다.",
+    "alreadyConnected": "이미 지갑이 연결되어 있습니다.",
+    "pendingRequest": "지갑에 대기 중인 요청이 있습니다. 열어서 확인해 주세요.",
+    "noProvider": "이 브라우저에서 지갑 확장 프로그램을 감지하지 못했습니다.",
+    "chainUnsupported": "지갑이 Base 네트워크를 지원하지 않습니다. 수동으로 추가하거나 다른 지갑을 사용해 주세요."
+  },
+  "legal": {
+    "marketingPitch": "OPEN은 openAI Protocol의 온체인 경로입니다: 홀더 자본은 OpenAI, Inc. 실제 주식과 open* 생태계에 투자됩니다.",
+    "affiliationNoticeSoft": "OPEN으로 OpenAI, Inc. 실제 주식에 투자하는 재무에 참여 — 온체인, 유동성, OPI 이후에도 flywheel 지속.",
+    "affiliationLinkLabel": "법적 투명성",
+    "affiliationDocTitle": "상표 및 투명성",
+    "risksDocTitle": "위험 정보",
+    "microDisclaimer": "OPEN은 자본을 OpenAI, Inc. 실제 주식으로 향합니다.",
+    "geoNotice": "허용된 관할 구역 대상 서비스입니다. 거주 국가에서 암호자산 사용이 허용되는지 확인하세요.",
+    "geoEligibility": "자격 확인",
+    "footerDisclaimer": "openAI Protocol은 탈중앙화 생태계입니다. OpenAI, OpenAI, Inc. 및 관련 상표는 각 소유자에게 속합니다. 본 웹사이트는 증권 공모나 투자 자문을 구성하지 않습니다. 투자에는 위험이 따릅니다.",
+    "ecosystemDisclaimer": "openChat, openAPI, openImage, openMotion, openVoice, openCode는 openAI Protocol 생태계 제품입니다. ChatGPT, DALL·E, Sora, Whisper, Codex는 OpenAI, Inc. 상표입니다.",
+    "suggestedTagline": "OPEN 토큰으로 OpenAI, Inc. 실제 주식에 투자하세요.",
+    "suggestedCta": "OPEN 구매",
+    "heroHeadline": "OPEN에 투자하세요. OpenAI, Inc. 실제 주식.",
+    "heroSubheadline": "자본은 프로토콜 재무에 들어가 실제 주식 구매와 open* 운영에 사용됩니다. openAPI 및 open* 서비스 사용마다 환매, 소각, 더 많은 equity — 상장 후에도 멈추지 않습니다.",
+    "heroBadge": "공개 프리세일 · 영구 Flywheel",
+    "opiContext": "OPI 예정 · 2027년 9월 · 시장 이정표; 프로토콜은 주식을 축적하고 OPEN을 환매합니다",
+    "postOpiFlywheel": "OPI로 사이클이 끝나지 않습니다: 재무는 OpenAI, Inc. 주식(공개 및 비공개 시장)을 계속 구매하고, openChat, openAPI 등 서비스가 사용 수익을 창출하며, 수수료의 30%가 OPEN 환매 및 소각에 지속적으로 사용됩니다.",
+    "equityMicro": "재무는 OPI 전후 OpenAI, Inc. 실제 주식을 축적; open* 수익이 더 많은 equity와 OPEN 환매에 자금을 제공.",
+    "ecosystemTitle": "실제 주식에 투자하는 토큰. open* 생태계 전체.",
+    "ecosystemLead": "재무는 OpenAI, Inc. equity를 취득하고 openChat, openAPI 등을 운영합니다. API 및 서비스 사용이 많을수록 수익, 재무 주식, OPEN 수요가 증가합니다.",
+    "valueTitle": "실제 주식 + 생태계 수익 — 영구적으로",
+    "valueLead": "재무는 OpenAI, Inc. 주식을 축적하고 open*는 지속적인 수수료를 생성합니다. 30%는 OPEN 환매 및 소각에; 나머지는 주식 포지션과 생태계 성장을 강화.",
+    "tokenNatureParagraph": "OPEN은 openAI Protocol 재무 참여를 제공하며, OpenAI, Inc. 실제 주식을 구매·보관하고 open* 생태계를 운영합니다. 오늘 온체인 접근; OPI 후에도 재무는 주식을 축적하고 openAPI 및 open* 서비스 수익으로 OPEN을 환매합니다.",
+    "tokenNatureLegal": "OPEN은 OpenAI, Inc. 노출이 있는 프로토콜 재무에 참여; 시장 가격은 NAV와 다를 수 있습니다.",
+    "consentPrefix": "다음에 동의합니다:",
+    "consentTerms": "이용약관",
+    "consentPrivacyJoin": ", ",
+    "consentPrivacy": "개인정보 처리방침",
+    "consentRisksJoin": " 및 ",
+    "translationNotice": "자동 번역은 참고용입니다. 내용이 다를 경우 스페인어 버전이 우선합니다."
+  },
+  "footer": {
+    "colToken": "토큰",
+    "colResources": "리소스",
+    "colLegal": "법률",
+    "whitepaper": "Whitepaper",
+    "tokenomics": "Tokenomics",
+    "documentation": "문서",
+    "audit": "감사",
+    "support": "지원",
+    "terms": "약관",
+    "privacy": "개인정보",
+    "compliance": "컴플라이언스"
+  },
+  "home": {
+    "heroStatPresalePrice": "프리세일 가격",
+    "heroStatCap": "프리세일 상한",
+    "heroStatSupply": "OPEN 총 공급량",
+    "heroStatLiquidity": "유동성용 (LP 잠금)",
+    "swapFromWallet": "지갑에서 스왑",
+    "trustNoCustody": "● 비수탁",
+    "trustLiquidity": "● 온체인 유동성",
+    "trustAudited": "● 감사된 계약",
+    "buyShort": "구매",
+    "viewChart": "차트 보기",
+    "nextMilestone": "다음 이정표: OpenAI, Inc. OPI",
+    "activityTitle": "네트워크 활동",
+    "activitySubtitle": "· OPEN 실시간 매매",
+    "activityBought": "구매함",
+    "activitySwapped": "스왑함",
+    "timeAgoSec": "{n}초 전",
+    "timeAgoMin": "{n}분 전",
+    "tokenomicsEyebrow": "Tokenomics",
+    "tokenomicsTitle": "가치 상승을 위해 설계된 공급량.",
+    "tokenomicsBody": "고정 공급량 21,000,000,000 OPEN, mint 기능 없음. 팀 3년 잠금 (1년 cliff + 2년 선형 베스팅), 재무는 생태계 사용으로 환매 및 소각에 자금 제공. 프리세일 OPEN은 TGE에서 claim으로 수령.",
+    "tokenomicsTotal": "OPEN 총량",
+    "tokenomicsBurn": "의 생태계 수수료가 OPEN 환매 및 소각에 사용됩니다",
+    "faqEyebrow": "자주 묻는 질문",
+    "faqTitle": "투자 전 알아야 할 모든 것.",
+    "faqSubtitle": "궁금한 점이 있으신가요? 투자 전에 답변해 드립니다.",
+    "valueAccrualEyebrow": "Value accrual",
+    "valueChips": [
+      "생태계 채택",
+      "수수료 수익",
+      "프로그래밍 환매",
+      "공급량 감소"
+    ],
+    "valueChipResult": "순 수요 압력",
+    "valueMechanism": "온체인 메커니즘: 수수료 일부가 프로토콜로 라우팅되어 OPEN을 환매·소각하고, 검증 가능하게 유통 공급량을 줄입니다.",
+    "servicesTitle": "토큰 연계 서비스",
+    "hubSync": "동기화",
+    "desktopMobileEyebrow": "데스크톱 및 모바일",
+    "desktopMobileTitle": "어디서든 투자하세요.",
+    "desktopMobileBody": "지갑 연결, 구매 또는 스왑, 포트폴리오 실시간 추적. 모든 화면에서 동일한 원활한 경험.",
+    "phoneBalance": "OPEN 잔액",
+    "phoneToday": "오늘",
+    "phonePayWith": "USDC로 결제",
+    "phoneReceive": "OPEN 수령"
+  },
+  "content": {
+    "ecosystem": [
+      "openAI Protocol 생태계 대화형 어시스턴트. 구독 및 사용이 수익을 창출하여 재무와 OPEN 환매에 자금을 제공.",
+      "프로토콜 API를 통해 제공되는 모델. 100만 토큰 처리마다 과금; 수수료 일부가 OPEN 환매에 사용.",
+      "확산 모델 이미지 생성. 크레딧 소비가 토큰 환매 흐름을 촉진.",
+      "텍스트에서 동영상 생성. 고계산 부하, 렌더링 초당 과금.",
+      "실시간 음성 및 전사. 처리 오디오 분당 측정.",
+      "프로토콜 프로그래밍 Copilot. 시트당 요금제 및 생성 제안당 계산 소비."
+    ],
+    "tokenWhy": [
+      {
+        "title": "재무의 실제 주식",
+        "desc": "OPEN 자본은 비공개 시장에서 OpenAI, Inc. 주식 구매에 사용됩니다."
+      },
+      {
+        "title": "영구 Flywheel",
+        "desc": "오늘 온체인 접근. OPI 후에도 재무는 주식을 축적하고, openAPI 및 open* 서비스 사용마다 OPEN을 소각."
+      },
+      {
+        "title": "open* 생태계 수익",
+        "desc": "openChat, openAPI 등이 수수료를 창출; 30%가 OPEN 환매 및 소각에 사용."
+      }
+    ],
+    "steps": [
+      {
+        "title": "지갑 연결",
+        "desc": "MetaMask, Coinbase, Trust 또는 모바일 지갑을 한 번의 탭으로."
+      },
+      {
+        "title": "OPEN 구매",
+        "desc": "Base에서 USDC, ETH, cbBTC — 또는 다른 네트워크에서. 자본은 프로토콜 재무에 들어갑니다."
+      },
+      {
+        "title": "투자 추적",
+        "desc": "가치, 배분, 움직임을 실시간으로."
+      }
+    ],
+    "hubMeta": [
+      [
+        "구독",
+        "구독당"
+      ],
+      [
+        "API",
+        "토큰당"
+      ],
+      [
+        "이미지",
+        "크레딧당"
+      ],
+      [
+        "동영상",
+        "초당"
+      ],
+      [
+        "음성",
+        "분당"
+      ],
+      [
+        "코드",
+        "시트당"
+      ]
+    ],
+    "faq": [
+      [
+        "OPEN이란 무엇이며 내 자본은 어떻게 사용되나요?",
+        "OPEN은 openAI Protocol의 온체인 경로입니다: 홀더 자본은 OpenAI, Inc. 실제 주식과 open* 생태계에 투자됩니다. OPEN은 openAI Protocol 재무 참여를 제공하며, OpenAI, Inc. 실제 주식을 구매·보관하고 open* 생태계를 운영합니다. 오늘 온체인 접근; OPI 후에도 재무는 주식을 축적하고 openAPI 및 open* 서비스 수익으로 OPEN을 환매합니다."
+      ],
+      [
+        "OpenAI, Inc.에 어떻게 투자하나요?",
+        "재무는 SPV를 통해 OpenAI, Inc. 실제 주식 구매에 자본을 사용합니다 — OPI 전후 모두. 동시에 openChat, openAPI 등 open* 서비스를 운영; 수수료 30%가 OPEN 환매 및 소각에, 나머지가 주식 축적을 강화."
+      ],
+      [
+        "OPEN은 어떻게 구매하나요?",
+        "지갑을 연결하고 Base 네트워크에서 USDC, ETH, WETH, cbBTC로 결제. 다른 네트워크(Ethereum, Arbitrum, Solana, Bitcoin 등)에서 자금을 가져올 수도 있으며, Base 지갑에서 자동으로 USDC로 변환합니다. 프리세일 구매 토큰은 TGE에서 claim으로 수령."
+      ],
+      [
+        "프리세일 토큰은 언제 받나요?",
+        "TGE 시 본인 지갑에서 claim으로 수령. 프리세일은 공개·개방, 지갑 한도 없음, 가격 0.0005 USDC/OPEN, 계약 상한 1,045,000 USDC; 자금은 Safe 멀티시그에 보관."
+      ],
+      [
+        "상장까지 기다려야 하나요?",
+        "아니요. 프리세일이 열려 있습니다: 오늘 온체인으로 OpenAI, Inc. 실제 주식에 투자할 수 있습니다. OPI는 시장 이정표이지 프로토콜의 끝이 아닙니다 — OPI로 사이클이 끝나지 않습니다: 재무는 OpenAI, Inc. 주식(공개 및 비공개 시장)을 계속 구매하고, openChat, openAPI 등이 사용 수익을 창출하며, 수수료 30%가 OPEN 환매 및 소각에 지속적으로 사용됩니다."
+      ],
+      [
+        "OPEN은 어떻게, 언제 판매하나요?",
+        "TGE에서 claim으로 OPEN을 수령하고, 그 시점부터 온체인 유동성(공급량 40%가 풀, LP 잠금): 지갑에서 ETH, USDC 등으로 스왑 가능."
+      ],
+      [
+        "OPEN과 상장 주식 구매의 차이는?",
+        "OPEN은 openAI Protocol 토큰: OpenAI, Inc. equity를 지속적으로 축적하는 재무에 참여하며, 온체인 유동성과 openAPI·open* 서비스가 자금 제공하는 프로그래밍 환매."
+      ],
+      [
+        "OPEN 가격과 주식의 관계는?",
+        "OPEN은 OpenAI, Inc. 노출이 있는 프로토콜 재무에 참여; 시장 가격은 NAV와 다를 수 있습니다."
+      ],
+      [
+        "토큰은 누가 보관하나요?",
+        "본인. 프로토콜은 OPEN을 보관하지 않습니다: 구매는 본인 지갑에서 서명되며, 키는 본인만 제어."
+      ],
+      [
+        "수수료는?",
+        "프리세일에 별도 수수료 없음: Base 네트워크 수수료(몇 센트)를 지불하고, USDC 외 토큰이나 다른 네트워크에서 결제 시 시장 변환 비용(확인 전 표시)."
+      ],
+      [
+        "위험이 있나요?",
+        "모든 투자와 마찬가지로 OPEN 가치는 오르거나 내릴 수 있습니다. 감당할 수 있는 범위만 투자하세요. OPEN으로 OpenAI, Inc. 실제 주식에 투자하는 재무에 참여 — 온체인, 유동성, OPI 이후에도 flywheel 지속."
+      ],
+      [
+        "OPI 이후에는?",
+        "OPI로 사이클이 끝나지 않습니다: 재무는 OpenAI, Inc. 주식(공개 및 비공개 시장)을 계속 구매하고, openChat, openAPI 등이 사용 수익을 창출하며, 수수료 30%가 OPEN 환매 및 소각에 지속적으로 사용됩니다. OPEN은 재무를 계속 반영: 더 많은 OpenAI, Inc. 주식, 더 많은 서비스 수익, 온체인 검증 가능한 환매."
+      ]
+    ],
+    "tkSegs": [
+      "공개 프리세일",
+      "온체인 유동성",
+      "재무 / 생태계",
+      "마케팅",
+      "팀 (3년 잠금)",
+      "향후 라운드 (잠금)"
+    ]
+  },
+  "market": {
+    "statMarketCap": "시가총액",
+    "statPresalePrice": "프리세일 가격",
+    "statSupply": "총 공급량",
+    "statPresaleCap": "프리세일 상한",
+    "statAth": "역대 최고",
+    "statPresale": "프리세일",
+    "statPresaleValue": "공개·개방",
+    "readyTitle": "투자할 준비가 되셨나요?",
+    "readyBody": "시장 가격으로 OPEN을 구매하거나 지갑에서 스왑하세요.",
+    "swapCta": "스왑"
+  },
+  "portfolio": {
+    "connectTitle": "지갑 연결",
+    "connectBody": "연결하여 Base 네트워크 실제 잔액과 온체인 기록을 확인하세요.",
+    "myWallet": "내 지갑",
+    "copyAddressTitle": "주소 복사",
+    "disconnect": "연결 해제",
+    "totalValue": "Base 총 가치",
+    "deposit": "입금",
+    "depositTitle": "Base 주소로 USDC 수령",
+    "assetsTitle": "Base 자산",
+    "loadingBalances": "잔액 로딩 중…",
+    "emptyLine1": "Base에 아직 잔액이 없습니다.",
+    "emptyLine2": "OPEN을 구매하거나 입금하여 시작하세요.",
+    "movementsTitle": "거래 내역",
+    "movementsBody": "전체 거래 기록은 Base 네트워크 탐색기에서 확인할 수 있습니다.",
+    "viewBasescan": "Basescan에서 보기",
+    "movementsNote": "OPEN 구매는 프리세일 계약과의 상호작용으로 표시됩니다."
+  },
+  "swapPage": {
+    "title": "스왑",
+    "subtitle": "OPEN 스왑은 토큰이 온체인 유동성으로 거래 가능해진 후 이용할 수 있습니다.",
+    "afterTgeTitle": "TGE 이후 이용 가능",
+    "afterTgeBody": "OPEN이 유동성으로 상장되면 여기서 ETH, USDC 등으로 직접 스왑할 수 있습니다. 그 전까지는 프리세일에서 OPEN을 구매하세요.",
+    "buyPresaleCta": "프리세일에서 OPEN 구매",
+    "payHint": "Base에서 USDC, ETH, cbBTC로 결제 — 또는 다른 네트워크에서 자금을 가져올 수 있습니다."
+  },
+  "docsUi": {
+    "backHome": "← 홈으로",
+    "ctaTitle": "OPEN을 받을 준비가 되셨나요?",
+    "ctaBody": "Base에서 USDC, ETH, cbBTC로 구매하거나 다른 네트워크에서 자금을 가져오세요.",
+    "viewChart": "차트 보기"
+  },
+  "walletKind": {
+    "notConnected": "연결 안 됨",
+    "baseAccount": "Base 계정 (Face ID)",
+    "extensionOrApp": "지갑 (확장 또는 앱)",
+    "mobileWallet": "모바일 지갑 (WalletConnect)",
+    "hint": "호환 지갑으로 연결 (MetaMask, Trust Wallet 등)."
+  },
+  "buy": {
+    "pageTitle": "OPEN 구매",
+    "pageSubtitle": "Base에서 USDC, ETH, cbBTC로 결제 — 또는 다른 네트워크에서 자금을 가져오세요.",
+    "sinWalletTitle": "지갑 연결",
+    "sinWalletSubtitle": "보안 계정을 만들거나 기존 지갑을 연결하세요.",
+    "walletModalTitle": "지갑 연결",
+    "walletModalSubtitle": "기존 지갑을 사용하거나 몇 초 만에 새로 만드세요.",
+    "connectWallet": "지갑 연결",
+    "connectDesktopHint": "구매는 항상 본인 지갑에서 서명: 다른 누구도 자금을 이동할 수 없습니다.",
+    "walletOptionExtensionSub": "브라우저 확장",
+    "walletOptionMobileApp": "지갑 앱 열기",
+    "walletOptionMobileAppSub": "MetaMask, Trust, Rainbow 등",
+    "walletOptionQr": "모바일로",
+    "walletOptionQrSub": "휴대폰 지갑으로 QR 코드 스캔",
+    "walletOptionCreate": "새 지갑 만들기",
+    "walletOptionCreateSub": "Face ID 또는 Touch ID — 설치 불필요",
+    "walletOpeningApp": "지갑 앱 여는 중…",
+    "walletOpeningQr": "QR 코드 생성 중…",
+    "walletConnecting": "연결 중…",
+    "noExtensionHint": "확장 프로그램을 사용하지 않나요? 모바일 지갑으로 연결하거나 새로 만드세요.",
+    "walletConnectEnvHint": "설정: NEXT_PUBLIC_WC_PROJECT_ID 누락 (cloud.reown.com에서 무료).",
+    "switchChainTitle": "지갑을 Base 네트워크로 전환",
+    "switchChainSubtitle": "이 작업은 Base(Chain ID 8453)에서만 작동합니다.",
+    "switchChainCta": "Base로 전환",
+    "switchChainRejected": "네트워크 전환을 거부했습니다. 계속하려면 지갑에서 수동으로 Base로 전환하세요.",
+    "confirmInWalletApp": "지갑 앱에서 확인",
+    "confirmInWalletAppHint": "지갑을 열고 트랜잭션에 서명한 후 여기로 돌아오세요. 상태가 자동 업데이트됩니다.",
+    "useAnotherWallet": "다른 지갑 사용",
+    "sinFondosTitle": "Base의 USDC가 필요합니다",
+    "sinFondosSubtitle": "Base 네트워크 지갑에 USDC를 입금하여 프리세일을 계속하세요.",
+    "sinFondosPollingHint": "Base에서 USDC를 받으면 잔액을 자동 감지합니다. 페이지 새로고침 불필요.",
+    "walletAddressLabel": "Base 주소",
+    "checkingBalance": "잔액 확인 중…",
+    "rampManualNetworkWarning": "중요: USDC는 Base 네트워크에 있어야 합니다. 다른 네트워크로 보내면 손실이 발생할 수 있습니다.",
+    "listoTitle": "자금 준비 완료!",
+    "listoSubtitle": "OPEN 투자에 {balance} 사용 가능.",
+    "continueCta": "구매 계속",
+    "compraTitle": "OPEN 구매",
+    "compraSubtitle": "결제 통화를 선택하세요. USDC로 변환하고 지갑에서 OPEN을 구매합니다.",
+    "compraTgeNotice": "프리세일 구매 토큰은 TGE에서 claim으로 수령.",
+    "compraPayWith": "결제 수단",
+    "compraBalance": "잔액",
+    "compraEstimatedOpen": "예상 OPEN",
+    "compraQuoteRefreshing": "견적 30초마다 갱신",
+    "compraQuoteExpired": "가격 갱신 중…",
+    "compraQuoteFallback": "현재 변환 견적을 제공할 수 없습니다. USDC로 결제하거나 몇 분 후 다시 시도하세요.",
+    "compraCapExceeded": "금액이 남은 프리세일 한도를 초과합니다. 수량을 줄이세요.",
+    "compraConvertCta": "구매 자금으로 변환",
+    "compraConvertDone": "변환 완료. USDC로 OPEN을 구매할 수 있습니다.",
+    "compraStepBatch0x": "변환 및 구매 서명 (단일 서명)",
+    "compraStepConvertApprove": "1/2단계 — 결제 토큰 승인",
+    "compraStepConvertSwap": "2/2단계 — USDC로 변환",
+    "compraAmountLabel": "결제 금액",
+    "compraHintNoAmount": "금액을 입력하여 계속하세요.",
+    "compraHintLegal": "구매를 활성화하려면 약관 체크박스를 선택하세요.",
+    "compraHintQuoteLoading": "변환 가격 계산 중…",
+    "compraStartCta": "구매 시작",
+    "compraRetryCta": "대기 중인 단계 재시도",
+    "compraDoneTitle": "구매 전송 완료",
+    "compraDoneSubtitle": "트랜잭션이 성공적으로 전송되었습니다. TGE에서 claim으로 OPEN을 받습니다.",
+    "compraContractMissing": "프리세일 계약 미설정 (NEXT_PUBLIC_PRESALE_CONTRACT).",
+    "compraStepUsdcApprove": "1/2단계 — USDC 승인",
+    "compraStepUsdcBuy": "2/2단계 — OPEN 구매",
+    "compraStepSwapApprove": "1/3단계 — 변환 승인",
+    "compraStepSwapConvert": "2/3단계 — ETH로 변환",
+    "compraStepSwapBuy": "3/3단계 — OPEN 구매",
+    "compraStepBatch": "구매 서명 (단일 서명)",
+    "compraWaitingConfirm": "온체인 확인 대기 중…",
+    "compraUserRejected": "트랜잭션을 거부했습니다. 대기 중인 단계를 재시도할 수 있습니다.",
+    "compraBackCta": "뒤로",
+    "compraViewTx": "Basescan에서 트랜잭션 보기",
+    "compraInsufficientSell": "이 금액에 {symbol}이(가) 부족합니다.",
+    "compraInsufficientUsdc": "이 금액에 USDC가 부족합니다.",
+    "compraWrongNetwork": "계속하려면 지갑을 Base 네트워크로 전환하세요.",
+    "compraGasInsufficient": "네트워크 수수료를 지불할 ETH가 부족합니다.",
+    "compraBatchFailed": "작업이 네트워크에서 완료되지 않았습니다. 다시 시도하세요.",
+    "compraGenericError": "작업을 완료할 수 없습니다. 다시 시도하세요.",
+    "bridgeTabBase": "Base에서 결제",
+    "bridgeTabOther": "다른 네트워크에서",
+    "bridgeTabReceive": "USDC 수령",
+    "receiveSubtitle": "다른 지갑 또는 거래소에서 Base 네트워크 주소로 USDC를 보내세요. 잔액이 자동 감지됩니다.",
+    "receiveCurrentBalance": "Base USDC 잔액",
+    "compraModeChecking": "지갑 확인 중…",
+    "compraModeOneSignature": "한 번의 서명으로 모두 확인합니다.",
+    "compraModeSteps": "지갑에서 {n}단계를 순서대로 확인합니다.",
+    "compraMaxCta": "최대",
+    "compraUsdEstimate": "≈ {v} USD",
+    "compraQuoteValidFor": "가격 보장 {sec}초",
+    "compraDoneViewPortfolio": "지갑에서 보기",
+    "compraDoneBuyMore": "OPEN 더 구매",
+    "walletConnectedAs": "지갑 연결됨",
+    "walletChangeCta": "변경",
+    "bridgeExactAmountWarning": "표시된 금액을 정확히 한 번의 트랜잭션으로 보내세요. 다른 금액은 작업 지연 또는 환불을 초래할 수 있습니다.",
+    "bridgeSubtitle": "다른 네트워크에서 자금을 보내면 Base 지갑의 USDC로 변환합니다. 그 후 정상적으로 OPEN을 구매하세요.",
+    "bridgeOriginLabel": "출발 네트워크",
+    "bridgeTokenLabel": "보낼 토큰",
+    "bridgeAmountLabel": "보낼 금액",
+    "bridgeEstimatedUsdc": "Base에서 받을 USDC",
+    "bridgeFeesLabel": "예상 총 비용",
+    "bridgeTimeLabel": "예상 시간",
+    "bridgeQuoteExpired": "브리지 견적이 만료되었습니다. 보내기 전에 다시 계산하세요.",
+    "bridgeExpiresIn": "견적 {sec}초 후 만료",
+    "bridgeSendCta": "{network}에서 보내기",
+    "bridgeGetDepositCta": "입금 주소 생성",
+    "bridgeDepositAddressLabel": "입금 주소",
+    "bridgeDepositInstructions": "모든 지갑 또는 거래소에서 이 주소로 정확히 {amount} {symbol}을(를) 보내세요. 다른 금액은 작업 지연 또는 환불을 초래할 수 있습니다.",
+    "bridgeBtcMinHint": "Bitcoin의 경우 네트워크 수수료로 소액 송금이 비현실적입니다.",
+    "bridgeSwitching": "출발 네트워크로 전환 중…",
+    "bridgeAwaitingWallet": "지갑에서 트랜잭션 확인…",
+    "bridgeConfirmingOrigin": "출발 네트워크에서 확인 중…",
+    "bridgeAwaitingDeposit": "입금 대기 중… 이 페이지를 열어 두면 자동 업데이트됩니다.",
+    "bridgeInProgress": "브리지 진행 중… 곧 Base 지갑에 USDC가 도착합니다.",
+    "bridgeDelivered": "Base에서 USDC를 받았습니다. OPEN을 구매할 수 있습니다.",
+    "bridgeRefunded": "작업이 완료되지 않았고 자금이 출발 주소로 환불되었습니다.",
+    "bridgeFailed": "브리지가 완료되지 않았습니다. 자금을 보냈다면 출발 주소로 환불됩니다.",
+    "bridgeRetryCta": "다시 시도",
+    "bridgeNewCta": "다른 송금 시작",
+    "bridgeGoBuyCta": "USDC로 OPEN 구매",
+    "bridgeViewDestTx": "Basescan에서 전달 보기"
+  }
+}
