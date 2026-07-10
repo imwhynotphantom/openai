@@ -3,8 +3,8 @@
 import { memo } from "react";
 import Link from "next/link";
 import { css } from "@/lib/css";
-import { ACCENT } from "@/lib/format";
 import { brandLegal } from "@/lib/brand-legal";
+import { Logo } from "./ui";
 
 const COLS: { title: string; links: [string, string][] }[] = [
   { title: "Token", links: [["/comprar", brandLegal.suggestedCta], ["/docs/whitepaper", "Whitepaper"], ["/docs/tokenomics", "Tokenomics"]] },
@@ -18,8 +18,9 @@ function Footer() {
       <div style={css("max-width:1200px;margin:0 auto;padding:48px 24px 40px")}>
         <div style={css("display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-bottom:36px")}>
           <div style={css("max-width:300px")}>
-            <Link href="/" prefetch style={css("text-decoration:none;font:700 20px var(--font-hanken);letter-spacing:-0.04em;color:#0D0D0D")}>
-              open<span style={{ color: ACCENT }}>AI</span>
+            <Link href="/" prefetch title={brandLegal.productBrand} style={css("text-decoration:none;display:flex;align-items:center;gap:10px")}>
+              <Logo />
+              <span style={css("font:700 19px var(--font-hanken);letter-spacing:-0.04em;color:#0D0D0D")}>Protocol</span>
             </Link>
             <p style={css("font:400 14px/1.5 var(--font-hanken);color:#8A8A94;margin:12px 0 0")}>
               {brandLegal.suggestedTagline}
