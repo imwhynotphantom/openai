@@ -36,25 +36,13 @@ button { font-family: inherit; }
     padding: 0 12px !important;
     gap: 8px !important;
   }
-  [data-header] [data-header-wordmark] { display: none !important; }
+  [data-header] [data-header-wordmark] { font-size: 17px !important; }
   [data-header] [data-header-actions] { gap: 6px !important; }
   [data-marquee] { display: none !important; }
   [data-nav] { display: none !important; }
   [data-pricechip] { display: none !important; }
-  /* Idioma: solo icono globo */
-  [data-lang-picker] button { padding: 8px !important; gap: 0 !important; }
-  [data-lang-code] { display: none !important; }
-  /* Wallet: botón conectar → icono; conectado → chip compacto */
-  [data-wallet-connect-label] { display: none !important; }
-  [data-wallet-connect-icon] { display: flex !important; }
-  [data-wallet-connect-btn] {
-    width: 36px !important;
-    height: 36px !important;
-    min-width: 36px !important;
-    padding: 0 !important;
-    border-radius: 50% !important;
-  }
-  [data-wallet-skeleton] { width: 36px !important; }
+  [data-lang-picker] button { padding: 7px 10px !important; }
+  [data-wallet-connect-btn] { padding: 8px 12px !important; font-size: 12px !important; }
   [data-wallet-disconnect] { display: none !important; }
   [data-header-wallet-link] { padding: 8px 10px !important; max-width: 108px !important; }
   [data-header-wallet-address] { font-size: 11px !important; }

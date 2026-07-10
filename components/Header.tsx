@@ -143,18 +143,11 @@ function WalletActions() {
       as="button"
       type="button"
       data-wallet-connect-btn
-      aria-label={t.nav.connectWallet}
       onClick={app.openWallet}
       style="appearance:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#0D0D0D;color:#fff;border:none;border-radius:999px;padding:10px 18px;font:600 14px var(--font-hanken);letter-spacing:-0.01em;flex-shrink:0"
       hover="background:#000"
     >
-      <span data-wallet-connect-label>{t.nav.connectWallet}</span>
-      <span data-wallet-connect-icon aria-hidden style={css("display:none;align-items:center;justify-content:center")}>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M4 8.5A2.5 2.5 0 0 1 6.5 6H18v14H6.5A2.5 2.5 0 0 1 4 17.5v-9Z" />
-          <path d="M18 10h2.5A1.5 1.5 0 0 1 22 11.5v3A1.5 1.5 0 0 1 20.5 16H18" />
-        </svg>
-      </span>
+      {t.nav.connectWallet}
     </Hov>
   );
 }

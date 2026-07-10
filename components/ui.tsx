@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { merge } from "@/lib/css";
-import { brandLegal } from "@/lib/brand-legal";
 
 type HovProps = {
   as?: any;
@@ -35,13 +34,13 @@ export function Hov({ as = "div", style, hover, focus, children, ...rest }: HovP
   );
 }
 
-/** Wordmark visual used in the header (openAI Protocol, not OpenAI, Inc.). */
+/** Marca visual: solo el icono (el wordmark «Protocol» va aparte en Header/Footer). */
 export function Logo({ height = 28 }: { height?: number }) {
   return (
     <img
-      src="/openai-logo.png"
-      alt={brandLegal.productBrand}
-      title={brandLegal.productBrand}
+      src="/openai-icon.png"
+      alt=""
+      aria-hidden
       height={height}
       style={{ height, width: "auto", display: "block" }}
     />
