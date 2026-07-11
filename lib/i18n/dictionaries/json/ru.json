@@ -408,7 +408,7 @@
     "compraGenericError": "Не удалось завершить операцию. Попробуйте снова.",
     "bridgeTabBase": "Оплатить в Base",
     "bridgeTabOther": "С другой сети",
-    "bridgeTabReceive": "Получить USDC",
+    "bridgeTabReceive": "Отправить USDC",
     "receiveSubtitle": "Отправьте USDC на ваш адрес в сети Base с другого wallet или биржи. Баланс определяется автоматически.",
     "receiveCurrentBalance": "Ваш баланс USDC в Base",
     "compraModeChecking": "Проверка wallet…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "Попробовать снова",
     "bridgeNewCta": "Начать новую отправку",
     "bridgeGoBuyCta": "Купить OPEN за мои USDC",
-    "bridgeViewDestTx": "Смотреть доставку в Basescan"
+    "bridgeViewDestTx": "Смотреть доставку в Basescan",
+    "depositIntro": "Отправьте USDC на ваш персональный адрес с биржи или другого кошелька. Мы обнаружим платёж автоматически.",
+    "depositRegisterTitle": "Создайте персональный адрес для депозита",
+    "depositRegisterHint": "Он привязывается к подключённому кошельку: туда вы получите свои OPEN при запуске. Оставьте email для уведомлений (необязательно).",
+    "depositEmailPlaceholder": "you@email.com (необязательно)",
+    "depositRegisterCta": "Создать мой адрес",
+    "depositRegisterLoading": "Создание…",
+    "depositFromWhere": "Откуда будете отправлять?",
+    "depositAddressLabel": "Ваш персональный адрес для депозита",
+    "depositNetworkWarning": "Отправляйте через сеть Base. Никогда через Solana или Tron: средства будут потеряны. Минимум 10 USDC.",
+    "depositPendingBanner": "Мы обнаружили {amount} USDC — подтверждение (2-3 минуты)…",
+    "depositCreditedBanner": "{amount} USDC подтверждено = {open} OPEN зарезервировано. Вы получите их при запуске (TGE).",
+    "depositWaiting": "Ожидаем ваш перевод… С биржи обычно занимает 2-10 минут. Можно закрыть эту страницу: покупка всё равно зарегистрирована.",
+    "depositError": "Не удалось загрузить ваш адрес для депозита. Попробуйте ещё раз.",
+    "depositStepsBinance": [
+      "Откройте Binance → Кошелёк → Вывод",
+      "Найдите и выберите USDC",
+      "Вставьте ваш адрес для депозита (кнопка ниже)",
+      "В поле «Сеть» выберите Base — если её нет, не отправляйте",
+      "Подтвердите вывод"
+    ],
+    "depositStepsBit2me": [
+      "Откройте Bit2Me → Wallets → USDC → Отправить",
+      "Вставьте ваш адрес для депозита",
+      "В качестве сети выберите Base",
+      "Подтвердите отправку"
+    ],
+    "depositStepsKraken": [
+      "Откройте Kraken → Funding → Withdraw → USDC",
+      "Добавьте ваш адрес для депозита как получателя",
+      "В поле «Network» выберите Base",
+      "Подтвердите вывод"
+    ],
+    "depositStepsWallet": [
+      "Откройте кошелёк и выберите USDC в сети Base",
+      "Отправьте на ваш адрес для депозита"
+    ],
+    "depositOtherWallet": "Другой кошелёк"
   }
 }

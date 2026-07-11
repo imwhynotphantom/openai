@@ -408,7 +408,7 @@
     "compraGenericError": "İşlem tamamlanamadı. Lütfen tekrar deneyin.",
     "bridgeTabBase": "Base'de öde",
     "bridgeTabOther": "Başka ağdan",
-    "bridgeTabReceive": "USDC al",
+    "bridgeTabReceive": "USDC gönder",
     "receiveSubtitle": "Başka bir wallet veya borsadan Base ağındaki adresinize USDC gönderin. Bakiye otomatik algılanır.",
     "receiveCurrentBalance": "Base'deki USDC bakiyeniz",
     "compraModeChecking": "Wallet'ınız kontrol ediliyor…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "Tekrar dene",
     "bridgeNewCta": "Başka bir gönderim başlat",
     "bridgeGoBuyCta": "USDC'mle OPEN satın al",
-    "bridgeViewDestTx": "Teslimatı Basescan'de gör"
+    "bridgeViewDestTx": "Teslimatı Basescan'de gör",
+    "depositIntro": "Bir borsadan veya başka bir cüzdandan kişisel adresinize USDC gönderin. Ödemeyi otomatik olarak algılıyoruz.",
+    "depositRegisterTitle": "Kişisel yatırma adresinizi oluşturun",
+    "depositRegisterHint": "Bağlı cüzdanınızla ilişkilendirilir: OPEN'larınızı lansmanda orada alacaksınız. Bildirim isterseniz e-postanızı bırakın (isteğe bağlı).",
+    "depositEmailPlaceholder": "sen@email.com (isteğe bağlı)",
+    "depositRegisterCta": "Adresimi oluştur",
+    "depositRegisterLoading": "Oluşturuluyor…",
+    "depositFromWhere": "Nereden göndereceksiniz?",
+    "depositAddressLabel": "Kişisel yatırma adresiniz",
+    "depositNetworkWarning": "Base ağı üzerinden gönderin. Asla Solana veya Tron üzerinden göndermeyin: fonlar kaybolur. Minimum 10 USDC.",
+    "depositPendingBanner": "{amount} USDC algılandı — onaylanıyor (2-3 dakika)…",
+    "depositCreditedBanner": "{amount} USDC onaylandı = {open} OPEN ayrıldı. Lansmanda (TGE) alacaksınız.",
+    "depositWaiting": "Transferiniz bekleniyor… Bir borsadan genellikle 2-10 dakika sürer. Bu sayfayı kapatabilirsiniz: satın alımınız yine de kayıtlıdır.",
+    "depositError": "Yatırma adresiniz yüklenemedi. Lütfen tekrar deneyin.",
+    "depositStepsBinance": [
+      "Binance'i açın → Cüzdan → Çek",
+      "USDC'yi arayın ve seçin",
+      "Yatırma adresinizi yapıştırın (aşağıdaki buton)",
+      "“Ağ” bölümünde Base'i seçin — listede yoksa göndermeyin",
+      "Çekimi onaylayın"
+    ],
+    "depositStepsBit2me": [
+      "Bit2Me'yi açın → Wallets → USDC → Gönder",
+      "Yatırma adresinizi yapıştırın",
+      "Ağ olarak Base'i seçin",
+      "Gönderimi onaylayın"
+    ],
+    "depositStepsKraken": [
+      "Kraken'i açın → Funding → Withdraw → USDC",
+      "Yatırma adresinizi hedef olarak ekleyin",
+      "“Network” bölümünde Base'i seçin",
+      "Çekimi onaylayın"
+    ],
+    "depositStepsWallet": [
+      "Cüzdanınızı açın ve Base ağında USDC'yi seçin",
+      "Yatırma adresinize gönderin"
+    ],
+    "depositOtherWallet": "Başka cüzdan"
   }
 }

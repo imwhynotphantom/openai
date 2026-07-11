@@ -408,7 +408,7 @@
     "compraGenericError": "Kon de operatie niet voltooien. Probeer het opnieuw.",
     "bridgeTabBase": "Betalen op Base",
     "bridgeTabOther": "Vanaf ander netwerk",
-    "bridgeTabReceive": "USDC ontvangen",
+    "bridgeTabReceive": "USDC versturen",
     "receiveSubtitle": "Stuur USDC naar je adres op het Base-netwerk vanuit een andere wallet of exchange. Het saldo wordt automatisch gedetecteerd.",
     "receiveCurrentBalance": "Je USDC-saldo op Base",
     "compraModeChecking": "Je wallet controleren…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "Opnieuw proberen",
     "bridgeNewCta": "Nieuwe verzending starten",
     "bridgeGoBuyCta": "OPEN kopen met mijn USDC",
-    "bridgeViewDestTx": "Levering bekijken op Basescan"
+    "bridgeViewDestTx": "Levering bekijken op Basescan",
+    "depositIntro": "Stuur USDC naar je persoonlijke adres vanaf een exchange of andere wallet. We detecteren de betaling automatisch.",
+    "depositRegisterTitle": "Genereer je persoonlijke stortingsadres",
+    "depositRegisterHint": "Het wordt gekoppeld aan je verbonden wallet: daar ontvang je je OPEN bij de lancering. Laat je e-mail achter voor meldingen (optioneel).",
+    "depositEmailPlaceholder": "jij@email.com (optioneel)",
+    "depositRegisterCta": "Mijn adres genereren",
+    "depositRegisterLoading": "Genereren…",
+    "depositFromWhere": "Vanwaar ga je versturen?",
+    "depositAddressLabel": "Je persoonlijke stortingsadres",
+    "depositNetworkWarning": "Verstuur via het Base-netwerk. Nooit via Solana of Tron: het tegoed zou verloren gaan. Minimaal 10 USDC.",
+    "depositPendingBanner": "We hebben {amount} USDC gedetecteerd — bevestigen (2-3 minuten)…",
+    "depositCreditedBanner": "{amount} USDC bevestigd = {open} OPEN gereserveerd. Je ontvangt ze bij de lancering (TGE).",
+    "depositWaiting": "Wachten op je overboeking… Vanaf een exchange duurt het meestal 2-10 minuten. Je kunt deze pagina sluiten: je aankoop blijft geregistreerd.",
+    "depositError": "Je stortingsadres kon niet worden geladen. Probeer het opnieuw.",
+    "depositStepsBinance": [
+      "Open Binance → Wallet → Opnemen",
+      "Zoek en selecteer USDC",
+      "Plak je stortingsadres (knop hieronder)",
+      "Selecteer bij “Netwerk” Base — staat het er niet, verstuur dan niet",
+      "Bevestig de opname"
+    ],
+    "depositStepsBit2me": [
+      "Open Bit2Me → Wallets → USDC → Versturen",
+      "Plak je stortingsadres",
+      "Selecteer als netwerk Base",
+      "Bevestig de verzending"
+    ],
+    "depositStepsKraken": [
+      "Open Kraken → Funding → Withdraw → USDC",
+      "Voeg je stortingsadres toe als bestemming",
+      "Selecteer bij “Network” Base",
+      "Bevestig de opname"
+    ],
+    "depositStepsWallet": [
+      "Open je wallet en selecteer USDC op het Base-netwerk",
+      "Verstuur naar je stortingsadres"
+    ],
+    "depositOtherWallet": "Andere wallet"
   }
 }

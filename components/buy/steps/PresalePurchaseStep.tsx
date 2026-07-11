@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { formatUnits, parseUnits } from "viem";
-import { QRCodeSVG } from "qrcode.react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useAccount } from "wagmi";
 import { css } from "@/lib/css";
@@ -17,10 +16,11 @@ import { usePresaleOpenQuote } from "@/hooks/usePresaleReads";
 import { usePaymentTokenBalances } from "@/hooks/usePaymentTokenBalances";
 import { useOpenPrice } from "@/hooks/useOpenPrice";
 import { PAYMENT_TOKEN_LIST, type PaymentTokenId } from "@/lib/onramp/payment-tokens";
-import { CopyAddressButton, InfoBanner, StepCard, StepTitle } from "../ui/CopyAddressButton";
+import { InfoBanner, StepCard, StepTitle } from "../ui/CopyAddressButton";
 import { AddOpenToWallet } from "@/components/AddOpenToWallet";
 import { BaseChainGuard } from "../ui/BaseChainGuard";
 import { CrossChainFundingStep } from "./CrossChainFundingStep";
+import { DepositTab } from "./DepositTab";
 
 export type FundingMode = "base" | "bridge" | "receive";
 
@@ -145,7 +145,7 @@ export function PresalePurchaseStep({ onBack, initialMode }: Props) {
       {mode === "bridge" ? (
         <CrossChainFundingStep recipient={address} onDelivered={handleBridgeDelivered} />
       ) : mode === "receive" ? (
-        <ReceiveUsdcPanel address={address} usdcBalance={balances.USDC.formatted} />
+        <DepositTab address={address} />
       ) : (
       <BaseChainGuard inline>
       <div>
@@ -444,41 +444,6 @@ export function PresalePurchaseStep({ onBack, initialMode }: Props) {
 
       <style>{`@keyframes buy-spin { to { transform: rotate(360deg); } }`}</style>
     </StepCard>
-  );
-}
-
-function ReceiveUsdcPanel({ address, usdcBalance }: { address?: `0x${string}`; usdcBalance: string }) {
-  const buy = useBuyCopy();
-  if (!address) return null;
-  return (
-    <div>
-      <p style={css("font:400 14px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 16px")}>
-        {buy.receiveSubtitle}
-      </p>
-
-      <div style={css("margin-bottom:16px")}>
-        <InfoBanner message={buy.rampManualNetworkWarning} />
-      </div>
-
-      <div style={css("padding:18px;border:1px solid #ECECEC;border-radius:14px;background:#FAFAFA;text-align:center;margin-bottom:16px")}>
-        <div style={css("display:flex;justify-content:center;margin-bottom:14px")}>
-          <QRCodeSVG value={address} size={148} />
-        </div>
-        <p style={css("font:600 11px var(--font-hanken);color:#8A8A94;margin:0 0 6px;text-transform:uppercase;letter-spacing:0.04em")}>
-          {buy.walletAddressLabel}
-        </p>
-        <p style={css("font:500 13px var(--font-mono);color:#0D0D0D;margin:0 0 12px;word-break:break-all")}>{address}</p>
-        <CopyAddressButton value={address} />
-      </div>
-
-      <div style={css("display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border:1px solid #ECECEC;border-radius:12px;background:#fff")}>
-        <span style={css("font:600 12px var(--font-hanken);color:#8A8A94")}>{buy.receiveCurrentBalance}</span>
-        <span style={css("font:600 14px var(--font-mono);color:#0D0D0D")}>{usdcBalance}</span>
-      </div>
-      <p style={css("font:400 12px/1.5 var(--font-hanken);color:#8A8A94;margin:10px 0 0")}>
-        {buy.sinFondosPollingHint}
-      </p>
-    </div>
   );
 }
 

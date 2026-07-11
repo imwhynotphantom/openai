@@ -408,7 +408,7 @@
     "compraGenericError": "تعذّر إكمال العملية. حاول مرة أخرى.",
     "bridgeTabBase": "الدفع على Base",
     "bridgeTabOther": "من شبكة أخرى",
-    "bridgeTabReceive": "استلام USDC",
+    "bridgeTabReceive": "إرسال USDC",
     "receiveSubtitle": "أرسل USDC إلى عنوانك على شبكة Base من wallet أو بورصة أخرى. يُكتشف الرصيد تلقائيًا.",
     "receiveCurrentBalance": "رصيد USDC على Base",
     "compraModeChecking": "جارٍ التحقق من wallet…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "إعادة المحاولة",
     "bridgeNewCta": "بدء إرسال آخر",
     "bridgeGoBuyCta": "شراء OPEN بـ USDC",
-    "bridgeViewDestTx": "عرض التسليم في Basescan"
+    "bridgeViewDestTx": "عرض التسليم في Basescan",
+    "depositIntro": "أرسل USDC إلى عنوانك الشخصي من منصة تداول أو محفظة أخرى. نكتشف الدفع تلقائياً.",
+    "depositRegisterTitle": "أنشئ عنوان الإيداع الشخصي الخاص بك",
+    "depositRegisterHint": "يُربط بمحفظتك المتصلة: هناك ستستلم OPEN عند الإطلاق. اترك بريدك الإلكتروني إذا أردت إشعارات (اختياري).",
+    "depositEmailPlaceholder": "you@email.com (اختياري)",
+    "depositRegisterCta": "إنشاء عنواني",
+    "depositRegisterLoading": "جارٍ الإنشاء…",
+    "depositFromWhere": "من أين سترسل؟",
+    "depositAddressLabel": "عنوان الإيداع الشخصي الخاص بك",
+    "depositNetworkWarning": "أرسل عبر شبكة Base. أبداً عبر Solana أو Tron: ستضيع الأموال. الحد الأدنى 10 USDC.",
+    "depositPendingBanner": "اكتشفنا {amount} USDC — جارٍ التأكيد (2-3 دقائق)…",
+    "depositCreditedBanner": "تم تأكيد {amount} USDC = {open} OPEN محجوزة. ستستلمها عند الإطلاق (TGE).",
+    "depositWaiting": "في انتظار تحويلك… من منصة تداول يستغرق عادة 2-10 دقائق. يمكنك إغلاق هذه الصفحة: يبقى شراؤك مسجلاً.",
+    "depositError": "تعذر تحميل عنوان الإيداع الخاص بك. حاول مرة أخرى.",
+    "depositStepsBinance": [
+      "افتح Binance → المحفظة → سحب",
+      "ابحث عن USDC واختره",
+      "الصق عنوان الإيداع الخاص بك (الزر أدناه)",
+      "في «الشبكة» اختر Base — إذا لم تظهر، لا ترسل",
+      "أكّد السحب"
+    ],
+    "depositStepsBit2me": [
+      "افتح Bit2Me → Wallets → USDC → إرسال",
+      "الصق عنوان الإيداع الخاص بك",
+      "اختر Base كشبكة",
+      "أكّد الإرسال"
+    ],
+    "depositStepsKraken": [
+      "افتح Kraken → Funding → Withdraw → USDC",
+      "أضف عنوان الإيداع كوجهة",
+      "في «Network» اختر Base",
+      "أكّد السحب"
+    ],
+    "depositStepsWallet": [
+      "افتح محفظتك واختر USDC على شبكة Base",
+      "أرسل إلى عنوان الإيداع الخاص بك"
+    ],
+    "depositOtherWallet": "محفظة أخرى"
   }
 }

@@ -408,7 +408,7 @@
     "compraGenericError": "Impossible de terminer l'opération. Veuillez réessayer.",
     "bridgeTabBase": "Payer sur Base",
     "bridgeTabOther": "Depuis un autre réseau",
-    "bridgeTabReceive": "Recevoir USDC",
+    "bridgeTabReceive": "Envoyer USDC",
     "receiveSubtitle": "Envoyez de l'USDC à votre adresse sur le réseau Base depuis un autre wallet ou un exchange. Le solde est détecté automatiquement.",
     "receiveCurrentBalance": "Votre solde USDC sur Base",
     "compraModeChecking": "Vérification de votre wallet…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "Réessayer",
     "bridgeNewCta": "Lancer un autre envoi",
     "bridgeGoBuyCta": "Acheter OPEN avec mes USDC",
-    "bridgeViewDestTx": "Voir la livraison sur Basescan"
+    "bridgeViewDestTx": "Voir la livraison sur Basescan",
+    "depositIntro": "Envoyez des USDC à votre adresse personnelle depuis un exchange ou un autre wallet. Nous détectons le paiement automatiquement.",
+    "depositRegisterTitle": "Générez votre adresse de dépôt personnelle",
+    "depositRegisterHint": "Elle est liée à votre wallet connecté : c'est là que vous recevrez vos OPEN au lancement. Laissez votre email pour être averti (optionnel).",
+    "depositEmailPlaceholder": "vous@email.com (optionnel)",
+    "depositRegisterCta": "Générer mon adresse",
+    "depositRegisterLoading": "Génération…",
+    "depositFromWhere": "Depuis où allez-vous envoyer ?",
+    "depositAddressLabel": "Votre adresse de dépôt personnelle",
+    "depositNetworkWarning": "Envoyez via le réseau Base. Jamais via Solana ou Tron : les fonds seraient perdus. Minimum 10 USDC.",
+    "depositPendingBanner": "Nous avons détecté {amount} USDC — confirmation en cours (2-3 minutes)…",
+    "depositCreditedBanner": "{amount} USDC confirmés = {open} OPEN réservés. Vous les recevrez au lancement (TGE).",
+    "depositWaiting": "En attente de votre virement… Depuis un exchange, cela prend généralement 2-10 minutes. Vous pouvez fermer cette page : votre achat reste enregistré.",
+    "depositError": "Impossible de charger votre adresse de dépôt. Veuillez réessayer.",
+    "depositStepsBinance": [
+      "Ouvrez Binance → Portefeuille → Retirer",
+      "Cherchez et sélectionnez USDC",
+      "Collez votre adresse de dépôt (bouton ci-dessous)",
+      "Sous « Réseau », sélectionnez Base — si absent, n'envoyez pas",
+      "Confirmez le retrait"
+    ],
+    "depositStepsBit2me": [
+      "Ouvrez Bit2Me → Wallets → USDC → Envoyer",
+      "Collez votre adresse de dépôt",
+      "Pour le réseau, sélectionnez Base",
+      "Confirmez l'envoi"
+    ],
+    "depositStepsKraken": [
+      "Ouvrez Kraken → Funding → Withdraw → USDC",
+      "Ajoutez votre adresse de dépôt comme destination",
+      "Sous « Network », sélectionnez Base",
+      "Confirmez le retrait"
+    ],
+    "depositStepsWallet": [
+      "Ouvrez votre wallet et sélectionnez USDC sur le réseau Base",
+      "Envoyez à votre adresse de dépôt"
+    ],
+    "depositOtherWallet": "Autre wallet"
   }
 }

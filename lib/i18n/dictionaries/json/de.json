@@ -408,7 +408,7 @@
     "compraGenericError": "Die Operation konnte nicht abgeschlossen werden. Bitte versuchen Sie es erneut.",
     "bridgeTabBase": "Auf Base zahlen",
     "bridgeTabOther": "Aus anderem Netzwerk",
-    "bridgeTabReceive": "USDC empfangen",
+    "bridgeTabReceive": "USDC senden",
     "receiveSubtitle": "Senden Sie USDC an Ihre Adresse im Base-Netzwerk von einer anderen Wallet oder einer Börse. Der Saldo wird automatisch erkannt.",
     "receiveCurrentBalance": "Ihr USDC-Saldo auf Base",
     "compraModeChecking": "Ihre Wallet wird geprüft…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "Erneut versuchen",
     "bridgeNewCta": "Weiteren Transfer starten",
     "bridgeGoBuyCta": "OPEN mit meinem USDC kaufen",
-    "bridgeViewDestTx": "Zustellung auf Basescan anzeigen"
+    "bridgeViewDestTx": "Zustellung auf Basescan anzeigen",
+    "depositIntro": "Sende USDC von einer Börse oder einer anderen Wallet an deine persönliche Adresse. Wir erkennen die Zahlung automatisch.",
+    "depositRegisterTitle": "Erstelle deine persönliche Einzahlungsadresse",
+    "depositRegisterHint": "Sie wird mit deiner verbundenen Wallet verknüpft: Dort erhältst du deine OPEN beim Launch. Hinterlasse deine E-Mail für Benachrichtigungen (optional).",
+    "depositEmailPlaceholder": "du@email.com (optional)",
+    "depositRegisterCta": "Meine Adresse erstellen",
+    "depositRegisterLoading": "Wird erstellt…",
+    "depositFromWhere": "Von wo wirst du senden?",
+    "depositAddressLabel": "Deine persönliche Einzahlungsadresse",
+    "depositNetworkWarning": "Sende über das Base-Netzwerk. Niemals über Solana oder Tron: Die Gelder gingen verloren. Mindestens 10 USDC.",
+    "depositPendingBanner": "Wir haben {amount} USDC erkannt — Bestätigung läuft (2-3 Minuten)…",
+    "depositCreditedBanner": "{amount} USDC bestätigt = {open} OPEN reserviert. Du erhältst sie beim Launch (TGE).",
+    "depositWaiting": "Warten auf deine Überweisung… Von einer Börse dauert es meist 2-10 Minuten. Du kannst diese Seite schließen: Dein Kauf bleibt registriert.",
+    "depositError": "Deine Einzahlungsadresse konnte nicht geladen werden. Bitte versuche es erneut.",
+    "depositStepsBinance": [
+      "Öffne Binance → Wallet → Auszahlen",
+      "Suche und wähle USDC",
+      "Füge deine Einzahlungsadresse ein (Button unten)",
+      "Wähle bei „Netzwerk“ Base — falls nicht gelistet, nicht senden",
+      "Bestätige die Auszahlung"
+    ],
+    "depositStepsBit2me": [
+      "Öffne Bit2Me → Wallets → USDC → Senden",
+      "Füge deine Einzahlungsadresse ein",
+      "Wähle als Netzwerk Base",
+      "Bestätige den Versand"
+    ],
+    "depositStepsKraken": [
+      "Öffne Kraken → Funding → Withdraw → USDC",
+      "Füge deine Einzahlungsadresse als Ziel hinzu",
+      "Wähle bei „Network“ Base",
+      "Bestätige die Auszahlung"
+    ],
+    "depositStepsWallet": [
+      "Öffne deine Wallet und wähle USDC im Base-Netzwerk",
+      "Sende an deine Einzahlungsadresse"
+    ],
+    "depositOtherWallet": "Andere Wallet"
   }
 }

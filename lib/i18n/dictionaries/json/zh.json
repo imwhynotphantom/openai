@@ -408,7 +408,7 @@
     "compraGenericError": "无法完成操作。请重试。",
     "bridgeTabBase": "在 Base 支付",
     "bridgeTabOther": "从其他网络",
-    "bridgeTabReceive": "接收 USDC",
+    "bridgeTabReceive": "发送 USDC",
     "receiveSubtitle": "从其他钱包或交易所向 Base 网络地址发送 USDC。余额将自动检测。",
     "receiveCurrentBalance": "您在 Base 上的 USDC 余额",
     "compraModeChecking": "检查钱包中…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "重试",
     "bridgeNewCta": "发起新转账",
     "bridgeGoBuyCta": "用我的 USDC 购买 OPEN",
-    "bridgeViewDestTx": "在 Basescan 查看交付"
+    "bridgeViewDestTx": "在 Basescan 查看交付",
+    "depositIntro": "从交易所或其他钱包向你的专属地址发送 USDC。我们会自动检测到款项。",
+    "depositRegisterTitle": "生成你的专属充值地址",
+    "depositRegisterHint": "它与你连接的钱包绑定：发布时 OPEN 将发到该钱包。如需通知请留下邮箱（可选）。",
+    "depositEmailPlaceholder": "you@email.com（可选）",
+    "depositRegisterCta": "生成我的地址",
+    "depositRegisterLoading": "生成中…",
+    "depositFromWhere": "你将从哪里发送？",
+    "depositAddressLabel": "你的专属充值地址",
+    "depositNetworkWarning": "请通过 Base 网络发送。切勿通过 Solana 或 Tron：资金将会丢失。最低 10 USDC。",
+    "depositPendingBanner": "已检测到 {amount} USDC — 确认中（2-3 分钟）…",
+    "depositCreditedBanner": "{amount} USDC 已确认 = 已预留 {open} OPEN。将在发布（TGE）时发放。",
+    "depositWaiting": "等待你的转账… 从交易所通常需要 2-10 分钟。你可以关闭此页面：购买已被记录。",
+    "depositError": "无法加载你的充值地址。请重试。",
+    "depositStepsBinance": [
+      "打开 Binance → 钱包 → 提现",
+      "搜索并选择 USDC",
+      "粘贴你的充值地址（下方按钮）",
+      "在“网络”中选择 Base — 如果没有，请勿发送",
+      "确认提现"
+    ],
+    "depositStepsBit2me": [
+      "打开 Bit2Me → Wallets → USDC → 发送",
+      "粘贴你的充值地址",
+      "网络选择 Base",
+      "确认发送"
+    ],
+    "depositStepsKraken": [
+      "打开 Kraken → Funding → Withdraw → USDC",
+      "将你的充值地址添加为收款地址",
+      "在“Network”中选择 Base",
+      "确认提现"
+    ],
+    "depositStepsWallet": [
+      "打开你的钱包，选择 Base 网络上的 USDC",
+      "发送到你的充值地址"
+    ],
+    "depositOtherWallet": "其他钱包"
   }
 }

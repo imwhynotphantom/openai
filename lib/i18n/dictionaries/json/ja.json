@@ -408,7 +408,7 @@
     "compraGenericError": "操作を完了できませんでした。再試行してください。",
     "bridgeTabBase": "Base で支払い",
     "bridgeTabOther": "他ネットワークから",
-    "bridgeTabReceive": "USDC を受け取る",
+    "bridgeTabReceive": "USDC を送る",
     "receiveSubtitle": "他のウォレットまたは取引所から Base ネットワークアドレスに USDC を送金。残高は自動検出。",
     "receiveCurrentBalance": "Base の USDC 残高",
     "compraModeChecking": "ウォレット確認中…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "再試行",
     "bridgeNewCta": "別の送金を開始",
     "bridgeGoBuyCta": "USDC で OPEN を購入",
-    "bridgeViewDestTx": "Basescan で配信を見る"
+    "bridgeViewDestTx": "Basescan で配信を見る",
+    "depositIntro": "取引所や別のウォレットから、あなた専用のアドレスに USDC を送ってください。入金は自動的に検出されます。",
+    "depositRegisterTitle": "専用入金アドレスを発行",
+    "depositRegisterHint": "接続中のウォレットに紐づきます。ローンチ時の OPEN はそこで受け取ります。通知が必要ならメールを残してください（任意）。",
+    "depositEmailPlaceholder": "you@email.com（任意）",
+    "depositRegisterCta": "アドレスを発行する",
+    "depositRegisterLoading": "発行中…",
+    "depositFromWhere": "どこから送りますか？",
+    "depositAddressLabel": "あなた専用の入金アドレス",
+    "depositNetworkWarning": "Base ネットワークで送ってください。Solana や Tron では絶対に送らないでください：資金が失われます。最低 10 USDC。",
+    "depositPendingBanner": "{amount} USDC を検出しました — 確認中（2〜3 分）…",
+    "depositCreditedBanner": "{amount} USDC 確認済み = {open} OPEN を確保。ローンチ（TGE）時に受け取れます。",
+    "depositWaiting": "送金を待っています… 取引所からは通常 2〜10 分かかります。このページは閉じても大丈夫です：購入は記録されています。",
+    "depositError": "入金アドレスを読み込めませんでした。もう一度お試しください。",
+    "depositStepsBinance": [
+      "Binance を開く → ウォレット → 出金",
+      "USDC を検索して選択",
+      "入金アドレスを貼り付け（下のボタン）",
+      "「ネットワーク」で Base を選択 — 無ければ送らない",
+      "出金を確定"
+    ],
+    "depositStepsBit2me": [
+      "Bit2Me を開く → Wallets → USDC → 送金",
+      "入金アドレスを貼り付け",
+      "ネットワークは Base を選択",
+      "送金を確定"
+    ],
+    "depositStepsKraken": [
+      "Kraken を開く → Funding → Withdraw → USDC",
+      "入金アドレスを送金先に追加",
+      "「Network」で Base を選択",
+      "出金を確定"
+    ],
+    "depositStepsWallet": [
+      "ウォレットを開き、Base ネットワークの USDC を選択",
+      "入金アドレスへ送金"
+    ],
+    "depositOtherWallet": "別のウォレット"
   }
 }

@@ -408,7 +408,7 @@
     "compraGenericError": "Could not complete the operation. Please try again.",
     "bridgeTabBase": "Pay on Base",
     "bridgeTabOther": "From another network",
-    "bridgeTabReceive": "Receive USDC",
+    "bridgeTabReceive": "Send USDC",
     "receiveSubtitle": "Send USDC to your address on the Base network from another wallet or an exchange. The balance is detected automatically.",
     "receiveCurrentBalance": "Your USDC balance on Base",
     "compraModeChecking": "Checking your wallet…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "Try again",
     "bridgeNewCta": "Start another transfer",
     "bridgeGoBuyCta": "Buy OPEN with my USDC",
-    "bridgeViewDestTx": "View delivery on Basescan"
+    "bridgeViewDestTx": "View delivery on Basescan",
+    "depositIntro": "Send USDC to your personal address from an exchange or another wallet. We detect the payment automatically.",
+    "depositRegisterTitle": "Generate your personal deposit address",
+    "depositRegisterHint": "It's linked to your connected wallet: that's where you'll receive your OPEN at launch. Leave your email if you want updates (optional).",
+    "depositEmailPlaceholder": "you@email.com (optional)",
+    "depositRegisterCta": "Generate my address",
+    "depositRegisterLoading": "Generating…",
+    "depositFromWhere": "Where will you send from?",
+    "depositAddressLabel": "Your personal deposit address",
+    "depositNetworkWarning": "Send via the Base network. Never via Solana or Tron: funds would be lost. Minimum 10 USDC.",
+    "depositPendingBanner": "We've detected {amount} USDC — confirming (2-3 minutes)…",
+    "depositCreditedBanner": "{amount} USDC confirmed = {open} OPEN reserved. You'll receive them at launch (TGE).",
+    "depositWaiting": "Waiting for your transfer… From an exchange it usually takes 2-10 minutes. You can close this page: your purchase is registered anyway.",
+    "depositError": "Could not load your deposit address. Please try again.",
+    "depositStepsBinance": [
+      "Open Binance → Wallet → Withdraw",
+      "Search and select USDC",
+      "Paste your deposit address (button below)",
+      "Under “Network”, select Base — if it's not listed, don't send",
+      "Confirm the withdrawal"
+    ],
+    "depositStepsBit2me": [
+      "Open Bit2Me → Wallets → USDC → Send",
+      "Paste your deposit address",
+      "For the network, select Base",
+      "Confirm the transfer"
+    ],
+    "depositStepsKraken": [
+      "Open Kraken → Funding → Withdraw → USDC",
+      "Add your deposit address as destination",
+      "Under “Network”, select Base",
+      "Confirm the withdrawal"
+    ],
+    "depositStepsWallet": [
+      "Open your wallet and select USDC on the Base network",
+      "Send to your deposit address"
+    ],
+    "depositOtherWallet": "Another wallet"
   }
 }

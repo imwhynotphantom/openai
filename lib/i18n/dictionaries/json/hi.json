@@ -408,7 +408,7 @@
     "compraGenericError": "ऑपरेशन पूर्ण नहीं हो सका। फिर से प्रयास करें।",
     "bridgeTabBase": "Base पर भुगतान",
     "bridgeTabOther": "दूसरे नेटवर्क से",
-    "bridgeTabReceive": "USDC प्राप्त करें",
+    "bridgeTabReceive": "USDC भेजें",
     "receiveSubtitle": "दूसरे wallet या एक्सचेंज से Base नेटवर्क पते पर USDC भेजें। बैलेंस स्वचालित पता चलेगा।",
     "receiveCurrentBalance": "Base पर USDC बैलेंस",
     "compraModeChecking": "Wallet जाँच हो रहा है…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "फिर से प्रयास",
     "bridgeNewCta": "नया भेजना शुरू",
     "bridgeGoBuyCta": "मेरे USDC से OPEN खरीदें",
-    "bridgeViewDestTx": "Basescan पर डिलीवरी देखें"
+    "bridgeViewDestTx": "Basescan पर डिलीवरी देखें",
+    "depositIntro": "किसी एक्सचेंज या दूसरे वॉलेट से अपने व्यक्तिगत पते पर USDC भेजें। हम भुगतान स्वतः पहचान लेते हैं।",
+    "depositRegisterTitle": "अपना व्यक्तिगत जमा पता बनाएँ",
+    "depositRegisterHint": "यह आपके कनेक्टेड वॉलेट से जुड़ा रहेगा: लॉन्च पर वहीं OPEN मिलेंगे। सूचनाएँ चाहें तो ईमेल छोड़ें (वैकल्पिक)।",
+    "depositEmailPlaceholder": "aap@email.com (वैकल्पिक)",
+    "depositRegisterCta": "मेरा पता बनाएँ",
+    "depositRegisterLoading": "बनाया जा रहा है…",
+    "depositFromWhere": "कहाँ से भेजेंगे?",
+    "depositAddressLabel": "आपका व्यक्तिगत जमा पता",
+    "depositNetworkWarning": "Base नेटवर्क से भेजें। कभी भी Solana या Tron से नहीं: धनराशि खो जाएगी। न्यूनतम 10 USDC।",
+    "depositPendingBanner": "{amount} USDC मिले — पुष्टि हो रही है (2-3 मिनट)…",
+    "depositCreditedBanner": "{amount} USDC पुष्ट = {open} OPEN आरक्षित। लॉन्च (TGE) पर मिलेंगे।",
+    "depositWaiting": "आपके ट्रांसफ़र की प्रतीक्षा… एक्सचेंज से आमतौर पर 2-10 मिनट लगते हैं। आप यह पेज बंद कर सकते हैं: आपकी खरीद दर्ज रहेगी।",
+    "depositError": "आपका जमा पता लोड नहीं हो सका। पुनः प्रयास करें।",
+    "depositStepsBinance": [
+      "Binance खोलें → वॉलेट → निकासी",
+      "USDC खोजें और चुनें",
+      "अपना जमा पता पेस्ट करें (नीचे बटन)",
+      "«नेटवर्क» में Base चुनें — न दिखे तो न भेजें",
+      "निकासी की पुष्टि करें"
+    ],
+    "depositStepsBit2me": [
+      "Bit2Me खोलें → Wallets → USDC → भेजें",
+      "अपना जमा पता पेस्ट करें",
+      "नेटवर्क में Base चुनें",
+      "भेजने की पुष्टि करें"
+    ],
+    "depositStepsKraken": [
+      "Kraken खोलें → Funding → Withdraw → USDC",
+      "अपना जमा पता गंतव्य के रूप में जोड़ें",
+      "«Network» में Base चुनें",
+      "निकासी की पुष्टि करें"
+    ],
+    "depositStepsWallet": [
+      "अपना वॉलेट खोलें और Base नेटवर्क पर USDC चुनें",
+      "अपने जमा पते पर भेजें"
+    ],
+    "depositOtherWallet": "दूसरा वॉलेट"
   }
 }

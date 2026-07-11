@@ -408,7 +408,7 @@
     "compraGenericError": "Nie udało się zakończyć operacji. Spróbuj ponownie.",
     "bridgeTabBase": "Płać w Base",
     "bridgeTabOther": "Z innej sieci",
-    "bridgeTabReceive": "Odbierz USDC",
+    "bridgeTabReceive": "Wyślij USDC",
     "receiveSubtitle": "Wyślij USDC na swój adres w sieci Base z innej wallet lub giełdy. Saldo jest wykrywane automatycznie.",
     "receiveCurrentBalance": "Twoje saldo USDC w Base",
     "compraModeChecking": "Sprawdzanie wallet…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "Spróbuj ponownie",
     "bridgeNewCta": "Rozpocznij kolejne wysłanie",
     "bridgeGoBuyCta": "Kup OPEN za moje USDC",
-    "bridgeViewDestTx": "Zobacz dostawę w Basescan"
+    "bridgeViewDestTx": "Zobacz dostawę w Basescan",
+    "depositIntro": "Wyślij USDC na swój osobisty adres z giełdy lub innego portfela. Płatność wykrywamy automatycznie.",
+    "depositRegisterTitle": "Wygeneruj swój osobisty adres wpłaty",
+    "depositRegisterHint": "Zostanie powiązany z podłączonym portfelem: tam otrzymasz swoje OPEN przy starcie. Zostaw e-mail, jeśli chcesz powiadomienia (opcjonalnie).",
+    "depositEmailPlaceholder": "ty@email.com (opcjonalnie)",
+    "depositRegisterCta": "Wygeneruj mój adres",
+    "depositRegisterLoading": "Generowanie…",
+    "depositFromWhere": "Skąd będziesz wysyłać?",
+    "depositAddressLabel": "Twój osobisty adres wpłaty",
+    "depositNetworkWarning": "Wysyłaj przez sieć Base. Nigdy przez Solanę ani Tron: środki zostałyby utracone. Minimum 10 USDC.",
+    "depositPendingBanner": "Wykryliśmy {amount} USDC — potwierdzanie (2-3 minuty)…",
+    "depositCreditedBanner": "{amount} USDC potwierdzone = {open} OPEN zarezerwowane. Otrzymasz je przy starcie (TGE).",
+    "depositWaiting": "Czekamy na Twój przelew… Z giełdy zwykle trwa to 2-10 minut. Możesz zamknąć tę stronę: Twój zakup i tak jest zarejestrowany.",
+    "depositError": "Nie udało się załadować Twojego adresu wpłaty. Spróbuj ponownie.",
+    "depositStepsBinance": [
+      "Otwórz Binance → Portfel → Wypłać",
+      "Wyszukaj i wybierz USDC",
+      "Wklej swój adres wpłaty (przycisk poniżej)",
+      "W polu „Sieć” wybierz Base — jeśli jej nie ma, nie wysyłaj",
+      "Potwierdź wypłatę"
+    ],
+    "depositStepsBit2me": [
+      "Otwórz Bit2Me → Wallets → USDC → Wyślij",
+      "Wklej swój adres wpłaty",
+      "Jako sieć wybierz Base",
+      "Potwierdź wysyłkę"
+    ],
+    "depositStepsKraken": [
+      "Otwórz Kraken → Funding → Withdraw → USDC",
+      "Dodaj swój adres wpłaty jako cel",
+      "W polu „Network” wybierz Base",
+      "Potwierdź wypłatę"
+    ],
+    "depositStepsWallet": [
+      "Otwórz portfel i wybierz USDC w sieci Base",
+      "Wyślij na swój adres wpłaty"
+    ],
+    "depositOtherWallet": "Inny portfel"
   }
 }

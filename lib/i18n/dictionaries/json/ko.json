@@ -408,7 +408,7 @@
     "compraGenericError": "작업을 완료할 수 없습니다. 다시 시도하세요.",
     "bridgeTabBase": "Base에서 결제",
     "bridgeTabOther": "다른 네트워크에서",
-    "bridgeTabReceive": "USDC 수령",
+    "bridgeTabReceive": "USDC 보내기",
     "receiveSubtitle": "다른 지갑 또는 거래소에서 Base 네트워크 주소로 USDC를 보내세요. 잔액이 자동 감지됩니다.",
     "receiveCurrentBalance": "Base USDC 잔액",
     "compraModeChecking": "지갑 확인 중…",
@@ -447,6 +447,43 @@
     "bridgeRetryCta": "다시 시도",
     "bridgeNewCta": "다른 송금 시작",
     "bridgeGoBuyCta": "USDC로 OPEN 구매",
-    "bridgeViewDestTx": "Basescan에서 전달 보기"
+    "bridgeViewDestTx": "Basescan에서 전달 보기",
+    "depositIntro": "거래소나 다른 지갑에서 전용 주소로 USDC를 보내세요. 입금은 자동으로 감지됩니다.",
+    "depositRegisterTitle": "전용 입금 주소 생성",
+    "depositRegisterHint": "연결된 지갑과 연동됩니다. 출시 시 OPEN을 그 지갑으로 받게 됩니다. 알림을 원하시면 이메일을 남겨주세요 (선택).",
+    "depositEmailPlaceholder": "you@email.com (선택)",
+    "depositRegisterCta": "내 주소 생성",
+    "depositRegisterLoading": "생성 중…",
+    "depositFromWhere": "어디에서 보내시나요?",
+    "depositAddressLabel": "나의 전용 입금 주소",
+    "depositNetworkWarning": "Base 네트워크로 보내세요. Solana나 Tron으로는 절대 보내지 마세요: 자금을 잃게 됩니다. 최소 10 USDC.",
+    "depositPendingBanner": "{amount} USDC 감지 — 확인 중 (2-3분)…",
+    "depositCreditedBanner": "{amount} USDC 확정 = {open} OPEN 예약 완료. 출시(TGE) 시 받게 됩니다.",
+    "depositWaiting": "이체를 기다리는 중… 거래소에서는 보통 2-10분 걸립니다. 이 페이지를 닫아도 됩니다: 구매는 그대로 기록됩니다.",
+    "depositError": "입금 주소를 불러오지 못했습니다. 다시 시도해 주세요.",
+    "depositStepsBinance": [
+      "Binance 열기 → 지갑 → 출금",
+      "USDC 검색 후 선택",
+      "입금 주소 붙여넣기 (아래 버튼)",
+      "“네트워크”에서 Base 선택 — 없으면 보내지 마세요",
+      "출금 확정"
+    ],
+    "depositStepsBit2me": [
+      "Bit2Me 열기 → Wallets → USDC → 보내기",
+      "입금 주소 붙여넣기",
+      "네트워크로 Base 선택",
+      "전송 확정"
+    ],
+    "depositStepsKraken": [
+      "Kraken 열기 → Funding → Withdraw → USDC",
+      "입금 주소를 대상으로 추가",
+      "“Network”에서 Base 선택",
+      "출금 확정"
+    ],
+    "depositStepsWallet": [
+      "지갑을 열고 Base 네트워크의 USDC 선택",
+      "입금 주소로 전송"
+    ],
+    "depositOtherWallet": "다른 지갑"
   }
 }
