@@ -1,12 +1,30 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { supabaseService, verifyBuyerToken, BUYER_COOKIE } from "@/lib/deposits/server";
+import { supabaseService, verifyBuyerToken, BUYER_COOKIE, depositEnvMissing } from "@/lib/deposits/server";
 
 /**
  * GET /api/deposit-status
  * Identifica al comprador por la cookie firmada (set en /api/deposit-address).
  * Devuelve dirección, USDC pendientes/acreditados y OPEN estimados.
+ * 401 sin cookie = comprador aún no registrado (esperado en primera visita).
  */
 export async function GET(req: NextRequest) {
+  const missing = depositEnvMissing();
+  if (missing.length > 0) {
+    return NextResponse.json(
+      { error: "servidor no configurado", missing },
+      { status: 503 }
+    );
+  }
+
+  try {
+    return await handleDepositStatus(req);
+  } catch (err) {
+    console.error("[deposit-status]", err);
+    return NextResponse.json({ error: "error interno" }, { status: 500 });
+  }
+}
+
+async function handleDepositStatus(req: NextRequest) {
   const token = req.cookies.get(BUYER_COOKIE)?.value;
   const buyerId = verifyBuyerToken(token);
   if (!buyerId) {
@@ -47,6 +65,7 @@ export async function GET(req: NextRequest) {
 
   return NextResponse.json({
     depositAddress: buyer.deposit_address,
+    claimAddress: buyer.claim_address ?? null,
     hasClaimAddress: Boolean(buyer.claim_address),
     credited,
     pending,

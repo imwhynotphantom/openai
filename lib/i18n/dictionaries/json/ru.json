@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "Привязать этот кошелёк к моей покупке",
     "depositLinkWalletLoading": "Привязка…",
     "depositLinkWalletDone": "Кошелёк успешно привязан.",
-    "depositLinkWalletError": "Не удалось привязать кошелёк. Попробуйте снова."
+    "depositLinkWalletError": "Не удалось привязать кошелёк. Попробуйте снова.",
+    "depositLinkWalletReplaceConfirm": "Заменить привязанный кошелёк {from} на {to}?",
+    "depositLinkWalletReplaceCta": "Подтвердить замену",
+    "depositLinkWalletReplaceCancel": "Отмена",
+    "depositLinkWalletAlreadyLinked": "Привязанный кошелёк: {address}",
+    "depositServerUnavailable": "Регистрация сейчас недоступна. Попробуйте снова через несколько минут."
   }
 }

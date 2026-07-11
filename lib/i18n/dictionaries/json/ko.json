@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "이 지갑을 내 구매에 연결",
     "depositLinkWalletLoading": "연결 중…",
     "depositLinkWalletDone": "지갑이 연결되었습니다.",
-    "depositLinkWalletError": "지갑을 연결하지 못했습니다. 다시 시도하세요."
+    "depositLinkWalletError": "지갑을 연결하지 못했습니다. 다시 시도하세요.",
+    "depositLinkWalletReplaceConfirm": "연결된 지갑 {from}을(를) {to}(으)로 바꾸시겠습니까?",
+    "depositLinkWalletReplaceCta": "변경 확인",
+    "depositLinkWalletReplaceCancel": "취소",
+    "depositLinkWalletAlreadyLinked": "연결된 지갑: {address}",
+    "depositServerUnavailable": "지금은 등록할 수 없습니다. 몇 분 후 다시 시도하세요."
   }
 }

@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { keccak256, toHex, getContractAddress, isAddress, getAddress } from "viem";
 import { FACTORY_ADDRESS, FORWARDER_INIT_CODE_HASH } from "@/lib/deposits/constants";
-import { supabaseService, signBuyerToken, verifyBuyerToken, BUYER_COOKIE } from "@/lib/deposits/server";
+import { supabaseService, signBuyerToken, verifyBuyerToken, BUYER_COOKIE, depositEnvMissing } from "@/lib/deposits/server";
 
 /**
  * POST /api/deposit-address
@@ -11,6 +11,23 @@ import { supabaseService, signBuyerToken, verifyBuyerToken, BUYER_COOKIE } from 
  * La dirección es CREATE2: no se despliega nada hasta el primer barrido.
  */
 export async function POST(req: NextRequest) {
+  const missing = depositEnvMissing();
+  if (missing.length > 0) {
+    return NextResponse.json(
+      { error: "servidor no configurado", missing },
+      { status: 503 }
+    );
+  }
+
+  try {
+    return await handleDepositAddress(req);
+  } catch (err) {
+    console.error("[deposit-address]", err);
+    return NextResponse.json({ error: "error interno al registrar" }, { status: 500 });
+  }
+}
+
+async function handleDepositAddress(req: NextRequest) {
   let body: { email?: string; claimAddress?: string; refundAddress?: string };
   try {
     body = await req.json();

@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "Link this wallet to my purchase",
     "depositLinkWalletLoading": "Linking…",
     "depositLinkWalletDone": "Wallet linked successfully.",
-    "depositLinkWalletError": "Could not link wallet. Please try again."
+    "depositLinkWalletError": "Could not link wallet. Please try again.",
+    "depositLinkWalletReplaceConfirm": "Replace linked wallet {from} with {to}?",
+    "depositLinkWalletReplaceCta": "Confirm replacement",
+    "depositLinkWalletReplaceCancel": "Cancel",
+    "depositLinkWalletAlreadyLinked": "Linked wallet: {address}",
+    "depositServerUnavailable": "Registration is not available right now. Please try again in a few minutes."
   }
 }

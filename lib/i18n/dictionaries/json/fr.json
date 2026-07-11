@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "Lier cette wallet à mon achat",
     "depositLinkWalletLoading": "Liaison…",
     "depositLinkWalletDone": "Wallet liée avec succès.",
-    "depositLinkWalletError": "Impossible de lier la wallet. Réessayez."
+    "depositLinkWalletError": "Impossible de lier la wallet. Réessayez.",
+    "depositLinkWalletReplaceConfirm": "Remplacer la wallet liée {from} par {to} ?",
+    "depositLinkWalletReplaceCta": "Confirmer le remplacement",
+    "depositLinkWalletReplaceCancel": "Annuler",
+    "depositLinkWalletAlreadyLinked": "Wallet liée : {address}",
+    "depositServerUnavailable": "L'inscription n'est pas disponible pour le moment. Réessayez dans quelques minutes."
   }
 }

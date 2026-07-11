@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "ربط هذه المحفظة بشرائي",
     "depositLinkWalletLoading": "جارٍ الربط…",
     "depositLinkWalletDone": "تم ربط المحفظة بنجاح.",
-    "depositLinkWalletError": "تعذّر ربط المحفظة. حاول مرة أخرى."
+    "depositLinkWalletError": "تعذّر ربط المحفظة. حاول مرة أخرى.",
+    "depositLinkWalletReplaceConfirm": "هل تستبدل المحفظة المرتبطة {from} بـ {to}؟",
+    "depositLinkWalletReplaceCta": "تأكيد الاستبدال",
+    "depositLinkWalletReplaceCancel": "إلغاء",
+    "depositLinkWalletAlreadyLinked": "المحفظة المرتبطة: {address}",
+    "depositServerUnavailable": "التسجيل غير متاح حالياً. حاول مرة أخرى بعد دقائق."
   }
 }

@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "Połącz tę wallet z moim zakupem",
     "depositLinkWalletLoading": "Łączenie…",
     "depositLinkWalletDone": "Wallet połączona pomyślnie.",
-    "depositLinkWalletError": "Nie udało się połączyć wallet. Spróbuj ponownie."
+    "depositLinkWalletError": "Nie udało się połączyć wallet. Spróbuj ponownie.",
+    "depositLinkWalletReplaceConfirm": "Zastąpić powiązaną wallet {from} przez {to}?",
+    "depositLinkWalletReplaceCta": "Potwierdź zastąpienie",
+    "depositLinkWalletReplaceCancel": "Anuluj",
+    "depositLinkWalletAlreadyLinked": "Powiązana wallet: {address}",
+    "depositServerUnavailable": "Rejestracja jest teraz niedostępna. Spróbuj ponownie za kilka minut."
   }
 }

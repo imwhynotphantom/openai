@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "将此钱包关联到我的购买",
     "depositLinkWalletLoading": "关联中…",
     "depositLinkWalletDone": "钱包已成功关联。",
-    "depositLinkWalletError": "无法关联钱包。请重试。"
+    "depositLinkWalletError": "无法关联钱包。请重试。",
+    "depositLinkWalletReplaceConfirm": "将已关联的钱包 {from} 替换为 {to}？",
+    "depositLinkWalletReplaceCta": "确认替换",
+    "depositLinkWalletReplaceCancel": "取消",
+    "depositLinkWalletAlreadyLinked": "已关联钱包：{address}",
+    "depositServerUnavailable": "注册暂不可用，请几分钟后再试。"
   }
 }

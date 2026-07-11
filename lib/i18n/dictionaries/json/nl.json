@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "Deze wallet aan mijn aankoop koppelen",
     "depositLinkWalletLoading": "Koppelen…",
     "depositLinkWalletDone": "Wallet succesvol gekoppeld.",
-    "depositLinkWalletError": "Wallet kon niet worden gekoppeld. Probeer opnieuw."
+    "depositLinkWalletError": "Wallet kon niet worden gekoppeld. Probeer opnieuw.",
+    "depositLinkWalletReplaceConfirm": "Gekoppelde wallet {from} vervangen door {to}?",
+    "depositLinkWalletReplaceCta": "Vervanging bevestigen",
+    "depositLinkWalletReplaceCancel": "Annuleren",
+    "depositLinkWalletAlreadyLinked": "Gekoppelde wallet: {address}",
+    "depositServerUnavailable": "Registratie is momenteel niet beschikbaar. Probeer het over een paar minuten opnieuw."
   }
 }

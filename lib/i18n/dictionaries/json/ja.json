@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "このウォレットを購入に紐づける",
     "depositLinkWalletLoading": "紐づけ中…",
     "depositLinkWalletDone": "ウォレットを紐づけました。",
-    "depositLinkWalletError": "ウォレットを紐づけられませんでした。再試行してください。"
+    "depositLinkWalletError": "ウォレットを紐づけられませんでした。再試行してください。",
+    "depositLinkWalletReplaceConfirm": "紐づけ済みウォレット {from} を {to} に変更しますか？",
+    "depositLinkWalletReplaceCta": "変更を確認",
+    "depositLinkWalletReplaceCancel": "キャンセル",
+    "depositLinkWalletAlreadyLinked": "紐づけ済みウォレット: {address}",
+    "depositServerUnavailable": "現在登録できません。数分後にもう一度お試しください。"
   }
 }

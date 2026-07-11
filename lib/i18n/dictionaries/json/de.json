@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "Diese Wallet mit meinem Kauf verknüpfen",
     "depositLinkWalletLoading": "Verknüpfe…",
     "depositLinkWalletDone": "Wallet erfolgreich verknüpft.",
-    "depositLinkWalletError": "Wallet konnte nicht verknüpft werden. Bitte erneut versuchen."
+    "depositLinkWalletError": "Wallet konnte nicht verknüpft werden. Bitte erneut versuchen.",
+    "depositLinkWalletReplaceConfirm": "Verknüpfte Wallet {from} durch {to} ersetzen?",
+    "depositLinkWalletReplaceCta": "Ersetzung bestätigen",
+    "depositLinkWalletReplaceCancel": "Abbrechen",
+    "depositLinkWalletAlreadyLinked": "Verknüpfte Wallet: {address}",
+    "depositServerUnavailable": "Die Registrierung ist derzeit nicht verfügbar. Bitte versuche es in ein paar Minuten erneut."
   }
 }

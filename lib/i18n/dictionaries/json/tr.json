@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "Bu cüzdanı satın alıma bağla",
     "depositLinkWalletLoading": "Bağlanıyor…",
     "depositLinkWalletDone": "Cüzdan başarıyla bağlandı.",
-    "depositLinkWalletError": "Cüzdan bağlanamadı. Tekrar deneyin."
+    "depositLinkWalletError": "Cüzdan bağlanamadı. Tekrar deneyin.",
+    "depositLinkWalletReplaceConfirm": "Bağlı cüzdan {from} yerine {to} kullanılsın mı?",
+    "depositLinkWalletReplaceCta": "Değişikliği onayla",
+    "depositLinkWalletReplaceCancel": "İptal",
+    "depositLinkWalletAlreadyLinked": "Bağlı cüzdan: {address}",
+    "depositServerUnavailable": "Kayıt şu anda kullanılamıyor. Birkaç dakika sonra tekrar deneyin."
   }
 }

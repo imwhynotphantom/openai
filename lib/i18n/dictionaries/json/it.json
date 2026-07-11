@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "Collega questo wallet al mio acquisto",
     "depositLinkWalletLoading": "Collegamento…",
     "depositLinkWalletDone": "Wallet collegato correttamente.",
-    "depositLinkWalletError": "Impossibile collegare il wallet. Riprova."
+    "depositLinkWalletError": "Impossibile collegare il wallet. Riprova.",
+    "depositLinkWalletReplaceConfirm": "Sostituire il wallet collegato {from} con {to}?",
+    "depositLinkWalletReplaceCta": "Conferma sostituzione",
+    "depositLinkWalletReplaceCancel": "Annulla",
+    "depositLinkWalletAlreadyLinked": "Wallet collegato: {address}",
+    "depositServerUnavailable": "La registrazione non è disponibile al momento. Riprova tra qualche minuto."
   }
 }

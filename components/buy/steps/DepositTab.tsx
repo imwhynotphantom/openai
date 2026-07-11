@@ -2,9 +2,12 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { QRCodeSVG } from "qrcode.react";
+import { useAccount } from "wagmi";
+import { getAddress } from "viem";
 import { css } from "@/lib/css";
 import { Hov } from "@/components/ui";
 import { useBuyCopy } from "@/hooks/useBuyCopy";
+import { formatAddress } from "@/lib/wagmi/format-address";
 import { CopyAddressButton, InfoBanner } from "../ui/CopyAddressButton";
 
 /**
@@ -16,6 +19,7 @@ import { CopyAddressButton, InfoBanner } from "../ui/CopyAddressButton";
 
 type DepositInfo = {
   depositAddress: string;
+  claimAddress: string | null;
   hasClaimAddress: boolean;
   credited: number;
   pending: number;
@@ -31,14 +35,19 @@ const fmt = (n: number) =>
 
 export function DepositTab({ address }: { address?: `0x${string}` }) {
   const buy = useBuyCopy();
+  const { address: connectedAddress } = useAccount();
   const [info, setInfo] = useState<DepositInfo | null>(null);
   const [needsRegister, setNeedsRegister] = useState(false);
   const [email, setEmail] = useState("");
   const [registering, setRegistering] = useState(false);
   const [linking, setLinking] = useState(false);
   const [linkDone, setLinkDone] = useState(false);
+  const [showReplaceConfirm, setShowReplaceConfirm] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [exchange, setExchange] = useState<ExchangeId | null>(null);
+
+  /** Solo la wallet conectada vía wagmi — nunca un campo de texto libre. */
+  const walletToLink = connectedAddress;
 
   const emailValid = EMAIL_RE.test(email.trim());
   const canRegister = address ? true : emailValid;
@@ -79,6 +88,11 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
     };
   }, [loadStatus]);
 
+  useEffect(() => {
+    setShowReplaceConfirm(false);
+    setLinkDone(false);
+  }, [connectedAddress]);
+
   const register = async () => {
     if (!canRegister) return;
     setRegistering(true);
@@ -92,26 +106,38 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
           email: email.trim() || undefined,
         }),
       });
-      if (!r.ok) throw new Error("register failed");
+      if (!r.ok) {
+        const data = (await r.json().catch(() => ({}))) as { error?: string };
+        if (r.status === 503) throw new Error("server_config");
+        throw new Error(data.error ?? "register failed");
+      }
       await loadStatus();
-    } catch {
-      setError(buy.depositError);
+    } catch (e) {
+      setError(e instanceof Error && e.message === "server_config" ? buy.depositServerUnavailable : buy.depositError);
     } finally {
       setRegistering(false);
     }
   };
 
-  const linkWallet = async () => {
-    if (!address) return;
+  const linkWallet = async (confirmReplace = false) => {
+    if (!walletToLink) return;
     setLinking(true);
     setError(null);
     try {
       const r = await fetch("/api/deposit-link-wallet", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ claimAddress: address }),
+        body: JSON.stringify({ claimAddress: walletToLink, confirmReplace }),
       });
+      if (r.status === 409) {
+        const data = (await r.json()) as { needsConfirmation?: boolean };
+        if (data.needsConfirmation) {
+          setShowReplaceConfirm(true);
+          return;
+        }
+      }
       if (!r.ok) throw new Error("link failed");
+      setShowReplaceConfirm(false);
       setLinkDone(true);
       await loadStatus();
     } catch {
@@ -172,7 +198,92 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
   }
 
   const selected = EXCHANGES.find((e) => e.id === exchange);
-  const showLinkWallet = Boolean(address && !info.hasClaimAddress);
+
+  const linkedClaim = info.claimAddress
+    ? (() => {
+        try {
+          return getAddress(info.claimAddress);
+        } catch {
+          return null;
+        }
+      })()
+    : null;
+  const connected = walletToLink ?? null;
+  const walletMatches =
+    linkedClaim && connected ? linkedClaim.toLowerCase() === connected.toLowerCase() : false;
+  const needsInitialLink = Boolean(connected && !linkedClaim);
+  const needsReplace = Boolean(connected && linkedClaim && !walletMatches);
+
+  const linkWalletPanel = needsInitialLink || needsReplace || (connected && walletMatches && linkDone) ? (
+    <div
+      style={css(
+        "padding:14px 16px;border:1px solid #ECECEC;border-radius:12px;background:#FAFAFA;margin:0 0 16px"
+      )}
+    >
+      {needsReplace || showReplaceConfirm ? (
+        <>
+          <p style={css("font:600 14px var(--font-hanken);color:#0D0D0D;margin:0 0 8px")}>
+            {buy.depositLinkWalletTitle}
+          </p>
+          <p style={css("font:500 13px/1.5 var(--font-hanken);color:#9A5B00;margin:0 0 12px")}>
+            {buy.depositLinkWalletReplaceConfirm(
+              formatAddress(linkedClaim!),
+              formatAddress(connected!)
+            )}
+          </p>
+          <div style={css("display:flex;gap:8px")}>
+            <Hov
+              as="button"
+              type="button"
+              disabled={linking}
+              onClick={() => setShowReplaceConfirm(false)}
+              style="appearance:none;cursor:pointer;flex:1;background:#fff;color:#5C5C66;border:1px solid #E6E6E8;border-radius:12px;padding:12px;font:600 13px var(--font-hanken)"
+              hover="border-color:#0D0D0D;color:#0D0D0D"
+            >
+              {buy.depositLinkWalletReplaceCancel}
+            </Hov>
+            <Hov
+              as="button"
+              type="button"
+              disabled={linking}
+              onClick={() => void linkWallet(true)}
+              style="appearance:none;cursor:pointer;flex:1;background:#0D0D0D;color:#fff;border:none;border-radius:12px;padding:12px;font:600 13px var(--font-hanken)"
+              hover="background:#000"
+            >
+              {linking ? buy.depositLinkWalletLoading : buy.depositLinkWalletReplaceCta}
+            </Hov>
+          </div>
+        </>
+      ) : walletMatches && linkDone ? (
+        <p style={css("font:500 13px var(--font-hanken);color:var(--accent,#0E8C6A);margin:0")}>
+          ✓ {buy.depositLinkWalletDone}
+        </p>
+      ) : walletMatches ? (
+        <p style={css("font:500 13px var(--font-hanken);color:#5C5C66;margin:0")}>
+          {buy.depositLinkWalletAlreadyLinked(formatAddress(linkedClaim!))}
+        </p>
+      ) : (
+        <>
+          <p style={css("font:600 14px var(--font-hanken);color:#0D0D0D;margin:0 0 6px")}>
+            {buy.depositLinkWalletTitle}
+          </p>
+          <p style={css("font:400 13px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 12px")}>
+            {buy.depositLinkWalletHint}
+          </p>
+          <Hov
+            as="button"
+            type="button"
+            disabled={linking}
+            onClick={() => void linkWallet(false)}
+            style="appearance:none;cursor:pointer;width:100%;background:#fff;color:#0D0D0D;border:1px solid #E6E6E8;border-radius:12px;padding:12px;font:600 13px var(--font-hanken)"
+            hover="border-color:#0D0D0D"
+          >
+            {linking ? buy.depositLinkWalletLoading : buy.depositLinkWalletCta}
+          </Hov>
+        </>
+      )}
+    </div>
+  ) : null;
 
   return (
     <div>
@@ -180,36 +291,7 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
         {buy.depositIntro}
       </p>
 
-      {showLinkWallet ? (
-        <div
-          style={css(
-            "padding:14px 16px;border:1px solid #ECECEC;border-radius:12px;background:#FAFAFA;margin:0 0 16px"
-          )}
-        >
-          <p style={css("font:600 14px var(--font-hanken);color:#0D0D0D;margin:0 0 6px")}>
-            {buy.depositLinkWalletTitle}
-          </p>
-          <p style={css("font:400 13px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 12px")}>
-            {buy.depositLinkWalletHint}
-          </p>
-          {linkDone ? (
-            <p style={css("font:500 13px var(--font-hanken);color:var(--accent,#0E8C6A);margin:0")}>
-              ✓ {buy.depositLinkWalletDone}
-            </p>
-          ) : (
-            <Hov
-              as="button"
-              type="button"
-              disabled={linking}
-              onClick={linkWallet}
-              style="appearance:none;cursor:pointer;width:100%;background:#fff;color:#0D0D0D;border:1px solid #E6E6E8;border-radius:12px;padding:12px;font:600 13px var(--font-hanken)"
-              hover="border-color:#0D0D0D"
-            >
-              {linking ? buy.depositLinkWalletLoading : buy.depositLinkWalletCta}
-            </Hov>
-          )}
-        </div>
-      ) : null}
+      {linkWalletPanel}
 
       <p style={css("font:600 12px var(--font-hanken);color:#8A8A94;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.04em")}>
         {buy.depositFromWhere}

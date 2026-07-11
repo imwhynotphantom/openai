@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "इस वॉलेट को मेरी खरीद से जोड़ें",
     "depositLinkWalletLoading": "जोड़ रहे हैं…",
     "depositLinkWalletDone": "वॉलेट सफलतापूर्वक जुड़ा।",
-    "depositLinkWalletError": "वॉलेट नहीं जुड़ा। फिर कोशिश करें।"
+    "depositLinkWalletError": "वॉलेट नहीं जुड़ा। फिर कोशिश करें।",
+    "depositLinkWalletReplaceConfirm": "जुड़े वॉलेट {from} को {to} से बदलें?",
+    "depositLinkWalletReplaceCta": "बदलाव की पुष्टि करें",
+    "depositLinkWalletReplaceCancel": "रद्द करें",
+    "depositLinkWalletAlreadyLinked": "जुड़ा वॉलेट: {address}",
+    "depositServerUnavailable": "पंजीकरण अभी उपलब्ध नहीं है। कुछ मिनट बाद पुनः प्रयास करें।"
   }
 }

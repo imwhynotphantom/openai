@@ -493,6 +493,11 @@
     "depositLinkWalletCta": "Vincular esta wallet a tu compra",
     "depositLinkWalletLoading": "Vinculando…",
     "depositLinkWalletDone": "Wallet vinculada correctamente.",
-    "depositLinkWalletError": "No se pudo vincular la wallet. Inténtalo de nuevo."
+    "depositLinkWalletError": "No se pudo vincular la wallet. Inténtalo de nuevo.",
+    "depositLinkWalletReplaceConfirm": "¿Sustituir la wallet vinculada {from} por {to}?",
+    "depositLinkWalletReplaceCta": "Confirmar sustitución",
+    "depositLinkWalletReplaceCancel": "Cancelar",
+    "depositLinkWalletAlreadyLinked": "Wallet vinculada: {address}",
+    "depositServerUnavailable": "El registro no está disponible ahora mismo. Inténtalo de nuevo en unos minutos."
   }
 }
