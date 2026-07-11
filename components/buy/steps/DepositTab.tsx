@@ -11,17 +11,20 @@ import { CopyAddressButton, InfoBanner } from "../ui/CopyAddressButton";
  * Tab "Enviar USDC": cada comprador recibe una dirección de depósito única
  * (CREATE2). Puede enviar USDC desde cualquier wallet o exchange por la red
  * Base; el watcher del backend detecta, acredita y barre a tesorería.
- * Vía ADICIONAL: no toca el flujo on-chain approve+buy.
+ * Funciona con o sin wallet conectada (email como identificador alternativo).
  */
 
 type DepositInfo = {
   depositAddress: string;
-  credited: number; // USDC acreditados
-  pending: number; // detectados sin confirmar
+  hasClaimAddress: boolean;
+  credited: number;
+  pending: number;
   openEstimated: number;
 };
 
 type ExchangeId = "binance" | "bit2me" | "kraken" | "wallet";
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const fmt = (n: number) =>
   n.toLocaleString("es-ES", { maximumFractionDigits: 2 });
@@ -32,8 +35,13 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
   const [needsRegister, setNeedsRegister] = useState(false);
   const [email, setEmail] = useState("");
   const [registering, setRegistering] = useState(false);
+  const [linking, setLinking] = useState(false);
+  const [linkDone, setLinkDone] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [exchange, setExchange] = useState<ExchangeId | null>(null);
+
+  const emailValid = EMAIL_RE.test(email.trim());
+  const canRegister = address ? true : emailValid;
 
   const EXCHANGES: { id: ExchangeId; name: string; steps: string[] }[] = [
     { id: "binance", name: "Binance", steps: buy.depositStepsBinance },
@@ -58,8 +66,6 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
     }
   }, []);
 
-  // Polling del estado cada 15 s — el backend ya vigila la blockchain,
-  // aquí solo leemos nuestro ledger.
   useEffect(() => {
     let alive = true;
     let id: ReturnType<typeof setInterval> | undefined;
@@ -74,6 +80,7 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
   }, [loadStatus]);
 
   const register = async () => {
+    if (!canRegister) return;
     setRegistering(true);
     setError(null);
     try {
@@ -94,7 +101,26 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
     }
   };
 
-  // ── Registro previo (una sola vez; después queda la cookie) ──
+  const linkWallet = async () => {
+    if (!address) return;
+    setLinking(true);
+    setError(null);
+    try {
+      const r = await fetch("/api/deposit-link-wallet", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ claimAddress: address }),
+      });
+      if (!r.ok) throw new Error("link failed");
+      setLinkDone(true);
+      await loadStatus();
+    } catch {
+      setError(buy.depositLinkWalletError);
+    } finally {
+      setLinking(false);
+    }
+  };
+
   if (needsRegister) {
     return (
       <div>
@@ -106,22 +132,23 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
             {buy.depositRegisterTitle}
           </p>
           <p style={css("font:400 13px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 14px")}>
-            {buy.depositRegisterHint}
+            {address ? buy.depositRegisterHintWallet : buy.depositRegisterHintEmail}
           </p>
           <input
             type="email"
             autoComplete="email"
-            placeholder={buy.depositEmailPlaceholder}
+            required={!address}
+            placeholder={address ? buy.depositEmailPlaceholderOptional : buy.depositEmailPlaceholderRequired}
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             style={css(
-              "width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid #E6E6E8;border-radius:12px;font:500 14px var(--font-hanken);margin-bottom:12px;background:#fff"
+              `width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid ${!address && email && !emailValid ? "#E5A0A0" : "#E6E6E8"};border-radius:12px;font:500 14px var(--font-hanken);margin-bottom:12px;background:#fff`
             )}
           />
           <Hov
             as="button"
             type="button"
-            disabled={registering || !address}
+            disabled={registering || !canRegister}
             onClick={register}
             style="appearance:none;cursor:pointer;width:100%;background:#0D0D0D;color:#fff;border:none;border-radius:12px;padding:14px;font:600 14px var(--font-hanken)"
             hover="background:#000"
@@ -145,6 +172,7 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
   }
 
   const selected = EXCHANGES.find((e) => e.id === exchange);
+  const showLinkWallet = Boolean(address && !info.hasClaimAddress);
 
   return (
     <div>
@@ -152,7 +180,37 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
         {buy.depositIntro}
       </p>
 
-      {/* Selector de origen */}
+      {showLinkWallet ? (
+        <div
+          style={css(
+            "padding:14px 16px;border:1px solid #ECECEC;border-radius:12px;background:#FAFAFA;margin:0 0 16px"
+          )}
+        >
+          <p style={css("font:600 14px var(--font-hanken);color:#0D0D0D;margin:0 0 6px")}>
+            {buy.depositLinkWalletTitle}
+          </p>
+          <p style={css("font:400 13px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 12px")}>
+            {buy.depositLinkWalletHint}
+          </p>
+          {linkDone ? (
+            <p style={css("font:500 13px var(--font-hanken);color:var(--accent,#0E8C6A);margin:0")}>
+              ✓ {buy.depositLinkWalletDone}
+            </p>
+          ) : (
+            <Hov
+              as="button"
+              type="button"
+              disabled={linking}
+              onClick={linkWallet}
+              style="appearance:none;cursor:pointer;width:100%;background:#fff;color:#0D0D0D;border:1px solid #E6E6E8;border-radius:12px;padding:12px;font:600 13px var(--font-hanken)"
+              hover="border-color:#0D0D0D"
+            >
+              {linking ? buy.depositLinkWalletLoading : buy.depositLinkWalletCta}
+            </Hov>
+          )}
+        </div>
+      ) : null}
+
       <p style={css("font:600 12px var(--font-hanken);color:#8A8A94;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.04em")}>
         {buy.depositFromWhere}
       </p>
@@ -175,7 +233,6 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
         ))}
       </div>
 
-      {/* Pasos específicos del origen elegido */}
       {selected ? (
         <ol style={css("margin:0 0 16px;padding:14px 16px;list-style:none;border-radius:12px;background:#F7F7F8")}>
           {selected.steps.map((s, i) => (
@@ -187,7 +244,6 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
         </ol>
       ) : null}
 
-      {/* Dirección + QR */}
       <div style={css("padding:18px;border:1px solid #ECECEC;border-radius:14px;background:#FAFAFA;text-align:center;margin-bottom:16px")}>
         <div style={css("display:flex;justify-content:center;margin-bottom:14px")}>
           <QRCodeSVG value={info.depositAddress} size={148} />
@@ -201,7 +257,6 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
         <CopyAddressButton value={info.depositAddress} />
       </div>
 
-      {/* Aviso de red (Etapa 1: solo Base) */}
       <div
         style={css(
           "padding:10px 12px;border-radius:10px;background:#FFF7ED;border:1px solid #FBD9A5;font:500 12.5px/1.5 var(--font-hanken);color:#9A5B00;margin:0 0 16px"
@@ -210,7 +265,6 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
         {buy.depositNetworkWarning}
       </div>
 
-      {/* Estado */}
       {info.pending > 0 ? (
         <div
           style={css(
@@ -235,7 +289,9 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
           )}
         >
           <span style={css("font:500 13px/1.5 var(--font-hanken);color:var(--accent,#0E8C6A)")}>
-            ✓ {buy.depositCreditedBanner(fmt(info.credited), fmt(info.openEstimated))}
+            {info.hasClaimAddress
+              ? `✓ ${buy.depositCreditedBanner(fmt(info.credited), fmt(info.openEstimated))}`
+              : buy.depositCreditedBannerEmail}
           </span>
         </div>
       ) : null}
@@ -244,6 +300,10 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
         <div style={css("margin:0 0 12px")}>
           <InfoBanner message={buy.depositWaiting} />
         </div>
+      ) : null}
+
+      {error ? (
+        <p style={css("font:500 13px var(--font-hanken);color:#D14343;margin:10px 0 0")}>{error}</p>
       ) : null}
 
       <style>{`@keyframes deposit-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }`}</style>

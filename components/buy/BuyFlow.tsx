@@ -6,7 +6,6 @@ import { css } from "@/lib/css";
 import { useBuyCopy } from "@/hooks/useBuyCopy";
 import { formatAddress } from "@/lib/wagmi/format-address";
 import { useWalletDisconnect } from "@/hooks/useWalletDisconnect";
-import { SinWalletStep } from "./steps/SinWalletStep";
 import { PresalePurchaseStep, type FundingMode } from "./steps/PresalePurchaseStep";
 
 /** ?modo=recibir | ?modo=puente abren la pestaña correspondiente. */
@@ -32,31 +31,28 @@ export default function BuyFlow() {
       </div>
 
       {isConnected && address ? (
-        <>
-          <div style={css("display:flex;justify-content:center;margin-bottom:20px")}>
-            <div
+        <div style={css("display:flex;justify-content:center;margin-bottom:20px")}>
+          <div
+            style={css(
+              "display:inline-flex;align-items:center;gap:10px;padding:7px 8px 7px 14px;border:1px solid #ECECEC;background:#fff;border-radius:999px"
+            )}
+          >
+            <span style={css("width:7px;height:7px;border-radius:50%;background:var(--accent,#0E8C6A)")} />
+            <span style={css("font:500 13px var(--font-mono);color:#0D0D0D")}>{formatAddress(address)}</span>
+            <button
+              type="button"
+              onClick={disconnectWallet}
               style={css(
-                "display:inline-flex;align-items:center;gap:10px;padding:7px 8px 7px 14px;border:1px solid #ECECEC;background:#fff;border-radius:999px"
+                "appearance:none;cursor:pointer;border:none;background:#F4F4F5;border-radius:999px;padding:5px 10px;font:600 12px var(--font-hanken);color:#5C5C66"
               )}
             >
-              <span style={css("width:7px;height:7px;border-radius:50%;background:var(--accent,#0E8C6A)")} />
-              <span style={css("font:500 13px var(--font-mono);color:#0D0D0D")}>{formatAddress(address)}</span>
-              <button
-                type="button"
-                onClick={disconnectWallet}
-                style={css(
-                  "appearance:none;cursor:pointer;border:none;background:#F4F4F5;border-radius:999px;padding:5px 10px;font:600 12px var(--font-hanken);color:#5C5C66"
-                )}
-              >
-                {buy.walletChangeCta}
-              </button>
-            </div>
+              {buy.walletChangeCta}
+            </button>
           </div>
-          <PresalePurchaseStep initialMode={initialMode} />
-        </>
-      ) : (
-        <SinWalletStep />
-      )}
+        </div>
+      ) : null}
+
+      <PresalePurchaseStep initialMode={initialMode} />
     </main>
   );
 }

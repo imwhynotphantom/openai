@@ -330,7 +330,7 @@
   },
   "buy": {
     "pageTitle": "购买 OPEN",
-    "pageSubtitle": "在 Base 上使用 USDC、ETH 或 cbBTC 支付——或从其他网络转入资金。",
+    "pageSubtitle": "用钱包或直接发送 USDC 购买 OPEN — 无需钱包。",
     "sinWalletTitle": "连接钱包",
     "sinWalletSubtitle": "创建安全账户或连接您已有的钱包。",
     "walletModalTitle": "连接钱包",
@@ -366,7 +366,7 @@
     "listoSubtitle": "您有 {balance} 可用于投资 OPEN。",
     "continueCta": "继续购买",
     "compraTitle": "购买 OPEN",
-    "compraSubtitle": "选择支付币种。我们转换为 USDC 并从您的钱包购买 OPEN。",
+    "compraSubtitle": "用钱包或直接发送 USDC 购买 OPEN — 无需钱包。",
     "compraTgeNotice": "预售购买的代币在 TGE 时通过 claim 领取。",
     "compraPayWith": "支付方式",
     "compraBalance": "余额",
@@ -450,8 +450,6 @@
     "bridgeViewDestTx": "在 Basescan 查看交付",
     "depositIntro": "从交易所或其他钱包向你的专属地址发送 USDC。我们会自动检测到款项。",
     "depositRegisterTitle": "生成你的专属充值地址",
-    "depositRegisterHint": "它与你连接的钱包绑定：发布时 OPEN 将发到该钱包。如需通知请留下邮箱（可选）。",
-    "depositEmailPlaceholder": "you@email.com（可选）",
     "depositRegisterCta": "生成我的地址",
     "depositRegisterLoading": "生成中…",
     "depositFromWhere": "你将从哪里发送？",
@@ -484,6 +482,17 @@
       "打开你的钱包，选择 Base 网络上的 USDC",
       "发送到你的充值地址"
     ],
-    "depositOtherWallet": "其他钱包"
+    "depositOtherWallet": "其他钱包",
+    "depositRegisterHintWallet": "绑定到已连接的钱包：上线时在此领取 OPEN。通知邮箱可选。",
+    "depositRegisterHintEmail": "绑定到您的邮箱。",
+    "depositEmailPlaceholderOptional": "you@email.com（可选）",
+    "depositEmailPlaceholderRequired": "您的邮箱 — 用于通知和查询购买",
+    "depositCreditedBannerEmail": "✓ 购买已确认。上线时将收到 OPEN — 我们会邮件通知您。",
+    "depositLinkWalletTitle": "将钱包关联到购买",
+    "depositLinkWalletHint": "您已有通过邮箱登记的购买。可关联此钱包以在上线时领取 OPEN。",
+    "depositLinkWalletCta": "将此钱包关联到我的购买",
+    "depositLinkWalletLoading": "关联中…",
+    "depositLinkWalletDone": "钱包已成功关联。",
+    "depositLinkWalletError": "无法关联钱包。请重试。"
   }
 }

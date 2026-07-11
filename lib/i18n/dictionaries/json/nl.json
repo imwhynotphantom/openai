@@ -330,7 +330,7 @@
   },
   "buy": {
     "pageTitle": "OPEN kopen",
-    "pageSubtitle": "Betaal met USDC, ETH of cbBTC op Base — of breng fondsen van een ander netwerk.",
+    "pageSubtitle": "Koop OPEN met je wallet of stuur simpelweg USDC — geen wallet nodig.",
     "sinWalletTitle": "Verbind je wallet",
     "sinWalletSubtitle": "Maak een veilig account aan of verbind de wallet die je al gebruikt.",
     "walletModalTitle": "Wallet verbinden",
@@ -366,7 +366,7 @@
     "listoSubtitle": "Je hebt {balance} beschikbaar om te investeren in OPEN.",
     "continueCta": "Doorgaan naar aankoop",
     "compraTitle": "OPEN kopen",
-    "compraSubtitle": "Kies met welke munt je betaalt. We converteren naar USDC en kopen OPEN vanuit je wallet.",
+    "compraSubtitle": "Koop OPEN met je wallet of stuur simpelweg USDC — geen wallet nodig.",
     "compraTgeNotice": "Tokens gekocht in de presale ontvang je bij de lancering (TGE) via claim.",
     "compraPayWith": "Betalen met",
     "compraBalance": "Saldo",
@@ -450,8 +450,6 @@
     "bridgeViewDestTx": "Levering bekijken op Basescan",
     "depositIntro": "Stuur USDC naar je persoonlijke adres vanaf een exchange of andere wallet. We detecteren de betaling automatisch.",
     "depositRegisterTitle": "Genereer je persoonlijke stortingsadres",
-    "depositRegisterHint": "Het wordt gekoppeld aan je verbonden wallet: daar ontvang je je OPEN bij de lancering. Laat je e-mail achter voor meldingen (optioneel).",
-    "depositEmailPlaceholder": "jij@email.com (optioneel)",
     "depositRegisterCta": "Mijn adres genereren",
     "depositRegisterLoading": "Genereren…",
     "depositFromWhere": "Vanwaar ga je versturen?",
@@ -484,6 +482,17 @@
       "Open je wallet en selecteer USDC op het Base-netwerk",
       "Verstuur naar je stortingsadres"
     ],
-    "depositOtherWallet": "Andere wallet"
+    "depositOtherWallet": "Andere wallet",
+    "depositRegisterHintWallet": "Gekoppeld aan je verbonden wallet: daar ontvang je je OPEN bij de launch. E-mail optioneel voor meldingen.",
+    "depositRegisterHintEmail": "Gekoppeld aan je e-mail.",
+    "depositEmailPlaceholderOptional": "jij@email.com (optioneel)",
+    "depositEmailPlaceholderRequired": "Je e-mail — we gebruiken die om je te informeren en je aankoop te bekijken",
+    "depositCreditedBannerEmail": "✓ Aankoop bevestigd. Je ontvangt je OPEN bij de launch — we mailen je.",
+    "depositLinkWalletTitle": "Wallet koppelen aan je aankoop",
+    "depositLinkWalletHint": "Je hebt al een aankoop geregistreerd via e-mail. Koppel deze wallet om OPEN bij de launch te ontvangen.",
+    "depositLinkWalletCta": "Deze wallet aan mijn aankoop koppelen",
+    "depositLinkWalletLoading": "Koppelen…",
+    "depositLinkWalletDone": "Wallet succesvol gekoppeld.",
+    "depositLinkWalletError": "Wallet kon niet worden gekoppeld. Probeer opnieuw."
   }
 }

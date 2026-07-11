@@ -330,7 +330,7 @@
   },
   "buy": {
     "pageTitle": "OPEN satın al",
-    "pageSubtitle": "Base'de USDC, ETH veya cbBTC ile ödeyin — veya başka bir ağdan fon getirin.",
+    "pageSubtitle": "OPEN'ı cüzdanınızla veya USDC göndererek satın alın — cüzdan gerekmez.",
     "sinWalletTitle": "Wallet'ınızı bağlayın",
     "sinWalletSubtitle": "Güvenli bir hesap oluşturun veya kullandığınız wallet'ı bağlayın.",
     "walletModalTitle": "Wallet bağla",
@@ -366,7 +366,7 @@
     "listoSubtitle": "OPEN'e yatırım yapmak için {balance} kullanılabilir.",
     "continueCta": "Satın almaya devam et",
     "compraTitle": "OPEN satın al",
-    "compraSubtitle": "Hangi para birimiyle ödeyeceğinizi seçin. USDC'ye dönüştürür ve wallet'ınızdan OPEN satın alırız.",
+    "compraSubtitle": "OPEN'ı cüzdanınızla veya USDC göndererek satın alın — cüzdan gerekmez.",
     "compraTgeNotice": "Ön satışta satın alınan tokenlar lansmanda (TGE) claim ile alınır.",
     "compraPayWith": "Ödeme yöntemi",
     "compraBalance": "Bakiye",
@@ -450,8 +450,6 @@
     "bridgeViewDestTx": "Teslimatı Basescan'de gör",
     "depositIntro": "Bir borsadan veya başka bir cüzdandan kişisel adresinize USDC gönderin. Ödemeyi otomatik olarak algılıyoruz.",
     "depositRegisterTitle": "Kişisel yatırma adresinizi oluşturun",
-    "depositRegisterHint": "Bağlı cüzdanınızla ilişkilendirilir: OPEN'larınızı lansmanda orada alacaksınız. Bildirim isterseniz e-postanızı bırakın (isteğe bağlı).",
-    "depositEmailPlaceholder": "sen@email.com (isteğe bağlı)",
     "depositRegisterCta": "Adresimi oluştur",
     "depositRegisterLoading": "Oluşturuluyor…",
     "depositFromWhere": "Nereden göndereceksiniz?",
@@ -484,6 +482,17 @@
       "Cüzdanınızı açın ve Base ağında USDC'yi seçin",
       "Yatırma adresinize gönderin"
     ],
-    "depositOtherWallet": "Başka cüzdan"
+    "depositOtherWallet": "Başka cüzdan",
+    "depositRegisterHintWallet": "Bağlı cüzdanınıza bağlı: OPEN'larınızı lansmanda orada alacaksınız. Bildirim için e-posta isteğe bağlı.",
+    "depositRegisterHintEmail": "E-postanıza bağlı.",
+    "depositEmailPlaceholderOptional": "siz@email.com (isteğe bağlı)",
+    "depositEmailPlaceholderRequired": "E-postanız — sizi bilgilendirmek ve satın alımınızı görmek için kullanacağız",
+    "depositCreditedBannerEmail": "✓ Satın alma onaylandı. OPEN'larınızı lansmanda alacaksınız — e-posta ile haber vereceğiz.",
+    "depositLinkWalletTitle": "Cüzdanı satın alıma bağla",
+    "depositLinkWalletHint": "E-posta ile kayıtlı bir satın alımınız var. OPEN'ları lansmanda almak için bu cüzdanı bağlayın.",
+    "depositLinkWalletCta": "Bu cüzdanı satın alıma bağla",
+    "depositLinkWalletLoading": "Bağlanıyor…",
+    "depositLinkWalletDone": "Cüzdan başarıyla bağlandı.",
+    "depositLinkWalletError": "Cüzdan bağlanamadı. Tekrar deneyin."
   }
 }

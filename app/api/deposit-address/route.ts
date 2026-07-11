@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { keccak256, toHex, getContractAddress, isAddress, getAddress } from "viem";
 import { FACTORY_ADDRESS, FORWARDER_INIT_CODE_HASH } from "@/lib/deposits/constants";
-import { supabaseService, signBuyerToken, BUYER_COOKIE } from "@/lib/deposits/server";
+import { supabaseService, signBuyerToken, verifyBuyerToken, BUYER_COOKIE } from "@/lib/deposits/server";
 
 /**
  * POST /api/deposit-address
@@ -36,6 +36,43 @@ export async function POST(req: NextRequest) {
   }
 
   const supabase = supabaseService();
+
+  const cookieBuyerId = verifyBuyerToken(req.cookies.get(BUYER_COOKIE)?.value);
+  if (cookieBuyerId) {
+    const { data: cookieBuyer } = await supabase
+      .from("presale_buyers")
+      .select("id, deposit_address, claim_address, refund_address, email")
+      .eq("id", cookieBuyerId)
+      .maybeSingle();
+    if (cookieBuyer) {
+      const updates: Record<string, string> = {};
+      if (email && !cookieBuyer.email) updates.email = email;
+      if (claimAddress && !cookieBuyer.claim_address) {
+        const normalized = getAddress(claimAddress);
+        const { data: conflict } = await supabase
+          .from("presale_buyers")
+          .select("id")
+          .eq("claim_address", normalized)
+          .neq("id", cookieBuyerId)
+          .maybeSingle();
+        if (conflict) {
+          return NextResponse.json({ error: "wallet en uso" }, { status: 409 });
+        }
+        updates.claim_address = normalized;
+        if (!cookieBuyer.refund_address) updates.refund_address = normalized;
+      }
+      if (refundAddress && !cookieBuyer.refund_address) {
+        updates.refund_address = getAddress(refundAddress);
+      }
+      if (Object.keys(updates).length > 0) {
+        await supabase.from("presale_buyers").update(updates).eq("id", cookieBuyerId);
+      }
+      return withCookie(
+        NextResponse.json({ depositAddress: cookieBuyer.deposit_address }),
+        cookieBuyerId
+      );
+    }
+  }
 
   const { data: config } = await supabase
     .from("presale_config")

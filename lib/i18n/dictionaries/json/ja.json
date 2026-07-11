@@ -330,7 +330,7 @@
   },
   "buy": {
     "pageTitle": "OPEN を購入",
-    "pageSubtitle": "Base で USDC、ETH、cbBTC で支払い — または他ネットワークから資金を送る。",
+    "pageSubtitle": "ウォレットまたはUSDC送金だけでOPENを購入 — ウォレット不要。",
     "sinWalletTitle": "ウォレット接続",
     "sinWalletSubtitle": "安全なアカウントを作成するか、既存のウォレットを接続。",
     "walletModalTitle": "ウォレット接続",
@@ -366,7 +366,7 @@
     "listoSubtitle": "OPEN 投資に {balance} 利用可能。",
     "continueCta": "購入に進む",
     "compraTitle": "OPEN を購入",
-    "compraSubtitle": "支払い通貨を選択。USDC に変換し、ウォレットから OPEN を購入します。",
+    "compraSubtitle": "ウォレットまたはUSDC送金だけでOPENを購入 — ウォレット不要。",
     "compraTgeNotice": "プレセール購入トークンは TGE で claim により受け取り。",
     "compraPayWith": "支払い方法",
     "compraBalance": "残高",
@@ -450,8 +450,6 @@
     "bridgeViewDestTx": "Basescan で配信を見る",
     "depositIntro": "取引所や別のウォレットから、あなた専用のアドレスに USDC を送ってください。入金は自動的に検出されます。",
     "depositRegisterTitle": "専用入金アドレスを発行",
-    "depositRegisterHint": "接続中のウォレットに紐づきます。ローンチ時の OPEN はそこで受け取ります。通知が必要ならメールを残してください（任意）。",
-    "depositEmailPlaceholder": "you@email.com（任意）",
     "depositRegisterCta": "アドレスを発行する",
     "depositRegisterLoading": "発行中…",
     "depositFromWhere": "どこから送りますか？",
@@ -484,6 +482,17 @@
       "ウォレットを開き、Base ネットワークの USDC を選択",
       "入金アドレスへ送金"
     ],
-    "depositOtherWallet": "別のウォレット"
+    "depositOtherWallet": "別のウォレット",
+    "depositRegisterHintWallet": "接続中のウォレットに紐づきます。ローンチ時にOPENを受け取ります。通知用メールは任意。",
+    "depositRegisterHintEmail": "メールに紐づきます。",
+    "depositEmailPlaceholderOptional": "you@email.com（任意）",
+    "depositEmailPlaceholderRequired": "メールアドレス — お知らせと購入確認に使用します",
+    "depositCreditedBannerEmail": "✓ 購入確認済み。ローンチ時にOPENをお届けします — メールでお知らせします。",
+    "depositLinkWalletTitle": "ウォレットを購入に紐づける",
+    "depositLinkWalletHint": "メールで登録済みの購入があります。ローンチ時のOPEN受け取り用にこのウォレットを紐づけられます。",
+    "depositLinkWalletCta": "このウォレットを購入に紐づける",
+    "depositLinkWalletLoading": "紐づけ中…",
+    "depositLinkWalletDone": "ウォレットを紐づけました。",
+    "depositLinkWalletError": "ウォレットを紐づけられませんでした。再試行してください。"
   }
 }

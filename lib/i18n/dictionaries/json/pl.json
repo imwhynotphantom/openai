@@ -330,7 +330,7 @@
   },
   "buy": {
     "pageTitle": "Kup OPEN",
-    "pageSubtitle": "Płać USDC, ETH lub cbBTC w Base — lub przenieś środki z innej sieci.",
+    "pageSubtitle": "Kup OPEN przez wallet lub po prostu wysyłając USDC — wallet nie jest wymagana.",
     "sinWalletTitle": "Połącz wallet",
     "sinWalletSubtitle": "Utwórz bezpieczne konto lub połącz wallet, której już używasz.",
     "walletModalTitle": "Połącz wallet",
@@ -366,7 +366,7 @@
     "listoSubtitle": "Masz {balance} dostępne do inwestycji w OPEN.",
     "continueCta": "Przejdź do zakupu",
     "compraTitle": "Kup OPEN",
-    "compraSubtitle": "Wybierz walutę płatności. Konwertujemy na USDC i kupujemy OPEN z Twojej wallet.",
+    "compraSubtitle": "Kup OPEN przez wallet lub po prostu wysyłając USDC — wallet nie jest wymagana.",
     "compraTgeNotice": "Tokeny kupione w przedsprzedaży otrzymujesz przy uruchomieniu (TGE) poprzez claim.",
     "compraPayWith": "Płać",
     "compraBalance": "Saldo",
@@ -450,8 +450,6 @@
     "bridgeViewDestTx": "Zobacz dostawę w Basescan",
     "depositIntro": "Wyślij USDC na swój osobisty adres z giełdy lub innego portfela. Płatność wykrywamy automatycznie.",
     "depositRegisterTitle": "Wygeneruj swój osobisty adres wpłaty",
-    "depositRegisterHint": "Zostanie powiązany z podłączonym portfelem: tam otrzymasz swoje OPEN przy starcie. Zostaw e-mail, jeśli chcesz powiadomienia (opcjonalnie).",
-    "depositEmailPlaceholder": "ty@email.com (opcjonalnie)",
     "depositRegisterCta": "Wygeneruj mój adres",
     "depositRegisterLoading": "Generowanie…",
     "depositFromWhere": "Skąd będziesz wysyłać?",
@@ -484,6 +482,17 @@
       "Otwórz portfel i wybierz USDC w sieci Base",
       "Wyślij na swój adres wpłaty"
     ],
-    "depositOtherWallet": "Inny portfel"
+    "depositOtherWallet": "Inny portfel",
+    "depositRegisterHintWallet": "Powiązane z podłączoną wallet: tam otrzymasz OPEN przy starcie. E-mail opcjonalny do powiadomień.",
+    "depositRegisterHintEmail": "Powiązane z Twoim e-mailem.",
+    "depositEmailPlaceholderOptional": "ty@email.com (opcjonalnie)",
+    "depositEmailPlaceholderRequired": "Twój e-mail — użyjemy go do powiadomień i sprawdzenia zakupu",
+    "depositCreditedBannerEmail": "✓ Zakup potwierdzony. Otrzymasz OPEN przy starcie — powiadomimy e-mailem.",
+    "depositLinkWalletTitle": "Połącz wallet z zakupem",
+    "depositLinkWalletHint": "Masz już zakup zarejestrowany e-mailem. Połącz tę wallet, aby otrzymać OPEN przy starcie.",
+    "depositLinkWalletCta": "Połącz tę wallet z moim zakupem",
+    "depositLinkWalletLoading": "Łączenie…",
+    "depositLinkWalletDone": "Wallet połączona pomyślnie.",
+    "depositLinkWalletError": "Nie udało się połączyć wallet. Spróbuj ponownie."
   }
 }

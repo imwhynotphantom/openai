@@ -330,7 +330,7 @@
   },
   "buy": {
     "pageTitle": "OPEN 구매",
-    "pageSubtitle": "Base에서 USDC, ETH, cbBTC로 결제 — 또는 다른 네트워크에서 자금을 가져오세요.",
+    "pageSubtitle": "지갑 또는 USDC 전송만으로 OPEN 구매 — 지갑 불필요.",
     "sinWalletTitle": "지갑 연결",
     "sinWalletSubtitle": "보안 계정을 만들거나 기존 지갑을 연결하세요.",
     "walletModalTitle": "지갑 연결",
@@ -366,7 +366,7 @@
     "listoSubtitle": "OPEN 투자에 {balance} 사용 가능.",
     "continueCta": "구매 계속",
     "compraTitle": "OPEN 구매",
-    "compraSubtitle": "결제 통화를 선택하세요. USDC로 변환하고 지갑에서 OPEN을 구매합니다.",
+    "compraSubtitle": "지갑 또는 USDC 전송만으로 OPEN 구매 — 지갑 불필요.",
     "compraTgeNotice": "프리세일 구매 토큰은 TGE에서 claim으로 수령.",
     "compraPayWith": "결제 수단",
     "compraBalance": "잔액",
@@ -450,8 +450,6 @@
     "bridgeViewDestTx": "Basescan에서 전달 보기",
     "depositIntro": "거래소나 다른 지갑에서 전용 주소로 USDC를 보내세요. 입금은 자동으로 감지됩니다.",
     "depositRegisterTitle": "전용 입금 주소 생성",
-    "depositRegisterHint": "연결된 지갑과 연동됩니다. 출시 시 OPEN을 그 지갑으로 받게 됩니다. 알림을 원하시면 이메일을 남겨주세요 (선택).",
-    "depositEmailPlaceholder": "you@email.com (선택)",
     "depositRegisterCta": "내 주소 생성",
     "depositRegisterLoading": "생성 중…",
     "depositFromWhere": "어디에서 보내시나요?",
@@ -484,6 +482,17 @@
       "지갑을 열고 Base 네트워크의 USDC 선택",
       "입금 주소로 전송"
     ],
-    "depositOtherWallet": "다른 지갑"
+    "depositOtherWallet": "다른 지갑",
+    "depositRegisterHintWallet": "연결된 지갑에 연결됩니다. 출시 시 OPEN을 받습니다. 알림용 이메일은 선택.",
+    "depositRegisterHintEmail": "이메일에 연결됩니다.",
+    "depositEmailPlaceholderOptional": "you@email.com (선택)",
+    "depositEmailPlaceholderRequired": "이메일 — 알림 및 구매 조회에 사용합니다",
+    "depositCreditedBannerEmail": "✓ 구매 확인됨. 출시 시 OPEN을 받습니다 — 이메일로 알려드립니다.",
+    "depositLinkWalletTitle": "지갑을 구매에 연결",
+    "depositLinkWalletHint": "이메일로 등록된 구매가 있습니다. 출시 시 OPEN 수령을 위해 이 지갑을 연결하세요.",
+    "depositLinkWalletCta": "이 지갑을 내 구매에 연결",
+    "depositLinkWalletLoading": "연결 중…",
+    "depositLinkWalletDone": "지갑이 연결되었습니다.",
+    "depositLinkWalletError": "지갑을 연결하지 못했습니다. 다시 시도하세요."
   }
 }

@@ -330,7 +330,7 @@
   },
   "buy": {
     "pageTitle": "OPEN खरीदें",
-    "pageSubtitle": "Base पर USDC, ETH या cbBTC से भुगतान करें — या दूसरे नेटवर्क से फंड लाएँ।",
+    "pageSubtitle": "अपने वॉलेट से या सीधे USDC भेजकर OPEN खरीदें — वॉलेट ज़रूरी नहीं।",
     "sinWalletTitle": "Wallet कनेक्ट करें",
     "sinWalletSubtitle": "सुरक्षित खाता बनाएँ या उपयोग में wallet कनेक्ट करें।",
     "walletModalTitle": "Wallet कनेक्ट करें",
@@ -366,7 +366,7 @@
     "listoSubtitle": "OPEN में निवेश के लिए {balance} उपलब्ध है।",
     "continueCta": "खरीद जारी रखें",
     "compraTitle": "OPEN खरीदें",
-    "compraSubtitle": "भुगतान मुद्रा चुनें। USDC में बदलकर wallet से OPEN खरीदते हैं।",
+    "compraSubtitle": "अपने वॉलेट से या सीधे USDC भेजकर OPEN खरीदें — वॉलेट ज़रूरी नहीं।",
     "compraTgeNotice": "प्रीसेल में खरीदे टोकन लॉन्च (TGE) पर claim से मिलते हैं।",
     "compraPayWith": "भुगतान",
     "compraBalance": "बैलेंस",
@@ -450,8 +450,6 @@
     "bridgeViewDestTx": "Basescan पर डिलीवरी देखें",
     "depositIntro": "किसी एक्सचेंज या दूसरे वॉलेट से अपने व्यक्तिगत पते पर USDC भेजें। हम भुगतान स्वतः पहचान लेते हैं।",
     "depositRegisterTitle": "अपना व्यक्तिगत जमा पता बनाएँ",
-    "depositRegisterHint": "यह आपके कनेक्टेड वॉलेट से जुड़ा रहेगा: लॉन्च पर वहीं OPEN मिलेंगे। सूचनाएँ चाहें तो ईमेल छोड़ें (वैकल्पिक)।",
-    "depositEmailPlaceholder": "aap@email.com (वैकल्पिक)",
     "depositRegisterCta": "मेरा पता बनाएँ",
     "depositRegisterLoading": "बनाया जा रहा है…",
     "depositFromWhere": "कहाँ से भेजेंगे?",
@@ -484,6 +482,17 @@
       "अपना वॉलेट खोलें और Base नेटवर्क पर USDC चुनें",
       "अपने जमा पते पर भेजें"
     ],
-    "depositOtherWallet": "दूसरा वॉलेट"
+    "depositOtherWallet": "दूसरा वॉलेट",
+    "depositRegisterHintWallet": "आपके कनेक्टेड वॉलेट से जुड़ा: लॉन्च पर OPEN यहीं मिलेंगे। सूचना के लिए ईमेल वैकल्पिक।",
+    "depositRegisterHintEmail": "आपके ईमेल से जुड़ा।",
+    "depositEmailPlaceholderOptional": "you@email.com (वैकल्पिक)",
+    "depositEmailPlaceholderRequired": "आपका ईमेल — सूचना और खरीद देखने के लिए",
+    "depositCreditedBannerEmail": "✓ खरीद पुष्टि। लॉन्च पर OPEN मिलेंगे — ईमेल से सूचित करेंगे।",
+    "depositLinkWalletTitle": "वॉलेट को खरीद से जोड़ें",
+    "depositLinkWalletHint": "ईमेल से पंजीकृत खरीद है। लॉन्च पर OPEN के लिए यह वॉलेट जोड़ सकते हैं।",
+    "depositLinkWalletCta": "इस वॉलेट को मेरी खरीद से जोड़ें",
+    "depositLinkWalletLoading": "जोड़ रहे हैं…",
+    "depositLinkWalletDone": "वॉलेट सफलतापूर्वक जुड़ा।",
+    "depositLinkWalletError": "वॉलेट नहीं जुड़ा। फिर कोशिश करें।"
   }
 }

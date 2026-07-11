@@ -21,6 +21,7 @@ import { AddOpenToWallet } from "@/components/AddOpenToWallet";
 import { BaseChainGuard } from "../ui/BaseChainGuard";
 import { CrossChainFundingStep } from "./CrossChainFundingStep";
 import { DepositTab } from "./DepositTab";
+import { SinWalletStep } from "./SinWalletStep";
 
 export type FundingMode = "base" | "bridge" | "receive";
 
@@ -143,10 +144,14 @@ export function PresalePurchaseStep({ onBack, initialMode }: Props) {
       </div>
 
       {mode === "bridge" ? (
-        <CrossChainFundingStep recipient={address} onDelivered={handleBridgeDelivered} />
+        address ? (
+          <CrossChainFundingStep recipient={address} onDelivered={handleBridgeDelivered} />
+        ) : (
+          <SinWalletStep embedded />
+        )
       ) : mode === "receive" ? (
         <DepositTab address={address} />
-      ) : (
+      ) : address ? (
       <BaseChainGuard inline>
       <div>
       {purchase.isPresalePaused && !isDone ? (
@@ -427,6 +432,8 @@ export function PresalePurchaseStep({ onBack, initialMode }: Props) {
       ) : null}
       </div>
       </BaseChainGuard>
+      ) : (
+        <SinWalletStep embedded />
       )}
 
       {onBack ? (

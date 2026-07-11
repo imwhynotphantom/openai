@@ -330,7 +330,7 @@
   },
   "buy": {
     "pageTitle": "شراء OPEN",
-    "pageSubtitle": "ادفع بـ USDC أو ETH أو cbBTC على Base — أو جلب أموال من شبكة أخرى.",
+    "pageSubtitle": "اشترِ OPEN عبر محفظتك أو بإرسال USDC فقط — لا حاجة لمحفظة.",
     "sinWalletTitle": "اربط wallet",
     "sinWalletSubtitle": "أنشئ حسابًا آمنًا أو اربط wallet الذي تستخدمه.",
     "walletModalTitle": "ربط wallet",
@@ -366,7 +366,7 @@
     "listoSubtitle": "لديك {balance} متاح للاستثمار في OPEN.",
     "continueCta": "المتابعة للشراء",
     "compraTitle": "شراء OPEN",
-    "compraSubtitle": "اختر العملة للدفع. نحوّل إلى USDC ونشتري OPEN من wallet.",
+    "compraSubtitle": "اشترِ OPEN عبر محفظتك أو بإرسال USDC فقط — لا حاجة لمحفظة.",
     "compraTgeNotice": "الرموز المشتراة في ما قبل البيع تُستلم عند الإطلاق (TGE) عبر claim.",
     "compraPayWith": "الدفع بـ",
     "compraBalance": "الرصيد",
@@ -450,8 +450,6 @@
     "bridgeViewDestTx": "عرض التسليم في Basescan",
     "depositIntro": "أرسل USDC إلى عنوانك الشخصي من منصة تداول أو محفظة أخرى. نكتشف الدفع تلقائياً.",
     "depositRegisterTitle": "أنشئ عنوان الإيداع الشخصي الخاص بك",
-    "depositRegisterHint": "يُربط بمحفظتك المتصلة: هناك ستستلم OPEN عند الإطلاق. اترك بريدك الإلكتروني إذا أردت إشعارات (اختياري).",
-    "depositEmailPlaceholder": "you@email.com (اختياري)",
     "depositRegisterCta": "إنشاء عنواني",
     "depositRegisterLoading": "جارٍ الإنشاء…",
     "depositFromWhere": "من أين سترسل؟",
@@ -484,6 +482,17 @@
       "افتح محفظتك واختر USDC على شبكة Base",
       "أرسل إلى عنوان الإيداع الخاص بك"
     ],
-    "depositOtherWallet": "محفظة أخرى"
+    "depositOtherWallet": "محفظة أخرى",
+    "depositRegisterHintWallet": "مرتبطة بمحفظتك المتصلة: ستستلم OPEN عند الإطلاق. البريد اختياري للإشعارات.",
+    "depositRegisterHintEmail": "مرتبطة ببريدك الإلكتروني.",
+    "depositEmailPlaceholderOptional": "you@email.com (اختياري)",
+    "depositEmailPlaceholderRequired": "بريدك — لنُخبرك وتتابع عملية الشراء",
+    "depositCreditedBannerEmail": "✓ تم تأكيد الشراء. ستستلم OPEN عند الإطلاق — سنُخبرك عبر البريد.",
+    "depositLinkWalletTitle": "ربط المحفظة بعملية الشراء",
+    "depositLinkWalletHint": "لديك شراء مسجّل بالبريد. يمكنك ربط هذه المحفظة لاستلام OPEN عند الإطلاق.",
+    "depositLinkWalletCta": "ربط هذه المحفظة بشرائي",
+    "depositLinkWalletLoading": "جارٍ الربط…",
+    "depositLinkWalletDone": "تم ربط المحفظة بنجاح.",
+    "depositLinkWalletError": "تعذّر ربط المحفظة. حاول مرة أخرى."
   }
 }

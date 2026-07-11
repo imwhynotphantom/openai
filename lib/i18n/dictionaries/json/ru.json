@@ -330,7 +330,7 @@
   },
   "buy": {
     "pageTitle": "Купить OPEN",
-    "pageSubtitle": "Оплатите USDC, ETH или cbBTC в Base — или переведите средства с другой сети.",
+    "pageSubtitle": "Купите OPEN через кошелёк или просто отправив USDC — кошелёк не обязателен.",
     "sinWalletTitle": "Подключите wallet",
     "sinWalletSubtitle": "Создайте безопасный аккаунт или подключите уже используемый wallet.",
     "walletModalTitle": "Подключить wallet",
@@ -366,7 +366,7 @@
     "listoSubtitle": "У вас {balance} доступно для инвестирования в OPEN.",
     "continueCta": "Перейти к покупке",
     "compraTitle": "Купить OPEN",
-    "compraSubtitle": "Выберите валюту оплаты. Мы конвертируем в USDC и покупаем OPEN из вашего wallet.",
+    "compraSubtitle": "Купите OPEN через кошелёк или просто отправив USDC — кошелёк не обязателен.",
     "compraTgeNotice": "Токены, купленные на предпродаже, получаются при запуске (TGE) через claim.",
     "compraPayWith": "Оплатить",
     "compraBalance": "Баланс",
@@ -450,8 +450,6 @@
     "bridgeViewDestTx": "Смотреть доставку в Basescan",
     "depositIntro": "Отправьте USDC на ваш персональный адрес с биржи или другого кошелька. Мы обнаружим платёж автоматически.",
     "depositRegisterTitle": "Создайте персональный адрес для депозита",
-    "depositRegisterHint": "Он привязывается к подключённому кошельку: туда вы получите свои OPEN при запуске. Оставьте email для уведомлений (необязательно).",
-    "depositEmailPlaceholder": "you@email.com (необязательно)",
     "depositRegisterCta": "Создать мой адрес",
     "depositRegisterLoading": "Создание…",
     "depositFromWhere": "Откуда будете отправлять?",
@@ -484,6 +482,17 @@
       "Откройте кошелёк и выберите USDC в сети Base",
       "Отправьте на ваш адрес для депозита"
     ],
-    "depositOtherWallet": "Другой кошелёк"
+    "depositOtherWallet": "Другой кошелёк",
+    "depositRegisterHintWallet": "Привязано к подключённому кошельку: туда вы получите OPEN при запуске. E-mail опционально для уведомлений.",
+    "depositRegisterHintEmail": "Привязано к вашему e-mail.",
+    "depositEmailPlaceholderOptional": "you@email.com (необязательно)",
+    "depositEmailPlaceholderRequired": "Ваш e-mail — для уведомлений и проверки покупки",
+    "depositCreditedBannerEmail": "✓ Покупка подтверждена. Вы получите OPEN при запуске — сообщим по e-mail.",
+    "depositLinkWalletTitle": "Привязать кошелёк к покупке",
+    "depositLinkWalletHint": "У вас уже есть покупка по e-mail. Привяжите этот кошелёк для получения OPEN при запуске.",
+    "depositLinkWalletCta": "Привязать этот кошелёк к моей покупке",
+    "depositLinkWalletLoading": "Привязка…",
+    "depositLinkWalletDone": "Кошелёк успешно привязан.",
+    "depositLinkWalletError": "Не удалось привязать кошелёк. Попробуйте снова."
   }
 }

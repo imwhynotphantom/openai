@@ -11,31 +11,33 @@ import { StepCard, StepTitle } from "../ui/CopyAddressButton";
  * Paso previo a la compra sin wallet conectada: un único CTA que abre el
  * selector unificado (extensiones, wallet del móvil o crear una nueva).
  */
-export function SinWalletStep() {
+export function SinWalletStep({ embedded = false }: { embedded?: boolean }) {
   const buy = useBuyCopy();
   const [showPicker, setShowPicker] = useState(false);
 
-  return (
+  const content = (
     <>
       {showPicker ? <WalletPickerModal onClose={() => setShowPicker(false)} /> : null}
 
-      <StepCard>
-        <StepTitle title={buy.sinWalletTitle} subtitle={buy.sinWalletSubtitle} />
+      {!embedded ? <StepTitle title={buy.sinWalletTitle} subtitle={buy.sinWalletSubtitle} /> : null}
 
-        <Hov
-          as="button"
-          type="button"
-          onClick={() => setShowPicker(true)}
-          style="appearance:none;cursor:pointer;width:100%;background:#0D0D0D;color:#fff;border:none;border-radius:12px;padding:15px;font:600 15px var(--font-hanken)"
-          hover="background:#000"
-        >
-          {buy.connectWallet}
-        </Hov>
+      <Hov
+        as="button"
+        type="button"
+        onClick={() => setShowPicker(true)}
+        style="appearance:none;cursor:pointer;width:100%;background:#0D0D0D;color:#fff;border:none;border-radius:12px;padding:15px;font:600 15px var(--font-hanken)"
+        hover="background:#000"
+      >
+        {buy.connectWallet}
+      </Hov>
 
-        <p style={css("font:400 13px/1.5 var(--font-hanken);color:#8A8A94;margin:14px 0 0;text-align:center")}>
-          {buy.connectDesktopHint}
-        </p>
-      </StepCard>
+      <p style={css("font:400 13px/1.5 var(--font-hanken);color:#8A8A94;margin:14px 0 0;text-align:center")}>
+        {buy.connectDesktopHint}
+      </p>
     </>
   );
+
+  if (embedded) return <div>{content}</div>;
+
+  return <StepCard>{content}</StepCard>;
 }

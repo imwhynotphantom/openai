@@ -330,7 +330,7 @@
   },
   "buy": {
     "pageTitle": "Buy OPEN",
-    "pageSubtitle": "Pay with USDC, ETH or cbBTC on Base — or bring funds from another network.",
+    "pageSubtitle": "Buy OPEN with your wallet or simply by sending USDC — no wallet required.",
     "sinWalletTitle": "Connect your wallet",
     "sinWalletSubtitle": "Create a secure account or connect the wallet you already use.",
     "walletModalTitle": "Connect wallet",
@@ -366,7 +366,7 @@
     "listoSubtitle": "You have {balance} available to invest in OPEN.",
     "continueCta": "Continue to purchase",
     "compraTitle": "Buy OPEN",
-    "compraSubtitle": "Choose which currency to pay with. We convert to USDC and buy OPEN from your wallet.",
+    "compraSubtitle": "Buy OPEN with your wallet or simply by sending USDC — no wallet required.",
     "compraTgeNotice": "Tokens purchased in the presale are received at launch (TGE) via claim.",
     "compraPayWith": "Pay with",
     "compraBalance": "Balance",
@@ -450,8 +450,6 @@
     "bridgeViewDestTx": "View delivery on Basescan",
     "depositIntro": "Send USDC to your personal address from an exchange or another wallet. We detect the payment automatically.",
     "depositRegisterTitle": "Generate your personal deposit address",
-    "depositRegisterHint": "It's linked to your connected wallet: that's where you'll receive your OPEN at launch. Leave your email if you want updates (optional).",
-    "depositEmailPlaceholder": "you@email.com (optional)",
     "depositRegisterCta": "Generate my address",
     "depositRegisterLoading": "Generating…",
     "depositFromWhere": "Where will you send from?",
@@ -484,6 +482,17 @@
       "Open your wallet and select USDC on the Base network",
       "Send to your deposit address"
     ],
-    "depositOtherWallet": "Another wallet"
+    "depositOtherWallet": "Another wallet",
+    "depositRegisterHintWallet": "Linked to your connected wallet: you will receive your OPEN at launch. Add your email if you want us to notify you (optional).",
+    "depositRegisterHintEmail": "Linked to your email.",
+    "depositEmailPlaceholderOptional": "you@email.com (optional)",
+    "depositEmailPlaceholderRequired": "Your email — we will use it to notify you and let you check your purchase",
+    "depositCreditedBannerEmail": "✓ Purchase confirmed. You will receive your OPEN at launch — we will email you.",
+    "depositLinkWalletTitle": "Link wallet to your purchase",
+    "depositLinkWalletHint": "You already have a purchase registered by email. You can link this wallet to receive your OPEN at launch.",
+    "depositLinkWalletCta": "Link this wallet to my purchase",
+    "depositLinkWalletLoading": "Linking…",
+    "depositLinkWalletDone": "Wallet linked successfully.",
+    "depositLinkWalletError": "Could not link wallet. Please try again."
   }
 }

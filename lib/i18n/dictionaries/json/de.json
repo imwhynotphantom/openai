@@ -330,7 +330,7 @@
   },
   "buy": {
     "pageTitle": "OPEN kaufen",
-    "pageSubtitle": "Zahlen Sie mit USDC, ETH oder cbBTC auf Base — oder bringen Sie Gelder aus einem anderen Netzwerk.",
+    "pageSubtitle": "Kaufe OPEN mit deiner Wallet oder einfach per USDC-Überweisung — keine Wallet nötig.",
     "sinWalletTitle": "Wallet verbinden",
     "sinWalletSubtitle": "Erstellen Sie ein sicheres Konto oder verbinden Sie die Wallet, die Sie bereits nutzen.",
     "walletModalTitle": "Wallet verbinden",
@@ -366,7 +366,7 @@
     "listoSubtitle": "Sie haben {balance} verfügbar, um in OPEN zu investieren.",
     "continueCta": "Weiter zum Kauf",
     "compraTitle": "OPEN kaufen",
-    "compraSubtitle": "Wählen Sie die Zahlungswährung. Wir wandeln in USDC um und kaufen OPEN aus Ihrer Wallet.",
+    "compraSubtitle": "Kaufe OPEN mit deiner Wallet oder einfach per USDC-Überweisung — keine Wallet nötig.",
     "compraTgeNotice": "Im Vorverkauf gekaufte Tokens werden beim Launch (TGE) per Claim erhalten.",
     "compraPayWith": "Zahlen mit",
     "compraBalance": "Saldo",
@@ -450,8 +450,6 @@
     "bridgeViewDestTx": "Zustellung auf Basescan anzeigen",
     "depositIntro": "Sende USDC von einer Börse oder einer anderen Wallet an deine persönliche Adresse. Wir erkennen die Zahlung automatisch.",
     "depositRegisterTitle": "Erstelle deine persönliche Einzahlungsadresse",
-    "depositRegisterHint": "Sie wird mit deiner verbundenen Wallet verknüpft: Dort erhältst du deine OPEN beim Launch. Hinterlasse deine E-Mail für Benachrichtigungen (optional).",
-    "depositEmailPlaceholder": "du@email.com (optional)",
     "depositRegisterCta": "Meine Adresse erstellen",
     "depositRegisterLoading": "Wird erstellt…",
     "depositFromWhere": "Von wo wirst du senden?",
@@ -484,6 +482,17 @@
       "Öffne deine Wallet und wähle USDC im Base-Netzwerk",
       "Sende an deine Einzahlungsadresse"
     ],
-    "depositOtherWallet": "Andere Wallet"
+    "depositOtherWallet": "Andere Wallet",
+    "depositRegisterHintWallet": "Verknüpft mit deiner verbundenen Wallet: Dort erhältst du deine OPEN beim Launch. E-Mail optional für Benachrichtigungen.",
+    "depositRegisterHintEmail": "Verknüpft mit deiner E-Mail.",
+    "depositEmailPlaceholderOptional": "du@email.com (optional)",
+    "depositEmailPlaceholderRequired": "Deine E-Mail — wir benachrichtigen dich und du kannst deinen Kauf einsehen",
+    "depositCreditedBannerEmail": "✓ Kauf bestätigt. Du erhältst deine OPEN beim Launch — wir informieren dich per E-Mail.",
+    "depositLinkWalletTitle": "Wallet mit deinem Kauf verknüpfen",
+    "depositLinkWalletHint": "Du hast bereits einen Kauf per E-Mail registriert. Verknüpfe diese Wallet, um OPEN beim Launch zu erhalten.",
+    "depositLinkWalletCta": "Diese Wallet mit meinem Kauf verknüpfen",
+    "depositLinkWalletLoading": "Verknüpfe…",
+    "depositLinkWalletDone": "Wallet erfolgreich verknüpft.",
+    "depositLinkWalletError": "Wallet konnte nicht verknüpft werden. Bitte erneut versuchen."
   }
 }
