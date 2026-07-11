@@ -15,15 +15,21 @@ export function supabaseService() {
   return createClient(url, key, { auth: { persistSession: false } });
 }
 
-/** Comprueba variables de entorno del sistema de depósitos (API routes). */
+/** Comprueba variables base del sistema de depósitos (API routes). */
 export function depositEnvMissing(): string[] {
   const missing: string[] = [];
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL) missing.push("NEXT_PUBLIC_SUPABASE_URL");
   if (!process.env.SUPABASE_SERVICE_ROLE_KEY) missing.push("SUPABASE_SERVICE_ROLE_KEY");
-  if (!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) missing.push("NEXT_PUBLIC_SUPABASE_ANON_KEY");
   if (!process.env.DEPOSIT_TOKEN_SECRET && !process.env.SUPABASE_SERVICE_ROLE_KEY) {
     missing.push("DEPOSIT_TOKEN_SECRET");
   }
+  return missing;
+}
+
+/** Variables extra para magic link (Supabase Auth). */
+export function depositAuthEnvMissing(): string[] {
+  const missing = depositEnvMissing();
+  if (!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) missing.push("NEXT_PUBLIC_SUPABASE_ANON_KEY");
   return missing;
 }
 

@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { supabaseService, depositEnvMissing } from "@/lib/deposits/server";
+import { supabaseService, depositAuthEnvMissing } from "@/lib/deposits/server";
 import { createAuthClient } from "@/lib/supabase/auth-client";
 import { siteOrigin } from "@/lib/deposits/my-purchase";
 
@@ -12,7 +12,7 @@ const RATE_WINDOW_MS = 15 * 60 * 1000;
  * Envía magic link de Supabase Auth si existe un buyer con ese email.
  */
 export async function POST(req: NextRequest) {
-  const missing = depositEnvMissing();
+  const missing = depositAuthEnvMissing();
   if (missing.length > 0) {
     return NextResponse.json({ error: "servidor no configurado", missing }, { status: 503 });
   }

@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
-import { supabaseService, depositEnvMissing, attachBuyerCookie } from "@/lib/deposits/server";
+import { supabaseService, depositAuthEnvMissing, attachBuyerCookie } from "@/lib/deposits/server";
 import { siteOrigin } from "@/lib/deposits/my-purchase";
 
 /**
@@ -10,7 +10,7 @@ import { siteOrigin } from "@/lib/deposits/my-purchase";
  * busca el buyer por email y emite la cookie op_buyer.
  */
 export async function GET(request: Request) {
-  const missing = depositEnvMissing();
+  const missing = depositAuthEnvMissing();
   const origin = siteOrigin(request as import("next/server").NextRequest);
   const fail = () => NextResponse.redirect(`${origin}/mi-compra?error=auth`);
 
