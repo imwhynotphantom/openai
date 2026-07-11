@@ -1,4 +1,5 @@
 import "server-only";
+import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { createHmac, timingSafeEqual } from "node:crypto";
 
@@ -19,6 +20,7 @@ export function depositEnvMissing(): string[] {
   const missing: string[] = [];
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL) missing.push("NEXT_PUBLIC_SUPABASE_URL");
   if (!process.env.SUPABASE_SERVICE_ROLE_KEY) missing.push("SUPABASE_SERVICE_ROLE_KEY");
+  if (!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) missing.push("NEXT_PUBLIC_SUPABASE_ANON_KEY");
   if (!process.env.DEPOSIT_TOKEN_SECRET && !process.env.SUPABASE_SERVICE_ROLE_KEY) {
     missing.push("DEPOSIT_TOKEN_SECRET");
   }
@@ -54,3 +56,18 @@ export function verifyBuyerToken(token: string | undefined | null): string | nul
 }
 
 export const BUYER_COOKIE = "op_buyer";
+
+export function attachBuyerCookie(res: NextResponse, buyerId: string): NextResponse {
+  res.cookies.set(BUYER_COOKIE, signBuyerToken(buyerId), {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
+    maxAge: 60 * 60 * 24 * 365,
+    path: "/",
+  });
+  return res;
+}
+
+export function buyerIdFromRequest(req: { cookies: { get: (name: string) => { value?: string } | undefined } }): string | null {
+  return verifyBuyerToken(req.cookies.get(BUYER_COOKIE)?.value);
+}

@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { getAddress, isAddress } from "viem";
-import { supabaseService, verifyBuyerToken, BUYER_COOKIE, depositEnvMissing } from "@/lib/deposits/server";
+import { supabaseService, verifyBuyerToken, BUYER_COOKIE, depositEnvMissing, attachBuyerCookie } from "@/lib/deposits/server";
 
 /**
  * POST /api/deposit-link-wallet
@@ -95,5 +95,5 @@ async function handleDepositLinkWallet(req: NextRequest) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 
-  return NextResponse.json({ ok: true, claimAddress: normalized });
+  return attachBuyerCookie(NextResponse.json({ ok: true, claimAddress: normalized }), buyerId);
 }

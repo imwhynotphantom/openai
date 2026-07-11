@@ -1,9 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import { useAccount } from "wagmi";
 import { useSearchParams } from "next/navigation";
 import { css } from "@/lib/css";
 import { useBuyCopy } from "@/hooks/useBuyCopy";
+import { useMyPurchaseCopy } from "@/hooks/useMyPurchaseCopy";
 import { formatAddress } from "@/lib/wagmi/format-address";
 import { useWalletDisconnect } from "@/hooks/useWalletDisconnect";
 import { PresalePurchaseStep, type FundingMode } from "./steps/PresalePurchaseStep";
@@ -16,6 +18,7 @@ const MODE_PARAM: Record<string, FundingMode> = {
 
 export default function BuyFlow() {
   const buy = useBuyCopy();
+  const mp = useMyPurchaseCopy();
   const { address, isConnected } = useAccount();
   const disconnectWallet = useWalletDisconnect();
   const searchParams = useSearchParams();
@@ -28,6 +31,11 @@ export default function BuyFlow() {
           {buy.pageTitle}
         </h2>
         <p style={css("font:400 15px/1.5 var(--font-hanken);color:#8A8A94;margin:0")}>{buy.pageSubtitle}</p>
+        <p style={css("font:400 13px var(--font-hanken);margin:10px 0 0")}>
+          <Link href="/mi-compra" style={css("color:#0D0D0D;font-weight:600;text-decoration:underline")}>
+            {mp.recoveryLink}
+          </Link>
+        </p>
       </div>
 
       {isConnected && address ? (

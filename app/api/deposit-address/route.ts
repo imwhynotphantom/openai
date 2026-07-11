@@ -1,7 +1,8 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { keccak256, toHex, getContractAddress, isAddress, getAddress } from "viem";
 import { FACTORY_ADDRESS, FORWARDER_INIT_CODE_HASH } from "@/lib/deposits/constants";
-import { supabaseService, signBuyerToken, verifyBuyerToken, BUYER_COOKIE, depositEnvMissing } from "@/lib/deposits/server";
+import { supabaseService, verifyBuyerToken, BUYER_COOKIE, depositEnvMissing, attachBuyerCookie } from "@/lib/deposits/server";
+import { readRequestLocale } from "@/lib/deposits/my-purchase";
 
 /**
  * POST /api/deposit-address
@@ -52,13 +53,15 @@ async function handleDepositAddress(req: NextRequest) {
     return NextResponse.json({ error: "wallet de devolución inválida" }, { status: 400 });
   }
 
+  const locale = readRequestLocale(req);
+
   const supabase = supabaseService();
 
   const cookieBuyerId = verifyBuyerToken(req.cookies.get(BUYER_COOKIE)?.value);
   if (cookieBuyerId) {
     const { data: cookieBuyer } = await supabase
       .from("presale_buyers")
-      .select("id, deposit_address, claim_address, refund_address, email")
+      .select("id, deposit_address, claim_address, refund_address, email, locale")
       .eq("id", cookieBuyerId)
       .maybeSingle();
     if (cookieBuyer) {
@@ -81,10 +84,11 @@ async function handleDepositAddress(req: NextRequest) {
       if (refundAddress && !cookieBuyer.refund_address) {
         updates.refund_address = getAddress(refundAddress);
       }
+      if (locale && !cookieBuyer.locale) updates.locale = locale;
       if (Object.keys(updates).length > 0) {
         await supabase.from("presale_buyers").update(updates).eq("id", cookieBuyerId);
       }
-      return withCookie(
+      return attachBuyerCookie(
         NextResponse.json({ depositAddress: cookieBuyer.deposit_address }),
         cookieBuyerId
       );
@@ -114,7 +118,7 @@ async function handleDepositAddress(req: NextRequest) {
     .maybeSingle();
 
   if (existing) {
-    return withCookie(
+    return attachBuyerCookie(
       NextResponse.json({ depositAddress: existing.deposit_address }),
       existing.id
     );
@@ -125,6 +129,7 @@ async function handleDepositAddress(req: NextRequest) {
     .from("presale_buyers")
     .insert({
       email,
+      locale,
       claim_address: claimAddress ? getAddress(claimAddress) : null,
       // Si conecta wallet y no da otra, esa misma sirve para devoluciones.
       refund_address: refundAddress
@@ -158,16 +163,5 @@ async function handleDepositAddress(req: NextRequest) {
     return NextResponse.json({ error: updateError.message }, { status: 500 });
   }
 
-  return withCookie(NextResponse.json({ depositAddress }), buyer.id);
-}
-
-function withCookie(res: NextResponse, buyerId: string): NextResponse {
-  res.cookies.set(BUYER_COOKIE, signBuyerToken(buyerId), {
-    httpOnly: true,
-    secure: true,
-    sameSite: "lax",
-    maxAge: 60 * 60 * 24 * 365,
-    path: "/",
-  });
-  return res;
+  return attachBuyerCookie(NextResponse.json({ depositAddress }), buyer.id);
 }
