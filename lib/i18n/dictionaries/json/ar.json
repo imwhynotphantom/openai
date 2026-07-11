@@ -13,7 +13,8 @@
     "wallet": "المحفظة",
     "mainNavAria": "التنقل الرئيسي",
     "connectWallet": "ربط wallet",
-    "language": "اللغة"
+    "language": "اللغة",
+    "myPurchase": "شرائي"
   },
   "common": {
     "retry": "إعادة المحاولة",
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "تأكيد الاستبدال",
     "depositLinkWalletReplaceCancel": "إلغاء",
     "depositLinkWalletAlreadyLinked": "المحفظة المرتبطة: {address}",
-    "depositServerUnavailable": "التسجيل غير متاح حالياً. حاول مرة أخرى بعد دقائق."
+    "depositServerUnavailable": "التسجيل غير متاح حالياً. حاول مرة أخرى بعد دقائق.",
+    "depositViewMyPurchase": "عرض شرائي →",
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

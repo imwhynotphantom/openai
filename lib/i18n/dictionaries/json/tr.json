@@ -13,7 +13,8 @@
     "wallet": "Cüzdan",
     "mainNavAria": "Ana navigasyon",
     "connectWallet": "Wallet bağla",
-    "language": "Dil"
+    "language": "Dil",
+    "myPurchase": "Satın alımım"
   },
   "common": {
     "retry": "Yeniden dene",
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "Değişikliği onayla",
     "depositLinkWalletReplaceCancel": "İptal",
     "depositLinkWalletAlreadyLinked": "Bağlı cüzdan: {address}",
-    "depositServerUnavailable": "Kayıt şu anda kullanılamıyor. Birkaç dakika sonra tekrar deneyin."
+    "depositServerUnavailable": "Kayıt şu anda kullanılamıyor. Birkaç dakika sonra tekrar deneyin.",
+    "depositViewMyPurchase": "Satın alımımı gör →",
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

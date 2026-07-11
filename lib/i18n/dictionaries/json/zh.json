@@ -13,7 +13,8 @@
     "wallet": "钱包",
     "mainNavAria": "主导航",
     "connectWallet": "连接钱包",
-    "language": "语言"
+    "language": "语言",
+    "myPurchase": "我的购买"
   },
   "common": {
     "retry": "重试",
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "确认替换",
     "depositLinkWalletReplaceCancel": "取消",
     "depositLinkWalletAlreadyLinked": "已关联钱包：{address}",
-    "depositServerUnavailable": "注册暂不可用，请几分钟后再试。"
+    "depositServerUnavailable": "注册暂不可用，请几分钟后再试。",
+    "depositViewMyPurchase": "查看我的购买 →",
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

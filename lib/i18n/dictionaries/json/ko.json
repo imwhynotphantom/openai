@@ -13,7 +13,8 @@
     "wallet": "지갑",
     "mainNavAria": "주요 내비게이션",
     "connectWallet": "지갑 연결",
-    "language": "언어"
+    "language": "언어",
+    "myPurchase": "내 구매"
   },
   "common": {
     "retry": "재시도",
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "변경 확인",
     "depositLinkWalletReplaceCancel": "취소",
     "depositLinkWalletAlreadyLinked": "연결된 지갑: {address}",
-    "depositServerUnavailable": "지금은 등록할 수 없습니다. 몇 분 후 다시 시도하세요."
+    "depositServerUnavailable": "지금은 등록할 수 없습니다. 몇 분 후 다시 시도하세요.",
+    "depositViewMyPurchase": "내 구매 보기 →",
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

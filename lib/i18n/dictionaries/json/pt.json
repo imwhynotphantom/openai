@@ -13,7 +13,8 @@
     "wallet": "Carteira",
     "mainNavAria": "Navegação principal",
     "connectWallet": "Ligar wallet",
-    "language": "Idioma"
+    "language": "Idioma",
+    "myPurchase": "A minha compra"
   },
   "common": {
     "retry": "Tentar novamente",
@@ -456,7 +457,7 @@
     "depositAddressLabel": "O seu endereço de depósito pessoal",
     "depositNetworkWarning": "Envie pela rede Base. Nunca por Solana ou Tron: os fundos perder-se-iam. Mínimo 10 USDC.",
     "depositPendingBanner": "Detetámos {amount} USDC — a confirmar (2-3 minutos)…",
-    "depositCreditedBanner": "{amount} USDC confirmados = {open} OPEN reservados. Vai recebê-los no lançamento (TGE).",
+    "depositCreditedBanner": "{amount} USDC confirmados = {open} OPEN reservados",
     "depositWaiting": "À espera da sua transferência… De uma exchange costuma demorar 2-10 minutos. Pode fechar esta página: a sua compra fica registada na mesma.",
     "depositError": "Não foi possível carregar o seu endereço de depósito. Tente novamente.",
     "depositStepsBinance": [
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "Confirmar substituição",
     "depositLinkWalletReplaceCancel": "Cancelar",
     "depositLinkWalletAlreadyLinked": "Wallet vinculada: {address}",
-    "depositServerUnavailable": "O registo não está disponível neste momento. Tente novamente dentro de alguns minutos."
+    "depositServerUnavailable": "O registo não está disponível neste momento. Tente novamente dentro de alguns minutos.",
+    "depositViewMyPurchase": "Ver a minha compra →",
+    "depositRegisterHint": "Geramos um endereço único ligado a este dispositivo. Consulte a sua compra em A minha compra."
   },
   "myPurchase": {
     "pageTitle": "A minha compra",

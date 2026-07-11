@@ -13,7 +13,8 @@
     "wallet": "ウォレット",
     "mainNavAria": "メインナビゲーション",
     "connectWallet": "ウォレット接続",
-    "language": "言語"
+    "language": "言語",
+    "myPurchase": "マイ購入"
   },
   "common": {
     "retry": "再試行",
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "変更を確認",
     "depositLinkWalletReplaceCancel": "キャンセル",
     "depositLinkWalletAlreadyLinked": "紐づけ済みウォレット: {address}",
-    "depositServerUnavailable": "現在登録できません。数分後にもう一度お試しください。"
+    "depositServerUnavailable": "現在登録できません。数分後にもう一度お試しください。",
+    "depositViewMyPurchase": "購入を見る →",
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

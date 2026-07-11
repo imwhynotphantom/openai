@@ -13,7 +13,8 @@
     "wallet": "Wallet",
     "mainNavAria": "Hauptnavigation",
     "connectWallet": "Wallet verbinden",
-    "language": "Sprache"
+    "language": "Sprache",
+    "myPurchase": "Mein Kauf"
   },
   "common": {
     "retry": "Erneut versuchen",
@@ -456,7 +457,7 @@
     "depositAddressLabel": "Deine persönliche Einzahlungsadresse",
     "depositNetworkWarning": "Sende über das Base-Netzwerk. Niemals über Solana oder Tron: Die Gelder gingen verloren. Mindestens 10 USDC.",
     "depositPendingBanner": "Wir haben {amount} USDC erkannt — Bestätigung läuft (2-3 Minuten)…",
-    "depositCreditedBanner": "{amount} USDC bestätigt = {open} OPEN reserviert. Du erhältst sie beim Launch (TGE).",
+    "depositCreditedBanner": "{amount} USDC bestätigt = {open} OPEN reserviert",
     "depositWaiting": "Warten auf deine Überweisung… Von einer Börse dauert es meist 2-10 Minuten. Du kannst diese Seite schließen: Dein Kauf bleibt registriert.",
     "depositError": "Deine Einzahlungsadresse konnte nicht geladen werden. Bitte versuche es erneut.",
     "depositStepsBinance": [
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "Ersetzung bestätigen",
     "depositLinkWalletReplaceCancel": "Abbrechen",
     "depositLinkWalletAlreadyLinked": "Verknüpfte Wallet: {address}",
-    "depositServerUnavailable": "Die Registrierung ist derzeit nicht verfügbar. Bitte versuche es in ein paar Minuten erneut."
+    "depositServerUnavailable": "Die Registrierung ist derzeit nicht verfügbar. Bitte versuche es in ein paar Minuten erneut.",
+    "depositViewMyPurchase": "Meinen Kauf ansehen →",
+    "depositRegisterHint": "Wir erstellen eine eindeutige Adresse für dieses Gerät. Kauf unter Mein Kauf einsehen."
   },
   "myPurchase": {
     "pageTitle": "Mein Kauf",

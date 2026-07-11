@@ -13,7 +13,8 @@
     "wallet": "Cartera",
     "mainNavAria": "Navegación principal",
     "connectWallet": "Conectar wallet",
-    "language": "Idioma"
+    "language": "Idioma",
+    "myPurchase": "Mi compra"
   },
   "common": {
     "retry": "Reintentar",
@@ -456,7 +457,7 @@
     "depositAddressLabel": "Tu dirección personal de depósito",
     "depositNetworkWarning": "Envía por la red Base. Nunca por Solana o Tron: se perderían los fondos. Mínimo 10 USDC.",
     "depositPendingBanner": "Hemos detectado {amount} USDC — confirmando (2-3 minutos)…",
-    "depositCreditedBanner": "{amount} USDC confirmados = {open} OPEN reservados. Los recibirás en el lanzamiento (TGE).",
+    "depositCreditedBanner": "{amount} USDC confirmados = {open} OPEN reservados",
     "depositWaiting": "Esperando tu transferencia… Desde un exchange suele tardar 2-10 minutos. Puedes cerrar esta página: tu compra queda registrada igualmente.",
     "depositError": "No se pudo cargar tu dirección de depósito. Inténtalo de nuevo.",
     "depositStepsBinance": [
@@ -483,7 +484,7 @@
       "Envía a tu dirección de depósito"
     ],
     "depositOtherWallet": "Otra wallet",
-    "depositRegisterHintWallet": "Queda vinculada a tu wallet conectada: ahí recibirás tus OPEN en el lanzamiento. Deja tu email si quieres que te avisemos (opcional).",
+    "depositRegisterHintWallet": "Queda vinculada a tu wallet conectada: ahí recibirás tus OPEN en el lanzamiento.",
     "depositRegisterHintEmail": "Queda vinculada a tu email.",
     "depositEmailPlaceholderOptional": "tu@email.com (opcional)",
     "depositEmailPlaceholderRequired": "Tu email — lo usaremos para avisarte y para que consultes tu compra",
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "Confirmar sustitución",
     "depositLinkWalletReplaceCancel": "Cancelar",
     "depositLinkWalletAlreadyLinked": "Wallet vinculada: {address}",
-    "depositServerUnavailable": "El registro no está disponible ahora mismo. Inténtalo de nuevo en unos minutos."
+    "depositServerUnavailable": "El registro no está disponible ahora mismo. Inténtalo de nuevo en unos minutos.",
+    "depositViewMyPurchase": "Ver mi compra →",
+    "depositRegisterHint": "Generamos una dirección única vinculada a este dispositivo. Consulta tu compra en Mi compra."
   },
   "myPurchase": {
     "pageTitle": "Mi compra",

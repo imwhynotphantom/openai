@@ -13,7 +13,8 @@
     "wallet": "Portafoglio",
     "mainNavAria": "Navigazione principale",
     "connectWallet": "Connetti wallet",
-    "language": "Lingua"
+    "language": "Lingua",
+    "myPurchase": "Il mio acquisto"
   },
   "common": {
     "retry": "Riprova",
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "Conferma sostituzione",
     "depositLinkWalletReplaceCancel": "Annulla",
     "depositLinkWalletAlreadyLinked": "Wallet collegato: {address}",
-    "depositServerUnavailable": "La registrazione non è disponibile al momento. Riprova tra qualche minuto."
+    "depositServerUnavailable": "La registrazione non è disponibile al momento. Riprova tra qualche minuto.",
+    "depositViewMyPurchase": "Vedi il mio acquisto →",
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

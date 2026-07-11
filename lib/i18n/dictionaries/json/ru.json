@@ -13,7 +13,8 @@
     "wallet": "Кошелёк",
     "mainNavAria": "Основная навигация",
     "connectWallet": "Подключить wallet",
-    "language": "Язык"
+    "language": "Язык",
+    "myPurchase": "Моя покупка"
   },
   "common": {
     "retry": "Повторить",
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "Подтвердить замену",
     "depositLinkWalletReplaceCancel": "Отмена",
     "depositLinkWalletAlreadyLinked": "Привязанный кошелёк: {address}",
-    "depositServerUnavailable": "Регистрация сейчас недоступна. Попробуйте снова через несколько минут."
+    "depositServerUnavailable": "Регистрация сейчас недоступна. Попробуйте снова через несколько минут.",
+    "depositViewMyPurchase": "Моя покупка →",
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

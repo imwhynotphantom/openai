@@ -13,7 +13,8 @@
     "wallet": "Wallet",
     "mainNavAria": "Main navigation",
     "connectWallet": "Connect wallet",
-    "language": "Language"
+    "language": "Language",
+    "myPurchase": "My purchase"
   },
   "common": {
     "retry": "Retry",
@@ -456,7 +457,7 @@
     "depositAddressLabel": "Your personal deposit address",
     "depositNetworkWarning": "Send via the Base network. Never via Solana or Tron: funds would be lost. Minimum 10 USDC.",
     "depositPendingBanner": "We've detected {amount} USDC — confirming (2-3 minutes)…",
-    "depositCreditedBanner": "{amount} USDC confirmed = {open} OPEN reserved. You'll receive them at launch (TGE).",
+    "depositCreditedBanner": "{amount} USDC confirmed = {open} OPEN reserved",
     "depositWaiting": "Waiting for your transfer… From an exchange it usually takes 2-10 minutes. You can close this page: your purchase is registered anyway.",
     "depositError": "Could not load your deposit address. Please try again.",
     "depositStepsBinance": [
@@ -483,7 +484,7 @@
       "Send to your deposit address"
     ],
     "depositOtherWallet": "Another wallet",
-    "depositRegisterHintWallet": "Linked to your connected wallet: you will receive your OPEN at launch. Add your email if you want us to notify you (optional).",
+    "depositRegisterHintWallet": "Linked to your connected wallet — you will receive your OPEN there at launch.",
     "depositRegisterHintEmail": "Linked to your email.",
     "depositEmailPlaceholderOptional": "you@email.com (optional)",
     "depositEmailPlaceholderRequired": "Your email — we will use it to notify you and let you check your purchase",
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "Confirm replacement",
     "depositLinkWalletReplaceCancel": "Cancel",
     "depositLinkWalletAlreadyLinked": "Linked wallet: {address}",
-    "depositServerUnavailable": "Registration is not available right now. Please try again in a few minutes."
+    "depositServerUnavailable": "Registration is not available right now. Please try again in a few minutes.",
+    "depositViewMyPurchase": "View my purchase →",
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

@@ -29,20 +29,18 @@ export async function POST(req: NextRequest) {
 }
 
 async function handleDepositAddress(req: NextRequest) {
-  let body: { email?: string; claimAddress?: string; refundAddress?: string };
+  let body: { email?: string; claimAddress?: string; refundAddress?: string } = {};
   try {
-    body = await req.json();
+    const parsed = await req.json();
+    if (parsed && typeof parsed === "object") body = parsed;
   } catch {
-    return NextResponse.json({ error: "cuerpo inválido" }, { status: 400 });
+    /* cuerpo vacío: comprador anónimo */
   }
 
   const email = body.email?.trim().toLowerCase() || null;
   const claimAddress = body.claimAddress?.trim() || null;
   const refundAddress = body.refundAddress?.trim() || null;
 
-  if (!email && !claimAddress) {
-    return NextResponse.json({ error: "email o wallet requeridos" }, { status: 400 });
-  }
   if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return NextResponse.json({ error: "email inválido" }, { status: 400 });
   }

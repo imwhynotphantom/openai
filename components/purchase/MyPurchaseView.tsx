@@ -80,12 +80,6 @@ export function MyPurchaseView() {
         </div>
       ) : null}
 
-      <div style={css("padding:12px 14px;border-radius:12px;background:#F7F7F8;margin:0 0 16px")}>
-        <p style={css("font:500 13px/1.5 var(--font-hanken);color:#5C5C66;margin:0")}>
-          {data.hasClaimAddress ? mp.claimNotice : mp.claimNoticeEmail}
-        </p>
-      </div>
-
       {!data.hasClaimAddress ? <LinkWalletPanel claimAddress={data.claimAddress} onLinked={load} /> : null}
 
       <p style={css("font:600 12px var(--font-hanken);color:#8A8A94;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.04em")}>

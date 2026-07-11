@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import Link from "next/link";
 import { QRCodeSVG } from "qrcode.react";
 import { css } from "@/lib/css";
 import { Hov } from "@/components/ui";
@@ -17,20 +18,15 @@ type DepositInfo = {
 
 type ExchangeId = "binance" | "bit2me" | "kraken" | "wallet";
 
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const fmt = (n: number) => n.toLocaleString("es-ES", { maximumFractionDigits: 2 });
 
 export function DepositTab({ address }: { address?: `0x${string}` }) {
   const buy = useBuyCopy();
   const [info, setInfo] = useState<DepositInfo | null>(null);
   const [needsRegister, setNeedsRegister] = useState(false);
-  const [email, setEmail] = useState("");
   const [registering, setRegistering] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [exchange, setExchange] = useState<ExchangeId | null>(null);
-
-  const emailValid = EMAIL_RE.test(email.trim());
-  const canRegister = address ? true : emailValid;
 
   const EXCHANGES: { id: ExchangeId; name: string; steps: string[] }[] = [
     { id: "binance", name: "Binance", steps: buy.depositStepsBinance },
@@ -55,6 +51,28 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
     }
   }, []);
 
+  const register = useCallback(async () => {
+    setRegistering(true);
+    setError(null);
+    try {
+      const r = await fetch("/api/deposit-address", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ claimAddress: address }),
+      });
+      if (!r.ok) {
+        const data = (await r.json().catch(() => ({}))) as { error?: string };
+        if (r.status === 503) throw new Error("server_config");
+        throw new Error(data.error ?? "register failed");
+      }
+      await loadStatus();
+    } catch (e) {
+      setError(e instanceof Error && e.message === "server_config" ? buy.depositServerUnavailable : buy.depositError);
+    } finally {
+      setRegistering(false);
+    }
+  }, [address, buy.depositError, buy.depositServerUnavailable, loadStatus]);
+
   useEffect(() => {
     let alive = true;
     let id: ReturnType<typeof setInterval> | undefined;
@@ -68,62 +86,34 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
     };
   }, [loadStatus]);
 
-  const register = async () => {
-    if (!canRegister) return;
-    setRegistering(true);
-    setError(null);
-    try {
-      const r = await fetch("/api/deposit-address", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          claimAddress: address,
-          email: email.trim() || undefined,
-        }),
-      });
-      if (!r.ok) {
-        const data = (await r.json().catch(() => ({}))) as { error?: string };
-        if (r.status === 503) throw new Error("server_config");
-        throw new Error(data.error ?? "register failed");
-      }
-      await loadStatus();
-    } catch (e) {
-      setError(e instanceof Error && e.message === "server_config" ? buy.depositServerUnavailable : buy.depositError);
-    } finally {
-      setRegistering(false);
+  useEffect(() => {
+    if (needsRegister && !registering && !error) {
+      void register();
     }
-  };
+  }, [needsRegister, registering, error, register]);
 
   if (needsRegister) {
     return (
       <div>
         <p style={css("font:400 14px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 16px")}>{buy.depositIntro}</p>
-        <div style={css("padding:18px;border:1px solid #ECECEC;border-radius:14px;background:#FAFAFA")}>
-          <p style={css("font:600 15px var(--font-hanken);color:#0D0D0D;margin:0 0 6px")}>{buy.depositRegisterTitle}</p>
+        <div style={css("padding:18px;border:1px solid #ECECEC;border-radius:14px;background:#FAFAFA;text-align:center")}>
+          <p style={css("font:600 15px var(--font-hanken);color:#0D0D0D;margin:0 0 8px")}>{buy.depositRegisterTitle}</p>
           <p style={css("font:400 13px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 14px")}>
-            {address ? buy.depositRegisterHintWallet : buy.depositRegisterHintEmail}
+            {address ? buy.depositRegisterHintWallet : buy.depositRegisterHint}
           </p>
-          <input
-            type="email"
-            autoComplete="email"
-            required={!address}
-            placeholder={address ? buy.depositEmailPlaceholderOptional : buy.depositEmailPlaceholderRequired}
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            style={css(
-              `width:100%;box-sizing:border-box;padding:12px 14px;border:1px solid ${!address && email && !emailValid ? "#E5A0A0" : "#E6E6E8"};border-radius:12px;font:500 14px var(--font-hanken);margin-bottom:12px;background:#fff`
-            )}
-          />
-          <Hov
-            as="button"
-            type="button"
-            disabled={registering || !canRegister}
-            onClick={register}
-            style="appearance:none;cursor:pointer;width:100%;background:#0D0D0D;color:#fff;border:none;border-radius:12px;padding:14px;font:600 14px var(--font-hanken)"
-            hover="background:#000"
-          >
-            {registering ? buy.depositRegisterLoading : buy.depositRegisterCta}
-          </Hov>
+          {registering ? (
+            <p style={css("font:500 14px var(--font-hanken);color:#8A8A94;margin:0")}>{buy.depositRegisterLoading}</p>
+          ) : (
+            <Hov
+              as="button"
+              type="button"
+              onClick={register}
+              style="appearance:none;cursor:pointer;width:100%;background:#0D0D0D;color:#fff;border:none;border-radius:12px;padding:14px;font:600 14px var(--font-hanken)"
+              hover="background:#000"
+            >
+              {buy.depositRegisterCta}
+            </Hov>
+          )}
           {error ? <p style={css("font:500 13px var(--font-hanken);color:#D14343;margin:10px 0 0")}>{error}</p> : null}
         </div>
       </div>
@@ -197,11 +187,12 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
 
       {info.credited > 0 ? (
         <div style={css("padding:12px 14px;border-radius:12px;background:color-mix(in srgb, var(--accent, #0E8C6A) 9%, #fff);border:1px solid color-mix(in srgb, var(--accent, #0E8C6A) 35%, #fff);margin:0 0 12px")}>
-          <span style={css("font:500 13px/1.5 var(--font-hanken);color:var(--accent,#0E8C6A)")}>
-            {info.hasClaimAddress
-              ? `✓ ${buy.depositCreditedBanner(fmt(info.credited), fmt(info.openEstimated))}`
-              : buy.depositCreditedBannerEmail}
-          </span>
+          <p style={css("font:500 13px/1.5 var(--font-hanken);color:var(--accent,#0E8C6A);margin:0 0 6px")}>
+            ✓ {buy.depositCreditedBanner(fmt(info.credited), fmt(info.openEstimated))}
+          </p>
+          <Link href="/mi-compra" style={css("font:600 13px var(--font-hanken);color:#0D0D0D;text-decoration:underline")}>
+            {buy.depositViewMyPurchase}
+          </Link>
         </div>
       ) : null}
 

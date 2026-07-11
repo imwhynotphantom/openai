@@ -13,7 +13,8 @@
     "wallet": "Portemonnee",
     "mainNavAria": "Hoofdnavigatie",
     "connectWallet": "Wallet verbinden",
-    "language": "Taal"
+    "language": "Taal",
+    "myPurchase": "Mijn aankoop"
   },
   "common": {
     "retry": "Opnieuw proberen",
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "Vervanging bevestigen",
     "depositLinkWalletReplaceCancel": "Annuleren",
     "depositLinkWalletAlreadyLinked": "Gekoppelde wallet: {address}",
-    "depositServerUnavailable": "Registratie is momenteel niet beschikbaar. Probeer het over een paar minuten opnieuw."
+    "depositServerUnavailable": "Registratie is momenteel niet beschikbaar. Probeer het over een paar minuten opnieuw.",
+    "depositViewMyPurchase": "Mijn aankoop bekijken →",
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

@@ -13,7 +13,8 @@
     "wallet": "वॉलेट",
     "mainNavAria": "मुख्य नेविगेशन",
     "connectWallet": "Wallet कनेक्ट करें",
-    "language": "भाषा"
+    "language": "भाषा",
+    "myPurchase": "मेरी खरीद"
   },
   "common": {
     "retry": "पुनः प्रयास",
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "बदलाव की पुष्टि करें",
     "depositLinkWalletReplaceCancel": "रद्द करें",
     "depositLinkWalletAlreadyLinked": "जुड़ा वॉलेट: {address}",
-    "depositServerUnavailable": "पंजीकरण अभी उपलब्ध नहीं है। कुछ मिनट बाद पुनः प्रयास करें।"
+    "depositServerUnavailable": "पंजीकरण अभी उपलब्ध नहीं है। कुछ मिनट बाद पुनः प्रयास करें।",
+    "depositViewMyPurchase": "मेरी खरीद देखें →",
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

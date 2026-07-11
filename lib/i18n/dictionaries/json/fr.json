@@ -13,7 +13,8 @@
     "wallet": "Portefeuille",
     "mainNavAria": "Navigation principale",
     "connectWallet": "Connecter le wallet",
-    "language": "Langue"
+    "language": "Langue",
+    "myPurchase": "Mon achat"
   },
   "common": {
     "retry": "Réessayer",
@@ -456,7 +457,7 @@
     "depositAddressLabel": "Votre adresse de dépôt personnelle",
     "depositNetworkWarning": "Envoyez via le réseau Base. Jamais via Solana ou Tron : les fonds seraient perdus. Minimum 10 USDC.",
     "depositPendingBanner": "Nous avons détecté {amount} USDC — confirmation en cours (2-3 minutes)…",
-    "depositCreditedBanner": "{amount} USDC confirmés = {open} OPEN réservés. Vous les recevrez au lancement (TGE).",
+    "depositCreditedBanner": "{amount} USDC confirmés = {open} OPEN réservés",
     "depositWaiting": "En attente de votre virement… Depuis un exchange, cela prend généralement 2-10 minutes. Vous pouvez fermer cette page : votre achat reste enregistré.",
     "depositError": "Impossible de charger votre adresse de dépôt. Veuillez réessayer.",
     "depositStepsBinance": [
@@ -498,7 +499,9 @@
     "depositLinkWalletReplaceCta": "Confirmer le remplacement",
     "depositLinkWalletReplaceCancel": "Annuler",
     "depositLinkWalletAlreadyLinked": "Wallet liée : {address}",
-    "depositServerUnavailable": "L'inscription n'est pas disponible pour le moment. Réessayez dans quelques minutes."
+    "depositServerUnavailable": "L'inscription n'est pas disponible pour le moment. Réessayez dans quelques minutes.",
+    "depositViewMyPurchase": "Voir mon achat →",
+    "depositRegisterHint": "Nous générons une adresse unique liée à cet appareil. Consultez votre achat dans Mon achat."
   },
   "myPurchase": {
     "pageTitle": "Mon achat",

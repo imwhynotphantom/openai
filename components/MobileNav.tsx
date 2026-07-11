@@ -7,6 +7,7 @@ import type { ReactElement } from "react";
 import { css } from "@/lib/css";
 import { fmtUSD, ACCENT } from "@/lib/format";
 import { useOpenPrice } from "@/hooks/useOpenPrice";
+import { useHasPurchase } from "@/hooks/useHasPurchase";
 import { useI18n } from "@/lib/i18n/LocaleProvider";
 
 const NAV: { href: string; labelKey: "home" | "market" | "buy" | "swap" | "wallet"; icon: (active: boolean) => ReactElement }[] = [
@@ -71,7 +72,28 @@ function MobileCtaPrice() {
 export const MobileDock = memo(function MobileDock() {
   const pathname = usePathname();
   const { t } = useI18n();
+  const { hasPurchase } = useHasPurchase();
   const showCta = pathname !== "/comprar" && pathname !== "/swap";
+
+  const navItems = [
+    ...NAV.slice(0, 3),
+    ...(hasPurchase
+      ? [
+          {
+            href: "/mi-compra",
+            labelKey: "myPurchase" as const,
+            icon: (active: boolean) => (
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden>
+                <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2" stroke={active ? ACCENT : "#6B6B76"} strokeWidth="1.8" />
+                <rect x="9" y="3" width="6" height="4" rx="1" stroke={active ? ACCENT : "#6B6B76"} strokeWidth="1.8" />
+                <path d="M9 12h6M9 16h6" stroke={active ? ACCENT : "#6B6B76"} strokeWidth="1.8" strokeLinecap="round" />
+              </svg>
+            ),
+          },
+        ]
+      : []),
+    ...NAV.slice(3),
+  ];
 
   return (
     <div
@@ -96,10 +118,10 @@ export const MobileDock = memo(function MobileDock() {
       <nav
         data-mobnav
         aria-label={t.nav.mainNavAria}
-        style={css("display:grid;grid-template-columns:repeat(5,1fr);padding:4px 6px 6px")}
+        style={css(`display:grid;grid-template-columns:repeat(${navItems.length},1fr);padding:4px 6px 6px`)}
       >
-        {NAV.map(({ href, labelKey, icon }) => {
-          const label = t.nav[labelKey];
+        {navItems.map(({ href, labelKey, icon }) => {
+          const label = labelKey === "myPurchase" ? t.nav.myPurchase : t.nav[labelKey];
           const active = pathname === href;
           return (
             <Link
