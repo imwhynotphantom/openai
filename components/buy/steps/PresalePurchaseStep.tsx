@@ -48,7 +48,7 @@ export function PresalePurchaseStep({ onBack, initialMode }: Props) {
   const router = useRouter();
   const app = useApp();
   const queryClient = useQueryClient();
-  const [mode, setMode] = useState<FundingMode>(initialMode ?? "base");
+  const [mode, setMode] = useState<FundingMode>(initialMode ?? "receive");
   const [legalAccepted, setLegalAccepted] = useState(false);
   const purchase = usePresalePurchase();
   const balances = usePaymentTokenBalances();
@@ -138,9 +138,9 @@ export function PresalePurchaseStep({ onBack, initialMode }: Props) {
       <StepTitle title={buy.compraTitle} subtitle={buy.compraSubtitle} />
 
       <div style={css("display:flex;gap:8px;margin-bottom:20px")}>
+        <ModeTab active={mode === "receive"} label={buy.bridgeTabReceive} onClick={() => setMode("receive")} />
         <ModeTab active={mode === "base"} label={buy.bridgeTabBase} onClick={() => setMode("base")} />
         <ModeTab active={mode === "bridge"} label={buy.bridgeTabOther} onClick={() => setMode("bridge")} />
-        <ModeTab active={mode === "receive"} label={buy.bridgeTabReceive} onClick={() => setMode("receive")} />
       </div>
 
       {mode === "bridge" ? (
