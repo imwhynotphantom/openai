@@ -114,7 +114,7 @@ export function usePresalePurchase() {
   const { writeContractAsync } = useWriteContract();
 
   const [paymentTokenId, setPaymentTokenId] = useState<PaymentTokenId>("USDC");
-  const [amountInput, setAmountInput] = useState("10");
+  const [amountInput, setAmountInput] = useState("");
   const [flowPhase, setFlowPhase] = useState<PurchasePhase>("purchase");
   const [quoteFallback, setQuoteFallback] = useState(false);
   const [state, setState] = useState<PurchaseExecutionState>(INITIAL_EXEC_STATE);
