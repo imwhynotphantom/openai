@@ -410,7 +410,7 @@
     "bridgeTabBase": "내 지갑으로 구매",
     "bridgeTabOther": "다른 네트워크",
     "bridgeTabReceive": "지갑 없이 구매",
-    "receiveSubtitle": "다른 지갑 또는 거래소에서 Base 네트워크 주소로 USDC를 보내세요. 잔액이 자동 감지됩니다.",
+    "receiveSubtitle": "거래소나 지갑에서 입금 주소로 USDC를 보내세요. Base가 가장 빠릅니다. Ethereum, Arbitrum, Optimism, Polygon도 지원합니다.",
     "receiveCurrentBalance": "Base USDC 잔액",
     "compraModeChecking": "지갑 확인 중…",
     "compraModeOneSignature": "한 번의 서명으로 모두 확인합니다.",
@@ -455,33 +455,34 @@
     "depositRegisterLoading": "생성 중…",
     "depositFromWhere": "어디에서 보내시나요?",
     "depositAddressLabel": "나의 전용 입금 주소",
-    "depositNetworkWarning": "Base 네트워크로 보내세요. Solana나 Tron으로는 절대 보내지 마세요: 자금을 잃게 됩니다. 최소 10 USDC.",
+    "depositNetworkWarning": "Base 네트워크로 보내세요(권장). 거래소가 지원하지 않으면 Ethereum, Arbitrum, Optimism, Polygon도 가능합니다 — 변환은 저희가 처리합니다. 최소 10 USDC(Ethereum은 100 USDC).",
     "depositPendingBanner": "{amount} USDC 감지 — 확인 중 (2-3분)…",
     "depositCreditedBanner": "{amount} USDC 확정 = {open} OPEN 예약 완료. 출시(TGE) 시 받게 됩니다.",
     "depositWaiting": "이체를 기다리는 중… 거래소에서는 보통 2-10분 걸립니다. 이 페이지를 닫아도 됩니다: 구매는 그대로 기록됩니다.",
     "depositError": "입금 주소를 불러오지 못했습니다. 다시 시도해 주세요.",
     "depositStepsBinance": [
-      "Binance 열기 → 지갑 → 출금",
-      "USDC 검색 후 선택",
-      "입금 주소 붙여넣기 (아래 버튼)",
-      "“네트워크”에서 Base 선택 — 없으면 보내지 마세요",
-      "출금 확정"
+      "Binance → 지갑 → 출금",
+      "USDC 검색 및 선택",
+      "입금 주소 붙여넣기(아래 버튼)",
+      "네트워크에서 Base(권장) 또는 Ethereum / Arbitrum / Optimism / Polygon 선택",
+      "출금 확인(최소 10 USDC, Ethereum은 100 USDC)"
     ],
     "depositStepsBit2me": [
-      "Bit2Me 열기 → Wallets → USDC → 보내기",
+      "Bit2Me → Wallets → USDC → 보내기",
       "입금 주소 붙여넣기",
-      "네트워크로 Base 선택",
-      "전송 확정"
+      "네트워크: Base(권장) 또는 거래소가 제공하는 네트워크",
+      "전송 확인(최소 10 USDC, Ethereum은 100 USDC)"
     ],
     "depositStepsKraken": [
-      "Kraken 열기 → Funding → Withdraw → USDC",
-      "입금 주소를 대상으로 추가",
-      "“Network”에서 Base 선택",
-      "출금 확정"
+      "Kraken → Funding → Withdraw → USDC",
+      "입금 주소를 수신 주소로 추가",
+      "Network에서 Base(권장) 또는 Ethereum / Arbitrum / Optimism / Polygon",
+      "출금 확인(최소 10 USDC, Ethereum은 100 USDC)"
     ],
     "depositStepsWallet": [
-      "지갑을 열고 Base 네트워크의 USDC 선택",
-      "입금 주소로 전송"
+      "지갑에서 USDC 선택",
+      "Base(권장) 또는 Ethereum / Arbitrum / Optimism / Polygon으로 전송",
+      "최소 10 USDC(Ethereum은 100 USDC)"
     ],
     "depositOtherWallet": "다른 지갑",
     "depositRegisterHintWallet": "연결된 지갑에 연결됩니다. 출시 시 OPEN을 받습니다. 알림용 이메일은 선택.",

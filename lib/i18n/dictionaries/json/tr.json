@@ -410,7 +410,7 @@
     "bridgeTabBase": "Cüzdanımla satın al",
     "bridgeTabOther": "Diğer ağlar",
     "bridgeTabReceive": "Cüzdansız satın al",
-    "receiveSubtitle": "Başka bir wallet veya borsadan Base ağındaki adresinize USDC gönderin. Bakiye otomatik algılanır.",
+    "receiveSubtitle": "Borsa veya cüzdandan adresinize USDC gönderin. Base en hızlı seçenektir; Ethereum, Arbitrum, Optimism ve Polygon da kabul edilir.",
     "receiveCurrentBalance": "Base'deki USDC bakiyeniz",
     "compraModeChecking": "Wallet'ınız kontrol ediliyor…",
     "compraModeOneSignature": "Her şeyi wallet'ınızda tek imza ile onaylayacaksınız.",
@@ -455,33 +455,34 @@
     "depositRegisterLoading": "Oluşturuluyor…",
     "depositFromWhere": "Nereden göndereceksiniz?",
     "depositAddressLabel": "Kişisel yatırma adresiniz",
-    "depositNetworkWarning": "Base ağı üzerinden gönderin. Asla Solana veya Tron üzerinden göndermeyin: fonlar kaybolur. Minimum 10 USDC.",
+    "depositNetworkWarning": "Base ağı üzerinden gönderin (önerilen). Borsanız sunmuyorsa Ethereum, Arbitrum, Optimism ve Polygon da kabul ediyoruz — dönüşümü biz yaparız. Minimum 10 USDC (Ethereum ile 100 USDC).",
     "depositPendingBanner": "{amount} USDC algılandı — onaylanıyor (2-3 dakika)…",
     "depositCreditedBanner": "{amount} USDC onaylandı = {open} OPEN ayrıldı. Lansmanda (TGE) alacaksınız.",
     "depositWaiting": "Transferiniz bekleniyor… Bir borsadan genellikle 2-10 dakika sürer. Bu sayfayı kapatabilirsiniz: satın alımınız yine de kayıtlıdır.",
     "depositError": "Yatırma adresiniz yüklenemedi. Lütfen tekrar deneyin.",
     "depositStepsBinance": [
-      "Binance'i açın → Cüzdan → Çek",
-      "USDC'yi arayın ve seçin",
-      "Yatırma adresinizi yapıştırın (aşağıdaki buton)",
-      "“Ağ” bölümünde Base'i seçin — listede yoksa göndermeyin",
-      "Çekimi onaylayın"
+      "Binance → Cüzdan → Çek açın",
+      "USDC'yi bulun ve seçin",
+      "Yatırma adresinizi yapıştırın (aşağıdaki düğme)",
+      "Ağ altında Base (önerilen) veya Ethereum / Arbitrum / Optimism / Polygon seçin",
+      "Çekmeyi onaylayın (min. 10 USDC; Ethereum ile 100 USDC)"
     ],
     "depositStepsBit2me": [
-      "Bit2Me'yi açın → Wallets → USDC → Gönder",
+      "Bit2Me → Wallets → USDC → Gönder açın",
       "Yatırma adresinizi yapıştırın",
-      "Ağ olarak Base'i seçin",
-      "Gönderimi onaylayın"
+      "Ağı seçin: Base (önerilen) veya borsanızın sunduğu",
+      "Gönderimi onaylayın (min. 10 USDC; Ethereum ile 100 USDC)"
     ],
     "depositStepsKraken": [
-      "Kraken'i açın → Funding → Withdraw → USDC",
+      "Kraken → Funding → Withdraw → USDC açın",
       "Yatırma adresinizi hedef olarak ekleyin",
-      "“Network” bölümünde Base'i seçin",
-      "Çekimi onaylayın"
+      "Network altında Base (önerilen) veya Ethereum / Arbitrum / Optimism / Polygon seçin",
+      "Çekmeyi onaylayın (min. 10 USDC; Ethereum ile 100 USDC)"
     ],
     "depositStepsWallet": [
-      "Cüzdanınızı açın ve Base ağında USDC'yi seçin",
-      "Yatırma adresinize gönderin"
+      "Cüzdanınızı açın ve USDC seçin",
+      "Base (önerilen) veya Ethereum / Arbitrum / Optimism / Polygon üzerinden gönderin",
+      "Min. 10 USDC (Ethereum ile 100 USDC)"
     ],
     "depositOtherWallet": "Başka cüzdan",
     "depositRegisterHintWallet": "Bağlı cüzdanınıza bağlı: OPEN'larınızı lansmanda orada alacaksınız. Bildirim için e-posta isteğe bağlı.",

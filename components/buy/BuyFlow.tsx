@@ -10,10 +10,10 @@ import { formatAddress } from "@/lib/wagmi/format-address";
 import { useWalletDisconnect } from "@/hooks/useWalletDisconnect";
 import { PresalePurchaseStep, type FundingMode } from "./steps/PresalePurchaseStep";
 
-/** ?modo=recibir | ?modo=puente abren la pestaña correspondiente. */
+/** ?modo=recibir abre la pestaña «Comprar sin wallet». */
 const MODE_PARAM: Record<string, FundingMode> = {
   recibir: "receive",
-  puente: "bridge",
+  puente: "receive",
 };
 
 export default function BuyFlow() {

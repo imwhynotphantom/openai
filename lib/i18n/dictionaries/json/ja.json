@@ -410,7 +410,7 @@
     "bridgeTabBase": "ウォレットで購入",
     "bridgeTabOther": "他のネットワーク",
     "bridgeTabReceive": "ウォレットなしで購入",
-    "receiveSubtitle": "他のウォレットまたは取引所から Base ネットワークアドレスに USDC を送金。残高は自動検出。",
+    "receiveSubtitle": "取引所またはウォレットから専用アドレスにUSDCを送金してください。Baseが最速です。Ethereum、Arbitrum、Optimism、Polygonも受け付けています。",
     "receiveCurrentBalance": "Base の USDC 残高",
     "compraModeChecking": "ウォレット確認中…",
     "compraModeOneSignature": "1 回の署名ですべて確認します。",
@@ -455,33 +455,34 @@
     "depositRegisterLoading": "発行中…",
     "depositFromWhere": "どこから送りますか？",
     "depositAddressLabel": "あなた専用の入金アドレス",
-    "depositNetworkWarning": "Base ネットワークで送ってください。Solana や Tron では絶対に送らないでください：資金が失われます。最低 10 USDC。",
+    "depositNetworkWarning": "Baseネットワークでの送金を推奨します。取引所が未対応の場合はEthereum、Arbitrum、Optimism、Polygonも可 — 当方で変換します。最低10 USDC（Ethereumの場合は100 USDC）。",
     "depositPendingBanner": "{amount} USDC を検出しました — 確認中（2〜3 分）…",
     "depositCreditedBanner": "{amount} USDC 確認済み = {open} OPEN を確保。ローンチ（TGE）時に受け取れます。",
     "depositWaiting": "送金を待っています… 取引所からは通常 2〜10 分かかります。このページは閉じても大丈夫です：購入は記録されています。",
     "depositError": "入金アドレスを読み込めませんでした。もう一度お試しください。",
     "depositStepsBinance": [
-      "Binance を開く → ウォレット → 出金",
-      "USDC を検索して選択",
+      "Binance → ウォレット → 出金を開く",
+      "USDCを検索して選択",
       "入金アドレスを貼り付け（下のボタン）",
-      "「ネットワーク」で Base を選択 — 無ければ送らない",
-      "出金を確定"
+      "ネットワークでBase（推奨）または Ethereum / Arbitrum / Optimism / Polygon を選択",
+      "出金を確認（最低10 USDC、Ethereumは100 USDC）"
     ],
     "depositStepsBit2me": [
-      "Bit2Me を開く → Wallets → USDC → 送金",
+      "Bit2Me → Wallets → USDC → 送金",
       "入金アドレスを貼り付け",
-      "ネットワークは Base を選択",
-      "送金を確定"
+      "ネットワーク：Base（推奨）または取引所が提供するネットワーク",
+      "送金を確認（最低10 USDC、Ethereumは100 USDC）"
     ],
     "depositStepsKraken": [
-      "Kraken を開く → Funding → Withdraw → USDC",
+      "Kraken → Funding → Withdraw → USDC",
       "入金アドレスを送金先に追加",
-      "「Network」で Base を選択",
-      "出金を確定"
+      "NetworkでBase（推奨）または Ethereum / Arbitrum / Optimism / Polygon",
+      "出金を確認（最低10 USDC、Ethereumは100 USDC）"
     ],
     "depositStepsWallet": [
-      "ウォレットを開き、Base ネットワークの USDC を選択",
-      "入金アドレスへ送金"
+      "ウォレットでUSDCを選択",
+      "Base（推奨）または Ethereum / Arbitrum / Optimism / Polygon で送金",
+      "最低10 USDC（Ethereumは100 USDC）"
     ],
     "depositOtherWallet": "別のウォレット",
     "depositRegisterHintWallet": "接続中のウォレットに紐づきます。ローンチ時にOPENを受け取ります。通知用メールは任意。",

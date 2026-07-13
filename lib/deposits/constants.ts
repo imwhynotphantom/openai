@@ -26,8 +26,8 @@ export const USDC: Record<number, `0x${string}`> = {
   137: "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359", // Polygon (nativo)
 };
 
-// ETAPA 1: solo Base. Etapa 2: [8453, 1, 42161, 10, 137].
-export const CHAINS = [8453] as const;
+// ETAPA 2: Base + Ethereum, Arbitrum, Optimism, Polygon.
+export const CHAINS = [8453, 1, 42161, 10, 137] as const;
 
 export const CONFIRMATIONS: Record<number, number> = {
   8453: 10,

@@ -410,7 +410,7 @@
     "bridgeTabBase": "Kopen met mijn wallet",
     "bridgeTabOther": "Andere netwerken",
     "bridgeTabReceive": "Kopen zonder wallet",
-    "receiveSubtitle": "Stuur USDC naar je adres op het Base-netwerk vanuit een andere wallet of exchange. Het saldo wordt automatisch gedetecteerd.",
+    "receiveSubtitle": "Stuur USDC naar je adres vanaf een exchange of wallet. Base is het snelst; we accepteren ook Ethereum, Arbitrum, Optimism en Polygon.",
     "receiveCurrentBalance": "Je USDC-saldo op Base",
     "compraModeChecking": "Je wallet controleren…",
     "compraModeOneSignature": "Je bevestigt alles met één handtekening in je wallet.",
@@ -455,7 +455,7 @@
     "depositRegisterLoading": "Genereren…",
     "depositFromWhere": "Vanwaar ga je versturen?",
     "depositAddressLabel": "Je persoonlijke stortingsadres",
-    "depositNetworkWarning": "Verstuur via het Base-netwerk. Nooit via Solana of Tron: het tegoed zou verloren gaan. Minimaal 10 USDC.",
+    "depositNetworkWarning": "Stuur via het Base-netwerk (aanbevolen). Biedt je exchange het niet aan, dan accepteren we ook Ethereum, Arbitrum, Optimism en Polygon — wij wisselen het om. Minimaal 10 USDC (100 via Ethereum).",
     "depositPendingBanner": "We hebben {amount} USDC gedetecteerd — bevestigen (2-3 minuten)…",
     "depositCreditedBanner": "{amount} USDC bevestigd = {open} OPEN gereserveerd. Je ontvangt ze bij de lancering (TGE).",
     "depositWaiting": "Wachten op je overboeking… Vanaf een exchange duurt het meestal 2-10 minuten. Je kunt deze pagina sluiten: je aankoop blijft geregistreerd.",
@@ -464,24 +464,25 @@
       "Open Binance → Wallet → Opnemen",
       "Zoek en selecteer USDC",
       "Plak je stortingsadres (knop hieronder)",
-      "Selecteer bij “Netwerk” Base — staat het er niet, verstuur dan niet",
-      "Bevestig de opname"
+      "Kies bij Netwerk Base (aanbevolen) of Ethereum / Arbitrum / Optimism / Polygon",
+      "Bevestig de opname (min. 10 USDC; 100 USDC via Ethereum)"
     ],
     "depositStepsBit2me": [
       "Open Bit2Me → Wallets → USDC → Versturen",
       "Plak je stortingsadres",
-      "Selecteer als netwerk Base",
-      "Bevestig de verzending"
+      "Kies het netwerk: Base (aanbevolen) of wat je exchange biedt",
+      "Bevestig de overboeking (min. 10 USDC; 100 USDC via Ethereum)"
     ],
     "depositStepsKraken": [
       "Open Kraken → Funding → Withdraw → USDC",
       "Voeg je stortingsadres toe als bestemming",
-      "Selecteer bij “Network” Base",
-      "Bevestig de opname"
+      "Kies bij Network Base (aanbevolen) of Ethereum / Arbitrum / Optimism / Polygon",
+      "Bevestig de opname (min. 10 USDC; 100 USDC via Ethereum)"
     ],
     "depositStepsWallet": [
-      "Open je wallet en selecteer USDC op het Base-netwerk",
-      "Verstuur naar je stortingsadres"
+      "Open je wallet en selecteer USDC",
+      "Stuur via Base (aanbevolen) of Ethereum / Arbitrum / Optimism / Polygon",
+      "Min. 10 USDC (100 USDC via Ethereum)"
     ],
     "depositOtherWallet": "Andere wallet",
     "depositRegisterHintWallet": "Gekoppeld aan je verbonden wallet: daar ontvang je je OPEN bij de launch. E-mail optioneel voor meldingen.",

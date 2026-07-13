@@ -410,7 +410,7 @@
     "bridgeTabBase": "用我的钱包购买",
     "bridgeTabOther": "其他网络",
     "bridgeTabReceive": "无钱包购买",
-    "receiveSubtitle": "从其他钱包或交易所向 Base 网络地址发送 USDC。余额将自动检测。",
+    "receiveSubtitle": "从交易所或钱包向您的地址发送 USDC。Base 最快；我们也支持 Ethereum、Arbitrum、Optimism 和 Polygon。",
     "receiveCurrentBalance": "您在 Base 上的 USDC 余额",
     "compraModeChecking": "检查钱包中…",
     "compraModeOneSignature": "您将用一次签名确认全部操作。",
@@ -455,7 +455,7 @@
     "depositRegisterLoading": "生成中…",
     "depositFromWhere": "你将从哪里发送？",
     "depositAddressLabel": "你的专属充值地址",
-    "depositNetworkWarning": "请通过 Base 网络发送。切勿通过 Solana 或 Tron：资金将会丢失。最低 10 USDC。",
+    "depositNetworkWarning": "请通过 Base 网络发送（推荐）。若交易所不支持，也可使用 Ethereum、Arbitrum、Optimism 或 Polygon — 由我们转换。最低 10 USDC（经 Ethereum 为 100 USDC）。",
     "depositPendingBanner": "已检测到 {amount} USDC — 确认中（2-3 分钟）…",
     "depositCreditedBanner": "{amount} USDC 已确认 = 已预留 {open} OPEN。将在发布（TGE）时发放。",
     "depositWaiting": "等待你的转账… 从交易所通常需要 2-10 分钟。你可以关闭此页面：购买已被记录。",
@@ -463,25 +463,26 @@
     "depositStepsBinance": [
       "打开 Binance → 钱包 → 提现",
       "搜索并选择 USDC",
-      "粘贴你的充值地址（下方按钮）",
-      "在“网络”中选择 Base — 如果没有，请勿发送",
-      "确认提现"
+      "粘贴您的充值地址（下方按钮）",
+      "网络选择 Base（推荐）或 Ethereum / Arbitrum / Optimism / Polygon",
+      "确认提现（最低 10 USDC；Ethereum 为 100 USDC）"
     ],
     "depositStepsBit2me": [
       "打开 Bit2Me → Wallets → USDC → 发送",
-      "粘贴你的充值地址",
-      "网络选择 Base",
-      "确认发送"
+      "粘贴充值地址",
+      "选择网络：Base（推荐）或交易所提供的网络",
+      "确认发送（最低 10 USDC；Ethereum 为 100 USDC）"
     ],
     "depositStepsKraken": [
       "打开 Kraken → Funding → Withdraw → USDC",
-      "将你的充值地址添加为收款地址",
-      "在“Network”中选择 Base",
-      "确认提现"
+      "添加充值地址为收款方",
+      "Network 选择 Base（推荐）或 Ethereum / Arbitrum / Optimism / Polygon",
+      "确认提现（最低 10 USDC；Ethereum 为 100 USDC）"
     ],
     "depositStepsWallet": [
-      "打开你的钱包，选择 Base 网络上的 USDC",
-      "发送到你的充值地址"
+      "打开钱包并选择 USDC",
+      "通过 Base（推荐）或 Ethereum / Arbitrum / Optimism / Polygon 发送",
+      "最低 10 USDC（Ethereum 为 100 USDC）"
     ],
     "depositOtherWallet": "其他钱包",
     "depositRegisterHintWallet": "绑定到已连接的钱包：上线时在此领取 OPEN。通知邮箱可选。",

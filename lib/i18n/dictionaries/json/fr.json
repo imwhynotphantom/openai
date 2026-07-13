@@ -410,7 +410,7 @@
     "bridgeTabBase": "Acheter avec ma wallet",
     "bridgeTabOther": "Autres réseaux",
     "bridgeTabReceive": "Acheter sans wallet",
-    "receiveSubtitle": "Envoyez de l'USDC à votre adresse sur le réseau Base depuis un autre wallet ou un exchange. Le solde est détecté automatiquement.",
+    "receiveSubtitle": "Envoyez des USDC à votre adresse depuis un exchange ou un wallet. Base est l'option la plus rapide ; nous acceptons aussi Ethereum, Arbitrum, Optimism et Polygon.",
     "receiveCurrentBalance": "Votre solde USDC sur Base",
     "compraModeChecking": "Vérification de votre wallet…",
     "compraModeOneSignature": "Vous confirmerez tout avec une seule signature dans votre wallet.",
@@ -455,33 +455,34 @@
     "depositRegisterLoading": "Génération…",
     "depositFromWhere": "Depuis où allez-vous envoyer ?",
     "depositAddressLabel": "Votre adresse de dépôt personnelle",
-    "depositNetworkWarning": "Envoyez via le réseau Base. Jamais via Solana ou Tron : les fonds seraient perdus. Minimum 10 USDC.",
+    "depositNetworkWarning": "Envoyez via le réseau Base (recommandé). Si votre exchange ne le propose pas, nous acceptons aussi Ethereum, Arbitrum, Optimism et Polygon — nous convertissons pour vous. Minimum 10 USDC (100 si vous envoyez via Ethereum).",
     "depositPendingBanner": "Nous avons détecté {amount} USDC — confirmation en cours (2-3 minutes)…",
     "depositCreditedBanner": "{amount} USDC confirmés = {open} OPEN réservés",
     "depositWaiting": "En attente de votre virement… Depuis un exchange, cela prend généralement 2-10 minutes. Vous pouvez fermer cette page : votre achat reste enregistré.",
     "depositError": "Impossible de charger votre adresse de dépôt. Veuillez réessayer.",
     "depositStepsBinance": [
       "Ouvrez Binance → Portefeuille → Retirer",
-      "Cherchez et sélectionnez USDC",
+      "Recherchez et sélectionnez USDC",
       "Collez votre adresse de dépôt (bouton ci-dessous)",
-      "Sous « Réseau », sélectionnez Base — si absent, n'envoyez pas",
-      "Confirmez le retrait"
+      "Sous Réseau, choisissez Base (recommandé) ou Ethereum / Arbitrum / Optimism / Polygon",
+      "Confirmez le retrait (min. 10 USDC ; 100 USDC via Ethereum)"
     ],
     "depositStepsBit2me": [
       "Ouvrez Bit2Me → Wallets → USDC → Envoyer",
       "Collez votre adresse de dépôt",
-      "Pour le réseau, sélectionnez Base",
-      "Confirmez l'envoi"
+      "Choisissez le réseau : Base (recommandé) ou celui proposé par votre exchange",
+      "Confirmez l'envoi (min. 10 USDC ; 100 USDC via Ethereum)"
     ],
     "depositStepsKraken": [
       "Ouvrez Kraken → Funding → Withdraw → USDC",
       "Ajoutez votre adresse de dépôt comme destination",
-      "Sous « Network », sélectionnez Base",
-      "Confirmez le retrait"
+      "Sous Network, choisissez Base (recommandé) ou Ethereum / Arbitrum / Optimism / Polygon",
+      "Confirmez le retrait (min. 10 USDC ; 100 USDC via Ethereum)"
     ],
     "depositStepsWallet": [
-      "Ouvrez votre wallet et sélectionnez USDC sur le réseau Base",
-      "Envoyez à votre adresse de dépôt"
+      "Ouvrez votre wallet et sélectionnez USDC",
+      "Envoyez via Base (recommandé) ou Ethereum / Arbitrum / Optimism / Polygon",
+      "Min. 10 USDC (100 USDC via Ethereum)"
     ],
     "depositOtherWallet": "Autre wallet",
     "depositRegisterHintWallet": "Liée à votre wallet connectée : vous y recevrez vos OPEN au lancement. E-mail optionnel pour les notifications.",

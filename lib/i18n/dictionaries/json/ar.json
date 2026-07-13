@@ -410,7 +410,7 @@
     "bridgeTabBase": "شراء بمحفظتي",
     "bridgeTabOther": "شبكات أخرى",
     "bridgeTabReceive": "شراء بدون محفظة",
-    "receiveSubtitle": "أرسل USDC إلى عنوانك على شبكة Base من wallet أو بورصة أخرى. يُكتشف الرصيد تلقائيًا.",
+    "receiveSubtitle": "أرسل USDC إلى عنوانك من منصة أو محفظة. Base هو الأسرع؛ نقبل أيضاً Ethereum وArbitrum وOptimism وPolygon.",
     "receiveCurrentBalance": "رصيد USDC على Base",
     "compraModeChecking": "جارٍ التحقق من wallet…",
     "compraModeOneSignature": "ستؤكّد كل شيء بتوقيع واحد في wallet.",
@@ -455,7 +455,7 @@
     "depositRegisterLoading": "جارٍ الإنشاء…",
     "depositFromWhere": "من أين سترسل؟",
     "depositAddressLabel": "عنوان الإيداع الشخصي الخاص بك",
-    "depositNetworkWarning": "أرسل عبر شبكة Base. أبداً عبر Solana أو Tron: ستضيع الأموال. الحد الأدنى 10 USDC.",
+    "depositNetworkWarning": "أرسل عبر شبكة Base (موصى بها). إن لم تتوفر لدى منصتك، نقبل أيضاً Ethereum وArbitrum وOptimism وPolygon — نحوّلها نحن. الحد الأدنى 10 USDC (100 عبر Ethereum).",
     "depositPendingBanner": "اكتشفنا {amount} USDC — جارٍ التأكيد (2-3 دقائق)…",
     "depositCreditedBanner": "تم تأكيد {amount} USDC = {open} OPEN محجوزة. ستستلمها عند الإطلاق (TGE).",
     "depositWaiting": "في انتظار تحويلك… من منصة تداول يستغرق عادة 2-10 دقائق. يمكنك إغلاق هذه الصفحة: يبقى شراؤك مسجلاً.",
@@ -463,25 +463,26 @@
     "depositStepsBinance": [
       "افتح Binance → المحفظة → سحب",
       "ابحث عن USDC واختره",
-      "الصق عنوان الإيداع الخاص بك (الزر أدناه)",
-      "في «الشبكة» اختر Base — إذا لم تظهر، لا ترسل",
-      "أكّد السحب"
+      "الصق عنوان الإيداع (الزر أدناه)",
+      "في الشبكة اختر Base (موصى بها) أو Ethereum / Arbitrum / Optimism / Polygon",
+      "أكد السحب (الحد الأدنى 10 USDC؛ 100 عبر Ethereum)"
     ],
     "depositStepsBit2me": [
       "افتح Bit2Me → Wallets → USDC → إرسال",
-      "الصق عنوان الإيداع الخاص بك",
-      "اختر Base كشبكة",
-      "أكّد الإرسال"
+      "الصق عنوان الإيداع",
+      "اختر الشبكة: Base (موصى بها) أو ما توفره منصتك",
+      "أكد الإرسال (الحد الأدنى 10 USDC؛ 100 عبر Ethereum)"
     ],
     "depositStepsKraken": [
       "افتح Kraken → Funding → Withdraw → USDC",
       "أضف عنوان الإيداع كوجهة",
-      "في «Network» اختر Base",
-      "أكّد السحب"
+      "في Network اختر Base (موصى بها) أو Ethereum / Arbitrum / Optimism / Polygon",
+      "أكد السحب (الحد الأدنى 10 USDC؛ 100 عبر Ethereum)"
     ],
     "depositStepsWallet": [
-      "افتح محفظتك واختر USDC على شبكة Base",
-      "أرسل إلى عنوان الإيداع الخاص بك"
+      "افتح محفظتك واختر USDC",
+      "أرسل عبر Base (موصى بها) أو Ethereum / Arbitrum / Optimism / Polygon",
+      "الحد الأدنى 10 USDC (100 عبر Ethereum)"
     ],
     "depositOtherWallet": "محفظة أخرى",
     "depositRegisterHintWallet": "مرتبطة بمحفظتك المتصلة: ستستلم OPEN عند الإطلاق. البريد اختياري للإشعارات.",

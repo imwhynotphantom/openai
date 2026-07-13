@@ -3,12 +3,10 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { formatUnits, parseUnits } from "viem";
-import { useQueryClient } from "@tanstack/react-query";
 import { useAccount } from "wagmi";
 import { css } from "@/lib/css";
 import { Hov } from "@/components/ui";
 import { LegalConsent } from "@/components/LegalConsent";
-import { useApp } from "@/lib/store";
 import { OPEN_TOKEN_DECIMALS, USDC_BASE } from "@/lib/onramp/constants";
 import { useBuyCopy } from "@/hooks/useBuyCopy";
 import { usePresalePurchase } from "@/hooks/usePresalePurchase";
@@ -19,11 +17,10 @@ import { PAYMENT_TOKEN_LIST, type PaymentTokenId } from "@/lib/onramp/payment-to
 import { InfoBanner, StepCard, StepTitle } from "../ui/CopyAddressButton";
 import { AddOpenToWallet } from "@/components/AddOpenToWallet";
 import { BaseChainGuard } from "../ui/BaseChainGuard";
-import { CrossChainFundingStep } from "./CrossChainFundingStep";
 import { DepositTab } from "./DepositTab";
 import { SinWalletStep } from "./SinWalletStep";
 
-export type FundingMode = "base" | "bridge" | "receive";
+export type FundingMode = "base" | "receive";
 
 type Props = {
   onBack?: () => void;
@@ -46,23 +43,12 @@ export function PresalePurchaseStep({ onBack, initialMode }: Props) {
   const buy = useBuyCopy();
   const { address } = useAccount();
   const router = useRouter();
-  const app = useApp();
-  const queryClient = useQueryClient();
   const [mode, setMode] = useState<FundingMode>(initialMode ?? "receive");
   const [legalAccepted, setLegalAccepted] = useState(false);
   const purchase = usePresalePurchase();
   const balances = usePaymentTokenBalances();
   const { data: openAmount } = usePresaleOpenQuote(purchase.openQuoteAmount);
   const { price: openPrice } = useOpenPrice();
-
-  const handleBridgeDelivered = () => {
-    // El USDC ya está en Base: refrescamos saldos y volvemos a la pestaña
-    // de compra con USDC preseleccionado.
-    void queryClient.invalidateQueries();
-    purchase.setPaymentToken("USDC");
-    setMode("base");
-    app.toastMsg(buy.bridgeDelivered);
-  };
 
   const isRunning = purchase.state.phase === "awaiting_wallet" || purchase.state.phase === "confirming";
   const isDone = purchase.state.phase === "done";
@@ -140,16 +126,9 @@ export function PresalePurchaseStep({ onBack, initialMode }: Props) {
       <div style={css("display:flex;gap:8px;margin-bottom:20px")}>
         <ModeTab active={mode === "receive"} label={buy.bridgeTabReceive} onClick={() => setMode("receive")} />
         <ModeTab active={mode === "base"} label={buy.bridgeTabBase} onClick={() => setMode("base")} />
-        <ModeTab active={mode === "bridge"} label={buy.bridgeTabOther} onClick={() => setMode("bridge")} />
       </div>
 
-      {mode === "bridge" ? (
-        address ? (
-          <CrossChainFundingStep recipient={address} onDelivered={handleBridgeDelivered} />
-        ) : (
-          <SinWalletStep embedded />
-        )
-      ) : mode === "receive" ? (
+      {mode === "receive" ? (
         <DepositTab address={address} />
       ) : address ? (
       <BaseChainGuard inline>

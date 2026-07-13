@@ -410,7 +410,7 @@
     "bridgeTabBase": "अपने वॉलेट से खरीदें",
     "bridgeTabOther": "अन्य नेटवर्क",
     "bridgeTabReceive": "बिना वॉलेट खरीदें",
-    "receiveSubtitle": "दूसरे wallet या एक्सचेंज से Base नेटवर्क पते पर USDC भेजें। बैलेंस स्वचालित पता चलेगा।",
+    "receiveSubtitle": "एक्सचेंज या वॉलेट से अपने पते पर USDC भेजें। Base सबसे तेज़ है; हम Ethereum, Arbitrum, Optimism और Polygon भी स्वीकार करते हैं।",
     "receiveCurrentBalance": "Base पर USDC बैलेंस",
     "compraModeChecking": "Wallet जाँच हो रहा है…",
     "compraModeOneSignature": "wallet में एक हस्ताक्षर से सब पुष्टि करेंगे।",
@@ -455,33 +455,34 @@
     "depositRegisterLoading": "बनाया जा रहा है…",
     "depositFromWhere": "कहाँ से भेजेंगे?",
     "depositAddressLabel": "आपका व्यक्तिगत जमा पता",
-    "depositNetworkWarning": "Base नेटवर्क से भेजें। कभी भी Solana या Tron से नहीं: धनराशि खो जाएगी। न्यूनतम 10 USDC।",
+    "depositNetworkWarning": "Base नेटवर्क से भेजें (अनुशंसित)। यदि एक्सचेंज Base न देता हो तो Ethereum, Arbitrum, Optimism और Polygon भी चलेंगे — हम रूपांतरण करेंगे। न्यूनतम 10 USDC (Ethereum पर 100 USDC)।",
     "depositPendingBanner": "{amount} USDC मिले — पुष्टि हो रही है (2-3 मिनट)…",
     "depositCreditedBanner": "{amount} USDC पुष्ट = {open} OPEN आरक्षित। लॉन्च (TGE) पर मिलेंगे।",
     "depositWaiting": "आपके ट्रांसफ़र की प्रतीक्षा… एक्सचेंज से आमतौर पर 2-10 मिनट लगते हैं। आप यह पेज बंद कर सकते हैं: आपकी खरीद दर्ज रहेगी।",
     "depositError": "आपका जमा पता लोड नहीं हो सका। पुनः प्रयास करें।",
     "depositStepsBinance": [
-      "Binance खोलें → वॉलेट → निकासी",
+      "Binance → वॉलेट → निकासी खोलें",
       "USDC खोजें और चुनें",
-      "अपना जमा पता पेस्ट करें (नीचे बटन)",
-      "«नेटवर्क» में Base चुनें — न दिखे तो न भेजें",
-      "निकासी की पुष्टि करें"
+      "जमा पता चिपकाएँ (नीचे बटन)",
+      "नेटवर्क में Base (अनुशंसित) या Ethereum / Arbitrum / Optimism / Polygon चुनें",
+      "निकासी पुष्टि करें (न्यूनतम 10 USDC; Ethereum पर 100 USDC)"
     ],
     "depositStepsBit2me": [
-      "Bit2Me खोलें → Wallets → USDC → भेजें",
-      "अपना जमा पता पेस्ट करें",
-      "नेटवर्क में Base चुनें",
-      "भेजने की पुष्टि करें"
+      "Bit2Me → Wallets → USDC → भेजें",
+      "जमा पता चिपकाएँ",
+      "नेटवर्क: Base (अनुशंसित) या एक्सचेंज जो दे",
+      "भेजने की पुष्टि करें (न्यूनतम 10 USDC; Ethereum पर 100 USDC)"
     ],
     "depositStepsKraken": [
-      "Kraken खोलें → Funding → Withdraw → USDC",
-      "अपना जमा पता गंतव्य के रूप में जोड़ें",
-      "«Network» में Base चुनें",
-      "निकासी की पुष्टि करें"
+      "Kraken → Funding → Withdraw → USDC",
+      "जमा पता गंतव्य के रूप में जोड़ें",
+      "Network में Base (अनुशंसित) या Ethereum / Arbitrum / Optimism / Polygon",
+      "निकासी पुष्टि करें (न्यूनतम 10 USDC; Ethereum पर 100 USDC)"
     ],
     "depositStepsWallet": [
-      "अपना वॉलेट खोलें और Base नेटवर्क पर USDC चुनें",
-      "अपने जमा पते पर भेजें"
+      "वॉलेट खोलें और USDC चुनें",
+      "Base (अनुशंसित) या Ethereum / Arbitrum / Optimism / Polygon से भेजें",
+      "न्यूनतम 10 USDC (Ethereum पर 100 USDC)"
     ],
     "depositOtherWallet": "दूसरा वॉलेट",
     "depositRegisterHintWallet": "आपके कनेक्टेड वॉलेट से जुड़ा: लॉन्च पर OPEN यहीं मिलेंगे। सूचना के लिए ईमेल वैकल्पिक।",
