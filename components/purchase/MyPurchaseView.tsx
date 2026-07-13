@@ -86,9 +86,7 @@ export function MyPurchaseView() {
       </div>
 
       <div style={css("padding:12px 14px;border-radius:12px;background:#FFF7ED;border:1px solid #FBD9A5;margin:0 0 16px")}>
-        <span style={css("font:500 13px/1.45 var(--font-hanken);color:#9A5B00")}>
-          {data.email ? mp.claimNoticeEmail : mp.claimNotice}
-        </span>
+        <span style={css("font:500 13px/1.45 var(--font-hanken);color:#9A5B00")}>{mp.claimNotice}</span>
       </div>
 
       {data.pending > 0 ? (
