@@ -427,8 +427,8 @@
     "compraGenericError": "작업을 완료할 수 없습니다. 다시 시도하세요.",
     "bridgeTabBase": "내 지갑으로 구매",
     "bridgeTabOther": "다른 네트워크",
-    "bridgeTabReceive": "지갑 없이 구매",
-    "receiveSubtitle": "거래소나 지갑에서 입금 주소로 USDC를 보내세요. Base가 가장 빠릅니다. Ethereum, Arbitrum, Optimism, Polygon도 지원합니다.",
+    "bridgeTabReceive": "직접 구매",
+    "receiveSubtitle": "직접 구매: 거래소나 지갑에서 입금 주소로 USDC를 보내세요. Base가 가장 빠릅니다. Ethereum, Arbitrum, Optimism, Polygon도 지원합니다.",
     "receiveCurrentBalance": "Base USDC 잔액",
     "compraModeChecking": "지갑 확인 중…",
     "compraModeOneSignature": "한 번의 서명으로 모두 확인합니다.",
@@ -467,40 +467,43 @@
     "bridgeNewCta": "다른 송금 시작",
     "bridgeGoBuyCta": "USDC로 OPEN 구매",
     "bridgeViewDestTx": "Basescan에서 전달 보기",
-    "depositIntro": "Binance, Bit2Me 등 거래소에 USDC가 있나요? 전용 주소로 보내기만 하면 됩니다 — 나머지는 저희가 처리합니다.",
+    "depositIntro": "OPEN 직접 구매: Binance, Bit2Me, Kraken 등에서 개인 주소로 USDC 전송 — 여기서 지갑 연결 불필요.",
     "depositRegisterTitle": "전용 입금 주소 생성",
     "depositRegisterCta": "내 주소 생성",
     "depositRegisterLoading": "생성 중…",
     "depositFromWhere": "어디에서 보내시나요?",
     "depositAddressLabel": "나의 전용 입금 주소",
-    "depositNetworkWarning": "Base 네트워크로 보내세요(권장). 거래소가 지원하지 않으면 Ethereum, Arbitrum, Optimism, Polygon도 가능합니다 — 변환은 저희가 처리합니다. 최소 10 USDC(Ethereum은 100 USDC).",
+    "depositNetworkWarning": "보낼 USDC 금액은 직접 선택합니다. Base/Arbitrum/Optimism/Polygon 최소 10 USDC, Ethereum 최소 100 USDC.",
     "depositPendingBanner": "{amount} USDC 감지 — 확인 중 (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC 확정 = {open} OPEN 예약 완료. 출시(TGE) 시 받게 됩니다.",
     "depositWaiting": "이체를 기다리는 중… 거래소에서는 보통 2-10분 걸립니다. 이 페이지를 닫아도 됩니다: 구매는 그대로 기록됩니다.",
     "depositError": "입금 주소를 불러오지 못했습니다. 다시 시도해 주세요.",
     "depositStepsBinance": [
-      "Binance → 지갑 → 출금",
-      "USDC 검색 및 선택",
-      "입금 주소 붙여넣기(아래 버튼)",
-      "네트워크에서 Base(권장) 또는 Ethereum / Arbitrum / Optimism / Polygon 선택",
-      "출금 확인(최소 10 USDC, Ethereum은 100 USDC)"
+      "Binance → 지갑 열기",
+      "USDC 검색 → 출금 / 전송",
+      "구매할 USDC 금액 입력 (최소 10 USDC; Ethereum은 100 USDC)",
+      "입금 주소 붙여넣기 (아래)",
+      "네트워크에서 Base 선택",
+      "출금 확인"
     ],
     "depositStepsBit2me": [
-      "Bit2Me → Wallets → USDC → 보내기",
+      "Bit2Me → Wallets → USDC → 전송",
+      "USDC 금액 입력 (최소 10 USDC; Ethereum은 100 USDC)",
       "입금 주소 붙여넣기",
-      "네트워크: Base(권장) 또는 거래소가 제공하는 네트워크",
-      "전송 확인(최소 10 USDC, Ethereum은 100 USDC)"
+      "네트워크: Base (권장)",
+      "전송 확인"
     ],
     "depositStepsKraken": [
       "Kraken → Funding → Withdraw → USDC",
-      "입금 주소를 수신 주소로 추가",
-      "Network에서 Base(권장) 또는 Ethereum / Arbitrum / Optimism / Polygon",
-      "출금 확인(최소 10 USDC, Ethereum은 100 USDC)"
+      "USDC 금액 입력 (최소 10 USDC)",
+      "입금 주소 추가",
+      "Network에서 Base 선택",
+      "출금 확인"
     ],
     "depositStepsWallet": [
-      "지갑에서 USDC 선택",
-      "Base(권장) 또는 Ethereum / Arbitrum / Optimism / Polygon으로 전송",
-      "최소 10 USDC(Ethereum은 100 USDC)"
+      "지갑을 열고 USDC 선택",
+      "보낼 금액 입력 (최소 10 USDC)",
+      "입금 주소 붙여넣고 Base로 전송"
     ],
     "depositOtherWallet": "다른 지갑",
     "depositRegisterHintWallet": "연결된 지갑에 연결됩니다. 출시 시 OPEN을 받습니다. 알림용 이메일은 선택.",
@@ -522,7 +525,13 @@
     "depositViewMyPurchase": "내 구매 보기 →",
     "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
     "depositMyPurchaseBar": "구매 내역 및 예약된 OPEN 확인",
-    "depositMyPurchaseSummaryEmpty": "아직 확인된 입금이 없습니다 — USDC 전송 후 여기에 표시됩니다"
+    "depositMyPurchaseSummaryEmpty": "아직 확인된 입금이 없습니다 — USDC 전송 후 여기에 표시됩니다",
+    "depositCalcTitle": "얼마의 USDC를 보내시나요?",
+    "depositCalcLabel": "USDC 금액",
+    "depositCalcResult": "{usdc} USDC = {open} OPEN 예약",
+    "depositCalcMinHint": "최소 {min} USDC",
+    "depositCalcMinEthNote": "Ethereum 경유: 최소 {min} USDC",
+    "depositAmountReminder": "거래소나 지갑에서 금액을 선택합니다. 50, 500, 5,000 — 최소 금액 이상 원하는 만큼."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

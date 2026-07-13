@@ -427,8 +427,8 @@
     "compraGenericError": "Could not complete the operation. Please try again.",
     "bridgeTabBase": "Buy with my wallet",
     "bridgeTabOther": "Other networks",
-    "bridgeTabReceive": "Buy without wallet",
-    "receiveSubtitle": "Send USDC to your address from an exchange or wallet. Base is the fastest option; we also accept Ethereum, Arbitrum, Optimism and Polygon.",
+    "bridgeTabReceive": "Direct purchase",
+    "receiveSubtitle": "Direct purchase: send USDC from an exchange or wallet to your address. Base is fastest; we also accept Ethereum, Arbitrum, Optimism and Polygon.",
     "receiveCurrentBalance": "Your USDC balance on Base",
     "compraModeChecking": "Checking your wallet…",
     "compraModeOneSignature": "You will confirm everything with a single signature in your wallet.",
@@ -467,40 +467,43 @@
     "bridgeNewCta": "Start another transfer",
     "bridgeGoBuyCta": "Buy OPEN with my USDC",
     "bridgeViewDestTx": "View delivery on Basescan",
-    "depositIntro": "Have USDC on Binance, Bit2Me or another exchange? Send them to your personal address and you are done — we handle the rest.",
+    "depositIntro": "Buy OPEN directly: send USDC from Binance, Bit2Me, Kraken or another wallet to your personal address — no wallet connection needed here.",
     "depositRegisterTitle": "Generate your personal deposit address",
     "depositRegisterCta": "Generate my address",
     "depositRegisterLoading": "Generating…",
     "depositFromWhere": "Where will you send from?",
     "depositAddressLabel": "Your personal deposit address",
-    "depositNetworkWarning": "Send via the Base network (recommended). If your exchange does not offer it, we also accept Ethereum, Arbitrum, Optimism and Polygon — we convert it for you. Minimum 10 USDC (100 if sending via Ethereum).",
+    "depositNetworkWarning": "You choose how much USDC to send. Min. 10 USDC on Base, Arbitrum, Optimism and Polygon; min. 100 USDC on Ethereum.",
     "depositPendingBanner": "We've detected {amount} USDC — confirming (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC confirmed = {open} OPEN reserved",
     "depositWaiting": "Waiting for your transfer… From an exchange it usually takes 2-10 minutes. You can close this page: your purchase is registered anyway.",
     "depositError": "Could not load your deposit address. Please try again.",
     "depositStepsBinance": [
-      "Open Binance → Wallet → Withdraw",
-      "Find and select USDC",
-      "Paste your deposit address (button below)",
-      "Under Network, choose Base (recommended) or Ethereum / Arbitrum / Optimism / Polygon",
-      "Confirm the withdrawal (min. 10 USDC; 100 USDC if sending via Ethereum)"
+      "Open Binance → Wallet",
+      "Find USDC → Withdraw / Send",
+      "Enter the USDC amount you want to buy (min. 10 USDC; 100 USDC via Ethereum)",
+      "Paste your deposit address (below)",
+      "Under Network, choose Base (or another accepted network)",
+      "Confirm the withdrawal"
     ],
     "depositStepsBit2me": [
       "Open Bit2Me → Wallets → USDC → Send",
+      "Enter the USDC amount you want to buy (min. 10 USDC; 100 USDC via Ethereum)",
       "Paste your deposit address",
-      "Choose the network: Base (recommended) or what your exchange offers",
-      "Confirm the transfer (min. 10 USDC; 100 USDC via Ethereum)"
+      "Choose network: Base (recommended) or your exchange option",
+      "Confirm the transfer"
     ],
     "depositStepsKraken": [
       "Open Kraken → Funding → Withdraw → USDC",
-      "Add your deposit address as the destination",
-      "Under Network, choose Base (recommended) or Ethereum / Arbitrum / Optimism / Polygon",
-      "Confirm the withdrawal (min. 10 USDC; 100 USDC via Ethereum)"
+      "Enter the USDC amount you want to buy (min. 10 USDC)",
+      "Add your deposit address as destination",
+      "Under Network, choose Base",
+      "Confirm the withdrawal"
     ],
     "depositStepsWallet": [
       "Open your wallet and select USDC",
-      "Send via Base (recommended) or Ethereum / Arbitrum / Optimism / Polygon",
-      "Min. 10 USDC (100 USDC if sending via Ethereum)"
+      "Enter the amount you want to send (min. 10 USDC)",
+      "Paste your deposit address and send via Base"
     ],
     "depositOtherWallet": "Another wallet",
     "depositRegisterHintWallet": "Linked to your connected wallet — you will receive your OPEN there at launch.",
@@ -522,7 +525,13 @@
     "depositViewMyPurchase": "View my purchase →",
     "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
     "depositMyPurchaseBar": "View your purchase and reserved OPEN",
-    "depositMyPurchaseSummaryEmpty": "No confirmed deposits yet — they will appear here once you send USDC"
+    "depositMyPurchaseSummaryEmpty": "No confirmed deposits yet — they will appear here once you send USDC",
+    "depositCalcTitle": "How much USDC will you send?",
+    "depositCalcLabel": "Amount in USDC",
+    "depositCalcResult": "{usdc} USDC = {open} OPEN reserved",
+    "depositCalcMinHint": "Minimum {min} USDC",
+    "depositCalcMinEthNote": "Via Ethereum: min. {min} USDC",
+    "depositAmountReminder": "On the exchange or wallet you choose the amount. 50, 500 or 5,000 — whatever you want, above the minimum."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

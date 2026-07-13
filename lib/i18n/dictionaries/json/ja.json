@@ -427,8 +427,8 @@
     "compraGenericError": "操作を完了できませんでした。再試行してください。",
     "bridgeTabBase": "ウォレットで購入",
     "bridgeTabOther": "他のネットワーク",
-    "bridgeTabReceive": "ウォレットなしで購入",
-    "receiveSubtitle": "取引所またはウォレットから専用アドレスにUSDCを送金してください。Baseが最速です。Ethereum、Arbitrum、Optimism、Polygonも受け付けています。",
+    "bridgeTabReceive": "直接購入",
+    "receiveSubtitle": "直接購入：取引所またはウォレットから専用アドレスにUSDCを送金。Baseが最速。Ethereum、Arbitrum、Optimism、Polygonも対応。",
     "receiveCurrentBalance": "Base の USDC 残高",
     "compraModeChecking": "ウォレット確認中…",
     "compraModeOneSignature": "1 回の署名ですべて確認します。",
@@ -467,40 +467,43 @@
     "bridgeNewCta": "別の送金を開始",
     "bridgeGoBuyCta": "USDC で OPEN を購入",
     "bridgeViewDestTx": "Basescan で配信を見る",
-    "depositIntro": "Binance、Bit2Meなどの取引所にUSDCがありますか？専用アドレスに送るだけ — あとは私たちが処理します。",
+    "depositIntro": "OPENを直接購入：Binance、Bit2Me、Krakenなどから個人アドレスにUSDCを送金 — ここでウォレット接続は不要です。",
     "depositRegisterTitle": "専用入金アドレスを発行",
     "depositRegisterCta": "アドレスを発行する",
     "depositRegisterLoading": "発行中…",
     "depositFromWhere": "どこから送りますか？",
     "depositAddressLabel": "あなた専用の入金アドレス",
-    "depositNetworkWarning": "Baseネットワークでの送金を推奨します。取引所が未対応の場合はEthereum、Arbitrum、Optimism、Polygonも可 — 当方で変換します。最低10 USDC（Ethereumの場合は100 USDC）。",
+    "depositNetworkWarning": "送金するUSDCの金額はご自身で選択。Base/Arbitrum/Optimism/Polygonは最小10 USDC、Ethereumは最小100 USDC。",
     "depositPendingBanner": "{amount} USDC を検出 — 確認中（~{open} OPEN）…",
     "depositCreditedBanner": "{amount} USDC 確認済み = {open} OPEN を確保。ローンチ（TGE）時に受け取れます。",
     "depositWaiting": "送金を待っています… 取引所からは通常 2〜10 分かかります。このページは閉じても大丈夫です：購入は記録されています。",
     "depositError": "入金アドレスを読み込めませんでした。もう一度お試しください。",
     "depositStepsBinance": [
-      "Binance → ウォレット → 出金を開く",
-      "USDCを検索して選択",
-      "入金アドレスを貼り付け（下のボタン）",
-      "ネットワークでBase（推奨）または Ethereum / Arbitrum / Optimism / Polygon を選択",
-      "出金を確認（最低10 USDC、Ethereumは100 USDC）"
+      "Binance → ウォレットを開く",
+      "USDCを検索 → 出金 / 送信",
+      "購入するUSDC金額を入力（最小10 USDC；Ethereumは100 USDC）",
+      "入金アドレスを貼り付け（下）",
+      "ネットワークでBaseを選択",
+      "出金を確認"
     ],
     "depositStepsBit2me": [
-      "Bit2Me → Wallets → USDC → 送金",
+      "Bit2Me → Wallets → USDC → 送信",
+      "USDC金額を入力（最小10 USDC；Ethereumは100 USDC）",
       "入金アドレスを貼り付け",
-      "ネットワーク：Base（推奨）または取引所が提供するネットワーク",
-      "送金を確認（最低10 USDC、Ethereumは100 USDC）"
+      "ネットワーク：Base（推奨）",
+      "送信を確認"
     ],
     "depositStepsKraken": [
       "Kraken → Funding → Withdraw → USDC",
-      "入金アドレスを送金先に追加",
-      "NetworkでBase（推奨）または Ethereum / Arbitrum / Optimism / Polygon",
-      "出金を確認（最低10 USDC、Ethereumは100 USDC）"
+      "USDC金額を入力（最小10 USDC）",
+      "入金アドレスを追加",
+      "NetworkでBaseを選択",
+      "出金を確認"
     ],
     "depositStepsWallet": [
-      "ウォレットでUSDCを選択",
-      "Base（推奨）または Ethereum / Arbitrum / Optimism / Polygon で送金",
-      "最低10 USDC（Ethereumは100 USDC）"
+      "ウォレットを開きUSDCを選択",
+      "送金額を入力（最小10 USDC）",
+      "入金アドレスを貼り付けてBaseで送信"
     ],
     "depositOtherWallet": "別のウォレット",
     "depositRegisterHintWallet": "接続中のウォレットに紐づきます。ローンチ時にOPENを受け取ります。通知用メールは任意。",
@@ -522,7 +525,13 @@
     "depositViewMyPurchase": "購入を見る →",
     "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
     "depositMyPurchaseBar": "購入内容と予約済みOPENを確認",
-    "depositMyPurchaseSummaryEmpty": "確認済みの入金はまだありません — USDC送信後にここに表示されます"
+    "depositMyPurchaseSummaryEmpty": "確認済みの入金はまだありません — USDC送信後にここに表示されます",
+    "depositCalcTitle": "送金するUSDCはいくらですか？",
+    "depositCalcLabel": "USDC金額",
+    "depositCalcResult": "{usdc} USDC = {open} OPEN 予約",
+    "depositCalcMinHint": "最小 {min} USDC",
+    "depositCalcMinEthNote": "Ethereum経由：最小 {min} USDC",
+    "depositAmountReminder": "取引所やウォレットで金額を選びます。50、500、5,000など — 最小額以上で自由に。"
   },
   "myPurchase": {
     "pageTitle": "My purchase",

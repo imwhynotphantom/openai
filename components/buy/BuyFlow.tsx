@@ -10,7 +10,7 @@ import { formatAddress } from "@/lib/wagmi/format-address";
 import { useWalletDisconnect } from "@/hooks/useWalletDisconnect";
 import { PresalePurchaseStep, type FundingMode } from "./steps/PresalePurchaseStep";
 
-/** ?modo=recibir abre la pestaña «Comprar sin wallet». */
+/** ?modo=recibir abre la pestaña «Compra directa». */
 const MODE_PARAM: Record<string, FundingMode> = {
   recibir: "receive",
   puente: "receive",

@@ -427,8 +427,8 @@
     "compraGenericError": "Не удалось завершить операцию. Попробуйте снова.",
     "bridgeTabBase": "Купить с моим кошельком",
     "bridgeTabOther": "Другие сети",
-    "bridgeTabReceive": "Купить без кошелька",
-    "receiveSubtitle": "Отправьте USDC на свой адрес с биржи или кошелька. Base — самый быстрый вариант; мы также принимаем Ethereum, Arbitrum, Optimism и Polygon.",
+    "bridgeTabReceive": "Прямая покупка",
+    "receiveSubtitle": "Прямая покупка: отправьте USDC с биржи или кошелька на ваш адрес. Base — самый быстрый; также принимаем Ethereum, Arbitrum, Optimism и Polygon.",
     "receiveCurrentBalance": "Ваш баланс USDC в Base",
     "compraModeChecking": "Проверка wallet…",
     "compraModeOneSignature": "Вы подтвердите всё одной подписью в wallet.",
@@ -467,40 +467,43 @@
     "bridgeNewCta": "Начать новую отправку",
     "bridgeGoBuyCta": "Купить OPEN за мои USDC",
     "bridgeViewDestTx": "Смотреть доставку в Basescan",
-    "depositIntro": "Есть USDC на Binance, Bit2Me или другой бирже? Отправьте на персональный адрес — остальное сделаем мы.",
+    "depositIntro": "Купите OPEN напрямую: отправьте USDC с Binance, Bit2Me, Kraken или другого кошелька на персональный адрес — без подключения кошелька здесь.",
     "depositRegisterTitle": "Создайте персональный адрес для депозита",
     "depositRegisterCta": "Создать мой адрес",
     "depositRegisterLoading": "Создание…",
     "depositFromWhere": "Откуда будете отправлять?",
     "depositAddressLabel": "Ваш персональный адрес для депозита",
-    "depositNetworkWarning": "Отправляйте через сеть Base (рекомендуется). Если биржа её не поддерживает, мы также принимаем Ethereum, Arbitrum, Optimism и Polygon — конвертируем сами. Минимум 10 USDC (100 при отправке через Ethereum).",
+    "depositNetworkWarning": "Вы сами выбираете сумму USDC. Мин. 10 USDC в Base, Arbitrum, Optimism и Polygon; мин. 100 USDC в Ethereum.",
     "depositPendingBanner": "Обнаружено {amount} USDC — подтверждение (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC подтверждено = {open} OPEN зарезервировано. Вы получите их при запуске (TGE).",
     "depositWaiting": "Ожидаем ваш перевод… С биржи обычно занимает 2-10 минут. Можно закрыть эту страницу: покупка всё равно зарегистрирована.",
     "depositError": "Не удалось загрузить ваш адрес для депозита. Попробуйте ещё раз.",
     "depositStepsBinance": [
-      "Откройте Binance → Кошелёк → Вывод",
-      "Найдите и выберите USDC",
-      "Вставьте адрес депозита (кнопка ниже)",
-      "В поле Сеть выберите Base (рекомендуется) или Ethereum / Arbitrum / Optimism / Polygon",
-      "Подтвердите вывод (мин. 10 USDC; 100 USDC через Ethereum)"
+      "Откройте Binance → Кошелёк",
+      "Найдите USDC → Вывод / Отправка",
+      "Укажите сумму USDC (мин. 10 USDC; 100 USDC через Ethereum)",
+      "Вставьте адрес депозита (ниже)",
+      "В Сети выберите Base (или другую принятую)",
+      "Подтвердите вывод"
     ],
     "depositStepsBit2me": [
       "Откройте Bit2Me → Wallets → USDC → Отправить",
+      "Укажите сумму USDC (мин. 10 USDC; 100 USDC через Ethereum)",
       "Вставьте адрес депозита",
-      "Выберите сеть: Base (рекомендуется) или доступную на бирже",
-      "Подтвердите отправку (мин. 10 USDC; 100 USDC через Ethereum)"
+      "Выберите сеть: Base (рекомендуется)",
+      "Подтвердите отправку"
     ],
     "depositStepsKraken": [
       "Откройте Kraken → Funding → Withdraw → USDC",
-      "Добавьте адрес депозита как получателя",
-      "В Network выберите Base (рекомендуется) или Ethereum / Arbitrum / Optimism / Polygon",
-      "Подтвердите вывод (мин. 10 USDC; 100 USDC через Ethereum)"
+      "Укажите сумму USDC (мин. 10 USDC)",
+      "Добавьте адрес депозита",
+      "В Network выберите Base",
+      "Подтвердите вывод"
     ],
     "depositStepsWallet": [
       "Откройте кошелёк и выберите USDC",
-      "Отправьте через Base (рекомендуется) или Ethereum / Arbitrum / Optimism / Polygon",
-      "Мин. 10 USDC (100 USDC через Ethereum)"
+      "Укажите сумму (мин. 10 USDC)",
+      "Вставьте адрес депозита и отправьте через Base"
     ],
     "depositOtherWallet": "Другой кошелёк",
     "depositRegisterHintWallet": "Привязано к подключённому кошельку: туда вы получите OPEN при запуске. E-mail опционально для уведомлений.",
@@ -522,7 +525,13 @@
     "depositViewMyPurchase": "Моя покупка →",
     "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
     "depositMyPurchaseBar": "Просмотр покупки и зарезервированных OPEN",
-    "depositMyPurchaseSummaryEmpty": "Подтверждённых депозитов пока нет — они появятся после отправки USDC"
+    "depositMyPurchaseSummaryEmpty": "Подтверждённых депозитов пока нет — они появятся после отправки USDC",
+    "depositCalcTitle": "Сколько USDC вы отправите?",
+    "depositCalcLabel": "Сумма в USDC",
+    "depositCalcResult": "{usdc} USDC = {open} OPEN зарезервировано",
+    "depositCalcMinHint": "Минимум {min} USDC",
+    "depositCalcMinEthNote": "Через Ethereum: мин. {min} USDC",
+    "depositAmountReminder": "На бирже или в кошельке вы выбираете сумму. 50, 500 или 5 000 — сколько хотите, выше минимума."
   },
   "myPurchase": {
     "pageTitle": "My purchase",

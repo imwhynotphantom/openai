@@ -427,8 +427,8 @@
     "compraGenericError": "Não foi possível concluir a operação. Tente novamente.",
     "bridgeTabBase": "Comprar com a minha wallet",
     "bridgeTabOther": "Outras redes",
-    "bridgeTabReceive": "Comprar sem wallet",
-    "receiveSubtitle": "Envie USDC para o seu endereço a partir de uma exchange ou wallet. Base é a opção mais rápida; também aceitamos Ethereum, Arbitrum, Optimism e Polygon.",
+    "bridgeTabReceive": "Compra direta",
+    "receiveSubtitle": "Compra direta: envie USDC de uma exchange ou wallet para o seu endereço. Base é a opção mais rápida; também aceitamos Ethereum, Arbitrum, Optimism e Polygon.",
     "receiveCurrentBalance": "O seu saldo USDC na Base",
     "compraModeChecking": "A verificar a sua wallet…",
     "compraModeOneSignature": "Confirmará tudo com uma única assinatura na sua wallet.",
@@ -467,40 +467,43 @@
     "bridgeNewCta": "Iniciar outro envio",
     "bridgeGoBuyCta": "Comprar OPEN com os meus USDC",
     "bridgeViewDestTx": "Ver entrega no Basescan",
-    "depositIntro": "Tem USDC na Binance, Bit2Me ou outra exchange? Envie para o seu endereço pessoal e pronto — nós tratamos do resto.",
+    "depositIntro": "Compre OPEN de forma direta: envie USDC da Binance, Bit2Me, Kraken ou outra wallet para o seu endereço pessoal — sem ligar wallet aqui.",
     "depositRegisterTitle": "Gere o seu endereço de depósito pessoal",
     "depositRegisterCta": "Gerar o meu endereço",
     "depositRegisterLoading": "A gerar…",
     "depositFromWhere": "De onde vai enviar?",
     "depositAddressLabel": "O seu endereço de depósito pessoal",
-    "depositNetworkWarning": "Envie pela rede Base (recomendada). Se a sua exchange não a oferecer, também aceitamos Ethereum, Arbitrum, Optimism e Polygon — convertemos por si. Mínimo 10 USDC (100 se enviar por Ethereum).",
+    "depositNetworkWarning": "Você escolhe quantos USDC enviar. Mín. 10 USDC em Base, Arbitrum, Optimism e Polygon; mín. 100 USDC em Ethereum.",
     "depositPendingBanner": "Detetámos {amount} USDC — a confirmar (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC confirmados = {open} OPEN reservados",
     "depositWaiting": "À espera da sua transferência… De uma exchange costuma demorar 2-10 minutos. Pode fechar esta página: a sua compra fica registada na mesma.",
     "depositError": "Não foi possível carregar o seu endereço de depósito. Tente novamente.",
     "depositStepsBinance": [
-      "Abra Binance → Carteira → Levantar",
-      "Procure e selecione USDC",
-      "Cole o seu endereço de depósito (botão abaixo)",
-      "Em Rede, escolha Base (recomendada) ou Ethereum / Arbitrum / Optimism / Polygon",
-      "Confirme o levantamento (mín. 10 USDC; 100 USDC por Ethereum)"
+      "Abra Binance → Carteira",
+      "Procure USDC → Levantar / Enviar",
+      "Indique o montante USDC que quer comprar (mín. 10 USDC; 100 USDC por Ethereum)",
+      "Cole o endereço de depósito (abaixo)",
+      "Em Rede, escolha Base (ou outra rede aceite)",
+      "Confirme o levantamento"
     ],
     "depositStepsBit2me": [
       "Abra Bit2Me → Wallets → USDC → Enviar",
-      "Cole o seu endereço de depósito",
-      "Escolha a rede: Base (recomendada) ou a que a exchange oferecer",
-      "Confirme o envio (mín. 10 USDC; 100 USDC por Ethereum)"
+      "Indique o montante USDC (mín. 10 USDC; 100 USDC por Ethereum)",
+      "Cole o endereço de depósito",
+      "Escolha a rede: Base (recomendada)",
+      "Confirme o envio"
     ],
     "depositStepsKraken": [
       "Abra Kraken → Funding → Withdraw → USDC",
-      "Adicione o seu endereço de depósito como destino",
-      "Em Network, escolha Base (recomendada) ou Ethereum / Arbitrum / Optimism / Polygon",
-      "Confirme o levantamento (mín. 10 USDC; 100 USDC por Ethereum)"
+      "Indique o montante USDC (mín. 10 USDC)",
+      "Adicione o endereço de depósito",
+      "Em Network, escolha Base",
+      "Confirme o levantamento"
     ],
     "depositStepsWallet": [
       "Abra a wallet e selecione USDC",
-      "Envie por Base (recomendada) ou Ethereum / Arbitrum / Optimism / Polygon",
-      "Mín. 10 USDC (100 USDC por Ethereum)"
+      "Indique o montante a enviar (mín. 10 USDC)",
+      "Cole o endereço de depósito e envie por Base"
     ],
     "depositOtherWallet": "Outra wallet",
     "depositRegisterHintWallet": "Vinculada à sua wallet conectada: receberá os seus OPEN no lançamento. E-mail opcional para avisos.",
@@ -522,7 +525,13 @@
     "depositViewMyPurchase": "Ver a minha compra →",
     "depositRegisterHint": "Geramos um endereço único ligado a este dispositivo. Consulte a sua compra em A minha compra.",
     "depositMyPurchaseBar": "Consulte a sua compra e os OPEN reservados",
-    "depositMyPurchaseSummaryEmpty": "Ainda sem depósitos confirmados — aparecerão aqui após enviar USDC"
+    "depositMyPurchaseSummaryEmpty": "Ainda sem depósitos confirmados — aparecerão aqui após enviar USDC",
+    "depositCalcTitle": "Quantos USDC vai enviar?",
+    "depositCalcLabel": "Montante em USDC",
+    "depositCalcResult": "{usdc} USDC = {open} OPEN reservados",
+    "depositCalcMinHint": "Mínimo {min} USDC",
+    "depositCalcMinEthNote": "Por Ethereum: mín. {min} USDC",
+    "depositAmountReminder": "Na exchange ou wallet escolhe o montante. 50, 500 ou 5.000 — o que quiser, respeitando o mínimo."
   },
   "myPurchase": {
     "pageTitle": "A minha compra",

@@ -8,6 +8,7 @@ import { Hov } from "@/components/ui";
 import { useBuyCopy } from "@/hooks/useBuyCopy";
 import { useHasPurchase } from "@/hooks/useHasPurchase";
 import { CopyAddressButton, InfoBanner } from "../ui/CopyAddressButton";
+import { DepositOpenCalculator } from "../ui/DepositOpenCalculator";
 
 type DepositInfo = {
   depositAddress: string;
@@ -97,11 +98,49 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
     }
   }, [needsRegister, registering, error, register]);
 
+  const exchangeSelector = (
+    <>
+      <p style={css("font:600 12px var(--font-hanken);color:#8A8A94;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.04em")}>
+        {buy.depositFromWhere}
+      </p>
+      <div style={css("display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px")}>
+        {EXCHANGES.map((e) => (
+          <Hov
+            key={e.id}
+            as="button"
+            type="button"
+            onClick={() => setExchange(e.id)}
+            style={
+              exchange === e.id
+                ? "appearance:none;cursor:pointer;padding:9px 14px;border-radius:999px;border:1px solid #0D0D0D;background:#0D0D0D;color:#fff;font:600 13px var(--font-hanken)"
+                : "appearance:none;cursor:pointer;padding:9px 14px;border-radius:999px;border:1px solid #E6E6E8;background:#fff;color:#5C5C66;font:600 13px var(--font-hanken)"
+            }
+            hover={exchange === e.id ? undefined : "border-color:#0D0D0D;color:#0D0D0D"}
+          >
+            {e.name}
+          </Hov>
+        ))}
+      </div>
+      {EXCHANGES.find((e) => e.id === exchange) ? (
+        <ol style={css("margin:0 0 16px;padding:14px 16px;list-style:none;border-radius:12px;background:#F7F7F8")}>
+          {EXCHANGES.find((e) => e.id === exchange)!.steps.map((s, i) => (
+            <li key={i} style={css("display:flex;gap:10px;font:400 13.5px/1.55 var(--font-hanken);color:#5C5C66;margin-bottom:4px")}>
+              <span style={css("font:600 12px var(--font-mono);color:#8A8A94;padding-top:2px")}>{i + 1}.</span>
+              <span>{s}</span>
+            </li>
+          ))}
+        </ol>
+      ) : null}
+    </>
+  );
+
   if (needsRegister) {
     return (
       <div>
         <p style={css("font:400 14px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 16px")}>{buy.depositIntro}</p>
-        <div style={css("padding:18px;border:1px solid #ECECEC;border-radius:14px;background:#FAFAFA;text-align:center")}>
+        <DepositOpenCalculator />
+        {exchangeSelector}
+        <div style={css("padding:18px;border:1px solid #ECECEC;border-radius:14px;background:#FAFAFA;text-align:center;margin-bottom:16px")}>
           <p style={css("font:600 15px var(--font-hanken);color:#0D0D0D;margin:0 0 8px")}>{buy.depositRegisterTitle}</p>
           <p style={css("font:400 13px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 14px")}>
             {address ? buy.depositRegisterHintWallet : buy.depositRegisterHint}
@@ -126,10 +165,13 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
   }
 
   if (!info) {
-    return <p style={css("font:400 14px var(--font-hanken);color:#8A8A94;margin:0")}>{buy.depositRegisterLoading}</p>;
+    return (
+      <div>
+        <p style={css("font:400 14px var(--font-hanken);color:#8A8A94;margin:0 0 16px")}>{buy.depositRegisterLoading}</p>
+        <DepositOpenCalculator />
+      </div>
+    );
   }
-
-  const selected = EXCHANGES.find((e) => e.id === exchange);
 
   const summaryText =
     info.credited > 0
@@ -155,38 +197,9 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
 
       <p style={css("font:400 14px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 16px")}>{buy.depositIntro}</p>
 
-      <p style={css("font:600 12px var(--font-hanken);color:#8A8A94;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.04em")}>
-        {buy.depositFromWhere}
-      </p>
-      <div style={css("display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px")}>
-        {EXCHANGES.map((e) => (
-          <Hov
-            key={e.id}
-            as="button"
-            type="button"
-            onClick={() => setExchange(e.id)}
-            style={
-              exchange === e.id
-                ? "appearance:none;cursor:pointer;padding:9px 14px;border-radius:999px;border:1px solid #0D0D0D;background:#0D0D0D;color:#fff;font:600 13px var(--font-hanken)"
-                : "appearance:none;cursor:pointer;padding:9px 14px;border-radius:999px;border:1px solid #E6E6E8;background:#fff;color:#5C5C66;font:600 13px var(--font-hanken)"
-            }
-            hover={exchange === e.id ? undefined : "border-color:#0D0D0D;color:#0D0D0D"}
-          >
-            {e.name}
-          </Hov>
-        ))}
-      </div>
+      <DepositOpenCalculator openPerUsdc={info.openPerUsdc} />
 
-      {selected ? (
-        <ol style={css("margin:0 0 16px;padding:14px 16px;list-style:none;border-radius:12px;background:#F7F7F8")}>
-          {selected.steps.map((s, i) => (
-            <li key={i} style={css("display:flex;gap:10px;font:400 13.5px/1.55 var(--font-hanken);color:#5C5C66;margin-bottom:4px")}>
-              <span style={css("font:600 12px var(--font-mono);color:#8A8A94;padding-top:2px")}>{i + 1}.</span>
-              <span>{s}</span>
-            </li>
-          ))}
-        </ol>
-      ) : null}
+      {exchangeSelector}
 
       <div style={css("padding:18px;border:1px solid #ECECEC;border-radius:14px;background:#FAFAFA;text-align:center;margin-bottom:16px")}>
         <div style={css("display:flex;justify-content:center;margin-bottom:14px")}>

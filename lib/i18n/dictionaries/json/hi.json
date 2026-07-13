@@ -427,8 +427,8 @@
     "compraGenericError": "ऑपरेशन पूर्ण नहीं हो सका। फिर से प्रयास करें।",
     "bridgeTabBase": "अपने वॉलेट से खरीदें",
     "bridgeTabOther": "अन्य नेटवर्क",
-    "bridgeTabReceive": "बिना वॉलेट खरीदें",
-    "receiveSubtitle": "एक्सचेंज या वॉलेट से अपने पते पर USDC भेजें। Base सबसे तेज़ है; हम Ethereum, Arbitrum, Optimism और Polygon भी स्वीकार करते हैं।",
+    "bridgeTabReceive": "प्रत्यक्ष खरीद",
+    "receiveSubtitle": "प्रत्यक्ष खरीद: एक्सचेंज या वॉलेट से अपने पते पर USDC भेजें। Base सबसे तेज़ है; Ethereum, Arbitrum, Optimism और Polygon भी स्वीकार हैं।",
     "receiveCurrentBalance": "Base पर USDC बैलेंस",
     "compraModeChecking": "Wallet जाँच हो रहा है…",
     "compraModeOneSignature": "wallet में एक हस्ताक्षर से सब पुष्टि करेंगे।",
@@ -467,40 +467,43 @@
     "bridgeNewCta": "नया भेजना शुरू",
     "bridgeGoBuyCta": "मेरे USDC से OPEN खरीदें",
     "bridgeViewDestTx": "Basescan पर डिलीवरी देखें",
-    "depositIntro": "Binance, Bit2Me या किसी एक्सचेंज पर USDC है? अपने व्यक्तिगत पते पर भेजें — बाकी हम संभालेंगे।",
+    "depositIntro": "OPEN सीधे खरीदें: Binance, Bit2Me, Kraken या किसी वॉलेट से अपने व्यक्तिगत पते पर USDC भेजें — यहाँ वॉलेट कनेक्ट करने की ज़रूरत नहीं।",
     "depositRegisterTitle": "अपना व्यक्तिगत जमा पता बनाएँ",
     "depositRegisterCta": "मेरा पता बनाएँ",
     "depositRegisterLoading": "बनाया जा रहा है…",
     "depositFromWhere": "कहाँ से भेजेंगे?",
     "depositAddressLabel": "आपका व्यक्तिगत जमा पता",
-    "depositNetworkWarning": "Base नेटवर्क से भेजें (अनुशंसित)। यदि एक्सचेंज Base न देता हो तो Ethereum, Arbitrum, Optimism और Polygon भी चलेंगे — हम रूपांतरण करेंगे। न्यूनतम 10 USDC (Ethereum पर 100 USDC)।",
+    "depositNetworkWarning": "आप USDC की राशि चुनते हैं। Base/Arbitrum/Optimism/Polygon पर न्यूनतम 10 USDC; Ethereum पर न्यूनतम 100 USDC।",
     "depositPendingBanner": "{amount} USDC मिले — पुष्टि हो रही है (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC पुष्ट = {open} OPEN आरक्षित। लॉन्च (TGE) पर मिलेंगे।",
     "depositWaiting": "आपके ट्रांसफ़र की प्रतीक्षा… एक्सचेंज से आमतौर पर 2-10 मिनट लगते हैं। आप यह पेज बंद कर सकते हैं: आपकी खरीद दर्ज रहेगी।",
     "depositError": "आपका जमा पता लोड नहीं हो सका। पुनः प्रयास करें।",
     "depositStepsBinance": [
-      "Binance → वॉलेट → निकासी खोलें",
-      "USDC खोजें और चुनें",
-      "जमा पता चिपकाएँ (नीचे बटन)",
-      "नेटवर्क में Base (अनुशंसित) या Ethereum / Arbitrum / Optimism / Polygon चुनें",
-      "निकासी पुष्टि करें (न्यूनतम 10 USDC; Ethereum पर 100 USDC)"
+      "Binance → वॉलेट खोलें",
+      "USDC खोजें → निकासी / भेजें",
+      "खरीदने के लिए USDC राशि दर्ज करें (न्यूनतम 10 USDC; Ethereum पर 100 USDC)",
+      "जमा पता चिपकाएँ (नीचे)",
+      "नेटवर्क में Base चुनें",
+      "निकासी की पुष्टि करें"
     ],
     "depositStepsBit2me": [
       "Bit2Me → Wallets → USDC → भेजें",
+      "USDC राशि दर्ज करें (न्यूनतम 10 USDC; Ethereum पर 100 USDC)",
       "जमा पता चिपकाएँ",
-      "नेटवर्क: Base (अनुशंसित) या एक्सचेंज जो दे",
-      "भेजने की पुष्टि करें (न्यूनतम 10 USDC; Ethereum पर 100 USDC)"
+      "नेटवर्क: Base (अनुशंसित)",
+      "भेजने की पुष्टि करें"
     ],
     "depositStepsKraken": [
       "Kraken → Funding → Withdraw → USDC",
-      "जमा पता गंतव्य के रूप में जोड़ें",
-      "Network में Base (अनुशंसित) या Ethereum / Arbitrum / Optimism / Polygon",
-      "निकासी पुष्टि करें (न्यूनतम 10 USDC; Ethereum पर 100 USDC)"
+      "USDC राशि दर्ज करें (न्यूनतम 10 USDC)",
+      "जमा पता जोड़ें",
+      "Network में Base चुनें",
+      "निकासी की पुष्टि करें"
     ],
     "depositStepsWallet": [
       "वॉलेट खोलें और USDC चुनें",
-      "Base (अनुशंसित) या Ethereum / Arbitrum / Optimism / Polygon से भेजें",
-      "न्यूनतम 10 USDC (Ethereum पर 100 USDC)"
+      "भेजने की राशि दर्ज करें (न्यूनतम 10 USDC)",
+      "जमा पता चिपकाएँ और Base से भेजें"
     ],
     "depositOtherWallet": "दूसरा वॉलेट",
     "depositRegisterHintWallet": "आपके कनेक्टेड वॉलेट से जुड़ा: लॉन्च पर OPEN यहीं मिलेंगे। सूचना के लिए ईमेल वैकल्पिक।",
@@ -522,7 +525,13 @@
     "depositViewMyPurchase": "मेरी खरीद देखें →",
     "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
     "depositMyPurchaseBar": "अपनी खरीद और आरक्षित OPEN देखें",
-    "depositMyPurchaseSummaryEmpty": "अभी कोई पुष्टि की गई जमा नहीं — USDC भेजने के बाद यहाँ दिखेगी"
+    "depositMyPurchaseSummaryEmpty": "अभी कोई पुष्टि की गई जमा नहीं — USDC भेजने के बाद यहाँ दिखेगी",
+    "depositCalcTitle": "आप कितना USDC भेजेंगे?",
+    "depositCalcLabel": "USDC राशि",
+    "depositCalcResult": "{usdc} USDC = {open} OPEN आरक्षित",
+    "depositCalcMinHint": "न्यूनतम {min} USDC",
+    "depositCalcMinEthNote": "Ethereum के ज़रिए: न्यूनतम {min} USDC",
+    "depositAmountReminder": "एक्सचेंज या वॉलेट में आप राशि चुनते हैं। 50, 500 या 5,000 — न्यूनतम से ऊपर जितना चाहें।"
   },
   "myPurchase": {
     "pageTitle": "My purchase",
