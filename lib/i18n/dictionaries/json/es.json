@@ -467,7 +467,7 @@
     "bridgeNewCta": "Iniciar otro envío",
     "bridgeGoBuyCta": "Comprar OPEN con mis USDC",
     "bridgeViewDestTx": "Ver entrega en Basescan",
-    "depositIntro": "Compra OPEN de forma directa: envía USDC desde Binance, Bit2Me, Kraken u otra wallet a tu dirección personal — sin conectar wallet aquí.",
+    "depositIntro": "Compra OPEN de forma directa: envía USDC desde Binance, Bit2Me, Kraken u otra wallet a la dirección que podrás generar más abajo — sin conectar wallet aquí.",
     "depositRegisterTitle": "Genera tu dirección personal de depósito",
     "depositRegisterCta": "Generar mi dirección",
     "depositRegisterLoading": "Generando…",
