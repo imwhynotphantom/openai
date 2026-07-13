@@ -476,13 +476,13 @@
     "depositStepsKraken": [
       "Abre Kraken → Funding → Withdraw → USDC",
       "Añade tu dirección de depósito como destino",
-      "En «Network», elige Base (recomendada) o Ethereum / Arbitrum / Optimism / Polygon",
-      "Confirma la retirada (mín. 10 USDC; 100 USDC por Ethereum)"
+      "En «Network», elige Base",
+      "Confirma la retirada (mín. 10 USDC)"
     ],
     "depositStepsWallet": [
       "Abre tu wallet y selecciona USDC",
-      "Envía por Base (recomendada) o por Ethereum / Arbitrum / Optimism / Polygon",
-      "Mín. 10 USDC (100 USDC si envías por Ethereum)"
+      "Envía por Base",
+      "Mín. 10 USDC"
     ],
     "depositOtherWallet": "Otra wallet",
     "depositRegisterHintWallet": "Queda vinculada a tu wallet conectada: ahí recibirás tus OPEN en el lanzamiento.",
