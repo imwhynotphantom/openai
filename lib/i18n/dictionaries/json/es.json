@@ -464,7 +464,7 @@
       "Abre Binance → Cartera",
       "Busca y selecciona USDC - ENVIAR → Retirar",
       "Pega tu dirección de depósito (botón de abajo)",
-      "En «Red», elige Base (recomendada) o Ethereum / Arbitrum / Optimism / Polygon",
+      "En «Red», elige Base",
       "Confirma la retirada (mín. 10 USDC; 100 USDC si envías por Ethereum)"
     ],
     "depositStepsBit2me": [
