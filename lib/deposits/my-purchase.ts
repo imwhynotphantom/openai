@@ -25,8 +25,6 @@ export type MyPurchaseResponse = {
   deposits: PurchaseDeposit[];
 };
 
-const BASE_EXPLORER = "https://basescan.org/tx/";
-
 export async function loadMyPurchase(buyerId: string): Promise<MyPurchaseResponse | null> {
   const supabase = supabaseService();
 
@@ -76,7 +74,8 @@ export async function loadMyPurchase(buyerId: string): Promise<MyPurchaseRespons
       confirmedAt: d.confirmed_at,
       creditedAt: d.credited_at,
       sweepTx: d.sweep_tx,
-      explorerUrl: d.sweep_tx ? `${BASE_EXPLORER}${d.sweep_tx}` : null,
+      // No exponer el tx de barrido interno al comprador
+      explorerUrl: null,
     })),
   };
 }

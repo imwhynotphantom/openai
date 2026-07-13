@@ -536,9 +536,9 @@
     "viewExplorer": "View on Basescan",
     "statusDetected": "Detected",
     "statusConfirmed": "Confirming",
-    "statusCredited": "Credited",
-    "statusSwept": "Swept to treasury",
-    "statusBridged": "Bridged",
+    "statusCredited": "확인됨",
+    "statusSwept": "확인됨",
+    "statusBridged": "확인됨",
     "statusRefundPending": "Refund pending",
     "statusRefunded": "Refunded"
   }

@@ -536,9 +536,9 @@
     "viewExplorer": "View on Basescan",
     "statusDetected": "Detected",
     "statusConfirmed": "Confirming",
-    "statusCredited": "Credited",
-    "statusSwept": "Swept to treasury",
-    "statusBridged": "Bridged",
+    "statusCredited": "Onaylandı",
+    "statusSwept": "Onaylandı",
+    "statusBridged": "Onaylandı",
     "statusRefundPending": "Refund pending",
     "statusRefunded": "Refunded"
   }

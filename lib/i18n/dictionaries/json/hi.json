@@ -536,9 +536,9 @@
     "viewExplorer": "View on Basescan",
     "statusDetected": "Detected",
     "statusConfirmed": "Confirming",
-    "statusCredited": "Credited",
-    "statusSwept": "Swept to treasury",
-    "statusBridged": "Bridged",
+    "statusCredited": "पुष्टि हो गई",
+    "statusSwept": "पुष्टि हो गई",
+    "statusBridged": "पुष्टि हो गई",
     "statusRefundPending": "Refund pending",
     "statusRefunded": "Refunded"
   }

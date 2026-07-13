@@ -536,9 +536,9 @@
     "viewExplorer": "View on Basescan",
     "statusDetected": "Detected",
     "statusConfirmed": "Confirming",
-    "statusCredited": "Credited",
-    "statusSwept": "Swept to treasury",
-    "statusBridged": "Bridged",
+    "statusCredited": "確認済み",
+    "statusSwept": "確認済み",
+    "statusBridged": "確認済み",
     "statusRefundPending": "Refund pending",
     "statusRefunded": "Refunded"
   }

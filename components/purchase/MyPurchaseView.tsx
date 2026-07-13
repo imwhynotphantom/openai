@@ -22,12 +22,13 @@ export function MyPurchaseView() {
   const [unauth, setUnauth] = useState(false);
 
   const statusLabel = (status: string): string => {
+    // swept/bridged son pasos internos: el comprador solo ve "confirmado"
+    if (status === "swept" || status === "bridged" || status === "credited") {
+      return mp.statusCredited;
+    }
     const map: Record<string, string> = {
       detected: mp.statusDetected,
       confirmed: mp.statusConfirmed,
-      credited: mp.statusCredited,
-      swept: mp.statusSwept,
-      bridged: mp.statusBridged,
       refund_pending: mp.statusRefundPending,
       refunded: mp.statusRefunded,
     };

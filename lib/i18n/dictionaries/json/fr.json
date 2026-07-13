@@ -536,9 +536,9 @@
     "viewExplorer": "Voir sur Basescan",
     "statusDetected": "Detected",
     "statusConfirmed": "Confirming",
-    "statusCredited": "Credited",
-    "statusSwept": "Swept to treasury",
-    "statusBridged": "Bridged",
+    "statusCredited": "Confirmé",
+    "statusSwept": "Confirmé",
+    "statusBridged": "Confirmé",
     "statusRefundPending": "Refund pending",
     "statusRefunded": "Refunded"
   }
