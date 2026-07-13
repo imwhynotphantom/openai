@@ -212,18 +212,20 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
 
   return (
     <div>
-      <div style={css("display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-radius:12px;background:#F7F7F8;border:1px solid #ECECEC;margin-bottom:16px")}>
-        <div>
-          <p style={css("font:600 13px var(--font-hanken);color:#0D0D0D;margin:0 0 4px")}>{buy.depositMyPurchaseBar}</p>
-          <p style={css("font:500 12.5px/1.45 var(--font-hanken);color:#5C5C66;margin:0")}>{summaryText}</p>
+      {info.credited > 0 ? (
+        <div style={css("display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-radius:12px;background:#F7F7F8;border:1px solid #ECECEC;margin-bottom:16px")}>
+          <div>
+            <p style={css("font:600 13px var(--font-hanken);color:#0D0D0D;margin:0 0 4px")}>{buy.depositMyPurchaseBar}</p>
+            <p style={css("font:500 12.5px/1.45 var(--font-hanken);color:#5C5C66;margin:0")}>{summaryText}</p>
+          </div>
+          <Link
+            href="/mi-compra"
+            style={css("font:600 13px var(--font-hanken);color:#fff;background:#0D0D0D;text-decoration:none;padding:10px 14px;border-radius:10px;white-space:nowrap")}
+          >
+            {buy.depositViewMyPurchase}
+          </Link>
         </div>
-        <Link
-          href="/mi-compra"
-          style={css("font:600 13px var(--font-hanken);color:#fff;background:#0D0D0D;text-decoration:none;padding:10px 14px;border-radius:10px;white-space:nowrap")}
-        >
-          {buy.depositViewMyPurchase}
-        </Link>
-      </div>
+      ) : null}
 
       <p style={css("font:400 14px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 16px")}>{buy.depositIntro}</p>
 
