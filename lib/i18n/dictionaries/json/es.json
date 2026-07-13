@@ -473,7 +473,7 @@
     "depositRegisterLoading": "Generando…",
     "depositFromWhere": "¿Desde dónde vas a enviar?",
     "depositAddressLabel": "DIRECCIÓN A LA QUE TIENES QUE ENVIAR",
-    "depositNetworkWarning": "Recuerda elegir la red Base. Usdc, la cantidad que quieras.",
+    "depositNetworkWarning": "Recuerda elegir la red Base. USDC, la cantidad que quieras.",
     "depositPendingBanner": "Hemos detectado {amount} USDC — confirmando (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC confirmados = {open} OPEN reservados",
     "depositWaiting": "Esperando tu transferencia… Desde un exchange suele tardar 2-10 minutos. Puedes cerrar esta página: tu compra queda registrada igualmente.",
