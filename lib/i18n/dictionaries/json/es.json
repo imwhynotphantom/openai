@@ -455,7 +455,7 @@
     "depositRegisterLoading": "Generando…",
     "depositFromWhere": "¿Desde dónde vas a enviar?",
     "depositAddressLabel": "Tu dirección personal de depósito",
-    "depositNetworkWarning": "Envía por la red Base (recomendada). Si tu exchange no la ofrece, también aceptamos Ethereum, Arbitrum, Optimism y Polygon — lo convertimos nosotros. Mínimo 10 USDC (100 si envías por Ethereum).",
+    "depositNetworkWarning": "Recuerda elegir la red base al enviar - Mínimo 10 USDC",
     "depositPendingBanner": "Hemos detectado {amount} USDC — confirmando (2-3 minutos)…",
     "depositCreditedBanner": "{amount} USDC confirmados = {open} OPEN reservados",
     "depositWaiting": "Esperando tu transferencia… Desde un exchange suele tardar 2-10 minutos. Puedes cerrar esta página: tu compra queda registrada igualmente.",
