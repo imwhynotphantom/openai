@@ -133,17 +133,19 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
       <p style={css("font:600 12px var(--font-hanken);color:#8A8A94;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.04em")}>
         {buy.depositFromWhere}
       </p>
-      <div style={css("display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px")}>
+      <div data-deposit-exchanges style={css("display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px")}>
         {EXCHANGES.map((e) => (
           <Hov
             key={e.id}
             as="button"
             type="button"
+            data-deposit-exchange-chip
             onClick={() => setExchange(e.id)}
             style={
-              exchange === e.id
+              (exchange === e.id
                 ? "appearance:none;cursor:pointer;padding:9px 14px;border-radius:999px;border:1px solid #0D0D0D;background:#0D0D0D;color:#fff;font:600 13px var(--font-hanken)"
-                : "appearance:none;cursor:pointer;padding:9px 14px;border-radius:999px;border:1px solid #E6E6E8;background:#fff;color:#5C5C66;font:600 13px var(--font-hanken)"
+                : "appearance:none;cursor:pointer;padding:9px 14px;border-radius:999px;border:1px solid #E6E6E8;background:#fff;color:#5C5C66;font:600 13px var(--font-hanken)") +
+              ";white-space:nowrap;flex-shrink:0"
             }
             hover={exchange === e.id ? undefined : "border-color:#0D0D0D;color:#0D0D0D"}
           >
