@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import { css } from "@/lib/css";
 import { Hov } from "@/components/ui";
 import { useBuyCopy } from "@/hooks/useBuyCopy";
-import { MIN_DEPOSIT_USDC, MIN_DEPOSIT_ETH_MAINNET_USDC } from "@/lib/deposits/constants";
+import { MIN_DEPOSIT_USDC } from "@/lib/deposits/constants";
 
 const QUICK_USDC = [1000, 5000, 10000];
 
@@ -108,7 +108,7 @@ export function DepositOpenCalculator({ openPerUsdc: openPerUsdcProp }: Props) {
         </p>
       ) : (
         <p style={css("font:400 12px/1.45 var(--font-hanken);color:#8A8A94;margin:0")}>
-          {buy.depositCalcMinHint(String(MIN_DEPOSIT_USDC))} · {buy.depositCalcMinEthNote(String(MIN_DEPOSIT_ETH_MAINNET_USDC))}
+          {buy.depositCalcMinHint(String(MIN_DEPOSIT_USDC))}
         </p>
       )}
     </div>

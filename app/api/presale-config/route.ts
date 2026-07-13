@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { supabaseService, depositEnvMissing } from "@/lib/deposits/server";
-import { MIN_DEPOSIT_USDC, MIN_DEPOSIT_ETH_MAINNET_USDC } from "@/lib/deposits/constants";
+import { MIN_DEPOSIT_USDC } from "@/lib/deposits/constants";
 
 /**
  * GET /api/presale-config
@@ -20,7 +20,6 @@ export async function GET() {
     return NextResponse.json({
       openPerUsdc,
       minDepositUsdc: MIN_DEPOSIT_USDC,
-      minDepositEthMainnetUsdc: MIN_DEPOSIT_ETH_MAINNET_USDC,
     });
   } catch (err) {
     console.error("[presale-config]", err);

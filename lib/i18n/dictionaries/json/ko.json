@@ -428,7 +428,7 @@
     "bridgeTabBase": "내 지갑으로 구매",
     "bridgeTabOther": "다른 네트워크",
     "bridgeTabReceive": "직접 구매",
-    "receiveSubtitle": "직접 구매: 거래소나 지갑에서 입금 주소로 USDC를 보내세요. Base가 가장 빠릅니다. Ethereum, Arbitrum, Optimism, Polygon도 지원합니다.",
+    "receiveSubtitle": "직접 구매: 거래소나 지갑에서 입금 주소로 USDC를 보내세요. Base 네트워크를 사용해야 합니다.",
     "receiveCurrentBalance": "Base USDC 잔액",
     "compraModeChecking": "지갑 확인 중…",
     "compraModeOneSignature": "한 번의 서명으로 모두 확인합니다.",
@@ -473,24 +473,24 @@
     "depositRegisterLoading": "생성 중…",
     "depositFromWhere": "어디에서 보내시나요?",
     "depositAddressLabel": "나의 전용 입금 주소",
-    "depositNetworkWarning": "보낼 USDC 금액은 직접 선택합니다. Base/Arbitrum/Optimism/Polygon 최소 10 USDC, Ethereum 최소 100 USDC.",
+    "depositNetworkWarning": "Base 네트워크를 선택하세요. USDC, 원하는 금액.",
     "depositPendingBanner": "{amount} USDC 감지 — 확인 중 (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC 확정 = {open} OPEN 예약 완료. 출시(TGE) 시 받게 됩니다.",
     "depositWaiting": "이체를 기다리는 중… 거래소에서는 보통 2-10분 걸립니다. 이 페이지를 닫아도 됩니다: 구매는 그대로 기록됩니다.",
     "depositError": "입금 주소를 불러오지 못했습니다. 다시 시도해 주세요.",
     "depositStepsBinance": [
-      "Binance → 지갑 열기",
-      "USDC 검색 → 출금 / 전송",
-      "구매할 USDC 금액 입력 (최소 10 USDC; Ethereum은 100 USDC)",
+      "Binance 열기 → 지갑",
+      "USDC 찾기 → 출금 / 전송",
+      "구매할 USDC 금액 입력 (최소 10 USDC)",
       "입금 주소 붙여넣기 (아래)",
-      "네트워크에서 Base 선택",
+      "「네트워크」에서 Base 선택",
       "출금 확인"
     ],
     "depositStepsBit2me": [
-      "Bit2Me → Wallets → USDC → 전송",
-      "USDC 금액 입력 (최소 10 USDC; Ethereum은 100 USDC)",
+      "Bit2Me 열기 → Wallets → USDC → 전송",
+      "구매할 USDC 금액 입력 (최소 10 USDC)",
       "입금 주소 붙여넣기",
-      "네트워크: Base (권장)",
+      "Base 네트워크 선택",
       "전송 확인"
     ],
     "depositStepsKraken": [
@@ -529,8 +529,7 @@
     "depositCalcTitle": "얼마의 USDC를 보내시나요?",
     "depositCalcLabel": "USDC 금액",
     "depositCalcResult": "{usdc} USDC = {open} OPEN 예약",
-    "depositCalcMinHint": "최소 {min} USDC",
-    "depositCalcMinEthNote": "Ethereum 경유: 최소 {min} USDC",
+    "depositCalcMinHint": "Base에서 최소 {min} USDC",
     "depositAmountReminder": "거래소나 지갑에서 금액을 선택합니다. 50, 500, 5,000 — 최소 금액 이상 원하는 만큼."
   },
   "myPurchase": {

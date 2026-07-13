@@ -428,7 +428,7 @@
     "bridgeTabBase": "Kup z moją wallet",
     "bridgeTabOther": "Inne sieci",
     "bridgeTabReceive": "Zakup bezpośredni",
-    "receiveSubtitle": "Zakup bezpośredni: wyślij USDC z giełdy lub portfela na swój adres. Base jest najszybsze; akceptujemy też Ethereum, Arbitrum, Optimism i Polygon.",
+    "receiveSubtitle": "Zakup bezpośredni: wyślij USDC z giełdy lub portfela na swój adres. Musisz użyć sieci Base.",
     "receiveCurrentBalance": "Twoje saldo USDC w Base",
     "compraModeChecking": "Sprawdzanie wallet…",
     "compraModeOneSignature": "Potwierdzisz wszystko jednym podpisem w wallet.",
@@ -473,7 +473,7 @@
     "depositRegisterLoading": "Generowanie…",
     "depositFromWhere": "Skąd będziesz wysyłać?",
     "depositAddressLabel": "Twój osobisty adres wpłaty",
-    "depositNetworkWarning": "Sam wybierasz kwotę USDC. Min. 10 USDC na Base, Arbitrum, Optimism i Polygon; min. 100 USDC na Ethereum.",
+    "depositNetworkWarning": "Pamiętaj o wyborze sieci Base. USDC, dowolna kwota.",
     "depositPendingBanner": "Wykryliśmy {amount} USDC — potwierdzanie (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC potwierdzone = {open} OPEN zarezerwowane. Otrzymasz je przy starcie (TGE).",
     "depositWaiting": "Czekamy na Twój przelew… Z giełdy zwykle trwa to 2-10 minut. Możesz zamknąć tę stronę: Twój zakup i tak jest zarejestrowany.",
@@ -481,17 +481,17 @@
     "depositStepsBinance": [
       "Otwórz Binance → Portfel",
       "Znajdź USDC → Wypłać / Wyślij",
-      "Podaj kwotę USDC (min. 10 USDC; 100 USDC przez Ethereum)",
-      "Wklej adres depozytu (poniżej)",
-      "W Sieci wybierz Base (lub inną akceptowaną)",
+      "Podaj kwotę USDC (min. 10 USDC)",
+      "Wklej adres wpłaty (poniżej)",
+      "W «Sieć» wybierz Base",
       "Potwierdź wypłatę"
     ],
     "depositStepsBit2me": [
       "Otwórz Bit2Me → Wallets → USDC → Wyślij",
-      "Podaj kwotę USDC (min. 10 USDC; 100 USDC przez Ethereum)",
-      "Wklej adres depozytu",
-      "Wybierz sieć: Base (zalecana)",
-      "Potwierdź wysyłkę"
+      "Podaj kwotę USDC (min. 10 USDC)",
+      "Wklej adres wpłaty",
+      "Wybierz sieć Base",
+      "Potwierdź przelew"
     ],
     "depositStepsKraken": [
       "Otwórz Kraken → Funding → Withdraw → USDC",
@@ -529,8 +529,7 @@
     "depositCalcTitle": "Ile USDC wyślesz?",
     "depositCalcLabel": "Kwota w USDC",
     "depositCalcResult": "{usdc} USDC = {open} OPEN zarezerwowane",
-    "depositCalcMinHint": "Minimum {min} USDC",
-    "depositCalcMinEthNote": "Przez Ethereum: min. {min} USDC",
+    "depositCalcMinHint": "Minimum {min} USDC w Base",
     "depositAmountReminder": "Na giełdzie lub w portfelu wybierasz kwotę. 50, 500 lub 5 000 — ile chcesz, powyżej minimum."
   },
   "myPurchase": {

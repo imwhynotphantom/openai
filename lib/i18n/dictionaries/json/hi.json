@@ -428,7 +428,7 @@
     "bridgeTabBase": "अपने वॉलेट से खरीदें",
     "bridgeTabOther": "अन्य नेटवर्क",
     "bridgeTabReceive": "प्रत्यक्ष खरीद",
-    "receiveSubtitle": "प्रत्यक्ष खरीद: एक्सचेंज या वॉलेट से अपने पते पर USDC भेजें। Base सबसे तेज़ है; Ethereum, Arbitrum, Optimism और Polygon भी स्वीकार हैं।",
+    "receiveSubtitle": "प्रत्यक्ष खरीद: एक्सचेंज या वॉलेट से अपने पते पर USDC भेजें। आपको Base नेटवर्क का उपयोग करना होगा।",
     "receiveCurrentBalance": "Base पर USDC बैलेंस",
     "compraModeChecking": "Wallet जाँच हो रहा है…",
     "compraModeOneSignature": "wallet में एक हस्ताक्षर से सब पुष्टि करेंगे।",
@@ -473,24 +473,24 @@
     "depositRegisterLoading": "बनाया जा रहा है…",
     "depositFromWhere": "कहाँ से भेजेंगे?",
     "depositAddressLabel": "आपका व्यक्तिगत जमा पता",
-    "depositNetworkWarning": "आप USDC की राशि चुनते हैं। Base/Arbitrum/Optimism/Polygon पर न्यूनतम 10 USDC; Ethereum पर न्यूनतम 100 USDC।",
+    "depositNetworkWarning": "Base नेटवर्क चुनना याद रखें। USDC, जितनी राशि चाहें।",
     "depositPendingBanner": "{amount} USDC मिले — पुष्टि हो रही है (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC पुष्ट = {open} OPEN आरक्षित। लॉन्च (TGE) पर मिलेंगे।",
     "depositWaiting": "आपके ट्रांसफ़र की प्रतीक्षा… एक्सचेंज से आमतौर पर 2-10 मिनट लगते हैं। आप यह पेज बंद कर सकते हैं: आपकी खरीद दर्ज रहेगी।",
     "depositError": "आपका जमा पता लोड नहीं हो सका। पुनः प्रयास करें।",
     "depositStepsBinance": [
-      "Binance → वॉलेट खोलें",
+      "Binance खोलें → वॉलेट",
       "USDC खोजें → निकासी / भेजें",
-      "खरीदने के लिए USDC राशि दर्ज करें (न्यूनतम 10 USDC; Ethereum पर 100 USDC)",
+      "USDC राशि दर्ज करें (न्यूनतम 10 USDC)",
       "जमा पता चिपकाएँ (नीचे)",
-      "नेटवर्क में Base चुनें",
+      "«नेटवर्क» में Base चुनें",
       "निकासी की पुष्टि करें"
     ],
     "depositStepsBit2me": [
-      "Bit2Me → Wallets → USDC → भेजें",
-      "USDC राशि दर्ज करें (न्यूनतम 10 USDC; Ethereum पर 100 USDC)",
+      "Bit2Me खोलें → Wallets → USDC → भेजें",
+      "USDC राशि दर्ज करें (न्यूनतम 10 USDC)",
       "जमा पता चिपकाएँ",
-      "नेटवर्क: Base (अनुशंसित)",
+      "Base नेटवर्क चुनें",
       "भेजने की पुष्टि करें"
     ],
     "depositStepsKraken": [
@@ -529,8 +529,7 @@
     "depositCalcTitle": "आप कितना USDC भेजेंगे?",
     "depositCalcLabel": "USDC राशि",
     "depositCalcResult": "{usdc} USDC = {open} OPEN आरक्षित",
-    "depositCalcMinHint": "न्यूनतम {min} USDC",
-    "depositCalcMinEthNote": "Ethereum के ज़रिए: न्यूनतम {min} USDC",
+    "depositCalcMinHint": "Base पर न्यूनतम {min} USDC",
     "depositAmountReminder": "एक्सचेंज या वॉलेट में आप राशि चुनते हैं। 50, 500 या 5,000 — न्यूनतम से ऊपर जितना चाहें।"
   },
   "myPurchase": {

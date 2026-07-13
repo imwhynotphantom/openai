@@ -428,7 +428,7 @@
     "bridgeTabBase": "شراء بمحفظتي",
     "bridgeTabOther": "شبكات أخرى",
     "bridgeTabReceive": "شراء مباشر",
-    "receiveSubtitle": "شراء مباشر: أرسل USDC من منصة أو محفظة إلى عنوانك. Base هو الأسرع؛ نقبل أيضاً Ethereum وArbitrum وOptimism وPolygon.",
+    "receiveSubtitle": "شراء مباشر: أرسل USDC من منصة أو محفظة إلى عنوانك. يجب استخدام شبكة Base.",
     "receiveCurrentBalance": "رصيد USDC على Base",
     "compraModeChecking": "جارٍ التحقق من wallet…",
     "compraModeOneSignature": "ستؤكّد كل شيء بتوقيع واحد في wallet.",
@@ -473,7 +473,7 @@
     "depositRegisterLoading": "جارٍ الإنشاء…",
     "depositFromWhere": "من أين سترسل؟",
     "depositAddressLabel": "عنوان الإيداع الشخصي الخاص بك",
-    "depositNetworkWarning": "أنت تختار مبلغ USDC. الحد الأدنى 10 USDC على Base وArbitrum وOptimism وPolygon؛ 100 USDC على Ethereum.",
+    "depositNetworkWarning": "تذكّر اختيار شبكة Base. USDC، أي مبلغ تريده.",
     "depositPendingBanner": "اكتشفنا {amount} USDC — جارٍ التأكيد (~{open} OPEN)…",
     "depositCreditedBanner": "تم تأكيد {amount} USDC = {open} OPEN محجوزة. ستستلمها عند الإطلاق (TGE).",
     "depositWaiting": "في انتظار تحويلك… من منصة تداول يستغرق عادة 2-10 دقائق. يمكنك إغلاق هذه الصفحة: يبقى شراؤك مسجلاً.",
@@ -481,16 +481,16 @@
     "depositStepsBinance": [
       "افتح Binance → المحفظة",
       "ابحث عن USDC → سحب / إرسال",
-      "أدخل مبلغ USDC المراد شراؤه (حد أدنى 10 USDC؛ 100 USDC عبر Ethereum)",
+      "أدخل مبلغ USDC (حد أدنى 10 USDC)",
       "الصق عنوان الإيداع (أدناه)",
-      "في الشبكة اختر Base (أو شبكة مقبولة)",
+      "في «الشبكة» اختر Base",
       "أكد السحب"
     ],
     "depositStepsBit2me": [
       "افتح Bit2Me → Wallets → USDC → إرسال",
-      "أدخل مبلغ USDC (حد أدنى 10 USDC؛ 100 USDC عبر Ethereum)",
+      "أدخل مبلغ USDC (حد أدنى 10 USDC)",
       "الصق عنوان الإيداع",
-      "اختر الشبكة: Base (موصى بها)",
+      "اختر شبكة Base",
       "أكد الإرسال"
     ],
     "depositStepsKraken": [
@@ -529,8 +529,7 @@
     "depositCalcTitle": "كم USDC ستُرسل؟",
     "depositCalcLabel": "المبلغ بـ USDC",
     "depositCalcResult": "{usdc} USDC = {open} OPEN محجوز",
-    "depositCalcMinHint": "الحد الأدنى {min} USDC",
-    "depositCalcMinEthNote": "عبر Ethereum: الحد الأدنى {min} USDC",
+    "depositCalcMinHint": "الحد الأدنى {min} USDC على Base",
     "depositAmountReminder": "في المنصة أو المحفظة تختار المبلغ. 50 أو 500 أو 5,000 — ما تشاء فوق الحد الأدنى."
   },
   "myPurchase": {

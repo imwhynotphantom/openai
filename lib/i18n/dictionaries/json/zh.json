@@ -428,7 +428,7 @@
     "bridgeTabBase": "用我的钱包购买",
     "bridgeTabOther": "其他网络",
     "bridgeTabReceive": "直接购买",
-    "receiveSubtitle": "直接购买：从交易所或钱包向您的地址发送 USDC。Base 最快；也支持 Ethereum、Arbitrum、Optimism 和 Polygon。",
+    "receiveSubtitle": "直接购买：从交易所或钱包向您的地址发送 USDC。必须使用 Base 网络。",
     "receiveCurrentBalance": "您在 Base 上的 USDC 余额",
     "compraModeChecking": "检查钱包中…",
     "compraModeOneSignature": "您将用一次签名确认全部操作。",
@@ -473,7 +473,7 @@
     "depositRegisterLoading": "生成中…",
     "depositFromWhere": "你将从哪里发送？",
     "depositAddressLabel": "你的专属充值地址",
-    "depositNetworkWarning": "您自行选择 USDC 金额。Base/Arbitrum/Optimism/Polygon 最低 10 USDC；Ethereum 最低 100 USDC。",
+    "depositNetworkWarning": "请选择 Base 网络。USDC，任意金额。",
     "depositPendingBanner": "已检测到 {amount} USDC — 确认中（~{open} OPEN）…",
     "depositCreditedBanner": "{amount} USDC 已确认 = 已预留 {open} OPEN。将在发布（TGE）时发放。",
     "depositWaiting": "等待你的转账… 从交易所通常需要 2-10 分钟。你可以关闭此页面：购买已被记录。",
@@ -481,16 +481,16 @@
     "depositStepsBinance": [
       "打开 Binance → 钱包",
       "找到 USDC → 提现 / 发送",
-      "输入要购买的 USDC 金额（最低 10 USDC；Ethereum 为 100 USDC）",
-      "粘贴存款地址（下方）",
-      "网络选择 Base（或其他支持的网络）",
+      "输入要购买的 USDC 金额（最低 10 USDC）",
+      "粘贴充值地址（下方）",
+      "在「网络」中选择 Base",
       "确认提现"
     ],
     "depositStepsBit2me": [
       "打开 Bit2Me → Wallets → USDC → 发送",
-      "输入 USDC 金额（最低 10 USDC；Ethereum 为 100 USDC）",
-      "粘贴存款地址",
-      "选择网络：Base（推荐）",
+      "输入要购买的 USDC 金额（最低 10 USDC）",
+      "粘贴充值地址",
+      "选择 Base 网络",
       "确认发送"
     ],
     "depositStepsKraken": [
@@ -529,8 +529,7 @@
     "depositCalcTitle": "您将发送多少 USDC？",
     "depositCalcLabel": "USDC 金额",
     "depositCalcResult": "{usdc} USDC = {open} OPEN 已预留",
-    "depositCalcMinHint": "最低 {min} USDC",
-    "depositCalcMinEthNote": "经 Ethereum：最低 {min} USDC",
+    "depositCalcMinHint": "Base 上最低 {min} USDC",
     "depositAmountReminder": "在交易所或钱包中您选择金额。50、500 或 5,000 — 只要高于最低限额即可。"
   },
   "myPurchase": {

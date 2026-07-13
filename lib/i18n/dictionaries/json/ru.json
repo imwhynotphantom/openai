@@ -428,7 +428,7 @@
     "bridgeTabBase": "Купить с моим кошельком",
     "bridgeTabOther": "Другие сети",
     "bridgeTabReceive": "Прямая покупка",
-    "receiveSubtitle": "Прямая покупка: отправьте USDC с биржи или кошелька на ваш адрес. Base — самый быстрый; также принимаем Ethereum, Arbitrum, Optimism и Polygon.",
+    "receiveSubtitle": "Прямая покупка: отправьте USDC с биржи или кошелька на ваш адрес. Нужно использовать сеть Base.",
     "receiveCurrentBalance": "Ваш баланс USDC в Base",
     "compraModeChecking": "Проверка wallet…",
     "compraModeOneSignature": "Вы подтвердите всё одной подписью в wallet.",
@@ -473,25 +473,25 @@
     "depositRegisterLoading": "Создание…",
     "depositFromWhere": "Откуда будете отправлять?",
     "depositAddressLabel": "Ваш персональный адрес для депозита",
-    "depositNetworkWarning": "Вы сами выбираете сумму USDC. Мин. 10 USDC в Base, Arbitrum, Optimism и Polygon; мин. 100 USDC в Ethereum.",
+    "depositNetworkWarning": "Выберите сеть Base. USDC, любая сумма.",
     "depositPendingBanner": "Обнаружено {amount} USDC — подтверждение (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC подтверждено = {open} OPEN зарезервировано. Вы получите их при запуске (TGE).",
     "depositWaiting": "Ожидаем ваш перевод… С биржи обычно занимает 2-10 минут. Можно закрыть эту страницу: покупка всё равно зарегистрирована.",
     "depositError": "Не удалось загрузить ваш адрес для депозита. Попробуйте ещё раз.",
     "depositStepsBinance": [
       "Откройте Binance → Кошелёк",
-      "Найдите USDC → Вывод / Отправка",
-      "Укажите сумму USDC (мин. 10 USDC; 100 USDC через Ethereum)",
+      "Найдите USDC → Вывод / Отправить",
+      "Укажите сумму USDC (мин. 10 USDC)",
       "Вставьте адрес депозита (ниже)",
-      "В Сети выберите Base (или другую принятую)",
+      "В «Сеть» выберите Base",
       "Подтвердите вывод"
     ],
     "depositStepsBit2me": [
       "Откройте Bit2Me → Wallets → USDC → Отправить",
-      "Укажите сумму USDC (мин. 10 USDC; 100 USDC через Ethereum)",
+      "Укажите сумму USDC (мин. 10 USDC)",
       "Вставьте адрес депозита",
-      "Выберите сеть: Base (рекомендуется)",
-      "Подтвердите отправку"
+      "Выберите сеть Base",
+      "Подтвердите перевод"
     ],
     "depositStepsKraken": [
       "Откройте Kraken → Funding → Withdraw → USDC",
@@ -529,8 +529,7 @@
     "depositCalcTitle": "Сколько USDC вы отправите?",
     "depositCalcLabel": "Сумма в USDC",
     "depositCalcResult": "{usdc} USDC = {open} OPEN зарезервировано",
-    "depositCalcMinHint": "Минимум {min} USDC",
-    "depositCalcMinEthNote": "Через Ethereum: мин. {min} USDC",
+    "depositCalcMinHint": "Минимум {min} USDC в Base",
     "depositAmountReminder": "На бирже или в кошельке вы выбираете сумму. 50, 500 или 5 000 — сколько хотите, выше минимума."
   },
   "myPurchase": {

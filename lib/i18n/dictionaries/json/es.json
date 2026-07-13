@@ -428,7 +428,7 @@
     "bridgeTabBase": "Comprar con mi wallet",
     "bridgeTabOther": "Otras redes",
     "bridgeTabReceive": "Compra directa",
-    "receiveSubtitle": "Compra directa: envía USDC desde un exchange o wallet a tu dirección. Base es la opción más rápida; también aceptamos Ethereum, Arbitrum, Optimism y Polygon.",
+    "receiveSubtitle": "Compra directa: envía USDC desde un exchange o wallet a tu dirección. Debes usar la red Base.",
     "receiveCurrentBalance": "Tu saldo USDC en Base",
     "compraModeChecking": "Comprobando tu wallet…",
     "compraModeOneSignature": "Confirmarás todo con una sola firma en tu wallet.",
@@ -481,16 +481,16 @@
     "depositStepsBinance": [
       "Abre Binance → Cartera",
       "Busca USDC → Retirar / Enviar",
-      "Indica la cantidad de USDC que quieres comprar (mín. 10 USDC; 100 USDC si envías por Ethereum)",
+      "Indica la cantidad de USDC que quieres comprar (mín. 10 USDC)",
       "Pega tu dirección de depósito (abajo)",
-      "En «Red», elige Base (u otra red aceptada)",
+      "En «Red», elige Base",
       "Confirma la retirada"
     ],
     "depositStepsBit2me": [
       "Abre Bit2Me → Wallets → USDC → Enviar",
-      "Indica la cantidad de USDC que quieres comprar (mín. 10 USDC; 100 USDC por Ethereum)",
+      "Indica la cantidad de USDC que quieres comprar (mín. 10 USDC)",
       "Pega tu dirección de depósito",
-      "Elige la red: Base (recomendada) o la que ofrezca tu exchange",
+      "Elige la red Base",
       "Confirma el envío"
     ],
     "depositStepsKraken": [
@@ -529,8 +529,7 @@
     "depositCalcTitle": "¿Cuánto USDC vas a enviar?",
     "depositCalcLabel": "Cantidad en USDC",
     "depositCalcResult": "{usdc} USDC = {open} OPEN reservados",
-    "depositCalcMinHint": "Mínimo {min} USDC",
-    "depositCalcMinEthNote": "Por Ethereum: mín. {min} USDC",
+    "depositCalcMinHint": "Mínimo {min} USDC en Base",
     "depositAmountReminder": "En el exchange o wallet tú eliges la cantidad. Pueden ser 50, 500 o 5.000 — lo que quieras, respetando el mínimo."
   },
   "myPurchase": {

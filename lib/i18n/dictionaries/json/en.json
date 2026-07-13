@@ -428,7 +428,7 @@
     "bridgeTabBase": "Buy with my wallet",
     "bridgeTabOther": "Other networks",
     "bridgeTabReceive": "Direct purchase",
-    "receiveSubtitle": "Direct purchase: send USDC from an exchange or wallet to your address. Base is fastest; we also accept Ethereum, Arbitrum, Optimism and Polygon.",
+    "receiveSubtitle": "Direct purchase: send USDC from an exchange or wallet to your address. You must use the Base network.",
     "receiveCurrentBalance": "Your USDC balance on Base",
     "compraModeChecking": "Checking your wallet…",
     "compraModeOneSignature": "You will confirm everything with a single signature in your wallet.",
@@ -473,7 +473,7 @@
     "depositRegisterLoading": "Generating…",
     "depositFromWhere": "Where will you send from?",
     "depositAddressLabel": "Your personal deposit address",
-    "depositNetworkWarning": "You choose how much USDC to send. Min. 10 USDC on Base, Arbitrum, Optimism and Polygon; min. 100 USDC on Ethereum.",
+    "depositNetworkWarning": "Remember to choose the Base network. USDC, any amount you want.",
     "depositPendingBanner": "We've detected {amount} USDC — confirming (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC confirmed = {open} OPEN reserved",
     "depositWaiting": "Waiting for your transfer… From an exchange it usually takes 2-10 minutes. You can close this page: your purchase is registered anyway.",
@@ -481,16 +481,16 @@
     "depositStepsBinance": [
       "Open Binance → Wallet",
       "Find USDC → Withdraw / Send",
-      "Enter the USDC amount you want to buy (min. 10 USDC; 100 USDC via Ethereum)",
+      "Enter the USDC amount you want to buy (min. 10 USDC)",
       "Paste your deposit address (below)",
-      "Under Network, choose Base (or another accepted network)",
+      "Under Network, choose Base",
       "Confirm the withdrawal"
     ],
     "depositStepsBit2me": [
       "Open Bit2Me → Wallets → USDC → Send",
-      "Enter the USDC amount you want to buy (min. 10 USDC; 100 USDC via Ethereum)",
+      "Enter the USDC amount you want to buy (min. 10 USDC)",
       "Paste your deposit address",
-      "Choose network: Base (recommended) or your exchange option",
+      "Choose the Base network",
       "Confirm the transfer"
     ],
     "depositStepsKraken": [
@@ -529,8 +529,7 @@
     "depositCalcTitle": "How much USDC will you send?",
     "depositCalcLabel": "Amount in USDC",
     "depositCalcResult": "{usdc} USDC = {open} OPEN reserved",
-    "depositCalcMinHint": "Minimum {min} USDC",
-    "depositCalcMinEthNote": "Via Ethereum: min. {min} USDC",
+    "depositCalcMinHint": "Minimum {min} USDC on Base",
     "depositAmountReminder": "On the exchange or wallet you choose the amount. 50, 500 or 5,000 — whatever you want, above the minimum."
   },
   "myPurchase": {

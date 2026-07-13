@@ -428,7 +428,7 @@
     "bridgeTabBase": "Cüzdanımla satın al",
     "bridgeTabOther": "Diğer ağlar",
     "bridgeTabReceive": "Doğrudan satın al",
-    "receiveSubtitle": "Doğrudan satın al: borsa veya cüzdandan adresinize USDC gönderin. Base en hızlısıdır; Ethereum, Arbitrum, Optimism ve Polygon da kabul edilir.",
+    "receiveSubtitle": "Doğrudan satın al: borsa veya cüzdandan adresinize USDC gönderin. Base ağını kullanmalısınız.",
     "receiveCurrentBalance": "Base'deki USDC bakiyeniz",
     "compraModeChecking": "Wallet'ınız kontrol ediliyor…",
     "compraModeOneSignature": "Her şeyi wallet'ınızda tek imza ile onaylayacaksınız.",
@@ -473,24 +473,24 @@
     "depositRegisterLoading": "Oluşturuluyor…",
     "depositFromWhere": "Nereden göndereceksiniz?",
     "depositAddressLabel": "Kişisel yatırma adresiniz",
-    "depositNetworkWarning": "Göndereceğiniz USDC miktarını siz seçersiniz. Base, Arbitrum, Optimism ve Polygon'da min. 10 USDC; Ethereum'da min. 100 USDC.",
+    "depositNetworkWarning": "Base ağını seçmeyi unutmayın. USDC, istediğiniz miktar.",
     "depositPendingBanner": "{amount} USDC algılandı — onaylanıyor (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC onaylandı = {open} OPEN ayrıldı. Lansmanda (TGE) alacaksınız.",
     "depositWaiting": "Transferiniz bekleniyor… Bir borsadan genellikle 2-10 dakika sürer. Bu sayfayı kapatabilirsiniz: satın alımınız yine de kayıtlıdır.",
     "depositError": "Yatırma adresiniz yüklenemedi. Lütfen tekrar deneyin.",
     "depositStepsBinance": [
-      "Binance → Cüzdan'ı açın",
+      "Binance'i açın → Cüzdan",
       "USDC bulun → Çek / Gönder",
-      "Satın almak istediğiniz USDC miktarını girin (min. 10 USDC; Ethereum ile 100 USDC)",
+      "USDC miktarını girin (min. 10 USDC)",
       "Yatırma adresinizi yapıştırın (aşağıda)",
-      "Ağ'da Base'i seçin (veya kabul edilen başka ağ)",
-      "Çekmeyi onaylayın"
+      "«Ağ» bölümünde Base seçin",
+      "Çekimi onaylayın"
     ],
     "depositStepsBit2me": [
-      "Bit2Me → Wallets → USDC → Gönder",
-      "USDC miktarını girin (min. 10 USDC; Ethereum ile 100 USDC)",
+      "Bit2Me'yi açın → Wallets → USDC → Gönder",
+      "USDC miktarını girin (min. 10 USDC)",
       "Yatırma adresinizi yapıştırın",
-      "Ağı seçin: Base (önerilen)",
+      "Base ağını seçin",
       "Gönderimi onaylayın"
     ],
     "depositStepsKraken": [
@@ -529,8 +529,7 @@
     "depositCalcTitle": "Ne kadar USDC göndereceksiniz?",
     "depositCalcLabel": "USDC miktarı",
     "depositCalcResult": "{usdc} USDC = {open} OPEN rezerve",
-    "depositCalcMinHint": "Minimum {min} USDC",
-    "depositCalcMinEthNote": "Ethereum üzerinden: min. {min} USDC",
+    "depositCalcMinHint": "Base'de minimum {min} USDC",
     "depositAmountReminder": "Borsa veya cüzdanda miktarı siz seçersiniz. 50, 500 veya 5.000 — minimumun üzerinde istediğiniz kadar."
   },
   "myPurchase": {

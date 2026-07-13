@@ -428,7 +428,7 @@
     "bridgeTabBase": "Mit meiner Wallet kaufen",
     "bridgeTabOther": "Andere Netzwerke",
     "bridgeTabReceive": "Direktkauf",
-    "receiveSubtitle": "Direktkauf: Senden Sie USDC von einer Börse oder Wallet an Ihre Adresse. Base ist am schnellsten; wir akzeptieren auch Ethereum, Arbitrum, Optimism und Polygon.",
+    "receiveSubtitle": "Direktkauf: Senden Sie USDC von einer Börse oder Wallet an Ihre Adresse. Sie müssen das Base-Netzwerk verwenden.",
     "receiveCurrentBalance": "Ihr USDC-Saldo auf Base",
     "compraModeChecking": "Ihre Wallet wird geprüft…",
     "compraModeOneSignature": "Sie bestätigen alles mit einer einzigen Signatur in Ihrer Wallet.",
@@ -473,25 +473,25 @@
     "depositRegisterLoading": "Wird erstellt…",
     "depositFromWhere": "Von wo wirst du senden?",
     "depositAddressLabel": "Deine persönliche Einzahlungsadresse",
-    "depositNetworkWarning": "Sie wählen den USDC-Betrag. Min. 10 USDC auf Base, Arbitrum, Optimism und Polygon; min. 100 USDC auf Ethereum.",
+    "depositNetworkWarning": "Wählen Sie das Base-Netzwerk. USDC, beliebiger Betrag.",
     "depositPendingBanner": "Wir haben {amount} USDC erkannt — Bestätigung (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC bestätigt = {open} OPEN reserviert",
     "depositWaiting": "Warten auf deine Überweisung… Von einer Börse dauert es meist 2-10 Minuten. Du kannst diese Seite schließen: Dein Kauf bleibt registriert.",
     "depositError": "Deine Einzahlungsadresse konnte nicht geladen werden. Bitte versuche es erneut.",
     "depositStepsBinance": [
-      "Binance → Wallet öffnen",
+      "Binance öffnen → Wallet",
       "USDC finden → Abheben / Senden",
-      "USDC-Betrag eingeben (min. 10 USDC; 100 USDC über Ethereum)",
+      "USDC-Betrag eingeben (min. 10 USDC)",
       "Einzahlungsadresse einfügen (unten)",
-      "Netzwerk: Base (oder anderes akzeptiertes Netz)",
+      "Unter Netzwerk Base wählen",
       "Abhebung bestätigen"
     ],
     "depositStepsBit2me": [
-      "Bit2Me → Wallets → USDC → Senden",
-      "USDC-Betrag eingeben (min. 10 USDC; 100 USDC über Ethereum)",
+      "Bit2Me öffnen → Wallets → USDC → Senden",
+      "USDC-Betrag eingeben (min. 10 USDC)",
       "Einzahlungsadresse einfügen",
-      "Netzwerk: Base (empfohlen)",
-      "Senden bestätigen"
+      "Netzwerk Base wählen",
+      "Überweisung bestätigen"
     ],
     "depositStepsKraken": [
       "Kraken → Funding → Withdraw → USDC",
@@ -529,8 +529,7 @@
     "depositCalcTitle": "Wie viel USDC senden Sie?",
     "depositCalcLabel": "Betrag in USDC",
     "depositCalcResult": "{usdc} USDC = {open} OPEN reserviert",
-    "depositCalcMinHint": "Minimum {min} USDC",
-    "depositCalcMinEthNote": "Über Ethereum: min. {min} USDC",
+    "depositCalcMinHint": "Mindestens {min} USDC auf Base",
     "depositAmountReminder": "Auf der Börse oder Wallet wählen Sie den Betrag. 50, 500 oder 5.000 — was Sie möchten, über dem Minimum."
   },
   "myPurchase": {

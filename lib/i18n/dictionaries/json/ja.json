@@ -428,7 +428,7 @@
     "bridgeTabBase": "ウォレットで購入",
     "bridgeTabOther": "他のネットワーク",
     "bridgeTabReceive": "直接購入",
-    "receiveSubtitle": "直接購入：取引所またはウォレットから専用アドレスにUSDCを送金。Baseが最速。Ethereum、Arbitrum、Optimism、Polygonも対応。",
+    "receiveSubtitle": "直接購入：取引所またはウォレットから専用アドレスにUSDCを送金してください。Baseネットワークを使用する必要があります。",
     "receiveCurrentBalance": "Base の USDC 残高",
     "compraModeChecking": "ウォレット確認中…",
     "compraModeOneSignature": "1 回の署名ですべて確認します。",
@@ -473,24 +473,24 @@
     "depositRegisterLoading": "発行中…",
     "depositFromWhere": "どこから送りますか？",
     "depositAddressLabel": "あなた専用の入金アドレス",
-    "depositNetworkWarning": "送金するUSDCの金額はご自身で選択。Base/Arbitrum/Optimism/Polygonは最小10 USDC、Ethereumは最小100 USDC。",
+    "depositNetworkWarning": "Baseネットワークを選択してください。USDC、任意の金額。",
     "depositPendingBanner": "{amount} USDC を検出 — 確認中（~{open} OPEN）…",
     "depositCreditedBanner": "{amount} USDC 確認済み = {open} OPEN を確保。ローンチ（TGE）時に受け取れます。",
     "depositWaiting": "送金を待っています… 取引所からは通常 2〜10 分かかります。このページは閉じても大丈夫です：購入は記録されています。",
     "depositError": "入金アドレスを読み込めませんでした。もう一度お試しください。",
     "depositStepsBinance": [
-      "Binance → ウォレットを開く",
-      "USDCを検索 → 出金 / 送信",
-      "購入するUSDC金額を入力（最小10 USDC；Ethereumは100 USDC）",
+      "Binanceを開く → ウォレット",
+      "USDCを探す → 出金 / 送信",
+      "購入するUSDC金額を入力（最小10 USDC）",
       "入金アドレスを貼り付け（下）",
-      "ネットワークでBaseを選択",
+      "「ネットワーク」でBaseを選択",
       "出金を確認"
     ],
     "depositStepsBit2me": [
-      "Bit2Me → Wallets → USDC → 送信",
-      "USDC金額を入力（最小10 USDC；Ethereumは100 USDC）",
+      "Bit2Meを開く → Wallets → USDC → 送信",
+      "購入するUSDC金額を入力（最小10 USDC）",
       "入金アドレスを貼り付け",
-      "ネットワーク：Base（推奨）",
+      "Baseネットワークを選択",
       "送信を確認"
     ],
     "depositStepsKraken": [
@@ -529,8 +529,7 @@
     "depositCalcTitle": "送金するUSDCはいくらですか？",
     "depositCalcLabel": "USDC金額",
     "depositCalcResult": "{usdc} USDC = {open} OPEN 予約",
-    "depositCalcMinHint": "最小 {min} USDC",
-    "depositCalcMinEthNote": "Ethereum経由：最小 {min} USDC",
+    "depositCalcMinHint": "Baseで最小 {min} USDC",
     "depositAmountReminder": "取引所やウォレットで金額を選びます。50、500、5,000など — 最小額以上で自由に。"
   },
   "myPurchase": {
