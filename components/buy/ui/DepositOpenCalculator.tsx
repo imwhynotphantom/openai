@@ -6,7 +6,7 @@ import { Hov } from "@/components/ui";
 import { useBuyCopy } from "@/hooks/useBuyCopy";
 import { MIN_DEPOSIT_USDC, MIN_DEPOSIT_ETH_MAINNET_USDC } from "@/lib/deposits/constants";
 
-const QUICK_USDC = [100, 500, 1000, 5000, 10000];
+const QUICK_USDC = [1000, 5000, 10000];
 
 const fmt = (n: number) => n.toLocaleString(undefined, { maximumFractionDigits: 2 });
 
