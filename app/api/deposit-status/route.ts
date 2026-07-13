@@ -69,6 +69,8 @@ async function handleDepositStatus(req: NextRequest) {
     hasClaimAddress: Boolean(buyer.claim_address),
     credited,
     pending,
+    openPerUsdc,
     openEstimated: credited * openPerUsdc,
+    pendingOpenEstimated: pending * openPerUsdc,
   });
 }

@@ -306,7 +306,9 @@
     "referralUnavailable": "紹介プログラムはオンチェーンのプレセール開始とともに有効になります。",
     "addTokenCta": "OPENをウォレットに追加",
     "addTokenPending": "ウォレットで確認してください…",
-    "addTokenAdded": "OPENがウォレットに追加されました。"
+    "addTokenAdded": "OPENがウォレットに追加されました。",
+    "reservedBanner": "プレセールで {open} OPEN が予約されています（ウォレットにはまだ反映されません）。",
+    "reservedBannerCta": "購入を見る →"
   },
   "swapPage": {
     "title": "スワップ",
@@ -456,7 +458,7 @@
     "depositFromWhere": "どこから送りますか？",
     "depositAddressLabel": "あなた専用の入金アドレス",
     "depositNetworkWarning": "Baseネットワークでの送金を推奨します。取引所が未対応の場合はEthereum、Arbitrum、Optimism、Polygonも可 — 当方で変換します。最低10 USDC（Ethereumの場合は100 USDC）。",
-    "depositPendingBanner": "{amount} USDC を検出しました — 確認中（2〜3 分）…",
+    "depositPendingBanner": "{amount} USDC を検出 — 確認中（~{open} OPEN）…",
     "depositCreditedBanner": "{amount} USDC 確認済み = {open} OPEN を確保。ローンチ（TGE）時に受け取れます。",
     "depositWaiting": "送金を待っています… 取引所からは通常 2〜10 分かかります。このページは閉じても大丈夫です：購入は記録されています。",
     "depositError": "入金アドレスを読み込めませんでした。もう一度お試しください。",
@@ -502,7 +504,9 @@
     "depositLinkWalletAlreadyLinked": "紐づけ済みウォレット: {address}",
     "depositServerUnavailable": "現在登録できません。数分後にもう一度お試しください。",
     "depositViewMyPurchase": "購入を見る →",
-    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
+    "depositMyPurchaseBar": "購入内容と予約済みOPENを確認",
+    "depositMyPurchaseSummaryEmpty": "確認済みの入金はまだありません — USDC送信後にここに表示されます"
   },
   "myPurchase": {
     "pageTitle": "My purchase",
@@ -522,9 +526,9 @@
     "recoveryWalletLoading": "Checking wallet…",
     "recoveryWalletNotFound": "We could not find a purchase with this wallet.",
     "authFailed": "Could not verify the link. Request a new one.",
-    "creditedLabel": "USDC contributed",
-    "openReservedLabel": "OPEN reserved",
-    "pendingBanner": "{amount} USDC detected — confirming…",
+    "creditedLabel": "確認済みUSDC",
+    "openReservedLabel": "予約OPEN（TGE）",
+    "pendingBanner": "{amount} USDC 確認中（~{open} OPEN）…",
     "creditedSummary": "{amount} USDC credited",
     "openReserved": "{open} OPEN reserved",
     "claimNotice": "Your OPEN will be available at launch — we will email you if you left your address.",
@@ -540,6 +544,9 @@
     "statusSwept": "確認済み",
     "statusBridged": "確認済み",
     "statusRefundPending": "Refund pending",
-    "statusRefunded": "Refunded"
+    "statusRefunded": "Refunded",
+    "statsTitle": "プレセール購入",
+    "statsRelation": "{usdc} USDC 投資 = {open} OPEN 予約",
+    "historyOpenLine": "→ {open} OPEN"
   }
 }

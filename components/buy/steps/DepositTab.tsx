@@ -6,6 +6,7 @@ import { QRCodeSVG } from "qrcode.react";
 import { css } from "@/lib/css";
 import { Hov } from "@/components/ui";
 import { useBuyCopy } from "@/hooks/useBuyCopy";
+import { useHasPurchase } from "@/hooks/useHasPurchase";
 import { CopyAddressButton, InfoBanner } from "../ui/CopyAddressButton";
 
 type DepositInfo = {
@@ -13,7 +14,9 @@ type DepositInfo = {
   hasClaimAddress: boolean;
   credited: number;
   pending: number;
+  openPerUsdc: number;
   openEstimated: number;
+  pendingOpenEstimated: number;
 };
 
 type ExchangeId = "binance" | "bit2me" | "kraken" | "wallet";
@@ -22,6 +25,7 @@ const fmt = (n: number) => n.toLocaleString("es-ES", { maximumFractionDigits: 2 
 
 export function DepositTab({ address }: { address?: `0x${string}` }) {
   const buy = useBuyCopy();
+  const { refreshPurchase } = useHasPurchase();
   const [info, setInfo] = useState<DepositInfo | null>(null);
   const [needsRegister, setNeedsRegister] = useState(false);
   const [registering, setRegistering] = useState(false);
@@ -66,12 +70,13 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
         throw new Error(data.error ?? "register failed");
       }
       await loadStatus();
+      await refreshPurchase();
     } catch (e) {
       setError(e instanceof Error && e.message === "server_config" ? buy.depositServerUnavailable : buy.depositError);
     } finally {
       setRegistering(false);
     }
-  }, [address, buy.depositError, buy.depositServerUnavailable, loadStatus]);
+  }, [address, buy.depositError, buy.depositServerUnavailable, loadStatus, refreshPurchase]);
 
   useEffect(() => {
     let alive = true;
@@ -126,8 +131,28 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
 
   const selected = EXCHANGES.find((e) => e.id === exchange);
 
+  const summaryText =
+    info.credited > 0
+      ? buy.depositCreditedBanner(fmt(info.credited), fmt(info.openEstimated))
+      : info.pending > 0
+        ? buy.depositPendingBanner(fmt(info.pending), fmt(info.pendingOpenEstimated))
+        : buy.depositMyPurchaseSummaryEmpty;
+
   return (
     <div>
+      <div style={css("display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding:12px 14px;border-radius:12px;background:#F7F7F8;border:1px solid #ECECEC;margin-bottom:16px")}>
+        <div>
+          <p style={css("font:600 13px var(--font-hanken);color:#0D0D0D;margin:0 0 4px")}>{buy.depositMyPurchaseBar}</p>
+          <p style={css("font:500 12.5px/1.45 var(--font-hanken);color:#5C5C66;margin:0")}>{summaryText}</p>
+        </div>
+        <Link
+          href="/mi-compra"
+          style={css("font:600 13px var(--font-hanken);color:#fff;background:#0D0D0D;text-decoration:none;padding:10px 14px;border-radius:10px;white-space:nowrap")}
+        >
+          {buy.depositViewMyPurchase}
+        </Link>
+      </div>
+
       <p style={css("font:400 14px/1.5 var(--font-hanken);color:#8A8A94;margin:0 0 16px")}>{buy.depositIntro}</p>
 
       <p style={css("font:600 12px var(--font-hanken);color:#8A8A94;margin:0 0 10px;text-transform:uppercase;letter-spacing:0.04em")}>
@@ -181,7 +206,9 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
       {info.pending > 0 ? (
         <div style={css("display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:12px;background:#EFF5FD;border:1px solid #C4D9F2;margin:0 0 12px")}>
           <span style={css("width:9px;height:9px;border-radius:50%;background:#2F6FBF;animation:deposit-pulse 1.2s ease-in-out infinite")} />
-          <span style={css("font:500 13px/1.4 var(--font-hanken);color:#2F5D96")}>{buy.depositPendingBanner(fmt(info.pending))}</span>
+          <span style={css("font:500 13px/1.4 var(--font-hanken);color:#2F5D96")}>
+            {buy.depositPendingBanner(fmt(info.pending), fmt(info.pendingOpenEstimated))}
+          </span>
         </div>
       ) : null}
 

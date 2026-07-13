@@ -5,6 +5,7 @@ import { LOCALE_COOKIE, isLocale } from "@/lib/i18n/config";
 export type PurchaseDeposit = {
   id: string;
   amountUsdc: number;
+  openEstimated: number | null;
   status: string;
   detectedAt: string;
   confirmedAt: string | null;
@@ -57,6 +58,13 @@ export async function loadMyPurchase(buyerId: string): Promise<MyPurchaseRespons
 
   const openPerUsdc = Number(config?.open_per_usdc ?? 0);
 
+  const openForDeposit = (amount: number, status: string): number | null => {
+    if (status === "credited" || status === "swept" || status === "bridged" || status === "detected" || status === "confirmed") {
+      return amount * openPerUsdc;
+    }
+    return null;
+  };
+
   return {
     depositAddress: buyer.deposit_address,
     claimAddress: buyer.claim_address ?? null,
@@ -69,6 +77,7 @@ export async function loadMyPurchase(buyerId: string): Promise<MyPurchaseRespons
     deposits: (deposits ?? []).map((d) => ({
       id: d.id,
       amountUsdc: Number(d.amount_usdc),
+      openEstimated: openForDeposit(Number(d.amount_usdc), d.status),
       status: d.status,
       detectedAt: d.detected_at,
       confirmedAt: d.confirmed_at,

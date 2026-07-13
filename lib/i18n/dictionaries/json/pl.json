@@ -306,7 +306,9 @@
     "referralUnavailable": "Program poleceń aktywuje się wraz z przedsprzedażą on-chain.",
     "addTokenCta": "Dodaj OPEN do portfela",
     "addTokenPending": "Potwierdź w portfelu…",
-    "addTokenAdded": "OPEN dodany do portfela."
+    "addTokenAdded": "OPEN dodany do portfela.",
+    "reservedBanner": "Masz {open} OPEN zarezerwowanych w przedsprzedaży (jeszcze nie w portfelu).",
+    "reservedBannerCta": "Zobacz mój zakup →"
   },
   "swapPage": {
     "title": "Wymień",
@@ -456,7 +458,7 @@
     "depositFromWhere": "Skąd będziesz wysyłać?",
     "depositAddressLabel": "Twój osobisty adres wpłaty",
     "depositNetworkWarning": "Wyślij przez sieć Base (zalecane). Jeśli giełda jej nie oferuje, akceptujemy też Ethereum, Arbitrum, Optimism i Polygon — konwertujemy sami. Minimum 10 USDC (100 przez Ethereum).",
-    "depositPendingBanner": "Wykryliśmy {amount} USDC — potwierdzanie (2-3 minuty)…",
+    "depositPendingBanner": "Wykryliśmy {amount} USDC — potwierdzanie (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC potwierdzone = {open} OPEN zarezerwowane. Otrzymasz je przy starcie (TGE).",
     "depositWaiting": "Czekamy na Twój przelew… Z giełdy zwykle trwa to 2-10 minut. Możesz zamknąć tę stronę: Twój zakup i tak jest zarejestrowany.",
     "depositError": "Nie udało się załadować Twojego adresu wpłaty. Spróbuj ponownie.",
@@ -502,7 +504,9 @@
     "depositLinkWalletAlreadyLinked": "Powiązana wallet: {address}",
     "depositServerUnavailable": "Rejestracja jest teraz niedostępna. Spróbuj ponownie za kilka minut.",
     "depositViewMyPurchase": "Zobacz mój zakup →",
-    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
+    "depositMyPurchaseBar": "Zobacz swój zakup i zarezerwowane OPEN",
+    "depositMyPurchaseSummaryEmpty": "Brak potwierdzonych wpłat — pojawią się tutaj po wysłaniu USDC"
   },
   "myPurchase": {
     "pageTitle": "My purchase",
@@ -522,9 +526,9 @@
     "recoveryWalletLoading": "Checking wallet…",
     "recoveryWalletNotFound": "We could not find a purchase with this wallet.",
     "authFailed": "Could not verify the link. Request a new one.",
-    "creditedLabel": "USDC contributed",
-    "openReservedLabel": "OPEN reserved",
-    "pendingBanner": "{amount} USDC detected — confirming…",
+    "creditedLabel": "USDC potwierdzone",
+    "openReservedLabel": "OPEN zarezerwowane (TGE)",
+    "pendingBanner": "{amount} USDC w trakcie potwierdzania (~{open} OPEN)…",
     "creditedSummary": "{amount} USDC credited",
     "openReserved": "{open} OPEN reserved",
     "claimNotice": "Your OPEN will be available at launch — we will email you if you left your address.",
@@ -540,6 +544,9 @@
     "statusSwept": "Potwierdzono",
     "statusBridged": "Potwierdzono",
     "statusRefundPending": "Refund pending",
-    "statusRefunded": "Refunded"
+    "statusRefunded": "Refunded",
+    "statsTitle": "Twój zakup w przedsprzedaży",
+    "statsRelation": "{usdc} USDC wpłacone = {open} OPEN zarezerwowane",
+    "historyOpenLine": "→ {open} OPEN"
   }
 }

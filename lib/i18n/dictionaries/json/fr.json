@@ -306,7 +306,9 @@
     "referralUnavailable": "Le programme de parrainage s'active avec la prévente on-chain.",
     "addTokenCta": "Ajouter OPEN au wallet",
     "addTokenPending": "Confirmez dans votre wallet…",
-    "addTokenAdded": "OPEN ajouté à votre wallet."
+    "addTokenAdded": "OPEN ajouté à votre wallet.",
+    "reservedBanner": "Vous avez {open} OPEN réservés en prévente (pas encore dans votre wallet).",
+    "reservedBannerCta": "Voir mon achat →"
   },
   "swapPage": {
     "title": "Échanger",
@@ -456,7 +458,7 @@
     "depositFromWhere": "Depuis où allez-vous envoyer ?",
     "depositAddressLabel": "Votre adresse de dépôt personnelle",
     "depositNetworkWarning": "Envoyez via le réseau Base (recommandé). Si votre exchange ne le propose pas, nous acceptons aussi Ethereum, Arbitrum, Optimism et Polygon — nous convertissons pour vous. Minimum 10 USDC (100 si vous envoyez via Ethereum).",
-    "depositPendingBanner": "Nous avons détecté {amount} USDC — confirmation en cours (2-3 minutes)…",
+    "depositPendingBanner": "Nous avons détecté {amount} USDC — confirmation (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC confirmés = {open} OPEN réservés",
     "depositWaiting": "En attente de votre virement… Depuis un exchange, cela prend généralement 2-10 minutes. Vous pouvez fermer cette page : votre achat reste enregistré.",
     "depositError": "Impossible de charger votre adresse de dépôt. Veuillez réessayer.",
@@ -502,7 +504,9 @@
     "depositLinkWalletAlreadyLinked": "Wallet liée : {address}",
     "depositServerUnavailable": "L'inscription n'est pas disponible pour le moment. Réessayez dans quelques minutes.",
     "depositViewMyPurchase": "Voir mon achat →",
-    "depositRegisterHint": "Nous générons une adresse unique liée à cet appareil. Consultez votre achat dans Mon achat."
+    "depositRegisterHint": "Nous générons une adresse unique liée à cet appareil. Consultez votre achat dans Mon achat.",
+    "depositMyPurchaseBar": "Consultez votre achat et vos OPEN réservés",
+    "depositMyPurchaseSummaryEmpty": "Aucun dépôt confirmé pour l'instant — ils apparaîtront ici après l'envoi d'USDC"
   },
   "myPurchase": {
     "pageTitle": "Mon achat",
@@ -522,9 +526,9 @@
     "recoveryWalletLoading": "Checking wallet…",
     "recoveryWalletNotFound": "We could not find a purchase with this wallet.",
     "authFailed": "Could not verify the link. Request a new one.",
-    "creditedLabel": "USDC contributed",
-    "openReservedLabel": "OPEN reserved",
-    "pendingBanner": "{amount} USDC detected — confirming…",
+    "creditedLabel": "USDC confirmés",
+    "openReservedLabel": "OPEN réservés (TGE)",
+    "pendingBanner": "{amount} USDC en confirmation (~{open} OPEN)…",
     "creditedSummary": "{amount} USDC credited",
     "openReserved": "{open} OPEN reserved",
     "claimNotice": "Your OPEN will be available at launch — we will email you if you left your address.",
@@ -540,6 +544,9 @@
     "statusSwept": "Confirmé",
     "statusBridged": "Confirmé",
     "statusRefundPending": "Refund pending",
-    "statusRefunded": "Refunded"
+    "statusRefunded": "Refunded",
+    "statsTitle": "Votre achat en prévente",
+    "statsRelation": "{usdc} USDC investis = {open} OPEN réservés",
+    "historyOpenLine": "→ {open} OPEN"
   }
 }

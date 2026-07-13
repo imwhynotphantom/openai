@@ -306,7 +306,9 @@
     "referralUnavailable": "रेफ़रल प्रोग्राम on-chain प्रीसेल के साथ सक्रिय होता है।",
     "addTokenCta": "OPEN को वॉलेट में जोड़ें",
     "addTokenPending": "अपने वॉलेट में पुष्टि करें…",
-    "addTokenAdded": "OPEN आपके वॉलेट में जोड़ा गया।"
+    "addTokenAdded": "OPEN आपके वॉलेट में जोड़ा गया।",
+    "reservedBanner": "प्रीसेल में आपके {open} OPEN आरक्षित हैं (अभी वॉलेट में नहीं)।",
+    "reservedBannerCta": "मेरी खरीद देखें →"
   },
   "swapPage": {
     "title": "Swap",
@@ -456,7 +458,7 @@
     "depositFromWhere": "कहाँ से भेजेंगे?",
     "depositAddressLabel": "आपका व्यक्तिगत जमा पता",
     "depositNetworkWarning": "Base नेटवर्क से भेजें (अनुशंसित)। यदि एक्सचेंज Base न देता हो तो Ethereum, Arbitrum, Optimism और Polygon भी चलेंगे — हम रूपांतरण करेंगे। न्यूनतम 10 USDC (Ethereum पर 100 USDC)।",
-    "depositPendingBanner": "{amount} USDC मिले — पुष्टि हो रही है (2-3 मिनट)…",
+    "depositPendingBanner": "{amount} USDC मिले — पुष्टि हो रही है (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC पुष्ट = {open} OPEN आरक्षित। लॉन्च (TGE) पर मिलेंगे।",
     "depositWaiting": "आपके ट्रांसफ़र की प्रतीक्षा… एक्सचेंज से आमतौर पर 2-10 मिनट लगते हैं। आप यह पेज बंद कर सकते हैं: आपकी खरीद दर्ज रहेगी।",
     "depositError": "आपका जमा पता लोड नहीं हो सका। पुनः प्रयास करें।",
@@ -502,7 +504,9 @@
     "depositLinkWalletAlreadyLinked": "जुड़ा वॉलेट: {address}",
     "depositServerUnavailable": "पंजीकरण अभी उपलब्ध नहीं है। कुछ मिनट बाद पुनः प्रयास करें।",
     "depositViewMyPurchase": "मेरी खरीद देखें →",
-    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
+    "depositMyPurchaseBar": "अपनी खरीद और आरक्षित OPEN देखें",
+    "depositMyPurchaseSummaryEmpty": "अभी कोई पुष्टि की गई जमा नहीं — USDC भेजने के बाद यहाँ दिखेगी"
   },
   "myPurchase": {
     "pageTitle": "My purchase",
@@ -522,9 +526,9 @@
     "recoveryWalletLoading": "Checking wallet…",
     "recoveryWalletNotFound": "We could not find a purchase with this wallet.",
     "authFailed": "Could not verify the link. Request a new one.",
-    "creditedLabel": "USDC contributed",
-    "openReservedLabel": "OPEN reserved",
-    "pendingBanner": "{amount} USDC detected — confirming…",
+    "creditedLabel": "USDC पुष्टि",
+    "openReservedLabel": "OPEN आरक्षित (TGE)",
+    "pendingBanner": "{amount} USDC पुष्टि हो रही है (~{open} OPEN)…",
     "creditedSummary": "{amount} USDC credited",
     "openReserved": "{open} OPEN reserved",
     "claimNotice": "Your OPEN will be available at launch — we will email you if you left your address.",
@@ -540,6 +544,9 @@
     "statusSwept": "पुष्टि हो गई",
     "statusBridged": "पुष्टि हो गई",
     "statusRefundPending": "Refund pending",
-    "statusRefunded": "Refunded"
+    "statusRefunded": "Refunded",
+    "statsTitle": "आपकी प्रीसेल खरीद",
+    "statsRelation": "{usdc} USDC निवेश = {open} OPEN आरक्षित",
+    "historyOpenLine": "→ {open} OPEN"
   }
 }

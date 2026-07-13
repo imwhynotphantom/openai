@@ -15,6 +15,7 @@ function Footer() {
       title: t.footer.colToken,
       links: [
         ["/comprar", t.legal.suggestedCta],
+        ["/mi-compra", t.nav.myPurchase],
         ["/docs/whitepaper", t.footer.whitepaper],
         ["/docs/tokenomics", t.footer.tokenomics],
       ],

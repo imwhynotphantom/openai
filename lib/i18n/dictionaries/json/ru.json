@@ -306,7 +306,9 @@
     "referralUnavailable": "Реферальная программа активируется вместе с on-chain предпродажей.",
     "addTokenCta": "Добавить OPEN в кошелёк",
     "addTokenPending": "Подтвердите в кошельке…",
-    "addTokenAdded": "OPEN добавлен в кошелёк."
+    "addTokenAdded": "OPEN добавлен в кошелёк.",
+    "reservedBanner": "У вас {open} OPEN зарезервировано в предпродаже (ещё не в кошельке).",
+    "reservedBannerCta": "Моя покупка →"
   },
   "swapPage": {
     "title": "Обмен",
@@ -456,7 +458,7 @@
     "depositFromWhere": "Откуда будете отправлять?",
     "depositAddressLabel": "Ваш персональный адрес для депозита",
     "depositNetworkWarning": "Отправляйте через сеть Base (рекомендуется). Если биржа её не поддерживает, мы также принимаем Ethereum, Arbitrum, Optimism и Polygon — конвертируем сами. Минимум 10 USDC (100 при отправке через Ethereum).",
-    "depositPendingBanner": "Мы обнаружили {amount} USDC — подтверждение (2-3 минуты)…",
+    "depositPendingBanner": "Обнаружено {amount} USDC — подтверждение (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC подтверждено = {open} OPEN зарезервировано. Вы получите их при запуске (TGE).",
     "depositWaiting": "Ожидаем ваш перевод… С биржи обычно занимает 2-10 минут. Можно закрыть эту страницу: покупка всё равно зарегистрирована.",
     "depositError": "Не удалось загрузить ваш адрес для депозита. Попробуйте ещё раз.",
@@ -502,7 +504,9 @@
     "depositLinkWalletAlreadyLinked": "Привязанный кошелёк: {address}",
     "depositServerUnavailable": "Регистрация сейчас недоступна. Попробуйте снова через несколько минут.",
     "depositViewMyPurchase": "Моя покупка →",
-    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
+    "depositMyPurchaseBar": "Просмотр покупки и зарезервированных OPEN",
+    "depositMyPurchaseSummaryEmpty": "Подтверждённых депозитов пока нет — они появятся после отправки USDC"
   },
   "myPurchase": {
     "pageTitle": "My purchase",
@@ -522,9 +526,9 @@
     "recoveryWalletLoading": "Checking wallet…",
     "recoveryWalletNotFound": "We could not find a purchase with this wallet.",
     "authFailed": "Could not verify the link. Request a new one.",
-    "creditedLabel": "USDC contributed",
-    "openReservedLabel": "OPEN reserved",
-    "pendingBanner": "{amount} USDC detected — confirming…",
+    "creditedLabel": "USDC подтверждено",
+    "openReservedLabel": "OPEN зарезервировано (TGE)",
+    "pendingBanner": "{amount} USDC подтверждается (~{open} OPEN)…",
     "creditedSummary": "{amount} USDC credited",
     "openReserved": "{open} OPEN reserved",
     "claimNotice": "Your OPEN will be available at launch — we will email you if you left your address.",
@@ -540,6 +544,9 @@
     "statusSwept": "Подтверждено",
     "statusBridged": "Подтверждено",
     "statusRefundPending": "Refund pending",
-    "statusRefunded": "Refunded"
+    "statusRefunded": "Refunded",
+    "statsTitle": "Ваша покупка в предпродаже",
+    "statsRelation": "{usdc} USDC внесено = {open} OPEN зарезервировано",
+    "historyOpenLine": "→ {open} OPEN"
   }
 }

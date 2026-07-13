@@ -6,6 +6,7 @@ import { AppProvider } from "@/lib/store";
 import { Web3Provider } from "@/components/providers/Web3Provider";
 import { WalletSync } from "@/components/providers/WalletSync";
 import { ReferralCapture } from "@/components/providers/ReferralCapture";
+import { PurchaseProvider } from "@/components/providers/PurchaseProvider";
 import Header from "@/components/Header";
 import Marquee from "@/components/Marquee";
 import Footer from "@/components/Footer";
@@ -43,6 +44,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <LocaleProvider initialLocale={locale} initialDict={dict}>
           <AppProvider>
             <Web3Provider>
+              <PurchaseProvider>
               <WalletSync />
               <Suspense fallback={null}>
                 <ReferralCapture />
@@ -56,6 +58,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               </div>
               <WalletModal />
               <Toast />
+              </PurchaseProvider>
             </Web3Provider>
           </AppProvider>
         </LocaleProvider>

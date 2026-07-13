@@ -306,7 +306,9 @@
     "referralUnavailable": "推荐计划将随链上预售一同启用。",
     "addTokenCta": "将 OPEN 添加到钱包",
     "addTokenPending": "请在钱包中确认…",
-    "addTokenAdded": "OPEN 已添加到您的钱包。"
+    "addTokenAdded": "OPEN 已添加到您的钱包。",
+    "reservedBanner": "您在预售中预留了 {open} OPEN（尚未进入钱包）。",
+    "reservedBannerCta": "查看我的购买 →"
   },
   "swapPage": {
     "title": "交换",
@@ -456,7 +458,7 @@
     "depositFromWhere": "你将从哪里发送？",
     "depositAddressLabel": "你的专属充值地址",
     "depositNetworkWarning": "请通过 Base 网络发送（推荐）。若交易所不支持，也可使用 Ethereum、Arbitrum、Optimism 或 Polygon — 由我们转换。最低 10 USDC（经 Ethereum 为 100 USDC）。",
-    "depositPendingBanner": "已检测到 {amount} USDC — 确认中（2-3 分钟）…",
+    "depositPendingBanner": "已检测到 {amount} USDC — 确认中（~{open} OPEN）…",
     "depositCreditedBanner": "{amount} USDC 已确认 = 已预留 {open} OPEN。将在发布（TGE）时发放。",
     "depositWaiting": "等待你的转账… 从交易所通常需要 2-10 分钟。你可以关闭此页面：购买已被记录。",
     "depositError": "无法加载你的充值地址。请重试。",
@@ -502,7 +504,9 @@
     "depositLinkWalletAlreadyLinked": "已关联钱包：{address}",
     "depositServerUnavailable": "注册暂不可用，请几分钟后再试。",
     "depositViewMyPurchase": "查看我的购买 →",
-    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
+    "depositMyPurchaseBar": "查看您的购买和预留 OPEN",
+    "depositMyPurchaseSummaryEmpty": "尚无已确认存款 — 发送 USDC 后将显示在此处"
   },
   "myPurchase": {
     "pageTitle": "My purchase",
@@ -522,9 +526,9 @@
     "recoveryWalletLoading": "Checking wallet…",
     "recoveryWalletNotFound": "We could not find a purchase with this wallet.",
     "authFailed": "Could not verify the link. Request a new one.",
-    "creditedLabel": "USDC contributed",
-    "openReservedLabel": "OPEN reserved",
-    "pendingBanner": "{amount} USDC detected — confirming…",
+    "creditedLabel": "已确认 USDC",
+    "openReservedLabel": "预留 OPEN（TGE）",
+    "pendingBanner": "{amount} USDC 确认中（~{open} OPEN）…",
     "creditedSummary": "{amount} USDC credited",
     "openReserved": "{open} OPEN reserved",
     "claimNotice": "Your OPEN will be available at launch — we will email you if you left your address.",
@@ -540,6 +544,9 @@
     "statusSwept": "已确认",
     "statusBridged": "已确认",
     "statusRefundPending": "Refund pending",
-    "statusRefunded": "Refunded"
+    "statusRefunded": "Refunded",
+    "statsTitle": "您的预售购买",
+    "statsRelation": "{usdc} USDC 投入 = {open} OPEN 预留",
+    "historyOpenLine": "→ {open} OPEN"
   }
 }

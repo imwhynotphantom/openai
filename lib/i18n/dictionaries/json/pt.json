@@ -306,7 +306,9 @@
     "referralUnavailable": "O programa de indicações é ativado com a pré-venda on-chain.",
     "addTokenCta": "Adicionar OPEN à wallet",
     "addTokenPending": "Confirme na sua wallet…",
-    "addTokenAdded": "OPEN adicionado à sua wallet."
+    "addTokenAdded": "OPEN adicionado à sua wallet.",
+    "reservedBanner": "Tem {open} OPEN reservados na pré-venda (ainda não na wallet).",
+    "reservedBannerCta": "Ver a minha compra →"
   },
   "swapPage": {
     "title": "Trocar",
@@ -456,7 +458,7 @@
     "depositFromWhere": "De onde vai enviar?",
     "depositAddressLabel": "O seu endereço de depósito pessoal",
     "depositNetworkWarning": "Envie pela rede Base (recomendada). Se a sua exchange não a oferecer, também aceitamos Ethereum, Arbitrum, Optimism e Polygon — convertemos por si. Mínimo 10 USDC (100 se enviar por Ethereum).",
-    "depositPendingBanner": "Detetámos {amount} USDC — a confirmar (2-3 minutos)…",
+    "depositPendingBanner": "Detetámos {amount} USDC — a confirmar (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC confirmados = {open} OPEN reservados",
     "depositWaiting": "À espera da sua transferência… De uma exchange costuma demorar 2-10 minutos. Pode fechar esta página: a sua compra fica registada na mesma.",
     "depositError": "Não foi possível carregar o seu endereço de depósito. Tente novamente.",
@@ -502,7 +504,9 @@
     "depositLinkWalletAlreadyLinked": "Wallet vinculada: {address}",
     "depositServerUnavailable": "O registo não está disponível neste momento. Tente novamente dentro de alguns minutos.",
     "depositViewMyPurchase": "Ver a minha compra →",
-    "depositRegisterHint": "Geramos um endereço único ligado a este dispositivo. Consulte a sua compra em A minha compra."
+    "depositRegisterHint": "Geramos um endereço único ligado a este dispositivo. Consulte a sua compra em A minha compra.",
+    "depositMyPurchaseBar": "Consulte a sua compra e os OPEN reservados",
+    "depositMyPurchaseSummaryEmpty": "Ainda sem depósitos confirmados — aparecerão aqui após enviar USDC"
   },
   "myPurchase": {
     "pageTitle": "A minha compra",
@@ -522,9 +526,9 @@
     "recoveryWalletLoading": "Checking wallet…",
     "recoveryWalletNotFound": "We could not find a purchase with this wallet.",
     "authFailed": "Could not verify the link. Request a new one.",
-    "creditedLabel": "USDC contributed",
-    "openReservedLabel": "OPEN reserved",
-    "pendingBanner": "{amount} USDC detected — confirming…",
+    "creditedLabel": "USDC confirmados",
+    "openReservedLabel": "OPEN reservados (TGE)",
+    "pendingBanner": "{amount} USDC a confirmar (~{open} OPEN)…",
     "creditedSummary": "{amount} USDC credited",
     "openReserved": "{open} OPEN reserved",
     "claimNotice": "Your OPEN will be available at launch — we will email you if you left your address.",
@@ -540,6 +544,9 @@
     "statusSwept": "Confirmado",
     "statusBridged": "Confirmado",
     "statusRefundPending": "Refund pending",
-    "statusRefunded": "Refunded"
+    "statusRefunded": "Refunded",
+    "statsTitle": "A sua compra na pré-venda",
+    "statsRelation": "{usdc} USDC investidos = {open} OPEN reservados",
+    "historyOpenLine": "→ {open} OPEN"
   }
 }

@@ -68,16 +68,34 @@ export function MyPurchaseView() {
   const formatDate = (iso: string) =>
     new Date(iso).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
 
+  const pendingOpen = data.pending * data.openPerUsdc;
+
   return (
     <div>
-      <div style={css("display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px")}>
-        <Stat label={mp.creditedLabel} value={`${fmt(data.credited)} USDC`} />
-        <Stat label={mp.openReservedLabel} value={`${fmt(data.openEstimated)} OPEN`} />
+      <div style={css("padding:16px 18px;border-radius:14px;background:#F7F7F8;border:1px solid #ECECEC;margin-bottom:16px")}>
+        <p style={css("font:600 12px var(--font-hanken);color:#8A8A94;margin:0 0 6px;text-transform:uppercase;letter-spacing:0.04em")}>
+          {mp.statsTitle}
+        </p>
+        <p style={css("font:600 18px/1.35 var(--font-hanken);color:#0D0D0D;margin:0 0 12px")}>
+          {mp.statsRelation(fmt(data.credited), fmt(data.openEstimated))}
+        </p>
+        <div style={css("display:grid;grid-template-columns:1fr 1fr;gap:12px")}>
+          <Stat label={mp.creditedLabel} value={`${fmt(data.credited)} USDC`} large />
+          <Stat label={mp.openReservedLabel} value={`${fmt(data.openEstimated)} OPEN`} large />
+        </div>
+      </div>
+
+      <div style={css("padding:12px 14px;border-radius:12px;background:#FFF7ED;border:1px solid #FBD9A5;margin:0 0 16px")}>
+        <span style={css("font:500 13px/1.45 var(--font-hanken);color:#9A5B00")}>
+          {data.email ? mp.claimNoticeEmail : mp.claimNotice}
+        </span>
       </div>
 
       {data.pending > 0 ? (
         <div style={css("padding:12px 14px;border-radius:12px;background:#EFF5FD;border:1px solid #C4D9F2;margin:0 0 16px")}>
-          <span style={css("font:500 13px/1.4 var(--font-hanken);color:#2F5D96")}>{mp.pendingBanner(fmt(data.pending))}</span>
+          <span style={css("font:500 13px/1.4 var(--font-hanken);color:#2F5D96")}>
+            {mp.pendingBanner(fmt(data.pending), fmt(pendingOpen))}
+          </span>
         </div>
       ) : null}
 
@@ -98,7 +116,15 @@ export function MyPurchaseView() {
               )}
             >
               <div>
-                <p style={css("font:600 13px var(--font-mono);color:#0D0D0D;margin:0 0 2px")}>{fmt(d.amountUsdc)} USDC</p>
+                <p style={css("font:600 13px var(--font-mono);color:#0D0D0D;margin:0 0 2px")}>
+                  {fmt(d.amountUsdc)} USDC
+                  {d.openEstimated != null ? (
+                    <span style={css("font:500 13px var(--font-hanken);color:#5C5C66")}>
+                      {" "}
+                      {mp.historyOpenLine(fmt(d.openEstimated))}
+                    </span>
+                  ) : null}
+                </p>
                 <p style={css("font:400 12px var(--font-hanken);color:#8A8A94;margin:0")}>{formatDate(d.detectedAt)}</p>
                 <p style={css("font:500 12px var(--font-hanken);color:#5C5C66;margin:4px 0 0")}>{statusLabel(d.status)}</p>
               </div>
@@ -141,11 +167,11 @@ export function MyPurchaseView() {
   );
 }
 
-function Stat({ label, value }: { label: string; value: string }) {
+function Stat({ label, value, large }: { label: string; value: string; large?: boolean }) {
   return (
     <div style={css("padding:14px;border:1px solid #ECECEC;border-radius:12px;background:#FAFAFA")}>
       <p style={css("font:600 11px var(--font-hanken);color:#8A8A94;margin:0 0 4px")}>{label}</p>
-      <p style={css("font:600 16px var(--font-mono);color:#0D0D0D;margin:0")}>{value}</p>
+      <p style={css(`font:600 ${large ? "22" : "16"}px var(--font-mono);color:#0D0D0D;margin:0`)}>{value}</p>
     </div>
   );
 }

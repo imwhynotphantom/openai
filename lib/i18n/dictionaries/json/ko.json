@@ -306,7 +306,9 @@
     "referralUnavailable": "추천 프로그램은 온체인 프리세일과 함께 활성화됩니다.",
     "addTokenCta": "OPEN을 지갑에 추가",
     "addTokenPending": "지갑에서 확인하세요…",
-    "addTokenAdded": "OPEN이 지갑에 추가되었습니다."
+    "addTokenAdded": "OPEN이 지갑에 추가되었습니다.",
+    "reservedBanner": "프리세일에 {open} OPEN이 예약되어 있습니다(아직 지갑에 없음).",
+    "reservedBannerCta": "내 구매 보기 →"
   },
   "swapPage": {
     "title": "스왑",
@@ -456,7 +458,7 @@
     "depositFromWhere": "어디에서 보내시나요?",
     "depositAddressLabel": "나의 전용 입금 주소",
     "depositNetworkWarning": "Base 네트워크로 보내세요(권장). 거래소가 지원하지 않으면 Ethereum, Arbitrum, Optimism, Polygon도 가능합니다 — 변환은 저희가 처리합니다. 최소 10 USDC(Ethereum은 100 USDC).",
-    "depositPendingBanner": "{amount} USDC 감지 — 확인 중 (2-3분)…",
+    "depositPendingBanner": "{amount} USDC 감지 — 확인 중 (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC 확정 = {open} OPEN 예약 완료. 출시(TGE) 시 받게 됩니다.",
     "depositWaiting": "이체를 기다리는 중… 거래소에서는 보통 2-10분 걸립니다. 이 페이지를 닫아도 됩니다: 구매는 그대로 기록됩니다.",
     "depositError": "입금 주소를 불러오지 못했습니다. 다시 시도해 주세요.",
@@ -502,7 +504,9 @@
     "depositLinkWalletAlreadyLinked": "연결된 지갑: {address}",
     "depositServerUnavailable": "지금은 등록할 수 없습니다. 몇 분 후 다시 시도하세요.",
     "depositViewMyPurchase": "내 구매 보기 →",
-    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
+    "depositMyPurchaseBar": "구매 내역 및 예약된 OPEN 확인",
+    "depositMyPurchaseSummaryEmpty": "아직 확인된 입금이 없습니다 — USDC 전송 후 여기에 표시됩니다"
   },
   "myPurchase": {
     "pageTitle": "My purchase",
@@ -522,9 +526,9 @@
     "recoveryWalletLoading": "Checking wallet…",
     "recoveryWalletNotFound": "We could not find a purchase with this wallet.",
     "authFailed": "Could not verify the link. Request a new one.",
-    "creditedLabel": "USDC contributed",
-    "openReservedLabel": "OPEN reserved",
-    "pendingBanner": "{amount} USDC detected — confirming…",
+    "creditedLabel": "확인된 USDC",
+    "openReservedLabel": "예약 OPEN (TGE)",
+    "pendingBanner": "{amount} USDC 확인 중 (~{open} OPEN)…",
     "creditedSummary": "{amount} USDC credited",
     "openReserved": "{open} OPEN reserved",
     "claimNotice": "Your OPEN will be available at launch — we will email you if you left your address.",
@@ -540,6 +544,9 @@
     "statusSwept": "확인됨",
     "statusBridged": "확인됨",
     "statusRefundPending": "Refund pending",
-    "statusRefunded": "Refunded"
+    "statusRefunded": "Refunded",
+    "statsTitle": "프리세일 구매",
+    "statsRelation": "{usdc} USDC 투자 = {open} OPEN 예약",
+    "historyOpenLine": "→ {open} OPEN"
   }
 }

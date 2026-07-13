@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { css } from "@/lib/css";
 import { fmtUSD, fmtN, ACCENT } from "@/lib/format";
 import { useApp } from "@/lib/store";
@@ -93,6 +95,39 @@ function ReferralCard({ address }: { address: string }) {
   );
 }
 
+function ReservedPurchaseBanner() {
+  const { t } = useI18n();
+  const tp = t.portfolio;
+  const [openReserved, setOpenReserved] = useState<number | null>(null);
+
+  useEffect(() => {
+    let alive = true;
+    void fetch("/api/deposit-status", { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data: { openEstimated?: number } | null) => {
+        if (!alive || !data?.openEstimated || data.openEstimated <= 0) return;
+        setOpenReserved(data.openEstimated);
+      })
+      .catch(() => {});
+    return () => {
+      alive = false;
+    };
+  }, []);
+
+  if (openReserved == null) return null;
+
+  return (
+    <div style={css("display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-radius:14px;background:#EFF5FD;border:1px solid #C4D9F2;margin-bottom:24px")}>
+      <p style={css("font:500 14px/1.45 var(--font-hanken);color:#2F5D96;margin:0")}>
+        {tf(tp.reservedBanner, { open: fmtN(openReserved, 0) })}
+      </p>
+      <Link href="/mi-compra" style={css("font:600 13px var(--font-hanken);color:#0D0D0D;text-decoration:underline;white-space:nowrap")}>
+        {tp.reservedBannerCta}
+      </Link>
+    </div>
+  );
+}
+
 export default function Portfolio() {
   const app = useApp();
   const router = useRouter();
@@ -105,6 +140,7 @@ export default function Portfolio() {
   if (!isConnected || !address) {
     return (
       <main style={css("max-width:1100px;margin:0 auto;padding:40px 24px")}>
+        <ReservedPurchaseBanner />
         <div style={css("display:flex;flex-direction:column;align-items:center;text-align:center;padding:80px 24px")}>
           <span style={css("width:64px;height:64px;border-radius:18px;background:#F4F4F5;display:flex;align-items:center;justify-content:center;margin-bottom:22px")}><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8A8A94" strokeWidth="1.8"><rect x="3" y="6" width="18" height="13" rx="3" /><path d="M16 12h3" /></svg></span>
           <h2 style={css("font:600 26px var(--font-hanken);letter-spacing:-0.03em;margin:0 0 8px")}>{t.portfolio.connectTitle}</h2>
@@ -140,6 +176,7 @@ export default function Portfolio() {
 
   return (
     <main style={css("max-width:1100px;margin:0 auto;padding:40px 24px")}>
+      <ReservedPurchaseBanner />
       <div style={css("display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;margin-bottom:28px")}>
         <div>
           <div style={css("display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap")}>

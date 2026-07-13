@@ -306,7 +306,9 @@
     "referralUnavailable": "Referans programı on-chain ön satışla birlikte etkinleşir.",
     "addTokenCta": "OPEN’i cüzdana ekle",
     "addTokenPending": "Cüzdanında onayla…",
-    "addTokenAdded": "OPEN cüzdanına eklendi."
+    "addTokenAdded": "OPEN cüzdanına eklendi.",
+    "reservedBanner": "Ön satışta {open} OPEN rezerviniz var (henüz cüzdanınızda değil).",
+    "reservedBannerCta": "Satın alımımı gör →"
   },
   "swapPage": {
     "title": "Takas",
@@ -456,7 +458,7 @@
     "depositFromWhere": "Nereden göndereceksiniz?",
     "depositAddressLabel": "Kişisel yatırma adresiniz",
     "depositNetworkWarning": "Base ağı üzerinden gönderin (önerilen). Borsanız sunmuyorsa Ethereum, Arbitrum, Optimism ve Polygon da kabul ediyoruz — dönüşümü biz yaparız. Minimum 10 USDC (Ethereum ile 100 USDC).",
-    "depositPendingBanner": "{amount} USDC algılandı — onaylanıyor (2-3 dakika)…",
+    "depositPendingBanner": "{amount} USDC algılandı — onaylanıyor (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC onaylandı = {open} OPEN ayrıldı. Lansmanda (TGE) alacaksınız.",
     "depositWaiting": "Transferiniz bekleniyor… Bir borsadan genellikle 2-10 dakika sürer. Bu sayfayı kapatabilirsiniz: satın alımınız yine de kayıtlıdır.",
     "depositError": "Yatırma adresiniz yüklenemedi. Lütfen tekrar deneyin.",
@@ -502,7 +504,9 @@
     "depositLinkWalletAlreadyLinked": "Bağlı cüzdan: {address}",
     "depositServerUnavailable": "Kayıt şu anda kullanılamıyor. Birkaç dakika sonra tekrar deneyin.",
     "depositViewMyPurchase": "Satın alımımı gör →",
-    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
+    "depositMyPurchaseBar": "Satın alımınızı ve rezerve OPEN'lerinizi görün",
+    "depositMyPurchaseSummaryEmpty": "Henüz onaylanmış yatırma yok — USDC gönderdikten sonra burada görünecek"
   },
   "myPurchase": {
     "pageTitle": "My purchase",
@@ -522,9 +526,9 @@
     "recoveryWalletLoading": "Checking wallet…",
     "recoveryWalletNotFound": "We could not find a purchase with this wallet.",
     "authFailed": "Could not verify the link. Request a new one.",
-    "creditedLabel": "USDC contributed",
-    "openReservedLabel": "OPEN reserved",
-    "pendingBanner": "{amount} USDC detected — confirming…",
+    "creditedLabel": "USDC onaylandı",
+    "openReservedLabel": "OPEN rezerve (TGE)",
+    "pendingBanner": "{amount} USDC onaylanıyor (~{open} OPEN)…",
     "creditedSummary": "{amount} USDC credited",
     "openReserved": "{open} OPEN reserved",
     "claimNotice": "Your OPEN will be available at launch — we will email you if you left your address.",
@@ -540,6 +544,9 @@
     "statusSwept": "Onaylandı",
     "statusBridged": "Onaylandı",
     "statusRefundPending": "Refund pending",
-    "statusRefunded": "Refunded"
+    "statusRefunded": "Refunded",
+    "statsTitle": "Ön satış alımınız",
+    "statsRelation": "{usdc} USDC yatırıldı = {open} OPEN rezerve",
+    "historyOpenLine": "→ {open} OPEN"
   }
 }

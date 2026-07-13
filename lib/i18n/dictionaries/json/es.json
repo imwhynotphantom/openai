@@ -306,7 +306,9 @@
     "referralUnavailable": "El programa de referidos se activa con la preventa on-chain.",
     "addTokenCta": "Añadir OPEN a la wallet",
     "addTokenPending": "Confirma en tu wallet…",
-    "addTokenAdded": "OPEN añadido a tu wallet."
+    "addTokenAdded": "OPEN añadido a tu wallet.",
+    "reservedBanner": "Tienes {open} OPEN reservados en preventa (aún no en tu wallet).",
+    "reservedBannerCta": "Ver mi compra →"
   },
   "swapPage": {
     "title": "Intercambiar",
@@ -456,7 +458,7 @@
     "depositFromWhere": "¿Desde dónde vas a enviar?",
     "depositAddressLabel": "Tu dirección personal de depósito",
     "depositNetworkWarning": "Recuerda elegir la red base al enviar - Mínimo 10 USDC",
-    "depositPendingBanner": "Hemos detectado {amount} USDC — confirmando (2-3 minutos)…",
+    "depositPendingBanner": "Hemos detectado {amount} USDC — confirmando (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC confirmados = {open} OPEN reservados",
     "depositWaiting": "Esperando tu transferencia… Desde un exchange suele tardar 2-10 minutos. Puedes cerrar esta página: tu compra queda registrada igualmente.",
     "depositError": "No se pudo cargar tu dirección de depósito. Inténtalo de nuevo.",
@@ -502,7 +504,9 @@
     "depositLinkWalletAlreadyLinked": "Wallet vinculada: {address}",
     "depositServerUnavailable": "El registro no está disponible ahora mismo. Inténtalo de nuevo en unos minutos.",
     "depositViewMyPurchase": "Ver mi compra →",
-    "depositRegisterHint": "Generamos una dirección única vinculada a este dispositivo. Consulta tu compra en Mi compra."
+    "depositRegisterHint": "Generamos una dirección única vinculada a este dispositivo. Consulta tu compra en Mi compra.",
+    "depositMyPurchaseBar": "Consulta tu compra y tus OPEN reservados",
+    "depositMyPurchaseSummaryEmpty": "Aún sin depósitos confirmados — cuando envíes USDC aparecerán aquí"
   },
   "myPurchase": {
     "pageTitle": "Mi compra",
@@ -522,9 +526,9 @@
     "recoveryWalletLoading": "Comprobando wallet…",
     "recoveryWalletNotFound": "No encontramos ninguna compra con esta wallet.",
     "authFailed": "No se pudo verificar el enlace. Solicita uno nuevo.",
-    "creditedLabel": "USDC aportados",
-    "openReservedLabel": "OPEN reservados",
-    "pendingBanner": "{amount} USDC detectados — confirmando…",
+    "creditedLabel": "USDC confirmados",
+    "openReservedLabel": "OPEN reservados (TGE)",
+    "pendingBanner": "{amount} USDC confirmando (~{open} OPEN)…",
     "creditedSummary": "{amount} USDC acreditados",
     "openReserved": "{open} OPEN reservados",
     "claimNotice": "Tus OPEN estarán disponibles en el lanzamiento — te avisaremos por email si lo dejaste.",
@@ -540,6 +544,9 @@
     "statusSwept": "Confirmado",
     "statusBridged": "Confirmado",
     "statusRefundPending": "Reembolso pendiente",
-    "statusRefunded": "Reembolsado"
+    "statusRefunded": "Reembolsado",
+    "statsTitle": "Tu compra en preventa",
+    "statsRelation": "{usdc} USDC invertidos = {open} OPEN reservados",
+    "historyOpenLine": "→ {open} OPEN"
   }
 }

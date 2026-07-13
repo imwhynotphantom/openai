@@ -306,7 +306,9 @@
     "referralUnavailable": "Het referral-programma wordt geactiveerd met de on-chain presale.",
     "addTokenCta": "OPEN aan wallet toevoegen",
     "addTokenPending": "Bevestig in je wallet…",
-    "addTokenAdded": "OPEN toegevoegd aan je wallet."
+    "addTokenAdded": "OPEN toegevoegd aan je wallet.",
+    "reservedBanner": "Je hebt {open} OPEN gereserveerd in de voorverkoop (nog niet in je wallet).",
+    "reservedBannerCta": "Mijn aankoop bekijken →"
   },
   "swapPage": {
     "title": "Wisselen",
@@ -456,7 +458,7 @@
     "depositFromWhere": "Vanwaar ga je versturen?",
     "depositAddressLabel": "Je persoonlijke stortingsadres",
     "depositNetworkWarning": "Stuur via het Base-netwerk (aanbevolen). Biedt je exchange het niet aan, dan accepteren we ook Ethereum, Arbitrum, Optimism en Polygon — wij wisselen het om. Minimaal 10 USDC (100 via Ethereum).",
-    "depositPendingBanner": "We hebben {amount} USDC gedetecteerd — bevestigen (2-3 minuten)…",
+    "depositPendingBanner": "We hebben {amount} USDC gedetecteerd — bevestigen (~{open} OPEN)…",
     "depositCreditedBanner": "{amount} USDC bevestigd = {open} OPEN gereserveerd. Je ontvangt ze bij de lancering (TGE).",
     "depositWaiting": "Wachten op je overboeking… Vanaf een exchange duurt het meestal 2-10 minuten. Je kunt deze pagina sluiten: je aankoop blijft geregistreerd.",
     "depositError": "Je stortingsadres kon niet worden geladen. Probeer het opnieuw.",
@@ -502,7 +504,9 @@
     "depositLinkWalletAlreadyLinked": "Gekoppelde wallet: {address}",
     "depositServerUnavailable": "Registratie is momenteel niet beschikbaar. Probeer het over een paar minuten opnieuw.",
     "depositViewMyPurchase": "Mijn aankoop bekijken →",
-    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase."
+    "depositRegisterHint": "We generate a unique address linked to this device. View your purchase in My purchase.",
+    "depositMyPurchaseBar": "Bekijk je aankoop en gereserveerde OPEN",
+    "depositMyPurchaseSummaryEmpty": "Nog geen bevestigde stortingen — ze verschijnen hier na het versturen van USDC"
   },
   "myPurchase": {
     "pageTitle": "My purchase",
@@ -522,9 +526,9 @@
     "recoveryWalletLoading": "Checking wallet…",
     "recoveryWalletNotFound": "We could not find a purchase with this wallet.",
     "authFailed": "Could not verify the link. Request a new one.",
-    "creditedLabel": "USDC contributed",
-    "openReservedLabel": "OPEN reserved",
-    "pendingBanner": "{amount} USDC detected — confirming…",
+    "creditedLabel": "USDC bevestigd",
+    "openReservedLabel": "OPEN gereserveerd (TGE)",
+    "pendingBanner": "{amount} USDC wordt bevestigd (~{open} OPEN)…",
     "creditedSummary": "{amount} USDC credited",
     "openReserved": "{open} OPEN reserved",
     "claimNotice": "Your OPEN will be available at launch — we will email you if you left your address.",
@@ -540,6 +544,9 @@
     "statusSwept": "Bevestigd",
     "statusBridged": "Bevestigd",
     "statusRefundPending": "Refund pending",
-    "statusRefunded": "Refunded"
+    "statusRefunded": "Refunded",
+    "statsTitle": "Je voorverkoopaankoop",
+    "statsRelation": "{usdc} USDC bijgedragen = {open} OPEN gereserveerd",
+    "historyOpenLine": "→ {open} OPEN"
   }
 }

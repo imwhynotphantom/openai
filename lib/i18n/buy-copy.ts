@@ -26,7 +26,7 @@ export type BuyCopy = Omit<BuyDict, TemplateKeys> & {
   bridgeSendCta: (network: string) => string;
   bridgeDepositInstructions: (amount: string, symbol: string) => string;
   bridgeExpiresIn: (sec: number) => string;
-  depositPendingBanner: (amount: string) => string;
+  depositPendingBanner: (amount: string, open: string) => string;
   depositCreditedBanner: (amount: string, open: string) => string;
   depositLinkWalletReplaceConfirm: (from: string, to: string) => string;
   depositLinkWalletAlreadyLinked: (address: string) => string;
@@ -45,7 +45,7 @@ export function createBuyCopy(d: BuyDict): BuyCopy {
     bridgeSendCta: (network) => tf(bridgeSendCta, { network }),
     bridgeDepositInstructions: (amount, symbol) => tf(bridgeDepositInstructions, { amount, symbol }),
     bridgeExpiresIn: (sec) => tf(bridgeExpiresIn, { sec }),
-    depositPendingBanner: (amount) => tf(depositPendingBanner, { amount }),
+    depositPendingBanner: (amount, open) => tf(depositPendingBanner, { amount, open }),
     depositCreditedBanner: (amount, open) => tf(depositCreditedBanner, { amount, open }),
     depositLinkWalletReplaceConfirm: (from, to) => tf(depositLinkWalletReplaceConfirm, { from, to }),
     depositLinkWalletAlreadyLinked: (address) => tf(depositLinkWalletAlreadyLinked, { address }),

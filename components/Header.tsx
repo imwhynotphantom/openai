@@ -13,18 +13,16 @@ import { formatAddress } from "@/lib/wagmi/format-address";
 import { Hov, Logo } from "./ui";
 import { brandLegal } from "@/lib/brand-legal";
 import { useI18n } from "@/lib/i18n/LocaleProvider";
-import { useHasPurchase } from "@/hooks/useHasPurchase";
 import { LanguagePicker } from "./LanguagePicker";
 
 const NavLinks = memo(function NavLinks() {
   const pathname = usePathname();
   const { t } = useI18n();
-  const { hasPurchase } = useHasPurchase();
   const NAV: { href: string; label: string; badge?: string }[] = [
     { href: "/", label: t.nav.home },
     { href: "/mercado", label: t.nav.market },
     { href: "/comprar", label: t.nav.buy },
-    ...(hasPurchase ? [{ href: "/mi-compra", label: t.nav.myPurchase }] : []),
+    { href: "/mi-compra", label: t.nav.myPurchase },
     // El swap llega tras el TGE: el badge evita que parezca una función rota.
     { href: "/swap", label: t.nav.swap, badge: t.nav.soon },
     { href: "/cartera", label: t.nav.wallet },
