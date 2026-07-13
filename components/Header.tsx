@@ -28,7 +28,7 @@ const NavLinks = memo(function NavLinks() {
     { href: "/cartera", label: t.nav.wallet },
   ];
   return (
-    <nav data-nav aria-label={t.nav.mainNavAria} style={css("display:flex;gap:2px")}>
+    <nav data-nav aria-label={t.nav.mainNavAria} style={css("display:flex;gap:2px;flex-shrink:0;flex-wrap:nowrap")}>
       {NAV.map(({ href, label, badge }) => {
         const active = pathname === href;
         return (
@@ -42,7 +42,7 @@ const NavLinks = memo(function NavLinks() {
               (active ? "#F2F2F3" : "transparent") +
               ";color:" +
               (active ? "#0D0D0D" : "#6B6B76") +
-              ";font:500 14px/1 var(--font-hanken);padding:9px 14px;border-radius:10px;letter-spacing:-0.01em"
+              ";font:500 14px/1 var(--font-hanken);padding:9px 12px;border-radius:10px;letter-spacing:-0.01em;white-space:nowrap;flex-shrink:0"
             }
             hover={active ? undefined : "background:#F7F7F8;color:#0D0D0D"}
           >

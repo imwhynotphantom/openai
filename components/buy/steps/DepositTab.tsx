@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { QRCodeSVG } from "qrcode.react";
 import { css } from "@/lib/css";
+import { ACCENT } from "@/lib/format";
 import { Hov } from "@/components/ui";
 import { useBuyCopy } from "@/hooks/useBuyCopy";
 import { useHasPurchase } from "@/hooks/useHasPurchase";
@@ -23,6 +24,35 @@ type DepositInfo = {
 type ExchangeId = "binance" | "bit2me" | "kraken" | "wallet";
 
 const fmt = (n: number) => n.toLocaleString("es-ES", { maximumFractionDigits: 2 });
+
+function DepositAddressPulse() {
+  return (
+    <span
+      data-deposit-pulse
+      aria-hidden
+      style={css(
+        "position:relative;display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;flex-shrink:0"
+      )}
+    >
+      <span
+        style={css(
+          "position:absolute;inset:-3px;border-radius:50%;border:2px solid " +
+            ACCENT +
+            ";animation:hubring 2.2s ease-out infinite"
+        )}
+      />
+      <span
+        style={css(
+          "width:11px;height:11px;border-radius:50%;background:" +
+            ACCENT +
+            ";box-shadow:0 0 0 4px color-mix(in srgb, " +
+            ACCENT +
+            " 18%, transparent)"
+        )}
+      />
+    </span>
+  );
+}
 
 export function DepositTab({ address }: { address?: `0x${string}` }) {
   const buy = useBuyCopy();
@@ -201,14 +231,45 @@ export function DepositTab({ address }: { address?: `0x${string}` }) {
 
       {exchangeSelector}
 
-      <div style={css("padding:18px;border:1px solid #ECECEC;border-radius:14px;background:#FAFAFA;text-align:center;margin-bottom:16px")}>
-        <div style={css("display:flex;justify-content:center;margin-bottom:14px")}>
+      <div
+        data-deposit-address-card
+        style={css(
+          "padding:clamp(16px, 4vw, 22px);border:2px solid color-mix(in srgb, " +
+            ACCENT +
+            " 42%, #ECECEC);border-radius:16px;background:color-mix(in srgb, " +
+            ACCENT +
+            " 6%, #fff);text-align:center;margin-bottom:16px"
+        )}
+      >
+        <div
+          data-deposit-address-heading
+          style={css(
+            "display:flex;align-items:center;justify-content:center;gap:10px;margin:0 0 clamp(14px, 3.5vw, 18px);flex-wrap:wrap"
+          )}
+        >
+          <DepositAddressPulse />
+          <p
+            data-deposit-address-label
+            style={css(
+              "font:700 clamp(15px, 4.2vw, 20px)/1.25 var(--font-hanken);color:" +
+                ACCENT +
+                ";margin:0;text-transform:uppercase;letter-spacing:0.04em;text-align:center;max-width:100%"
+            )}
+          >
+            {buy.depositAddressLabel}
+          </p>
+        </div>
+        <div style={css("display:flex;justify-content:center;margin-bottom:clamp(12px, 3vw, 16px)")}>
           <QRCodeSVG value={info.depositAddress} size={148} />
         </div>
-        <p style={css("font:600 11px var(--font-hanken);color:#8A8A94;margin:0 0 6px;text-transform:uppercase;letter-spacing:0.04em")}>
-          {buy.depositAddressLabel}
+        <p
+          data-deposit-address-value
+          style={css(
+            "font:600 clamp(12px, 3.2vw, 15px)/1.45 var(--font-mono);color:#0D0D0D;margin:0 0 14px;word-break:break-all;padding:12px 14px;border-radius:12px;background:#fff;border:1px solid #ECECEC"
+          )}
+        >
+          {info.depositAddress}
         </p>
-        <p style={css("font:500 13px var(--font-mono);color:#0D0D0D;margin:0 0 12px;word-break:break-all")}>{info.depositAddress}</p>
         <CopyAddressButton value={info.depositAddress} />
       </div>
 

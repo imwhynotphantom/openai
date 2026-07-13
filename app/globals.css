@@ -68,4 +68,12 @@ button { font-family: inherit; }
   [data-pad]:has([data-mobcta]) { padding-bottom: calc(124px + env(safe-area-inset-bottom)) !important; }
   [data-pad]:not(:has([data-mobcta])) { padding-bottom: calc(68px + env(safe-area-inset-bottom)) !important; }
   [data-docstats] { grid-template-columns: 1fr 1fr !important; }
+  [data-deposit-address-card] svg { width: 132px !important; height: 132px !important; }
+  [data-deposit-address-value] { padding: 10px 10px !important; }
+}
+
+@media (max-width: 420px) {
+  [data-deposit-address-label] { font-size: 14px !important; letter-spacing: 0.025em !important; }
+  [data-deposit-address-heading] { gap: 8px !important; }
+  [data-deposit-pulse] { width: 14px !important; height: 14px !important; }
 }
