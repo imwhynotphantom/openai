@@ -461,8 +461,8 @@
     "depositWaiting": "Esperando tu transferencia… Desde un exchange suele tardar 2-10 minutos. Puedes cerrar esta página: tu compra queda registrada igualmente.",
     "depositError": "No se pudo cargar tu dirección de depósito. Inténtalo de nuevo.",
     "depositStepsBinance": [
-      "Abre Binance → Cartera → Retirar",
-      "Busca y selecciona USDC",
+      "Abre Binance → Cartera",
+      "Busca y selecciona USDC - ENVIAR → Retirar",
       "Pega tu dirección de depósito (botón de abajo)",
       "En «Red», elige Base (recomendada) o Ethereum / Arbitrum / Optimism / Polygon",
       "Confirma la retirada (mín. 10 USDC; 100 USDC si envías por Ethereum)"
