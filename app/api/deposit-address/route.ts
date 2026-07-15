@@ -73,11 +73,13 @@ async function handleDepositAddress(req: NextRequest) {
           .eq("claim_address", normalized)
           .neq("id", cookieBuyerId)
           .maybeSingle();
-        if (conflict) {
-          return NextResponse.json({ error: "wallet en uso" }, { status: 409 });
+        // Si la wallet ya pertenece a otro comprador, no se vincula aquí
+        // (se gestiona en /api/deposit-link-wallet), pero NUNCA bloquea la
+        // generación de la dirección de depósito.
+        if (!conflict) {
+          updates.claim_address = normalized;
+          if (!cookieBuyer.refund_address) updates.refund_address = normalized;
         }
-        updates.claim_address = normalized;
-        if (!cookieBuyer.refund_address) updates.refund_address = normalized;
       }
       if (refundAddress && !cookieBuyer.refund_address) {
         updates.refund_address = getAddress(refundAddress);
